@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.ConsistencyCheckGitlabJenkinsIntegrationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:04" hostname="fv-az1721-502" time="0.223">
+  <properties/>
+  <testcase name="checkConsistencyOfProgrammingExercise_buildPlansMissing()" classname="de.tum.cit.aet.artemis.programming.ConsistencyCheckGitlabJenkinsIntegrationTest" time="0.054"/>
+  <testcase name="checkConsistencyOfProgrammingExercise_noErrors()" classname="de.tum.cit.aet.artemis.programming.ConsistencyCheckGitlabJenkinsIntegrationTest" time="0.04"/>
+  <testcase name="checkConsistencyOfProgrammingExercise_missingVCSProject()" classname="de.tum.cit.aet.artemis.programming.ConsistencyCheckGitlabJenkinsIntegrationTest" time="0.042"/>
+  <testcase name="checkConsistencyOfProgrammingExercise_forbidden()" classname="de.tum.cit.aet.artemis.programming.ConsistencyCheckGitlabJenkinsIntegrationTest" time="0.036"/>
+  <testcase name="checkConsistencyOfProgrammingExercise_missingVCSRepos()" classname="de.tum.cit.aet.artemis.programming.ConsistencyCheckGitlabJenkinsIntegrationTest" time="0.045"/>
+  <system-out><![CDATA[
+Starting logs for ConsistencyCheckGitlabJenkinsIntegrationTest
+
+  Starting logs for ConsistencyCheckGitlabJenkinsIntegrationTest > checkConsistencyOfProgrammingExercise_buildPlansMissing()
+    23:44:04.621 | 440 ool-1-worker-204 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ConsistencyCheckGitlabJenkinsIntegrationTest#checkConsistencyOfProgrammingExercise_buildPlansMissing'
+    23:44:04.626 | 440 ool-1-worker-204 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/programming-exercises/2382/consistency-check
+    23:44:04.627 | 440 ool-1-worker-204 | DEBUG | t.c.a.a.e.w.ConsistencyCheckResource : REST request to check consistencies of programming exercise [2382]
+
+  Starting logs for ConsistencyCheckGitlabJenkinsIntegrationTest > checkConsistencyOfProgrammingExercise_noErrors()
+    23:44:04.668 | 440 ool-1-worker-204 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ConsistencyCheckGitlabJenkinsIntegrationTest#checkConsistencyOfProgrammingExercise_noErrors'
+    23:44:04.672 | 440 ool-1-worker-204 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/programming-exercises/2383/consistency-check
+    23:44:04.672 | 440 ool-1-worker-204 | DEBUG | t.c.a.a.e.w.ConsistencyCheckResource : REST request to check consistencies of programming exercise [2383]
+
+  Starting logs for ConsistencyCheckGitlabJenkinsIntegrationTest > checkConsistencyOfProgrammingExercise_missingVCSProject()
+    23:44:04.711 | 440 ool-1-worker-204 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ConsistencyCheckGitlabJenkinsIntegrationTest#checkConsistencyOfProgrammingExercise_missingVCSProject'
+    23:44:04.714 | 440 ool-1-worker-204 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/programming-exercises/2384/consistency-check
+    23:44:04.715 | 440 ool-1-worker-204 | DEBUG | t.c.a.a.e.w.ConsistencyCheckResource : REST request to check consistencies of programming exercise [2384]
+
+  Starting logs for ConsistencyCheckGitlabJenkinsIntegrationTest > checkConsistencyOfProgrammingExercise_forbidden()
+    23:44:04.754 | 440 ool-1-worker-204 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ConsistencyCheckGitlabJenkinsIntegrationTest#checkConsistencyOfProgrammingExercise_forbidden'
+    23:44:04.756 | 440 ool-1-worker-204 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/programming-exercises/2385/consistency-check
+    23:44:04.756 | 440 ool-1-worker-204 | DEBUG | t.c.a.a.e.w.ConsistencyCheckResource : REST request to check consistencies of programming exercise [2385]
+    23:44:04.758 | 440 ool-1-worker-204 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Course with id 684
+
+  Starting logs for ConsistencyCheckGitlabJenkinsIntegrationTest > checkConsistencyOfProgrammingExercise_missingVCSRepos()
+    23:44:04.793 | 440 ool-1-worker-204 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ConsistencyCheckGitlabJenkinsIntegrationTest#checkConsistencyOfProgrammingExercise_missingVCSRepos'
+    23:44:04.796 | 440 ool-1-worker-204 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/programming-exercises/2386/consistency-check
+    23:44:04.797 | 440 ool-1-worker-204 | DEBUG | t.c.a.a.e.w.ConsistencyCheckResource : REST request to check consistencies of programming exercise [2386]
+    23:44:04.800 | 440 ool-1-worker-204 | WARN  | d.t.c.a.a.p.s.gitlab.GitLabService   : Invalid repository VcsRepositoryUri https://version-control.fake.fake/git/SHORTADB6943500EA104EB109A4F091C2806EF356TSTEXC/shortadb6943500ea104eb109a4f091c2806ef356tstexc-exercise.git
+    23:44:04.800 | 440 ool-1-worker-204 | WARN  | d.t.c.a.a.p.s.gitlab.GitLabService   : Invalid repository VcsRepositoryUri http://nadnasidni.tum/scm/SHORTADB6943500EA104EB109A4F091C2806EF356TSTEXC/SHORTADB6943500EA104EB109A4F091C2806EF356TSTEXC-tests.git
+    23:44:04.800 | 440 ool-1-worker-204 | WARN  | d.t.c.a.a.p.s.gitlab.GitLabService   : Invalid repository VcsRepositoryUri https://version-control.fake.fake/git/SHORTADB6943500EA104EB109A4F091C2806EF356TSTEXC/shortadb6943500ea104eb109a4f091c2806ef356tstexc-solution.git
+
+Finished logs for ConsistencyCheckGitlabJenkinsIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

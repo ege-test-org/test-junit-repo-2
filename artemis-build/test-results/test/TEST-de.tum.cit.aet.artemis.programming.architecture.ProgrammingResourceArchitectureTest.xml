@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.architecture.ProgrammingResourceArchitectureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:07" hostname="fv-az1721-502" time="0.235">
+  <properties/>
+  <testcase name="testNoOverrideOfEnforceAdmin()" classname="de.tum.cit.aet.artemis.programming.architecture.ProgrammingResourceArchitectureTest" time="0.015"/>
+  <testcase name="testUseKebabCaseForRestEndpoints()" classname="de.tum.cit.aet.artemis.programming.architecture.ProgrammingResourceArchitectureTest" time="0.056"/>
+  <testcase name="allPublicMethodsShouldReturnResponseEntity()" classname="de.tum.cit.aet.artemis.programming.architecture.ProgrammingResourceArchitectureTest" time="0.104"/>
+  <testcase name="testClassWithEnforceAdminInCorrectlyNamed()" classname="de.tum.cit.aet.artemis.programming.architecture.ProgrammingResourceArchitectureTest" time="0.005"/>
+  <testcase name="shouldBeNamedResource()" classname="de.tum.cit.aet.artemis.programming.architecture.ProgrammingResourceArchitectureTest" time="0.002"/>
+  <testcase name="shouldBeInResourcePackage()" classname="de.tum.cit.aet.artemis.programming.architecture.ProgrammingResourceArchitectureTest" time="0.002"/>
+  <testcase name="shouldCorrectlyUseRequestMappingAnnotations()" classname="de.tum.cit.aet.artemis.programming.architecture.ProgrammingResourceArchitectureTest" time="0.044"/>
+  <system-out><![CDATA[
+Starting logs for ProgrammingResourceArchitectureTest
+
+  Starting logs for ProgrammingResourceArchitectureTest > testNoOverrideOfEnforceAdmin()
+
+  Starting logs for ProgrammingResourceArchitectureTest > testUseKebabCaseForRestEndpoints()
+
+  Starting logs for ProgrammingResourceArchitectureTest > allPublicMethodsShouldReturnResponseEntity()
+
+  Starting logs for ProgrammingResourceArchitectureTest > testClassWithEnforceAdminInCorrectlyNamed()
+
+  Starting logs for ProgrammingResourceArchitectureTest > shouldBeNamedResource()
+
+  Starting logs for ProgrammingResourceArchitectureTest > shouldBeInResourcePackage()
+
+  Starting logs for ProgrammingResourceArchitectureTest > shouldCorrectlyUseRequestMappingAnnotations()
+
+Finished logs for ProgrammingResourceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

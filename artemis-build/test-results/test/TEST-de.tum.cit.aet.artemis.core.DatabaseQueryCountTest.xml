@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.DatabaseQueryCountTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:18" hostname="fv-az1721-502" time="0.312">
+  <properties/>
+  <testcase name="testGetAllCoursesForDashboardRealisticQueryCount()" classname="de.tum.cit.aet.artemis.core.DatabaseQueryCountTest" time="0.23"/>
+  <testcase name="testExamQueryCount()" classname="de.tum.cit.aet.artemis.core.DatabaseQueryCountTest" time="0.08"/>
+  <system-out><![CDATA[
+Starting logs for DatabaseQueryCountTest
+
+  Starting logs for DatabaseQueryCountTest > testGetAllCoursesForDashboardRealisticQueryCount()
+    23:44:18.012 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:44:18.014 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:44:18.016 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:44:18.017 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:44:18.018 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:44:18.020 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:44:18.020 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:44:18.020 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:44:18.022 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:44:18.023 | 182 Pool-1-worker-75 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='DatabaseQueryCountTest#testGetAllCoursesForDashboardRealisticQueryCount'
+    23:44:18.056 | 182 Pool-1-worker-75 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1431 and participant 257 (result to be deleted: null)
+    23:44:18.056 | 182 Pool-1-worker-75 | DEBUG | .a.s.ParticipantScoreScheduleService : Cannot schedule task, because the service is not running
+    23:44:18.057 | 182 Pool-1-worker-75 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1431 and participant 257 (result to be deleted: null)
+    23:44:18.057 | 182 Pool-1-worker-75 | DEBUG | .a.s.ParticipantScoreScheduleService : Cannot schedule task, because the service is not running
+    23:44:18.057 | 182 Pool-1-worker-75 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1432 and participant 257 (result to be deleted: null)
+    23:44:18.057 | 182 Pool-1-worker-75 | DEBUG | .a.s.ParticipantScoreScheduleService : Cannot schedule task, because the service is not running
+    23:44:18.058 | 182 Pool-1-worker-75 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1434 and participant 257 (result to be deleted: null)
+    23:44:18.058 | 182 Pool-1-worker-75 | DEBUG | .a.s.ParticipantScoreScheduleService : Cannot schedule task, because the service is not running
+    23:44:18.058 | 182 Pool-1-worker-75 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1434 and participant 257 (result to be deleted: null)
+    23:44:18.058 | 182 Pool-1-worker-75 | DEBUG | .a.s.ParticipantScoreScheduleService : Cannot schedule task, because the service is not running
+    23:44:18.065 | 182 Pool-1-worker-75 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1431 and participant 257 (result to be deleted: null)
+    23:44:18.065 | 182 Pool-1-worker-75 | DEBUG | .a.s.ParticipantScoreScheduleService : Cannot schedule task, because the service is not running
+    23:44:18.072 | 182 Pool-1-worker-75 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1431 and participant 257 (result to be deleted: null)
+    23:44:18.072 | 182 Pool-1-worker-75 | DEBUG | .a.s.ParticipantScoreScheduleService : Cannot schedule task, because the service is not running
+    23:44:18.081 | 182 Pool-1-worker-75 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1432 and participant 257 (result to be deleted: null)
+    23:44:18.081 | 182 Pool-1-worker-75 | DEBUG | .a.s.ParticipantScoreScheduleService : Cannot schedule task, because the service is not running
+    23:44:18.088 | 182 Pool-1-worker-75 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1434 and participant 257 (result to be deleted: null)
+    23:44:18.088 | 182 Pool-1-worker-75 | DEBUG | .a.s.ParticipantScoreScheduleService : Cannot schedule task, because the service is not running
+    23:44:18.095 | 182 Pool-1-worker-75 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1434 and participant 257 (result to be deleted: null)
+    23:44:18.095 | 182 Pool-1-worker-75 | DEBUG | .a.s.ParticipantScoreScheduleService : Cannot schedule task, because the service is not running
+    23:44:18.119 | 182 Pool-1-worker-75 | INFO  | d.t.c.a.a.c.DatabaseQueryCountTest   : Start courses for dashboard call for multiple courses
+    23:44:18.122 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/for-dashboard
+    23:44:18.128 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.core.web.CourseResource    : Request to get all courses user databasequerycountstudent1 has access to with exams, lectures, exercises, participations, submissions and results + calculated scores
+    23:44:18.183 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.core.service.CourseService : Find user visible courses finished after 54.13ms
+    23:44:18.185 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.core.service.CourseService : findAllExercisesByCourseIdsWithCategories finished with 5 exercises after 2.05ms
+    23:44:18.189 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.core.service.CourseService : all 1 filterExercisesForCourse individually finished together after 2.84ms
+    23:44:18.189 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.core.service.CourseService : Filter exercises, lectures, and exams finished after 60.60ms
+    23:44:18.189 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.core.web.CourseResource    : courseService.findAllActiveWithExercisesForUser done
+    23:44:18.191 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.core.web.CourseResource    : courseService.fetchParticipationsWithSubmissionsAndResultsForCourses done
+    23:44:18.192 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.core.web.CourseResource    : courseService.fetchPlagiarismCasesForCourseExercises done
+    23:44:18.193 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.core.web.CourseResource    : gradingScaleRepository.findAllByCourseIds done
+    23:44:18.193 | 182 Pool-1-worker-75 | INFO  | d.t.c.a.a.core.web.CourseResource    : courses/for-dashboard (multiple courses) finished in 67.84ms for 1 courses with 5 individual exercise(s) and 0 team exercise(s) for user databasequerycountstudent1
+    23:44:18.208 | 182 Pool-1-worker-75 | INFO  | d.t.c.a.a.c.DatabaseQueryCountTest   : Finish courses for dashboard call for multiple courses
+    23:44:18.208 | 182 Pool-1-worker-75 | INFO  | d.t.c.a.a.core.util.QueryCountAssert : result.callCount: 11
+    23:44:18.209 | 182 Pool-1-worker-75 | INFO  | d.t.c.a.a.c.DatabaseQueryCountTest   : Start course for dashboard call for one course
+    23:44:18.210 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/1227/for-dashboard
+    23:44:18.212 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.core.web.CourseResource    : REST request to get one course 1227 with exams, lectures, exercises, participations, submissions and results, etc.
+    23:44:18.221 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.core.web.CourseResource    : courseService.findOneWithExercisesAndLecturesAndExamsAndCompetenciesAndTutorialGroupsForUser done
+    23:44:18.223 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.core.web.CourseResource    : courseService.fetchParticipationsWithSubmissionsAndResultsForCourses done in getCourseForDashboard
+    23:44:18.223 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.core.web.CourseResource    : courseService.fetchPlagiarismCasesForCourseExercises done in getCourseForDashboard
+    23:44:18.224 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.core.web.CourseResource    : gradingScaleRepository.findByCourseId done in getCourseForDashboard
+    23:44:18.224 | 182 Pool-1-worker-75 | INFO  | d.t.c.a.a.core.web.CourseResource    : courses/1227/for-dashboard (single course) finished in 12.31ms for 1 courses with 5 individual exercise(s) and 0 team exercise(s) for user databasequerycountstudent1
+    23:44:18.230 | 182 Pool-1-worker-75 | INFO  | d.t.c.a.a.c.DatabaseQueryCountTest   : Finish courses for dashboard call for one course
+    23:44:18.230 | 182 Pool-1-worker-75 | INFO  | d.t.c.a.a.core.util.QueryCountAssert : result.callCount: 12
+
+  Starting logs for DatabaseQueryCountTest > testExamQueryCount()
+    23:44:18.243 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:44:18.246 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:44:18.249 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:44:18.250 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:44:18.251 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:44:18.253 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:44:18.253 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:44:18.254 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:44:18.258 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:44:18.259 | 182 Pool-1-worker-75 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='DatabaseQueryCountTest#testExamQueryCount'
+    23:44:18.285 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/1229/exams/167/student-exams/1/conduction
+    23:44:18.287 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to get the student exam of user databasequerycountstudent1 for exam 167
+    23:44:18.292 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.e.s.ExamSessionService     : Exam session started
+    23:44:18.297 | 182 Pool-1-worker-75 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : getStudentExamForConduction done in 11ms for 0 exercises for user databasequerycountstudent1
+    23:44:18.303 | 182 Pool-1-worker-75 | INFO  | d.t.c.a.a.core.util.QueryCountAssert : result.callCount: 7
+    23:44:18.305 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1229/exams/167/student-exams/submit
+    23:44:18.306 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to mark the studentExam as submitted : 1
+    23:44:18.308 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : Completed input validation for submitStudentExam in 2.15ms
+    23:44:18.308 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.e.s.StudentExamService     : Submit student exam with id 1
+    23:44:18.309 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Set student exam to submitted in 805µs
+    23:44:18.309 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Potentially save submissions in 7µs
+    23:44:18.309 | 182 Pool-1-worker-75 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Lock student repositories in 77µs
+    23:44:18.309 | 182 Pool-1-worker-75 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Completed submitStudentExam with 0 exercises for user databasequerycountstudent1 in a total time of 3.18ms
+    23:44:18.311 | 182 Pool-1-worker-75 | INFO  | d.t.c.a.a.core.util.QueryCountAssert : result.callCount: 3
+
+Finished logs for DatabaseQueryCountTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

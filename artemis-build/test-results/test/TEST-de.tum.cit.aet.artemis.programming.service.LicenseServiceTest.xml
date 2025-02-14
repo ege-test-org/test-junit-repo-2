@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.service.LicenseServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:57" hostname="fv-az1721-502" time="0.057">
+  <properties/>
+  <testcase name="testIsLicensedNoneRequired()" classname="de.tum.cit.aet.artemis.programming.service.LicenseServiceTest" time="0.012"/>
+  <testcase name="testIsLicensedMatlabUnlicensed()" classname="de.tum.cit.aet.artemis.programming.service.LicenseServiceTest" time="0.011"/>
+  <testcase name="testIsLicensedMatlab()" classname="de.tum.cit.aet.artemis.programming.service.LicenseServiceTest" time="0.01"/>
+  <testcase name="testGetLicenseMatlab()" classname="de.tum.cit.aet.artemis.programming.service.LicenseServiceTest" time="0.01"/>
+  <testcase name="testGetLicenseNoneRequired()" classname="de.tum.cit.aet.artemis.programming.service.LicenseServiceTest" time="0.01"/>
+  <system-out><![CDATA[
+Starting logs for LicenseServiceTest
+
+  Starting logs for LicenseServiceTest > testIsLicensedNoneRequired()
+    23:47:57.497 | 492 ool-1-worker-256 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LicenseServiceTest#testIsLicensedNoneRequired'
+
+  Starting logs for LicenseServiceTest > testIsLicensedMatlabUnlicensed()
+    23:47:57.509 | 492 ool-1-worker-256 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LicenseServiceTest#testIsLicensedMatlabUnlicensed'
+
+  Starting logs for LicenseServiceTest > testIsLicensedMatlab()
+    23:47:57.521 | 492 ool-1-worker-256 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LicenseServiceTest#testIsLicensedMatlab'
+
+  Starting logs for LicenseServiceTest > testGetLicenseMatlab()
+    23:47:57.531 | 492 ool-1-worker-256 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LicenseServiceTest#testGetLicenseMatlab'
+
+  Starting logs for LicenseServiceTest > testGetLicenseNoneRequired()
+    23:47:57.543 | 492 ool-1-worker-256 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LicenseServiceTest#testGetLicenseNoneRequired'
+
+Finished logs for LicenseServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

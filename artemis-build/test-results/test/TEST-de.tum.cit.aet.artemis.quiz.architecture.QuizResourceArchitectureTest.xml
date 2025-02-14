@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.quiz.architecture.QuizResourceArchitectureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:16" hostname="fv-az1721-502" time="0.776">
+  <properties/>
+  <testcase name="testNoOverrideOfEnforceAdmin()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizResourceArchitectureTest" time="0.055"/>
+  <testcase name="testUseKebabCaseForRestEndpoints()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizResourceArchitectureTest" time="0.385"/>
+  <testcase name="allPublicMethodsShouldReturnResponseEntity()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizResourceArchitectureTest" time="0.071"/>
+  <testcase name="testClassWithEnforceAdminInCorrectlyNamed()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizResourceArchitectureTest" time="0.006"/>
+  <testcase name="shouldBeNamedResource()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizResourceArchitectureTest" time="0.006"/>
+  <testcase name="shouldBeInResourcePackage()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizResourceArchitectureTest" time="0.002"/>
+  <testcase name="shouldCorrectlyUseRequestMappingAnnotations()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizResourceArchitectureTest" time="0.247"/>
+  <system-out><![CDATA[
+Starting logs for QuizResourceArchitectureTest
+
+  Starting logs for QuizResourceArchitectureTest > testNoOverrideOfEnforceAdmin()
+
+  Starting logs for QuizResourceArchitectureTest > testUseKebabCaseForRestEndpoints()
+
+  Starting logs for QuizResourceArchitectureTest > allPublicMethodsShouldReturnResponseEntity()
+
+  Starting logs for QuizResourceArchitectureTest > testClassWithEnforceAdminInCorrectlyNamed()
+
+  Starting logs for QuizResourceArchitectureTest > shouldBeNamedResource()
+
+  Starting logs for QuizResourceArchitectureTest > shouldBeInResourcePackage()
+
+  Starting logs for QuizResourceArchitectureTest > shouldCorrectlyUseRequestMappingAnnotations()
+
+Finished logs for QuizResourceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.exercise.participation.ParticipationIntegrationTest$ParticipationIntegrationIsolatedTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:49:35" hostname="fv-az1721-502" time="0.424">
+  <properties/>
+  <testcase name="getParticipation_quizExerciseStartedAndSubmissionAllowed(QuizMode) [1] quizMode=SYNCHRONIZED" classname="de.tum.cit.aet.artemis.exercise.participation.ParticipationIntegrationTest$ParticipationIntegrationIsolatedTest" time="0.134"/>
+  <testcase name="getParticipation_quizExerciseStartedAndSubmissionAllowed(QuizMode) [2] quizMode=BATCHED" classname="de.tum.cit.aet.artemis.exercise.participation.ParticipationIntegrationTest$ParticipationIntegrationIsolatedTest" time="0.146"/>
+  <testcase name="getParticipation_quizExerciseStartedAndSubmissionAllowed(QuizMode) [3] quizMode=INDIVIDUAL" classname="de.tum.cit.aet.artemis.exercise.participation.ParticipationIntegrationTest$ParticipationIntegrationIsolatedTest" time="0.14"/>
+  <system-out><![CDATA[
+Starting logs for ParticipationIntegrationIsolatedTest
+
+  Starting logs for ParticipationIntegrationIsolatedTest > getParticipation_quizExerciseStartedAndSubmissionAllowed(QuizMode) [1] quizMode=SYNCHRONIZED
+    23:49:35.339 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:35.344 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:35.346 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:35.348 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:35.351 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:35.352 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:35.352 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:35.352 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:49:35.355 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:49:35.366 |  27 nPool-1-worker-1 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '4092' from title cache 'exerciseTitle'
+    23:49:35.415 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ParticipationIntegrationIsolatedTest#getParticipation_quizExerciseStartedAndSubmissionAllowed'
+    23:49:35.417 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/4095/start-participation
+    23:49:35.419 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 4095
+    23:49:35.444 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/4095/start-participation
+    23:49:35.445 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 4095
+
+  Starting logs for ParticipationIntegrationIsolatedTest > getParticipation_quizExerciseStartedAndSubmissionAllowed(QuizMode) [2] quizMode=BATCHED
+    23:49:35.475 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:35.481 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:35.483 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:35.485 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:35.487 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:35.488 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:35.489 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:35.489 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:49:35.492 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:49:35.502 |  27 nPool-1-worker-1 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '4096' from title cache 'exerciseTitle'
+    23:49:35.552 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ParticipationIntegrationIsolatedTest#getParticipation_quizExerciseStartedAndSubmissionAllowed'
+    23:49:35.554 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/4099/start-participation
+    23:49:35.555 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 4099
+    23:49:35.587 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/4099/join
+    23:49:35.588 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.web.QuizExerciseResource : REST request to join quiz batch : 4099, QuizBatchJoinDTO[password=null]
+    23:49:35.594 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/4099/start-participation
+    23:49:35.595 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 4099
+
+  Starting logs for ParticipationIntegrationIsolatedTest > getParticipation_quizExerciseStartedAndSubmissionAllowed(QuizMode) [3] quizMode=INDIVIDUAL
+    23:49:35.623 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:35.628 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:35.630 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:35.632 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:35.634 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:35.636 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:35.636 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:35.636 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:49:35.639 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:49:35.650 |  27 nPool-1-worker-1 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '4100' from title cache 'exerciseTitle'
+    23:49:35.700 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ParticipationIntegrationIsolatedTest#getParticipation_quizExerciseStartedAndSubmissionAllowed'
+    23:49:35.702 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/4103/start-participation
+    23:49:35.703 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 4103
+    23:49:35.730 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/4103/join
+    23:49:35.730 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.web.QuizExerciseResource : REST request to join quiz batch : 4103, QuizBatchJoinDTO[password=null]
+    23:49:35.734 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/4103/start-participation
+    23:49:35.735 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 4103
+
+Finished logs for ParticipationIntegrationIsolatedTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

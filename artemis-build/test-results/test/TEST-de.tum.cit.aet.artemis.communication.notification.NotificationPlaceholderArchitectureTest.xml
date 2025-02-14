@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.notification.NotificationPlaceholderArchitectureTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:28" hostname="fv-az1721-502" time="0.195">
+  <properties/>
+  <testcase name="testNotificationPlaceholderCreatorStringArrayCreation()" classname="de.tum.cit.aet.artemis.communication.notification.NotificationPlaceholderArchitectureTest" time="0.131"/>
+  <testcase name="testPlaceholderCreatorMethodSignature()" classname="de.tum.cit.aet.artemis.communication.notification.NotificationPlaceholderArchitectureTest" time="0.064"/>
+  <system-out><![CDATA[
+Starting logs for NotificationPlaceholderArchitectureTest
+
+  Starting logs for NotificationPlaceholderArchitectureTest > testNotificationPlaceholderCreatorStringArrayCreation()
+
+  Starting logs for NotificationPlaceholderArchitectureTest > testPlaceholderCreatorMethodSignature()
+
+Finished logs for NotificationPlaceholderArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

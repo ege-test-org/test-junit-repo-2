@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.atlas.competency.CompetencyJolIntegrationTest$GetLatestJudgementOfLearningForCourse" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:00" hostname="fv-az1721-502" time="0.116">
+  <properties/>
+  <testcase name="shouldReturnValues()" classname="de.tum.cit.aet.artemis.atlas.competency.CompetencyJolIntegrationTest$GetLatestJudgementOfLearningForCourse" time="0.07"/>
+  <testcase name="shouldReturnForbiddenForStudentNotInCourse()" classname="de.tum.cit.aet.artemis.atlas.competency.CompetencyJolIntegrationTest$GetLatestJudgementOfLearningForCourse" time="0.044"/>
+  <system-out><![CDATA[
+Starting logs for GetLatestJudgementOfLearningForCourse
+
+  Starting logs for GetLatestJudgementOfLearningForCourse > shouldReturnValues()
+    23:43:00.344 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:00.349 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:43:00.351 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:00.352 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:00.353 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:00.355 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:43:00.355 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:43:00.355 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:43:00.358 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:43:00.369 | 119 Pool-1-worker-34 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GetLatestJudgementOfLearningForCourse#shouldReturnValues'
+    23:43:00.375 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/587/course-competencies/jol
+    23:43:00.381 | 119 Pool-1-worker-34 | DEBUG | t.c.a.a.a.w.CourseCompetencyResource : REST request to get judgement of learning for competencies of course: 587
+
+  Starting logs for GetLatestJudgementOfLearningForCourse > shouldReturnForbiddenForStudentNotInCourse()
+    23:43:00.409 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:00.411 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:43:00.413 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:00.414 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:00.415 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:00.417 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:43:00.417 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:43:00.417 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:43:00.421 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:43:00.431 | 119 Pool-1-worker-34 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GetLatestJudgementOfLearningForCourse#shouldReturnForbiddenForStudentNotInCourse'
+    23:43:00.434 | 119 Pool-1-worker-34 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/588/course-competencies/jol
+    23:43:00.436 | 119 Pool-1-worker-34 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Course with id 588
+
+Finished logs for GetLatestJudgementOfLearningForCourse
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:55" hostname="fv-az1721-502" time="3.836">
+  <properties/>
+  <testcase name="updateLectureUnitOrder_wrongSizeOfIds_shouldReturnBadRequest()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.232"/>
+  <testcase name="deleteLectureUnit_shouldRemoveCompletions()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.204"/>
+  <testcase name="deleteLectureUnit()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.185"/>
+  <testcase name="setLectureUnitCompletion_withoutLecture_shouldReturnBadRequest()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.251"/>
+  <testcase name="deleteLectureUnit_shouldUnlinkCompetency()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.326"/>
+  <testcase name="deleteLectureUnit_FirstLectureUnit_ShouldReorderList()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.201"/>
+  <testcase name="setLectureUnitCompletion_lectureUnitNotVisible_shouldReturnBadRequest()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.186"/>
+  <testcase name="deleteLectureUnit_notPartOfLecture_shouldReturnBadRequest()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.159"/>
+  <testcase name="updateLectureUnitOrder_asInstructor_shouldUpdateLectureUnitOrder()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.145"/>
+  <testcase name="setLectureUnitCompletion_lectureUnitNotPartOfLecture_shouldReturnBadRequest()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.134"/>
+  <testcase name="testGetLectureUnitForLearningPathNodeDetailsAsStudentOfCourse()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.142"/>
+  <testcase name="setLectureUnitCompletion_shouldReturnForbidden()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.136"/>
+  <testcase name="updateLectureUnitOrder_notInstructorInCourse_shouldReturnForbidden()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.139"/>
+  <testcase name="testAll_asTutor()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.149"/>
+  <testcase name="updateLectureUnitOrder_asInstructorWithWrongLectureId_shouldReturnNotFound()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.139"/>
+  <testcase name="testAll_asStudent()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.191"/>
+  <testcase name="setLectureUnitCompletion()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.192"/>
+  <testcase name="testGetLectureUnitForLearningPathNodeDetailsAsStudentNotInCourse()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.201"/>
+  <testcase name="deleteLectureUnit_asInstructorNotInCourse_shouldReturnForbidden()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.214"/>
+  <testcase name="updateLectureUnitOrder_newTextUnitInOrderedList_shouldReturnBadRequest()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitIntegrationTest" time="0.262"/>
+  <system-out><![CDATA[..................................................................................................................................
+
+Starting logs for LectureUnitIntegrationTest
+
+  Starting logs for LectureUnitIntegrationTest > updateLectureUnitOrder_wrongSizeOfIds_shouldReturnBadRequest()
+    23:46:55.084 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:55.086 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:55.088 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:55.089 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:55.091 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:55.093 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:46:55.094 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:46:55.094 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:55.096 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:55.172 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2972 and participant 585 (result to be deleted: null)
+    23:46:55.173 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2972 and participant 585 at 2025-02-14T23:46:55.273028907Z[Etc/UTC].
+    23:46:55.173 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2972 and participant 585 (result to be deleted: null)
+    23:46:55.173 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2972 and participant 585 at 2025-02-14T23:46:55.273575787Z[Etc/UTC].
+    23:46:55.174 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2973 and participant 585 (result to be deleted: null)
+    23:46:55.174 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2973 and participant 585 at 2025-02-14T23:46:55.274582866Z[Etc/UTC].
+    23:46:55.177 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2975 and participant 585 (result to be deleted: null)
+    23:46:55.177 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2975 and participant 585 at 2025-02-14T23:46:55.277563034Z[Etc/UTC].
+    23:46:55.177 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2975 and participant 585 (result to be deleted: null)
+    23:46:55.178 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2975 and participant 585 at 2025-02-14T23:46:55.278005288Z[Etc/UTC].
+    23:46:55.198 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2972 and participant 585 (result to be deleted: null)
+    23:46:55.198 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2972 and participant 585 at 2025-02-14T23:46:55.298718918Z[Etc/UTC].
+    23:46:55.215 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2972 and participant 585 (result to be deleted: null)
+    23:46:55.215 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2972 and participant 585 at 2025-02-14T23:46:55.315634756Z[Etc/UTC].
+    23:46:55.227 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2973 and participant 585 (result to be deleted: null)
+    23:46:55.227 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2973 and participant 585 at 2025-02-14T23:46:55.327136246Z[Etc/UTC].
+    23:46:55.238 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2975 and participant 585 (result to be deleted: null)
+    23:46:55.238 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2975 and participant 585 at 2025-02-14T23:46:55.338424337Z[Etc/UTC].
+    23:46:55.249 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2975 and participant 585 (result to be deleted: null)
+    23:46:55.249 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2975 and participant 585 at 2025-02-14T23:46:55.349255417Z[Etc/UTC].
+    23:46:55.279 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#updateLectureUnitOrder_wrongSizeOfIds_shouldReturnBadRequest'
+    23:46:55.283 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/741/lecture-units-order
+    23:46:55.284 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.l.web.LectureUnitResource  : REST request to update the order of lecture units of lecture: 741
+    23:46:55.291 | 415 ool-1-worker-179 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Received wrong size of lecture unit ids
+    23:46:55.291 | 415 ool-1-worker-179 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Received wrong size of lecture unit ids
+
+  Starting logs for LectureUnitIntegrationTest > deleteLectureUnit_shouldRemoveCompletions()
+    23:46:55.317 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:55.321 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:55.323 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:55.324 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:55.327 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:55.329 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:55.330 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:55.330 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:55.337 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:55.367 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2977 and participant 585 (result to be deleted: null)
+    23:46:55.368 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2977 and participant 585 at 2025-02-14T23:46:55.468038773Z[Etc/UTC].
+    23:46:55.368 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2977 and participant 585 (result to be deleted: null)
+    23:46:55.368 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2977 and participant 585 at 2025-02-14T23:46:55.468585462Z[Etc/UTC].
+    23:46:55.369 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2978 and participant 585 (result to be deleted: null)
+    23:46:55.369 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2978 and participant 585 at 2025-02-14T23:46:55.469075105Z[Etc/UTC].
+    23:46:55.369 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2980 and participant 585 (result to be deleted: null)
+    23:46:55.369 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2980 and participant 585 at 2025-02-14T23:46:55.469591829Z[Etc/UTC].
+    23:46:55.370 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2980 and participant 585 (result to be deleted: null)
+    23:46:55.370 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2980 and participant 585 at 2025-02-14T23:46:55.470084969Z[Etc/UTC].
+    23:46:55.381 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2977 and participant 585 (result to be deleted: null)
+    23:46:55.381 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2977 and participant 585 at 2025-02-14T23:46:55.481914921Z[Etc/UTC].
+    23:46:55.392 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2977 and participant 585 (result to be deleted: null)
+    23:46:55.392 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2977 and participant 585 at 2025-02-14T23:46:55.492765547Z[Etc/UTC].
+    23:46:55.404 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2978 and participant 585 (result to be deleted: null)
+    23:46:55.404 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2978 and participant 585 at 2025-02-14T23:46:55.504185966Z[Etc/UTC].
+    23:46:55.417 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2980 and participant 585 (result to be deleted: null)
+    23:46:55.417 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2980 and participant 585 at 2025-02-14T23:46:55.517735144Z[Etc/UTC].
+    23:46:55.428 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2980 and participant 585 (result to be deleted: null)
+    23:46:55.428 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2980 and participant 585 at 2025-02-14T23:46:55.528857357Z[Etc/UTC].
+    23:46:55.467 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#deleteLectureUnit_shouldRemoveCompletions'
+    23:46:55.479 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/lectures/743/lecture-units/769
+    23:46:55.479 | 415 ool-1-worker-179 | INFO  | d.t.c.a.a.l.web.LectureUnitResource  : REST request to delete lecture unit: 769
+    23:46:55.492 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 2977 and participant 585 to update participant scores.
+    23:46:55.504 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 2977 and participant 585 took 12 ms.
+
+  Starting logs for LectureUnitIntegrationTest > deleteLectureUnit()
+    23:46:55.530 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:55.536 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:55.542 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:55.543 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:55.551 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:55.556 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:55.557 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:55.557 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:55.563 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:55.596 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2982 and participant 585 (result to be deleted: null)
+    23:46:55.596 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2982 and participant 585 at 2025-02-14T23:46:55.696911533Z[Etc/UTC].
+    23:46:55.597 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2982 and participant 585 (result to be deleted: null)
+    23:46:55.597 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2982 and participant 585 at 2025-02-14T23:46:55.697492597Z[Etc/UTC].
+    23:46:55.597 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2983 and participant 585 (result to be deleted: null)
+    23:46:55.597 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2983 and participant 585 at 2025-02-14T23:46:55.697993030Z[Etc/UTC].
+    23:46:55.602 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2985 and participant 585 (result to be deleted: null)
+    23:46:55.602 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2985 and participant 585 at 2025-02-14T23:46:55.702510585Z[Etc/UTC].
+    23:46:55.602 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2985 and participant 585 (result to be deleted: null)
+    23:46:55.603 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2985 and participant 585 at 2025-02-14T23:46:55.703024925Z[Etc/UTC].
+    23:46:55.613 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2982 and participant 585 (result to be deleted: null)
+    23:46:55.613 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2982 and participant 585 at 2025-02-14T23:46:55.713970217Z[Etc/UTC].
+    23:46:55.627 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2982 and participant 585 (result to be deleted: null)
+    23:46:55.627 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2982 and participant 585 at 2025-02-14T23:46:55.727160807Z[Etc/UTC].
+    23:46:55.638 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2983 and participant 585 (result to be deleted: null)
+    23:46:55.638 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2983 and participant 585 at 2025-02-14T23:46:55.738217227Z[Etc/UTC].
+    23:46:55.652 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2985 and participant 585 (result to be deleted: null)
+    23:46:55.652 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2985 and participant 585 at 2025-02-14T23:46:55.752866277Z[Etc/UTC].
+    23:46:55.663 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2985 and participant 585 (result to be deleted: null)
+    23:46:55.663 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2985 and participant 585 at 2025-02-14T23:46:55.763934989Z[Etc/UTC].
+    23:46:55.687 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#deleteLectureUnit'
+    23:46:55.688 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/lectures/745/lecture-units/774
+    23:46:55.689 | 415 ool-1-worker-179 | INFO  | d.t.c.a.a.l.web.LectureUnitResource  : REST request to delete lecture unit: 774
+
+  Starting logs for LectureUnitIntegrationTest > setLectureUnitCompletion_withoutLecture_shouldReturnBadRequest()
+    23:46:55.711 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:55.714 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:55.716 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:55.718 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:55.720 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:55.723 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:55.723 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:55.723 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:55.726 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:55.789 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2987 and participant 585 (result to be deleted: null)
+    23:46:55.789 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2987 and participant 585 at 2025-02-14T23:46:55.889744088Z[Etc/UTC].
+    23:46:55.793 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2987 and participant 585 (result to be deleted: null)
+    23:46:55.793 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2987 and participant 585 at 2025-02-14T23:46:55.893277087Z[Etc/UTC].
+    23:46:55.793 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2988 and participant 585 (result to be deleted: null)
+    23:46:55.793 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2988 and participant 585 at 2025-02-14T23:46:55.893768684Z[Etc/UTC].
+    23:46:55.794 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2990 and participant 585 (result to be deleted: null)
+    23:46:55.794 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2990 and participant 585 at 2025-02-14T23:46:55.894271441Z[Etc/UTC].
+    23:46:55.797 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2990 and participant 585 (result to be deleted: null)
+    23:46:55.797 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2990 and participant 585 at 2025-02-14T23:46:55.897567659Z[Etc/UTC].
+    23:46:55.820 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2987 and participant 585 (result to be deleted: null)
+    23:46:55.820 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2987 and participant 585 at 2025-02-14T23:46:55.920485577Z[Etc/UTC].
+    23:46:55.843 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2987 and participant 585 (result to be deleted: null)
+    23:46:55.843 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2987 and participant 585 at 2025-02-14T23:46:55.943521178Z[Etc/UTC].
+    23:46:55.870 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2988 and participant 585 (result to be deleted: null)
+    23:46:55.870 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2988 and participant 585 at 2025-02-14T23:46:55.970986599Z[Etc/UTC].
+    23:46:55.896 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2990 and participant 585 (result to be deleted: null)
+    23:46:55.896 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2990 and participant 585 at 2025-02-14T23:46:55.996455638Z[Etc/UTC].
+    23:46:55.911 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2990 and participant 585 (result to be deleted: null)
+    23:46:55.911 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2990 and participant 585 at 2025-02-14T23:46:56.011330489Z[Etc/UTC].
+    23:46:55.935 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#setLectureUnitCompletion_withoutLecture_shouldReturnBadRequest'
+    23:46:55.937 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/747/lecture-units/783/completion
+    23:46:55.938 | 415 ool-1-worker-179 | INFO  | d.t.c.a.a.l.web.LectureUnitResource  : REST request to mark lecture unit as completed: 783
+    23:46:55.940 | 415 ool-1-worker-179 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Lecture unit must be associated to a lecture of a course
+    23:46:55.940 | 415 ool-1-worker-179 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Lecture unit must be associated to a lecture of a course
+
+  Starting logs for LectureUnitIntegrationTest > deleteLectureUnit_shouldUnlinkCompetency()
+    23:46:55.974 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:55.980 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:55.986 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:55.987 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:55.994 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:56.001 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:56.001 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:56.001 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:56.008 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:56.149 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2992 and participant 585 (result to be deleted: null)
+    23:46:56.149 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2992 and participant 585 at 2025-02-14T23:46:56.249713533Z[Etc/UTC].
+    23:46:56.150 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2992 and participant 585 (result to be deleted: null)
+    23:46:56.150 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2992 and participant 585 at 2025-02-14T23:46:56.250304305Z[Etc/UTC].
+    23:46:56.150 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2993 and participant 585 (result to be deleted: null)
+    23:46:56.150 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2993 and participant 585 at 2025-02-14T23:46:56.250733205Z[Etc/UTC].
+    23:46:56.151 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2995 and participant 585 (result to be deleted: null)
+    23:46:56.151 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2995 and participant 585 at 2025-02-14T23:46:56.251180770Z[Etc/UTC].
+    23:46:56.151 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2995 and participant 585 (result to be deleted: null)
+    23:46:56.151 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2995 and participant 585 at 2025-02-14T23:46:56.251671936Z[Etc/UTC].
+    23:46:56.166 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2992 and participant 585 (result to be deleted: null)
+    23:46:56.166 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2992 and participant 585 at 2025-02-14T23:46:56.266781945Z[Etc/UTC].
+    23:46:56.178 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2992 and participant 585 (result to be deleted: null)
+    23:46:56.178 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2992 and participant 585 at 2025-02-14T23:46:56.278386317Z[Etc/UTC].
+    23:46:56.189 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2993 and participant 585 (result to be deleted: null)
+    23:46:56.189 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2993 and participant 585 at 2025-02-14T23:46:56.289964830Z[Etc/UTC].
+    23:46:56.201 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2995 and participant 585 (result to be deleted: null)
+    23:46:56.201 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2995 and participant 585 at 2025-02-14T23:46:56.301279462Z[Etc/UTC].
+    23:46:56.212 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2995 and participant 585 (result to be deleted: null)
+    23:46:56.212 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2995 and participant 585 at 2025-02-14T23:46:56.312361840Z[Etc/UTC].
+    23:46:56.237 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#deleteLectureUnit_shouldUnlinkCompetency'
+    23:46:56.248 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/lectures/749/lecture-units/784
+    23:46:56.250 | 415 ool-1-worker-179 | INFO  | d.t.c.a.a.l.web.LectureUnitResource  : REST request to delete lecture unit: 784
+    23:46:56.260 | 621 artemis-task-1   | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress for 0 users.
+
+  Starting logs for LectureUnitIntegrationTest > deleteLectureUnit_FirstLectureUnit_ShouldReorderList()
+    23:46:56.298 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:56.301 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:56.304 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:56.305 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:56.308 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:56.310 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:56.311 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:56.311 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:56.314 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:56.342 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2997 and participant 585 (result to be deleted: null)
+    23:46:56.342 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2997 and participant 585 at 2025-02-14T23:46:56.442580452Z[Etc/UTC].
+    23:46:56.343 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2997 and participant 585 (result to be deleted: null)
+    23:46:56.343 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2997 and participant 585 at 2025-02-14T23:46:56.443054356Z[Etc/UTC].
+    23:46:56.343 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2998 and participant 585 (result to be deleted: null)
+    23:46:56.343 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2998 and participant 585 at 2025-02-14T23:46:56.443569246Z[Etc/UTC].
+    23:46:56.344 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3000 and participant 585 (result to be deleted: null)
+    23:46:56.344 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3000 and participant 585 at 2025-02-14T23:46:56.444077494Z[Etc/UTC].
+    23:46:56.344 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3000 and participant 585 (result to be deleted: null)
+    23:46:56.344 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3000 and participant 585 at 2025-02-14T23:46:56.444625626Z[Etc/UTC].
+    23:46:56.355 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2997 and participant 585 (result to be deleted: null)
+    23:46:56.355 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2997 and participant 585 at 2025-02-14T23:46:56.455613268Z[Etc/UTC].
+    23:46:56.366 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2997 and participant 585 (result to be deleted: null)
+    23:46:56.366 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2997 and participant 585 at 2025-02-14T23:46:56.466184392Z[Etc/UTC].
+    23:46:56.377 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2998 and participant 585 (result to be deleted: null)
+    23:46:56.377 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2998 and participant 585 at 2025-02-14T23:46:56.477162546Z[Etc/UTC].
+    23:46:56.388 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3000 and participant 585 (result to be deleted: null)
+    23:46:56.388 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3000 and participant 585 at 2025-02-14T23:46:56.488651813Z[Etc/UTC].
+    23:46:56.399 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3000 and participant 585 (result to be deleted: null)
+    23:46:56.399 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3000 and participant 585 at 2025-02-14T23:46:56.499810564Z[Etc/UTC].
+    23:46:56.442 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#deleteLectureUnit_FirstLectureUnit_ShouldReorderList'
+    23:46:56.447 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/lectures/752/lecture-units/789
+    23:46:56.448 | 415 ool-1-worker-179 | INFO  | d.t.c.a.a.l.web.LectureUnitResource  : REST request to delete lecture unit: 789
+    23:46:56.466 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 2997 and participant 585 to update participant scores.
+    23:46:56.481 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 2997 and participant 585 took 15 ms.
+
+  Starting logs for LectureUnitIntegrationTest > setLectureUnitCompletion_lectureUnitNotVisible_shouldReturnBadRequest()
+    23:46:56.501 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:56.510 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:56.516 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:56.517 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:56.525 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:56.529 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:56.530 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:56.530 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:56.536 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:56.583 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3002 and participant 585 (result to be deleted: null)
+    23:46:56.583 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3002 and participant 585 at 2025-02-14T23:46:56.683861030Z[Etc/UTC].
+    23:46:56.584 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3002 and participant 585 (result to be deleted: null)
+    23:46:56.584 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3002 and participant 585 at 2025-02-14T23:46:56.684350774Z[Etc/UTC].
+    23:46:56.584 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3003 and participant 585 (result to be deleted: null)
+    23:46:56.584 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3003 and participant 585 at 2025-02-14T23:46:56.684787798Z[Etc/UTC].
+    23:46:56.585 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3005 and participant 585 (result to be deleted: null)
+    23:46:56.585 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3005 and participant 585 at 2025-02-14T23:46:56.685252275Z[Etc/UTC].
+    23:46:56.585 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3005 and participant 585 (result to be deleted: null)
+    23:46:56.585 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3005 and participant 585 at 2025-02-14T23:46:56.685715509Z[Etc/UTC].
+    23:46:56.596 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3002 and participant 585 (result to be deleted: null)
+    23:46:56.596 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3002 and participant 585 at 2025-02-14T23:46:56.696564832Z[Etc/UTC].
+    23:46:56.607 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3002 and participant 585 (result to be deleted: null)
+    23:46:56.607 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3002 and participant 585 at 2025-02-14T23:46:56.707752707Z[Etc/UTC].
+    23:46:56.619 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3003 and participant 585 (result to be deleted: null)
+    23:46:56.619 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3003 and participant 585 at 2025-02-14T23:46:56.719149462Z[Etc/UTC].
+    23:46:56.630 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3005 and participant 585 (result to be deleted: null)
+    23:46:56.630 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3005 and participant 585 at 2025-02-14T23:46:56.730663545Z[Etc/UTC].
+    23:46:56.641 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3005 and participant 585 (result to be deleted: null)
+    23:46:56.641 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3005 and participant 585 at 2025-02-14T23:46:56.741759308Z[Etc/UTC].
+    23:46:56.665 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#setLectureUnitCompletion_lectureUnitNotVisible_shouldReturnBadRequest'
+    23:46:56.667 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/753/lecture-units/794/completion
+    23:46:56.667 | 415 ool-1-worker-179 | INFO  | d.t.c.a.a.l.web.LectureUnitResource  : REST request to mark lecture unit as completed: 794
+    23:46:56.669 | 415 ool-1-worker-179 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Requested lecture unit is not yet visible for students
+    23:46:56.669 | 415 ool-1-worker-179 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Requested lecture unit is not yet visible for students
+
+  Starting logs for LectureUnitIntegrationTest > deleteLectureUnit_notPartOfLecture_shouldReturnBadRequest()
+    23:46:56.685 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:56.688 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:56.690 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:56.692 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:56.694 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:56.696 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:56.697 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:56.697 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:56.700 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:56.743 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3007 and participant 585 (result to be deleted: null)
+    23:46:56.743 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3007 and participant 585 at 2025-02-14T23:46:56.843441581Z[Etc/UTC].
+    23:46:56.743 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3007 and participant 585 (result to be deleted: null)
+    23:46:56.743 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3007 and participant 585 at 2025-02-14T23:46:56.843914052Z[Etc/UTC].
+    23:46:56.744 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3008 and participant 585 (result to be deleted: null)
+    23:46:56.744 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3008 and participant 585 at 2025-02-14T23:46:56.844371766Z[Etc/UTC].
+    23:46:56.744 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3010 and participant 585 (result to be deleted: null)
+    23:46:56.744 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3010 and participant 585 at 2025-02-14T23:46:56.844801858Z[Etc/UTC].
+    23:46:56.747 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3010 and participant 585 (result to be deleted: null)
+    23:46:56.747 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3010 and participant 585 at 2025-02-14T23:46:56.847520498Z[Etc/UTC].
+    23:46:56.761 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3007 and participant 585 (result to be deleted: null)
+    23:46:56.761 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3007 and participant 585 at 2025-02-14T23:46:56.861521730Z[Etc/UTC].
+    23:46:56.772 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3007 and participant 585 (result to be deleted: null)
+    23:46:56.772 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3007 and participant 585 at 2025-02-14T23:46:56.872673858Z[Etc/UTC].
+    23:46:56.784 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3008 and participant 585 (result to be deleted: null)
+    23:46:56.784 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3008 and participant 585 at 2025-02-14T23:46:56.884413683Z[Etc/UTC].
+    23:46:56.795 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3010 and participant 585 (result to be deleted: null)
+    23:46:56.795 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3010 and participant 585 at 2025-02-14T23:46:56.895876650Z[Etc/UTC].
+    23:46:56.806 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3010 and participant 585 (result to be deleted: null)
+    23:46:56.806 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3010 and participant 585 at 2025-02-14T23:46:56.906784744Z[Etc/UTC].
+    23:46:56.828 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#deleteLectureUnit_notPartOfLecture_shouldReturnBadRequest'
+    23:46:56.830 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/lectures/2147483647/lecture-units/799
+    23:46:56.830 | 415 ool-1-worker-179 | INFO  | d.t.c.a.a.l.web.LectureUnitResource  : REST request to delete lecture unit: 799
+    23:46:56.832 | 415 ool-1-worker-179 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Requested lecture unit is not part of the specified lecture
+    23:46:56.832 | 415 ool-1-worker-179 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Requested lecture unit is not part of the specified lecture
+
+  Starting logs for LectureUnitIntegrationTest > updateLectureUnitOrder_asInstructor_shouldUpdateLectureUnitOrder()
+    23:46:56.846 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:56.849 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:56.851 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:56.853 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:56.855 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:56.857 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:56.858 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:56.858 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:56.861 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:56.888 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3012 and participant 585 (result to be deleted: null)
+    23:46:56.888 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3012 and participant 585 at 2025-02-14T23:46:56.988159314Z[Etc/UTC].
+    23:46:56.888 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3012 and participant 585 (result to be deleted: null)
+    23:46:56.888 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3012 and participant 585 at 2025-02-14T23:46:56.988608201Z[Etc/UTC].
+    23:46:56.889 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3013 and participant 585 (result to be deleted: null)
+    23:46:56.889 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3013 and participant 585 at 2025-02-14T23:46:56.989034917Z[Etc/UTC].
+    23:46:56.889 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3015 and participant 585 (result to be deleted: null)
+    23:46:56.889 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3015 and participant 585 at 2025-02-14T23:46:56.989493672Z[Etc/UTC].
+    23:46:56.889 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3015 and participant 585 (result to be deleted: null)
+    23:46:56.889 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3015 and participant 585 at 2025-02-14T23:46:56.989914778Z[Etc/UTC].
+    23:46:56.900 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3012 and participant 585 (result to be deleted: null)
+    23:46:56.900 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3012 and participant 585 at 2025-02-14T23:46:57.000476795Z[Etc/UTC].
+    23:46:56.911 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3012 and participant 585 (result to be deleted: null)
+    23:46:56.911 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3012 and participant 585 at 2025-02-14T23:46:57.011121087Z[Etc/UTC].
+    23:46:56.921 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3013 and participant 585 (result to be deleted: null)
+    23:46:56.921 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3013 and participant 585 at 2025-02-14T23:46:57.021988704Z[Etc/UTC].
+    23:46:56.932 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3015 and participant 585 (result to be deleted: null)
+    23:46:56.932 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3015 and participant 585 at 2025-02-14T23:46:57.032874125Z[Etc/UTC].
+    23:46:56.943 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3015 and participant 585 (result to be deleted: null)
+    23:46:56.943 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3015 and participant 585 at 2025-02-14T23:46:57.043633561Z[Etc/UTC].
+    23:46:56.964 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#updateLectureUnitOrder_asInstructor_shouldUpdateLectureUnitOrder'
+    23:46:56.966 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/757/lecture-units-order
+    23:46:56.967 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.l.web.LectureUnitResource  : REST request to update the order of lecture units of lecture: 757
+
+  Starting logs for LectureUnitIntegrationTest > setLectureUnitCompletion_lectureUnitNotPartOfLecture_shouldReturnBadRequest()
+    23:46:56.993 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:56.995 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:56.998 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:56.999 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:57.002 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:57.004 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:57.004 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:57.004 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:57.007 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:57.034 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3017 and participant 585 (result to be deleted: null)
+    23:46:57.034 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3017 and participant 585 at 2025-02-14T23:46:57.134912532Z[Etc/UTC].
+    23:46:57.035 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3017 and participant 585 (result to be deleted: null)
+    23:46:57.035 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3017 and participant 585 at 2025-02-14T23:46:57.135390694Z[Etc/UTC].
+    23:46:57.035 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3018 and participant 585 (result to be deleted: null)
+    23:46:57.035 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3018 and participant 585 at 2025-02-14T23:46:57.135812461Z[Etc/UTC].
+    23:46:57.036 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3020 and participant 585 (result to be deleted: null)
+    23:46:57.036 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3020 and participant 585 at 2025-02-14T23:46:57.136310029Z[Etc/UTC].
+    23:46:57.036 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3020 and participant 585 (result to be deleted: null)
+    23:46:57.036 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3020 and participant 585 at 2025-02-14T23:46:57.136737155Z[Etc/UTC].
+    23:46:57.047 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3017 and participant 585 (result to be deleted: null)
+    23:46:57.047 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3017 and participant 585 at 2025-02-14T23:46:57.147598781Z[Etc/UTC].
+    23:46:57.058 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3017 and participant 585 (result to be deleted: null)
+    23:46:57.058 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3017 and participant 585 at 2025-02-14T23:46:57.158156361Z[Etc/UTC].
+    23:46:57.068 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3018 and participant 585 (result to be deleted: null)
+    23:46:57.069 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3018 and participant 585 at 2025-02-14T23:46:57.169047813Z[Etc/UTC].
+    23:46:57.080 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3020 and participant 585 (result to be deleted: null)
+    23:46:57.080 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3020 and participant 585 at 2025-02-14T23:46:57.180594688Z[Etc/UTC].
+    23:46:57.091 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3020 and participant 585 (result to be deleted: null)
+    23:46:57.091 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3020 and participant 585 at 2025-02-14T23:46:57.191615531Z[Etc/UTC].
+    23:46:57.113 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#setLectureUnitCompletion_lectureUnitNotPartOfLecture_shouldReturnBadRequest'
+    23:46:57.114 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/759/lecture-units/810/completion
+    23:46:57.115 | 415 ool-1-worker-179 | INFO  | d.t.c.a.a.l.web.LectureUnitResource  : REST request to mark lecture unit as completed: 810
+    23:46:57.115 | 415 ool-1-worker-179 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Requested lecture unit is not part of the specified lecture
+    23:46:57.115 | 415 ool-1-worker-179 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Requested lecture unit is not part of the specified lecture
+
+  Starting logs for LectureUnitIntegrationTest > testGetLectureUnitForLearningPathNodeDetailsAsStudentOfCourse()
+    23:46:57.129 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:57.132 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:57.135 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:57.136 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:57.138 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:57.140 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:57.141 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:57.141 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:57.144 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:57.171 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3022 and participant 585 (result to be deleted: null)
+    23:46:57.171 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3022 and participant 585 at 2025-02-14T23:46:57.271239506Z[Etc/UTC].
+    23:46:57.171 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3022 and participant 585 (result to be deleted: null)
+    23:46:57.171 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3022 and participant 585 at 2025-02-14T23:46:57.271746963Z[Etc/UTC].
+    23:46:57.172 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3023 and participant 585 (result to be deleted: null)
+    23:46:57.172 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3023 and participant 585 at 2025-02-14T23:46:57.272203114Z[Etc/UTC].
+    23:46:57.172 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3025 and participant 585 (result to be deleted: null)
+    23:46:57.172 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3025 and participant 585 at 2025-02-14T23:46:57.272644166Z[Etc/UTC].
+    23:46:57.173 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3025 and participant 585 (result to be deleted: null)
+    23:46:57.173 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3025 and participant 585 at 2025-02-14T23:46:57.273068407Z[Etc/UTC].
+    23:46:57.183 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3022 and participant 585 (result to be deleted: null)
+    23:46:57.183 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3022 and participant 585 at 2025-02-14T23:46:57.283830287Z[Etc/UTC].
+    23:46:57.194 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3022 and participant 585 (result to be deleted: null)
+    23:46:57.194 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3022 and participant 585 at 2025-02-14T23:46:57.294457798Z[Etc/UTC].
+    23:46:57.205 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3023 and participant 585 (result to be deleted: null)
+    23:46:57.205 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3023 and participant 585 at 2025-02-14T23:46:57.305228525Z[Etc/UTC].
+    23:46:57.216 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3025 and participant 585 (result to be deleted: null)
+    23:46:57.216 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3025 and participant 585 at 2025-02-14T23:46:57.316124295Z[Etc/UTC].
+    23:46:57.226 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3025 and participant 585 (result to be deleted: null)
+    23:46:57.226 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3025 and participant 585 at 2025-02-14T23:46:57.326645456Z[Etc/UTC].
+    23:46:57.248 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#testGetLectureUnitForLearningPathNodeDetailsAsStudentOfCourse'
+    23:46:57.250 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/lecture-units/814/for-learning-path-node-details
+    23:46:57.251 | 415 ool-1-worker-179 | INFO  | d.t.c.a.a.l.web.LectureUnitResource  : REST request to get lecture unit for learning path node details with id: 814
+
+  Starting logs for LectureUnitIntegrationTest > setLectureUnitCompletion_shouldReturnForbidden()
+    23:46:57.273 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:57.276 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:57.278 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:57.280 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:57.282 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:57.284 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:57.285 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:57.285 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:57.288 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:57.315 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3027 and participant 585 (result to be deleted: null)
+    23:46:57.315 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3027 and participant 585 at 2025-02-14T23:46:57.415744773Z[Etc/UTC].
+    23:46:57.316 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3027 and participant 585 (result to be deleted: null)
+    23:46:57.316 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3027 and participant 585 at 2025-02-14T23:46:57.416225960Z[Etc/UTC].
+    23:46:57.316 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3028 and participant 585 (result to be deleted: null)
+    23:46:57.316 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3028 and participant 585 at 2025-02-14T23:46:57.416664578Z[Etc/UTC].
+    23:46:57.317 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3030 and participant 585 (result to be deleted: null)
+    23:46:57.317 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3030 and participant 585 at 2025-02-14T23:46:57.417092486Z[Etc/UTC].
+    23:46:57.317 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3030 and participant 585 (result to be deleted: null)
+    23:46:57.317 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3030 and participant 585 at 2025-02-14T23:46:57.417535633Z[Etc/UTC].
+    23:46:57.328 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3027 and participant 585 (result to be deleted: null)
+    23:46:57.328 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3027 and participant 585 at 2025-02-14T23:46:57.428415733Z[Etc/UTC].
+    23:46:57.339 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3027 and participant 585 (result to be deleted: null)
+    23:46:57.339 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3027 and participant 585 at 2025-02-14T23:46:57.439360515Z[Etc/UTC].
+    23:46:57.350 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3028 and participant 585 (result to be deleted: null)
+    23:46:57.351 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3028 and participant 585 at 2025-02-14T23:46:57.450996546Z[Etc/UTC].
+    23:46:57.361 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3030 and participant 585 (result to be deleted: null)
+    23:46:57.361 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3030 and participant 585 at 2025-02-14T23:46:57.461896243Z[Etc/UTC].
+    23:46:57.372 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3030 and participant 585 (result to be deleted: null)
+    23:46:57.372 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3030 and participant 585 at 2025-02-14T23:46:57.472518674Z[Etc/UTC].
+    23:46:57.393 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#setLectureUnitCompletion_shouldReturnForbidden'
+    23:46:57.395 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/763/lecture-units/819/completion
+    23:46:57.395 | 415 ool-1-worker-179 | INFO  | d.t.c.a.a.l.web.LectureUnitResource  : REST request to mark lecture unit as completed: 819
+    23:46:57.397 | 415 ool-1-worker-179 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Course with id 2244
+
+  Starting logs for LectureUnitIntegrationTest > updateLectureUnitOrder_notInstructorInCourse_shouldReturnForbidden()
+    23:46:57.411 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:57.414 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:57.417 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:57.418 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:57.421 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:57.423 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:57.423 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:57.423 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:57.426 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:57.454 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3032 and participant 585 (result to be deleted: null)
+    23:46:57.454 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3032 and participant 585 at 2025-02-14T23:46:57.554268784Z[Etc/UTC].
+    23:46:57.454 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3032 and participant 585 (result to be deleted: null)
+    23:46:57.454 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3032 and participant 585 at 2025-02-14T23:46:57.554744561Z[Etc/UTC].
+    23:46:57.455 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3033 and participant 585 (result to be deleted: null)
+    23:46:57.455 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3033 and participant 585 at 2025-02-14T23:46:57.555199129Z[Etc/UTC].
+    23:46:57.455 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3035 and participant 585 (result to be deleted: null)
+    23:46:57.455 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3035 and participant 585 at 2025-02-14T23:46:57.555622739Z[Etc/UTC].
+    23:46:57.456 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3035 and participant 585 (result to be deleted: null)
+    23:46:57.456 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3035 and participant 585 at 2025-02-14T23:46:57.556041310Z[Etc/UTC].
+    23:46:57.466 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3032 and participant 585 (result to be deleted: null)
+    23:46:57.466 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3032 and participant 585 at 2025-02-14T23:46:57.566849657Z[Etc/UTC].
+    23:46:57.477 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3032 and participant 585 (result to be deleted: null)
+    23:46:57.477 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3032 and participant 585 at 2025-02-14T23:46:57.577814426Z[Etc/UTC].
+    23:46:57.488 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3033 and participant 585 (result to be deleted: null)
+    23:46:57.488 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3033 and participant 585 at 2025-02-14T23:46:57.588809671Z[Etc/UTC].
+    23:46:57.499 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3035 and participant 585 (result to be deleted: null)
+    23:46:57.499 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3035 and participant 585 at 2025-02-14T23:46:57.599976667Z[Etc/UTC].
+    23:46:57.510 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3035 and participant 585 (result to be deleted: null)
+    23:46:57.510 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3035 and participant 585 at 2025-02-14T23:46:57.610931989Z[Etc/UTC].
+    23:46:57.532 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#updateLectureUnitOrder_notInstructorInCourse_shouldReturnForbidden'
+    23:46:57.533 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/765/lecture-units-order
+    23:46:57.534 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.l.web.LectureUnitResource  : REST request to update the order of lecture units of lecture: 765
+    23:46:57.537 | 415 ool-1-worker-179 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Course with id 2246
+
+  Starting logs for LectureUnitIntegrationTest > testAll_asTutor()
+    23:46:57.551 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:57.554 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:57.557 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:57.558 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:57.561 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:57.562 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:57.563 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:57.563 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:57.566 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:57.594 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3037 and participant 585 (result to be deleted: null)
+    23:46:57.595 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3037 and participant 585 at 2025-02-14T23:46:57.695037331Z[Etc/UTC].
+    23:46:57.595 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3037 and participant 585 (result to be deleted: null)
+    23:46:57.595 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3037 and participant 585 at 2025-02-14T23:46:57.695515533Z[Etc/UTC].
+    23:46:57.595 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3038 and participant 585 (result to be deleted: null)
+    23:46:57.596 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3038 and participant 585 at 2025-02-14T23:46:57.695997983Z[Etc/UTC].
+    23:46:57.596 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3040 and participant 585 (result to be deleted: null)
+    23:46:57.596 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3040 and participant 585 at 2025-02-14T23:46:57.696473400Z[Etc/UTC].
+    23:46:57.596 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3040 and participant 585 (result to be deleted: null)
+    23:46:57.596 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3040 and participant 585 at 2025-02-14T23:46:57.696930843Z[Etc/UTC].
+    23:46:57.607 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3037 and participant 585 (result to be deleted: null)
+    23:46:57.608 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3037 and participant 585 at 2025-02-14T23:46:57.708037166Z[Etc/UTC].
+    23:46:57.619 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3037 and participant 585 (result to be deleted: null)
+    23:46:57.619 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3037 and participant 585 at 2025-02-14T23:46:57.719149981Z[Etc/UTC].
+    23:46:57.630 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3038 and participant 585 (result to be deleted: null)
+    23:46:57.630 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3038 and participant 585 at 2025-02-14T23:46:57.730318680Z[Etc/UTC].
+    23:46:57.641 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3040 and participant 585 (result to be deleted: null)
+    23:46:57.641 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3040 and participant 585 at 2025-02-14T23:46:57.741429982Z[Etc/UTC].
+    23:46:57.652 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3040 and participant 585 (result to be deleted: null)
+    23:46:57.652 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3040 and participant 585 at 2025-02-14T23:46:57.752791010Z[Etc/UTC].
+    23:46:57.684 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#testAll_asTutor'
+    23:46:57.685 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/768/lecture-units-order
+    23:46:57.687 | 415 ool-1-worker-179 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:46:57.688 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/lectures/768/lecture-units/0
+    23:46:57.689 | 415 ool-1-worker-179 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for LectureUnitIntegrationTest > updateLectureUnitOrder_asInstructorWithWrongLectureId_shouldReturnNotFound()
+    23:46:57.702 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:57.705 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:57.708 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:57.709 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:57.711 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:57.713 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:57.714 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:57.714 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:57.717 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:57.744 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3042 and participant 585 (result to be deleted: null)
+    23:46:57.744 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3042 and participant 585 at 2025-02-14T23:46:57.844647800Z[Etc/UTC].
+    23:46:57.745 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3042 and participant 585 (result to be deleted: null)
+    23:46:57.745 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3042 and participant 585 at 2025-02-14T23:46:57.845085677Z[Etc/UTC].
+    23:46:57.745 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3043 and participant 585 (result to be deleted: null)
+    23:46:57.745 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3043 and participant 585 at 2025-02-14T23:46:57.845557167Z[Etc/UTC].
+    23:46:57.745 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3045 and participant 585 (result to be deleted: null)
+    23:46:57.745 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3045 and participant 585 at 2025-02-14T23:46:57.845989943Z[Etc/UTC].
+    23:46:57.746 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3045 and participant 585 (result to be deleted: null)
+    23:46:57.746 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3045 and participant 585 at 2025-02-14T23:46:57.846430676Z[Etc/UTC].
+    23:46:57.757 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3042 and participant 585 (result to be deleted: null)
+    23:46:57.757 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3042 and participant 585 at 2025-02-14T23:46:57.857220318Z[Etc/UTC].
+    23:46:57.767 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3042 and participant 585 (result to be deleted: null)
+    23:46:57.767 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3042 and participant 585 at 2025-02-14T23:46:57.867847467Z[Etc/UTC].
+    23:46:57.780 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3043 and participant 585 (result to be deleted: null)
+    23:46:57.780 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3043 and participant 585 at 2025-02-14T23:46:57.880525170Z[Etc/UTC].
+    23:46:57.792 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3045 and participant 585 (result to be deleted: null)
+    23:46:57.792 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3045 and participant 585 at 2025-02-14T23:46:57.892226483Z[Etc/UTC].
+    23:46:57.803 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3045 and participant 585 (result to be deleted: null)
+    23:46:57.803 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3045 and participant 585 at 2025-02-14T23:46:57.903457047Z[Etc/UTC].
+    23:46:57.827 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#updateLectureUnitOrder_asInstructorWithWrongLectureId_shouldReturnNotFound'
+    23:46:57.828 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/0/lecture-units-order
+    23:46:57.828 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.l.web.LectureUnitResource  : REST request to update the order of lecture units of lecture: 0
+    23:46:57.830 | 415 ool-1-worker-179 | WARN  | o.z.p.spring.common.AdviceTraits     : Not Found: Lecture with identifier: "0" does not exist
+
+  Starting logs for LectureUnitIntegrationTest > testAll_asStudent()
+    23:46:57.844 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:57.847 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:57.850 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:57.851 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:57.854 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:57.856 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:57.857 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:57.857 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:57.860 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:57.890 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3047 and participant 585 (result to be deleted: null)
+    23:46:57.890 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3047 and participant 585 at 2025-02-14T23:46:57.990330884Z[Etc/UTC].
+    23:46:57.890 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3047 and participant 585 (result to be deleted: null)
+    23:46:57.890 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3047 and participant 585 at 2025-02-14T23:46:57.990799046Z[Etc/UTC].
+    23:46:57.894 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3048 and participant 585 (result to be deleted: null)
+    23:46:57.894 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3048 and participant 585 at 2025-02-14T23:46:57.994312810Z[Etc/UTC].
+    23:46:57.894 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3050 and participant 585 (result to be deleted: null)
+    23:46:57.894 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3050 and participant 585 at 2025-02-14T23:46:57.994763390Z[Etc/UTC].
+    23:46:57.895 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3050 and participant 585 (result to be deleted: null)
+    23:46:57.895 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3050 and participant 585 at 2025-02-14T23:46:57.995218629Z[Etc/UTC].
+    23:46:57.912 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3047 and participant 585 (result to be deleted: null)
+    23:46:57.912 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3047 and participant 585 at 2025-02-14T23:46:58.012662060Z[Etc/UTC].
+    23:46:57.926 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3047 and participant 585 (result to be deleted: null)
+    23:46:57.926 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3047 and participant 585 at 2025-02-14T23:46:58.026759611Z[Etc/UTC].
+    23:46:57.953 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3048 and participant 585 (result to be deleted: null)
+    23:46:57.953 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3048 and participant 585 at 2025-02-14T23:46:58.053324965Z[Etc/UTC].
+    23:46:57.977 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3050 and participant 585 (result to be deleted: null)
+    23:46:57.977 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3050 and participant 585 at 2025-02-14T23:46:58.077874418Z[Etc/UTC].
+    23:46:57.995 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3050 and participant 585 (result to be deleted: null)
+    23:46:57.995 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3050 and participant 585 at 2025-02-14T23:46:58.095593895Z[Etc/UTC].
+    23:46:58.018 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#testAll_asStudent'
+    23:46:58.019 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/771/lecture-units-order
+    23:46:58.020 | 415 ool-1-worker-179 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:46:58.021 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/lectures/771/lecture-units/0
+    23:46:58.022 | 415 ool-1-worker-179 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for LectureUnitIntegrationTest > setLectureUnitCompletion()
+    23:46:58.044 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:58.048 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:58.053 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:58.054 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:58.058 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:58.060 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:58.061 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:58.061 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:58.064 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:58.095 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3052 and participant 585 (result to be deleted: null)
+    23:46:58.095 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3052 and participant 585 at 2025-02-14T23:46:58.195509189Z[Etc/UTC].
+    23:46:58.096 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3052 and participant 585 (result to be deleted: null)
+    23:46:58.096 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3052 and participant 585 at 2025-02-14T23:46:58.196098629Z[Etc/UTC].
+    23:46:58.096 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3053 and participant 585 (result to be deleted: null)
+    23:46:58.096 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3053 and participant 585 at 2025-02-14T23:46:58.196612607Z[Etc/UTC].
+    23:46:58.097 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3055 and participant 585 (result to be deleted: null)
+    23:46:58.097 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3055 and participant 585 at 2025-02-14T23:46:58.197092252Z[Etc/UTC].
+    23:46:58.097 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3055 and participant 585 (result to be deleted: null)
+    23:46:58.097 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3055 and participant 585 at 2025-02-14T23:46:58.197567107Z[Etc/UTC].
+    23:46:58.109 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3052 and participant 585 (result to be deleted: null)
+    23:46:58.109 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3052 and participant 585 at 2025-02-14T23:46:58.209158765Z[Etc/UTC].
+    23:46:58.122 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3052 and participant 585 (result to be deleted: null)
+    23:46:58.123 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3052 and participant 585 at 2025-02-14T23:46:58.223018133Z[Etc/UTC].
+    23:46:58.134 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3053 and participant 585 (result to be deleted: null)
+    23:46:58.135 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3053 and participant 585 at 2025-02-14T23:46:58.235012882Z[Etc/UTC].
+    23:46:58.147 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3055 and participant 585 (result to be deleted: null)
+    23:46:58.147 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3055 and participant 585 at 2025-02-14T23:46:58.247382280Z[Etc/UTC].
+    23:46:58.159 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3055 and participant 585 (result to be deleted: null)
+    23:46:58.159 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3055 and participant 585 at 2025-02-14T23:46:58.259097539Z[Etc/UTC].
+    23:46:58.183 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#setLectureUnitCompletion'
+    23:46:58.185 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/773/lecture-units/844/completion
+    23:46:58.185 | 415 ool-1-worker-179 | INFO  | d.t.c.a.a.l.web.LectureUnitResource  : REST request to mark lecture unit as completed: 844
+    23:46:58.193 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/773/lecture-units/844/completion
+    23:46:58.193 | 415 ool-1-worker-179 | INFO  | d.t.c.a.a.l.web.LectureUnitResource  : REST request to mark lecture unit as completed: 844
+
+  Starting logs for LectureUnitIntegrationTest > testGetLectureUnitForLearningPathNodeDetailsAsStudentNotInCourse()
+    23:46:58.242 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:58.248 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:58.252 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:58.253 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:58.260 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:58.265 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:58.265 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:58.265 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:58.271 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:58.306 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3057 and participant 585 (result to be deleted: null)
+    23:46:58.306 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3057 and participant 585 at 2025-02-14T23:46:58.406095767Z[Etc/UTC].
+    23:46:58.306 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3057 and participant 585 (result to be deleted: null)
+    23:46:58.306 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3057 and participant 585 at 2025-02-14T23:46:58.406581463Z[Etc/UTC].
+    23:46:58.306 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3058 and participant 585 (result to be deleted: null)
+    23:46:58.307 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3058 and participant 585 at 2025-02-14T23:46:58.407021103Z[Etc/UTC].
+    23:46:58.312 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3060 and participant 585 (result to be deleted: null)
+    23:46:58.312 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3060 and participant 585 at 2025-02-14T23:46:58.412634740Z[Etc/UTC].
+    23:46:58.313 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3060 and participant 585 (result to be deleted: null)
+    23:46:58.313 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3060 and participant 585 at 2025-02-14T23:46:58.413155001Z[Etc/UTC].
+    23:46:58.324 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3057 and participant 585 (result to be deleted: null)
+    23:46:58.324 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3057 and participant 585 at 2025-02-14T23:46:58.424738533Z[Etc/UTC].
+    23:46:58.335 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3057 and participant 585 (result to be deleted: null)
+    23:46:58.335 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3057 and participant 585 at 2025-02-14T23:46:58.435991920Z[Etc/UTC].
+    23:46:58.350 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3058 and participant 585 (result to be deleted: null)
+    23:46:58.350 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3058 and participant 585 at 2025-02-14T23:46:58.450875498Z[Etc/UTC].
+    23:46:58.372 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3060 and participant 585 (result to be deleted: null)
+    23:46:58.372 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3060 and participant 585 at 2025-02-14T23:46:58.472975095Z[Etc/UTC].
+    23:46:58.385 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3060 and participant 585 (result to be deleted: null)
+    23:46:58.385 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3060 and participant 585 at 2025-02-14T23:46:58.485750260Z[Etc/UTC].
+    23:46:58.414 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#testGetLectureUnitForLearningPathNodeDetailsAsStudentNotInCourse'
+    23:46:58.416 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/lecture-units/849/for-learning-path-node-details
+    23:46:58.416 | 415 ool-1-worker-179 | INFO  | d.t.c.a.a.l.web.LectureUnitResource  : REST request to get lecture unit for learning path node details with id: 849
+    23:46:58.419 | 415 ool-1-worker-179 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Course with id 2256
+
+  Starting logs for LectureUnitIntegrationTest > deleteLectureUnit_asInstructorNotInCourse_shouldReturnForbidden()
+    23:46:58.440 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:58.443 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:58.447 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:58.448 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:58.451 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:58.454 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:58.455 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:58.455 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:58.462 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:58.510 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3062 and participant 585 (result to be deleted: null)
+    23:46:58.513 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3062 and participant 585 at 2025-02-14T23:46:58.610524428Z[Etc/UTC].
+    23:46:58.513 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3062 and participant 585 (result to be deleted: null)
+    23:46:58.513 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3062 and participant 585 at 2025-02-14T23:46:58.613726600Z[Etc/UTC].
+    23:46:58.514 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3063 and participant 585 (result to be deleted: null)
+    23:46:58.514 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3063 and participant 585 at 2025-02-14T23:46:58.614320257Z[Etc/UTC].
+    23:46:58.514 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3065 and participant 585 (result to be deleted: null)
+    23:46:58.514 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3065 and participant 585 at 2025-02-14T23:46:58.614913263Z[Etc/UTC].
+    23:46:58.515 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3065 and participant 585 (result to be deleted: null)
+    23:46:58.515 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3065 and participant 585 at 2025-02-14T23:46:58.615513743Z[Etc/UTC].
+    23:46:58.529 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3062 and participant 585 (result to be deleted: null)
+    23:46:58.529 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3062 and participant 585 at 2025-02-14T23:46:58.629490409Z[Etc/UTC].
+    23:46:58.541 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3062 and participant 585 (result to be deleted: null)
+    23:46:58.541 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3062 and participant 585 at 2025-02-14T23:46:58.641541023Z[Etc/UTC].
+    23:46:58.553 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3063 and participant 585 (result to be deleted: null)
+    23:46:58.553 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3063 and participant 585 at 2025-02-14T23:46:58.653554037Z[Etc/UTC].
+    23:46:58.565 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3065 and participant 585 (result to be deleted: null)
+    23:46:58.565 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3065 and participant 585 at 2025-02-14T23:46:58.665605151Z[Etc/UTC].
+    23:46:58.578 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3065 and participant 585 (result to be deleted: null)
+    23:46:58.578 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3065 and participant 585 at 2025-02-14T23:46:58.678849972Z[Etc/UTC].
+    23:46:58.618 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#deleteLectureUnit_asInstructorNotInCourse_shouldReturnForbidden'
+    23:46:58.622 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/lectures/777/lecture-units/854
+    23:46:58.622 | 415 ool-1-worker-179 | INFO  | d.t.c.a.a.l.web.LectureUnitResource  : REST request to delete lecture unit: 854
+    23:46:58.628 | 415 ool-1-worker-179 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Course with id 2258
+
+  Starting logs for LectureUnitIntegrationTest > updateLectureUnitOrder_newTextUnitInOrderedList_shouldReturnBadRequest()
+    23:46:58.658 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:58.665 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:58.670 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:58.672 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:58.677 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:58.683 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:58.684 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:58.684 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:58.687 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:58.747 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3067 and participant 585 (result to be deleted: null)
+    23:46:58.747 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3067 and participant 585 at 2025-02-14T23:46:58.847756284Z[Etc/UTC].
+    23:46:58.748 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3067 and participant 585 (result to be deleted: null)
+    23:46:58.748 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3067 and participant 585 at 2025-02-14T23:46:58.848288827Z[Etc/UTC].
+    23:46:58.748 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3068 and participant 585 (result to be deleted: null)
+    23:46:58.748 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3068 and participant 585 at 2025-02-14T23:46:58.848781626Z[Etc/UTC].
+    23:46:58.753 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3070 and participant 585 (result to be deleted: null)
+    23:46:58.753 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3070 and participant 585 at 2025-02-14T23:46:58.853284884Z[Etc/UTC].
+    23:46:58.753 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3070 and participant 585 (result to be deleted: null)
+    23:46:58.753 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3070 and participant 585 at 2025-02-14T23:46:58.853803061Z[Etc/UTC].
+    23:46:58.820 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3067 and participant 585 (result to be deleted: null)
+    23:46:58.820 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3067 and participant 585 at 2025-02-14T23:46:58.920844691Z[Etc/UTC].
+    23:46:58.832 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3067 and participant 585 (result to be deleted: null)
+    23:46:58.832 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3067 and participant 585 at 2025-02-14T23:46:58.932974482Z[Etc/UTC].
+    23:46:58.844 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3068 and participant 585 (result to be deleted: null)
+    23:46:58.844 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3068 and participant 585 at 2025-02-14T23:46:58.944781963Z[Etc/UTC].
+    23:46:58.853 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 3070 and participant 585 to update participant scores.
+    23:46:58.856 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3070 and participant 585 (result to be deleted: null)
+    23:46:58.856 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3070 and participant 585 at 2025-02-14T23:46:58.956772554Z[Etc/UTC].
+    23:46:58.861 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 3070 and participant 585 took 8 ms.
+    23:46:58.869 | 415 ool-1-worker-179 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3070 and participant 585 (result to be deleted: null)
+    23:46:58.869 | 415 ool-1-worker-179 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3070 and participant 585 at 2025-02-14T23:46:58.969237952Z[Etc/UTC].
+    23:46:58.893 | 415 ool-1-worker-179 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitIntegrationTest#updateLectureUnitOrder_newTextUnitInOrderedList_shouldReturnBadRequest'
+    23:46:58.896 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/779/lecture-units-order
+    23:46:58.899 | 415 ool-1-worker-179 | DEBUG | d.t.c.a.a.l.web.LectureUnitResource  : REST request to update the order of lecture units of lecture: 779
+    23:46:58.904 | 415 ool-1-worker-179 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Received lecture unit is not part of the lecture
+    23:46:58.904 | 415 ool-1-worker-179 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Received lecture unit is not part of the lecture
+
+Finished logs for LectureUnitIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadResourceArchitectureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:57" hostname="fv-az1721-502" time="0.152">
+  <properties/>
+  <testcase name="testNoOverrideOfEnforceAdmin()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadResourceArchitectureTest" time="0.013"/>
+  <testcase name="testUseKebabCaseForRestEndpoints()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadResourceArchitectureTest" time="0.056"/>
+  <testcase name="allPublicMethodsShouldReturnResponseEntity()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadResourceArchitectureTest" time="0.024"/>
+  <testcase name="testClassWithEnforceAdminInCorrectlyNamed()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadResourceArchitectureTest" time="0.004"/>
+  <testcase name="shouldBeNamedResource()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadResourceArchitectureTest" time="0.001"/>
+  <testcase name="shouldBeInResourcePackage()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadResourceArchitectureTest" time="0.002"/>
+  <testcase name="shouldCorrectlyUseRequestMappingAnnotations()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadResourceArchitectureTest" time="0.05"/>
+  <system-out><![CDATA[
+Starting logs for FileUploadResourceArchitectureTest
+
+  Starting logs for FileUploadResourceArchitectureTest > testNoOverrideOfEnforceAdmin()
+
+  Starting logs for FileUploadResourceArchitectureTest > testUseKebabCaseForRestEndpoints()
+
+  Starting logs for FileUploadResourceArchitectureTest > allPublicMethodsShouldReturnResponseEntity()
+
+  Starting logs for FileUploadResourceArchitectureTest > testClassWithEnforceAdminInCorrectlyNamed()
+
+  Starting logs for FileUploadResourceArchitectureTest > shouldBeNamedResource()
+
+  Starting logs for FileUploadResourceArchitectureTest > shouldBeInResourcePackage()
+
+  Starting logs for FileUploadResourceArchitectureTest > shouldCorrectlyUseRequestMappingAnnotations()
+
+Finished logs for FileUploadResourceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.athena.service.connectors.AthenaHealthIndicatorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:07" hostname="fv-az1721-502" time="0.09">
+  <properties/>
+  <testcase name="healthUp()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaHealthIndicatorTest" time="0.046"/>
+  <testcase name="healthDown()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaHealthIndicatorTest" time="0.021"/>
+  <testcase name="healthUpExampleModuleDown()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaHealthIndicatorTest" time="0.016"/>
+  <system-out><![CDATA[
+Starting logs for AthenaHealthIndicatorTest
+
+  Starting logs for AthenaHealthIndicatorTest > healthUp()
+    23:42:07.275 | 114 Pool-1-worker-29 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaHealthIndicatorTest#healthUp'
+
+  Starting logs for AthenaHealthIndicatorTest > healthDown()
+    23:42:07.315 | 114 Pool-1-worker-29 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaHealthIndicatorTest#healthDown'
+
+  Starting logs for AthenaHealthIndicatorTest > healthUpExampleModuleDown()
+    23:42:07.334 | 114 Pool-1-worker-29 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaHealthIndicatorTest#healthUpExampleModuleDown'
+
+Finished logs for AthenaHealthIndicatorTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

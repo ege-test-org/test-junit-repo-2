@@ -1,0 +1,43 @@
+name: Test Artemis
+
+on:
+  pull_request:
+    paths-ignore:
+    - 'README.md'
+    - 'CODE_OF_CONDUCT.md'
+    - 'CONTRIBUTING.md'
+    - 'LICENSE'
+    - 'SECURITY.md'
+    - 'docs/**'
+    - '.github/**'
+    - '!.github/workflows/test.yml'
+  push:
+    branches:
+    - develop
+    - main
+    - release/*
+    paths-ignore:
+    - 'README.md'
+    - 'CODE_OF_CONDUCT.md'
+    - 'CONTRIBUTING.md'
+    - 'LICENSE'
+    - 'SECURITY.md'
+    - 'docs/**'
+    - '.github/**'
+    - '!.github/workflows/test.yml'
+  release:
+    types:
+    - created
+
+jobs:
+
+  server-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+    - uses: actions/checkout@v4
+    - name: Upload Test Results
+      uses: actions/upload-artifact@v4
+      with:
+        name: JUnit Test Results
+        path: artemis-build/test-results/test/*.xml

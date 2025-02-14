@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismResourceArchitectureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:06" hostname="fv-az1721-502" time="0.157">
+  <properties/>
+  <testcase name="testNoOverrideOfEnforceAdmin()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismResourceArchitectureTest" time="0.014"/>
+  <testcase name="testUseKebabCaseForRestEndpoints()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismResourceArchitectureTest" time="0.065"/>
+  <testcase name="allPublicMethodsShouldReturnResponseEntity()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismResourceArchitectureTest" time="0.023"/>
+  <testcase name="testClassWithEnforceAdminInCorrectlyNamed()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismResourceArchitectureTest" time="0.003"/>
+  <testcase name="shouldBeNamedResource()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismResourceArchitectureTest" time="0.002"/>
+  <testcase name="shouldBeInResourcePackage()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismResourceArchitectureTest" time="0.002"/>
+  <testcase name="shouldCorrectlyUseRequestMappingAnnotations()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismResourceArchitectureTest" time="0.048"/>
+  <system-out><![CDATA[
+Starting logs for PlagiarismResourceArchitectureTest
+
+  Starting logs for PlagiarismResourceArchitectureTest > testNoOverrideOfEnforceAdmin()
+
+  Starting logs for PlagiarismResourceArchitectureTest > testUseKebabCaseForRestEndpoints()
+
+  Starting logs for PlagiarismResourceArchitectureTest > allPublicMethodsShouldReturnResponseEntity()
+
+  Starting logs for PlagiarismResourceArchitectureTest > testClassWithEnforceAdminInCorrectlyNamed()
+
+  Starting logs for PlagiarismResourceArchitectureTest > shouldBeNamedResource()
+
+  Starting logs for PlagiarismResourceArchitectureTest > shouldBeInResourcePackage()
+
+  Starting logs for PlagiarismResourceArchitectureTest > shouldCorrectlyUseRequestMappingAnnotations()
+
+Finished logs for PlagiarismResourceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

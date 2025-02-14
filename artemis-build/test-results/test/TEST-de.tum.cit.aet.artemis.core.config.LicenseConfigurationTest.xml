@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.config.LicenseConfigurationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:35" hostname="fv-az1721-502" time="0.002">
+  <properties/>
+  <testcase name="testMatlabLicenseServer()" classname="de.tum.cit.aet.artemis.core.config.LicenseConfigurationTest" time="0.001"/>
+  <testcase name="testMatlabNullRecord()" classname="de.tum.cit.aet.artemis.core.config.LicenseConfigurationTest" time="0.001"/>
+  <testcase name="testMatlabNullValue()" classname="de.tum.cit.aet.artemis.core.config.LicenseConfigurationTest" time="0.0"/>
+  <system-out><![CDATA[
+Starting logs for LicenseConfigurationTest
+
+  Starting logs for LicenseConfigurationTest > testMatlabLicenseServer()
+
+  Starting logs for LicenseConfigurationTest > testMatlabNullRecord()
+
+  Starting logs for LicenseConfigurationTest > testMatlabNullValue()
+
+Finished logs for LicenseConfigurationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

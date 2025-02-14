@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.assessment.ResultTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:46" hostname="fv-az1721-502" time="0.177">
+  <properties/>
+  <testcase name="evaluateFeedback_negativeTotalScore()" classname="de.tum.cit.aet.artemis.assessment.ResultTest" time="0.036"/>
+  <testcase name="evaluateFeedback()" classname="de.tum.cit.aet.artemis.assessment.ResultTest" time="0.015"/>
+  <testcase name="testRemoveTestCaseNames()" classname="de.tum.cit.aet.artemis.assessment.ResultTest" time="0.031"/>
+  <testcase name="evaluateFeedback_totalScoreGreaterMaxScore()" classname="de.tum.cit.aet.artemis.assessment.ResultTest" time="0.012"/>
+  <testcase name="filterSensitiveFeedbacksBeforeDueDate()" classname="de.tum.cit.aet.artemis.assessment.ResultTest" time="0.012"/>
+  <testcase name="filterSensitiveInformation()" classname="de.tum.cit.aet.artemis.assessment.ResultTest" time="0.013"/>
+  <testcase name="filterSensitiveFeedbacksAfterDueDate()" classname="de.tum.cit.aet.artemis.assessment.ResultTest" time="0.013"/>
+  <testcase name="keepTestNamesWhenExerciseSettingActive()" classname="de.tum.cit.aet.artemis.assessment.ResultTest" time="0.031"/>
+  <system-out><![CDATA[
+Starting logs for ResultTest
+
+  Starting logs for ResultTest > evaluateFeedback_negativeTotalScore()
+    23:42:46.723 |  41 Pool-1-worker-15 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ResultTest#evaluateFeedback_negativeTotalScore'
+
+  Starting logs for ResultTest > evaluateFeedback()
+    23:42:46.738 |  41 Pool-1-worker-15 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ResultTest#evaluateFeedback'
+
+  Starting logs for ResultTest > testRemoveTestCaseNames()
+    23:42:46.756 |  41 Pool-1-worker-15 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ResultTest#testRemoveTestCaseNames'
+
+  Starting logs for ResultTest > evaluateFeedback_totalScoreGreaterMaxScore()
+    23:42:46.788 |  41 Pool-1-worker-15 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ResultTest#evaluateFeedback_totalScoreGreaterMaxScore'
+
+  Starting logs for ResultTest > filterSensitiveFeedbacksBeforeDueDate()
+    23:42:46.802 |  41 Pool-1-worker-15 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ResultTest#filterSensitiveFeedbacksBeforeDueDate'
+
+  Starting logs for ResultTest > filterSensitiveInformation()
+    23:42:46.817 |  41 Pool-1-worker-15 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ResultTest#filterSensitiveInformation'
+
+  Starting logs for ResultTest > filterSensitiveFeedbacksAfterDueDate()
+    23:42:46.833 |  41 Pool-1-worker-15 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ResultTest#filterSensitiveFeedbacksAfterDueDate'
+
+  Starting logs for ResultTest > keepTestNamesWhenExerciseSettingActive()
+    23:42:46.847 |  41 Pool-1-worker-15 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ResultTest#keepTestNamesWhenExerciseSettingActive'
+
+Finished logs for ResultTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.text.architecture.TextCodeStyleArchitectureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:32" hostname="fv-az1721-502" time="0.011">
+  <properties/>
+  <testcase name="testDTOImplementations()" classname="de.tum.cit.aet.artemis.text.architecture.TextCodeStyleArchitectureTest" time="0.011"/>
+  <system-out><![CDATA[
+Starting logs for TextCodeStyleArchitectureTest
+
+  Starting logs for TextCodeStyleArchitectureTest > testDTOImplementations()
+    23:46:32.797 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTO classes: 1
+    23:46:32.797 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTO classes: [Class <de.tum.cit.aet.artemis.text.dto.TextAssessmentDTO> is no record in (TextAssessmentDTO.java:0)]
+    23:46:32.800 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTOs that do not end with "DTO": 1
+    23:46:32.800 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTOs that do not end with "DTO": [Class <de.tum.cit.aet.artemis.text.dto.TextAssessmentEventType> does not have simple name ending with 'DTO' in (TextAssessmentEventType.java:0)]
+
+Finished logs for TextCodeStyleArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

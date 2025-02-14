@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.compass.umlmodel.object.UMLObjectDiagramTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:05" hostname="fv-az1721-502" time="0.022">
+  <properties/>
+  <testcase name="similarityObjectDiagram_v3_EqualModels()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.object.UMLObjectDiagramTest" time="0.006"/>
+  <testcase name="similarityObjectDiagram_v3_DifferentModels()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.object.UMLObjectDiagramTest" time="0.004"/>
+  <testcase name="parseObjectDiagramModelCorrectly()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.object.UMLObjectDiagramTest" time="0.001"/>
+  <testcase name="similarityObjectDiagram_DifferentModels()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.object.UMLObjectDiagramTest" time="0.003"/>
+  <testcase name="similarityObjectDiagram_EqualModels()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.object.UMLObjectDiagramTest" time="0.004"/>
+  <testcase name="parseObjectDiagramModelCorrectly_v3()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.object.UMLObjectDiagramTest" time="0.003"/>
+  <system-out><![CDATA[
+Starting logs for UMLObjectDiagramTest
+
+  Starting logs for UMLObjectDiagramTest > similarityObjectDiagram_v3_EqualModels()
+    23:40:05.037 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:05.038 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:05.039 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:05.039 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.9999999999999998
+    23:40:05.039 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.9999999999999998
+    23:40:05.039 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.8)
+    23:40:05.040 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:05.040 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:05.041 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:05.041 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 1.0
+    23:40:05.041 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 1.0
+    23:40:05.041 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.8)
+
+  Starting logs for UMLObjectDiagramTest > similarityObjectDiagram_v3_DifferentModels()
+    23:40:05.042 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:05.043 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:05.043 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:05.043 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.09999999999999999
+    23:40:05.043 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.09999999999999999
+    23:40:05.044 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.0)
+
+  Starting logs for UMLObjectDiagramTest > parseObjectDiagramModelCorrectly()
+
+  Starting logs for UMLObjectDiagramTest > similarityObjectDiagram_DifferentModels()
+    23:40:05.048 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:05.049 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:05.049 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:05.049 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.09999999999999999
+    23:40:05.049 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.09999999999999999
+    23:40:05.050 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.0)
+
+  Starting logs for UMLObjectDiagramTest > similarityObjectDiagram_EqualModels()
+    23:40:05.050 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:05.051 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:05.051 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:05.052 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.9999999999999998
+    23:40:05.052 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.9999999999999998
+    23:40:05.052 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.8)
+    23:40:05.053 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:05.053 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:05.053 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:05.054 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 1.0
+    23:40:05.054 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 1.0
+    23:40:05.054 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.8)
+
+  Starting logs for UMLObjectDiagramTest > parseObjectDiagramModelCorrectly_v3()
+
+Finished logs for UMLObjectDiagramTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

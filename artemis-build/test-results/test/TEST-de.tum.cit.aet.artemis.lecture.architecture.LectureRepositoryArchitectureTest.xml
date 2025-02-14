@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:58" hostname="fv-az1721-502" time="0.224">
+  <properties/>
+  <testcase name="testNoEntityGraphsOnQueries()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" time="0.014"/>
+  <testcase name="testNoUnusedRepositoryMethods()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" time="0.027"/>
+  <testcase name="testTransactional()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" time="0.02"/>
+  <testcase name="shouldBeInRepositoryPackage()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" time="0.006"/>
+  <testcase name="testRepositoryParamAnnotation()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" time="0.044"/>
+  <testcase name="orElseThrowShouldNotBeCalled()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" time="0.003"/>
+  <testcase name="repositoriesImplementArtemisJpaRepository()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="persistenceShouldNotAccessServices()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="usedInProductionCode()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" time="0.02"/>
+  <testcase name="shouldBeAnnotatedRepository()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" time="0.003"/>
+  <testcase name="enforceUsageOfTestRepository()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="testJPQLStyle()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" time="0.019"/>
+  <testcase name="shouldBeNamedRepository()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="enforceStructureOfTestRepositories()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" time="0.007"/>
+  <testcase name="testOnlySpringTransactionalAnnotation()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" time="0.044"/>
+  <testcase name="enforcePrimaryBeanAnnotationOnTestRepositories()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureRepositoryArchitectureTest" time="0.001"/>
+  <system-out><![CDATA[
+Starting logs for LectureRepositoryArchitectureTest
+
+  Starting logs for LectureRepositoryArchitectureTest > testNoEntityGraphsOnQueries()
+
+  Starting logs for LectureRepositoryArchitectureTest > testNoUnusedRepositoryMethods()
+
+  Starting logs for LectureRepositoryArchitectureTest > testTransactional()
+
+  Starting logs for LectureRepositoryArchitectureTest > shouldBeInRepositoryPackage()
+
+  Starting logs for LectureRepositoryArchitectureTest > testRepositoryParamAnnotation()
+
+  Starting logs for LectureRepositoryArchitectureTest > orElseThrowShouldNotBeCalled()
+
+  Starting logs for LectureRepositoryArchitectureTest > repositoriesImplementArtemisJpaRepository()
+
+  Starting logs for LectureRepositoryArchitectureTest > persistenceShouldNotAccessServices()
+
+  Starting logs for LectureRepositoryArchitectureTest > usedInProductionCode()
+
+  Starting logs for LectureRepositoryArchitectureTest > shouldBeAnnotatedRepository()
+
+  Starting logs for LectureRepositoryArchitectureTest > enforceUsageOfTestRepository()
+
+  Starting logs for LectureRepositoryArchitectureTest > testJPQLStyle()
+
+  Starting logs for LectureRepositoryArchitectureTest > shouldBeNamedRepository()
+
+  Starting logs for LectureRepositoryArchitectureTest > enforceStructureOfTestRepositories()
+
+  Starting logs for LectureRepositoryArchitectureTest > testOnlySpringTransactionalAnnotation()
+
+  Starting logs for LectureRepositoryArchitectureTest > enforcePrimaryBeanAnnotationOnTestRepositories()
+
+Finished logs for LectureRepositoryArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

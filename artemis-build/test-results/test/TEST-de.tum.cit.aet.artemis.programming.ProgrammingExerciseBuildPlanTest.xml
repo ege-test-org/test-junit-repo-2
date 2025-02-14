@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.ProgrammingExerciseBuildPlanTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:41:54" hostname="fv-az1721-502" time="0.647">
+  <properties/>
+  <testcase name="testGetBuildPlanSuccess()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseBuildPlanTest" time="0.19"/>
+  <testcase name="testGetBuildPlanInvalidSecret()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseBuildPlanTest" time="0.267"/>
+  <testcase name="testGetBuildPlanInvalidExerciseId()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseBuildPlanTest" time="0.178"/>
+  <system-out><![CDATA[
+Starting logs for ProgrammingExerciseBuildPlanTest
+
+  Starting logs for ProgrammingExerciseBuildPlanTest > testGetBuildPlanSuccess()
+    23:41:55.055 | 447 ool-1-worker-211 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseBuildPlanTest#testGetBuildPlanSuccess'
+    23:41:55.091 | 447 ool-1-worker-211 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/public/programming-exercises/1/build-plan
+    23:41:55.094 | 447 ool-1-worker-211 | DEBUG | .c.a.a.p.w.o.PublicBuildPlanResource : REST request to get build plan for programming exercise with id 1
+
+  Starting logs for ProgrammingExerciseBuildPlanTest > testGetBuildPlanInvalidSecret()
+    23:41:55.234 | 447 ool-1-worker-211 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseBuildPlanTest#testGetBuildPlanInvalidSecret'
+    23:41:55.343 | 447 ool-1-worker-211 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/public/programming-exercises/2/build-plan
+    23:41:55.352 | 447 ool-1-worker-211 | DEBUG | .c.a.a.p.w.o.PublicBuildPlanResource : REST request to get build plan for programming exercise with id 2
+    23:41:55.361 | 447 ool-1-worker-211 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access this resource
+
+  Starting logs for ProgrammingExerciseBuildPlanTest > testGetBuildPlanInvalidExerciseId()
+    23:41:55.513 | 447 ool-1-worker-211 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseBuildPlanTest#testGetBuildPlanInvalidExerciseId'
+    23:41:55.524 | 447 ool-1-worker-211 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/public/programming-exercises/-1/build-plan
+    23:41:55.535 | 447 ool-1-worker-211 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Required request parameter 'secret' for method parameter type String is not present
+
+Finished logs for ProgrammingExerciseBuildPlanTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

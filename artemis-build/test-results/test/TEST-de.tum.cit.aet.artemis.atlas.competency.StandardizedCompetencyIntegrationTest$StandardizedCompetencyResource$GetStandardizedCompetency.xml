@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.atlas.competency.StandardizedCompetencyIntegrationTest$StandardizedCompetencyResource$GetStandardizedCompetency" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:13" hostname="fv-az1721-502" time="0.162">
+  <properties/>
+  <testcase name="shouldReturn404()" classname="de.tum.cit.aet.artemis.atlas.competency.StandardizedCompetencyIntegrationTest$StandardizedCompetencyResource$GetStandardizedCompetency" time="0.074"/>
+  <testcase name="shouldReturnStandardizedCompetency()" classname="de.tum.cit.aet.artemis.atlas.competency.StandardizedCompetencyIntegrationTest$StandardizedCompetencyResource$GetStandardizedCompetency" time="0.083"/>
+  <system-out><![CDATA[
+Starting logs for GetStandardizedCompetency
+
+  Starting logs for GetStandardizedCompetency > shouldReturn404()
+    23:43:13.977 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:13.984 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:13.990 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:13.996 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:14.001 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:14.002 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:14.003 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:14.003 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:14.011 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:14.012 | 122 Pool-1-worker-37 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GetStandardizedCompetency#shouldReturn404'
+    23:43:14.013 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/standardized-competencies/-1000
+    23:43:14.020 | 122 Pool-1-worker-37 | DEBUG | a.a.w.StandardizedCompetencyResource : REST request to get standardized competency with id : -1000
+    23:43:14.021 | 122 Pool-1-worker-37 | WARN  | o.z.p.spring.common.AdviceTraits     : Not Found: StandardizedCompetency with identifier: "-1000" does not exist
+
+  Starting logs for GetStandardizedCompetency > shouldReturnStandardizedCompetency()
+    23:43:14.055 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:14.063 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:14.070 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:14.074 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:14.082 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:14.083 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:14.084 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:14.084 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:14.092 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:14.094 | 122 Pool-1-worker-37 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GetStandardizedCompetency#shouldReturnStandardizedCompetency'
+    23:43:14.096 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/standardized-competencies/63
+    23:43:14.100 | 122 Pool-1-worker-37 | DEBUG | a.a.w.StandardizedCompetencyResource : REST request to get standardized competency with id : 63
+
+Finished logs for GetStandardizedCompetency
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

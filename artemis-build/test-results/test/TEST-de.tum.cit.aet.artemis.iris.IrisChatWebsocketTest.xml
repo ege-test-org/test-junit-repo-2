@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.iris.IrisChatWebsocketTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:47" hostname="fv-az1721-502" time="0.048">
+  <properties/>
+  <testcase name="sendMessage()" classname="de.tum.cit.aet.artemis.iris.IrisChatWebsocketTest" time="0.048"/>
+  <system-out><![CDATA[
+Starting logs for IrisChatWebsocketTest
+
+  Starting logs for IrisChatWebsocketTest > sendMessage()
+    23:43:47.372 | 399 ool-1-worker-163 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:47.374 | 399 ool-1-worker-163 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:43:47.375 | 399 ool-1-worker-163 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:47.376 | 399 ool-1-worker-163 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:47.378 | 399 ool-1-worker-163 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:47.379 | 399 ool-1-worker-163 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:43:47.380 | 399 ool-1-worker-163 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:43:47.380 | 399 ool-1-worker-163 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:43:47.380 | 399 ool-1-worker-163 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:43:47.399 | 399 ool-1-worker-163 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisChatWebsocketTest#sendMessage'
+    23:43:47.403 | 399 ool-1-worker-163 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irischatwebsocketintegrationstudent1 on topic /topic/iris/20: IrisChatWebsocketDTO[type=MESSAGE, message=IrisMessage{id=null, session=IrisExerciseChatSession{user=irischatwebsocketintegrationstudent1,exercise=ProgrammingExercise{id=437, templateRepositoryUri='null', solutionRepositoryUri='null', templateBuildPlanId='null', solutionBuildPlanId='null', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}}, sentAt=2025-02-14T23:43:47.400594204Z[Etc/UTC], helpful=null, sender=null, content=[IrisMessageContent{message=null, textContent='The silly car jumped over the lazy dog.'}, IrisMessageContent{message=null, textContent='The angry book jumped over the lazy dog.'}], messageDifferentiator=101010}, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[], suggestions=null, tokens=null]
+
+Finished logs for IrisChatWebsocketTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

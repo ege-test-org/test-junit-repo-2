@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:15" hostname="fv-az1721-502" time="0.018">
+  <properties/>
+  <testcase name="testConstructorWithValidData()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.001"/>
+  <testcase name="testValidUrlWithGit()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.0"/>
+  <testcase name="testUrlWithInsufficientSegments()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.002"/>
+  <testcase name="testRepositorySlug()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.0"/>
+  <testcase name="testConstructorWithInvalidUriString()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.0"/>
+  <testcase name="testConstructorWithPracticeRepository()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.003"/>
+  <testcase name="testFolderNameForRepositoryUriWithFileUri()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.002"/>
+  <testcase name="testConstructorWithFile()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.0"/>
+  <testcase name="testUrlWithoutGit()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.0"/>
+  <testcase name="testLocalRepositoryPath()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.001"/>
+  <testcase name="testEqualsAndHashCodeAndToString()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.0"/>
+  <testcase name="testRemoteRepositoryPath()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.0"/>
+  <testcase name="testUrlRepositorySlugWithoutGitSuffix()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.003"/>
+  <testcase name="testRepositoryNameAndProjectKey()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.0"/>
+  <testcase name="testRepositoryNameWithoutProjectKey()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.0"/>
+  <testcase name="testConstructorWithValidUriString()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.001"/>
+  <testcase name="testFolderNameForRepositoryUriWithHttpUri()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.0"/>
+  <testcase name="testConstructorWithInvalidURI()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.0"/>
+  <testcase name="testInvalidRepositoryPath()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.003"/>
+  <testcase name="testConstructorWithMalformedURI()" classname="de.tum.cit.aet.artemis.programming.icl.RepositoryUriTest" time="0.0"/>
+  <system-out><![CDATA[
+Starting logs for RepositoryUriTest
+
+  Starting logs for RepositoryUriTest > testConstructorWithValidData()
+
+  Starting logs for RepositoryUriTest > testValidUrlWithGit()
+
+  Starting logs for RepositoryUriTest > testUrlWithInsufficientSegments()
+
+  Starting logs for RepositoryUriTest > testRepositorySlug()
+
+  Starting logs for RepositoryUriTest > testConstructorWithInvalidUriString()
+
+  Starting logs for RepositoryUriTest > testConstructorWithPracticeRepository()
+
+  Starting logs for RepositoryUriTest > testFolderNameForRepositoryUriWithFileUri()
+
+  Starting logs for RepositoryUriTest > testConstructorWithFile()
+
+  Starting logs for RepositoryUriTest > testUrlWithoutGit()
+
+  Starting logs for RepositoryUriTest > testLocalRepositoryPath()
+
+  Starting logs for RepositoryUriTest > testEqualsAndHashCodeAndToString()
+
+  Starting logs for RepositoryUriTest > testRemoteRepositoryPath()
+
+  Starting logs for RepositoryUriTest > testUrlRepositorySlugWithoutGitSuffix()
+
+  Starting logs for RepositoryUriTest > testRepositoryNameAndProjectKey()
+
+  Starting logs for RepositoryUriTest > testRepositoryNameWithoutProjectKey()
+
+  Starting logs for RepositoryUriTest > testConstructorWithValidUriString()
+
+  Starting logs for RepositoryUriTest > testFolderNameForRepositoryUriWithHttpUri()
+
+  Starting logs for RepositoryUriTest > testConstructorWithInvalidURI()
+
+  Starting logs for RepositoryUriTest > testInvalidRepositoryPath()
+
+  Starting logs for RepositoryUriTest > testConstructorWithMalformedURI()
+
+Finished logs for RepositoryUriTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

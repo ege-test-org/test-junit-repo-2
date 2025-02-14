@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.plagiarism.ContinuousPlagiarismControlServiceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:05" hostname="fv-az1721-502" time="0.023">
+  <properties/>
+  <testcase name="shouldSilentAnyJPlagExceptionsThrown()" classname="de.tum.cit.aet.artemis.plagiarism.ContinuousPlagiarismControlServiceTest" time="0.009"/>
+  <testcase name="shouldNotExecuteChecksAfterDueDate()" classname="de.tum.cit.aet.artemis.plagiarism.ContinuousPlagiarismControlServiceTest" time="0.001"/>
+  <testcase name="shouldExecuteChecks()" classname="de.tum.cit.aet.artemis.plagiarism.ContinuousPlagiarismControlServiceTest" time="0.003"/>
+  <testcase name="shouldAddSubmissionsToPlagiarismCase()" classname="de.tum.cit.aet.artemis.plagiarism.ContinuousPlagiarismControlServiceTest" time="0.003"/>
+  <testcase name="shouldDoNothingForFileUploadAndQuizExercises()" classname="de.tum.cit.aet.artemis.plagiarism.ContinuousPlagiarismControlServiceTest" time="0.001"/>
+  <testcase name="shouldSilentAnyUnknownExceptionsThrown()" classname="de.tum.cit.aet.artemis.plagiarism.ContinuousPlagiarismControlServiceTest" time="0.001"/>
+  <testcase name="shouldRemoveStalePlagiarismCase()" classname="de.tum.cit.aet.artemis.plagiarism.ContinuousPlagiarismControlServiceTest" time="0.001"/>
+  <system-out><![CDATA[
+Starting logs for ContinuousPlagiarismControlServiceTest
+
+  Starting logs for ContinuousPlagiarismControlServiceTest > shouldSilentAnyJPlagExceptionsThrown()
+    23:40:05.822 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Starting scheduled continuous plagiarism control for 1 exercises: [123]
+    23:40:05.822 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Started continuous plagiarism control for exercise: exerciseId=123, type=TEXT.
+    23:40:05.823 |  27 nPool-1-worker-1 | ERROR | s.ContinuousPlagiarismControlService : Cannot check plagiarism due to an unknown error: exerciseId=123, type=TEXT, error=null.
+java.lang.NullPointerException: null
+	at de.tum.cit.aet.artemis.plagiarism.service.PlagiarismDetectionService.checkTextExercise(PlagiarismDetectionService.java:63)
+	at de.tum.cit.aet.artemis.plagiarism.service.ContinuousPlagiarismControlService.executeChecksForExercise(ContinuousPlagiarismControlService.java:124)
+	at de.tum.cit.aet.artemis.plagiarism.service.ContinuousPlagiarismControlService.executeChecksForExerciseSilencingExceptions(ContinuousPlagiarismControlService.java:103)
+	at de.tum.cit.aet.artemis.plagiarism.service.ContinuousPlagiarismControlService.lambda$executeChecks$1(ContinuousPlagiarismControlService.java:85)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Collections$2.tryAdvance(Collections.java:5073)
+	at java.base/java.util.Collections$2.forEachRemaining(Collections.java:5081)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at de.tum.cit.aet.artemis.plagiarism.service.ContinuousPlagiarismControlService.executeChecks(ContinuousPlagiarismControlService.java:79)
+	at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:63)
+	at org.assertj.core.api.NotThrownAssert.isThrownBy(NotThrownAssert.java:43)
+	at de.tum.cit.aet.artemis.plagiarism.ContinuousPlagiarismControlServiceTest.shouldSilentAnyJPlagExceptionsThrown(ContinuousPlagiarismControlServiceTest.java:220)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.execSync(ForkJoinPoolHierarchicalTestExecutorService.java:247)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.executeSync(ForkJoinPoolHierarchicalTestExecutorService.java:194)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:166)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.execSync(ForkJoinPoolHierarchicalTestExecutorService.java:247)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.executeSync(ForkJoinPoolHierarchicalTestExecutorService.java:194)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:166)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    23:40:05.824 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Finished continuous plagiarism control for exercise: exerciseId=123, elapsed=2.33ms.
+    23:40:05.824 |  27 nPool-1-worker-1 | DEBUG | s.ContinuousPlagiarismControlService : Continuous plagiarism control done.
+
+  Starting logs for ContinuousPlagiarismControlServiceTest > shouldNotExecuteChecksAfterDueDate()
+    23:40:05.826 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Starting scheduled continuous plagiarism control for 1 exercises: [null]
+    23:40:05.826 |  27 nPool-1-worker-1 | DEBUG | s.ContinuousPlagiarismControlService : Continuous plagiarism control done.
+
+  Starting logs for ContinuousPlagiarismControlServiceTest > shouldExecuteChecks()
+    23:40:05.828 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Starting scheduled continuous plagiarism control for 3 exercises: [103, 102, 101]
+    23:40:05.828 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Started continuous plagiarism control for exercise: exerciseId=103, type=PROGRAMMING.
+    23:40:05.829 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Finished continuous plagiarism control for exercise: exerciseId=103, elapsed=311µs.
+    23:40:05.829 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Started continuous plagiarism control for exercise: exerciseId=102, type=MODELING.
+    23:40:05.829 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Finished continuous plagiarism control for exercise: exerciseId=102, elapsed=107µs.
+    23:40:05.829 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Started continuous plagiarism control for exercise: exerciseId=101, type=TEXT.
+    23:40:05.830 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Finished continuous plagiarism control for exercise: exerciseId=101, elapsed=810µs.
+    23:40:05.830 |  27 nPool-1-worker-1 | DEBUG | s.ContinuousPlagiarismControlService : Continuous plagiarism control done.
+
+  Starting logs for ContinuousPlagiarismControlServiceTest > shouldAddSubmissionsToPlagiarismCase()
+    23:40:05.832 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Starting scheduled continuous plagiarism control for 1 exercises: [99]
+    23:40:05.832 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Started continuous plagiarism control for exercise: exerciseId=99, type=TEXT.
+    23:40:05.832 |  27 nPool-1-worker-1 | INFO  | .p.s.PlagiarismDetectionConfigHelper : Filling missing plagiarisms checks config: exerciseId=99, type=TEXT.
+    23:40:05.834 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Finished continuous plagiarism control for exercise: exerciseId=99, elapsed=1.89ms.
+    23:40:05.834 |  27 nPool-1-worker-1 | DEBUG | s.ContinuousPlagiarismControlService : Continuous plagiarism control done.
+
+  Starting logs for ContinuousPlagiarismControlServiceTest > shouldDoNothingForFileUploadAndQuizExercises()
+    23:40:05.835 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Starting scheduled continuous plagiarism control for 2 exercises: [101, 102]
+    23:40:05.835 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Started continuous plagiarism control for exercise: exerciseId=101, type=FILE_UPLOAD.
+    23:40:05.836 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Finished continuous plagiarism control for exercise: exerciseId=101, elapsed=43µs.
+    23:40:05.836 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Started continuous plagiarism control for exercise: exerciseId=102, type=QUIZ.
+    23:40:05.836 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Finished continuous plagiarism control for exercise: exerciseId=102, elapsed=34µs.
+    23:40:05.836 |  27 nPool-1-worker-1 | DEBUG | s.ContinuousPlagiarismControlService : Continuous plagiarism control done.
+
+  Starting logs for ContinuousPlagiarismControlServiceTest > shouldSilentAnyUnknownExceptionsThrown()
+    23:40:05.837 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Starting scheduled continuous plagiarism control for 1 exercises: [101]
+    23:40:05.837 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Started continuous plagiarism control for exercise: exerciseId=101, type=TEXT.
+    23:40:05.837 |  27 nPool-1-worker-1 | ERROR | s.ContinuousPlagiarismControlService : Cannot check plagiarism due to an unknown error: exerciseId=101, type=TEXT, error=null.
+java.lang.IllegalStateException: null
+	at de.tum.cit.aet.artemis.plagiarism.service.PlagiarismDetectionService.checkTextExercise(PlagiarismDetectionService.java:63)
+	at de.tum.cit.aet.artemis.plagiarism.service.ContinuousPlagiarismControlService.executeChecksForExercise(ContinuousPlagiarismControlService.java:124)
+	at de.tum.cit.aet.artemis.plagiarism.service.ContinuousPlagiarismControlService.executeChecksForExerciseSilencingExceptions(ContinuousPlagiarismControlService.java:103)
+	at de.tum.cit.aet.artemis.plagiarism.service.ContinuousPlagiarismControlService.lambda$executeChecks$1(ContinuousPlagiarismControlService.java:85)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Collections$2.tryAdvance(Collections.java:5073)
+	at java.base/java.util.Collections$2.forEachRemaining(Collections.java:5081)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at de.tum.cit.aet.artemis.plagiarism.service.ContinuousPlagiarismControlService.executeChecks(ContinuousPlagiarismControlService.java:79)
+	at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:63)
+	at org.assertj.core.api.NotThrownAssert.isThrownBy(NotThrownAssert.java:43)
+	at de.tum.cit.aet.artemis.plagiarism.ContinuousPlagiarismControlServiceTest.shouldSilentAnyUnknownExceptionsThrown(ContinuousPlagiarismControlServiceTest.java:233)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.execSync(ForkJoinPoolHierarchicalTestExecutorService.java:247)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.executeSync(ForkJoinPoolHierarchicalTestExecutorService.java:194)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:166)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.execSync(ForkJoinPoolHierarchicalTestExecutorService.java:247)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.executeSync(ForkJoinPoolHierarchicalTestExecutorService.java:194)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:166)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    23:40:05.837 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Finished continuous plagiarism control for exercise: exerciseId=101, elapsed=426µs.
+    23:40:05.837 |  27 nPool-1-worker-1 | DEBUG | s.ContinuousPlagiarismControlService : Continuous plagiarism control done.
+
+  Starting logs for ContinuousPlagiarismControlServiceTest > shouldRemoveStalePlagiarismCase()
+    23:40:05.839 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Starting scheduled continuous plagiarism control for 1 exercises: [99]
+    23:40:05.839 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Started continuous plagiarism control for exercise: exerciseId=99, type=TEXT.
+    23:40:05.839 |  27 nPool-1-worker-1 | INFO  | .p.s.PlagiarismDetectionConfigHelper : Filling missing plagiarisms checks config: exerciseId=99, type=TEXT.
+    23:40:05.839 |  27 nPool-1-worker-1 | INFO  | s.ContinuousPlagiarismControlService : Finished continuous plagiarism control for exercise: exerciseId=99, elapsed=214µs.
+    23:40:05.839 |  27 nPool-1-worker-1 | DEBUG | s.ContinuousPlagiarismControlService : Continuous plagiarism control done.
+
+Finished logs for ContinuousPlagiarismControlServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

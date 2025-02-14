@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lecture.service.LectureImportServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:01" hostname="fv-az1721-502" time="0.1">
+  <properties/>
+  <testcase name="testImportLectureToCourse()" classname="de.tum.cit.aet.artemis.lecture.service.LectureImportServiceTest" time="0.1"/>
+  <system-out><![CDATA[
+Starting logs for LectureImportServiceTest
+
+  Starting logs for LectureImportServiceTest > testImportLectureToCourse()
+    23:47:01.935 | 420 ool-1-worker-184 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:47:01.937 | 420 ool-1-worker-184 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 0 tutors...
+    23:47:01.938 | 420 ool-1-worker-184 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:47:01.940 | 420 ool-1-worker-184 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:01.942 | 420 ool-1-worker-184 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:01.944 | 420 ool-1-worker-184 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:47:01.945 | 420 ool-1-worker-184 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:47:01.945 | 420 ool-1-worker-184 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:47:01.946 | 420 ool-1-worker-184 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:47:02.000 | 420 ool-1-worker-184 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureImportServiceTest#testImportLectureToCourse'
+    23:47:02.000 | 420 ool-1-worker-184 | DEBUG | d.t.c.a.a.l.s.LectureImportService   : Creating a new Lecture based on lecture Lecture{id=830, title='Lecture', description='Description', visibleDate='2025-02-09T23:47:01.946587Z', startDate='2025-02-09T23:47:01.946587Z', endDate='2025-02-22T23:47:01.946590Z'}
+    23:47:02.000 | 420 ool-1-worker-184 | DEBUG | t.c.a.a.l.s.LectureUnitImportService : Importing lecture units from lecture with Id 830
+    23:47:02.000 | 420 ool-1-worker-184 | DEBUG | t.c.a.a.l.s.LectureUnitImportService : Creating a new LectureUnit from lecture unit de.tum.cit.aet.artemis.lecture.domain.VideoUnit@383
+    23:47:02.000 | 420 ool-1-worker-184 | DEBUG | t.c.a.a.l.s.LectureUnitImportService : Creating a new LectureUnit from lecture unit de.tum.cit.aet.artemis.lecture.domain.TextUnit@384
+    23:47:02.001 | 420 ool-1-worker-184 | DEBUG | t.c.a.a.l.s.LectureUnitImportService : Creating a new LectureUnit from lecture unit de.tum.cit.aet.artemis.lecture.domain.AttachmentUnit@385
+    23:47:02.001 | 420 ool-1-worker-184 | DEBUG | t.c.a.a.l.s.LectureUnitImportService : Creating a new Attachment from attachment Attachment{id=516, name='TestAttachment', link='/api/files/attachments/attachment-unit/901/test_28ee1c59.jpg', version='1', uploadDate='2025-02-09T23:47:01.973392Z', releaseDate='2025-02-09T23:47:01.973392Z', attachmentType='FILE'}
+    23:47:02.001 | 420 ool-1-worker-184 | DEBUG | t.c.a.a.l.s.LectureUnitImportService : Copying attachment file from uploads/attachments/attachment-unit/901/test_28ee1c59.jpg to uploads/attachments/attachment-unit/909
+    23:47:02.001 | 420 ool-1-worker-184 | DEBUG | d.t.c.a.a.core.service.FileService   : Moved File from uploads/attachments/attachment-unit/901/test_28ee1c59.jpg to uploads/attachments/attachment-unit/909/AttachmentUnit_2025-02-14T23-47-02-001_cae07a28.jpg
+    23:47:02.002 | 420 ool-1-worker-184 | DEBUG | t.c.a.a.l.s.LectureUnitImportService : Creating a new LectureUnit from lecture unit de.tum.cit.aet.artemis.lecture.domain.ExerciseUnit@386
+    23:47:02.003 | 420 ool-1-worker-184 | DEBUG | d.t.c.a.a.l.s.LectureImportService   : Importing attachments from lecture
+    23:47:02.003 | 420 ool-1-worker-184 | DEBUG | t.c.a.a.l.s.LectureUnitImportService : Creating a new Attachment from attachment Attachment{id=514, name='TestAttachment', link='/api/files/attachments/lecture/830/test_218e8c93.jpg', version='1', uploadDate='2025-02-09T23:47:01.946587Z', releaseDate='2025-02-09T23:47:01.946587Z', attachmentType='FILE'}
+    23:47:02.003 | 420 ool-1-worker-184 | DEBUG | t.c.a.a.l.s.LectureUnitImportService : Copying attachment file from uploads/attachments/lecture/830/test_218e8c93.jpg to uploads/attachments/lecture/832
+    23:47:02.003 | 420 ool-1-worker-184 | DEBUG | d.t.c.a.a.core.service.FileService   : Moved File from uploads/attachments/lecture/830/test_218e8c93.jpg to uploads/attachments/lecture/832/LectureAttachment_2025-02-14T23-47-02-003_4cc8efa4.jpg
+    23:47:02.018 | 420 ool-1-worker-184 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '832' from title cache 'lectureTitle'
+    23:47:02.022 | 420 ool-1-worker-184 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '830' from title cache 'lectureTitle'
+
+Finished logs for LectureImportServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

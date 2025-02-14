@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:16" hostname="fv-az1721-502" time="5.053">
+  <properties/>
+  <testcase name="testImportTeamsFromListBadRequests()" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.16"/>
+  <testcase name="testImportTeamsFromListIntoExerciseWithStudentConflictsUsingCreateOnlyStrategy()" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.244"/>
+  <testcase name="testImportFromListIntoExerciseWithTeamShortNameConflictsUsingCreateOnlyStrategy()" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.278"/>
+  <testcase name="testImportTeamsFromExerciseBadRequests()" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.099"/>
+  <testcase name="testImportTeamsFromExerciseIntoEmptyExercise(TeamImportStrategyType) [1] importStrategyType=PURGE_EXISTING" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.25"/>
+  <testcase name="testImportTeamsFromExerciseIntoEmptyExercise(TeamImportStrategyType) [2] importStrategyType=CREATE_ONLY" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.164"/>
+  <testcase name="testImportTeamsFromExerciseIntoExerciseWithNoConflictsUsingCreateOnlyStrategy()" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.216"/>
+  <testcase name="testImportTeamsFromListForbiddenAsTutor()" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.174"/>
+  <testcase name="testImportTeamsFromExerciseIntoExerciseWithNoConflictsUsingPurgeExistingStrategy()" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.429"/>
+  <testcase name="testImportTeamsFromExerciseForbiddenAsTutor()" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.175"/>
+  <testcase name="testImportTeamsFromListIntoExerciseWithNoConflictsUsingCreateOnlyStrategy()" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.28"/>
+  <testcase name="testImportTeamsFromExerciseIntoExerciseWithConflictsUsingPurgeExistingStrategy()" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.321"/>
+  <testcase name="testImportTeamsFromListForbiddenAsInstructorOfOtherCourse()" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.139"/>
+  <testcase name="testImportTeamsFromExerciseIntoExerciseWithTeamShortNameConflictsUsingCreateOnlyStrategy()" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.403"/>
+  <testcase name="testImportTeamsFromExerciseIntoExerciseWithStudentConflictsUsingCreateOnlyStrategy()" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.273"/>
+  <testcase name="testImportTeamsFromExerciseForbiddenAsInstructorOfOtherCourse()" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.162"/>
+  <testcase name="testImportTeamsFromListIntoEmptyExercise(TeamImportStrategyType) [1] importStrategyType=PURGE_EXISTING" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.229"/>
+  <testcase name="testImportTeamsFromListIntoEmptyExercise(TeamImportStrategyType) [2] importStrategyType=CREATE_ONLY" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.29"/>
+  <testcase name="testImportTeamsFromListWithNoConflictsUsingPurgeExistingStrategy()" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.342"/>
+  <testcase name="testImportFromListIntoExerciseWithConflictsUsingPurgeExistingStrategy()" classname="de.tum.cit.aet.artemis.exercise.team.TeamImportIntegrationTest" time="0.377"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

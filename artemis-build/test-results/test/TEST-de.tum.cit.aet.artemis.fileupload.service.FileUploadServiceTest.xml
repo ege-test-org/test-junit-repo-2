@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.fileupload.service.FileUploadServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:58" hostname="fv-az1721-502" time="0.03">
+  <properties/>
+  <testcase name="shouldReturnEmptyOptionalWhenPathDoesNotExist()" classname="de.tum.cit.aet.artemis.fileupload.service.FileUploadServiceTest" time="0.002"/>
+  <testcase name="shouldCreateFileUploadWhenValidParametersProvided()" classname="de.tum.cit.aet.artemis.fileupload.service.FileUploadServiceTest" time="0.005"/>
+  <testcase name="shouldDeleteFileUploadsWhenValidFileUploadsProvided()" classname="de.tum.cit.aet.artemis.fileupload.service.FileUploadServiceTest" time="0.006"/>
+  <testcase name="shouldHandleInvalidPathWhenDeletingFileUploads()" classname="de.tum.cit.aet.artemis.fileupload.service.FileUploadServiceTest" time="0.01"/>
+  <testcase name="shouldFindFileUploadWhenPathExists()" classname="de.tum.cit.aet.artemis.fileupload.service.FileUploadServiceTest" time="0.001"/>
+  <testcase name="shouldHandleEmptyFileUploadListWhenDeleting()" classname="de.tum.cit.aet.artemis.fileupload.service.FileUploadServiceTest" time="0.001"/>
+  <system-out><![CDATA[
+Starting logs for FileUploadServiceTest
+
+  Starting logs for FileUploadServiceTest > shouldReturnEmptyOptionalWhenPathDoesNotExist()
+
+  Starting logs for FileUploadServiceTest > shouldCreateFileUploadWhenValidParametersProvided()
+
+  Starting logs for FileUploadServiceTest > shouldDeleteFileUploadsWhenValidFileUploadsProvided()
+
+  Starting logs for FileUploadServiceTest > shouldHandleInvalidPathWhenDeletingFileUploads()
+    23:39:58.262 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.f.s.FileUploadService      : Deleting the file /invalid/path did not work because it does not exist
+
+  Starting logs for FileUploadServiceTest > shouldFindFileUploadWhenPathExists()
+
+  Starting logs for FileUploadServiceTest > shouldHandleEmptyFileUploadListWhenDeleting()
+
+Finished logs for FileUploadServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentResourceArchitectureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:18" hostname="fv-az1721-502" time="0.147">
+  <properties/>
+  <testcase name="testNoOverrideOfEnforceAdmin()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentResourceArchitectureTest" time="0.015"/>
+  <testcase name="testUseKebabCaseForRestEndpoints()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentResourceArchitectureTest" time="0.051"/>
+  <testcase name="allPublicMethodsShouldReturnResponseEntity()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentResourceArchitectureTest" time="0.027"/>
+  <testcase name="testClassWithEnforceAdminInCorrectlyNamed()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentResourceArchitectureTest" time="0.004"/>
+  <testcase name="shouldBeNamedResource()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentResourceArchitectureTest" time="0.005"/>
+  <testcase name="shouldBeInResourcePackage()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentResourceArchitectureTest" time="0.002"/>
+  <testcase name="shouldCorrectlyUseRequestMappingAnnotations()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentResourceArchitectureTest" time="0.041"/>
+  <system-out><![CDATA[
+Starting logs for BuildAgentResourceArchitectureTest
+
+  Starting logs for BuildAgentResourceArchitectureTest > testNoOverrideOfEnforceAdmin()
+
+  Starting logs for BuildAgentResourceArchitectureTest > testUseKebabCaseForRestEndpoints()
+
+  Starting logs for BuildAgentResourceArchitectureTest > allPublicMethodsShouldReturnResponseEntity()
+
+  Starting logs for BuildAgentResourceArchitectureTest > testClassWithEnforceAdminInCorrectlyNamed()
+
+  Starting logs for BuildAgentResourceArchitectureTest > shouldBeNamedResource()
+
+  Starting logs for BuildAgentResourceArchitectureTest > shouldBeInResourcePackage()
+
+  Starting logs for BuildAgentResourceArchitectureTest > shouldCorrectlyUseRequestMappingAnnotations()
+
+Finished logs for BuildAgentResourceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

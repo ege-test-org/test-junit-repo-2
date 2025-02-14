@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.quiz.architecture.QuizServiceArchitectureTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:17" hostname="fv-az1721-502" time="0.58">
+  <properties/>
+  <testcase name="testCorrectAsyncCalls()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizServiceArchitectureTest" time="0.018"/>
+  <testcase name="shouldBeNamedService()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizServiceArchitectureTest" time="0.003"/>
+  <testcase name="testCorrectServiceAnnotation()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizServiceArchitectureTest" time="0.032"/>
+  <testcase name="shouldBeInServicePackage()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizServiceArchitectureTest" time="0.018"/>
+  <testcase name="testNoWrongServiceImports()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizServiceArchitectureTest" time="0.508"/>
+  <system-out><![CDATA[
+Starting logs for QuizServiceArchitectureTest
+
+  Starting logs for QuizServiceArchitectureTest > testCorrectAsyncCalls()
+
+  Starting logs for QuizServiceArchitectureTest > shouldBeNamedService()
+
+  Starting logs for QuizServiceArchitectureTest > testCorrectServiceAnnotation()
+
+  Starting logs for QuizServiceArchitectureTest > shouldBeInServicePackage()
+
+  Starting logs for QuizServiceArchitectureTest > testNoWrongServiceImports()
+
+Finished logs for QuizServiceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

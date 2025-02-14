@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lecture.LectureUnitServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:58" hostname="fv-az1721-502" time="0.156">
+  <properties/>
+  <testcase name="testSaveWithCompetencyLinksWithNullLinks()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitServiceTest" time="0.049"/>
+  <testcase name="testCompleteAllLectureUnits()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitServiceTest" time="0.035"/>
+  <testcase name="testCompleteAllUnitsAlreadyCompleted()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitServiceTest" time="0.036"/>
+  <testcase name="testUncompleteAllUnits()" classname="de.tum.cit.aet.artemis.lecture.LectureUnitServiceTest" time="0.031"/>
+  <system-out><![CDATA[
+Starting logs for LectureUnitServiceTest
+
+  Starting logs for LectureUnitServiceTest > testSaveWithCompetencyLinksWithNullLinks()
+    23:46:58.956 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 3070 and participant 585 to update participant scores.
+    23:46:58.970 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 3070 and participant 585 took 14 ms.
+    23:46:58.973 | 416 ool-1-worker-180 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitServiceTest#testSaveWithCompetencyLinksWithNullLinks'
+
+  Starting logs for LectureUnitServiceTest > testCompleteAllLectureUnits()
+    23:46:59.009 | 416 ool-1-worker-180 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitServiceTest#testCompleteAllLectureUnits'
+
+  Starting logs for LectureUnitServiceTest > testCompleteAllUnitsAlreadyCompleted()
+    23:46:59.046 | 416 ool-1-worker-180 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitServiceTest#testCompleteAllUnitsAlreadyCompleted'
+
+  Starting logs for LectureUnitServiceTest > testUncompleteAllUnits()
+    23:46:59.080 | 416 ool-1-worker-180 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureUnitServiceTest#testUncompleteAllUnits'
+
+Finished logs for LectureUnitServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

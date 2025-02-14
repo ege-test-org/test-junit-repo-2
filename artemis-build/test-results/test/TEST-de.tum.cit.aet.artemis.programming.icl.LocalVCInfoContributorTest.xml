@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.icl.LocalVCInfoContributorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:31" hostname="fv-az1721-502" time="0.005">
+  <properties/>
+  <testcase name="testContribute()" classname="de.tum.cit.aet.artemis.programming.icl.LocalVCInfoContributorTest" time="0.005"/>
+  <system-out><![CDATA[
+Starting logs for LocalVCInfoContributorTest
+
+  Starting logs for LocalVCInfoContributorTest > testContribute()
+
+Finished logs for LocalVCInfoContributorTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

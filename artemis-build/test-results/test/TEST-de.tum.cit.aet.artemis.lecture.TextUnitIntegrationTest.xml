@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lecture.TextUnitIntegrationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:00" hostname="fv-az1721-502" time="0.653">
+  <properties/>
+  <testcase name="createTextUnit_asEditor_shouldCreateTextUnitUnit()" classname="de.tum.cit.aet.artemis.lecture.TextUnitIntegrationTest" time="0.087"/>
+  <testcase name="createTextUnit_EditorNotInCourse_shouldReturnForbidden()" classname="de.tum.cit.aet.artemis.lecture.TextUnitIntegrationTest" time="0.07"/>
+  <testcase name="updateTextUnit_asEditor_shouldKeepOrdering()" classname="de.tum.cit.aet.artemis.lecture.TextUnitIntegrationTest" time="0.062"/>
+  <testcase name="updateTextUnit_asEditor_shouldUpdateTextUnit()" classname="de.tum.cit.aet.artemis.lecture.TextUnitIntegrationTest" time="0.075"/>
+  <testcase name="deleteTextUnit_correctId_shouldDeleteTextUnit()" classname="de.tum.cit.aet.artemis.lecture.TextUnitIntegrationTest" time="0.093"/>
+  <testcase name="getTextUnit_correctId_shouldReturnTextUnit()" classname="de.tum.cit.aet.artemis.lecture.TextUnitIntegrationTest" time="0.048"/>
+  <testcase name="testAll_asTutor()" classname="de.tum.cit.aet.artemis.lecture.TextUnitIntegrationTest" time="0.047"/>
+  <testcase name="updateTextUnit_noId_shouldReturnBadRequest()" classname="de.tum.cit.aet.artemis.lecture.TextUnitIntegrationTest" time="0.079"/>
+  <testcase name="testAll_asStudent()" classname="de.tum.cit.aet.artemis.lecture.TextUnitIntegrationTest" time="0.078"/>
+  <system-out><![CDATA[
+Starting logs for TextUnitIntegrationTest
+
+  Starting logs for TextUnitIntegrationTest > createTextUnit_asEditor_shouldCreateTextUnitUnit()
+    23:47:00.415 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:00.420 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:47:00.425 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:47:00.427 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:47:00.432 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:00.437 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:47:00.437 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:47:00.437 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:47:00.442 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:47:00.448 | 418 ool-1-worker-182 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TextUnitIntegrationTest#createTextUnit_asEditor_shouldCreateTextUnitUnit'
+    23:47:00.450 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/807/text-units
+    23:47:00.451 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.l.web.TextUnitResource     : REST request to create TextUnit : de.tum.cit.aet.artemis.lecture.domain.TextUnit@0
+    23:47:00.475 | 621 artemis-task-1   | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress for 0 users.
+
+  Starting logs for TextUnitIntegrationTest > createTextUnit_EditorNotInCourse_shouldReturnForbidden()
+    23:47:00.501 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:00.504 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:47:00.507 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:47:00.509 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:47:00.512 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:00.514 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:47:00.515 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:47:00.515 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:47:00.523 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:47:00.540 | 418 ool-1-worker-182 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TextUnitIntegrationTest#createTextUnit_EditorNotInCourse_shouldReturnForbidden'
+    23:47:00.542 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/808/text-units
+    23:47:00.542 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.l.web.TextUnitResource     : REST request to create TextUnit : de.tum.cit.aet.artemis.lecture.domain.TextUnit@0
+    23:47:00.545 | 418 ool-1-worker-182 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Course with id 2289
+    23:47:00.546 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/2379812738912/text-units
+    23:47:00.547 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.l.web.TextUnitResource     : REST request to create TextUnit : de.tum.cit.aet.artemis.lecture.domain.TextUnit@0
+    23:47:00.548 | 418 ool-1-worker-182 | WARN  | o.z.p.spring.common.AdviceTraits     : Not Found: Lecture with identifier: "2379812738912" does not exist
+    23:47:00.549 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/808/text-units
+    23:47:00.550 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.l.web.TextUnitResource     : REST request to create TextUnit : de.tum.cit.aet.artemis.lecture.domain.TextUnit@0
+    23:47:00.551 | 418 ool-1-worker-182 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Input data not valid
+    23:47:00.551 | 418 ool-1-worker-182 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Input data not valid
+    23:47:00.552 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/808/text-units
+    23:47:00.552 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.l.web.TextUnitResource     : REST request to create TextUnit : de.tum.cit.aet.artemis.lecture.domain.TextUnit@1453341
+    23:47:00.552 | 418 ool-1-worker-182 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, A new text unit cannot have an id
+    23:47:00.552 | 418 ool-1-worker-182 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: A new text unit cannot have an id
+
+  Starting logs for TextUnitIntegrationTest > updateTextUnit_asEditor_shouldKeepOrdering()
+    23:47:00.567 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:00.571 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:47:00.573 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:47:00.576 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:47:00.580 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:00.582 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:47:00.583 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:47:00.583 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:47:00.586 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:47:00.599 | 418 ool-1-worker-182 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TextUnitIntegrationTest#updateTextUnit_asEditor_shouldKeepOrdering'
+    23:47:00.607 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/809/text-units
+    23:47:00.608 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.l.web.TextUnitResource     : REST request to update an text unit : de.tum.cit.aet.artemis.lecture.domain.TextUnit@374
+
+  Starting logs for TextUnitIntegrationTest > updateTextUnit_asEditor_shouldUpdateTextUnit()
+    23:47:00.632 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:00.636 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:47:00.638 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:47:00.641 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:47:00.644 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:00.646 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:47:00.647 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:47:00.647 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:47:00.651 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:47:00.671 | 418 ool-1-worker-182 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TextUnitIntegrationTest#updateTextUnit_asEditor_shouldUpdateTextUnit'
+    23:47:00.685 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/810/text-units
+    23:47:00.688 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.l.web.TextUnitResource     : REST request to update an text unit : de.tum.cit.aet.artemis.lecture.domain.TextUnit@375
+    23:47:00.693 | 621 artemis-task-1   | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress for 0 users.
+
+  Starting logs for TextUnitIntegrationTest > deleteTextUnit_correctId_shouldDeleteTextUnit()
+    23:47:00.707 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:00.710 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:47:00.716 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:47:00.722 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:47:00.727 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:00.731 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:47:00.732 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:47:00.732 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:47:00.742 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:47:00.765 | 418 ool-1-worker-182 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TextUnitIntegrationTest#deleteTextUnit_correctId_shouldDeleteTextUnit'
+    23:47:00.776 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/lectures/811/lecture-units/886
+    23:47:00.776 | 418 ool-1-worker-182 | INFO  | d.t.c.a.a.l.web.LectureUnitResource  : REST request to delete lecture unit: 886
+    23:47:00.786 | 621 artemis-task-1   | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress for 0 users.
+    23:47:00.786 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/lectures/811/text-units/886
+    23:47:00.787 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.l.web.TextUnitResource     : REST request to get TextUnit : 886
+    23:47:00.788 | 418 ool-1-worker-182 | WARN  | o.z.p.spring.common.AdviceTraits     : Not Found: TextUnit
+
+  Starting logs for TextUnitIntegrationTest > getTextUnit_correctId_shouldReturnTextUnit()
+    23:47:00.802 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:00.805 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:47:00.808 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:47:00.810 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:47:00.813 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:00.815 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:47:00.815 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:47:00.815 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:47:00.819 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:47:00.831 | 418 ool-1-worker-182 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TextUnitIntegrationTest#getTextUnit_correctId_shouldReturnTextUnit'
+    23:47:00.835 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/lectures/812/text-units/887
+    23:47:00.836 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.l.web.TextUnitResource     : REST request to get TextUnit : 887
+
+  Starting logs for TextUnitIntegrationTest > testAll_asTutor()
+    23:47:00.851 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:00.854 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:47:00.857 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:47:00.860 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:47:00.862 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:00.864 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:47:00.865 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:47:00.865 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:47:00.868 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:47:00.879 | 418 ool-1-worker-182 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TextUnitIntegrationTest#testAll_asTutor'
+    23:47:00.881 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/813/text-units
+    23:47:00.882 | 418 ool-1-worker-182 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:47:00.883 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/813/text-units
+    23:47:00.884 | 418 ool-1-worker-182 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:47:00.885 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/lectures/813/text-units/0
+    23:47:00.886 | 418 ool-1-worker-182 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for TextUnitIntegrationTest > updateTextUnit_noId_shouldReturnBadRequest()
+    23:47:00.901 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:00.906 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:47:00.914 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:47:00.916 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:47:00.922 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:00.924 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:47:00.925 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:47:00.925 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:47:00.928 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:47:00.939 | 418 ool-1-worker-182 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TextUnitIntegrationTest#updateTextUnit_noId_shouldReturnBadRequest'
+    23:47:00.945 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/lectures/814/text-units/888
+    23:47:00.948 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.l.web.TextUnitResource     : REST request to get TextUnit : 888
+    23:47:00.953 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/814/text-units
+    23:47:00.954 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.l.web.TextUnitResource     : REST request to update an text unit : de.tum.cit.aet.artemis.lecture.domain.TextUnit@0
+    23:47:00.954 | 418 ool-1-worker-182 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, A text unit must have an ID to be updated
+    23:47:00.954 | 418 ool-1-worker-182 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: A text unit must have an ID to be updated
+    23:47:00.955 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/lectures/2379812738912/text-units/888
+    23:47:00.956 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.l.web.TextUnitResource     : REST request to get TextUnit : 888
+    23:47:00.959 | 418 ool-1-worker-182 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Input data not valid
+    23:47:00.959 | 418 ool-1-worker-182 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Input data not valid
+
+  Starting logs for TextUnitIntegrationTest > testAll_asStudent()
+    23:47:00.987 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:00.993 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:47:00.998 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:47:01.004 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:47:01.009 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:01.014 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:47:01.015 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:47:01.015 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:47:01.025 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:47:01.040 | 418 ool-1-worker-182 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TextUnitIntegrationTest#testAll_asStudent'
+    23:47:01.041 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/815/text-units
+    23:47:01.043 | 418 ool-1-worker-182 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:47:01.044 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/815/text-units
+    23:47:01.045 | 418 ool-1-worker-182 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:47:01.046 | 418 ool-1-worker-182 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/lectures/815/text-units/0
+    23:47:01.047 | 418 ool-1-worker-182 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+Finished logs for TextUnitIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

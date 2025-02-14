@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.atlas.architecture.AtlasCodeStyleArchitectureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:17" hostname="fv-az1721-502" time="0.012">
+  <properties/>
+  <testcase name="testDTOImplementations()" classname="de.tum.cit.aet.artemis.atlas.architecture.AtlasCodeStyleArchitectureTest" time="0.012"/>
+  <system-out><![CDATA[
+Starting logs for AtlasCodeStyleArchitectureTest
+
+  Starting logs for AtlasCodeStyleArchitectureTest > testDTOImplementations()
+    23:39:17.676 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTO classes: 0
+    23:39:17.676 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTO classes: []
+    23:39:17.680 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTOs that do not end with "DTO": 4
+    23:39:17.680 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTOs that do not end with "DTO": [Class <de.tum.cit.aet.artemis.atlas.dto.CompetencyGraphNodeDTO$CompetencyNodeValueType> does not have simple name ending with 'DTO' in (CompetencyGraphNodeDTO.java:0), Class <de.tum.cit.aet.artemis.atlas.dto.LearningPathHealthDTO$HealthStatus> does not have simple name ending with 'DTO' in (LearningPathHealthDTO.java:0), Class <de.tum.cit.aet.artemis.atlas.dto.LearningPathNavigationObjectDTO$LearningObjectType> does not have simple name ending with 'DTO' in (LearningPathNavigationObjectDTO.java:0), Class <de.tum.cit.aet.artemis.atlas.dto.metrics.MapEntryLongLong> does not have simple name ending with 'DTO' in (MapEntryLongLong.java:0)]
+
+Finished logs for AtlasCodeStyleArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

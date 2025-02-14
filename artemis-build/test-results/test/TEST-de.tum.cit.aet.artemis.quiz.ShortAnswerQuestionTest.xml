@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.quiz.ShortAnswerQuestionTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:16" hostname="fv-az1721-502" time="0.0">
+  <properties/>
+  <testcase name="checkSolutionsAreTrimmed()" classname="de.tum.cit.aet.artemis.quiz.ShortAnswerQuestionTest" time="0.0"/>
+  <system-out><![CDATA[
+Starting logs for ShortAnswerQuestionTest
+
+  Starting logs for ShortAnswerQuestionTest > checkSolutionsAreTrimmed()
+
+Finished logs for ShortAnswerQuestionTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

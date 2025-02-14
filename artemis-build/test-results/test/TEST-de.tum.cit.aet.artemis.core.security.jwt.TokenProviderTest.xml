@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.security.jwt.TokenProviderTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:46" hostname="fv-az1721-502" time="0.029">
+  <properties/>
+  <testcase name="testReturnFalseWhenJWTisInvalid()" classname="de.tum.cit.aet.artemis.core.security.jwt.TokenProviderTest" time="0.001"/>
+  <testcase name="testReturnFalseWhenJWTisExpired()" classname="de.tum.cit.aet.artemis.core.security.jwt.TokenProviderTest" time="0.006"/>
+  <testcase name="testReturnFalseWhenJWThasInvalidSignature()" classname="de.tum.cit.aet.artemis.core.security.jwt.TokenProviderTest" time="0.002"/>
+  <testcase name="testGetTokenValidityNotRememberMe()" classname="de.tum.cit.aet.artemis.core.security.jwt.TokenProviderTest" time="0.004"/>
+  <testcase name="testKeyIsSetFromSecretWhenSecretIsNotEmpty()" classname="de.tum.cit.aet.artemis.core.security.jwt.TokenProviderTest" time="0.001"/>
+  <testcase name="testReturnFalseWhenJWTisMalformed()" classname="de.tum.cit.aet.artemis.core.security.jwt.TokenProviderTest" time="0.005"/>
+  <testcase name="testKeyIsSetFromBase64SecretWhenSecretIsEmpty()" classname="de.tum.cit.aet.artemis.core.security.jwt.TokenProviderTest" time="0.001"/>
+  <testcase name="testReturnFalseWhenJWTisUnsupported()" classname="de.tum.cit.aet.artemis.core.security.jwt.TokenProviderTest" time="0.005"/>
+  <testcase name="testGetTokenValidityRememberMe()" classname="de.tum.cit.aet.artemis.core.security.jwt.TokenProviderTest" time="0.0"/>
+  <system-out><![CDATA[
+Starting logs for TokenProviderTest
+
+  Starting logs for TokenProviderTest > testReturnFalseWhenJWTisInvalid()
+    23:39:46.971 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.c.s.jwt.TokenProvider      : Token validation error CharSequence cannot be null or empty.
+    23:39:46.971 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token:  from source null
+
+  Starting logs for TokenProviderTest > testReturnFalseWhenJWTisExpired()
+    23:39:46.977 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXMiLCJhdXRoIjoiUk9MRV9BTk9OWU1PVVMiLCJleHAiOjE3Mzk1NzYzMjZ9.wMF6pgJGl3vPnapgqZztoqaJIian9jX6qt2PzXWKepQQSqFSGJwzNQFWejFi-QaJLEYv3UTxRPTx_QE0xETVhw from source null
+
+  Starting logs for TokenProviderTest > testReturnFalseWhenJWThasInvalidSignature()
+    23:39:46.981 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXMiLCJleHAiOjE3Mzk1NzY0NDZ9.qqwSB8LYWIT9yL-i5FKkHOXPYbN2xyb92LSkeMB-M_XQDSXviDIvMXB1dcWdsX_5A6HJv7yRMeNhld2EtumLlA from source null
+
+  Starting logs for TokenProviderTest > testGetTokenValidityNotRememberMe()
+
+  Starting logs for TokenProviderTest > testKeyIsSetFromSecretWhenSecretIsNotEmpty()
+    23:39:46.988 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.a.c.s.jwt.TokenProvider      : Warning: the JWT key used is not Base64-encoded. We recommend using the `jhipster.security.authentication.jwt.base64-secret` key for optimum security.
+
+  Starting logs for TokenProviderTest > testReturnFalseWhenJWTisMalformed()
+    23:39:46.994 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: yJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXMiLCJhdXRoIjoiUk9MRV9BTk9OWU1PVVMiLCJleHAiOjE3Mzk1NzY0NDZ9.jhTYy-7k6KvnNBjHXnNz7FPQdP8bpszfIupbxq7WggtT_0Wd1ZaeSaW66wihyixv7cFN_y5nlkyHrkbUhXhqBQ from source null
+
+  Starting logs for TokenProviderTest > testKeyIsSetFromBase64SecretWhenSecretIsEmpty()
+    23:39:46.995 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.jwt.TokenProvider      : Using a Base64-encoded JWT secret key
+
+  Starting logs for TokenProviderTest > testReturnFalseWhenJWTisUnsupported()
+    23:39:46.999 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: eyJhbGciOiJIUzUxMiJ9.cGF5bG9hZA.swUGiCIReTdL9CR9XYCExgadf0CxHKs1yfO2yZ0O5zJGo7XDno0ExtOyOYb6wy5ZfJOb4uhukwCJuqONUQV2xw from source null
+
+  Starting logs for TokenProviderTest > testGetTokenValidityRememberMe()
+
+Finished logs for TokenProviderTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

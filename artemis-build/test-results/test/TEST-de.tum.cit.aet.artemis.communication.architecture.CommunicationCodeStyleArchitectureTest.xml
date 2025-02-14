@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.architecture.CommunicationCodeStyleArchitectureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:23" hostname="fv-az1721-502" time="0.048">
+  <properties/>
+  <testcase name="testDTOImplementations()" classname="de.tum.cit.aet.artemis.communication.architecture.CommunicationCodeStyleArchitectureTest" time="0.048"/>
+  <system-out><![CDATA[
+Starting logs for CommunicationCodeStyleArchitectureTest
+
+  Starting logs for CommunicationCodeStyleArchitectureTest > testDTOImplementations()
+    23:39:23.229 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTO classes: 7
+    23:39:23.229 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTO classes: [Class <de.tum.cit.aet.artemis.communication.dto.ChannelDTO> is no record in (ChannelDTO.java:0), Class <de.tum.cit.aet.artemis.communication.dto.ConversationDTO> is no record in (ConversationDTO.java:0), Class <de.tum.cit.aet.artemis.communication.dto.ConversationUserDTO> is no record in (ConversationUserDTO.java:0), Class <de.tum.cit.aet.artemis.communication.dto.GroupChatDTO> is no record in (GroupChatDTO.java:0), Class <de.tum.cit.aet.artemis.communication.dto.OneToOneChatDTO> is no record in (OneToOneChatDTO.java:0), Class <de.tum.cit.aet.artemis.communication.dto.PostingConversationDTO> is not annotated with @JsonInclude in (PostingConversationDTO.java:0), Class <de.tum.cit.aet.artemis.communication.dto.ReactionDTO> is not annotated with @JsonInclude in (ReactionDTO.java:0)]
+    23:39:23.245 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTOs that do not end with "DTO": 6
+    23:39:23.246 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTOs that do not end with "DTO": [Class <de.tum.cit.aet.artemis.communication.dto.ConversationSummary> does not have simple name ending with 'DTO' in (ConversationSummary.java:0), Class <de.tum.cit.aet.artemis.communication.dto.GeneralConversationInfo> does not have simple name ending with 'DTO' in (GeneralConversationInfo.java:0), Class <de.tum.cit.aet.artemis.communication.dto.MetisCrudAction> does not have simple name ending with 'DTO' in (MetisCrudAction.java:0), Class <de.tum.cit.aet.artemis.communication.dto.PushNotificationRegisterBody> does not have simple name ending with 'DTO' in (PushNotificationRegisterBody.java:0), Class <de.tum.cit.aet.artemis.communication.dto.PushNotificationUnregisterRequest> does not have simple name ending with 'DTO' in (PushNotificationUnregisterRequest.java:0), Class <de.tum.cit.aet.artemis.communication.dto.UserConversationInfo> does not have simple name ending with 'DTO' in (UserConversationInfo.java:0)]
+
+Finished logs for CommunicationCodeStyleArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

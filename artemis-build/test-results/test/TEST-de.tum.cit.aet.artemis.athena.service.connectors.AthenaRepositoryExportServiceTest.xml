@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.athena.service.connectors.AthenaRepositoryExportServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:54" hostname="fv-az1721-502" time="0.222">
+  <properties/>
+  <testcase name="shouldExportRepository()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaRepositoryExportServiceTest" time="0.152"/>
+  <testcase name="shouldThrowServiceUnavailableWhenFeedbackSuggestionsNotEnabled()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaRepositoryExportServiceTest" time="0.069"/>
+  <system-out><![CDATA[
+Starting logs for AthenaRepositoryExportServiceTest
+
+  Starting logs for AthenaRepositoryExportServiceTest > shouldExportRepository()
+    23:42:54.109 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:54.115 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:42:54.117 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:42:54.119 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:54.121 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:54.122 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:54.123 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:54.123 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:42:54.127 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:42:54.141 | 115 Pool-1-worker-30 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AthenaRepositoryExportServiceTest#shouldExportRepository'
+    23:42:54.186 | 115 Pool-1-worker-30 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:54.194 | 115 Pool-1-worker-30 | DEBUG | .a.a.s.AthenaRepositoryExportService : Exporting repository for exercise 439, submission 278
+    23:42:54.206 | 115 Pool-1-worker-30 | DEBUG | p.s.ProgrammingExerciseExportService : Filter late submissions for participation ProgrammingExerciseStudentParticipation{id=363, repositoryUri='https://version-control.fake.fake/git/SHORT588356390F30A043FA0902603AD6ABFEF3FBTSTEXC/short588356390f30a043fa0902603ad6abfef3fbtstexc-athenarepositoryexportstudent1.git', buildPlanId='SHORT588356390F30A043FA0902603AD6ABFEF3FBTSTEXC-ATHENAREPOSITORYEXPORTSTUDENT1', initializationState='INITIALIZED', initializationDate='2025-02-14T23:42:54.185288Z', individualDueDate=null', presentationScore=null}
+    23:42:54.207 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.p.service.GitService       : Last valid submission is not present for participation
+    23:42:54.210 | 115 Pool-1-worker-30 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot filter the repo /tmp/testLocalRepo12410317260633236690 due to the following exception: No HEAD exists and no explicit starting revision was specified
+    23:42:54.210 | 115 Pool-1-worker-30 | DEBUG | p.s.ProgrammingExerciseExportService : Anonymizing commits for participation ProgrammingExerciseStudentParticipation{id=363, repositoryUri='https://version-control.fake.fake/git/SHORT588356390F30A043FA0902603AD6ABFEF3FBTSTEXC/short588356390f30a043fa0902603ad6abfef3fbtstexc-athenarepositoryexportstudent1.git', buildPlanId='SHORT588356390F30A043FA0902603AD6ABFEF3FBTSTEXC-ATHENAREPOSITORYEXPORTSTUDENT1', initializationState='INITIALIZED', initializationDate='2025-02-14T23:42:54.185288Z', individualDueDate=null', presentationScore=null}
+    23:42:54.210 | 115 Pool-1-worker-30 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:42:54.210 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.p.service.GitService       : Cannot find a commit in the template repo for: /tmp/testLocalRepo12410317260633236690
+    23:42:54.210 | 115 Pool-1-worker-30 | DEBUG | p.s.ProgrammingExerciseExportService : Create temporary directory for repository /tmp/testLocalRepo12410317260633236690
+    23:42:54.211 | 115 Pool-1-worker-30 | DEBUG | .a.a.s.AthenaRepositoryExportService : Exporting repository for exercise 439, submission 278
+    23:42:54.217 | 115 Pool-1-worker-30 | INFO  | p.s.ProgrammingExerciseExportService : Request to export instructor repository of programming exercise ProgrammingExercise{id=439, templateRepositoryUri='https://version-control.fake.fake/git/SHORT588356390F30A043FA0902603AD6ABFEF3FBTSTEXC/short588356390f30a043fa0902603ad6abfef3fbtstexc-exercise.git', solutionRepositoryUri='https://version-control.fake.fake/git/SHORT588356390F30A043FA0902603AD6ABFEF3FBTSTEXC/short588356390f30a043fa0902603ad6abfef3fbtstexc-solution.git', templateBuildPlanId='SHORT588356390F30A043FA0902603AD6ABFEF3FBTSTEXC-BASE', solutionBuildPlanId='SHORT588356390F30A043FA0902603AD6ABFEF3FBTSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'} with title 'Programming'
+
+  Starting logs for AthenaRepositoryExportServiceTest > shouldThrowServiceUnavailableWhenFeedbackSuggestionsNotEnabled()
+    23:42:54.265 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:54.270 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:42:54.271 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:42:54.277 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:54.288 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:54.289 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:42:54.290 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:42:54.290 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:42:54.294 | 115 Pool-1-worker-30 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:42:54.306 | 115 Pool-1-worker-30 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AthenaRepositoryExportServiceTest#shouldThrowServiceUnavailableWhenFeedbackSuggestionsNotEnabled'
+    23:42:54.307 | 115 Pool-1-worker-30 | DEBUG | .a.a.s.AthenaRepositoryExportService : Exporting repository for exercise 440, submission null
+    23:42:54.308 | 115 Pool-1-worker-30 | ERROR | .a.a.s.AthenaRepositoryExportService : Feedback suggestions are not enabled for exercise 440
+
+Finished logs for AthenaRepositoryExportServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.iris.PyrisLectureIngestionTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:01" hostname="fv-az1721-502" time="2.523">
+  <properties/>
+  <testcase name="testStageNotDoneKeepsDeletionIngestionJob()" classname="de.tum.cit.aet.artemis.iris.PyrisLectureIngestionTest" time="0.15"/>
+  <testcase name="testAllStagesDoneRemovesDeletionIngestionJob()" classname="de.tum.cit.aet.artemis.iris.PyrisLectureIngestionTest" time="0.152"/>
+  <testcase name="testAllStagesDoneIngestionStateDone()" classname="de.tum.cit.aet.artemis.iris.PyrisLectureIngestionTest" time="0.243"/>
+  <testcase name="testAddLectureToPyrisDBAddJobWithCourseSettingsEnabled()" classname="de.tum.cit.aet.artemis.iris.PyrisLectureIngestionTest" time="0.211"/>
+  <testcase name="testErrorStageRemovesAdditionIngestionJob()" classname="de.tum.cit.aet.artemis.iris.PyrisLectureIngestionTest" time="0.165"/>
+  <testcase name="testIngestLectureUnitButtonInPyris()" classname="de.tum.cit.aet.artemis.iris.PyrisLectureIngestionTest" time="0.142"/>
+  <testcase name="testIngestionJobDone()" classname="de.tum.cit.aet.artemis.iris.PyrisLectureIngestionTest" time="0.204"/>
+  <testcase name="testRunIdIngestionJob()" classname="de.tum.cit.aet.artemis.iris.PyrisLectureIngestionTest" time="0.205"/>
+  <testcase name="autoIngestionWhenAttachmentUnitCreatedAndAutoUpdateEnabled()" classname="de.tum.cit.aet.artemis.iris.PyrisLectureIngestionTest" time="0.149"/>
+  <testcase name="testDeleteLecturefromPyrisDatabaseWithCourseSettingsEnabled()" classname="de.tum.cit.aet.artemis.iris.PyrisLectureIngestionTest" time="0.187"/>
+  <testcase name="testStageNotDoneKeepsAdditionIngestionJob()" classname="de.tum.cit.aet.artemis.iris.PyrisLectureIngestionTest" time="0.195"/>
+  <testcase name="noAutoIngestionWhenAttachmentUnitCreatedAndAutoUpdateDisabled()" classname="de.tum.cit.aet.artemis.iris.PyrisLectureIngestionTest" time="0.139"/>
+  <testcase name="testErrorStageRemovesDeletionIngestionJob()" classname="de.tum.cit.aet.artemis.iris.PyrisLectureIngestionTest" time="0.183"/>
+  <testcase name="testIngestLecturesButtonInPyris()" classname="de.tum.cit.aet.artemis.iris.PyrisLectureIngestionTest" time="0.159"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

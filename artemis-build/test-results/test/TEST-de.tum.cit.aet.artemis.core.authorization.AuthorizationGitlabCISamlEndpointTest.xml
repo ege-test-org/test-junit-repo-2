@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.authorization.AuthorizationGitlabCISamlEndpointTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:41:54" hostname="fv-az1721-502" time="0.071">
+  <properties/>
+  <testcase name="testEndpoints()" classname="de.tum.cit.aet.artemis.core.authorization.AuthorizationGitlabCISamlEndpointTest" time="0.071"/>
+  <system-out><![CDATA[
+Starting logs for AuthorizationGitlabCISamlEndpointTest
+
+  Starting logs for AuthorizationGitlabCISamlEndpointTest > testEndpoints()
+    23:41:54.716 | 330 Pool-1-worker-94 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='AuthorizationGitlabCISamlEndpointTest#testEndpoints'
+
+Finished logs for AuthorizationGitlabCISamlEndpointTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

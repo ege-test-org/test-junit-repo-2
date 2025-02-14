@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.service.connectors.jenkins.jobs.JenkinsJobPermissionsUtilsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:15" hostname="fv-az1721-502" time="0.007">
+  <properties/>
+  <testcase name="testRemovePermissionsFromFolder()" classname="de.tum.cit.aet.artemis.programming.service.connectors.jenkins.jobs.JenkinsJobPermissionsUtilsTest" time="0.006"/>
+  <testcase name="testAddPermissionsToFolder()" classname="de.tum.cit.aet.artemis.programming.service.connectors.jenkins.jobs.JenkinsJobPermissionsUtilsTest" time="0.001"/>
+  <system-out><![CDATA[
+Starting logs for JenkinsJobPermissionsUtilsTest
+
+  Starting logs for JenkinsJobPermissionsUtilsTest > testRemovePermissionsFromFolder()
+
+  Starting logs for JenkinsJobPermissionsUtilsTest > testAddPermissionsToFolder()
+
+Finished logs for JenkinsJobPermissionsUtilsTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

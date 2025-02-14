@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.architecture.CoreServiceArchitectureTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:35" hostname="fv-az1721-502" time="0.564">
+  <properties/>
+  <testcase name="testCorrectAsyncCalls()" classname="de.tum.cit.aet.artemis.core.architecture.CoreServiceArchitectureTest" time="0.02"/>
+  <testcase name="shouldBeNamedService()" classname="de.tum.cit.aet.artemis.core.architecture.CoreServiceArchitectureTest" time="0.005"/>
+  <testcase name="testCorrectServiceAnnotation()" classname="de.tum.cit.aet.artemis.core.architecture.CoreServiceArchitectureTest" time="0.02"/>
+  <testcase name="shouldBeInServicePackage()" classname="de.tum.cit.aet.artemis.core.architecture.CoreServiceArchitectureTest" time="0.008"/>
+  <testcase name="testNoWrongServiceImports()" classname="de.tum.cit.aet.artemis.core.architecture.CoreServiceArchitectureTest" time="0.506"/>
+  <system-out><![CDATA[
+Starting logs for CoreServiceArchitectureTest
+
+  Starting logs for CoreServiceArchitectureTest > testCorrectAsyncCalls()
+
+  Starting logs for CoreServiceArchitectureTest > shouldBeNamedService()
+
+  Starting logs for CoreServiceArchitectureTest > testCorrectServiceAnnotation()
+
+  Starting logs for CoreServiceArchitectureTest > shouldBeInServicePackage()
+
+  Starting logs for CoreServiceArchitectureTest > testNoWrongServiceImports()
+
+Finished logs for CoreServiceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

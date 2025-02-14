@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.AuxiliaryRepositoryServiceTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:19" hostname="fv-az1721-502" time="0.655">
+  <properties/>
+  <testcase name="shouldThrowErrorWhenRestrictedName()" classname="de.tum.cit.aet.artemis.programming.AuxiliaryRepositoryServiceTest" time="0.052"/>
+  <testcase name="shouldThrowErrorWhenEmptyName()" classname="de.tum.cit.aet.artemis.programming.AuxiliaryRepositoryServiceTest" time="0.035"/>
+  <testcase name="shouldThrowErrorWhenInvalidRepository()" classname="de.tum.cit.aet.artemis.programming.AuxiliaryRepositoryServiceTest" time="0.037"/>
+  <testcase name="shouldThrowErrorWhenDuplicateName()" classname="de.tum.cit.aet.artemis.programming.AuxiliaryRepositoryServiceTest" time="0.034"/>
+  <testcase name="shouldAddAuxiliaryRepositoriesSuccessfully()" classname="de.tum.cit.aet.artemis.programming.AuxiliaryRepositoryServiceTest" time="0.04"/>
+  <testcase name="shouldSetDirectoryToNullWhenEmptyDirectory()" classname="de.tum.cit.aet.artemis.programming.AuxiliaryRepositoryServiceTest" time="0.04"/>
+  <testcase name="shouldReturnFalseIfNotAuxiliaryRepositoryOfExercise()" classname="de.tum.cit.aet.artemis.programming.AuxiliaryRepositoryServiceTest" time="0.036"/>
+  <testcase name="shouldThrowErrorWhenInvalidDescriptionLength()" classname="de.tum.cit.aet.artemis.programming.AuxiliaryRepositoryServiceTest" time="0.044"/>
+  <testcase name="shouldReturnTrueIfAuxiliaryRepositoryOfExercise()" classname="de.tum.cit.aet.artemis.programming.AuxiliaryRepositoryServiceTest" time="0.035"/>
+  <testcase name="shouldThrowErrorWhenInvalidDirectory()" classname="de.tum.cit.aet.artemis.programming.AuxiliaryRepositoryServiceTest" time="0.037"/>
+  <testcase name="shouldThrowErrorWhenEditingExistingRepositoryNotInDatabase()" classname="de.tum.cit.aet.artemis.programming.AuxiliaryRepositoryServiceTest" time="0.03"/>
+  <testcase name="shouldChangeRepositorySuccessfully()" classname="de.tum.cit.aet.artemis.programming.AuxiliaryRepositoryServiceTest" time="0.066"/>
+  <testcase name="shouldThrowErrorWhenNameLongerThan100Characters()" classname="de.tum.cit.aet.artemis.programming.AuxiliaryRepositoryServiceTest" time="0.038"/>
+  <testcase name="shouldThrowErrorWhenInvalidDirectoryLength()" classname="de.tum.cit.aet.artemis.programming.AuxiliaryRepositoryServiceTest" time="0.046"/>
+  <testcase name="shouldThrowErrorWhenNotNullId()" classname="de.tum.cit.aet.artemis.programming.AuxiliaryRepositoryServiceTest" time="0.044"/>
+  <system-out><![CDATA[
+Starting logs for AuxiliaryRepositoryServiceTest
+
+  Starting logs for AuxiliaryRepositoryServiceTest > shouldThrowErrorWhenRestrictedName()
+    23:47:19.635 | 438 ool-1-worker-202 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AuxiliaryRepositoryServiceTest#shouldThrowErrorWhenRestrictedName'
+
+  Starting logs for AuxiliaryRepositoryServiceTest > shouldThrowErrorWhenEmptyName()
+    23:47:19.673 | 438 ool-1-worker-202 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AuxiliaryRepositoryServiceTest#shouldThrowErrorWhenEmptyName'
+
+  Starting logs for AuxiliaryRepositoryServiceTest > shouldThrowErrorWhenInvalidRepository()
+    23:47:19.709 | 438 ool-1-worker-202 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AuxiliaryRepositoryServiceTest#shouldThrowErrorWhenInvalidRepository'
+
+  Starting logs for AuxiliaryRepositoryServiceTest > shouldThrowErrorWhenDuplicateName()
+    23:47:19.750 | 438 ool-1-worker-202 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AuxiliaryRepositoryServiceTest#shouldThrowErrorWhenDuplicateName'
+
+  Starting logs for AuxiliaryRepositoryServiceTest > shouldAddAuxiliaryRepositoriesSuccessfully()
+    23:47:19.788 | 438 ool-1-worker-202 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AuxiliaryRepositoryServiceTest#shouldAddAuxiliaryRepositoriesSuccessfully'
+
+  Starting logs for AuxiliaryRepositoryServiceTest > shouldSetDirectoryToNullWhenEmptyDirectory()
+    23:47:19.832 | 438 ool-1-worker-202 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AuxiliaryRepositoryServiceTest#shouldSetDirectoryToNullWhenEmptyDirectory'
+
+  Starting logs for AuxiliaryRepositoryServiceTest > shouldReturnFalseIfNotAuxiliaryRepositoryOfExercise()
+    23:47:19.872 | 438 ool-1-worker-202 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AuxiliaryRepositoryServiceTest#shouldReturnFalseIfNotAuxiliaryRepositoryOfExercise'
+
+  Starting logs for AuxiliaryRepositoryServiceTest > shouldThrowErrorWhenInvalidDescriptionLength()
+    23:47:19.918 | 438 ool-1-worker-202 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AuxiliaryRepositoryServiceTest#shouldThrowErrorWhenInvalidDescriptionLength'
+
+  Starting logs for AuxiliaryRepositoryServiceTest > shouldReturnTrueIfAuxiliaryRepositoryOfExercise()
+    23:47:19.957 | 438 ool-1-worker-202 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AuxiliaryRepositoryServiceTest#shouldReturnTrueIfAuxiliaryRepositoryOfExercise'
+
+  Starting logs for AuxiliaryRepositoryServiceTest > shouldThrowErrorWhenInvalidDirectory()
+    23:47:19.999 | 438 ool-1-worker-202 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AuxiliaryRepositoryServiceTest#shouldThrowErrorWhenInvalidDirectory'
+
+  Starting logs for AuxiliaryRepositoryServiceTest > shouldThrowErrorWhenEditingExistingRepositoryNotInDatabase()
+    23:47:20.031 | 438 ool-1-worker-202 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AuxiliaryRepositoryServiceTest#shouldThrowErrorWhenEditingExistingRepositoryNotInDatabase'
+
+  Starting logs for AuxiliaryRepositoryServiceTest > shouldChangeRepositorySuccessfully()
+    23:47:20.088 | 438 ool-1-worker-202 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AuxiliaryRepositoryServiceTest#shouldChangeRepositorySuccessfully'
+
+  Starting logs for AuxiliaryRepositoryServiceTest > shouldThrowErrorWhenNameLongerThan100Characters()
+    23:47:20.144 | 438 ool-1-worker-202 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AuxiliaryRepositoryServiceTest#shouldThrowErrorWhenNameLongerThan100Characters'
+
+  Starting logs for AuxiliaryRepositoryServiceTest > shouldThrowErrorWhenInvalidDirectoryLength()
+    23:47:20.187 | 438 ool-1-worker-202 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AuxiliaryRepositoryServiceTest#shouldThrowErrorWhenInvalidDirectoryLength'
+
+  Starting logs for AuxiliaryRepositoryServiceTest > shouldThrowErrorWhenNotNullId()
+    23:47:20.232 | 438 ool-1-worker-202 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AuxiliaryRepositoryServiceTest#shouldThrowErrorWhenNotNullId'
+
+Finished logs for AuxiliaryRepositoryServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

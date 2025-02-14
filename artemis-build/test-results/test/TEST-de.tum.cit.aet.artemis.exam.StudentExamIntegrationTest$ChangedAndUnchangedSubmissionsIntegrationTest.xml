@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.exam.StudentExamIntegrationTest$ChangedAndUnchangedSubmissionsIntegrationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:56" hostname="fv-az1721-502" time="2.914">
+  <properties/>
+  <testcase name="testUnchangedSubmissionsDoNotChangeQueryCount()" classname="de.tum.cit.aet.artemis.exam.StudentExamIntegrationTest$ChangedAndUnchangedSubmissionsIntegrationTest" time="0.409"/>
+  <testcase name="testChangedAndNotSubmittedModelingSubmission()" classname="de.tum.cit.aet.artemis.exam.StudentExamIntegrationTest$ChangedAndUnchangedSubmissionsIntegrationTest" time="0.568"/>
+  <testcase name="testChangedAndSubmittedDoesNotChangeQueryCount()" classname="de.tum.cit.aet.artemis.exam.StudentExamIntegrationTest$ChangedAndUnchangedSubmissionsIntegrationTest" time="0.423"/>
+  <testcase name="testChangedAndNotSubmittedTextSubmission()" classname="de.tum.cit.aet.artemis.exam.StudentExamIntegrationTest$ChangedAndUnchangedSubmissionsIntegrationTest" time="0.362"/>
+  <testcase name="testChangedAndNotSubmittedShortAnswerQuestionSubmission()" classname="de.tum.cit.aet.artemis.exam.StudentExamIntegrationTest$ChangedAndUnchangedSubmissionsIntegrationTest" time="0.369"/>
+  <testcase name="testChangedAndNotSubmittedMultipleChoiceQuestionSubmission()" classname="de.tum.cit.aet.artemis.exam.StudentExamIntegrationTest$ChangedAndUnchangedSubmissionsIntegrationTest" time="0.383"/>
+  <testcase name="testChangedAndNotSubmittedDragAndDropQuestionSubmission()" classname="de.tum.cit.aet.artemis.exam.StudentExamIntegrationTest$ChangedAndUnchangedSubmissionsIntegrationTest" time="0.384"/>
+  <system-out><![CDATA[
+Starting logs for ChangedAndUnchangedSubmissionsIntegrationTest
+
+  Starting logs for ChangedAndUnchangedSubmissionsIntegrationTest > testUnchangedSubmissionsDoNotChangeQueryCount()
+    23:43:56.337 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:43:56.341 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:43:56.343 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:43:56.345 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:43:56.349 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:43:56.350 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:43:56.351 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:43:56.351 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:43:56.383 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:43:56.539 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/609/exams/1133/generate-student-exams
+    23:43:56.540 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.exam.web.ExamResource      : REST request to generate student exams for exam 1133
+    23:43:56.549 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ExamDeletionService    : User studexaminstructor1 has requested to delete existing student exams and participations for exam Real exam 1
+    23:43:56.550 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2201
+    23:43:56.551 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2202
+    23:43:56.553 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2203
+    23:43:56.554 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2204
+    23:43:56.555 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2205
+    23:43:56.557 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2206
+    23:43:56.558 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2208
+    23:43:56.559 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2207
+    23:43:56.560 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2209
+    23:43:56.561 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2210
+    23:43:56.565 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.exam.web.ExamResource      : Generated 1 student exams in 25.40ms for exam 1133
+    23:43:56.572 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/609/exams/1133/student-exams/start-exercises
+    23:43:56.577 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : REST request to start exercises for student exams of exam 1133
+    23:43:56.591 | 016 ol-6747-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 683 and exercise 2202 and student studexamstudent2
+    23:43:56.608 | 016 ol-6747-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 683 and exercise 2203 and student studexamstudent2
+    23:43:56.617 | 016 ol-6747-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 683 and exercise 2206 and student studexamstudent2
+    23:43:56.626 | 016 ol-6747-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 683 and exercise 2208 and student studexamstudent2
+    23:43:56.634 | 016 ol-6747-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 683 and exercise 2209 and student studexamstudent2
+    23:43:56.644 | 016 ol-6747-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 683 and exercise 2210 and student studexamstudent2
+    23:43:56.645 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Generated 6 participations in 72.77ms for student exams of exam 1133
+    23:43:56.645 | 370 ool-1-worker-134 | INFO  | .c.s.m.InstanceMessageReceiveService : Received reschedule of exam during conduction 1133
+    23:43:56.677 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/609/exams/1133/student-exams/start-exercises/status
+    23:43:56.682 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/609/exams/1133/student-exams/683/conduction
+    23:43:56.683 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to get the student exam of user studexamstudent2 for exam 1133
+    23:43:56.691 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.ExamSessionService     : Exam session started
+    23:43:56.692 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : getStudentExamForConduction done in 9ms for 6 exercises for user studexamstudent2
+    23:43:56.696 | 370 ool-1-worker-134 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ChangedAndUnchangedSubmissionsIntegrationTest#testUnchangedSubmissionsDoNotChangeQueryCount'
+    23:43:56.700 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/609/exams/1133/student-exams/submit
+    23:43:56.704 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to mark the studentExam as submitted : 683
+    23:43:56.707 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : Completed input validation for submitStudentExam in 2.86ms
+    23:43:56.707 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     : Submit student exam with id 683
+    23:43:56.708 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Set student exam to submitted in 716µs
+    23:43:56.710 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Potentially save submissions in 1.99ms
+    23:43:56.710 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Lock student repositories in 30µs
+    23:43:56.710 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Completed submitStudentExam with 6 exercises for user studexamstudent2 in a total time of 5.81ms
+    23:43:56.710 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.core.util.QueryCountAssert : result.callCount: 5
+
+  Starting logs for ChangedAndUnchangedSubmissionsIntegrationTest > testChangedAndNotSubmittedModelingSubmission()
+    23:43:56.746 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:43:56.750 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:43:56.753 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:43:56.754 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:43:56.759 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:43:56.760 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:43:56.761 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:43:56.761 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:43:56.792 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:43:56.944 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/612/exams/1138/generate-student-exams
+    23:43:56.944 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.exam.web.ExamResource      : REST request to generate student exams for exam 1138
+    23:43:56.961 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ExamDeletionService    : User studexaminstructor1 has requested to delete existing student exams and participations for exam Real exam 1
+    23:43:56.965 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2221
+    23:43:56.967 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2222
+    23:43:56.971 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2224
+    23:43:56.973 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2223
+    23:43:56.977 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2225
+    23:43:56.978 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2226
+    23:43:56.981 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2227
+    23:43:56.983 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2228
+    23:43:56.985 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2229
+    23:43:56.986 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2230
+    23:43:56.996 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.exam.web.ExamResource      : Generated 1 student exams in 52.07ms for exam 1138
+    23:43:57.012 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/612/exams/1138/student-exams/start-exercises
+    23:43:57.023 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : REST request to start exercises for student exams of exam 1138
+    23:43:57.046 | 019 ol-6791-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 689 and exercise 2221 and student studexamstudent2
+    23:43:57.060 | 019 ol-6791-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 689 and exercise 2223 and student studexamstudent2
+    23:43:57.071 | 019 ol-6791-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 689 and exercise 2226 and student studexamstudent2
+    23:43:57.081 | 019 ol-6791-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 689 and exercise 2228 and student studexamstudent2
+    23:43:57.091 | 019 ol-6791-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 689 and exercise 2229 and student studexamstudent2
+    23:43:57.100 | 019 ol-6791-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 689 and exercise 2230 and student studexamstudent2
+    23:43:57.102 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Generated 6 participations in 89.41ms for student exams of exam 1138
+    23:43:57.102 | 370 ool-1-worker-134 | INFO  | .c.s.m.InstanceMessageReceiveService : Received reschedule of exam during conduction 1138
+    23:43:57.125 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/612/exams/1138/student-exams/start-exercises/status
+    23:43:57.130 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/612/exams/1138/student-exams/689/conduction
+    23:43:57.132 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to get the student exam of user studexamstudent2 for exam 1138
+    23:43:57.142 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.ExamSessionService     : Exam session started
+    23:43:57.143 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : getStudentExamForConduction done in 11ms for 6 exercises for user studexamstudent2
+    23:43:57.152 | 370 ool-1-worker-134 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ChangedAndUnchangedSubmissionsIntegrationTest#testChangedAndNotSubmittedModelingSubmission'
+    23:43:57.210 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/612/exams/1138/student-exams/submit
+    23:43:57.221 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to mark the studentExam as submitted : 689
+    23:43:57.235 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : Completed input validation for submitStudentExam in 13.89ms
+    23:43:57.235 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     : Submit student exam with id 689
+    23:43:57.243 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Set student exam to submitted in 7.73ms
+    23:43:57.258 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Potentially save submissions in 14.54ms
+    23:43:57.258 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Lock student repositories in 78µs
+    23:43:57.258 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Completed submitStudentExam with 6 exercises for user studexamstudent2 in a total time of 36.78ms
+    23:43:57.265 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/612/exams/1138/student-exams/689/summary
+    23:43:57.267 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to get the student exam of user studexamstudent2 for exam 1138
+    23:43:57.274 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : getStudentExamForSummary done in 8ms for 6 exercises for user studexamstudent2
+
+  Starting logs for ChangedAndUnchangedSubmissionsIntegrationTest > testChangedAndSubmittedDoesNotChangeQueryCount()
+    23:43:57.319 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:43:57.323 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:43:57.325 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:43:57.327 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:43:57.331 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:43:57.332 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:43:57.333 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:43:57.333 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:43:57.389 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:43:57.521 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/615/exams/1143/generate-student-exams
+    23:43:57.521 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.exam.web.ExamResource      : REST request to generate student exams for exam 1143
+    23:43:57.528 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ExamDeletionService    : User studexaminstructor1 has requested to delete existing student exams and participations for exam Real exam 1
+    23:43:57.529 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2241
+    23:43:57.530 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2242
+    23:43:57.532 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2243
+    23:43:57.533 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2244
+    23:43:57.534 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2245
+    23:43:57.535 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2246
+    23:43:57.536 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2247
+    23:43:57.537 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2248
+    23:43:57.538 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2249
+    23:43:57.539 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2250
+    23:43:57.543 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.exam.web.ExamResource      : Generated 1 student exams in 21.75ms for exam 1143
+    23:43:57.549 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/615/exams/1143/student-exams/start-exercises
+    23:43:57.554 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : REST request to start exercises for student exams of exam 1143
+    23:43:57.567 | 021 ol-6847-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 695 and exercise 2242 and student studexamstudent2
+    23:43:57.579 | 021 ol-6847-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 695 and exercise 2244 and student studexamstudent2
+    23:43:57.586 | 021 ol-6847-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 695 and exercise 2245 and student studexamstudent2
+    23:43:57.592 | 021 ol-6847-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 695 and exercise 2247 and student studexamstudent2
+    23:43:57.599 | 021 ol-6847-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 695 and exercise 2249 and student studexamstudent2
+    23:43:57.606 | 021 ol-6847-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 695 and exercise 2250 and student studexamstudent2
+    23:43:57.608 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Generated 6 participations in 58.36ms for student exams of exam 1143
+    23:43:57.608 | 370 ool-1-worker-134 | INFO  | .c.s.m.InstanceMessageReceiveService : Received reschedule of exam during conduction 1143
+    23:43:57.614 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/615/exams/1143/student-exams/start-exercises/status
+    23:43:57.618 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/615/exams/1143/student-exams/695/conduction
+    23:43:57.620 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to get the student exam of user studexamstudent2 for exam 1143
+    23:43:57.626 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.ExamSessionService     : Exam session started
+    23:43:57.627 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : getStudentExamForConduction done in 8ms for 6 exercises for user studexamstudent2
+    23:43:57.630 | 370 ool-1-worker-134 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ChangedAndUnchangedSubmissionsIntegrationTest#testChangedAndSubmittedDoesNotChangeQueryCount'
+    23:43:57.631 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/exercises/2242/text-submissions
+    23:43:57.632 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.t.w.TextSubmissionResource : REST request to update text submission: TextSubmission{id=957, text='This is a changed and submitted answer', language='null'}
+    23:43:57.644 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.t.w.TextSubmissionResource : handleTextSubmission took 12ms for exercise 2242 and user studexamstudent2
+    23:43:57.647 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/exercises/2247/modeling-submissions
+    23:43:57.660 | 370 ool-1-worker-134 | INFO  | c.a.a.m.w.ModelingSubmissionResource : save took 13ms for exercise 2247 and user studexamstudent2
+    23:43:57.663 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/exercises/2244/submissions/exam
+    23:43:57.666 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for exam : QuizSubmission{id=958, scoreInPoints='null'}
+    23:43:57.678 | 370 ool-1-worker-134 | DEBUG | .a.q.s.AbstractQuizSubmissionService : submit exam quiz finished: QuizSubmission{id=958, scoreInPoints='null'}
+    23:43:57.678 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.q.w.QuizSubmissionResource : submitQuizForExam took 12ms for exercise 2244 and user studexamstudent2
+    23:43:57.682 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/615/exams/1143/student-exams/submit
+    23:43:57.684 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to mark the studentExam as submitted : 695
+    23:43:57.687 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : Completed input validation for submitStudentExam in 2.51ms
+    23:43:57.687 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     : Submit student exam with id 695
+    23:43:57.687 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Set student exam to submitted in 636µs
+    23:43:57.690 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Potentially save submissions in 2.85ms
+    23:43:57.690 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Lock student repositories in 26µs
+    23:43:57.690 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Completed submitStudentExam with 6 exercises for user studexamstudent2 in a total time of 6.20ms
+    23:43:57.691 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.core.util.QueryCountAssert : result.callCount: 8
+    23:43:57.692 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/615/exams/1143/student-exams/695/summary
+    23:43:57.693 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to get the student exam of user studexamstudent2 for exam 1143
+    23:43:57.699 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : getStudentExamForSummary done in 7ms for 6 exercises for user studexamstudent2
+
+  Starting logs for ChangedAndUnchangedSubmissionsIntegrationTest > testChangedAndNotSubmittedTextSubmission()
+    23:43:57.742 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:43:57.746 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:43:57.749 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:43:57.750 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:43:57.754 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:43:57.755 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:43:57.756 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:43:57.756 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:43:57.783 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:43:57.933 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/618/exams/1148/generate-student-exams
+    23:43:57.934 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.exam.web.ExamResource      : REST request to generate student exams for exam 1148
+    23:43:57.940 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ExamDeletionService    : User studexaminstructor1 has requested to delete existing student exams and participations for exam Real exam 1
+    23:43:57.941 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2261
+    23:43:57.942 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2262
+    23:43:57.943 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2263
+    23:43:57.944 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2264
+    23:43:57.945 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2265
+    23:43:57.946 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2266
+    23:43:57.947 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2267
+    23:43:57.948 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2268
+    23:43:57.949 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2269
+    23:43:57.950 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2270
+    23:43:57.954 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.exam.web.ExamResource      : Generated 1 student exams in 20.14ms for exam 1148
+    23:43:57.959 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/618/exams/1148/student-exams/start-exercises
+    23:43:57.963 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : REST request to start exercises for student exams of exam 1148
+    23:43:57.974 | 022 ol-6936-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 701 and exercise 2261 and student studexamstudent2
+    23:43:57.985 | 022 ol-6936-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 701 and exercise 2263 and student studexamstudent2
+    23:43:57.992 | 022 ol-6936-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 701 and exercise 2265 and student studexamstudent2
+    23:43:57.999 | 022 ol-6936-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 701 and exercise 2268 and student studexamstudent2
+    23:43:58.006 | 022 ol-6936-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 701 and exercise 2269 and student studexamstudent2
+    23:43:58.012 | 022 ol-6936-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 701 and exercise 2270 and student studexamstudent2
+    23:43:58.014 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Generated 6 participations in 54.40ms for student exams of exam 1148
+    23:43:58.014 | 370 ool-1-worker-134 | INFO  | .c.s.m.InstanceMessageReceiveService : Received reschedule of exam during conduction 1148
+    23:43:58.022 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/618/exams/1148/student-exams/start-exercises/status
+    23:43:58.026 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/618/exams/1148/student-exams/701/conduction
+    23:43:58.028 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to get the student exam of user studexamstudent2 for exam 1148
+    23:43:58.040 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.ExamSessionService     : Exam session started
+    23:43:58.041 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : getStudentExamForConduction done in 14ms for 6 exercises for user studexamstudent2
+    23:43:58.044 | 370 ool-1-worker-134 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ChangedAndUnchangedSubmissionsIntegrationTest#testChangedAndNotSubmittedTextSubmission'
+    23:43:58.047 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/618/exams/1148/student-exams/submit
+    23:43:58.048 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to mark the studentExam as submitted : 701
+    23:43:58.051 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : Completed input validation for submitStudentExam in 2.59ms
+    23:43:58.051 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     : Submit student exam with id 701
+    23:43:58.051 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Set student exam to submitted in 622µs
+    23:43:58.056 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Potentially save submissions in 4.20ms
+    23:43:58.056 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Lock student repositories in 30µs
+    23:43:58.056 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Completed submitStudentExam with 6 exercises for user studexamstudent2 in a total time of 7.65ms
+    23:43:58.061 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/618/exams/1148/student-exams/701/summary
+    23:43:58.064 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to get the student exam of user studexamstudent2 for exam 1148
+    23:43:58.070 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : getStudentExamForSummary done in 7ms for 6 exercises for user studexamstudent2
+
+  Starting logs for ChangedAndUnchangedSubmissionsIntegrationTest > testChangedAndNotSubmittedShortAnswerQuestionSubmission()
+    23:43:58.107 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:43:58.111 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:43:58.114 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:43:58.115 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:43:58.119 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:43:58.121 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:43:58.121 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:43:58.121 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:43:58.146 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:43:58.275 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/621/exams/1153/generate-student-exams
+    23:43:58.276 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.exam.web.ExamResource      : REST request to generate student exams for exam 1153
+    23:43:58.283 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ExamDeletionService    : User studexaminstructor1 has requested to delete existing student exams and participations for exam Real exam 1
+    23:43:58.284 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2281
+    23:43:58.285 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2282
+    23:43:58.286 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2283
+    23:43:58.287 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2284
+    23:43:58.288 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2285
+    23:43:58.289 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2286
+    23:43:58.290 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2288
+    23:43:58.291 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2287
+    23:43:58.292 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2289
+    23:43:58.293 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2290
+    23:43:58.297 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.exam.web.ExamResource      : Generated 1 student exams in 21.58ms for exam 1153
+    23:43:58.304 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/621/exams/1153/student-exams/start-exercises
+    23:43:58.309 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : REST request to start exercises for student exams of exam 1153
+    23:43:58.320 | 023 ol-6992-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 707 and exercise 2282 and student studexamstudent2
+    23:43:58.331 | 023 ol-6992-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 707 and exercise 2283 and student studexamstudent2
+    23:43:58.338 | 023 ol-6992-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 707 and exercise 2286 and student studexamstudent2
+    23:43:58.345 | 023 ol-6992-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 707 and exercise 2288 and student studexamstudent2
+    23:43:58.351 | 023 ol-6992-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 707 and exercise 2289 and student studexamstudent2
+    23:43:58.358 | 023 ol-6992-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 707 and exercise 2290 and student studexamstudent2
+    23:43:58.360 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Generated 6 participations in 55.89ms for student exams of exam 1153
+    23:43:58.360 | 370 ool-1-worker-134 | INFO  | .c.s.m.InstanceMessageReceiveService : Received reschedule of exam during conduction 1153
+    23:43:58.365 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/621/exams/1153/student-exams/start-exercises/status
+    23:43:58.369 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/621/exams/1153/student-exams/707/conduction
+    23:43:58.370 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to get the student exam of user studexamstudent2 for exam 1153
+    23:43:58.380 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.ExamSessionService     : Exam session started
+    23:43:58.381 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : getStudentExamForConduction done in 11ms for 6 exercises for user studexamstudent2
+    23:43:58.384 | 370 ool-1-worker-134 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ChangedAndUnchangedSubmissionsIntegrationTest#testChangedAndNotSubmittedShortAnswerQuestionSubmission'
+    23:43:58.385 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/exercises/2283/submissions/exam
+    23:43:58.387 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for exam : QuizSubmission{id=970, scoreInPoints='null'}
+    23:43:58.416 | 370 ool-1-worker-134 | DEBUG | .a.q.s.AbstractQuizSubmissionService : submit exam quiz finished: QuizSubmission{id=970, scoreInPoints='null'}
+    23:43:58.416 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.q.w.QuizSubmissionResource : submitQuizForExam took 29ms for exercise 2283 and user studexamstudent2
+    23:43:58.419 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/621/exams/1153/student-exams/submit
+    23:43:58.421 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to mark the studentExam as submitted : 707
+    23:43:58.424 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : Completed input validation for submitStudentExam in 2.49ms
+    23:43:58.424 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     : Submit student exam with id 707
+    23:43:58.425 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Set student exam to submitted in 628µs
+    23:43:58.432 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Potentially save submissions in 7.41ms
+    23:43:58.432 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Lock student repositories in 31µs
+    23:43:58.432 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Completed submitStudentExam with 6 exercises for user studexamstudent2 in a total time of 10.77ms
+    23:43:58.434 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/621/exams/1153/student-exams/707/summary
+    23:43:58.435 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to get the student exam of user studexamstudent2 for exam 1153
+    23:43:58.441 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : getStudentExamForSummary done in 7ms for 6 exercises for user studexamstudent2
+
+  Starting logs for ChangedAndUnchangedSubmissionsIntegrationTest > testChangedAndNotSubmittedMultipleChoiceQuestionSubmission()
+    23:43:58.483 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:43:58.487 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:43:58.489 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:43:58.491 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:43:58.494 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:43:58.496 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:43:58.496 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:43:58.496 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:43:58.523 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:43:58.672 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/624/exams/1158/generate-student-exams
+    23:43:58.672 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.exam.web.ExamResource      : REST request to generate student exams for exam 1158
+    23:43:58.682 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ExamDeletionService    : User studexaminstructor1 has requested to delete existing student exams and participations for exam Real exam 1
+    23:43:58.684 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2301
+    23:43:58.686 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2302
+    23:43:58.687 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2304
+    23:43:58.688 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2303
+    23:43:58.689 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2305
+    23:43:58.690 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2306
+    23:43:58.691 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2307
+    23:43:58.692 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2308
+    23:43:58.693 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2309
+    23:43:58.694 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2310
+    23:43:58.698 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.exam.web.ExamResource      : Generated 1 student exams in 25.63ms for exam 1158
+    23:43:58.704 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/624/exams/1158/student-exams/start-exercises
+    23:43:58.709 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : REST request to start exercises for student exams of exam 1158
+    23:43:58.719 | 025 ol-7048-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 713 and exercise 2301 and student studexamstudent2
+    23:43:58.731 | 025 ol-7048-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 713 and exercise 2303 and student studexamstudent2
+    23:43:58.738 | 025 ol-7048-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 713 and exercise 2306 and student studexamstudent2
+    23:43:58.746 | 025 ol-7048-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 713 and exercise 2308 and student studexamstudent2
+    23:43:58.754 | 025 ol-7048-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 713 and exercise 2309 and student studexamstudent2
+    23:43:58.762 | 025 ol-7048-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 713 and exercise 2310 and student studexamstudent2
+    23:43:58.768 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Generated 6 participations in 63.25ms for student exams of exam 1158
+    23:43:58.768 | 370 ool-1-worker-134 | INFO  | .c.s.m.InstanceMessageReceiveService : Received reschedule of exam during conduction 1158
+    23:43:58.774 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/624/exams/1158/student-exams/start-exercises/status
+    23:43:58.782 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/624/exams/1158/student-exams/713/conduction
+    23:43:58.785 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to get the student exam of user studexamstudent2 for exam 1158
+    23:43:58.792 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.ExamSessionService     : Exam session started
+    23:43:58.793 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : getStudentExamForConduction done in 9ms for 6 exercises for user studexamstudent2
+    23:43:58.796 | 370 ool-1-worker-134 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ChangedAndUnchangedSubmissionsIntegrationTest#testChangedAndNotSubmittedMultipleChoiceQuestionSubmission'
+    23:43:58.799 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/624/exams/1158/student-exams/submit
+    23:43:58.801 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to mark the studentExam as submitted : 713
+    23:43:58.803 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : Completed input validation for submitStudentExam in 2.76ms
+    23:43:58.803 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     : Submit student exam with id 713
+    23:43:58.804 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Set student exam to submitted in 691µs
+    23:43:58.810 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Potentially save submissions in 5.82ms
+    23:43:58.810 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Lock student repositories in 29µs
+    23:43:58.810 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Completed submitStudentExam with 6 exercises for user studexamstudent2 in a total time of 9.45ms
+    23:43:58.812 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/624/exams/1158/student-exams/713/summary
+    23:43:58.814 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to get the student exam of user studexamstudent2 for exam 1158
+    23:43:58.820 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : getStudentExamForSummary done in 7ms for 6 exercises for user studexamstudent2
+
+  Starting logs for ChangedAndUnchangedSubmissionsIntegrationTest > testChangedAndNotSubmittedDragAndDropQuestionSubmission()
+    23:43:58.866 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:43:58.870 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:43:58.873 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:43:58.874 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:43:58.878 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:43:58.880 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:43:58.880 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:43:58.880 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:43:58.909 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:43:59.040 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/627/exams/1163/generate-student-exams
+    23:43:59.040 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.exam.web.ExamResource      : REST request to generate student exams for exam 1163
+    23:43:59.050 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ExamDeletionService    : User studexaminstructor1 has requested to delete existing student exams and participations for exam Real exam 1
+    23:43:59.051 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2321
+    23:43:59.054 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2322
+    23:43:59.056 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2323
+    23:43:59.057 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2324
+    23:43:59.058 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2325
+    23:43:59.059 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2326
+    23:43:59.060 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2327
+    23:43:59.061 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2328
+    23:43:59.062 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2329
+    23:43:59.063 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 2330
+    23:43:59.067 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.exam.web.ExamResource      : Generated 1 student exams in 26.60ms for exam 1163
+    23:43:59.071 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/627/exams/1163/student-exams/start-exercises
+    23:43:59.074 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : REST request to start exercises for student exams of exam 1163
+    23:43:59.088 | 030 ol-7104-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 719 and exercise 2322 and student studexamstudent2
+    23:43:59.096 | 030 ol-7104-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 719 and exercise 2324 and student studexamstudent2
+    23:43:59.104 | 030 ol-7104-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 719 and exercise 2326 and student studexamstudent2
+    23:43:59.111 | 030 ol-7104-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 719 and exercise 2327 and student studexamstudent2
+    23:43:59.119 | 030 ol-7104-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 719 and exercise 2329 and student studexamstudent2
+    23:43:59.126 | 030 ol-7104-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 719 and exercise 2330 and student studexamstudent2
+    23:43:59.127 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Generated 6 participations in 56.46ms for student exams of exam 1163
+    23:43:59.127 | 370 ool-1-worker-134 | INFO  | .c.s.m.InstanceMessageReceiveService : Received reschedule of exam during conduction 1163
+    23:43:59.133 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/627/exams/1163/student-exams/start-exercises/status
+    23:43:59.138 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/627/exams/1163/student-exams/719/conduction
+    23:43:59.139 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to get the student exam of user studexamstudent2 for exam 1163
+    23:43:59.146 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.ExamSessionService     : Exam session started
+    23:43:59.146 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : getStudentExamForConduction done in 8ms for 6 exercises for user studexamstudent2
+    23:43:59.153 | 370 ool-1-worker-134 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ChangedAndUnchangedSubmissionsIntegrationTest#testChangedAndNotSubmittedDragAndDropQuestionSubmission'
+    23:43:59.160 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/627/exams/1163/student-exams/submit
+    23:43:59.162 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to mark the studentExam as submitted : 719
+    23:43:59.166 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : Completed input validation for submitStudentExam in 3.79ms
+    23:43:59.166 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     : Submit student exam with id 719
+    23:43:59.167 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Set student exam to submitted in 648µs
+    23:43:59.175 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Potentially save submissions in 8.23ms
+    23:43:59.175 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.s.StudentExamService     :     Lock student repositories in 191µs
+    23:43:59.175 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Completed submitStudentExam with 6 exercises for user studexamstudent2 in a total time of 13.14ms
+    23:43:59.177 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/627/exams/1163/student-exams/719/summary
+    23:43:59.179 | 370 ool-1-worker-134 | DEBUG | d.t.c.a.a.e.web.StudentExamResource  : REST request to get the student exam of user studexamstudent2 for exam 1163
+    23:43:59.185 | 370 ool-1-worker-134 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : getStudentExamForSummary done in 7ms for 6 exercises for user studexamstudent2
+
+Finished logs for ChangedAndUnchangedSubmissionsIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

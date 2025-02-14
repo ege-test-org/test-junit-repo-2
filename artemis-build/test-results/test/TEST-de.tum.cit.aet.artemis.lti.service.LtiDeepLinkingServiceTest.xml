@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lti.service.LtiDeepLinkingServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:01" hostname="fv-az1721-502" time="0.057">
+  <properties/>
+  <testcase name="testEmptyJwtBuildLtiDeepLinkResponse()" classname="de.tum.cit.aet.artemis.lti.service.LtiDeepLinkingServiceTest" time="0.022"/>
+  <testcase name="testEmptyDeploymentIdBuildLtiDeepLinkResponse()" classname="de.tum.cit.aet.artemis.lti.service.LtiDeepLinkingServiceTest" time="0.006"/>
+  <testcase name="testPerformDeepLinking()" classname="de.tum.cit.aet.artemis.lti.service.LtiDeepLinkingServiceTest" time="0.01"/>
+  <testcase name="testEmptyReturnUrlBuildLtiDeepLinkResponse()" classname="de.tum.cit.aet.artemis.lti.service.LtiDeepLinkingServiceTest" time="0.014"/>
+  <system-out><![CDATA[
+Starting logs for LtiDeepLinkingServiceTest
+
+  Starting logs for LtiDeepLinkingServiceTest > testEmptyJwtBuildLtiDeepLinkResponse()
+
+  Starting logs for LtiDeepLinkingServiceTest > testEmptyDeploymentIdBuildLtiDeepLinkResponse()
+
+  Starting logs for LtiDeepLinkingServiceTest > testPerformDeepLinking()
+
+  Starting logs for LtiDeepLinkingServiceTest > testEmptyReturnUrlBuildLtiDeepLinkResponse()
+
+Finished logs for LtiDeepLinkingServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

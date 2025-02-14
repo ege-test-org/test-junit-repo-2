@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.plagiarism.PlagiarismCheckIntegrationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:16" hostname="fv-az1721-502" time="1.471">
+  <properties/>
+  <testcase name="testCheckPlagiarismResultForModelingExercise()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismCheckIntegrationTest" time="0.381"/>
+  <testcase name="testCheckPlagiarismResultForTextExercise()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismCheckIntegrationTest" time="0.557"/>
+  <testcase name="testCheckPlagiarismResultForTeamTextExercise()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismCheckIntegrationTest" time="0.266"/>
+  <testcase name="testCheckPlagiarismResultForTeamModelingExercise()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismCheckIntegrationTest" time="0.258"/>
+  <system-out><![CDATA[
+Starting logs for PlagiarismCheckIntegrationTest
+
+  Starting logs for PlagiarismCheckIntegrationTest > testCheckPlagiarismResultForModelingExercise()
+    23:47:16.238 | 435 ool-1-worker-199 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PlagiarismCheckIntegrationTest#testCheckPlagiarismResultForModelingExercise'
+    23:47:16.239 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:16.248 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:16.250 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:47:16.256 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:47:16.262 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:16.264 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:47:16.269 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:47:16.269 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database...
+    23:47:16.280 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database. Done
+    23:47:16.436 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/modeling-exercises/3242/check-plagiarism
+    23:47:16.447 | 435 ool-1-worker-199 | INFO  | t.c.a.a.m.w.ModelingExerciseResource : Started manual plagiarism checks for modeling exercise: exerciseId=3242.
+    23:47:16.454 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:47:16.464 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:47:16.466 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:47:16.475 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:47:16.477 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:47:16.481 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found 5 modeling submissions with at least 0 elements to compare
+    23:47:16.482 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.9999999999999998
+    23:47:16.482 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.9999999999999998
+    23:47:16.482 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 2: 0.9999999999999998
+    23:47:16.482 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 2: 0.9999999999999998
+    23:47:16.482 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 3: 0.9999999999999998
+    23:47:16.482 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 3: 0.9999999999999998
+    23:47:16.483 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 4: 0.9999999999999998
+    23:47:16.483 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 4: 0.9999999999999998
+    23:47:16.487 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 1 with 2: 0.9999999999999998
+    23:47:16.487 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 1 with 2: 0.9999999999999998
+    23:47:16.487 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 1 with 3: 0.9999999999999998
+    23:47:16.487 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 1 with 3: 0.9999999999999998
+    23:47:16.488 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 1 with 4: 0.9999999999999998
+    23:47:16.488 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 1 with 4: 0.9999999999999998
+    23:47:16.488 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 2 with 3: 0.9999999999999998
+    23:47:16.488 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 2 with 3: 0.9999999999999998
+    23:47:16.488 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 2 with 4: 0.9999999999999998
+    23:47:16.488 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 2 with 4: 0.9999999999999998
+    23:47:16.489 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 3 with 4: 0.9999999999999998
+    23:47:16.489 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 3 with 4: 0.9999999999999998
+    23:47:16.489 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found 10 similar modeling submission combinations (>50.0)
+    23:47:16.490 | 435 ool-1-worker-199 | INFO  | c.a.a.p.s.PlagiarismDetectionService : Finished modelingPlagiarismDetectionService.checkPlagiarism call for 10 comparisons
+    23:47:16.544 | 435 ool-1-worker-199 | INFO  | t.c.a.a.m.w.ModelingExerciseResource : Finished manual plagiarism checks for modeling exercise: exerciseId=3242, elapsed=96.51ms.
+
+  Starting logs for PlagiarismCheckIntegrationTest > testCheckPlagiarismResultForTextExercise()
+    23:47:16.628 | 435 ool-1-worker-199 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PlagiarismCheckIntegrationTest#testCheckPlagiarismResultForTextExercise'
+    23:47:16.629 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:16.643 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:16.646 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:47:16.648 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:47:16.651 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:16.654 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses...
+    23:47:16.655 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses. Done
+    23:47:16.656 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database...
+    23:47:16.672 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database. Done
+    23:47:16.691 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/text-exercises/3243/check-plagiarism
+    23:47:16.702 | 435 ool-1-worker-199 | INFO  | d.t.c.a.a.t.web.TextExerciseResource : Started manual plagiarism checks for text exercise: exerciseId=3243.
+    23:47:16.710 | 435 ool-1-worker-199 | INFO  | a.p.s.TextPlagiarismDetectionService : Found 5 text submissions in exercise 3243
+    23:47:16.711 | 435 ool-1-worker-199 | INFO  | a.p.s.TextPlagiarismDetectionService : Save text submissions for JPlag text comparison with 5 submissions
+    23:47:16.713 | 435 ool-1-worker-199 | INFO  | a.p.s.TextPlagiarismDetectionService : Saving text submissions done
+    23:47:16.820 | 435 ool-1-worker-199 | INFO  | e.s.nlp.pipeline.StanfordCoreNLP     : Adding annotator tokenize
+    23:47:16.852 | 435 ool-1-worker-199 | INFO  | a.p.s.TextPlagiarismDetectionService : Start JPlag Text comparison
+    23:47:16.852 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Loading Submissions   (5)
+    23:47:16.852 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 0
+    23:47:16.852 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 1
+    23:47:16.852 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 2
+    23:47:16.852 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 3
+    23:47:16.852 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 4
+    23:47:16.852 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Progress bar done.
+    23:47:16.852 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Parsing Submissions   (5)
+    23:47:17.085 | 435 ool-1-worker-199 | WARN  | de.jplag.Token                       : Creating a token with column index 0 while index is 1-based
+    23:47:17.085 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 0
+    23:47:17.086 | 435 ool-1-worker-199 | WARN  | de.jplag.Token                       : Creating a token with column index 0 while index is 1-based
+    23:47:17.086 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 1
+    23:47:17.091 | 435 ool-1-worker-199 | WARN  | de.jplag.Token                       : Creating a token with column index 0 while index is 1-based
+    23:47:17.091 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 2
+    23:47:17.091 | 435 ool-1-worker-199 | WARN  | de.jplag.Token                       : Creating a token with column index 0 while index is 1-based
+    23:47:17.091 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 3
+    23:47:17.092 | 435 ool-1-worker-199 | WARN  | de.jplag.Token                       : Creating a token with column index 0 while index is 1-based
+    23:47:17.092 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 4
+    23:47:17.092 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Progress bar done.
+    23:47:17.092 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Comparing Submissions (10)
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 0
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 1
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 2
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 3
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 4
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 5
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 6
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 7
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 8
+    23:47:17.100 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 9
+    23:47:17.100 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Progress bar done.
+    23:47:17.100 | 435 ool-1-worker-199 | INFO  | de.jplag.JPlag                       : Total time for comparing submissions: 0h 00min 00s 008ms
+    23:47:17.100 | 435 ool-1-worker-199 | WARN  | d.jplag.clustering.ClusteringFactory : Cluster calculation disabled (as requested)!
+    23:47:17.100 | 435 ool-1-worker-199 | INFO  | a.p.s.TextPlagiarismDetectionService : JPlag Text comparison finished with 10 comparisons. Will limit the number of comparisons to 500
+    23:47:17.100 | 435 ool-1-worker-199 | INFO  | a.p.s.TextPlagiarismDetectionService : Delete submission folder
+    23:47:17.106 | 435 ool-1-worker-199 | INFO  | a.p.s.TextPlagiarismDetectionService : JPlag text comparison for 5 submissions done in 403.83ms
+    23:47:17.106 | 435 ool-1-worker-199 | INFO  | c.a.a.p.s.PlagiarismDetectionService : Finished textPlagiarismDetectionService.checkPlagiarism for exercise 3243 with 10 comparisons,
+    23:47:17.141 | 435 ool-1-worker-199 | INFO  | d.t.c.a.a.t.web.TextExerciseResource : Finished manual plagiarism checks for text exercise: exerciseId=3243, elapsed=438.92ms.
+
+  Starting logs for PlagiarismCheckIntegrationTest > testCheckPlagiarismResultForTeamTextExercise()
+    23:47:17.184 | 435 ool-1-worker-199 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PlagiarismCheckIntegrationTest#testCheckPlagiarismResultForTeamTextExercise'
+    23:47:17.185 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:47:17.189 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:47:17.196 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:47:17.202 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:47:17.207 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:17.213 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses...
+    23:47:17.214 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses. Done
+    23:47:17.214 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:47:17.223 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:47:17.354 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/text-exercises/3244/check-plagiarism
+    23:47:17.365 | 435 ool-1-worker-199 | INFO  | d.t.c.a.a.t.web.TextExerciseResource : Started manual plagiarism checks for text exercise: exerciseId=3244.
+    23:47:17.367 | 435 ool-1-worker-199 | INFO  | a.p.s.TextPlagiarismDetectionService : Found 5 text submissions in exercise 3244
+    23:47:17.367 | 435 ool-1-worker-199 | INFO  | a.p.s.TextPlagiarismDetectionService : Save text submissions for JPlag text comparison with 5 submissions
+    23:47:17.369 | 435 ool-1-worker-199 | INFO  | a.p.s.TextPlagiarismDetectionService : Saving text submissions done
+    23:47:17.370 | 435 ool-1-worker-199 | INFO  | e.s.nlp.pipeline.StanfordCoreNLP     : Adding annotator tokenize
+    23:47:17.370 | 435 ool-1-worker-199 | INFO  | a.p.s.TextPlagiarismDetectionService : Start JPlag Text comparison
+    23:47:17.370 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Loading Submissions   (5)
+    23:47:17.370 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 0
+    23:47:17.370 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 1
+    23:47:17.370 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 2
+    23:47:17.370 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 3
+    23:47:17.370 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 4
+    23:47:17.370 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Progress bar done.
+    23:47:17.370 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Parsing Submissions   (5)
+    23:47:17.374 | 435 ool-1-worker-199 | WARN  | de.jplag.Token                       : Creating a token with column index 0 while index is 1-based
+    23:47:17.374 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 0
+    23:47:17.375 | 435 ool-1-worker-199 | WARN  | de.jplag.Token                       : Creating a token with column index 0 while index is 1-based
+    23:47:17.375 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 1
+    23:47:17.381 | 435 ool-1-worker-199 | WARN  | de.jplag.Token                       : Creating a token with column index 0 while index is 1-based
+    23:47:17.381 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 2
+    23:47:17.382 | 435 ool-1-worker-199 | WARN  | de.jplag.Token                       : Creating a token with column index 0 while index is 1-based
+    23:47:17.382 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 3
+    23:47:17.382 | 435 ool-1-worker-199 | WARN  | de.jplag.Token                       : Creating a token with column index 0 while index is 1-based
+    23:47:17.382 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 4
+    23:47:17.382 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Progress bar done.
+    23:47:17.382 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Comparing Submissions (10)
+    23:47:17.382 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 0
+    23:47:17.382 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 1
+    23:47:17.382 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 2
+    23:47:17.383 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 3
+    23:47:17.383 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 4
+    23:47:17.383 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 5
+    23:47:17.383 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 6
+    23:47:17.383 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 7
+    23:47:17.383 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 8
+    23:47:17.383 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 9
+    23:47:17.383 | 435 ool-1-worker-199 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Progress bar done.
+    23:47:17.383 | 435 ool-1-worker-199 | INFO  | de.jplag.JPlag                       : Total time for comparing submissions: 0h 00min 00s 001ms
+    23:47:17.383 | 435 ool-1-worker-199 | WARN  | d.jplag.clustering.ClusteringFactory : Cluster calculation disabled (as requested)!
+    23:47:17.383 | 435 ool-1-worker-199 | INFO  | a.p.s.TextPlagiarismDetectionService : JPlag Text comparison finished with 10 comparisons. Will limit the number of comparisons to 500
+    23:47:17.383 | 435 ool-1-worker-199 | INFO  | a.p.s.TextPlagiarismDetectionService : Delete submission folder
+    23:47:17.384 | 435 ool-1-worker-199 | INFO  | a.p.s.TextPlagiarismDetectionService : JPlag text comparison for 5 submissions done in 18.55ms
+    23:47:17.388 | 435 ool-1-worker-199 | INFO  | c.a.a.p.s.PlagiarismDetectionService : Finished textPlagiarismDetectionService.checkPlagiarism for exercise 3244 with 10 comparisons,
+    23:47:17.411 | 435 ool-1-worker-199 | INFO  | d.t.c.a.a.t.web.TextExerciseResource : Finished manual plagiarism checks for text exercise: exerciseId=3244, elapsed=46.20ms.
+
+  Starting logs for PlagiarismCheckIntegrationTest > testCheckPlagiarismResultForTeamModelingExercise()
+    23:47:17.442 | 435 ool-1-worker-199 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PlagiarismCheckIntegrationTest#testCheckPlagiarismResultForTeamModelingExercise'
+    23:47:17.443 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:47:17.444 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:47:17.448 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:47:17.450 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:47:17.453 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:17.456 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 15 users from all courses...
+    23:47:17.458 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 15 users from all courses. Done
+    23:47:17.458 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:47:17.461 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:47:17.595 | 435 ool-1-worker-199 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/modeling-exercises/3245/check-plagiarism
+    23:47:17.612 | 435 ool-1-worker-199 | INFO  | t.c.a.a.m.w.ModelingExerciseResource : Started manual plagiarism checks for modeling exercise: exerciseId=3245.
+    23:47:17.613 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:47:17.619 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:47:17.620 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:47:17.625 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:47:17.626 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:47:17.627 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found 5 modeling submissions with at least 0 elements to compare
+    23:47:17.627 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.9999999999999998
+    23:47:17.627 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.9999999999999998
+    23:47:17.633 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 2: 0.9999999999999998
+    23:47:17.633 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 2: 0.9999999999999998
+    23:47:17.633 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 3: 0.9999999999999998
+    23:47:17.633 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 3: 0.9999999999999998
+    23:47:17.633 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 4: 0.9999999999999998
+    23:47:17.633 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 4: 0.9999999999999998
+    23:47:17.634 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 1 with 2: 0.9999999999999998
+    23:47:17.634 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 1 with 2: 0.9999999999999998
+    23:47:17.634 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 1 with 3: 0.9999999999999998
+    23:47:17.634 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 1 with 3: 0.9999999999999998
+    23:47:17.634 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 1 with 4: 0.9999999999999998
+    23:47:17.634 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 1 with 4: 0.9999999999999998
+    23:47:17.634 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 2 with 3: 0.9999999999999998
+    23:47:17.634 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 2 with 3: 0.9999999999999998
+    23:47:17.635 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 2 with 4: 0.9999999999999998
+    23:47:17.635 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 2 with 4: 0.9999999999999998
+    23:47:17.635 | 435 ool-1-worker-199 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 3 with 4: 0.9999999999999998
+    23:47:17.635 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 3 with 4: 0.9999999999999998
+    23:47:17.635 | 435 ool-1-worker-199 | INFO  | s.ModelingPlagiarismDetectionService : Found 10 similar modeling submission combinations (>50.0)
+    23:47:17.638 | 435 ool-1-worker-199 | INFO  | c.a.a.p.s.PlagiarismDetectionService : Finished modelingPlagiarismDetectionService.checkPlagiarism call for 10 comparisons
+    23:47:17.667 | 435 ool-1-worker-199 | INFO  | t.c.a.a.m.w.ModelingExerciseResource : Finished manual plagiarism checks for modeling exercise: exerciseId=3245, elapsed=55.45ms.
+
+Finished logs for PlagiarismCheckIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.service.TitleCacheEvictionServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:40" hostname="fv-az1721-502" time="0.159">
+  <properties/>
+  <testcase name="testEvictsTitleOnUpdateTitleOrDeleteLecture()" classname="de.tum.cit.aet.artemis.core.service.TitleCacheEvictionServiceTest" time="0.021"/>
+  <testcase name="testEvictsTitleOnUpdateTitleOrDeleteApollonDiagram()" classname="de.tum.cit.aet.artemis.core.service.TitleCacheEvictionServiceTest" time="0.015"/>
+  <testcase name="testEvictsTitleOnUpdateTitleOrDeleteCourse()" classname="de.tum.cit.aet.artemis.core.service.TitleCacheEvictionServiceTest" time="0.03"/>
+  <testcase name="testEvictsTitleOnUpdateTitleOrDeleteExam()" classname="de.tum.cit.aet.artemis.core.service.TitleCacheEvictionServiceTest" time="0.029"/>
+  <testcase name="testEvictsTitleOnUpdateTitleOrDeleteExercise()" classname="de.tum.cit.aet.artemis.core.service.TitleCacheEvictionServiceTest" time="0.032"/>
+  <testcase name="testEvictsTitleOnUpdateNameOrDeleteOrganization()" classname="de.tum.cit.aet.artemis.core.service.TitleCacheEvictionServiceTest" time="0.022"/>
+  <system-out><![CDATA[
+Starting logs for TitleCacheEvictionServiceTest
+
+  Starting logs for TitleCacheEvictionServiceTest > testEvictsTitleOnUpdateTitleOrDeleteLecture()
+    23:45:40.923 | 354 ool-1-worker-118 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TitleCacheEvictionServiceTest#testEvictsTitleOnUpdateTitleOrDeleteLecture'
+    23:45:40.930 | 354 ool-1-worker-118 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '583' from title cache 'lectureTitle'
+    23:45:40.933 | 354 ool-1-worker-118 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '583' from title cache 'lectureTitle'
+
+  Starting logs for TitleCacheEvictionServiceTest > testEvictsTitleOnUpdateTitleOrDeleteApollonDiagram()
+    23:45:40.944 | 354 ool-1-worker-118 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TitleCacheEvictionServiceTest#testEvictsTitleOnUpdateTitleOrDeleteApollonDiagram'
+    23:45:40.948 | 354 ool-1-worker-118 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '1' from title cache 'diagramTitle'
+    23:45:40.949 | 354 ool-1-worker-118 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '1' from title cache 'diagramTitle'
+
+  Starting logs for TitleCacheEvictionServiceTest > testEvictsTitleOnUpdateTitleOrDeleteCourse()
+    23:45:40.962 | 354 ool-1-worker-118 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TitleCacheEvictionServiceTest#testEvictsTitleOnUpdateTitleOrDeleteCourse'
+    23:45:40.970 | 354 ool-1-worker-118 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '1553' from title cache 'courseTitle'
+    23:45:40.977 | 354 ool-1-worker-118 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '1553' from title cache 'courseTitle'
+
+  Starting logs for TitleCacheEvictionServiceTest > testEvictsTitleOnUpdateTitleOrDeleteExam()
+    23:45:40.998 | 354 ool-1-worker-118 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TitleCacheEvictionServiceTest#testEvictsTitleOnUpdateTitleOrDeleteExam'
+    23:45:41.004 | 354 ool-1-worker-118 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '180' from title cache 'examTitle'
+    23:45:41.008 | 354 ool-1-worker-118 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '180' from title cache 'examTitle'
+
+  Starting logs for TitleCacheEvictionServiceTest > testEvictsTitleOnUpdateTitleOrDeleteExercise()
+    23:45:41.026 | 354 ool-1-worker-118 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TitleCacheEvictionServiceTest#testEvictsTitleOnUpdateTitleOrDeleteExercise'
+    23:45:41.038 | 354 ool-1-worker-118 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '1815' from title cache 'exerciseTitle'
+    23:45:41.044 | 354 ool-1-worker-118 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '1815' from title cache 'exerciseTitle'
+
+  Starting logs for TitleCacheEvictionServiceTest > testEvictsTitleOnUpdateNameOrDeleteOrganization()
+    23:45:41.059 | 354 ool-1-worker-118 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TitleCacheEvictionServiceTest#testEvictsTitleOnUpdateNameOrDeleteOrganization'
+    23:45:41.062 | 354 ool-1-worker-118 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '22' from title cache 'organizationTitle'
+    23:45:41.067 | 354 ool-1-worker-118 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '22' from title cache 'organizationTitle'
+
+Finished logs for TitleCacheEvictionServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

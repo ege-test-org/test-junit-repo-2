@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.authorization.AuthorizationArchitectureTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:35" hostname="fv-az1721-502" time="0.118">
+  <properties/>
+  <testcase name="testEnforceAdminAnnotations()" classname="de.tum.cit.aet.artemis.core.authorization.AuthorizationArchitectureTest" time="0.018"/>
+  <testcase name="testEnforceAtLeastEditorAnnotations()" classname="de.tum.cit.aet.artemis.core.authorization.AuthorizationArchitectureTest" time="0.014"/>
+  <testcase name="testNoPreAuthorizeOnRestEndpoints()" classname="de.tum.cit.aet.artemis.core.authorization.AuthorizationArchitectureTest" time="0.025"/>
+  <testcase name="testEnforceAtLeastTutorAnnotations()" classname="de.tum.cit.aet.artemis.core.authorization.AuthorizationArchitectureTest" time="0.014"/>
+  <testcase name="testEnforceAtLeastInstructorAnnotations()" classname="de.tum.cit.aet.artemis.core.authorization.AuthorizationArchitectureTest" time="0.013"/>
+  <testcase name="testEnforceAtLeastStudentAnnotations()" classname="de.tum.cit.aet.artemis.core.authorization.AuthorizationArchitectureTest" time="0.013"/>
+  <testcase name="testEnforceNothingAnnotations()" classname="de.tum.cit.aet.artemis.core.authorization.AuthorizationArchitectureTest" time="0.011"/>
+  <testcase name="testNoPreAuthorizeOnRestControllers()" classname="de.tum.cit.aet.artemis.core.authorization.AuthorizationArchitectureTest" time="0.003"/>
+  <system-out><![CDATA[
+Starting logs for AuthorizationArchitectureTest
+
+  Starting logs for AuthorizationArchitectureTest > testEnforceAdminAnnotations()
+
+  Starting logs for AuthorizationArchitectureTest > testEnforceAtLeastEditorAnnotations()
+
+  Starting logs for AuthorizationArchitectureTest > testNoPreAuthorizeOnRestEndpoints()
+
+  Starting logs for AuthorizationArchitectureTest > testEnforceAtLeastTutorAnnotations()
+
+  Starting logs for AuthorizationArchitectureTest > testEnforceAtLeastInstructorAnnotations()
+
+  Starting logs for AuthorizationArchitectureTest > testEnforceAtLeastStudentAnnotations()
+
+  Starting logs for AuthorizationArchitectureTest > testEnforceNothingAnnotations()
+
+  Starting logs for AuthorizationArchitectureTest > testNoPreAuthorizeOnRestControllers()
+
+Finished logs for AuthorizationArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

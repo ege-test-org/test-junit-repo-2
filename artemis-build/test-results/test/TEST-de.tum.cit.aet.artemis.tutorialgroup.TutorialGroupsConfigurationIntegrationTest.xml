@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupsConfigurationIntegrationTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:48:36" hostname="fv-az1721-502" time="1.03">
+  <properties/>
+  <testcase name="update_periodChange_deleteTutorialGroupFreePeriodsAndIndividualSessionsAndRecreateScheduledSessions()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupsConfigurationIntegrationTest" time="0.088"/>
+  <testcase name="updateCourse_switchUseTutorialGroupSetting_shouldCreateAndThenDeleteTutorialGroupChannels()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupsConfigurationIntegrationTest" time="0.128"/>
+  <testcase name="request_asTutor_shouldReturnForbidden()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupsConfigurationIntegrationTest" time="0.064"/>
+  <testcase name="updateCourse_timeZoneChange_deleteTutorialGroupFreePeriodsAndIndividualSessionsAndRecreateScheduledSessions()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupsConfigurationIntegrationTest" time="0.128"/>
+  <testcase name="getOneOfCourse_asStudent_shouldReturnTutorialGroupsConfiguration()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupsConfigurationIntegrationTest" time="0.064"/>
+  <testcase name="request_asInstructorNotInCourse_shouldReturnForbidden()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupsConfigurationIntegrationTest" time="0.064"/>
+  <testcase name="updateCourse_switchUsePublicChannelsSetting_shouldSwitchChannelModeOfTutorialGroupChannels()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupsConfigurationIntegrationTest" time="0.111"/>
+  <testcase name="create_configurationAlreadyExists_shouldReturnBadRequest()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupsConfigurationIntegrationTest" time="0.061"/>
+  <testcase name="request_asEditor_shouldReturnForbidden()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupsConfigurationIntegrationTest" time="0.063"/>
+  <testcase name="create_invalidDateFormat_shouldReturnBadRequest()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupsConfigurationIntegrationTest" time="0.069"/>
+  <testcase name="create_asInstructor_shouldCreateTutorialGroupsConfiguration()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupsConfigurationIntegrationTest" time="0.058"/>
+  <testcase name="request_asStudent_shouldReturnForbidden()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupsConfigurationIntegrationTest" time="0.054"/>
+  <testcase name="persistEntityWithIndirectConnectionToConfiguration_dateAsFullIsoString_shouldNotThrowDeserializationException()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupsConfigurationIntegrationTest" time="0.059"/>
+  <system-out><![CDATA[[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+WARNING: A terminally deprecated method in java.lang.System has been called
+WARNING: System::setSecurityManager has been called by de.tum.in.test.api.security.ArtemisSecurityManager (file:/home/runner/.m2/repository/de/tum/in/ase/artemis-java-test-sandbox/1.13.0/artemis-java-test-sandbox-1.13.0.jar)
+WARNING: Please consider reporting this to the maintainers of de.tum.in.test.api.security.ArtemisSecurityManager
+WARNING: System::setSecurityManager will be removed in a future release
+NOTICE: The warning above is expected and the issue is already known.
+        Visit https://github.com/ls1intum/Ares/discussions/113 for more details.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional.empty, executionPath=/tmp/testLocalRepo13293838197966424854, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[protected org.junit.jupiter.api.DynamicContainer de.test.ConstructorTest.generateTestsForAllClasses() throws java.net.URISyntaxException], executionPath=/tmp/testLocalRepo13293838197966424854, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-1,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-1,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[protected org.junit.jupiter.api.DynamicContainer de.test.ConstructorTest.generateTestsForAllClasses() throws java.net.URISyntaxException], executionPath=/tmp/testLocalRepo13293838197966424854, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-2,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-2,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[ERROR] Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.676 s <<< FAILURE! -- in de.test.ConstructorTest
+[ERROR] de.test.ConstructorTest.testConstructors[Policy] -- Time elapsed: 0.082 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: The exercise expects a class with the name Policy in the package de.test. You did not implement the class in the exercise.
+	at de.tum.in.test.api.structural.StructuralTestProvider.failure(StructuralTestProvider.java:423)
+	at de.tum.in.test.api.structural.StructuralTestProvider.findClassForTestType(StructuralTestProvider.java:105)
+	at de.tum.in.test.api.structural.ConstructorTestProvider.testConstructors(ConstructorTestProvider.java:76)
+	at de.tum.in.test.api.structural.ConstructorTestProvider.lambda$generateTestsForAllClasses$0(ConstructorTestProvider.java:53)
+	at de.tum.in.test.api.internal.TimeoutUtils.rethrowThrowableSafe(TimeoutUtils.java:47)
+	at de.tum.in.test.api.internal.TimeoutUtils.lambda$performTimeoutExecution$1(TimeoutUtils.java:42)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+[INFO] Running de.test.MethodTest
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional.empty, executionPath=/tmp/testLocalRepo13293838197966424854, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[protected org.junit.jupiter.api.DynamicContainer de.test.MethodTest.generateTestsForAllClasses() throws java.net.URISyntaxException], executionPath=/tmp/testLocalRepo13293838197966424854, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-3,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-3,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[protected org.junit.jupiter.api.DynamicContainer de.test.MethodTest.generateTestsForAllClasses() throws java.net.URISyntaxException], executionPath=/tmp/testLocalRepo13293838197966424854, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-4,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-4,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[protected org.junit.jupiter.api.DynamicContainer de.test.MethodTest.generateTestsForAllClasses() throws java.net.URISyntaxException], executionPath=/tmp/testLocalRepo13293838197966424854, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-5,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-5,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[protected org.junit.jupiter.api.DynamicContainer de.test.MethodTest.generateTestsForAllClasses() throws java.net.URISyntaxException], executionPath=/tmp/testLocalRepo13293838197966424854, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-6,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-6,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[ERROR] Tests run: 3, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.190 s <<< FAILURE! -- in de.test.MethodTest
+[ERROR] de.test.MethodTest.testMethods[Context] -- Time elapsed: 0.037 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: The exercise expects a class with the name Context in the package de.test. You did not implement the class in the exercise.
+	at de.tum.in.test.api.structural.StructuralTestProvider.failure(StructuralTestProvider.java:423)
+	at de.tum.in.test.api.structural.StructuralTestProvider.findClassForTestType(StructuralTestProvider.java:105)
+	at de.tum.in.test.api.structural.MethodTestProvider.testMethods(MethodTestProvider.java:76)
+	at de.tum.in.test.api.structural.MethodTestProvider.lambda$generateTestsForAllClasses$0(MethodTestProvider.java:53)
+	at de.tum.in.test.api.internal.TimeoutUtils.rethrowThrowableSafe(TimeoutUtils.java:47)
+	at de.tum.in.test.api.internal.TimeoutUtils.lambda$performTimeoutExecution$1(TimeoutUtils.java:42)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+[ERROR] de.test.MethodTest.testMethods[Policy] -- Time elapsed: 0.033 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: The exercise expects a class with the name Policy in the package de.test. You did not implement the class in the exercise.
+	at de.tum.in.test.api.structural.StructuralTestProvider.failure(StructuralTestProvider.java:423)
+	at de.tum.in.test.api.structural.StructuralTestProvider.findClassForTestType(StructuralTestProvider.java:105)
+	at de.tum.in.test.api.structural.MethodTestProvider.testMethods(MethodTestProvider.java:76)
+	at de.tum.in.test.api.structural.MethodTestProvider.lambda$generateTestsForAllClasses$0(MethodTestProvider.java:53)
+	at de.tum.in.test.api.internal.TimeoutUtils.rethrowThrowableSafe(TimeoutUtils.java:47)
+	at de.tum.in.test.api.internal.TimeoutUtils.lambda$performTimeoutExecution$1(TimeoutUtils.java:42)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+[ERROR] de.test.MethodTest.testMethods[SortStrategy] -- Time elapsed: 0.045 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: The exercise expects a class with the name SortStrategy in the package de.test. You did not implement the class in the exercise.
+	at de.tum.in.test.api.structural.StructuralTestProvider.failure(StructuralTestProvider.java:423)
+	at de.tum.in.test.api.structural.StructuralTestProvider.findClassForTestType(StructuralTestProvider.java:105)
+	at de.tum.in.test.api.structural.MethodTestProvider.testMethods(MethodTestProvider.java:76)
+	at de.tum.in.test.api.structural.MethodTestProvider.lambda$generateTestsForAllClasses$0(MethodTestProvider.java:53)
+	at de.tum.in.test.api.internal.TimeoutUtils.rethrowThrowableSafe(TimeoutUtils.java:47)
+	at de.tum.in.test.api.internal.TimeoutUtils.lambda$performTimeoutExecution$1(TimeoutUtils.java:42)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+[INFO] Running de.test.SortingExampleBehaviorTest
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional.empty, executionPath=/tmp/testLocalRepo13293838197966424854, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[void de.test.SortingExampleBehaviorTest.testMergeSort()], executionPath=/tmp/testLocalRepo13293838197966424854, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-7,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-7,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[void de.test.SortingExampleBehaviorTest.testMergeSort()], executionPath=/tmp/testLocalRepo13293838197966424854, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-8,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-8,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional.empty, executionPath=/tmp/testLocalRepo13293838197966424854, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[void de.test.SortingExampleBehaviorTest.testUseBubbleSortForSmallList() throws java.lang.ReflectiveOperationException], executionPath=/tmp/testLocalRepo13293838197966424854, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-9,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-9,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+
+Starting logs for TutorialGroupsConfigurationIntegrationTest
+
+  Starting logs for TutorialGroupsConfigurationIntegrationTest > update_periodChange_deleteTutorialGroupFreePeriodsAndIndividualSessionsAndRecreateScheduledSessions()
+    23:48:36.646 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:36.648 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:48:36.651 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 1 editors...
+    23:48:36.653 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:36.654 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:36.658 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:48:36.659 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:48:36.659 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:48:36.662 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:48:36.672 | 114 Pool-1-worker-29 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupsConfigurationIntegrationTest#update_periodChange_deleteTutorialGroupFreePeriodsAndIndividualSessionsAndRecreateScheduledSessions'
+    23:48:36.680 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3318/tutorial-groups-configuration/225
+    23:48:36.692 | 114 Pool-1-worker-29 | DEBUG | .TutorialGroupsConfigurationResource : REST request to update TutorialGroupsConfiguration: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroupsConfiguration@e1 of course: 3318
+
+  Starting logs for TutorialGroupsConfigurationIntegrationTest > updateCourse_switchUseTutorialGroupSetting_shouldCreateAndThenDeleteTutorialGroupChannels()
+    23:48:36.754 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:36.757 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:48:36.761 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 1 editors...
+    23:48:36.764 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:36.766 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:36.767 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:48:36.768 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:48:36.768 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:48:36.775 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:48:36.784 | 114 Pool-1-worker-29 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupsConfigurationIntegrationTest#updateCourse_switchUseTutorialGroupSetting_shouldCreateAndThenDeleteTutorialGroupChannels'
+    23:48:36.788 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3320/tutorial-groups
+    23:48:36.789 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3320
+    23:48:36.801 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1673 for tutorial group with id 285
+    23:48:36.805 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1673 to tutorial group with id 285
+    23:48:36.806 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1673 of the tutorial group with id 285
+    23:48:36.811 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 764 to the channel with id 1673 of the tutorial group with id 285
+    23:48:36.818 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 764 moderator role for the channel with id 1673 of the tutorial group with id 285
+    23:48:36.818 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 285 with channel id 1673
+    23:48:36.824 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3320/tutorial-groups-configuration/227
+    23:48:36.825 | 114 Pool-1-worker-29 | DEBUG | .TutorialGroupsConfigurationResource : REST request to update TutorialGroupsConfiguration: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroupsConfiguration@e3 of course: 3320
+    23:48:36.828 | 114 Pool-1-worker-29 | DEBUG | .TutorialGroupsConfigurationResource : Tutorial group channel setting changed, updating tutorial group channels for course: 3320
+    23:48:36.828 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Remove tutorial group channels for course with id 3320
+    23:48:36.835 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Tutorial group with id 285 does not have a channel, cannot delete channel
+
+  Starting logs for TutorialGroupsConfigurationIntegrationTest > request_asTutor_shouldReturnForbidden()
+    23:48:36.861 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:36.864 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:48:36.868 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 1 editors...
+    23:48:36.871 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:36.873 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:36.876 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:48:36.876 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:48:36.876 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:48:36.883 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:48:36.892 | 114 Pool-1-worker-29 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupsConfigurationIntegrationTest#request_asTutor_shouldReturnForbidden'
+    23:48:36.894 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3322/tutorial-groups-configuration/229
+    23:48:36.896 | 114 Pool-1-worker-29 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:48:36.901 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3322/tutorial-groups-configuration
+    23:48:36.903 | 114 Pool-1-worker-29 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for TutorialGroupsConfigurationIntegrationTest > updateCourse_timeZoneChange_deleteTutorialGroupFreePeriodsAndIndividualSessionsAndRecreateScheduledSessions()
+    23:48:36.927 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:36.930 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:48:36.934 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 1 editors...
+    23:48:36.937 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:36.940 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:36.942 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:48:36.943 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:48:36.943 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:48:36.950 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:48:36.962 | 114 Pool-1-worker-29 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupsConfigurationIntegrationTest#updateCourse_timeZoneChange_deleteTutorialGroupFreePeriodsAndIndividualSessionsAndRecreateScheduledSessions'
+    23:48:36.966 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3324/tutorial-groups
+    23:48:36.967 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3324
+    23:48:36.982 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1674 for tutorial group with id 288
+    23:48:36.985 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1674 to tutorial group with id 288
+    23:48:36.986 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1674 of the tutorial group with id 288
+    23:48:36.991 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 764 to the channel with id 1674 of the tutorial group with id 288
+    23:48:36.997 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 764 moderator role for the channel with id 1674 of the tutorial group with id 288
+    23:48:36.997 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 288 with channel id 1674
+    23:48:37.007 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3324
+    23:48:37.008 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.core.web.CourseResource    : REST request to update Course : Course{id=3324, title='Course title f9e20b36-9a20-459c-a633-b48865db1beb', description='null', shortName='short054b4ce405d7604daa0939b0fe996fa2d9f9', studentGroupName='tumuser', teachingAssistantGroupName='tutor', editorGroupName='editor', instructorGroupName='instructor', startDate='2025-02-13T23:39:39.316605Z', endDate='2025-02-15T23:39:39.316638Z', enrollmentStartDate='null', enrollmentEndDate='null', unenrollmentEndDate='null', semester='null'', onlineCourse='false', color='null', courseIcon='null', enrollmentEnabled='false', unenrollmentEnabled='false', presentationScore='2', faqEnabled='false'}
+
+  Starting logs for TutorialGroupsConfigurationIntegrationTest > getOneOfCourse_asStudent_shouldReturnTutorialGroupsConfiguration()
+    23:48:37.057 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:37.060 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:48:37.064 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 1 editors...
+    23:48:37.066 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:37.069 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:37.071 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:48:37.072 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:48:37.072 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:48:37.080 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:48:37.089 | 114 Pool-1-worker-29 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupsConfigurationIntegrationTest#getOneOfCourse_asStudent_shouldReturnTutorialGroupsConfiguration'
+    23:48:37.093 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/3326/tutorial-groups-configuration
+    23:48:37.094 | 114 Pool-1-worker-29 | DEBUG | .TutorialGroupsConfigurationResource : REST request to get tutorial groups configuration of course: 3326
+
+  Starting logs for TutorialGroupsConfigurationIntegrationTest > request_asInstructorNotInCourse_shouldReturnForbidden()
+    23:48:37.121 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:37.123 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:48:37.127 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 1 editors...
+    23:48:37.130 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:37.133 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:37.136 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:48:37.137 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:48:37.137 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:48:37.143 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:48:37.152 | 114 Pool-1-worker-29 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupsConfigurationIntegrationTest#request_asInstructorNotInCourse_shouldReturnForbidden'
+    23:48:37.154 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3328/tutorial-groups-configuration/235
+    23:48:37.155 | 114 Pool-1-worker-29 | DEBUG | .TutorialGroupsConfigurationResource : REST request to update TutorialGroupsConfiguration: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroupsConfiguration@eb of course: 3328
+    23:48:37.158 | 114 Pool-1-worker-29 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Course with id 3328
+    23:48:37.162 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3328/tutorial-groups-configuration
+    23:48:37.163 | 114 Pool-1-worker-29 | DEBUG | .TutorialGroupsConfigurationResource : REST request to create TutorialGroupsConfiguration: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroupsConfiguration@0 for course: 3328
+    23:48:37.165 | 114 Pool-1-worker-29 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Course with id 3328
+
+  Starting logs for TutorialGroupsConfigurationIntegrationTest > updateCourse_switchUsePublicChannelsSetting_shouldSwitchChannelModeOfTutorialGroupChannels()
+    23:48:37.185 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:37.187 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:48:37.191 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 1 editors...
+    23:48:37.194 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:37.196 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:37.198 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:48:37.199 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:48:37.199 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:48:37.202 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:48:37.209 | 114 Pool-1-worker-29 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupsConfigurationIntegrationTest#updateCourse_switchUsePublicChannelsSetting_shouldSwitchChannelModeOfTutorialGroupChannels'
+    23:48:37.212 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3330/tutorial-groups
+    23:48:37.213 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3330
+    23:48:37.224 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1675 for tutorial group with id 292
+    23:48:37.231 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1675 to tutorial group with id 292
+    23:48:37.233 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1675 of the tutorial group with id 292
+    23:48:37.239 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 764 to the channel with id 1675 of the tutorial group with id 292
+    23:48:37.246 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 764 moderator role for the channel with id 1675 of the tutorial group with id 292
+    23:48:37.246 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 292 with channel id 1675
+    23:48:37.253 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3330/tutorial-groups-configuration/237
+    23:48:37.254 | 114 Pool-1-worker-29 | DEBUG | .TutorialGroupsConfigurationResource : REST request to update TutorialGroupsConfiguration: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroupsConfiguration@ed of course: 3330
+    23:48:37.257 | 114 Pool-1-worker-29 | DEBUG | .TutorialGroupsConfigurationResource : Tutorial group channel public setting changed, updating tutorial group channels for course: 3330
+    23:48:37.261 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1675 of the tutorial group with id 292
+    23:48:37.262 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 764 to the channel with id 1675 of the tutorial group with id 292
+    23:48:37.269 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 764 moderator role for the channel with id 1675 of the tutorial group with id 292
+    23:48:37.269 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 292 with channel id 1675
+    23:48:37.270 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Changed public for all tutorial group channels of course with id 3330 to false
+
+  Starting logs for TutorialGroupsConfigurationIntegrationTest > create_configurationAlreadyExists_shouldReturnBadRequest()
+    23:48:37.300 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:37.303 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:48:37.306 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 1 editors...
+    23:48:37.308 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:37.311 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:37.313 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:48:37.314 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:48:37.314 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:48:37.321 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:48:37.332 | 114 Pool-1-worker-29 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupsConfigurationIntegrationTest#create_configurationAlreadyExists_shouldReturnBadRequest'
+    23:48:37.335 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3332/tutorial-groups-configuration
+    23:48:37.335 | 114 Pool-1-worker-29 | DEBUG | .TutorialGroupsConfigurationResource : REST request to create TutorialGroupsConfiguration: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroupsConfiguration@0 for course: 3332
+    23:48:37.338 | 114 Pool-1-worker-29 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: A tutorial group configuration already exists for this course
+
+  Starting logs for TutorialGroupsConfigurationIntegrationTest > request_asEditor_shouldReturnForbidden()
+    23:48:37.361 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:37.365 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:48:37.368 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 1 editors...
+    23:48:37.370 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:37.373 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:37.374 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:48:37.375 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:48:37.375 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:48:37.380 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:48:37.391 | 114 Pool-1-worker-29 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupsConfigurationIntegrationTest#request_asEditor_shouldReturnForbidden'
+    23:48:37.394 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3334/tutorial-groups-configuration/241
+    23:48:37.396 | 114 Pool-1-worker-29 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:48:37.401 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3334/tutorial-groups-configuration
+    23:48:37.402 | 114 Pool-1-worker-29 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for TutorialGroupsConfigurationIntegrationTest > create_invalidDateFormat_shouldReturnBadRequest()
+    23:48:37.425 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:37.428 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:48:37.433 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 1 editors...
+    23:48:37.436 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:37.438 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:37.441 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:48:37.442 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:48:37.442 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:48:37.448 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:48:37.459 | 114 Pool-1-worker-29 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupsConfigurationIntegrationTest#create_invalidDateFormat_shouldReturnBadRequest'
+    23:48:37.461 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3336/tutorial-groups-configuration
+    23:48:37.462 | 114 Pool-1-worker-29 | DEBUG | .TutorialGroupsConfigurationResource : REST request to create TutorialGroupsConfiguration: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroupsConfiguration@0 for course: 3336
+    23:48:37.465 | 114 Pool-1-worker-29 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Tutorial period start and end must be valid ISO 8601 date strings
+    23:48:37.467 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3336/tutorial-groups-configuration
+    23:48:37.468 | 114 Pool-1-worker-29 | DEBUG | .TutorialGroupsConfigurationResource : REST request to create TutorialGroupsConfiguration: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroupsConfiguration@0 for course: 3336
+    23:48:37.471 | 114 Pool-1-worker-29 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Tutorial period start and end must be valid ISO 8601 date strings
+
+  Starting logs for TutorialGroupsConfigurationIntegrationTest > create_asInstructor_shouldCreateTutorialGroupsConfiguration()
+    23:48:37.498 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:37.501 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:48:37.505 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 1 editors...
+    23:48:37.507 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:37.510 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:37.512 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:48:37.514 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:48:37.514 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:48:37.520 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:48:37.528 | 114 Pool-1-worker-29 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupsConfigurationIntegrationTest#create_asInstructor_shouldCreateTutorialGroupsConfiguration'
+    23:48:37.530 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3338/tutorial-groups-configuration
+    23:48:37.531 | 114 Pool-1-worker-29 | DEBUG | .TutorialGroupsConfigurationResource : REST request to create TutorialGroupsConfiguration: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroupsConfiguration@0 for course: 3338
+    23:48:37.536 | 114 Pool-1-worker-29 | DEBUG | utorialGroupChannelManagementService : Set up tutorial group channels for course with id 3338
+
+  Starting logs for TutorialGroupsConfigurationIntegrationTest > request_asStudent_shouldReturnForbidden()
+    23:48:37.554 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:37.557 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:48:37.561 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 1 editors...
+    23:48:37.563 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:37.566 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:37.568 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:48:37.569 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:48:37.569 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:48:37.574 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:48:37.582 | 114 Pool-1-worker-29 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupsConfigurationIntegrationTest#request_asStudent_shouldReturnForbidden'
+    23:48:37.584 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3340/tutorial-groups-configuration/246
+    23:48:37.586 | 114 Pool-1-worker-29 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:48:37.589 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3340/tutorial-groups-configuration
+    23:48:37.591 | 114 Pool-1-worker-29 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for TutorialGroupsConfigurationIntegrationTest > persistEntityWithIndirectConnectionToConfiguration_dateAsFullIsoString_shouldNotThrowDeserializationException()
+    23:48:37.610 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:37.613 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:48:37.616 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 1 editors...
+    23:48:37.619 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:37.622 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:37.624 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:48:37.625 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:48:37.625 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:48:37.629 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:48:37.635 | 114 Pool-1-worker-29 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupsConfigurationIntegrationTest#persistEntityWithIndirectConnectionToConfiguration_dateAsFullIsoString_shouldNotThrowDeserializationException'
+    23:48:37.638 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/text-exercises
+    23:48:37.638 | 114 Pool-1-worker-29 | DEBUG | d.t.c.a.a.t.web.TextExerciseResource : REST request to save TextExercise : TextExercise{id=null, exampleSolution='This is my example solution'}
+    23:48:37.649 | 114 Pool-1-worker-29 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for potential Athena exercise 4046
+
+Finished logs for TutorialGroupsConfigurationIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

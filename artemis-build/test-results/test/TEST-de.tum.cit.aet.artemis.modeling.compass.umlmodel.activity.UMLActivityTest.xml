@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:03" hostname="fv-az1721-502" time="0.022">
+  <properties/>
+  <testcase name="similarity_null()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityTest" time="0.001"/>
+  <testcase name="similarity_sameActivity()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityTest" time="0.002"/>
+  <testcase name="similarity_bothNamesEmpty()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityTest" time="0.002"/>
+  <testcase name="similarity_nullReferenceName()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityTest" time="0.0"/>
+  <testcase name="similarity_differentElementType()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityTest" time="0.0"/>
+  <testcase name="similarity_bothNamesNull()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityTest" time="0.005"/>
+  <testcase name="similarity_differentName()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityTest" time="0.001"/>
+  <system-out><![CDATA[
+Starting logs for UMLActivityTest
+
+  Starting logs for UMLActivityTest > similarity_null()
+
+  Starting logs for UMLActivityTest > similarity_sameActivity()
+
+  Starting logs for UMLActivityTest > similarity_bothNamesEmpty()
+
+  Starting logs for UMLActivityTest > similarity_nullReferenceName()
+
+  Starting logs for UMLActivityTest > similarity_differentElementType()
+
+  Starting logs for UMLActivityTest > similarity_bothNamesNull()
+
+  Starting logs for UMLActivityTest > similarity_differentName()
+
+Finished logs for UMLActivityTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

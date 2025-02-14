@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lecture.architecture.LectureServiceArchitectureTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:59" hostname="fv-az1721-502" time="0.057">
+  <properties/>
+  <testcase name="testCorrectAsyncCalls()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureServiceArchitectureTest" time="0.01"/>
+  <testcase name="shouldBeNamedService()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureServiceArchitectureTest" time="0.001"/>
+  <testcase name="testCorrectServiceAnnotation()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureServiceArchitectureTest" time="0.012"/>
+  <testcase name="shouldBeInServicePackage()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureServiceArchitectureTest" time="0.003"/>
+  <testcase name="testNoWrongServiceImports()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureServiceArchitectureTest" time="0.029"/>
+  <system-out><![CDATA[
+Starting logs for LectureServiceArchitectureTest
+
+  Starting logs for LectureServiceArchitectureTest > testCorrectAsyncCalls()
+
+  Starting logs for LectureServiceArchitectureTest > shouldBeNamedService()
+
+  Starting logs for LectureServiceArchitectureTest > testCorrectServiceAnnotation()
+
+  Starting logs for LectureServiceArchitectureTest > shouldBeInServicePackage()
+
+  Starting logs for LectureServiceArchitectureTest > testNoWrongServiceImports()
+
+Finished logs for LectureServiceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

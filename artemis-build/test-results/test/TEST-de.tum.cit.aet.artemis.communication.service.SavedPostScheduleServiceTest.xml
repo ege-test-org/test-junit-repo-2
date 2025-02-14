@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.service.SavedPostScheduleServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:33" hostname="fv-az1721-502" time="0.053">
+  <properties/>
+  <testcase name="shouldNotDeleteAnythingWhenNoSavedPostsAreFound()" classname="de.tum.cit.aet.artemis.communication.service.SavedPostScheduleServiceTest" time="0.019"/>
+  <testcase name="shouldNotDeleteAnythingWhenNoOrphanedAnswerPostsAreFound()" classname="de.tum.cit.aet.artemis.communication.service.SavedPostScheduleServiceTest" time="0.011"/>
+  <testcase name="shouldNotDeleteAnythingWhenNoOrphanedPostsAreFound()" classname="de.tum.cit.aet.artemis.communication.service.SavedPostScheduleServiceTest" time="0.009"/>
+  <testcase name="shouldDeleteArchivedSavedPostsWhenDateExceedsCutoff()" classname="de.tum.cit.aet.artemis.communication.service.SavedPostScheduleServiceTest" time="0.002"/>
+  <testcase name="shouldDeleteSavedAnswerPostsWhenTheyAreOrphaned()" classname="de.tum.cit.aet.artemis.communication.service.SavedPostScheduleServiceTest" time="0.002"/>
+  <testcase name="shouldDeleteSavedPostsWhenTheyAreOrphaned()" classname="de.tum.cit.aet.artemis.communication.service.SavedPostScheduleServiceTest" time="0.005"/>
+  <system-out><![CDATA[
+Starting logs for SavedPostScheduleServiceTest
+
+  Starting logs for SavedPostScheduleServiceTest > shouldNotDeleteAnythingWhenNoSavedPostsAreFound()
+
+  Starting logs for SavedPostScheduleServiceTest > shouldNotDeleteAnythingWhenNoOrphanedAnswerPostsAreFound()
+
+  Starting logs for SavedPostScheduleServiceTest > shouldNotDeleteAnythingWhenNoOrphanedPostsAreFound()
+
+  Starting logs for SavedPostScheduleServiceTest > shouldDeleteArchivedSavedPostsWhenDateExceedsCutoff()
+    23:39:33.228 |  27 nPool-1-worker-1 | INFO  | t.c.a.a.c.s.SavedPostScheduleService : Deleted 2 archived saved posts
+
+  Starting logs for SavedPostScheduleServiceTest > shouldDeleteSavedAnswerPostsWhenTheyAreOrphaned()
+    23:39:33.234 |  27 nPool-1-worker-1 | INFO  | t.c.a.a.c.s.SavedPostScheduleService : Deleted 2 orphaned answer post references
+
+  Starting logs for SavedPostScheduleServiceTest > shouldDeleteSavedPostsWhenTheyAreOrphaned()
+    23:39:33.240 |  27 nPool-1-worker-1 | INFO  | t.c.a.a.c.s.SavedPostScheduleService : Deleted 2 orphaned post references
+
+Finished logs for SavedPostScheduleServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

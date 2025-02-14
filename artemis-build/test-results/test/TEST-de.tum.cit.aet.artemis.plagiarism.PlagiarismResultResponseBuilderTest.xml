@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.plagiarism.PlagiarismResultResponseBuilderTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:06" hostname="fv-az1721-502" time="0.007">
+  <properties/>
+  <testcase name="shouldReturnCorrectResponseForCpcChecks()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismResultResponseBuilderTest" time="0.004"/>
+  <testcase name="shouldReturnEmptyResponseForNullResult()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismResultResponseBuilderTest" time="0.0"/>
+  <testcase name="shouldReturnCorrectResponseForManualChecks()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismResultResponseBuilderTest" time="0.001"/>
+  <system-out><![CDATA[
+Starting logs for PlagiarismResultResponseBuilderTest
+
+  Starting logs for PlagiarismResultResponseBuilderTest > shouldReturnCorrectResponseForCpcChecks()
+
+  Starting logs for PlagiarismResultResponseBuilderTest > shouldReturnEmptyResponseForNullResult()
+
+  Starting logs for PlagiarismResultResponseBuilderTest > shouldReturnCorrectResponseForManualChecks()
+
+Finished logs for PlagiarismResultResponseBuilderTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

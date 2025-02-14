@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.atlas.service.LearningPathServiceTest$HealthCheck" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:23" hostname="fv-az1721-502" time="0.335">
+  <properties/>
+  <testcase name="testHealthStatusNoRelations()" classname="de.tum.cit.aet.artemis.atlas.service.LearningPathServiceTest$HealthCheck" time="0.08"/>
+  <testcase name="testHealthStatusMissing()" classname="de.tum.cit.aet.artemis.atlas.service.LearningPathServiceTest$HealthCheck" time="0.098"/>
+  <testcase name="testHealthStatusNoCompetencies()" classname="de.tum.cit.aet.artemis.atlas.service.LearningPathServiceTest$HealthCheck" time="0.152"/>
+  <system-out><![CDATA[
+Starting logs for HealthCheck
+
+  Starting logs for HealthCheck > testHealthStatusNoRelations()
+    23:43:23.624 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:43:23.629 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:43:23.630 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:23.632 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:23.634 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:23.635 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:43:23.636 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:43:23.636 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database...
+    23:43:23.644 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database. Done
+    23:43:23.645 | 128 Pool-1-worker-43 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='HealthCheck#testHealthStatusNoRelations'
+    23:43:23.651 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=158) for user (id=126) in course (id=848)
+    23:43:23.657 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=158) for user (id=126)
+    23:43:23.658 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=159) for user (id=127) in course (id=848)
+    23:43:23.663 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=159) for user (id=127)
+    23:43:23.664 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=160) for user (id=128) in course (id=848)
+    23:43:23.670 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=160) for user (id=128)
+    23:43:23.671 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=161) for user (id=129) in course (id=848)
+    23:43:23.676 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=161) for user (id=129)
+    23:43:23.677 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=162) for user (id=130) in course (id=848)
+    23:43:23.682 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=162) for user (id=130)
+    23:43:23.682 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Successfully created learning paths for all 5 students in course (id=848)
+
+  Starting logs for HealthCheck > testHealthStatusMissing()
+    23:43:23.704 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:43:23.713 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:43:23.715 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:23.718 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:23.721 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:23.722 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses...
+    23:43:23.724 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses. Done
+    23:43:23.724 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database...
+    23:43:23.739 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database. Done
+    23:43:23.740 | 128 Pool-1-worker-43 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='HealthCheck#testHealthStatusMissing'
+    23:43:23.746 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=163) for user (id=126) in course (id=850)
+    23:43:23.752 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=163) for user (id=126)
+    23:43:23.753 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=164) for user (id=127) in course (id=850)
+    23:43:23.758 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=164) for user (id=127)
+    23:43:23.759 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=165) for user (id=128) in course (id=850)
+    23:43:23.764 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=165) for user (id=128)
+    23:43:23.765 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=166) for user (id=129) in course (id=850)
+    23:43:23.770 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=166) for user (id=129)
+    23:43:23.771 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=167) for user (id=130) in course (id=850)
+    23:43:23.777 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=167) for user (id=130)
+    23:43:23.777 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Successfully created learning paths for all 5 students in course (id=850)
+
+  Starting logs for HealthCheck > testHealthStatusNoCompetencies()
+    23:43:23.804 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:43:23.813 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:43:23.815 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:23.818 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:23.821 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:23.822 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses...
+    23:43:23.824 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses. Done
+    23:43:23.824 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database...
+    23:43:23.887 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database. Done
+    23:43:23.890 | 128 Pool-1-worker-43 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='HealthCheck#testHealthStatusNoCompetencies'
+    23:43:23.900 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=168) for user (id=126) in course (id=852)
+    23:43:23.908 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=168) for user (id=126)
+    23:43:23.909 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=169) for user (id=127) in course (id=852)
+    23:43:23.914 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=169) for user (id=127)
+    23:43:23.915 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=170) for user (id=128) in course (id=852)
+    23:43:23.920 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=170) for user (id=128)
+    23:43:23.920 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=171) for user (id=129) in course (id=852)
+    23:43:23.925 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=171) for user (id=129)
+    23:43:23.926 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=172) for user (id=130) in course (id=852)
+    23:43:23.931 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=172) for user (id=130)
+    23:43:23.931 | 128 Pool-1-worker-43 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Successfully created learning paths for all 5 students in course (id=852)
+
+Finished logs for HealthCheck
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:06" hostname="fv-az1721-502" time="0.164">
+  <properties/>
+  <testcase name="testNoEntityGraphsOnQueries()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" time="0.014"/>
+  <testcase name="testNoUnusedRepositoryMethods()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" time="0.022"/>
+  <testcase name="testTransactional()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" time="0.019"/>
+  <testcase name="shouldBeInRepositoryPackage()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" time="0.003"/>
+  <testcase name="testRepositoryParamAnnotation()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" time="0.023"/>
+  <testcase name="orElseThrowShouldNotBeCalled()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" time="0.004"/>
+  <testcase name="repositoriesImplementArtemisJpaRepository()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="persistenceShouldNotAccessServices()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="usedInProductionCode()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" time="0.023"/>
+  <testcase name="shouldBeAnnotatedRepository()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="enforceUsageOfTestRepository()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" time="0.001"/>
+  <testcase name="testJPQLStyle()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" time="0.02"/>
+  <testcase name="shouldBeNamedRepository()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="enforceStructureOfTestRepositories()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" time="0.007"/>
+  <testcase name="testOnlySpringTransactionalAnnotation()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" time="0.017"/>
+  <testcase name="enforcePrimaryBeanAnnotationOnTestRepositories()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismRepositoryArchitectureTest" time="0.0"/>
+  <system-out><![CDATA[
+Starting logs for PlagiarismRepositoryArchitectureTest
+
+  Starting logs for PlagiarismRepositoryArchitectureTest > testNoEntityGraphsOnQueries()
+
+  Starting logs for PlagiarismRepositoryArchitectureTest > testNoUnusedRepositoryMethods()
+
+  Starting logs for PlagiarismRepositoryArchitectureTest > testTransactional()
+
+  Starting logs for PlagiarismRepositoryArchitectureTest > shouldBeInRepositoryPackage()
+
+  Starting logs for PlagiarismRepositoryArchitectureTest > testRepositoryParamAnnotation()
+
+  Starting logs for PlagiarismRepositoryArchitectureTest > orElseThrowShouldNotBeCalled()
+
+  Starting logs for PlagiarismRepositoryArchitectureTest > repositoriesImplementArtemisJpaRepository()
+
+  Starting logs for PlagiarismRepositoryArchitectureTest > persistenceShouldNotAccessServices()
+
+  Starting logs for PlagiarismRepositoryArchitectureTest > usedInProductionCode()
+
+  Starting logs for PlagiarismRepositoryArchitectureTest > shouldBeAnnotatedRepository()
+
+  Starting logs for PlagiarismRepositoryArchitectureTest > enforceUsageOfTestRepository()
+
+  Starting logs for PlagiarismRepositoryArchitectureTest > testJPQLStyle()
+
+  Starting logs for PlagiarismRepositoryArchitectureTest > shouldBeNamedRepository()
+
+  Starting logs for PlagiarismRepositoryArchitectureTest > enforceStructureOfTestRepositories()
+
+  Starting logs for PlagiarismRepositoryArchitectureTest > testOnlySpringTransactionalAnnotation()
+
+  Starting logs for PlagiarismRepositoryArchitectureTest > enforcePrimaryBeanAnnotationOnTestRepositories()
+
+Finished logs for PlagiarismRepositoryArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

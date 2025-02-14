@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:49:21" hostname="fv-az1721-502" time="1.197">
+  <properties/>
+  <testcase name="testCreateBuildPlanForExerciseThrowsExceptionOnTemplateError()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.239"/>
+  <testcase name="testCreateBuildPlanForExerciseThrowsExceptionOnTemplateError(ProgrammingLanguage) [1] programmingLanguage=VHDL" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.059"/>
+  <testcase name="testCreateBuildPlanForExerciseThrowsExceptionOnTemplateError(ProgrammingLanguage) [2] programmingLanguage=ASSEMBLER" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.055"/>
+  <testcase name="testCreateBuildPlanForExerciseThrowsExceptionOnTemplateError(ProgrammingLanguage) [3] programmingLanguage=OCAML" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.095"/>
+  <testcase name="testHealthNotRunning()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.043"/>
+  <testcase name="testGetBuildStatusNotFound()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.037"/>
+  <testcase name="testHealthException()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.04"/>
+  <testcase name="testFailToUpdatePlanRepositoryInternalError()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.051"/>
+  <testcase name="testCopyBuildPlan()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.045"/>
+  <testcase name="testGetBuildStatusQueued()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.036"/>
+  <testcase name="testUpdateBuildPlanRepoUrisForStudent()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.051"/>
+  <testcase name="testRecreateBuildPlanDeletedFolder()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.086"/>
+  <testcase name="testDeleteBuildPlan()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.048"/>
+  <testcase name="testGetBuildStatusInactive1()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.038"/>
+  <testcase name="testGetBuildStatusInactive2()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.038"/>
+  <testcase name="testGetBuildStatusBuilding()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.038"/>
+  <testcase name="testHealthRunning()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.037"/>
+  <testcase name="testFailToUpdatePlanRepositoryBadRequest()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.051"/>
+  <testcase name="testGetBuildStatusFails()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.038"/>
+  <testcase name="testCopyLegacyBuildPlan()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest" time="0.043"/>
+  <system-out><![CDATA[
+Starting logs for JenkinsServiceTest
+
+  Starting logs for JenkinsServiceTest > testCreateBuildPlanForExerciseThrowsExceptionOnTemplateError()
+    23:49:21.704 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:21.706 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:21.707 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:21.708 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:21.710 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:21.711 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:49:21.711 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:49:21.711 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:21.712 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:21.729 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testCreateBuildPlanForExerciseThrowsExceptionOnTemplateError'
+    23:49:21.931 | 491 ool-1-worker-255 | ERROR | d.t.c.a.a.p.s.j.JenkinsXmlFileUtils  : Error loading template Jenkins build XML: null
+java.io.IOException: null
+
+  Starting logs for JenkinsServiceTest > testCreateBuildPlanForExerciseThrowsExceptionOnTemplateError(ProgrammingLanguage) [1] programmingLanguage=VHDL
+    23:49:21.945 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:21.948 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:21.949 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:21.950 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:21.953 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:21.954 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:21.954 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:21.954 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:21.958 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:21.976 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testCreateBuildPlanForExerciseThrowsExceptionOnTemplateError'
+
+  Starting logs for JenkinsServiceTest > testCreateBuildPlanForExerciseThrowsExceptionOnTemplateError(ProgrammingLanguage) [2] programmingLanguage=ASSEMBLER
+    23:49:22.005 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.008 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.009 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.011 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.013 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.014 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.014 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.014 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.016 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.034 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testCreateBuildPlanForExerciseThrowsExceptionOnTemplateError'
+
+  Starting logs for JenkinsServiceTest > testCreateBuildPlanForExerciseThrowsExceptionOnTemplateError(ProgrammingLanguage) [3] programmingLanguage=OCAML
+    23:49:22.062 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.065 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.067 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.068 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.070 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.071 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.072 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.072 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.074 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.124 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testCreateBuildPlanForExerciseThrowsExceptionOnTemplateError'
+
+  Starting logs for JenkinsServiceTest > testHealthNotRunning()
+    23:49:22.160 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.164 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.165 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.166 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.169 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.170 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.171 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.171 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.173 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.191 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testHealthNotRunning'
+
+  Starting logs for JenkinsServiceTest > testGetBuildStatusNotFound()
+    23:49:22.203 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.206 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.207 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.209 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.211 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.212 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.212 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.212 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.214 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.230 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testGetBuildStatusNotFound'
+
+  Starting logs for JenkinsServiceTest > testHealthException()
+    23:49:22.243 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.247 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.248 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.250 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.252 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.253 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.253 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.253 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.255 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.271 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testHealthException'
+
+  Starting logs for JenkinsServiceTest > testFailToUpdatePlanRepositoryInternalError()
+    23:49:22.282 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.285 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.287 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.288 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.290 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.291 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.291 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.291 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.293 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.309 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testFailToUpdatePlanRepositoryInternalError'
+    23:49:22.323 | 491 ool-1-worker-255 | ERROR | d.t.c.a.a.p.s.j.j.JenkinsJobService  : Error trying to configure build plan in Jenkins SHORT2B3D8FDF0A64A046FB0B49C0A1AE7ED66C24TSTEXC
+org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 Internal Server Error on POST request for "https://continuous-integration.fake.fake/job/SHORT2B3D8FDF0A64A046FB0B49C0A1AE7ED66C24TSTEXC/job/SHORT2B3D8FDF0A64A046FB0B49C0A1AE7ED66C24TSTEXC/config.xml": [no body]
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:102)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:189)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:147)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:953)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:902)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:567)
+	at de.tum.cit.aet.artemis.programming.service.jenkins.jobs.JenkinsJobService.updateJob(JenkinsJobService.java:222)
+	at de.tum.cit.aet.artemis.programming.service.jenkins.build_plan.JenkinsBuildPlanService.updateBuildPlanRepositories(JenkinsBuildPlanService.java:225)
+	at de.tum.cit.aet.artemis.programming.service.jenkins.JenkinsService.updatePlanRepository(JenkinsService.java:144)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.jenkins.JenkinsService.updatePlanRepository(JenkinsService.java:144)
+	at de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest.lambda$testFailToUpdatePlanRepositoryRestClientException$3(JenkinsServiceTest.java:242)
+	at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:63)
+	at org.assertj.core.api.ThrowableTypeAssert.isThrownBy(ThrowableTypeAssert.java:59)
+	at de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest.testFailToUpdatePlanRepositoryRestClientException(JenkinsServiceTest.java:240)
+	at de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest.testFailToUpdatePlanRepositoryInternalError(JenkinsServiceTest.java:225)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.execSync(ForkJoinPoolHierarchicalTestExecutorService.java:247)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.executeSync(ForkJoinPoolHierarchicalTestExecutorService.java:194)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:166)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+  Starting logs for JenkinsServiceTest > testCopyBuildPlan()
+    23:49:22.334 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.338 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.339 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.340 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.342 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.343 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.344 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.344 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.345 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.361 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testCopyBuildPlan'
+
+  Starting logs for JenkinsServiceTest > testGetBuildStatusQueued()
+    23:49:22.380 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.384 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.385 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.386 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.388 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.389 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.390 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.390 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.391 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.407 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testGetBuildStatusQueued'
+
+  Starting logs for JenkinsServiceTest > testUpdateBuildPlanRepoUrisForStudent()
+    23:49:22.418 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.421 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.423 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.424 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.426 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.427 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.427 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.427 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.429 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.445 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testUpdateBuildPlanRepoUrisForStudent'
+    23:49:22.460 | 491 ool-1-worker-255 | ERROR | .a.a.p.s.j.b.JenkinsBuildPlanService : Pipeline Script not found
+java.lang.IllegalArgumentException: Pipeline Script not found
+	at de.tum.cit.aet.artemis.programming.service.jenkins.build_plan.JenkinsBuildPlanUtils.replaceScriptParameters(JenkinsBuildPlanUtils.java:22)
+	at de.tum.cit.aet.artemis.programming.service.jenkins.build_plan.JenkinsBuildPlanUtils.replaceScriptParameters(JenkinsBuildPlanUtils.java:20)
+	at de.tum.cit.aet.artemis.programming.service.jenkins.build_plan.JenkinsBuildPlanService.updateBuildPlanRepositories(JenkinsBuildPlanService.java:219)
+	at de.tum.cit.aet.artemis.programming.service.jenkins.JenkinsService.updatePlanRepository(JenkinsService.java:144)
+	at de.tum.cit.aet.artemis.programming.service.jenkins.JenkinsService.updatePlanRepository(JenkinsService.java:144)
+	at de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest.testUpdateBuildPlanRepoUrisForStudent(JenkinsServiceTest.java:266)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.execSync(ForkJoinPoolHierarchicalTestExecutorService.java:247)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.executeSync(ForkJoinPoolHierarchicalTestExecutorService.java:194)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:166)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+  Starting logs for JenkinsServiceTest > testRecreateBuildPlanDeletedFolder()
+    23:49:22.472 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.475 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.476 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.477 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.479 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.481 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.481 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.481 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.483 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.499 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testRecreateBuildPlanDeletedFolder'
+    23:49:22.526 | 491 ool-1-worker-255 | INFO  | d.t.c.a.a.p.s.j.j.JenkinsJobService  : Build Plan SHORTBA7A9E540A2000416209294060A3565F5C89TSTEXC-BASE already exists. Skipping creation of job.
+    23:49:22.543 | 491 ool-1-worker-255 | INFO  | d.t.c.a.a.p.s.j.j.JenkinsJobService  : Build Plan SHORTBA7A9E540A2000416209294060A3565F5C89TSTEXC-SOLUTION already exists. Skipping creation of job.
+
+  Starting logs for JenkinsServiceTest > testDeleteBuildPlan()
+    23:49:22.560 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.563 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.564 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.565 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.567 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.568 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.569 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.569 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.570 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.587 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testDeleteBuildPlan'
+
+  Starting logs for JenkinsServiceTest > testGetBuildStatusInactive1()
+    23:49:22.609 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.612 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.614 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.615 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.617 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.618 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.618 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.618 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.620 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.637 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testGetBuildStatusInactive1'
+
+  Starting logs for JenkinsServiceTest > testGetBuildStatusInactive2()
+    23:49:22.649 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.652 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.653 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.654 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.656 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.657 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.658 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.658 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.660 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.676 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testGetBuildStatusInactive2'
+
+  Starting logs for JenkinsServiceTest > testGetBuildStatusBuilding()
+    23:49:22.689 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.692 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.693 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.695 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.697 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.698 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.698 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.698 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.700 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.716 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testGetBuildStatusBuilding'
+
+  Starting logs for JenkinsServiceTest > testHealthRunning()
+    23:49:22.728 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.731 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.733 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.734 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.736 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.737 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.737 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.737 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.739 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.755 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testHealthRunning'
+
+  Starting logs for JenkinsServiceTest > testFailToUpdatePlanRepositoryBadRequest()
+    23:49:22.766 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.769 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.771 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.772 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.774 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.775 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.776 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.776 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.777 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.793 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testFailToUpdatePlanRepositoryBadRequest'
+    23:49:22.807 | 491 ool-1-worker-255 | ERROR | d.t.c.a.a.p.s.j.j.JenkinsJobService  : Error trying to configure build plan in Jenkins SHORTD15337BE0E9A704D0908BF705D49E3708534TSTEXC
+org.springframework.web.client.HttpClientErrorException$BadRequest: 400 Bad Request on POST request for "https://continuous-integration.fake.fake/job/SHORTD15337BE0E9A704D0908BF705D49E3708534TSTEXC/job/SHORTD15337BE0E9A704D0908BF705D49E3708534TSTEXC/config.xml": [no body]
+	at org.springframework.web.client.HttpClientErrorException.create(HttpClientErrorException.java:103)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:186)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:147)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:953)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:902)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:841)
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:567)
+	at de.tum.cit.aet.artemis.programming.service.jenkins.jobs.JenkinsJobService.updateJob(JenkinsJobService.java:222)
+	at de.tum.cit.aet.artemis.programming.service.jenkins.build_plan.JenkinsBuildPlanService.updateBuildPlanRepositories(JenkinsBuildPlanService.java:225)
+	at de.tum.cit.aet.artemis.programming.service.jenkins.JenkinsService.updatePlanRepository(JenkinsService.java:144)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.jenkins.JenkinsService.updatePlanRepository(JenkinsService.java:144)
+	at de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest.lambda$testFailToUpdatePlanRepositoryRestClientException$3(JenkinsServiceTest.java:242)
+	at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:63)
+	at org.assertj.core.api.ThrowableTypeAssert.isThrownBy(ThrowableTypeAssert.java:59)
+	at de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest.testFailToUpdatePlanRepositoryRestClientException(JenkinsServiceTest.java:240)
+	at de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest.testFailToUpdatePlanRepositoryBadRequest(JenkinsServiceTest.java:219)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.execSync(ForkJoinPoolHierarchicalTestExecutorService.java:247)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.executeSync(ForkJoinPoolHierarchicalTestExecutorService.java:194)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:166)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+  Starting logs for JenkinsServiceTest > testGetBuildStatusFails()
+    23:49:22.818 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.822 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.823 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.824 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.826 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.827 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.828 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.828 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.829 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.846 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testGetBuildStatusFails'
+    23:49:22.846 | 491 ool-1-worker-255 | ERROR | .a.a.p.s.j.b.JenkinsBuildPlanService : Error while trying to fetch build status from Jenkins for SHORT12242A6603FC3040150927B0F95E90246410TSTEXC-JENKINSSERVICETESTSTUDENT1: 404 Not Found on GET request for "https://continuous-integration.fake.fake/job/SHORT12242A6603FC3040150927B0F95E90246410TSTEXC/job/SHORT12242A6603FC3040150927B0F95E90246410TSTEXC-JENKINSSERVICETESTSTUDENT1/lastBuild/api/json": "{"building":true}"
+
+  Starting logs for JenkinsServiceTest > testCopyLegacyBuildPlan()
+    23:49:22.857 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:22.860 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:49:22.861 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:22.862 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:22.865 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:22.866 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:49:22.866 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:49:22.866 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:22.868 | 491 ool-1-worker-255 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:22.884 | 491 ool-1-worker-255 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsServiceTest#testCopyLegacyBuildPlan'
+    23:49:22.889 | 491 ool-1-worker-255 | ERROR | .a.a.p.s.j.b.JenkinsBuildPlanService : Pipeline Script not found
+java.lang.IllegalArgumentException: Pipeline Script not found
+	at de.tum.cit.aet.artemis.programming.service.jenkins.build_plan.JenkinsBuildPlanUtils.replaceScriptParameters(JenkinsBuildPlanUtils.java:22)
+	at de.tum.cit.aet.artemis.programming.service.jenkins.build_plan.JenkinsBuildPlanService.updateBuildPlanURLs(JenkinsBuildPlanService.java:245)
+	at de.tum.cit.aet.artemis.programming.service.jenkins.build_plan.JenkinsBuildPlanService.copyBuildPlan(JenkinsBuildPlanService.java:293)
+	at de.tum.cit.aet.artemis.programming.service.jenkins.JenkinsService.copyBuildPlan(JenkinsService.java:128)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.jenkins.JenkinsService.copyBuildPlan(JenkinsService.java:126)
+	at de.tum.cit.aet.artemis.programming.service.JenkinsServiceTest.testCopyLegacyBuildPlan(JenkinsServiceTest.java:331)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.execSync(ForkJoinPoolHierarchicalTestExecutorService.java:247)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.executeSync(ForkJoinPoolHierarchicalTestExecutorService.java:194)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:166)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+Finished logs for JenkinsServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

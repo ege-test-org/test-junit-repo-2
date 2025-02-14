@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.compass.controller.ModelClusterFactoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:02" hostname="fv-az1721-502" time="0.183">
+  <properties/>
+  <testcase name="testBuildingClustersWithSimilarV3Elements()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.ModelClusterFactoryTest" time="0.159"/>
+  <testcase name="testBuildingClustersWithSimilarElements()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.ModelClusterFactoryTest" time="0.023"/>
+  <system-out><![CDATA[
+Starting logs for ModelClusterFactoryTest
+
+  Starting logs for ModelClusterFactoryTest > testBuildingClustersWithSimilarV3Elements()
+
+  Starting logs for ModelClusterFactoryTest > testBuildingClustersWithSimilarElements()
+
+Finished logs for ModelClusterFactoryTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

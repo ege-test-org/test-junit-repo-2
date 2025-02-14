@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" tests="50" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:48" hostname="fv-az1721-502" time="8.04">
+  <properties/>
+  <testcase name="testEditConversationPost_forbidden()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.133"/>
+  <testcase name="testGetCourseWideMessages_OrderByAnswerCountASC()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.274"/>
+  <testcase name="testMessagingNotAllowedIfDisabledSetting()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.119"/>
+  <testcase name="testDecreaseUnreadMessageCountWhenDeletingMessage()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.255"/>
+  <testcase name="[1] courseInformationSharingConfiguration=COMMUNICATION_ONLY" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.146"/>
+  <testcase name="[2] courseInformationSharingConfiguration=COMMUNICATION_AND_MESSAGING" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.132"/>
+  <testcase name="testPinPost_asTutor()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.143"/>
+  <testcase name="[1] isConversationHidden=true" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.196"/>
+  <testcase name="[2] isConversationHidden=false" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.25"/>
+  <testcase name="testCreateConversationPost_forbidden()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.101"/>
+  <testcase name="testGetCourseWideMessages_WithOwnWithCourseWideContent()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.113"/>
+  <testcase name="testDeleteConversationPost_forbidden()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.097"/>
+  <testcase name="testGetCourseWideMessagesFromOneChannel()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.106"/>
+  <testcase name="[1] pageSize=15" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.152"/>
+  <testcase name="[2] pageSize=3" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.154"/>
+  <testcase name="[3] pageSize=5" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.145"/>
+  <testcase name="testGetCourseWideMessages_WithOwnWithCourseWideContentAndSearchTextInAnswer()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.09"/>
+  <testcase name="testDecreaseUnreadMessageCountAfterMessageRead()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.275"/>
+  <testcase name="testBroadCastWithNotification()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.223"/>
+  <testcase name="[1] isAnnouncement=false" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.132"/>
+  <testcase name="[2] isAnnouncement=true" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.412"/>
+  <testcase name="testDeleteConversationPost()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.139"/>
+  <testcase name="testIncreaseUnreadMessageCountAfterMessageSend()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.108"/>
+  <testcase name="testGetCourseWideMessages_WithOwnWithCourseWideContentAndSearchText()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.194"/>
+  <testcase name="testCreateConversationPostInCourseWideChannel_onlyFewDatabaseCalls()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.096"/>
+  <testcase name="testGetConversationPost()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.099"/>
+  <testcase name="testGetCourseWideMessages()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.137"/>
+  <testcase name="testEditConversationPost()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.15"/>
+  <testcase name="[1] userMention=no mention, isUserMentionValid=true" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.167"/>
+  <testcase name="[2] userMention=[user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user], isUserMentionValid=true" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.218"/>
+  <testcase name="[3] userMention=[user](messageintegrationstudent1)[/user], isUserMentionValid=false" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.146"/>
+  <testcase name="[4] userMention=[user]messageintegrationstudent1First messageintegrationstudent1Last()[/user], isUserMentionValid=false" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.116"/>
+  <testcase name="[5] userMention=[user]messageintegrationstudent1First messageintegrationstudent1Last[/user], isUserMentionValid=false" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.16"/>
+  <testcase name="[6] userMention=[user]messageintegrationstudent2First messageintegrationstudent2Last(messageintegrationstudent2)[/user][user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user], isUserMentionValid=true" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.23"/>
+  <testcase name="[7] userMention=[user]invalidName(messageintegrationstudent1)[/user], isUserMentionValid=false" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.109"/>
+  <testcase name="[8] userMention=[user]noCourseMemberFirst noCourseMemberLast(nocoursemember)[/user], isUserMentionValid=false" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.108"/>
+  <testcase name="[9] userMention=[user]invalidName[user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user](invalid)[/user], isUserMentionValid=true" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.228"/>
+  <testcase name="[1] userMention=no mention, isUserMentionValid=true" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.12"/>
+  <testcase name="[2] userMention=[user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user], isUserMentionValid=true" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.129"/>
+  <testcase name="[3] userMention=[user](messageintegrationstudent1)[/user], isUserMentionValid=false" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.117"/>
+  <testcase name="[4] userMention=[user]messageintegrationstudent1First messageintegrationstudent1Last()[/user], isUserMentionValid=false" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.134"/>
+  <testcase name="[5] userMention=[user]messageintegrationstudent1First messageintegrationstudent1Last[/user], isUserMentionValid=false" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.107"/>
+  <testcase name="[6] userMention=[user]messageintegrationstudent2First messageintegrationstudent2Last(messageintegrationstudent2)[/user][user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user], isUserMentionValid=true" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.117"/>
+  <testcase name="[7] userMention=[user]invalidName(messageintegrationstudent1)[/user], isUserMentionValid=false" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.134"/>
+  <testcase name="[8] userMention=[user]noCourseMemberFirst noCourseMemberLast(nocoursemember)[/user], isUserMentionValid=false" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.119"/>
+  <testcase name="[9] userMention=[user]invalidName[user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user](invalid)[/user], isUserMentionValid=true" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.125"/>
+  <testcase name="testGetConversationPosts_IfNoParticipant()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.145"/>
+  <testcase name="testGetCourseWideMessages_OrderByAnswerCountDESC()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.196"/>
+  <testcase name="testValidatePostContextConstraintViolation()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.188"/>
+  <testcase name="testCreateAnnouncementInPrivateChannel()" classname="de.tum.cit.aet.artemis.communication.MessageIntegrationTest" time="0.256"/>
+  <system-out><![CDATA[
+Starting logs for MessageIntegrationTest
+
+  Starting logs for MessageIntegrationTest > testEditConversationPost_forbidden()
+    23:43:48.914 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:48.918 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:48.921 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:48.924 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:48.926 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:48.928 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 11 users from all courses...
+    23:43:48.930 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 11 users from all courses. Done
+    23:43:48.930 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:48.935 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:49.022 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testEditConversationPost_forbidden'
+    23:43:49.023 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/1050/messages/1221
+    23:43:49.025 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : PUT updateMessage invoked for course 1050 with post Tutor attempts to change some other user's conversation post
+    23:43:49.030 | 137 Pool-1-worker-52 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to edit or delete this message
+
+  Starting logs for MessageIntegrationTest > testGetCourseWideMessages_OrderByAnswerCountASC()
+    23:43:49.045 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:49.052 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:49.058 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:49.066 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:49.072 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:49.073 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:49.080 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:49.080 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:49.133 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:49.232 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testGetCourseWideMessages_OrderByAnswerCountASC'
+    23:43:49.236 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/1051/messages
+    23:43:49.252 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 8.20ms
+    23:43:49.258 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 6.28ms
+    23:43:49.261 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.service.PostingService   : userRepository.findUserRolesInCourse done for 4 authors 
+    23:43:49.282 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : /courses/{courseId}/messages finished in 40.80ms for 20 posts with 0 answer posts, 0 reactions, and 0 answer post reactions for user messageintegrationstudent1
+
+  Starting logs for MessageIntegrationTest > testMessagingNotAllowedIfDisabledSetting()
+    23:43:49.324 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:49.332 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:49.339 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:49.346 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:49.350 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:49.351 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:49.353 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:49.353 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:49.364 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:49.413 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testMessagingNotAllowedIfDisabledSetting'
+    23:43:49.420 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 483µs
+    23:43:49.422 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 1.49ms
+    23:43:49.423 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1052/messages
+    23:43:49.424 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1052 with post null
+    23:43:49.426 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:49.427 | 137 Pool-1-worker-52 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Communication and messaging is disabled for this course
+    23:43:49.427 | 137 Pool-1-worker-52 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Communication and messaging is disabled for this course
+    23:43:49.428 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 363µs
+    23:43:49.429 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 1.24ms
+
+  Starting logs for MessageIntegrationTest > testDecreaseUnreadMessageCountWhenDeletingMessage()
+    23:43:49.442 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:49.448 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:49.454 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:49.460 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:49.463 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:49.465 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:49.467 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:49.467 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:49.478 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:49.527 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testDecreaseUnreadMessageCountWhenDeletingMessage'
+    23:43:49.532 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1053/messages
+    23:43:49.533 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1053 with post null
+    23:43:49.535 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:49.535 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:49.536 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:parseUserMentions DONE
+    23:43:49.538 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:49.538 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:49.539 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : createMessage took 5.29ms
+    23:43:49.544 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       getNotificationRecipients DONE
+    23:43:49.550 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       broadcastForPost DONE
+    23:43:49.551 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       conversationNotificationService.notifyAboutNewMessage DONE
+    23:43:49.552 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       incrementUnreadMessagesCountOfParticipants DONE
+    23:43:49.552 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       notifyAboutMessageCreation DONE
+    23:43:49.660 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/1053/messages/1308
+    23:43:49.661 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : DELETE deleteMessage invoked for course 1053 on message 1308
+    23:43:49.680 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : deleteMessage took 19.75ms
+
+  Starting logs for MessageIntegrationTest > [1] courseInformationSharingConfiguration=COMMUNICATION_ONLY
+    23:43:49.701 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:49.708 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:49.714 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:49.721 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:49.723 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:49.725 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:49.727 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:49.727 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:49.736 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:49.793 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPost'
+    23:43:49.798 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1054/messages
+    23:43:49.801 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1054 with post null
+    23:43:49.802 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:49.802 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:49.803 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:parseUserMentions DONE
+    23:43:49.806 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:49.806 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:49.806 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : createMessage took 5.26ms
+    23:43:49.816 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       getNotificationRecipients DONE
+    23:43:49.824 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       broadcastForPost DONE
+    23:43:49.828 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       conversationNotificationService.notifyAboutNewMessage DONE
+    23:43:49.830 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       incrementUnreadMessagesCountOfParticipants DONE
+    23:43:49.830 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       notifyAboutMessageCreation DONE
+    23:43:49.831 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 356µs
+    23:43:49.835 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 3.40ms
+
+  Starting logs for MessageIntegrationTest > [2] courseInformationSharingConfiguration=COMMUNICATION_AND_MESSAGING
+    23:43:49.849 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:49.855 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:49.861 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:49.868 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:49.870 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:49.872 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:49.873 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:49.873 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:49.885 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:49.934 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPost'
+    23:43:49.941 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1055/messages
+    23:43:49.942 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1055 with post null
+    23:43:49.944 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:49.944 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:49.945 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:parseUserMentions DONE
+    23:43:49.946 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:49.946 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:49.950 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : createMessage took 8.49ms
+    23:43:49.952 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       getNotificationRecipients DONE
+    23:43:49.957 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       broadcastForPost DONE
+    23:43:49.960 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       conversationNotificationService.notifyAboutNewMessage DONE
+    23:43:49.961 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       incrementUnreadMessagesCountOfParticipants DONE
+    23:43:49.961 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       notifyAboutMessageCreation DONE
+    23:43:49.966 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 352µs
+    23:43:49.968 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 1.57ms
+
+  Starting logs for MessageIntegrationTest > testPinPost_asTutor()
+    23:43:49.983 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:49.989 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:49.999 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:50.009 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:50.013 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:50.014 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:50.016 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:50.016 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:50.032 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:50.091 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testPinPost_asTutor'
+    23:43:50.092 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/1056/messages/1380/display-priority
+
+  Starting logs for MessageIntegrationTest > [1] isConversationHidden=true
+    23:43:50.132 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:50.143 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:50.165 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:50.175 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:50.180 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:50.184 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:50.187 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:50.187 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:50.203 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:50.262 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPostWithUserMention_MentionedUserHasChannelHidden'
+    23:43:50.268 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1057/messages
+    23:43:50.269 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1057 with post [user]messageintegrationstudent2First messageintegrationstudent2Last(messageintegrationstudent2)[/user][user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user]
+    23:43:50.274 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:50.274 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:50.276 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:parseUserMentions DONE
+    23:43:50.279 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:50.279 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:50.279 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : createMessage took 10.21ms
+    23:43:50.287 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       getNotificationRecipients DONE
+    23:43:50.296 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       broadcastForPost DONE
+    23:43:50.298 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       conversationNotificationService.notifyAboutNewMessage DONE
+    23:43:50.298 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       incrementUnreadMessagesCountOfParticipants DONE
+    23:43:50.298 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       notifyAboutMessageCreation DONE
+
+  Starting logs for MessageIntegrationTest > [2] isConversationHidden=false
+    23:43:50.334 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:50.344 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:50.359 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:50.372 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:50.375 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:50.376 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:50.379 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:50.379 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:50.391 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:50.442 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPostWithUserMention_MentionedUserHasChannelHidden'
+    23:43:50.446 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1058/messages
+    23:43:50.448 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1058 with post [user]messageintegrationstudent2First messageintegrationstudent2Last(messageintegrationstudent2)[/user][user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user]
+    23:43:50.450 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:50.451 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:50.452 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:parseUserMentions DONE
+    23:43:50.453 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:50.453 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:50.453 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : createMessage took 5.35ms
+    23:43:50.470 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       getNotificationRecipients DONE
+    23:43:50.470 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       broadcastForPost DONE
+    23:43:50.472 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       conversationNotificationService.notifyAboutNewMessage DONE
+    23:43:50.476 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       incrementUnreadMessagesCountOfParticipants DONE
+    23:43:50.476 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       notifyAboutMessageCreation DONE
+
+  Starting logs for MessageIntegrationTest > testCreateConversationPost_forbidden()
+    23:43:50.590 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:50.596 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:50.602 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:50.608 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:50.610 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:50.612 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:50.614 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:50.614 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:50.622 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:50.665 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPost_forbidden'
+    23:43:50.669 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 407µs
+    23:43:50.670 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 1.64ms
+    23:43:50.672 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1059/messages
+    23:43:50.672 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1059 with post null
+    23:43:50.675 | 137 Pool-1-worker-52 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: User not allowed to access this conversation!
+    23:43:50.676 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 390µs
+    23:43:50.679 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 3.17ms
+
+  Starting logs for MessageIntegrationTest > testGetCourseWideMessages_WithOwnWithCourseWideContent()
+    23:43:50.691 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:50.697 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:50.703 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:50.710 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:50.712 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:50.714 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:50.716 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:50.716 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:50.724 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:50.769 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testGetCourseWideMessages_WithOwnWithCourseWideContent'
+    23:43:50.770 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/1060/messages
+    23:43:50.782 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 8.69ms
+    23:43:50.783 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 1.59ms
+    23:43:50.786 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.service.PostingService   : userRepository.findUserRolesInCourse done for 1 authors 
+    23:43:50.788 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : /courses/{courseId}/messages finished in 16.09ms for 1 posts with 0 answer posts, 0 reactions, and 0 answer post reactions for user messageintegrationstudent1
+
+  Starting logs for MessageIntegrationTest > testDeleteConversationPost_forbidden()
+    23:43:50.807 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:50.813 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:50.819 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:50.825 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:50.828 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:50.829 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:50.831 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:50.831 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:50.838 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:50.883 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testDeleteConversationPost_forbidden'
+    23:43:50.884 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/1061/messages/1512
+    23:43:50.884 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : DELETE deleteMessage invoked for course 1061 on message 1512
+    23:43:50.889 | 137 Pool-1-worker-52 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to edit or delete this message
+
+  Starting logs for MessageIntegrationTest > testGetCourseWideMessagesFromOneChannel()
+    23:43:50.905 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:50.911 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:50.917 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:50.923 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:50.926 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:50.927 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:50.929 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:50.929 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:50.941 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:50.986 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testGetCourseWideMessagesFromOneChannel'
+    23:43:50.987 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/1062/messages
+    23:43:50.992 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 1.42ms
+    23:43:50.993 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 1.70ms
+    23:43:50.995 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.service.PostingService   : userRepository.findUserRolesInCourse done for 3 authors 
+    23:43:50.998 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : /courses/{courseId}/messages finished in 8.90ms for 3 posts with 0 answer posts, 0 reactions, and 0 answer post reactions for user messageintegrationtutor1
+
+  Starting logs for MessageIntegrationTest > [1] pageSize=15
+    23:43:51.013 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:51.019 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:51.025 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:51.031 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:51.034 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:51.035 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:51.037 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:51.037 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:51.045 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:51.091 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testFindMessagesWithPageSizes'
+    23:43:51.143 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 808µs
+    23:43:51.148 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 4.91ms
+
+  Starting logs for MessageIntegrationTest > [2] pageSize=3
+    23:43:51.168 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:51.180 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:51.187 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:51.192 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:51.195 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:51.196 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:51.198 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:51.198 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:51.207 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:51.252 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testFindMessagesWithPageSizes'
+    23:43:51.306 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 803µs
+    23:43:51.308 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 1.74ms
+
+  Starting logs for MessageIntegrationTest > [3] pageSize=5
+    23:43:51.323 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:51.329 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:51.335 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:51.342 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:51.344 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:51.346 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:51.347 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:51.347 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:51.356 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:51.402 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testFindMessagesWithPageSizes'
+    23:43:51.453 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 807µs
+    23:43:51.455 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 1.83ms
+
+  Starting logs for MessageIntegrationTest > testGetCourseWideMessages_WithOwnWithCourseWideContentAndSearchTextInAnswer()
+    23:43:51.467 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:51.473 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:51.479 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:51.484 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:51.487 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:51.489 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:51.490 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:51.490 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:51.500 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:51.538 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testGetCourseWideMessages_WithOwnWithCourseWideContentAndSearchTextInAnswer'
+    23:43:51.539 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/1066/messages
+    23:43:51.544 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 3.06ms
+    23:43:51.545 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 1.36ms
+    23:43:51.546 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.service.PostingService   : userRepository.findUserRolesInCourse done for 0 authors 
+    23:43:51.547 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : /courses/{courseId}/messages finished in 6.81ms for 0 posts with 0 answer posts, 0 reactions, and 0 answer post reactions for user messageintegrationstudent1
+
+  Starting logs for MessageIntegrationTest > testDecreaseUnreadMessageCountAfterMessageRead()
+    23:43:51.559 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:51.566 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:51.619 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:51.624 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:51.627 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:51.629 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:51.631 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:51.631 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:51.640 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:51.687 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testDecreaseUnreadMessageCountAfterMessageRead'
+    23:43:51.692 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1067/messages
+    23:43:51.693 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1067 with post null
+    23:43:51.694 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:51.694 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:51.695 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:parseUserMentions DONE
+    23:43:51.696 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:51.696 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:51.696 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : createMessage took 3.59ms
+    23:43:51.702 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/1067/messages
+    23:43:51.705 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       getNotificationRecipients DONE
+    23:43:51.709 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 732µs
+    23:43:51.712 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 2.96ms
+    23:43:51.713 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       broadcastForPost DONE
+    23:43:51.714 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.service.PostingService   : userRepository.findUserRolesInCourse done for 1 authors 
+    23:43:51.715 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : /courses/{courseId}/messages finished in 11.71ms for 1 posts with 0 answer posts, 0 reactions, and 0 answer post reactions for user messageintegrationstudent2
+    23:43:51.717 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       conversationNotificationService.notifyAboutNewMessage DONE
+    23:43:51.718 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       incrementUnreadMessagesCountOfParticipants DONE
+    23:43:51.718 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       notifyAboutMessageCreation DONE
+
+  Starting logs for MessageIntegrationTest > testBroadCastWithNotification()
+    23:43:51.836 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:51.843 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:51.850 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:51.856 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:51.858 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:51.860 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:51.862 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:51.862 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:51.871 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:51.916 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testBroadCastWithNotification'
+    23:43:51.922 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1068/messages
+    23:43:51.923 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1068 with post null
+    23:43:51.925 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:51.925 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:51.925 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:parseUserMentions DONE
+    23:43:51.927 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:51.927 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:51.927 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : createMessage took 3.92ms
+    23:43:51.930 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       broadcastForPost DONE
+    23:43:51.936 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       getNotificationRecipients DONE
+    23:43:51.949 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       conversationNotificationService.notifyAboutNewMessage DONE
+    23:43:51.950 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       incrementUnreadMessagesCountOfParticipants DONE
+    23:43:51.950 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       notifyAboutMessageCreation DONE
+
+  Starting logs for MessageIntegrationTest > [1] isAnnouncement=false
+    23:43:52.062 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:52.068 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:52.075 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:52.082 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:52.084 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:52.086 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:52.088 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:52.088 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:52.096 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:52.146 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPostInCourseWideChannel'
+    23:43:52.150 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1069/messages
+    23:43:52.151 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1069 with post message
+    23:43:52.154 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:52.154 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:52.155 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:parseUserMentions DONE
+    23:43:52.156 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:52.156 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:52.156 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : createMessage took 5.01ms
+    23:43:52.159 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       broadcastForPost DONE
+    23:43:52.172 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       getNotificationRecipients DONE
+
+  Starting logs for MessageIntegrationTest > [2] isAnnouncement=true
+    23:43:52.202 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:52.210 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       conversationNotificationService.notifyAboutNewMessage DONE
+    23:43:52.211 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       incrementUnreadMessagesCountOfParticipants DONE
+    23:43:52.211 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       notifyAboutMessageCreation DONE
+    23:43:52.214 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:52.226 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:52.241 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:52.245 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:52.251 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:52.252 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:52.252 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:52.261 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:52.314 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPostInCourseWideChannel'
+    23:43:52.318 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1070/messages
+    23:43:52.318 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1070 with post message
+    23:43:52.321 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:52.322 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:52.322 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:parseUserMentions DONE
+    23:43:52.323 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:52.323 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:52.323 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : createMessage took 4.94ms
+    23:43:52.325 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       broadcastForPost DONE
+    23:43:52.334 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       getNotificationRecipients DONE
+    23:43:52.352 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       conversationNotificationService.notifyAboutNewMessage DONE
+    23:43:52.353 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       incrementUnreadMessagesCountOfParticipants DONE
+    23:43:52.364 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       saveAnnouncementNotification DONE
+    23:43:52.364 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       notifyAboutMessageCreation DONE
+    23:43:52.366 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'NEW_ANNOUNCEMENT_POST' notification email to 'messageintegrationeditor3@test.de'
+    23:43:52.565 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'NEW_ANNOUNCEMENT_POST' notification email to 'messageintegrationeditor4@test.de'
+    23:43:52.577 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'NEW_ANNOUNCEMENT_POST' notification email to 'messageintegrationinstructor1@test.de'
+    23:43:52.582 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'NEW_ANNOUNCEMENT_POST' notification email to 'messageintegrationstudent1@test.de'
+    23:43:52.586 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'NEW_ANNOUNCEMENT_POST' notification email to 'messageintegrationstudent2@test.de'
+    23:43:52.590 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'NEW_ANNOUNCEMENT_POST' notification email to 'messageintegrationstudent3@test.de'
+    23:43:52.596 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'NEW_ANNOUNCEMENT_POST' notification email to 'messageintegrationstudent4@test.de'
+    23:43:52.601 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'NEW_ANNOUNCEMENT_POST' notification email to 'messageintegrationtutor1@test.de'
+
+  Starting logs for MessageIntegrationTest > testDeleteConversationPost()
+    23:43:52.609 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'NEW_ANNOUNCEMENT_POST' notification email to 'messageintegrationtutor2@test.de'
+    23:43:52.612 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'NEW_ANNOUNCEMENT_POST' notification email to 'messageintegrationtutor3@test.de'
+    23:43:52.615 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'NEW_ANNOUNCEMENT_POST' notification email to 'messageintegrationtutor4@test.de'
+    23:43:52.618 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'NEW_ANNOUNCEMENT_POST' notification email to 'messageintegrationeditor1@test.de'
+    23:43:52.620 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'NEW_ANNOUNCEMENT_POST' notification email to 'messageintegrationeditor2@test.de'
+    23:43:52.622 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:52.629 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='messageintegrationeditor3', firstName='messageintegrationeditor3First', lastName='messageintegrationeditor3Last', email='messageintegrationeditor3@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}' with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"'
+    23:43:52.630 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:52.637 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"' to User 'User{login='messageintegrationeditor3', firstName='messageintegrationeditor3First', lastName='messageintegrationeditor3Last', email='messageintegrationeditor3@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}'
+    23:43:52.637 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='messageintegrationeditor4', firstName='messageintegrationeditor4First', lastName='messageintegrationeditor4Last', email='messageintegrationeditor4@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}' with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"'
+    23:43:52.637 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"' to User 'User{login='messageintegrationeditor4', firstName='messageintegrationeditor4First', lastName='messageintegrationeditor4Last', email='messageintegrationeditor4@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}'
+    23:43:52.637 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='messageintegrationinstructor1', firstName='messageintegrationinstructor1First', lastName='messageintegrationinstructor1Last', email='messageintegrationinstructor1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}' with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"'
+    23:43:52.638 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"' to User 'User{login='messageintegrationinstructor1', firstName='messageintegrationinstructor1First', lastName='messageintegrationinstructor1Last', email='messageintegrationinstructor1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}'
+    23:43:52.638 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='messageintegrationstudent1', firstName='messageintegrationstudent1First', lastName='messageintegrationstudent1Last', email='messageintegrationstudent1@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}' with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"'
+    23:43:52.638 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"' to User 'User{login='messageintegrationstudent1', firstName='messageintegrationstudent1First', lastName='messageintegrationstudent1Last', email='messageintegrationstudent1@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}'
+    23:43:52.638 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='messageintegrationstudent2', firstName='messageintegrationstudent2First', lastName='messageintegrationstudent2Last', email='messageintegrationstudent2@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}' with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"'
+    23:43:52.638 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"' to User 'User{login='messageintegrationstudent2', firstName='messageintegrationstudent2First', lastName='messageintegrationstudent2Last', email='messageintegrationstudent2@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}'
+    23:43:52.638 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='messageintegrationstudent3', firstName='messageintegrationstudent3First', lastName='messageintegrationstudent3Last', email='messageintegrationstudent3@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}' with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"'
+    23:43:52.639 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"' to User 'User{login='messageintegrationstudent3', firstName='messageintegrationstudent3First', lastName='messageintegrationstudent3Last', email='messageintegrationstudent3@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}'
+    23:43:52.639 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='messageintegrationstudent4', firstName='messageintegrationstudent4First', lastName='messageintegrationstudent4Last', email='messageintegrationstudent4@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}' with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"'
+    23:43:52.639 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"' to User 'User{login='messageintegrationstudent4', firstName='messageintegrationstudent4First', lastName='messageintegrationstudent4Last', email='messageintegrationstudent4@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}'
+    23:43:52.639 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='messageintegrationtutor1', firstName='messageintegrationtutor1First', lastName='messageintegrationtutor1Last', email='messageintegrationtutor1@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}' with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"'
+    23:43:52.639 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"' to User 'User{login='messageintegrationtutor1', firstName='messageintegrationtutor1First', lastName='messageintegrationtutor1Last', email='messageintegrationtutor1@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}'
+    23:43:52.639 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='messageintegrationtutor2', firstName='messageintegrationtutor2First', lastName='messageintegrationtutor2Last', email='messageintegrationtutor2@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}' with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"'
+    23:43:52.643 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"' to User 'User{login='messageintegrationtutor2', firstName='messageintegrationtutor2First', lastName='messageintegrationtutor2Last', email='messageintegrationtutor2@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}'
+    23:43:52.643 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='messageintegrationtutor3', firstName='messageintegrationtutor3First', lastName='messageintegrationtutor3Last', email='messageintegrationtutor3@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}' with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"'
+    23:43:52.643 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"' to User 'User{login='messageintegrationtutor3', firstName='messageintegrationtutor3First', lastName='messageintegrationtutor3Last', email='messageintegrationtutor3@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}'
+    23:43:52.643 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='messageintegrationtutor4', firstName='messageintegrationtutor4First', lastName='messageintegrationtutor4Last', email='messageintegrationtutor4@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}' with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"'
+    23:43:52.643 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"' to User 'User{login='messageintegrationtutor4', firstName='messageintegrationtutor4First', lastName='messageintegrationtutor4Last', email='messageintegrationtutor4@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}'
+    23:43:52.644 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='messageintegrationeditor1', firstName='messageintegrationeditor1First', lastName='messageintegrationeditor1Last', email='messageintegrationeditor1@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}' with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"'
+    23:43:52.644 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"' to User 'User{login='messageintegrationeditor1', firstName='messageintegrationeditor1First', lastName='messageintegrationeditor1Last', email='messageintegrationeditor1@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}'
+    23:43:52.644 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='messageintegrationeditor2', firstName='messageintegrationeditor2First', lastName='messageintegrationeditor2Last', email='messageintegrationeditor2@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}' with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"'
+    23:43:52.644 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'New announcement "null" in course "Course title 4f5aec44-916d-473c-8787-bb0df02ae440"' to User 'User{login='messageintegrationeditor2', firstName='messageintegrationeditor2First', lastName='messageintegrationeditor2Last', email='messageintegrationeditor2@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}'
+    23:43:52.645 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:52.658 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:52.663 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:52.666 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:52.669 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:52.670 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:52.678 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:52.720 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testDeleteConversationPost'
+    23:43:52.721 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/1071/messages/1791
+    23:43:52.722 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : DELETE deleteMessage invoked for course 1071 on message 1791
+    23:43:52.732 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : deleteMessage took 10.05ms
+
+  Starting logs for MessageIntegrationTest > testIncreaseUnreadMessageCountAfterMessageSend()
+    23:43:52.749 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:52.755 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:52.761 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:52.767 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:52.769 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:52.771 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:52.772 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:52.772 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:52.780 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:52.822 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testIncreaseUnreadMessageCountAfterMessageSend'
+    23:43:52.827 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1072/messages
+    23:43:52.828 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1072 with post null
+    23:43:52.829 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:52.829 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:52.830 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:parseUserMentions DONE
+    23:43:52.831 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:52.831 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:52.831 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : createMessage took 3.25ms
+    23:43:52.834 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       getNotificationRecipients DONE
+    23:43:52.839 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       broadcastForPost DONE
+    23:43:52.841 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       conversationNotificationService.notifyAboutNewMessage DONE
+    23:43:52.843 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       incrementUnreadMessagesCountOfParticipants DONE
+    23:43:52.843 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       notifyAboutMessageCreation DONE
+
+  Starting logs for MessageIntegrationTest > testGetCourseWideMessages_WithOwnWithCourseWideContentAndSearchText()
+    23:43:52.858 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:52.864 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:52.876 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:52.882 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:52.884 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:52.886 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:52.888 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:52.888 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:52.895 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:52.954 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testGetCourseWideMessages_WithOwnWithCourseWideContentAndSearchText'
+    23:43:52.956 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/1073/messages
+    23:43:52.967 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 5.42ms
+    23:43:52.968 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 1.41ms
+    23:43:52.973 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.service.PostingService   : userRepository.findUserRolesInCourse done for 1 authors 
+    23:43:53.038 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : /courses/{courseId}/messages finished in 77.97ms for 1 posts with 0 answer posts, 0 reactions, and 0 answer post reactions for user messageintegrationstudent1
+
+  Starting logs for MessageIntegrationTest > testCreateConversationPostInCourseWideChannel_onlyFewDatabaseCalls()
+    23:43:53.053 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:53.059 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:53.065 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:53.071 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:53.074 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:53.076 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:53.077 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:53.077 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:53.086 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:53.122 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPostInCourseWideChannel_onlyFewDatabaseCalls'
+    23:43:53.131 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1074/messages
+    23:43:53.132 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1074 with post null
+    23:43:53.134 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:53.135 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:53.135 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:parseUserMentions DONE
+    23:43:53.136 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:53.136 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:53.136 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : createMessage took 4.78ms
+    23:43:53.137 | 137 Pool-1-worker-52 | INFO  | d.t.c.a.a.core.util.QueryCountAssert : result.callCount: 7
+    23:43:53.138 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       broadcastForPost DONE
+    23:43:53.143 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       getNotificationRecipients DONE
+
+  Starting logs for MessageIntegrationTest > testGetConversationPost()
+    23:43:53.150 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:53.156 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:53.162 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:53.168 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:53.170 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:53.172 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 18 users from all courses...
+    23:43:53.174 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 18 users from all courses. Done
+    23:43:53.174 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:53.182 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:53.187 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       conversationNotificationService.notifyAboutNewMessage DONE
+    23:43:53.188 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       incrementUnreadMessagesCountOfParticipants DONE
+    23:43:53.188 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       notifyAboutMessageCreation DONE
+    23:43:53.223 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testGetConversationPost'
+    23:43:53.224 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/1076/messages
+    23:43:53.228 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 712µs
+    23:43:53.230 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 1.67ms
+    23:43:53.231 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.service.PostingService   : userRepository.findUserRolesInCourse done for 3 authors 
+    23:43:53.236 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : /courses/{courseId}/messages finished in 10.06ms for 3 posts with 0 answer posts, 0 reactions, and 0 answer post reactions for user messageintegrationtutor1
+
+  Starting logs for MessageIntegrationTest > testGetCourseWideMessages()
+    23:43:53.250 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:53.256 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:53.262 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:53.268 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:53.271 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:53.272 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:53.276 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:53.276 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:53.284 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:53.327 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testGetCourseWideMessages'
+    23:43:53.329 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/1077/messages
+    23:43:53.339 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 7.50ms
+    23:43:53.343 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 3.74ms
+    23:43:53.344 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.service.PostingService   : userRepository.findUserRolesInCourse done for 4 authors 
+    23:43:53.373 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : /courses/{courseId}/messages finished in 42.49ms for 22 posts with 0 answer posts, 0 reactions, and 0 answer post reactions for user messageintegrationtutor1
+
+  Starting logs for MessageIntegrationTest > testEditConversationPost()
+    23:43:53.389 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:53.395 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:53.402 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:53.408 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:53.411 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:53.412 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:53.414 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:53.414 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:53.421 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:53.506 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testEditConversationPost'
+    23:43:53.509 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/1078/messages/1949
+    23:43:53.511 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : PUT updateMessage invoked for course 1078 with post User changes one of their conversation posts
+    23:43:53.521 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : updateMessage took 9.98ms
+
+  Starting logs for MessageIntegrationTest > [1] userMention=no mention, isUserMentionValid=true
+    23:43:53.547 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:53.554 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:53.560 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:53.567 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:53.570 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:53.572 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:53.573 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:53.573 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:53.583 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:53.658 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPostWithUserMention'
+    23:43:53.661 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1079/messages
+    23:43:53.662 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1079 with post no mention
+    23:43:53.665 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:53.665 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:53.666 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:parseUserMentions DONE
+    23:43:53.667 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:53.667 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:53.667 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : createMessage took 4.95ms
+    23:43:53.672 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       broadcastForPost DONE
+    23:43:53.681 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       getNotificationRecipients DONE
+    23:43:53.704 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       conversationNotificationService.notifyAboutNewMessage DONE
+    23:43:53.705 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       incrementUnreadMessagesCountOfParticipants DONE
+    23:43:53.705 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       notifyAboutMessageCreation DONE
+
+  Starting logs for MessageIntegrationTest > [2] userMention=[user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user], isUserMentionValid=true
+    23:43:53.713 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:53.720 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:53.727 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:53.733 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:53.736 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:53.737 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:53.739 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:53.739 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:53.748 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:53.796 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPostWithUserMention'
+    23:43:53.799 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1080/messages
+    23:43:53.799 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1080 with post [user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user]
+    23:43:53.802 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:53.802 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:53.803 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:parseUserMentions DONE
+    23:43:53.804 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:53.804 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:53.804 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : createMessage took 5.09ms
+    23:43:53.810 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       broadcastForPost DONE
+    23:43:53.815 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       getNotificationRecipients DONE
+    23:43:53.829 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       conversationNotificationService.notifyAboutNewMessage DONE
+    23:43:53.830 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       incrementUnreadMessagesCountOfParticipants DONE
+    23:43:53.830 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       notifyAboutMessageCreation DONE
+
+  Starting logs for MessageIntegrationTest > [3] userMention=[user](messageintegrationstudent1)[/user], isUserMentionValid=false
+    23:43:53.932 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:53.939 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:53.945 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:53.954 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:53.957 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:53.961 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:53.968 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:53.968 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:53.980 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:54.055 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPostWithUserMention'
+    23:43:54.058 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1081/messages
+    23:43:54.059 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1081 with post [user](messageintegrationstudent1)[/user]
+    23:43:54.062 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:54.062 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:54.064 | 137 Pool-1-worker-52 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The name provided for user messageintegrationstudent1 does not match the user's full name messageintegrationstudent1First messageintegrationstudent1Last
+    23:43:54.064 | 137 Pool-1-worker-52 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The name provided for user messageintegrationstudent1 does not match the user's full name messageintegrationstudent1First messageintegrationstudent1Last
+
+  Starting logs for MessageIntegrationTest > [4] userMention=[user]messageintegrationstudent1First messageintegrationstudent1Last()[/user], isUserMentionValid=false
+    23:43:54.079 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:54.086 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:54.093 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:54.099 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:54.102 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:54.103 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:54.105 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:54.105 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:54.115 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:54.170 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPostWithUserMention'
+    23:43:54.173 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1082/messages
+    23:43:54.174 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1082 with post [user]messageintegrationstudent1First messageintegrationstudent1Last()[/user]
+    23:43:54.180 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:54.180 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:54.181 | 137 Pool-1-worker-52 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, At least one of the mentioned users does not exist
+    23:43:54.181 | 137 Pool-1-worker-52 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: At least one of the mentioned users does not exist
+
+  Starting logs for MessageIntegrationTest > [5] userMention=[user]messageintegrationstudent1First messageintegrationstudent1Last[/user], isUserMentionValid=false
+    23:43:54.196 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:54.203 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:54.209 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:54.216 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:54.218 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:54.220 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:54.222 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:54.222 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:54.230 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:54.316 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPostWithUserMention'
+    23:43:54.322 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1083/messages
+    23:43:54.323 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1083 with post [user]messageintegrationstudent1First messageintegrationstudent1Last[/user]
+    23:43:54.332 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:54.332 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:54.334 | 137 Pool-1-worker-52 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, At least one of the mentioned users does not exist
+    23:43:54.334 | 137 Pool-1-worker-52 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: At least one of the mentioned users does not exist
+
+  Starting logs for MessageIntegrationTest > [6] userMention=[user]messageintegrationstudent2First messageintegrationstudent2Last(messageintegrationstudent2)[/user][user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user], isUserMentionValid=true
+    23:43:54.368 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:54.374 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:54.381 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:54.387 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:54.390 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:54.392 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:54.393 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:54.393 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:54.402 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:54.449 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPostWithUserMention'
+    23:43:54.452 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1084/messages
+    23:43:54.453 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1084 with post [user]messageintegrationstudent2First messageintegrationstudent2Last(messageintegrationstudent2)[/user][user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user]
+    23:43:54.456 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:54.456 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:54.457 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:parseUserMentions DONE
+    23:43:54.458 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:54.458 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:54.459 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : createMessage took 5.21ms
+    23:43:54.465 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       broadcastForPost DONE
+    23:43:54.471 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       getNotificationRecipients DONE
+    23:43:54.485 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       conversationNotificationService.notifyAboutNewMessage DONE
+    23:43:54.486 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       incrementUnreadMessagesCountOfParticipants DONE
+    23:43:54.486 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       notifyAboutMessageCreation DONE
+
+  Starting logs for MessageIntegrationTest > [7] userMention=[user]invalidName(messageintegrationstudent1)[/user], isUserMentionValid=false
+    23:43:54.589 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:54.596 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:54.602 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:54.609 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:54.611 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:54.613 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:54.615 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:54.615 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:54.629 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:54.678 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPostWithUserMention'
+    23:43:54.681 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1085/messages
+    23:43:54.682 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1085 with post [user]invalidName(messageintegrationstudent1)[/user]
+    23:43:54.684 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:54.685 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:54.686 | 137 Pool-1-worker-52 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The name provided for user messageintegrationstudent1 does not match the user's full name messageintegrationstudent1First messageintegrationstudent1Last
+    23:43:54.686 | 137 Pool-1-worker-52 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The name provided for user messageintegrationstudent1 does not match the user's full name messageintegrationstudent1First messageintegrationstudent1Last
+
+  Starting logs for MessageIntegrationTest > [8] userMention=[user]noCourseMemberFirst noCourseMemberLast(nocoursemember)[/user], isUserMentionValid=false
+    23:43:54.699 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:54.706 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:54.713 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:54.720 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:54.722 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:54.724 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:54.726 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:54.726 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:54.735 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:54.786 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPostWithUserMention'
+    23:43:54.789 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1086/messages
+    23:43:54.790 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1086 with post [user]noCourseMemberFirst noCourseMemberLast(nocoursemember)[/user]
+    23:43:54.793 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:54.793 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:54.795 | 137 Pool-1-worker-52 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, At least one of the mentioned users does not exist
+    23:43:54.795 | 137 Pool-1-worker-52 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: At least one of the mentioned users does not exist
+
+  Starting logs for MessageIntegrationTest > [9] userMention=[user]invalidName[user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user](invalid)[/user], isUserMentionValid=true
+    23:43:54.810 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:54.817 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:54.824 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:54.829 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:54.832 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:54.833 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:54.834 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:54.834 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:54.844 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:54.898 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateConversationPostWithUserMention'
+    23:43:54.901 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1087/messages
+    23:43:54.902 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1087 with post [user]invalidName[user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user](invalid)[/user]
+    23:43:54.905 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:54.905 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:54.906 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:parseUserMentions DONE
+    23:43:54.907 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:54.907 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:54.907 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : createMessage took 5.67ms
+    23:43:54.914 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       broadcastForPost DONE
+    23:43:54.921 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       getNotificationRecipients DONE
+    23:43:54.933 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       conversationNotificationService.notifyAboutNewMessage DONE
+    23:43:54.934 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       incrementUnreadMessagesCountOfParticipants DONE
+    23:43:54.934 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       notifyAboutMessageCreation DONE
+
+  Starting logs for MessageIntegrationTest > [1] userMention=no mention, isUserMentionValid=true
+    23:43:55.040 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:55.047 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:55.053 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:55.060 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:55.065 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:55.067 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:55.071 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:55.071 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:55.079 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:55.131 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testEditConversationPostWithUserMention'
+    23:43:55.133 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/1088/messages/2213
+    23:43:55.133 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : PUT updateMessage invoked for course 1088 with post User changes one of their conversation postsno mention
+    23:43:55.145 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : updateMessage took 11.83ms
+
+  Starting logs for MessageIntegrationTest > [2] userMention=[user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user], isUserMentionValid=true
+    23:43:55.165 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:55.175 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:55.182 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:55.190 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:55.193 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:55.195 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:55.197 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:55.197 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:55.207 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:55.266 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testEditConversationPostWithUserMention'
+    23:43:55.268 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/1089/messages/2239
+    23:43:55.270 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : PUT updateMessage invoked for course 1089 with post User changes one of their conversation posts[user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user]
+    23:43:55.280 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : updateMessage took 10.52ms
+
+  Starting logs for MessageIntegrationTest > [3] userMention=[user](messageintegrationstudent1)[/user], isUserMentionValid=false
+    23:43:55.296 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:55.303 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:55.310 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:55.317 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:55.320 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:55.322 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:55.324 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:55.324 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:55.333 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:55.386 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testEditConversationPostWithUserMention'
+    23:43:55.388 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/1090/messages/2265
+    23:43:55.389 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : PUT updateMessage invoked for course 1090 with post User changes one of their conversation posts[user](messageintegrationstudent1)[/user]
+    23:43:55.398 | 137 Pool-1-worker-52 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The name provided for user messageintegrationstudent1 does not match the user's full name messageintegrationstudent1First messageintegrationstudent1Last
+    23:43:55.398 | 137 Pool-1-worker-52 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The name provided for user messageintegrationstudent1 does not match the user's full name messageintegrationstudent1First messageintegrationstudent1Last
+
+  Starting logs for MessageIntegrationTest > [4] userMention=[user]messageintegrationstudent1First messageintegrationstudent1Last()[/user], isUserMentionValid=false
+    23:43:55.417 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:55.424 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:55.431 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:55.438 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:55.441 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:55.443 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:55.446 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:55.446 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:55.457 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:55.515 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testEditConversationPostWithUserMention'
+    23:43:55.517 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/1091/messages/2291
+    23:43:55.518 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : PUT updateMessage invoked for course 1091 with post User changes one of their conversation posts[user]messageintegrationstudent1First messageintegrationstudent1Last()[/user]
+    23:43:55.529 | 137 Pool-1-worker-52 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, At least one of the mentioned users does not exist
+    23:43:55.529 | 137 Pool-1-worker-52 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: At least one of the mentioned users does not exist
+
+  Starting logs for MessageIntegrationTest > [5] userMention=[user]messageintegrationstudent1First messageintegrationstudent1Last[/user], isUserMentionValid=false
+    23:43:55.551 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:55.558 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:55.565 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:55.572 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:55.575 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:55.576 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:55.579 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:55.579 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:55.589 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:55.640 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testEditConversationPostWithUserMention'
+    23:43:55.641 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/1092/messages/2317
+    23:43:55.642 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : PUT updateMessage invoked for course 1092 with post User changes one of their conversation posts[user]messageintegrationstudent1First messageintegrationstudent1Last[/user]
+    23:43:55.646 | 137 Pool-1-worker-52 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, At least one of the mentioned users does not exist
+    23:43:55.646 | 137 Pool-1-worker-52 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: At least one of the mentioned users does not exist
+
+  Starting logs for MessageIntegrationTest > [6] userMention=[user]messageintegrationstudent2First messageintegrationstudent2Last(messageintegrationstudent2)[/user][user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user], isUserMentionValid=true
+    23:43:55.657 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:55.663 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:55.670 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:55.679 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:55.682 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:55.684 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:55.686 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:55.686 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:55.696 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:55.748 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testEditConversationPostWithUserMention'
+    23:43:55.750 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/1093/messages/2343
+    23:43:55.751 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : PUT updateMessage invoked for course 1093 with post User changes one of their conversation posts[user]messageintegrationstudent2First messageintegrationstudent2Last(messageintegrationstudent2)[/user][user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user]
+    23:43:55.762 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : updateMessage took 10.82ms
+
+  Starting logs for MessageIntegrationTest > [7] userMention=[user]invalidName(messageintegrationstudent1)[/user], isUserMentionValid=false
+    23:43:55.779 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:55.787 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:55.794 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:55.801 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:55.804 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:55.806 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:55.808 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:55.808 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:55.819 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:55.885 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testEditConversationPostWithUserMention'
+    23:43:55.887 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/1094/messages/2369
+    23:43:55.889 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : PUT updateMessage invoked for course 1094 with post User changes one of their conversation posts[user]invalidName(messageintegrationstudent1)[/user]
+    23:43:55.898 | 137 Pool-1-worker-52 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The name provided for user messageintegrationstudent1 does not match the user's full name messageintegrationstudent1First messageintegrationstudent1Last
+    23:43:55.898 | 137 Pool-1-worker-52 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The name provided for user messageintegrationstudent1 does not match the user's full name messageintegrationstudent1First messageintegrationstudent1Last
+
+  Starting logs for MessageIntegrationTest > [8] userMention=[user]noCourseMemberFirst noCourseMemberLast(nocoursemember)[/user], isUserMentionValid=false
+    23:43:55.915 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:55.928 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:55.935 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:55.942 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:55.945 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:55.946 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:55.948 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:55.948 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:55.958 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:56.010 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testEditConversationPostWithUserMention'
+    23:43:56.011 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/1095/messages/2395
+    23:43:56.012 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : PUT updateMessage invoked for course 1095 with post User changes one of their conversation posts[user]noCourseMemberFirst noCourseMemberLast(nocoursemember)[/user]
+    23:43:56.019 | 137 Pool-1-worker-52 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, At least one of the mentioned users does not exist
+    23:43:56.019 | 137 Pool-1-worker-52 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: At least one of the mentioned users does not exist
+
+  Starting logs for MessageIntegrationTest > [9] userMention=[user]invalidName[user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user](invalid)[/user], isUserMentionValid=true
+    23:43:56.036 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:56.043 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:56.050 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:56.057 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:56.060 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:56.062 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:56.064 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:56.064 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:56.074 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:56.133 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testEditConversationPostWithUserMention'
+    23:43:56.135 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/1096/messages/2421
+    23:43:56.136 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : PUT updateMessage invoked for course 1096 with post User changes one of their conversation posts[user]invalidName[user]messageintegrationstudent1First messageintegrationstudent1Last(messageintegrationstudent1)[/user](invalid)[/user]
+    23:43:56.145 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : updateMessage took 9.39ms
+
+  Starting logs for MessageIntegrationTest > testGetConversationPosts_IfNoParticipant()
+    23:43:56.161 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:56.168 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:56.174 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:56.181 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:56.184 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:56.186 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:56.188 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:56.188 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:56.196 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:56.250 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testGetConversationPosts_IfNoParticipant'
+    23:43:56.263 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/1097/messages
+    23:43:56.268 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 1.20ms
+    23:43:56.273 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 4.81ms
+    23:43:56.277 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.service.PostingService   : userRepository.findUserRolesInCourse done for 1 authors 
+    23:43:56.279 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : /courses/{courseId}/messages finished in 15.04ms for 1 posts with 0 answer posts, 1 reactions, and 0 answer post reactions for user messageintegrationstudent1
+
+  Starting logs for MessageIntegrationTest > testGetCourseWideMessages_OrderByAnswerCountDESC()
+    23:43:56.314 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:56.324 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:56.340 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:56.353 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:56.359 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:56.364 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:56.365 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:56.365 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:56.377 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:56.424 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testGetCourseWideMessages_OrderByAnswerCountDESC'
+    23:43:56.425 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/1098/messages
+    23:43:56.440 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findPostIdsWithSpecification took 11.68ms
+    23:43:56.444 | 137 Pool-1-worker-52 | DEBUG | .a.c.r.ConversationMessageRepository : findByPostIdsWithEagerRelationships took 4.14ms
+    23:43:56.445 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.service.PostingService   : userRepository.findUserRolesInCourse done for 4 authors 
+    23:43:56.484 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : /courses/{courseId}/messages finished in 57.29ms for 20 posts with 0 answer posts, 0 reactions, and 0 answer post reactions for user messageintegrationstudent1
+
+  Starting logs for MessageIntegrationTest > testValidatePostContextConstraintViolation()
+    23:43:56.505 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:56.514 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:56.523 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:56.530 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:56.533 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:56.535 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:56.537 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:56.537 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:56.547 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:56.602 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testValidatePostContextConstraintViolation'
+    23:43:56.620 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1099/messages
+    23:43:56.627 | 137 Pool-1-worker-52 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<de.tum.cit.aet.artemis.communication.domain.Post> de.tum.cit.aet.artemis.communication.web.ConversationMessageResource.createMessage(java.lang.Long,de.tum.cit.aet.artemis.communication.domain.Post) throws java.net.URISyntaxException: [Error in object 'post': codes [PostConstraints.post,PostConstraints]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [post]; arguments []; default message []]; default message [{de.tum.cit.aet.artemis.communication.domain.PostConstraints}]] 
+
+  Starting logs for MessageIntegrationTest > testCreateAnnouncementInPrivateChannel()
+    23:43:56.698 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:43:56.706 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 4 tutors...
+    23:43:56.713 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 tutors generated. Generate 4 editors...
+    23:43:56.720 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 editors generated. Generate 1 instructors...
+    23:43:56.723 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:56.725 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses...
+    23:43:56.727 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 13 users from all courses. Done
+    23:43:56.727 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database...
+    23:43:56.737 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 13 users to database. Done
+    23:43:56.789 | 137 Pool-1-worker-52 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MessageIntegrationTest#testCreateAnnouncementInPrivateChannel'
+    23:43:56.794 | 137 Pool-1-worker-52 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/1100/messages
+    23:43:56.795 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : POST createMessage invoked for course 1100 with post message
+    23:43:56.798 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:conversationService.isMemberOrCreateForCourseWideElseThrow DONE
+    23:43:56.799 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:additional authorization DONE
+    23:43:56.800 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       createMessage:parseUserMentions DONE
+    23:43:56.801 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:56.801 | 137 Pool-1-worker-52 | DEBUG | a.a.c.s.ConversationMessagingService :       conversationMessageRepository.save DONE
+    23:43:56.801 | 137 Pool-1-worker-52 | DEBUG | .a.a.c.w.ConversationMessageResource : createMessage took 5.84ms
+    23:43:56.811 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       getNotificationRecipients DONE
+    23:43:56.812 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       broadcastForPost DONE
+    23:43:56.817 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       conversationNotificationService.notifyAboutNewMessage DONE
+    23:43:56.819 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       incrementUnreadMessagesCountOfParticipants DONE
+    23:43:56.822 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       saveAnnouncementNotification DONE
+    23:43:56.822 | 621 artemis-task-1   | DEBUG | a.a.c.s.ConversationMessagingService :       notifyAboutMessageCreation DONE
+    23:43:56.826 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'NEW_ANNOUNCEMENT_POST' notification email to 'messageintegrationinstructor1@test.de'
+    23:43:56.839 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'NEW_ANNOUNCEMENT_POST' notification email to 'messageintegrationstudent1@test.de'
+    23:43:56.849 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='messageintegrationinstructor1', firstName='messageintegrationinstructor1First', lastName='messageintegrationinstructor1Last', email='messageintegrationinstructor1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}' with subject 'New announcement "null" in course "Course title 5b0e9039-4935-4d3b-80d1-7e7f5fad8eb4"'
+    23:43:56.851 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'New announcement "null" in course "Course title 5b0e9039-4935-4d3b-80d1-7e7f5fad8eb4"' to User 'User{login='messageintegrationinstructor1', firstName='messageintegrationinstructor1First', lastName='messageintegrationinstructor1Last', email='messageintegrationinstructor1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}'
+    23:43:56.851 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='messageintegrationstudent1', firstName='messageintegrationstudent1First', lastName='messageintegrationstudent1Last', email='messageintegrationstudent1@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}' with subject 'New announcement "null" in course "Course title 5b0e9039-4935-4d3b-80d1-7e7f5fad8eb4"'
+    23:43:56.851 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'New announcement "null" in course "Course title 5b0e9039-4935-4d3b-80d1-7e7f5fad8eb4"' to User 'User{login='messageintegrationstudent1', firstName='messageintegrationstudent1First', lastName='messageintegrationstudent1Last', email='messageintegrationstudent1@test.de', imageUrl='null', activated='false', langKey='en', activationKey='null'}'
+
+Finished logs for MessageIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

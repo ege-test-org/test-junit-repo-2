@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.security.SecurityUtilsUnitTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:46" hostname="fv-az1721-502" time="0.011">
+  <properties/>
+  <testcase name="testGetCurrentUserLogin()" classname="de.tum.cit.aet.artemis.core.security.SecurityUtilsUnitTest" time="0.006"/>
+  <testcase name="testIsAuthenticated()" classname="de.tum.cit.aet.artemis.core.security.SecurityUtilsUnitTest" time="0.001"/>
+  <testcase name="testHasCurrentUserThisAuthority()" classname="de.tum.cit.aet.artemis.core.security.SecurityUtilsUnitTest" time="0.001"/>
+  <testcase name="testHasCurrentUserNoneOfAuthorities()" classname="de.tum.cit.aet.artemis.core.security.SecurityUtilsUnitTest" time="0.001"/>
+  <testcase name="testAnonymousIsNotAuthenticated()" classname="de.tum.cit.aet.artemis.core.security.SecurityUtilsUnitTest" time="0.0"/>
+  <testcase name="testHasCurrentUserAnyOfAuthorities()" classname="de.tum.cit.aet.artemis.core.security.SecurityUtilsUnitTest" time="0.0"/>
+  <system-out><![CDATA[
+Starting logs for SecurityUtilsUnitTest
+
+  Starting logs for SecurityUtilsUnitTest > testGetCurrentUserLogin()
+
+  Starting logs for SecurityUtilsUnitTest > testIsAuthenticated()
+
+  Starting logs for SecurityUtilsUnitTest > testHasCurrentUserThisAuthority()
+
+  Starting logs for SecurityUtilsUnitTest > testHasCurrentUserNoneOfAuthorities()
+
+  Starting logs for SecurityUtilsUnitTest > testAnonymousIsNotAuthenticated()
+
+  Starting logs for SecurityUtilsUnitTest > testHasCurrentUserAnyOfAuthorities()
+
+Finished logs for SecurityUtilsUnitTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

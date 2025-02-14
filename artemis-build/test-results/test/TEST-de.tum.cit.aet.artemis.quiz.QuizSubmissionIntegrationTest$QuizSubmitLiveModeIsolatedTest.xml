@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest$QuizSubmitLiveModeIsolatedTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:49:39" hostname="fv-az1721-502" time="0.427">
+  <properties/>
+  <testcase name="testQuizSubmitLiveMode(QuizMode) [1] quizMode=SYNCHRONIZED" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest$QuizSubmitLiveModeIsolatedTest" time="0.062"/>
+  <testcase name="testQuizSubmitLiveMode(QuizMode) [2] quizMode=BATCHED" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest$QuizSubmitLiveModeIsolatedTest" time="0.076"/>
+  <testcase name="testQuizSubmitLiveMode(QuizMode) [3] quizMode=INDIVIDUAL" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest$QuizSubmitLiveModeIsolatedTest" time="0.067"/>
+  <testcase name="testQuizSubmitLiveMode_badRequest_alreadySubmitted(QuizMode) [1] quizMode=SYNCHRONIZED" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest$QuizSubmitLiveModeIsolatedTest" time="0.067"/>
+  <testcase name="testQuizSubmitLiveMode_badRequest_alreadySubmitted(QuizMode) [2] quizMode=BATCHED" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest$QuizSubmitLiveModeIsolatedTest" time="0.073"/>
+  <testcase name="testQuizSubmitLiveMode_badRequest_alreadySubmitted(QuizMode) [3] quizMode=INDIVIDUAL" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest$QuizSubmitLiveModeIsolatedTest" time="0.073"/>
+  <system-out><![CDATA[
+Starting logs for QuizSubmitLiveModeIsolatedTest
+
+  Starting logs for QuizSubmitLiveModeIsolatedTest > testQuizSubmitLiveMode(QuizMode) [1] quizMode=SYNCHRONIZED
+    23:49:39.349 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:39.354 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:39.356 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:39.357 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:39.360 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:39.361 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:39.361 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:39.361 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:39.364 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:39.364 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmitLiveModeIsolatedTest#testQuizSubmitLiveMode'
+    23:49:39.365 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:47:39.364852950Z[Etc/UTC]', duration='600', dueDate='2025-02-14T23:57:44.364852950Z[Etc/UTC]'}
+    23:49:39.373 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2660
+    23:49:39.374 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2660) to trigger on DUE.
+    23:49:39.376 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/2660/start-participation
+    23:49:39.377 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 2660
+    23:49:39.394 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2660/submissions/live
+    23:49:39.396 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to save or submit QuizSubmission for live mode : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:39.397 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode:: Received quiz exercise for user quizsubmissionteststudent1 in quiz 2660 in 583 µs.
+    23:49:39.400 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode: Saved quiz submission for user quizsubmissionteststudent1 in quiz 2660 after 4.06ms 
+
+  Starting logs for QuizSubmitLiveModeIsolatedTest > testQuizSubmitLiveMode(QuizMode) [2] quizMode=BATCHED
+    23:49:39.413 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:39.418 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:39.420 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:39.421 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:39.424 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:39.424 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:39.425 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:39.425 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:39.428 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:39.428 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmitLiveModeIsolatedTest#testQuizSubmitLiveMode'
+    23:49:39.429 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:47:39.428689374Z[Etc/UTC]', duration='600', dueDate='null'}
+    23:49:39.437 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2661
+    23:49:39.440 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/2661/start-participation
+    23:49:39.441 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 2661
+    23:49:39.459 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/2661/join
+    23:49:39.459 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.web.QuizExerciseResource : REST request to join quiz batch : 2661, QuizBatchJoinDTO[password=null]
+    23:49:39.466 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2661/submissions/live
+    23:49:39.468 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to save or submit QuizSubmission for live mode : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:39.469 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode:: Received quiz exercise for user quizsubmissionteststudent1 in quiz 2661 in 1192 µs.
+    23:49:39.476 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode: Saved quiz submission for user quizsubmissionteststudent1 in quiz 2661 after 7.69ms 
+
+  Starting logs for QuizSubmitLiveModeIsolatedTest > testQuizSubmitLiveMode(QuizMode) [3] quizMode=INDIVIDUAL
+    23:49:39.492 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:39.497 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:39.499 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:39.500 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:39.502 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:39.503 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:39.504 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:39.504 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:39.507 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:39.507 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmitLiveModeIsolatedTest#testQuizSubmitLiveMode'
+    23:49:39.508 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:47:39.507548973Z[Etc/UTC]', duration='600', dueDate='null'}
+    23:49:39.515 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2662
+    23:49:39.518 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/2662/start-participation
+    23:49:39.519 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 2662
+    23:49:39.536 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/2662/join
+    23:49:39.536 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.web.QuizExerciseResource : REST request to join quiz batch : 2662, QuizBatchJoinDTO[password=null]
+    23:49:39.540 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2662/submissions/live
+    23:49:39.542 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to save or submit QuizSubmission for live mode : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:39.543 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode:: Received quiz exercise for user quizsubmissionteststudent1 in quiz 2662 in 606 µs.
+    23:49:39.547 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode: Saved quiz submission for user quizsubmissionteststudent1 in quiz 2662 after 4.74ms 
+
+  Starting logs for QuizSubmitLiveModeIsolatedTest > testQuizSubmitLiveMode_badRequest_alreadySubmitted(QuizMode) [1] quizMode=SYNCHRONIZED
+    23:49:39.560 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:39.565 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:39.567 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:39.568 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:39.570 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:39.571 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:39.572 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:39.572 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:39.575 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:39.575 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmitLiveModeIsolatedTest#testQuizSubmitLiveMode_badRequest_alreadySubmitted'
+    23:49:39.576 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:34.575706835Z[Etc/UTC]', duration='10', dueDate='2025-02-14T23:49:49.575706835Z[Etc/UTC]'}
+    23:49:39.584 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2663
+    23:49:39.585 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2663) to trigger on DUE.
+    23:49:39.586 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/2663/start-participation
+    23:49:39.587 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 2663
+    23:49:39.604 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2663/submissions/live
+    23:49:39.606 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to save or submit QuizSubmission for live mode : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:39.607 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode:: Received quiz exercise for user quizsubmissionteststudent3 in quiz 2663 in 784 µs.
+    23:49:39.611 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode: Saved quiz submission for user quizsubmissionteststudent3 in quiz 2663 after 4.76ms 
+    23:49:39.614 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2663/submissions/live
+    23:49:39.616 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to save or submit QuizSubmission for live mode : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:39.617 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode:: Received quiz exercise for user quizsubmissionteststudent3 in quiz 2663 in 969 µs.
+    23:49:39.617 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.a.q.w.QuizSubmissionResource : QuizSubmissionException: You have already submitted the quiz for user quizsubmissionteststudent3 in quiz 2663
+    23:49:39.617 |  27 nPool-1-worker-1 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, You have already submitted the quiz
+
+  Starting logs for QuizSubmitLiveModeIsolatedTest > testQuizSubmitLiveMode_badRequest_alreadySubmitted(QuizMode) [2] quizMode=BATCHED
+    23:49:39.629 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:39.634 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:39.636 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:39.637 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:39.639 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:39.640 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:39.641 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:39.641 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:39.643 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:39.644 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmitLiveModeIsolatedTest#testQuizSubmitLiveMode_badRequest_alreadySubmitted'
+    23:49:39.644 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:34.644182230Z[Etc/UTC]', duration='10', dueDate='2025-02-14T23:49:49.644185917Z[Etc/UTC]'}
+    23:49:39.652 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2664
+    23:49:39.653 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2664) to trigger on DUE.
+    23:49:39.654 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/2664/start-participation
+    23:49:39.655 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 2664
+    23:49:39.673 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/2664/join
+    23:49:39.673 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.web.QuizExerciseResource : REST request to join quiz batch : 2664, QuizBatchJoinDTO[password=null]
+    23:49:39.679 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2664/submissions/live
+    23:49:39.681 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to save or submit QuizSubmission for live mode : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:39.682 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode:: Received quiz exercise for user quizsubmissionteststudent3 in quiz 2664 in 735 µs.
+    23:49:39.686 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode: Saved quiz submission for user quizsubmissionteststudent3 in quiz 2664 after 5.05ms 
+    23:49:39.689 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2664/submissions/live
+    23:49:39.691 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to save or submit QuizSubmission for live mode : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:39.692 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode:: Received quiz exercise for user quizsubmissionteststudent3 in quiz 2664 in 773 µs.
+    23:49:39.692 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.a.q.w.QuizSubmissionResource : QuizSubmissionException: You have already submitted the quiz for user quizsubmissionteststudent3 in quiz 2664
+    23:49:39.692 |  27 nPool-1-worker-1 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, You have already submitted the quiz
+
+  Starting logs for QuizSubmitLiveModeIsolatedTest > testQuizSubmitLiveMode_badRequest_alreadySubmitted(QuizMode) [3] quizMode=INDIVIDUAL
+    23:49:39.704 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:39.709 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:39.711 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:39.712 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:39.714 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:39.715 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:39.716 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:39.716 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:39.719 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:39.719 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmitLiveModeIsolatedTest#testQuizSubmitLiveMode_badRequest_alreadySubmitted'
+    23:49:39.720 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:34.719868391Z[Etc/UTC]', duration='10', dueDate='2025-02-14T23:49:49.719872849Z[Etc/UTC]'}
+    23:49:39.728 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2665
+    23:49:39.729 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2665) to trigger on DUE.
+    23:49:39.730 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/2665/start-participation
+    23:49:39.731 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 2665
+    23:49:39.748 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/2665/join
+    23:49:39.748 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.web.QuizExerciseResource : REST request to join quiz batch : 2665, QuizBatchJoinDTO[password=null]
+    23:49:39.752 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2665/submissions/live
+    23:49:39.755 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to save or submit QuizSubmission for live mode : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:39.756 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode:: Received quiz exercise for user quizsubmissionteststudent3 in quiz 2665 in 861 µs.
+    23:49:39.761 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode: Saved quiz submission for user quizsubmissionteststudent3 in quiz 2665 after 6.77ms 
+    23:49:39.764 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2665/submissions/live
+    23:49:39.766 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to save or submit QuizSubmission for live mode : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:39.766 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode:: Received quiz exercise for user quizsubmissionteststudent3 in quiz 2665 in 638 µs.
+    23:49:39.766 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.a.q.w.QuizSubmissionResource : QuizSubmissionException: You have already submitted the quiz for user quizsubmissionteststudent3 in quiz 2665
+    23:49:39.766 |  27 nPool-1-worker-1 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, You have already submitted the quiz
+
+Finished logs for QuizSubmitLiveModeIsolatedTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

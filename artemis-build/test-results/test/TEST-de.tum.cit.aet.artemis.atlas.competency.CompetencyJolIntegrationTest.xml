@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.atlas.competency.CompetencyJolIntegrationTest" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="fv-az1721-502" time="0.0">
+  <properties/>
+  <system-out><![CDATA[
+Starting logs for CompetencyJolIntegrationTest
+    23:43:00.001 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Schedule tasks to process...
+    23:43:00.632 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.i.s.p.PyrisEventService    : Starting to process event of type: CompetencyJolSetEvent
+    23:43:00.637 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.i.s.p.PyrisEventService    : Processing CompetencyJolSetEvent: de.tum.cit.aet.artemis.iris.service.pyris.event.CompetencyJolSetEvent@3fa7509a
+    23:43:00.665 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.i.s.p.PyrisEventService    : Successfully processed CompetencyJolSetEvent
+    23:43:00.901 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.i.s.p.PyrisEventService    : Starting to process event of type: CompetencyJolSetEvent
+    23:43:00.901 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.i.s.p.PyrisEventService    : Processing CompetencyJolSetEvent: de.tum.cit.aet.artemis.iris.service.pyris.event.CompetencyJolSetEvent@3eca550d
+    23:43:00.903 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.i.s.p.PyrisEventService    : Successfully processed CompetencyJolSetEvent
+    23:43:00.903 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : CIBuildJobQueueItem added to queue: BuildJobQueueItem[id=4771739576580898, name=SHORT51E611E30D6B60466F0B8BA0AA97F58888C2TSTEXC-LOCALCIINTSTUDENT1, buildAgent=BuildAgentDTO[name=null, memberAddress=null, displayName=null], participationId=477, courseId=152, exerciseId=303, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=short51e611e30d6b60466f0b8ba0aa97f58888c2tstexc-localciintstudent1, repositoryType=user, triggeredByPushTo=user, assignmentRepositoryUri=http://localhost:49152/git/SHORT51E611E30D6B60466F0B8BA0AA97F58888C2TSTEXC/short51e611e30d6b60466f0b8ba0aa97f58888c2tstexc-localciintstudent1.git, testRepositoryUri=http://localhost:49152/git/SHORT51E611E30D6B60466F0B8BA0AA97F58888C2TSTEXC/short51e611e30d6b60466f0b8ba0aa97f58888c2tstexc-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@3f7c7780, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@4af98ff9], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:43:00.898532688Z[Etc/UTC], buildStartDate=null, buildCompletionDate=null, estimatedCompletionDate=null, estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+chmod +x ./gradlew
+./gradlew clean test
+, dockerImage=dummy-docker-image:latest, commitHashToBuild=8f3057cbd462f5e3de4e6ba85115f60d8dbb5aea, assignmentCommitHash=8f3057cbd462f5e3de4e6ba85115f60d8dbb5aea, testCommitHash=8f3057cbd462f5e3de4e6ba85115f60d8dbb5aea, branch=main, programmingLanguage=JAVA, projectType=PLAIN_GRADLE, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/test-results/test/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]
+    23:43:00.904 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : Current queued items: 1
+    23:43:00.904 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:43:00.905 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:43:00.915 | 566 localvc.event-13 | INFO  | a.a.b.s.SharedQueueProcessingService : Processing build job: BuildJobQueueItem[id=4771739576580898, name=SHORT51E611E30D6B60466F0B8BA0AA97F58888C2TSTEXC-LOCALCIINTSTUDENT1, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=477, courseId=152, exerciseId=303, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=short51e611e30d6b60466f0b8ba0aa97f58888c2tstexc-localciintstudent1, repositoryType=user, triggeredByPushTo=user, assignmentRepositoryUri=http://localhost:49152/git/SHORT51E611E30D6B60466F0B8BA0AA97F58888C2TSTEXC/short51e611e30d6b60466f0b8ba0aa97f58888c2tstexc-localciintstudent1.git, testRepositoryUri=http://localhost:49152/git/SHORT51E611E30D6B60466F0B8BA0AA97F58888C2TSTEXC/short51e611e30d6b60466f0b8ba0aa97f58888c2tstexc-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@655f14bf, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@5fcb6409], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:43:00.898532688Z[Etc/UTC], buildStartDate=2025-02-14T23:43:00.905733056Z[Etc/UTC], buildCompletionDate=null, estimatedCompletionDate=2025-02-14T23:43:19.905720463Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+chmod +x ./gradlew
+./gradlew clean test
+, dockerImage=dummy-docker-image:latest, commitHashToBuild=8f3057cbd462f5e3de4e6ba85115f60d8dbb5aea, assignmentCommitHash=8f3057cbd462f5e3de4e6ba85115f60d8dbb5aea, testCommitHash=8f3057cbd462f5e3de4e6ba85115f60d8dbb5aea, branch=main, programmingLanguage=JAVA, projectType=PLAIN_GRADLE, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/test-results/test/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]
+
+Finished logs for CompetencyJolIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

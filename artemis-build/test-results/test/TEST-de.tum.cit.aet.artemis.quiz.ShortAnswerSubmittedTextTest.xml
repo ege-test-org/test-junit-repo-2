@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.quiz.ShortAnswerSubmittedTextTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:16" hostname="fv-az1721-502" time="0.001">
+  <properties/>
+  <testcase name="testSubmissionWithoutMatchingLetterCaseAndExactMatching()" classname="de.tum.cit.aet.artemis.quiz.ShortAnswerSubmittedTextTest" time="0.0"/>
+  <testcase name="testSubmissionWithNonExactMatching()" classname="de.tum.cit.aet.artemis.quiz.ShortAnswerSubmittedTextTest" time="0.001"/>
+  <testcase name="testSubmissionWithMatchingLetterCaseAndExactMatching()" classname="de.tum.cit.aet.artemis.quiz.ShortAnswerSubmittedTextTest" time="0.0"/>
+  <system-out><![CDATA[
+Starting logs for ShortAnswerSubmittedTextTest
+
+  Starting logs for ShortAnswerSubmittedTextTest > testSubmissionWithoutMatchingLetterCaseAndExactMatching()
+
+  Starting logs for ShortAnswerSubmittedTextTest > testSubmissionWithNonExactMatching()
+
+  Starting logs for ShortAnswerSubmittedTextTest > testSubmissionWithMatchingLetterCaseAndExactMatching()
+
+Finished logs for ShortAnswerSubmittedTextTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

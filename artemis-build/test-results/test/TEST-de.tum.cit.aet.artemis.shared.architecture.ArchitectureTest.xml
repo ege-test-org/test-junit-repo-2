@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:21" hostname="fv-az1721-502" time="9.778">
+  <properties/>
+  <testcase name="ensureSpringComponentsAreProfileAnnotated()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="0.015"/>
+  <testcase name="testNoJunitJupiterAssertions()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="1.383"/>
+  <testcase name="hasMatchingAuthorizationTestClassBeCorrectlyImplemented()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="0.008"/>
+  <testcase name="testFileWriteUsage()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="0.822"/>
+  <testcase name="testCorrectStringUtils()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="0.57"/>
+  <testcase name="testValidSimpMessageSendingOperationsUsage()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="0.017"/>
+  <testcase name="testLogging()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="1.452"/>
+  <testcase name="testNoHazelcastUsageInConstructors()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="0.027"/>
+  <testcase name="testJSONImplementations()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="0.844"/>
+  <testcase name="testNoRestControllersImported()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="0.149"/>
+  <testcase name="testNoDirectGitCommitCalls()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="0.415"/>
+  <testcase name="testNoCollectorsToList()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="0.428"/>
+  <testcase name="testClassNameAndVisibility()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="0.107"/>
+  <testcase name="testAsyncTestShouldWait()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="1.452"/>
+  <testcase name="testGsonExclusion()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="1.249"/>
+  <testcase name="testNoJUnit4()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="0.188"/>
+  <testcase name="shouldNotUserAutowiredAnnotation()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="0.047"/>
+  <testcase name="testCorrectLoggerFields()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="0.048"/>
+  <testcase name="testJsonIncludeNonEmpty()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="0.068"/>
+  <testcase name="testNullnessAnnotations()" classname="de.tum.cit.aet.artemis.shared.architecture.ArchitectureTest" time="0.478"/>
+  <system-out><![CDATA[
+Starting logs for ArchitectureTest
+
+  Starting logs for ArchitectureTest > ensureSpringComponentsAreProfileAnnotated()
+
+  Starting logs for ArchitectureTest > testNoJunitJupiterAssertions()
+
+  Starting logs for ArchitectureTest > hasMatchingAuthorizationTestClassBeCorrectlyImplemented()
+
+  Starting logs for ArchitectureTest > testFileWriteUsage()
+
+  Starting logs for ArchitectureTest > testCorrectStringUtils()
+
+  Starting logs for ArchitectureTest > testValidSimpMessageSendingOperationsUsage()
+
+  Starting logs for ArchitectureTest > testLogging()
+
+  Starting logs for ArchitectureTest > testNoHazelcastUsageInConstructors()
+
+  Starting logs for ArchitectureTest > testJSONImplementations()
+
+  Starting logs for ArchitectureTest > testNoRestControllersImported()
+
+  Starting logs for ArchitectureTest > testNoDirectGitCommitCalls()
+
+  Starting logs for ArchitectureTest > testNoCollectorsToList()
+
+  Starting logs for ArchitectureTest > testClassNameAndVisibility()
+
+  Starting logs for ArchitectureTest > testAsyncTestShouldWait()
+
+  Starting logs for ArchitectureTest > testGsonExclusion()
+    23:46:30.842 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.s.a.ArchitectureTest       : Current number of Gson usages: 664
+
+  Starting logs for ArchitectureTest > testNoJUnit4()
+
+  Starting logs for ArchitectureTest > shouldNotUserAutowiredAnnotation()
+
+  Starting logs for ArchitectureTest > testCorrectLoggerFields()
+
+  Starting logs for ArchitectureTest > testJsonIncludeNonEmpty()
+
+  Starting logs for ArchitectureTest > testNullnessAnnotations()
+
+Finished logs for ArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

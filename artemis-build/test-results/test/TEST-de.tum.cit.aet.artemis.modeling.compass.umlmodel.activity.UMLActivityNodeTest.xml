@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityNodeTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:03" hostname="fv-az1721-502" time="0.015">
+  <properties/>
+  <testcase name="similarity_null()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityNodeTest" time="0.0"/>
+  <testcase name="similarity_differentNodeTypesWithoutName()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityNodeTest" time="0.0"/>
+  <testcase name="similarity_bothNamesEmpty()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityNodeTest" time="0.001"/>
+  <testcase name="similarity_nullReferenceName()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityNodeTest" time="0.001"/>
+  <testcase name="similarity_differentElementType()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityNodeTest" time="0.001"/>
+  <testcase name="similarity_bothNamesNull()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityNodeTest" time="0.002"/>
+  <testcase name="getType()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityNodeTest" time="0.001"/>
+  <testcase name="similarity_sameActivityNode()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityNodeTest" time="0.001"/>
+  <testcase name="similarity_differentName()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLActivityNodeTest" time="0.001"/>
+  <system-out><![CDATA[
+Starting logs for UMLActivityNodeTest
+
+  Starting logs for UMLActivityNodeTest > similarity_null()
+
+  Starting logs for UMLActivityNodeTest > similarity_differentNodeTypesWithoutName()
+
+  Starting logs for UMLActivityNodeTest > similarity_bothNamesEmpty()
+
+  Starting logs for UMLActivityNodeTest > similarity_nullReferenceName()
+
+  Starting logs for UMLActivityNodeTest > similarity_differentElementType()
+
+  Starting logs for UMLActivityNodeTest > similarity_bothNamesNull()
+
+  Starting logs for UMLActivityNodeTest > getType()
+
+  Starting logs for UMLActivityNodeTest > similarity_sameActivityNode()
+
+  Starting logs for UMLActivityNodeTest > similarity_differentName()
+
+Finished logs for UMLActivityNodeTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

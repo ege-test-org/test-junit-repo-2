@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:33" hostname="fv-az1721-502" time="0.342">
+  <properties/>
+  <testcase name="testNoEntityGraphsOnQueries()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" time="0.026"/>
+  <testcase name="testNoUnusedRepositoryMethods()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" time="0.049"/>
+  <testcase name="testTransactional()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" time="0.051"/>
+  <testcase name="shouldBeInRepositoryPackage()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="testRepositoryParamAnnotation()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" time="0.058"/>
+  <testcase name="orElseThrowShouldNotBeCalled()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" time="0.007"/>
+  <testcase name="repositoriesImplementArtemisJpaRepository()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" time="0.007"/>
+  <testcase name="persistenceShouldNotAccessServices()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" time="0.008"/>
+  <testcase name="usedInProductionCode()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" time="0.048"/>
+  <testcase name="shouldBeAnnotatedRepository()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="enforceUsageOfTestRepository()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="testJPQLStyle()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" time="0.023"/>
+  <testcase name="shouldBeNamedRepository()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" time="0.004"/>
+  <testcase name="enforceStructureOfTestRepositories()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" time="0.008"/>
+  <testcase name="testOnlySpringTransactionalAnnotation()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" time="0.035"/>
+  <testcase name="enforcePrimaryBeanAnnotationOnTestRepositories()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupRepositoryArchitectureTest" time="0.002"/>
+  <system-out><![CDATA[
+Starting logs for TutorialGroupRepositoryArchitectureTest
+
+  Starting logs for TutorialGroupRepositoryArchitectureTest > testNoEntityGraphsOnQueries()
+
+  Starting logs for TutorialGroupRepositoryArchitectureTest > testNoUnusedRepositoryMethods()
+
+  Starting logs for TutorialGroupRepositoryArchitectureTest > testTransactional()
+
+  Starting logs for TutorialGroupRepositoryArchitectureTest > shouldBeInRepositoryPackage()
+
+  Starting logs for TutorialGroupRepositoryArchitectureTest > testRepositoryParamAnnotation()
+
+  Starting logs for TutorialGroupRepositoryArchitectureTest > orElseThrowShouldNotBeCalled()
+
+  Starting logs for TutorialGroupRepositoryArchitectureTest > repositoriesImplementArtemisJpaRepository()
+
+  Starting logs for TutorialGroupRepositoryArchitectureTest > persistenceShouldNotAccessServices()
+
+  Starting logs for TutorialGroupRepositoryArchitectureTest > usedInProductionCode()
+
+  Starting logs for TutorialGroupRepositoryArchitectureTest > shouldBeAnnotatedRepository()
+
+  Starting logs for TutorialGroupRepositoryArchitectureTest > enforceUsageOfTestRepository()
+
+  Starting logs for TutorialGroupRepositoryArchitectureTest > testJPQLStyle()
+
+  Starting logs for TutorialGroupRepositoryArchitectureTest > shouldBeNamedRepository()
+
+  Starting logs for TutorialGroupRepositoryArchitectureTest > enforceStructureOfTestRepositories()
+
+  Starting logs for TutorialGroupRepositoryArchitectureTest > testOnlySpringTransactionalAnnotation()
+
+  Starting logs for TutorialGroupRepositoryArchitectureTest > enforcePrimaryBeanAnnotationOnTestRepositories()
+
+Finished logs for TutorialGroupRepositoryArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.security.jwt.TokenProviderSecurityMetersTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:46" hostname="fv-az1721-502" time="0.048">
+  <properties/>
+  <testcase name="testTokenMalformedCount()" classname="de.tum.cit.aet.artemis.core.security.jwt.TokenProviderSecurityMetersTest" time="0.013"/>
+  <testcase name="testTokenSignatureInvalidCount()" classname="de.tum.cit.aet.artemis.core.security.jwt.TokenProviderSecurityMetersTest" time="0.005"/>
+  <testcase name="testTokenExpiredCount()" classname="de.tum.cit.aet.artemis.core.security.jwt.TokenProviderSecurityMetersTest" time="0.009"/>
+  <testcase name="testValidTokenShouldNotCountAnything()" classname="de.tum.cit.aet.artemis.core.security.jwt.TokenProviderSecurityMetersTest" time="0.013"/>
+  <testcase name="testTokenUnsupportedCount()" classname="de.tum.cit.aet.artemis.core.security.jwt.TokenProviderSecurityMetersTest" time="0.006"/>
+  <system-out><![CDATA[
+Starting logs for TokenProviderSecurityMetersTest
+
+  Starting logs for TokenProviderSecurityMetersTest > testTokenMalformedCount()
+    23:39:46.927 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: XeyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXMiLCJhdXRoIjoiUk9MRV9BTk9OWU1PVVMiLCJleHAiOjE3Mzk1NzY0NDZ9.jhTYy-7k6KvnNBjHXnNz7FPQdP8bpszfIupbxq7WggtT_0Wd1ZaeSaW66wihyixv7cFN_y5nlkyHrkbUhXhqBQ from source null
+
+  Starting logs for TokenProviderSecurityMetersTest > testTokenSignatureInvalidCount()
+    23:39:46.933 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXMiLCJleHAiOjE3Mzk1NzY0NDZ9.qqwSB8LYWIT9yL-i5FKkHOXPYbN2xyb92LSkeMB-M_XQDSXviDIvMXB1dcWdsX_5A6HJv7yRMeNhld2EtumLlA from source null
+
+  Starting logs for TokenProviderSecurityMetersTest > testTokenExpiredCount()
+    23:39:46.942 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhbm9ueW1vdXMiLCJhdXRoIjoiUk9MRV9BTk9OWU1PVVMiLCJleHAiOjE3Mzk1NzYzMjZ9.wMF6pgJGl3vPnapgqZztoqaJIian9jX6qt2PzXWKepQQSqFSGJwzNQFWejFi-QaJLEYv3UTxRPTx_QE0xETVhw from source null
+
+  Starting logs for TokenProviderSecurityMetersTest > testValidTokenShouldNotCountAnything()
+
+  Starting logs for TokenProviderSecurityMetersTest > testTokenUnsupportedCount()
+    23:39:46.962 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: eyJhbGciOiJIUzI1NiJ9.cGF5bG9hZA.8-scM0rKlLvUQqm2QDd46EAskxWOMxYSUFuP_FSi2s4 from source null
+
+Finished logs for TokenProviderSecurityMetersTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

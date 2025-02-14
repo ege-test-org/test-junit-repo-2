@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.service.CourseExamExportServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:36" hostname="fv-az1721-502" time="0.416">
+  <properties/>
+  <testcase name="testExportCourse()" classname="de.tum.cit.aet.artemis.core.service.CourseExamExportServiceTest" time="0.303"/>
+  <testcase name="testExportCourseExams()" classname="de.tum.cit.aet.artemis.core.service.CourseExamExportServiceTest" time="0.112"/>
+  <system-out><![CDATA[
+Starting logs for CourseExamExportServiceTest
+
+  Starting logs for CourseExamExportServiceTest > testExportCourse()
+    23:45:36.885 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:45:36.888 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 3 tutors...
+    23:45:36.896 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 tutors generated. Generate 0 editors...
+    23:45:36.897 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:45:36.900 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:45:36.906 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:45:36.907 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:45:36.907 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:45:36.914 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:45:36.914 | 345 ool-1-worker-109 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='CourseExamExportServiceTest#testExportCourse'
+    23:45:37.011 | 345 ool-1-worker-109 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1809 and participant 338 (result to be deleted: null)
+    23:45:37.011 | 345 ool-1-worker-109 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1809 and participant 338 at 2025-02-14T23:45:37.111914671Z[Etc/UTC].
+    23:45:37.017 | 345 ool-1-worker-109 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1809 and participant 338 (result to be deleted: null)
+    23:45:37.017 | 345 ool-1-worker-109 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1809 and participant 338 at 2025-02-14T23:45:37.117599955Z[Etc/UTC].
+    23:45:37.045 | 345 ool-1-worker-109 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1810 and participant 338 (result to be deleted: null)
+    23:45:37.045 | 345 ool-1-worker-109 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1810 and participant 338 at 2025-02-14T23:45:37.145463021Z[Etc/UTC].
+    23:45:37.051 | 345 ool-1-worker-109 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1810 and participant 338 (result to be deleted: null)
+    23:45:37.051 | 345 ool-1-worker-109 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1810 and participant 338 at 2025-02-14T23:45:37.151152171Z[Etc/UTC].
+    23:45:37.080 | 345 ool-1-worker-109 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1811 and participant 338 (result to be deleted: null)
+    23:45:37.080 | 345 ool-1-worker-109 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1811 and participant 338 at 2025-02-14T23:45:37.180802400Z[Etc/UTC].
+    23:45:37.086 | 345 ool-1-worker-109 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1811 and participant 338 (result to be deleted: null)
+    23:45:37.086 | 345 ool-1-worker-109 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1811 and participant 338 at 2025-02-14T23:45:37.186167396Z[Etc/UTC].
+    23:45:37.117 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1809 and participant 338 to update participant scores.
+    23:45:37.125 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 58.
+    23:45:37.126 | 345 ool-1-worker-109 | INFO  | .c.a.a.c.s.e.CourseExamExportService : Exporting course exercises for course 1549 and title Course title cb14cd0e-4c6f-4625-a3cd-18a4b97e4f4b
+    23:45:37.126 | 345 ool-1-worker-109 | INFO  | .c.a.a.c.s.e.CourseExamExportService : Exporting modeling exercise Modeling0 with id 1809 
+    23:45:37.127 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.127 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.130 | 345 ool-1-worker-109 | INFO  | .c.a.a.c.s.e.CourseExamExportService : Exporting text exercise Text1 with id 1810 
+    23:45:37.130 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.130 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.132 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1809 and participant 338 took 15 ms.
+    23:45:37.133 | 345 ool-1-worker-109 | INFO  | .c.a.a.c.s.e.CourseExamExportService : Exporting file-upload exercise FileUpload2 with id 1811 
+    23:45:37.133 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.133 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.136 | 345 ool-1-worker-109 | INFO  | .c.a.a.c.s.e.CourseExamExportService : Export course exams for course 1549 and title Course title cb14cd0e-4c6f-4625-a3cd-18a4b97e4f4b
+    23:45:37.138 | 345 ool-1-worker-109 | INFO  | .c.a.a.c.s.e.CourseExamExportService : Export course exam 178
+    23:45:37.138 | 345 ool-1-worker-109 | INFO  | .c.a.a.c.s.e.CourseExamExportService : Exporting file-upload exercise 4d101ee0-6aa4-42c0-8e2e-135860fa80cf with id 1806 
+    23:45:37.138 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.138 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.141 | 345 ool-1-worker-109 | INFO  | .c.a.a.c.s.e.CourseExamExportService : Exporting text exercise ec4b3870-ef53-438d-b0a7-78eb7162292a with id 1807 
+    23:45:37.142 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.142 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.144 | 345 ool-1-worker-109 | INFO  | .c.a.a.c.s.e.CourseExamExportService : Exporting modeling exercise e7262aba-e83d-4ab3-b0a9-6d0f9210f7a1 with id 1808 
+    23:45:37.144 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.144 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.151 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1810 and participant 338 to update participant scores.
+    23:45:37.161 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 59.
+    23:45:37.165 | 345 ool-1-worker-109 | INFO  | .c.a.a.c.s.e.CourseExamExportService : Successfully created zip file: tmp/export/short21a9a6a5007d904b250b170085ff67e14bf6-Course_title_cb14cd0e-4c6f-4625-a3cd-18a4b97e4f4b-20250214-234537.zip
+    23:45:37.165 | 345 ool-1-worker-109 | INFO  | .c.a.a.c.s.e.CourseExamExportService : Successfully exported course 1549. The zip file is located at: tmp/export/short21a9a6a5007d904b250b170085ff67e14bf6-Course_title_cb14cd0e-4c6f-4625-a3cd-18a4b97e4f4b-20250214-234537.zip
+    23:45:37.167 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1810 and participant 338 took 16 ms.
+
+  Starting logs for CourseExamExportServiceTest > testExportCourseExams()
+    23:45:37.181 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:45:37.185 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 3 tutors...
+    23:45:37.190 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 tutors generated. Generate 0 editors...
+    23:45:37.192 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:45:37.194 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:45:37.196 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:45:37.197 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:45:37.197 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:45:37.221 | 345 ool-1-worker-109 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:45:37.222 | 345 ool-1-worker-109 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='CourseExamExportServiceTest#testExportCourseExams'
+    23:45:37.262 | 345 ool-1-worker-109 | INFO  | .c.a.a.c.s.e.CourseExamExportService : Exporting file-upload exercise 5de8007e-80fa-4d34-aebd-7cf0cde2a69f with id 1812 
+    23:45:37.263 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.263 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.266 | 345 ool-1-worker-109 | INFO  | .c.a.a.c.s.e.CourseExamExportService : Exporting text exercise b73c1870-6f5c-4050-8f8f-2ae4333e6436 with id 1813 
+    23:45:37.266 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.266 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.269 | 345 ool-1-worker-109 | INFO  | .c.a.a.c.s.e.CourseExamExportService : Exporting modeling exercise 168112a2-6319-46b1-b2ba-58cfc6f49c22 with id 1814 
+    23:45:37.270 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.270 | 345 ool-1-worker-109 | DEBUG | ExerciseWithSubmissionsExportService : Found embedded files: [] 
+    23:45:37.278 | 345 ool-1-worker-109 | INFO  | .c.a.a.c.s.e.CourseExamExportService : Successfully created zip file: tmp/export/179-Real_exam_1-20250214-234537.zip
+    23:45:37.279 | 345 ool-1-worker-109 | INFO  | .c.a.a.c.s.e.CourseExamExportService : Successfully exported exam 179. The zip file is located at: tmp/export/179-Real_exam_1-20250214-234537.zip
+
+Finished logs for CourseExamExportServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

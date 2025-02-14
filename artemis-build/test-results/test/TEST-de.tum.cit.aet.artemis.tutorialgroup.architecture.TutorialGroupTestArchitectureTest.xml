@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupTestArchitectureTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:34" hostname="fv-az1721-502" time="0.01">
+  <properties/>
+  <testcase name="integrationTestsShouldExtendAbstractModuleIntegrationTest()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupTestArchitectureTest" time="0.002"/>
+  <testcase name="integrationTestsShouldNotAutowireMembers()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupTestArchitectureTest" time="0.008"/>
+  <system-out><![CDATA[
+Starting logs for TutorialGroupTestArchitectureTest
+
+  Starting logs for TutorialGroupTestArchitectureTest > integrationTestsShouldExtendAbstractModuleIntegrationTest()
+
+  Starting logs for TutorialGroupTestArchitectureTest > integrationTestsShouldNotAutowireMembers()
+
+Finished logs for TutorialGroupTestArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.fileupload.service.FileUploadScheduleServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:57" hostname="fv-az1721-502" time="0.318">
+  <properties/>
+  <testcase name="shouldDeleteNullEntityFileUploadsWhenOlderThanThreeDays()" classname="de.tum.cit.aet.artemis.fileupload.service.FileUploadScheduleServiceTest" time="0.311"/>
+  <testcase name="shouldDeleteOrphanedFileUploadsWhenCleanupMethodIsCalled()" classname="de.tum.cit.aet.artemis.fileupload.service.FileUploadScheduleServiceTest" time="0.007"/>
+  <system-out><![CDATA[
+Starting logs for FileUploadScheduleServiceTest
+
+  Starting logs for FileUploadScheduleServiceTest > shouldDeleteNullEntityFileUploadsWhenOlderThanThreeDays()
+
+  Starting logs for FileUploadScheduleServiceTest > shouldDeleteOrphanedFileUploadsWhenCleanupMethodIsCalled()
+
+Finished logs for FileUploadScheduleServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

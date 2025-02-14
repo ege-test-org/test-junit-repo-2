@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lti.LtiServiceTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:00" hostname="fv-az1721-502" time="0.445">
+  <properties/>
+  <testcase name="addLtiQueryParamsNewUser()" classname="de.tum.cit.aet.artemis.lti.LtiServiceTest" time="0.389"/>
+  <testcase name="authenticateLtiUser_AlreadyAuthenticatedSameEmail()" classname="de.tum.cit.aet.artemis.lti.LtiServiceTest" time="0.002"/>
+  <testcase name="authenticateLtiUser_newUser()" classname="de.tum.cit.aet.artemis.lti.LtiServiceTest" time="0.006"/>
+  <testcase name="authenticateLtiUser_noEmail()" classname="de.tum.cit.aet.artemis.lti.LtiServiceTest" time="0.002"/>
+  <testcase name="authenticateLtiUser_lookupUserByEmail()" classname="de.tum.cit.aet.artemis.lti.LtiServiceTest" time="0.016"/>
+  <testcase name="authenticateLtiUser_AlreadyAuthenticatedDifferentEmail()" classname="de.tum.cit.aet.artemis.lti.LtiServiceTest" time="0.006"/>
+  <testcase name="authenticateLtiUser_noAuth()" classname="de.tum.cit.aet.artemis.lti.LtiServiceTest" time="0.004"/>
+  <testcase name="addLtiQueryParamsExistingUser()" classname="de.tum.cit.aet.artemis.lti.LtiServiceTest" time="0.004"/>
+  <testcase name="successFullAuthentication()" classname="de.tum.cit.aet.artemis.lti.LtiServiceTest" time="0.002"/>
+  <testcase name="isNotLtiCreatedUser()" classname="de.tum.cit.aet.artemis.lti.LtiServiceTest" time="0.001"/>
+  <testcase name="isLtiCreatedUser()" classname="de.tum.cit.aet.artemis.lti.LtiServiceTest" time="0.003"/>
+  <system-out><![CDATA[
+Starting logs for LtiServiceTest
+
+  Starting logs for LtiServiceTest > addLtiQueryParamsNewUser()
+    23:40:00.913 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : User is not activated. Adding initialize parameter to query.
+    23:40:00.913 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : Add/Update JWT cookie so the user will be logged in.
+
+  Starting logs for LtiServiceTest > authenticateLtiUser_AlreadyAuthenticatedSameEmail()
+    23:40:00.919 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : Authenticating LTI user with email: useremail@tum.de, username: username, firstName: firstname, lastName: lastname, requireExistingUser: false
+    23:40:00.919 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : User is already signed in. Checking if email matches the one provided in the launch.
+    23:40:00.919 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : User is already signed in and email matches the one provided in the launch. No further action required.
+
+  Starting logs for LtiServiceTest > authenticateLtiUser_newUser()
+    23:40:00.922 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : Authenticating LTI user with email: email, username: username, firstName: firstname, lastName: lastname, requireExistingUser: false
+    23:40:00.923 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : User with email email already exists. Email is already in use.
+
+  Starting logs for LtiServiceTest > authenticateLtiUser_noEmail()
+    23:40:00.927 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : Authenticating LTI user with email: , username: username, firstName: firstname, lastName: lastname, requireExistingUser: false
+    23:40:00.927 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.a.lti.service.LtiService     : No email address sent by launch request. Please make sure the user has an accessible email address.
+
+  Starting logs for LtiServiceTest > authenticateLtiUser_lookupUserByEmail()
+    23:40:00.934 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : Authenticating LTI user with email: email, username: username, firstName: firstname, lastName: lastname, requireExistingUser: false
+    23:40:00.935 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : Creating new user from launch request: email, username: username, firstName: firstname, lastName: lastname
+    23:40:00.943 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : Created new user User{login='login', firstName='null', lastName='null', email='null', imageUrl='null', activated='false', langKey='null', activationKey='null'}
+    23:40:00.943 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : createNewUserFromLaunchRequest: User{login='login', firstName='null', lastName='null', email='null', imageUrl='null', activated='false', langKey='null', activationKey='null'}
+    23:40:00.943 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : Signing in as username
+
+  Starting logs for LtiServiceTest > authenticateLtiUser_AlreadyAuthenticatedDifferentEmail()
+    23:40:00.948 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : Authenticating LTI user with email: email, username: username, firstName: firstname, lastName: lastname, requireExistingUser: false
+    23:40:00.948 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : User is already signed in. Checking if email matches the one provided in the launch.
+    23:40:00.948 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : User is already signed in but email does not match the one provided in the launch. Signing out user.
+    23:40:00.948 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : Creating new user from launch request: email, username: username, firstName: firstname, lastName: lastname
+    23:40:00.951 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : Created new user User{login='login', firstName='null', lastName='null', email='useremail@tum.de', imageUrl='null', activated='false', langKey='null', activationKey='null'}
+    23:40:00.951 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : createNewUserFromLaunchRequest: User{login='login', firstName='null', lastName='null', email='useremail@tum.de', imageUrl='null', activated='false', langKey='null', activationKey='null'}
+    23:40:00.951 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : Signing in as username
+
+  Starting logs for LtiServiceTest > authenticateLtiUser_noAuth()
+    23:40:00.954 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : Authenticating LTI user with email: email, username: username, firstName: firstname, lastName: lastname, requireExistingUser: true
+    23:40:00.954 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : Could not find existing user or create new LTI user.
+
+  Starting logs for LtiServiceTest > addLtiQueryParamsExistingUser()
+    23:40:00.960 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.LtiService     : Add/Update JWT cookie so the user will be logged in.
+
+  Starting logs for LtiServiceTest > successFullAuthentication()
+
+  Starting logs for LtiServiceTest > isNotLtiCreatedUser()
+
+  Starting logs for LtiServiceTest > isLtiCreatedUser()
+
+Finished logs for LtiServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.exam.architecture.ExamCodeStyleArchitectureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:56" hostname="fv-az1721-502" time="0.01">
+  <properties/>
+  <testcase name="testDTOImplementations()" classname="de.tum.cit.aet.artemis.exam.architecture.ExamCodeStyleArchitectureTest" time="0.01"/>
+  <system-out><![CDATA[
+Starting logs for ExamCodeStyleArchitectureTest
+
+  Starting logs for ExamCodeStyleArchitectureTest > testDTOImplementations()
+    23:39:56.277 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTO classes: 0
+    23:39:56.277 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTO classes: []
+    23:39:56.281 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTOs that do not end with "DTO": 4
+    23:39:56.281 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTOs that do not end with "DTO": [Class <de.tum.cit.aet.artemis.exam.dto.ExamScoresDTO$ExerciseGroup$ExerciseInfo> does not have simple name ending with 'DTO' in (ExamScoresDTO.java:0), Class <de.tum.cit.aet.artemis.exam.dto.ExamScoresDTO$ExerciseGroup> does not have simple name ending with 'DTO' in (ExamScoresDTO.java:0), Class <de.tum.cit.aet.artemis.exam.dto.ExamScoresDTO$ExerciseResult> does not have simple name ending with 'DTO' in (ExamScoresDTO.java:0), Class <de.tum.cit.aet.artemis.exam.dto.ExamScoresDTO$StudentResult> does not have simple name ending with 'DTO' in (ExamScoresDTO.java:0)]
+
+Finished logs for ExamCodeStyleArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

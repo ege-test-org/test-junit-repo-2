@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.migration.MigrationServiceTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:33" hostname="fv-az1721-502" time="1.243">
+  <properties/>
+  <testcase name="testBrokenEntriesFail()" classname="de.tum.cit.aet.artemis.core.migration.MigrationServiceTest" time="0.947"/>
+  <testcase name="testStartDateEmptyFail()" classname="de.tum.cit.aet.artemis.core.migration.MigrationServiceTest" time="0.033"/>
+  <testcase name="testExecutionOnMultipleStarts()" classname="de.tum.cit.aet.artemis.core.migration.MigrationServiceTest" time="0.041"/>
+  <testcase name="testStopApplicationOnFailedIntegrityCheck()" classname="de.tum.cit.aet.artemis.core.migration.MigrationServiceTest" time="0.028"/>
+  <testcase name="testDuplicateDateStringsFail()" classname="de.tum.cit.aet.artemis.core.migration.MigrationServiceTest" time="0.03"/>
+  <testcase name="testExecutionSucceedsForEmptyMap()" classname="de.tum.cit.aet.artemis.core.migration.MigrationServiceTest" time="0.013"/>
+  <testcase name="testSplitExecution()" classname="de.tum.cit.aet.artemis.core.migration.MigrationServiceTest" time="0.018"/>
+  <testcase name="testValidMap()" classname="de.tum.cit.aet.artemis.core.migration.MigrationServiceTest" time="0.028"/>
+  <testcase name="testExecutionSucceedsForRegularMap()" classname="de.tum.cit.aet.artemis.core.migration.MigrationServiceTest" time="0.035"/>
+  <testcase name="testNoExecutionOnTestEnvironment()" classname="de.tum.cit.aet.artemis.core.migration.MigrationServiceTest" time="0.025"/>
+  <testcase name="testWrongOrderDateStringsFail()" classname="de.tum.cit.aet.artemis.core.migration.MigrationServiceTest" time="0.027"/>
+  <system-out><![CDATA[
+Starting logs for MigrationServiceTest
+
+  Starting logs for MigrationServiceTest > testBrokenEntriesFail()
+    23:45:33.705 | 339 ool-1-worker-103 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MigrationServiceTest#testBrokenEntriesFail'
+    23:45:33.903 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:33.904 | 339 ool-1-worker-103 | ERROR | d.t.c.a.a.c.c.m.MigrationService     : MigrationService corrupted. Migration entries not properly set up.
+    23:45:33.904 | 339 ool-1-worker-103 | ERROR | d.t.c.a.a.c.c.m.MigrationService     : Entry MigrationEntry$MockitoMock$j2ACGd7a has not all information methods defined.
+    23:45:33.904 | 339 ool-1-worker-103 | INFO  | d.t.c.a.a.c.c.m.MigrationService     : Please refer to the documentation on how to set up migration entries.
+    23:45:33.904 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+    23:45:33.904 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:33.904 | 339 ool-1-worker-103 | ERROR | d.t.c.a.a.c.c.m.MigrationService     : MigrationService corrupted. Migration entries not properly set up.
+    23:45:33.904 | 339 ool-1-worker-103 | ERROR | d.t.c.a.a.c.c.m.MigrationService     : Entry MigrationEntry$MockitoMock$j2ACGd7a has not all information methods defined.
+    23:45:33.904 | 339 ool-1-worker-103 | INFO  | d.t.c.a.a.c.c.m.MigrationService     : Please refer to the documentation on how to set up migration entries.
+    23:45:33.904 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+    23:45:33.904 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:33.904 | 339 ool-1-worker-103 | ERROR | d.t.c.a.a.c.c.m.MigrationService     : MigrationService corrupted. Migration entries not properly set up.
+    23:45:33.904 | 339 ool-1-worker-103 | ERROR | d.t.c.a.a.c.c.m.MigrationService     : Entry MigrationEntry$MockitoMock$j2ACGd7a has not all information methods defined.
+    23:45:33.904 | 339 ool-1-worker-103 | INFO  | d.t.c.a.a.c.c.m.MigrationService     : Please refer to the documentation on how to set up migration entries.
+    23:45:33.904 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+    23:45:33.904 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:33.904 | 339 ool-1-worker-103 | ERROR | d.t.c.a.a.c.c.m.MigrationService     : MigrationService corrupted. Migration entries not properly set up.
+    23:45:33.904 | 339 ool-1-worker-103 | ERROR | d.t.c.a.a.c.c.m.MigrationService     : Entry MigrationEntry$MockitoMock$j2ACGd7a has not all information methods defined.
+    23:45:33.904 | 339 ool-1-worker-103 | INFO  | d.t.c.a.a.c.c.m.MigrationService     : Please refer to the documentation on how to set up migration entries.
+    23:45:33.904 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+
+  Starting logs for MigrationServiceTest > testStartDateEmptyFail()
+    23:45:33.967 | 339 ool-1-worker-103 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MigrationServiceTest#testStartDateEmptyFail'
+    23:45:33.968 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:33.968 | 339 ool-1-worker-103 | ERROR | d.t.c.a.a.c.c.m.MigrationService     : MigrationService corrupted. Migration entries not properly set up.
+    23:45:33.968 | 339 ool-1-worker-103 | ERROR | d.t.c.a.a.c.c.m.MigrationService     : Entry MigrationEntry$MockitoMock$j2ACGd7a has not all information methods defined.
+    23:45:33.968 | 339 ool-1-worker-103 | ERROR | d.t.c.a.a.c.c.m.MigrationService     : Entry MigrationEntry$MockitoMock$j2ACGd7a has not all information methods defined.
+    23:45:33.968 | 339 ool-1-worker-103 | INFO  | d.t.c.a.a.c.c.m.MigrationService     : Please refer to the documentation on how to set up migration entries.
+    23:45:33.968 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+
+  Starting logs for MigrationServiceTest > testExecutionOnMultipleStarts()
+    23:45:33.998 | 339 ool-1-worker-103 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MigrationServiceTest#testExecutionOnMultipleStarts'
+    23:45:33.998 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting Artemis migration
+    23:45:33.999 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:33.999 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+    23:45:33.999 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Integrity check passed.
+    23:45:34.003 | 339 ool-1-worker-103 | INFO  | d.t.c.a.a.c.c.m.MigrationService     : Executing migration entries
+    23:45:34.003 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Executing entry 20211214_231800
+    23:45:34.004 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Done
+    23:45:34.004 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Executing entry 20211215_231800
+    23:45:34.004 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Done
+    23:45:34.004 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Executing entry 20211216_231800
+    23:45:34.004 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Done
+    23:45:34.004 | 339 ool-1-worker-103 | INFO  | d.t.c.a.a.c.c.m.MigrationService     : Executed 3 migration entries
+    23:45:34.004 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending Artemis migration
+    23:45:34.005 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting Artemis migration
+    23:45:34.005 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:34.005 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+    23:45:34.005 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Integrity check passed.
+    23:45:34.006 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : No migration entries executed
+    23:45:34.006 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending Artemis migration
+
+  Starting logs for MigrationServiceTest > testStopApplicationOnFailedIntegrityCheck()
+    23:45:34.040 | 339 ool-1-worker-103 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MigrationServiceTest#testStopApplicationOnFailedIntegrityCheck'
+    23:45:34.041 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting Artemis migration
+    23:45:34.041 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:34.041 | 339 ool-1-worker-103 | ERROR | d.t.c.a.a.c.c.m.MigrationService     : MigrationService corrupted. Invalid date order detected. 20211215_231800 (TestChangeEntry20211215_231800) should come before 20211216_231800 (TestChangeEntry20211216_231800)
+    23:45:34.041 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+    23:45:34.041 | 339 ool-1-worker-103 | ERROR | d.t.c.a.a.c.c.m.MigrationService     : MigrationService corrupted. Aborting startup.
+
+  Starting logs for MigrationServiceTest > testDuplicateDateStringsFail()
+    23:45:34.074 | 339 ool-1-worker-103 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MigrationServiceTest#testDuplicateDateStringsFail'
+    23:45:34.074 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:34.074 | 339 ool-1-worker-103 | ERROR | d.t.c.a.a.c.c.m.MigrationService     : MigrationService corrupted. Invalid date order detected. 20211216_231800 (MigrationEntry$MockitoMock$j2ACGd7a) should come before 20211216_231800 (MigrationEntry$MockitoMock$j2ACGd7a)
+    23:45:34.074 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+
+  Starting logs for MigrationServiceTest > testExecutionSucceedsForEmptyMap()
+    23:45:34.094 | 339 ool-1-worker-103 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MigrationServiceTest#testExecutionSucceedsForEmptyMap'
+    23:45:34.094 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting Artemis migration
+    23:45:34.094 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:34.094 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+    23:45:34.094 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Integrity check passed.
+    23:45:34.094 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : No migration entries executed
+    23:45:34.094 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending Artemis migration
+
+  Starting logs for MigrationServiceTest > testSplitExecution()
+    23:45:34.107 | 339 ool-1-worker-103 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MigrationServiceTest#testSplitExecution'
+    23:45:34.108 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting Artemis migration
+    23:45:34.108 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:34.108 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+    23:45:34.108 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Integrity check passed.
+    23:45:34.108 | 339 ool-1-worker-103 | INFO  | d.t.c.a.a.c.c.m.MigrationService     : Executing migration entries
+    23:45:34.108 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Executing entry 20211214_231800
+    23:45:34.108 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Done
+    23:45:34.108 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Executing entry 20211215_231800
+    23:45:34.109 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Done
+    23:45:34.109 | 339 ool-1-worker-103 | INFO  | d.t.c.a.a.c.c.m.MigrationService     : Executed 2 migration entries
+    23:45:34.109 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending Artemis migration
+    23:45:34.110 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting Artemis migration
+    23:45:34.110 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:34.110 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+    23:45:34.110 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Integrity check passed.
+    23:45:34.110 | 339 ool-1-worker-103 | INFO  | d.t.c.a.a.c.c.m.MigrationService     : Executing migration entries
+    23:45:34.110 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Executing entry 20211216_231800
+    23:45:34.110 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Done
+    23:45:34.110 | 339 ool-1-worker-103 | INFO  | d.t.c.a.a.c.c.m.MigrationService     : Executed 1 migration entries
+    23:45:34.110 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending Artemis migration
+
+  Starting logs for MigrationServiceTest > testValidMap()
+    23:45:34.133 | 339 ool-1-worker-103 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MigrationServiceTest#testValidMap'
+    23:45:34.133 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:34.133 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+    23:45:34.133 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:34.133 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+
+  Starting logs for MigrationServiceTest > testExecutionSucceedsForRegularMap()
+    23:45:34.163 | 339 ool-1-worker-103 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MigrationServiceTest#testExecutionSucceedsForRegularMap'
+    23:45:34.163 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting Artemis migration
+    23:45:34.163 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:34.163 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+    23:45:34.163 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Integrity check passed.
+    23:45:34.167 | 339 ool-1-worker-103 | INFO  | d.t.c.a.a.c.c.m.MigrationService     : Executing migration entries
+    23:45:34.167 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Executing entry 20211214_231800
+    23:45:34.167 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Done
+    23:45:34.167 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Executing entry 20211215_231800
+    23:45:34.167 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Done
+    23:45:34.167 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Executing entry 20211216_231800
+    23:45:34.168 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Done
+    23:45:34.168 | 339 ool-1-worker-103 | INFO  | d.t.c.a.a.c.c.m.MigrationService     : Executed 3 migration entries
+    23:45:34.168 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending Artemis migration
+
+  Starting logs for MigrationServiceTest > testNoExecutionOnTestEnvironment()
+    23:45:34.198 | 339 ool-1-worker-103 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MigrationServiceTest#testNoExecutionOnTestEnvironment'
+
+  Starting logs for MigrationServiceTest > testWrongOrderDateStringsFail()
+    23:45:34.228 | 339 ool-1-worker-103 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MigrationServiceTest#testWrongOrderDateStringsFail'
+    23:45:34.228 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:34.228 | 339 ool-1-worker-103 | ERROR | d.t.c.a.a.c.c.m.MigrationService     : MigrationService corrupted. Invalid date order detected. 20211216_231800 (MigrationEntry$MockitoMock$j2ACGd7a) should come before 20211217_231800 (MigrationEntry$MockitoMock$j2ACGd7a)
+    23:45:34.228 | 339 ool-1-worker-103 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+
+Finished logs for MigrationServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

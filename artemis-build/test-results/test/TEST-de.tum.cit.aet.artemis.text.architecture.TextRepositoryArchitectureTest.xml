@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:32" hostname="fv-az1721-502" time="0.201">
+  <properties/>
+  <testcase name="testNoEntityGraphsOnQueries()" classname="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" time="0.024"/>
+  <testcase name="testNoUnusedRepositoryMethods()" classname="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" time="0.034"/>
+  <testcase name="testTransactional()" classname="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" time="0.021"/>
+  <testcase name="shouldBeInRepositoryPackage()" classname="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="testRepositoryParamAnnotation()" classname="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" time="0.024"/>
+  <testcase name="orElseThrowShouldNotBeCalled()" classname="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" time="0.004"/>
+  <testcase name="repositoriesImplementArtemisJpaRepository()" classname="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="persistenceShouldNotAccessServices()" classname="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="usedInProductionCode()" classname="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" time="0.021"/>
+  <testcase name="shouldBeAnnotatedRepository()" classname="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" time="0.003"/>
+  <testcase name="enforceUsageOfTestRepository()" classname="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="testJPQLStyle()" classname="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" time="0.02"/>
+  <testcase name="shouldBeNamedRepository()" classname="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="enforceStructureOfTestRepositories()" classname="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" time="0.008"/>
+  <testcase name="testOnlySpringTransactionalAnnotation()" classname="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" time="0.021"/>
+  <testcase name="enforcePrimaryBeanAnnotationOnTestRepositories()" classname="de.tum.cit.aet.artemis.text.architecture.TextRepositoryArchitectureTest" time="0.001"/>
+  <system-out><![CDATA[
+Starting logs for TextRepositoryArchitectureTest
+
+  Starting logs for TextRepositoryArchitectureTest > testNoEntityGraphsOnQueries()
+
+  Starting logs for TextRepositoryArchitectureTest > testNoUnusedRepositoryMethods()
+
+  Starting logs for TextRepositoryArchitectureTest > testTransactional()
+
+  Starting logs for TextRepositoryArchitectureTest > shouldBeInRepositoryPackage()
+
+  Starting logs for TextRepositoryArchitectureTest > testRepositoryParamAnnotation()
+
+  Starting logs for TextRepositoryArchitectureTest > orElseThrowShouldNotBeCalled()
+
+  Starting logs for TextRepositoryArchitectureTest > repositoriesImplementArtemisJpaRepository()
+
+  Starting logs for TextRepositoryArchitectureTest > persistenceShouldNotAccessServices()
+
+  Starting logs for TextRepositoryArchitectureTest > usedInProductionCode()
+
+  Starting logs for TextRepositoryArchitectureTest > shouldBeAnnotatedRepository()
+
+  Starting logs for TextRepositoryArchitectureTest > enforceUsageOfTestRepository()
+
+  Starting logs for TextRepositoryArchitectureTest > testJPQLStyle()
+
+  Starting logs for TextRepositoryArchitectureTest > shouldBeNamedRepository()
+
+  Starting logs for TextRepositoryArchitectureTest > enforceStructureOfTestRepositories()
+
+  Starting logs for TextRepositoryArchitectureTest > testOnlySpringTransactionalAnnotation()
+
+  Starting logs for TextRepositoryArchitectureTest > enforcePrimaryBeanAnnotationOnTestRepositories()
+
+Finished logs for TextRepositoryArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.apollon.ApollonConversionServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:06" hostname="fv-az1721-502" time="0.012">
+  <properties/>
+  <testcase name="testConvertingModel()" classname="de.tum.cit.aet.artemis.modeling.apollon.ApollonConversionServiceTest" time="0.012"/>
+  <system-out><![CDATA[
+Starting logs for ApollonConversionServiceTest
+
+  Starting logs for ApollonConversionServiceTest > testConvertingModel()
+    23:47:06.330 | 430 ool-1-worker-194 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ApollonConversionServiceTest#testConvertingModel'
+    23:47:06.330 | 430 ool-1-worker-194 | INFO  | c.a.a.m.s.a.ApollonConversionService : Calling Remote Service to convert for model.
+
+Finished logs for ApollonConversionServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

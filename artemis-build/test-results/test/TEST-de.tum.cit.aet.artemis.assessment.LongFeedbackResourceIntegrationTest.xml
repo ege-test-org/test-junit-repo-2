@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.assessment.LongFeedbackResourceIntegrationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:44" hostname="fv-az1721-502" time="0.643">
+  <properties/>
+  <testcase name="accessForbiddenIfNotOwnParticipation()" classname="de.tum.cit.aet.artemis.assessment.LongFeedbackResourceIntegrationTest" time="0.137"/>
+  <testcase name="notFoundIfNotExists()" classname="de.tum.cit.aet.artemis.assessment.LongFeedbackResourceIntegrationTest" time="0.165"/>
+  <testcase name="getLongFeedbackAsTutor()" classname="de.tum.cit.aet.artemis.assessment.LongFeedbackResourceIntegrationTest" time="0.106"/>
+  <testcase name="getLongFeedbackAsStudent()" classname="de.tum.cit.aet.artemis.assessment.LongFeedbackResourceIntegrationTest" time="0.114"/>
+  <testcase name="notFoundIfOnlyShortFeedback()" classname="de.tum.cit.aet.artemis.assessment.LongFeedbackResourceIntegrationTest" time="0.103"/>
+  <system-out><![CDATA[
+Starting logs for LongFeedbackResourceIntegrationTest
+
+  Starting logs for LongFeedbackResourceIntegrationTest > accessForbiddenIfNotOwnParticipation()
+    23:42:44.686 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:44.694 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:42:44.699 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:44.700 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:42:44.705 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:42:44.709 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:42:44.709 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:42:44.709 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:42:44.714 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:42:44.764 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 271 and participant 41 (result to be deleted: null)
+    23:42:44.764 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 271 and participant 41 at 2025-02-14T23:42:44.864486184Z[Etc/UTC].
+    23:42:44.773 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 271 and participant 41 (result to be deleted: null)
+    23:42:44.773 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 271 and participant 41 at 2025-02-14T23:42:44.873264047Z[Etc/UTC].
+    23:42:44.778 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 271 and participant 41 (result to be deleted: null)
+    23:42:44.778 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 271 and participant 41 at 2025-02-14T23:42:44.878904005Z[Etc/UTC].
+    23:42:44.779 |  36 Pool-1-worker-10 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LongFeedbackResourceIntegrationTest#accessForbiddenIfNotOwnParticipation'
+    23:42:44.784 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 271 and participant 41 (result to be deleted: null)
+    23:42:44.784 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 271 and participant 41 at 2025-02-14T23:42:44.884500481Z[Etc/UTC].
+    23:42:44.786 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/feedbacks/629/long-feedback
+    23:42:44.787 |  36 Pool-1-worker-10 | DEBUG | t.c.a.a.a.w.LongFeedbackTextResource : REST request to get long feedback: 629
+    23:42:44.792 |  36 Pool-1-worker-10 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the participation with id 120
+
+  Starting logs for LongFeedbackResourceIntegrationTest > notFoundIfNotExists()
+    23:42:44.824 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:44.831 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:42:44.836 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:44.841 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:42:44.842 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:42:44.844 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:42:44.844 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:42:44.844 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:42:44.860 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:42:44.915 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 272 and participant 41 (result to be deleted: null)
+    23:42:44.915 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 272 and participant 41 at 2025-02-14T23:42:45.015625531Z[Etc/UTC].
+    23:42:44.926 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 272 and participant 41 (result to be deleted: null)
+    23:42:44.926 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 272 and participant 41 at 2025-02-14T23:42:45.026801994Z[Etc/UTC].
+    23:42:44.938 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 272 and participant 41 (result to be deleted: null)
+    23:42:44.938 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 272 and participant 41 at 2025-02-14T23:42:45.038589326Z[Etc/UTC].
+    23:42:44.942 |  36 Pool-1-worker-10 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LongFeedbackResourceIntegrationTest#notFoundIfNotExists'
+    23:42:44.949 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 272 and participant 41 (result to be deleted: null)
+    23:42:44.949 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 272 and participant 41 at 2025-02-14T23:42:45.049544526Z[Etc/UTC].
+    23:42:44.953 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/feedbacks/631/long-feedback
+    23:42:44.958 |  36 Pool-1-worker-10 | DEBUG | t.c.a.a.a.w.LongFeedbackTextResource : REST request to get long feedback: 631
+    23:42:44.964 |  36 Pool-1-worker-10 | WARN  | o.z.p.spring.common.AdviceTraits     : Not Found: LongFeedbackText with identifier: "631" does not exist
+
+  Starting logs for LongFeedbackResourceIntegrationTest > getLongFeedbackAsTutor()
+    23:42:44.996 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:45.005 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:42:45.011 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:45.013 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:42:45.017 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:42:45.021 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:42:45.022 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:42:45.022 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:42:45.030 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:42:45.055 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 273 and participant 41 (result to be deleted: null)
+    23:42:45.055 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 273 and participant 41 at 2025-02-14T23:42:45.155268103Z[Etc/UTC].
+    23:42:45.060 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 273 and participant 41 (result to be deleted: null)
+    23:42:45.060 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 273 and participant 41 at 2025-02-14T23:42:45.160130180Z[Etc/UTC].
+    23:42:45.065 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 273 and participant 41 (result to be deleted: null)
+    23:42:45.065 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 273 and participant 41 at 2025-02-14T23:42:45.165921991Z[Etc/UTC].
+    23:42:45.066 |  36 Pool-1-worker-10 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LongFeedbackResourceIntegrationTest#getLongFeedbackAsTutor'
+    23:42:45.070 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 273 and participant 41 (result to be deleted: null)
+    23:42:45.070 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 273 and participant 41 at 2025-02-14T23:42:45.170664856Z[Etc/UTC].
+    23:42:45.072 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/feedbacks/631/long-feedback
+    23:42:45.073 |  36 Pool-1-worker-10 | DEBUG | t.c.a.a.a.w.LongFeedbackTextResource : REST request to get long feedback: 631
+
+  Starting logs for LongFeedbackResourceIntegrationTest > getLongFeedbackAsStudent()
+    23:42:45.105 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:45.111 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:42:45.117 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:45.122 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:42:45.123 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:42:45.127 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:42:45.128 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:42:45.128 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:42:45.137 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:42:45.177 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 274 and participant 41 (result to be deleted: null)
+    23:42:45.177 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 274 and participant 41 at 2025-02-14T23:42:45.277613472Z[Etc/UTC].
+    23:42:45.182 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 274 and participant 41 (result to be deleted: null)
+    23:42:45.182 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 274 and participant 41 at 2025-02-14T23:42:45.282575766Z[Etc/UTC].
+    23:42:45.188 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 274 and participant 41 (result to be deleted: null)
+    23:42:45.188 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 274 and participant 41 at 2025-02-14T23:42:45.288792710Z[Etc/UTC].
+    23:42:45.189 |  36 Pool-1-worker-10 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LongFeedbackResourceIntegrationTest#getLongFeedbackAsStudent'
+    23:42:45.194 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 274 and participant 41 (result to be deleted: null)
+    23:42:45.194 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 274 and participant 41 at 2025-02-14T23:42:45.294092043Z[Etc/UTC].
+    23:42:45.196 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/feedbacks/632/long-feedback
+    23:42:45.197 |  36 Pool-1-worker-10 | DEBUG | t.c.a.a.a.w.LongFeedbackTextResource : REST request to get long feedback: 632
+
+  Starting logs for LongFeedbackResourceIntegrationTest > notFoundIfOnlyShortFeedback()
+    23:42:45.217 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:45.224 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:42:45.227 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:45.228 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:42:45.229 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:42:45.230 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:42:45.231 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:42:45.231 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:42:45.235 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:42:45.281 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 275 and participant 41 (result to be deleted: null)
+    23:42:45.282 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 275 and participant 41 at 2025-02-14T23:42:45.382011177Z[Etc/UTC].
+    23:42:45.288 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 275 and participant 41 (result to be deleted: null)
+    23:42:45.288 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 275 and participant 41 at 2025-02-14T23:42:45.388920582Z[Etc/UTC].
+    23:42:45.296 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 275 and participant 41 (result to be deleted: null)
+    23:42:45.296 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 275 and participant 41 at 2025-02-14T23:42:45.396392486Z[Etc/UTC].
+    23:42:45.297 |  36 Pool-1-worker-10 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LongFeedbackResourceIntegrationTest#notFoundIfOnlyShortFeedback'
+    23:42:45.301 |  36 Pool-1-worker-10 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 275 and participant 41 (result to be deleted: null)
+    23:42:45.301 |  36 Pool-1-worker-10 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 275 and participant 41 at 2025-02-14T23:42:45.401444167Z[Etc/UTC].
+    23:42:45.303 |  36 Pool-1-worker-10 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/feedbacks/633/long-feedback
+    23:42:45.304 |  36 Pool-1-worker-10 | DEBUG | t.c.a.a.a.w.LongFeedbackTextResource : REST request to get long feedback: 633
+    23:42:45.305 |  36 Pool-1-worker-10 | WARN  | o.z.p.spring.common.AdviceTraits     : Not Found: LongFeedbackText with identifier: "633" does not exist
+
+Finished logs for LongFeedbackResourceIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

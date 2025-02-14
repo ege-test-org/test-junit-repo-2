@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:09" hostname="fv-az1721-502" time="1.482">
+  <properties/>
+  <testcase name="testUpdateExam_rescheduleProgramming_titleChanged_shouldNotReschedule()" classname="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" time="0.078"/>
+  <testcase name="lockAllRepositories()" classname="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" time="0.116"/>
+  <testcase name="testUpdateExamWorkingTime_rescheduleProgramming_endDateChanged_shouldReschedule()" classname="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" time="0.101"/>
+  <testcase name="unlockAllRepositories_preAuthNoInstructor()" classname="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" time="0.055"/>
+  <testcase name="testUpdateExam_rescheduleProgramming_startDateChanged_shouldReschedule()" classname="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" time="0.112"/>
+  <testcase name="testUpdateExam_rescheduleProgramming_endDateChanged_shouldReschedule()" classname="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" time="0.067"/>
+  <testcase name="testUpdateExam_rescheduleProgramming_changeDateSubSecondPrecision_shouldNotReschedule()" classname="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" time="0.072"/>
+  <testcase name="unlockAllRepositories()" classname="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" time="0.182"/>
+  <testcase name="testImportExamWithExercises_programmingExerciseSameShortNameOrTitle(String, String, String, String) [1] shortName1=A, shortName2=A, title1=B, title2=C" classname="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" time="0.088"/>
+  <testcase name="testImportExamWithExercises_programmingExerciseSameShortNameOrTitle(String, String, String, String) [2] shortName1=A, shortName2=B, title1=C, title2=C" classname="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" time="0.077"/>
+  <testcase name="testImportExamWithExercises_programmingExerciseSameShortNameOrTitle(String, String, String, String) [3] shortName1=A, shortName2=A, title1=B, title2=B" classname="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" time="0.06"/>
+  <testcase name="testImportExamWithProgrammingExercise_preCheckFailed()" classname="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" time="0.086"/>
+  <testcase name="testUpdateExam_rescheduleProgramming_visibleDateChanged_shouldReschedule()" classname="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" time="0.077"/>
+  <testcase name="lockAllRepositories_noInstructor()" classname="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" time="0.036"/>
+  <testcase name="testUpdateExam_rescheduleProgramming_visibleAndStartDateChanged_shouldReschedule()" classname="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" time="0.095"/>
+  <testcase name="testGenerateStudentExamsTemplateCombine()" classname="de.tum.cit.aet.artemis.exam.ProgrammingExamIntegrationTest" time="0.136"/>
+  <system-out><![CDATA[
+Starting logs for ProgrammingExamIntegrationTest
+
+  Starting logs for ProgrammingExamIntegrationTest > testUpdateExam_rescheduleProgramming_titleChanged_shouldNotReschedule()
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

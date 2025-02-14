@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:14" hostname="fv-az1721-502" time="0.615">
+  <properties/>
+  <testcase name="testNoEntityGraphsOnQueries()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" time="0.062"/>
+  <testcase name="testNoUnusedRepositoryMethods()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" time="0.161"/>
+  <testcase name="testTransactional()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" time="0.041"/>
+  <testcase name="shouldBeInRepositoryPackage()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" time="0.01"/>
+  <testcase name="testRepositoryParamAnnotation()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" time="0.052"/>
+  <testcase name="orElseThrowShouldNotBeCalled()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" time="0.037"/>
+  <testcase name="repositoriesImplementArtemisJpaRepository()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" time="0.013"/>
+  <testcase name="persistenceShouldNotAccessServices()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" time="0.015"/>
+  <testcase name="usedInProductionCode()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" time="0.05"/>
+  <testcase name="shouldBeAnnotatedRepository()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" time="0.008"/>
+  <testcase name="enforceUsageOfTestRepository()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" time="0.016"/>
+  <testcase name="testJPQLStyle()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" time="0.031"/>
+  <testcase name="shouldBeNamedRepository()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" time="0.006"/>
+  <testcase name="enforceStructureOfTestRepositories()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" time="0.03"/>
+  <testcase name="testOnlySpringTransactionalAnnotation()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" time="0.052"/>
+  <testcase name="enforcePrimaryBeanAnnotationOnTestRepositories()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentRepositoryArchitectureTest" time="0.005"/>
+  <system-out><![CDATA[
+Starting logs for AssessmentRepositoryArchitectureTest
+
+  Starting logs for AssessmentRepositoryArchitectureTest > testNoEntityGraphsOnQueries()
+
+  Starting logs for AssessmentRepositoryArchitectureTest > testNoUnusedRepositoryMethods()
+
+  Starting logs for AssessmentRepositoryArchitectureTest > testTransactional()
+
+  Starting logs for AssessmentRepositoryArchitectureTest > shouldBeInRepositoryPackage()
+
+  Starting logs for AssessmentRepositoryArchitectureTest > testRepositoryParamAnnotation()
+
+  Starting logs for AssessmentRepositoryArchitectureTest > orElseThrowShouldNotBeCalled()
+
+  Starting logs for AssessmentRepositoryArchitectureTest > repositoriesImplementArtemisJpaRepository()
+
+  Starting logs for AssessmentRepositoryArchitectureTest > persistenceShouldNotAccessServices()
+
+  Starting logs for AssessmentRepositoryArchitectureTest > usedInProductionCode()
+
+  Starting logs for AssessmentRepositoryArchitectureTest > shouldBeAnnotatedRepository()
+
+  Starting logs for AssessmentRepositoryArchitectureTest > enforceUsageOfTestRepository()
+
+  Starting logs for AssessmentRepositoryArchitectureTest > testJPQLStyle()
+
+  Starting logs for AssessmentRepositoryArchitectureTest > shouldBeNamedRepository()
+
+  Starting logs for AssessmentRepositoryArchitectureTest > enforceStructureOfTestRepositories()
+
+  Starting logs for AssessmentRepositoryArchitectureTest > testOnlySpringTransactionalAnnotation()
+
+  Starting logs for AssessmentRepositoryArchitectureTest > enforcePrimaryBeanAnnotationOnTestRepositories()
+
+Finished logs for AssessmentRepositoryArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

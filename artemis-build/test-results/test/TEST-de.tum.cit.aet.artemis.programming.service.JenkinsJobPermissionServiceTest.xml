@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.service.JenkinsJobPermissionServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:49:21" hostname="fv-az1721-502" time="0.232">
+  <properties/>
+  <testcase name="testAddInstructorAndEditorAndTAPermissionsToUsersForFolderThrowIOExceptionOnXmlError()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsJobPermissionServiceTest" time="0.194"/>
+  <testcase name="testAddPermissionsForUsersToFolderThrowIOExceptionOnXmlError()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsJobPermissionServiceTest" time="0.009"/>
+  <testcase name="testAddTeachingAssistantPermissionsToUserForFolderThrowIOExceptionOnXmlError()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsJobPermissionServiceTest" time="0.009"/>
+  <testcase name="testRemovePermissionsFromUserOfFolderThrowIOExceptionOnXmlError()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsJobPermissionServiceTest" time="0.008"/>
+  <testcase name="testRemovePermissionsFromUsersForFolderThrowIOExceptionOnXmlError()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsJobPermissionServiceTest" time="0.008"/>
+  <system-out><![CDATA[
+Starting logs for JenkinsJobPermissionServiceTest
+
+  Starting logs for JenkinsJobPermissionServiceTest > testAddInstructorAndEditorAndTAPermissionsToUsersForFolderThrowIOExceptionOnXmlError()
+    23:49:21.367 | 489 ool-1-worker-253 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsJobPermissionServiceTest#testAddInstructorAndEditorAndTAPermissionsToUsersForFolderThrowIOExceptionOnXmlError'
+
+  Starting logs for JenkinsJobPermissionServiceTest > testAddPermissionsForUsersToFolderThrowIOExceptionOnXmlError()
+    23:49:21.380 | 489 ool-1-worker-253 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsJobPermissionServiceTest#testAddPermissionsForUsersToFolderThrowIOExceptionOnXmlError'
+
+  Starting logs for JenkinsJobPermissionServiceTest > testAddTeachingAssistantPermissionsToUserForFolderThrowIOExceptionOnXmlError()
+    23:49:21.389 | 489 ool-1-worker-253 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsJobPermissionServiceTest#testAddTeachingAssistantPermissionsToUserForFolderThrowIOExceptionOnXmlError'
+
+  Starting logs for JenkinsJobPermissionServiceTest > testRemovePermissionsFromUserOfFolderThrowIOExceptionOnXmlError()
+    23:49:21.399 | 489 ool-1-worker-253 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsJobPermissionServiceTest#testRemovePermissionsFromUserOfFolderThrowIOExceptionOnXmlError'
+
+  Starting logs for JenkinsJobPermissionServiceTest > testRemovePermissionsFromUsersForFolderThrowIOExceptionOnXmlError()
+    23:49:21.409 | 489 ool-1-worker-253 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsJobPermissionServiceTest#testRemovePermissionsFromUsersForFolderThrowIOExceptionOnXmlError'
+
+Finished logs for JenkinsJobPermissionServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

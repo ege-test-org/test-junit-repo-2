@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.assessment.AssessmentTeamComplaintIntegrationTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:30" hostname="fv-az1721-502" time="1.964">
+  <properties/>
+  <testcase name="getComplaintByResultId_studentAndNotPartOfTeam_forbidden()" classname="de.tum.cit.aet.artemis.assessment.AssessmentTeamComplaintIntegrationTest" time="0.27"/>
+  <testcase name="submitComplaintResponse_rejectComplaint()" classname="de.tum.cit.aet.artemis.assessment.AssessmentTeamComplaintIntegrationTest" time="0.23"/>
+  <testcase name="submitComplaintResponse_updateAssessment()" classname="de.tum.cit.aet.artemis.assessment.AssessmentTeamComplaintIntegrationTest" time="0.191"/>
+  <testcase name="submitComplaintAboutModelingAssessment_complaintLimitReached()" classname="de.tum.cit.aet.artemis.assessment.AssessmentTeamComplaintIntegrationTest" time="0.216"/>
+  <testcase name="submitComplaintAboutModellingAssessment_complaintLimitNotReached()" classname="de.tum.cit.aet.artemis.assessment.AssessmentTeamComplaintIntegrationTest" time="0.228"/>
+  <testcase name="submitComplaintAboutModelingAssessment_assessmentTooOld()" classname="de.tum.cit.aet.artemis.assessment.AssessmentTeamComplaintIntegrationTest" time="0.136"/>
+  <testcase name="submitComplaintAboutModelingAssessment_validDueDate()" classname="de.tum.cit.aet.artemis.assessment.AssessmentTeamComplaintIntegrationTest" time="0.119"/>
+  <testcase name="submitComplaintResponse_updateAssessment_asOtherTutor_forbidden()" classname="de.tum.cit.aet.artemis.assessment.AssessmentTeamComplaintIntegrationTest" time="0.164"/>
+  <testcase name="requestMoreFeedbackAboutModelingAssessment_noLimit()" classname="de.tum.cit.aet.artemis.assessment.AssessmentTeamComplaintIntegrationTest" time="0.183"/>
+  <testcase name="submitComplaintResponse_rejectComplaint_asOtherTutor_forbidden()" classname="de.tum.cit.aet.artemis.assessment.AssessmentTeamComplaintIntegrationTest" time="0.204"/>
+  <system-out><![CDATA[
+Starting logs for AssessmentTeamComplaintIntegrationTest
+
+  Starting logs for AssessmentTeamComplaintIntegrationTest > getComplaintByResultId_studentAndNotPartOfTeam_forbidden()
+    23:42:31.018 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:31.024 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:42:31.031 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:31.032 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:31.035 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:31.036 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses...
+    23:42:31.038 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses. Done
+    23:42:31.038 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:42:31.041 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:42:31.128 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 149 and participant 1 (result to be deleted: null)
+    23:42:31.128 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 149 and participant 1 at 2025-02-14T23:42:31.228431778Z[Etc/UTC].
+    23:42:31.160 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 149 and participant 1 (result to be deleted: null)
+    23:42:31.160 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 149 and participant 1 at 2025-02-14T23:42:31.260347408Z[Etc/UTC].
+    23:42:31.176 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 149 and participant 1 (result to be deleted: null)
+    23:42:31.176 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 149 and participant 1 at 2025-02-14T23:42:31.276498049Z[Etc/UTC].
+    23:42:31.189 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 149 and participant 1 (result to be deleted: null)
+    23:42:31.189 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 149 and participant 1 at 2025-02-14T23:42:31.289546186Z[Etc/UTC].
+    23:42:31.204 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 149 and participant 1 (result to be deleted: null)
+    23:42:31.205 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 149 and participant 1 at 2025-02-14T23:42:31.305066462Z[Etc/UTC].
+    23:42:31.218 |  30 nPool-1-worker-4 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AssessmentTeamComplaintIntegrationTest#getComplaintByResultId_studentAndNotPartOfTeam_forbidden'
+    23:42:31.225 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/complaints
+    23:42:31.225 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.a.web.ComplaintResource    : REST request to get latest Complaint associated with a result of submission : 57
+    23:42:31.236 |  30 nPool-1-worker-4 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access this resource
+
+  Starting logs for AssessmentTeamComplaintIntegrationTest > submitComplaintResponse_rejectComplaint()
+    23:42:31.282 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:31.288 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:42:31.297 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:31.304 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:31.310 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:31.312 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:42:31.314 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:42:31.314 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:42:31.331 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:42:31.376 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 150 and participant 2 (result to be deleted: null)
+    23:42:31.376 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 150 and participant 2 at 2025-02-14T23:42:31.476299338Z[Etc/UTC].
+    23:42:31.380 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 150 and participant 2 (result to be deleted: null)
+    23:42:31.380 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 150 and participant 2 at 2025-02-14T23:42:31.480489940Z[Etc/UTC].
+    23:42:31.396 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 150 and participant 2 (result to be deleted: null)
+    23:42:31.396 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 150 and participant 2 at 2025-02-14T23:42:31.496265612Z[Etc/UTC].
+    23:42:31.404 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 150 and participant 2 (result to be deleted: null)
+    23:42:31.404 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 150 and participant 2 at 2025-02-14T23:42:31.504349675Z[Etc/UTC].
+    23:42:31.416 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 150 and participant 2 (result to be deleted: null)
+    23:42:31.416 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 150 and participant 2 at 2025-02-14T23:42:31.516239782Z[Etc/UTC].
+    23:42:31.421 |  30 nPool-1-worker-4 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AssessmentTeamComplaintIntegrationTest#submitComplaintResponse_rejectComplaint'
+    23:42:31.427 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PATCH /api/complaints/47/response
+    23:42:31.430 |  30 nPool-1-worker-4 | DEBUG | .c.a.a.a.w.ComplaintResponseResource : REST request to resolve the complaint with id: 47
+
+  Starting logs for AssessmentTeamComplaintIntegrationTest > submitComplaintResponse_updateAssessment()
+    23:42:31.515 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:31.522 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:42:31.531 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:31.534 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:31.538 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:31.540 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:42:31.541 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:42:31.541 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:42:31.546 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:42:31.581 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 151 and participant 3 (result to be deleted: null)
+    23:42:31.581 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 151 and participant 3 at 2025-02-14T23:42:31.681326739Z[Etc/UTC].
+    23:42:31.589 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 151 and participant 3 (result to be deleted: null)
+    23:42:31.589 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 151 and participant 3 at 2025-02-14T23:42:31.689479099Z[Etc/UTC].
+    23:42:31.598 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 151 and participant 3 (result to be deleted: null)
+    23:42:31.598 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 151 and participant 3 at 2025-02-14T23:42:31.698280779Z[Etc/UTC].
+    23:42:31.603 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 151 and participant 3 (result to be deleted: null)
+    23:42:31.603 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 151 and participant 3 at 2025-02-14T23:42:31.703812442Z[Etc/UTC].
+    23:42:31.609 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 151 and participant 3 (result to be deleted: null)
+    23:42:31.609 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 151 and participant 3 at 2025-02-14T23:42:31.709505015Z[Etc/UTC].
+    23:42:31.614 |  30 nPool-1-worker-4 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AssessmentTeamComplaintIntegrationTest#submitComplaintResponse_updateAssessment'
+    23:42:31.625 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/modeling-submissions/59/assessment-after-complaint
+    23:42:31.628 |  30 nPool-1-worker-4 | DEBUG | c.a.a.m.w.ModelingAssessmentResource : REST request to update the assessment of submission 59 after complaint.
+    23:42:31.642 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 151 and participant 3 (result to be deleted: null)
+    23:42:31.642 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 151 and participant 3 at 2025-02-14T23:42:31.742786327Z[Etc/UTC].
+    23:42:31.650 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 151 and participant 3 (result to be deleted: null)
+    23:42:31.651 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 151 and participant 3 at 2025-02-14T23:42:31.751063369Z[Etc/UTC].
+    23:42:31.657 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 151 and participant 3 (result to be deleted: null)
+    23:42:31.657 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 151 and participant 3 at 2025-02-14T23:42:31.757565191Z[Etc/UTC].
+    23:42:31.663 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 151 and participant 3 (result to be deleted: null)
+    23:42:31.663 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 151 and participant 3 at 2025-02-14T23:42:31.763204365Z[Etc/UTC].
+    23:42:31.671 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 151 and participant 3 (result to be deleted: null)
+    23:42:31.671 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 151 and participant 3 at 2025-02-14T23:42:31.771387451Z[Etc/UTC].
+
+  Starting logs for AssessmentTeamComplaintIntegrationTest > submitComplaintAboutModelingAssessment_complaintLimitReached()
+    23:42:31.710 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:31.716 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:42:31.723 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:31.727 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:31.735 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:31.736 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:42:31.740 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:42:31.740 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:42:31.748 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:42:31.807 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 152 and participant 4 (result to be deleted: null)
+    23:42:31.807 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 152 and participant 4 at 2025-02-14T23:42:31.907585067Z[Etc/UTC].
+    23:42:31.815 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 152 and participant 4 (result to be deleted: null)
+    23:42:31.815 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 152 and participant 4 at 2025-02-14T23:42:31.915755320Z[Etc/UTC].
+    23:42:31.830 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 152 and participant 4 (result to be deleted: null)
+    23:42:31.830 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 152 and participant 4 at 2025-02-14T23:42:31.930573226Z[Etc/UTC].
+    23:42:31.838 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 152 and participant 4 (result to be deleted: null)
+    23:42:31.838 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 152 and participant 4 at 2025-02-14T23:42:31.938547093Z[Etc/UTC].
+    23:42:31.853 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 152 and participant 4 (result to be deleted: null)
+    23:42:31.853 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 152 and participant 4 at 2025-02-14T23:42:31.953908602Z[Etc/UTC].
+    23:42:31.860 |  30 nPool-1-worker-4 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AssessmentTeamComplaintIntegrationTest#submitComplaintAboutModelingAssessment_complaintLimitReached'
+    23:42:31.860 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 152 and participant 4 (result to be deleted: null)
+    23:42:31.861 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 152 and participant 4 at 2025-02-14T23:42:31.961004993Z[Etc/UTC].
+    23:42:31.862 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 152 and participant 4 (result to be deleted: null)
+    23:42:31.864 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 152 and participant 4 at 2025-02-14T23:42:31.964467508Z[Etc/UTC].
+    23:42:31.865 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 152 and participant 4 (result to be deleted: null)
+    23:42:31.865 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 152 and participant 4 at 2025-02-14T23:42:31.965573120Z[Etc/UTC].
+    23:42:31.868 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/complaints
+    23:42:31.871 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.a.web.ComplaintResource    : REST request to save Complaint: ComplaintRequestDTO[resultId=74, complaintText=This is not fair, complaintType=COMPLAINT, examId=Optional.empty]
+    23:42:31.887 |  30 nPool-1-worker-4 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, You cannot have more than 3 open or rejected complaints at the same time.
+    23:42:31.887 |  30 nPool-1-worker-4 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: You cannot have more than 3 open or rejected complaints at the same time.
+
+  Starting logs for AssessmentTeamComplaintIntegrationTest > submitComplaintAboutModellingAssessment_complaintLimitNotReached()
+    23:42:31.928 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:31.935 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:42:31.942 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:31.943 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:31.949 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:31.953 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:42:31.957 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:42:31.957 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:42:31.965 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:42:32.024 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 153 and participant 5 (result to be deleted: null)
+    23:42:32.025 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 153 and participant 5 at 2025-02-14T23:42:32.124982268Z[Etc/UTC].
+    23:42:32.031 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 153 and participant 5 (result to be deleted: null)
+    23:42:32.031 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 153 and participant 5 at 2025-02-14T23:42:32.131961410Z[Etc/UTC].
+    23:42:32.046 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 153 and participant 5 (result to be deleted: null)
+    23:42:32.046 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 153 and participant 5 at 2025-02-14T23:42:32.146593811Z[Etc/UTC].
+    23:42:32.055 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 153 and participant 5 (result to be deleted: null)
+    23:42:32.055 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 153 and participant 5 at 2025-02-14T23:42:32.155524421Z[Etc/UTC].
+    23:42:32.067 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 153 and participant 5 (result to be deleted: null)
+    23:42:32.067 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 153 and participant 5 at 2025-02-14T23:42:32.167706163Z[Etc/UTC].
+    23:42:32.072 |  30 nPool-1-worker-4 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AssessmentTeamComplaintIntegrationTest#submitComplaintAboutModellingAssessment_complaintLimitNotReached'
+    23:42:32.107 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 153 and participant 5 (result to be deleted: null)
+    23:42:32.108 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 153 and participant 5 at 2025-02-14T23:42:32.207996259Z[Etc/UTC].
+    23:42:32.112 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 153 and participant 5 (result to be deleted: null)
+    23:42:32.112 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 153 and participant 5 at 2025-02-14T23:42:32.212225144Z[Etc/UTC].
+    23:42:32.116 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/complaints
+    23:42:32.117 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.a.web.ComplaintResource    : REST request to save Complaint: ComplaintRequestDTO[resultId=78, complaintText=This is not fair, complaintType=COMPLAINT, examId=Optional.empty]
+    23:42:32.125 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 153 and participant 5 (result to be deleted: null)
+    23:42:32.125 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 153 and participant 5 at 2025-02-14T23:42:32.225536281Z[Etc/UTC].
+
+  Starting logs for AssessmentTeamComplaintIntegrationTest > submitComplaintAboutModelingAssessment_assessmentTooOld()
+    23:42:32.145 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:32.151 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:42:32.161 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:32.162 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:32.168 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:32.171 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:42:32.172 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:42:32.172 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:42:32.181 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:42:32.230 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 154 and participant 6 (result to be deleted: null)
+    23:42:32.231 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 154 and participant 6 at 2025-02-14T23:42:32.331017199Z[Etc/UTC].
+    23:42:32.234 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 154 and participant 6 (result to be deleted: null)
+    23:42:32.234 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 154 and participant 6 at 2025-02-14T23:42:32.334901681Z[Etc/UTC].
+    23:42:32.241 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 154 and participant 6 (result to be deleted: null)
+    23:42:32.241 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 154 and participant 6 at 2025-02-14T23:42:32.341287196Z[Etc/UTC].
+    23:42:32.245 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 154 and participant 6 (result to be deleted: null)
+    23:42:32.245 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 154 and participant 6 at 2025-02-14T23:42:32.345574640Z[Etc/UTC].
+    23:42:32.250 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 154 and participant 6 (result to be deleted: null)
+    23:42:32.250 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 154 and participant 6 at 2025-02-14T23:42:32.350609326Z[Etc/UTC].
+    23:42:32.252 |  30 nPool-1-worker-4 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AssessmentTeamComplaintIntegrationTest#submitComplaintAboutModelingAssessment_assessmentTooOld'
+    23:42:32.257 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 154 and participant 6 (result to be deleted: null)
+    23:42:32.257 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 154 and participant 6 at 2025-02-14T23:42:32.357391742Z[Etc/UTC].
+    23:42:32.259 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/complaints
+    23:42:32.259 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.a.web.ComplaintResource    : REST request to save Complaint: ComplaintRequestDTO[resultId=81, complaintText=This is not fair, complaintType=COMPLAINT, examId=Optional.empty]
+    23:42:32.266 |  30 nPool-1-worker-4 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, You cannot submit a complaint for a result that is older than 2 weeks.
+    23:42:32.266 |  30 nPool-1-worker-4 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: You cannot submit a complaint for a result that is older than 2 weeks.
+
+  Starting logs for AssessmentTeamComplaintIntegrationTest > submitComplaintAboutModelingAssessment_validDueDate()
+    23:42:32.283 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:32.286 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:42:32.292 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:32.293 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:32.296 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:32.297 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:42:32.299 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:42:32.299 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:42:32.303 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:42:32.331 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 155 and participant 7 (result to be deleted: null)
+    23:42:32.331 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 155 and participant 7 at 2025-02-14T23:42:32.431694140Z[Etc/UTC].
+    23:42:32.335 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 155 and participant 7 (result to be deleted: null)
+    23:42:32.335 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 155 and participant 7 at 2025-02-14T23:42:32.435451716Z[Etc/UTC].
+    23:42:32.341 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 155 and participant 7 (result to be deleted: null)
+    23:42:32.342 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 155 and participant 7 at 2025-02-14T23:42:32.442047954Z[Etc/UTC].
+    23:42:32.346 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 155 and participant 7 (result to be deleted: null)
+    23:42:32.346 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 155 and participant 7 at 2025-02-14T23:42:32.446257943Z[Etc/UTC].
+    23:42:32.351 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 155 and participant 7 (result to be deleted: null)
+    23:42:32.351 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 155 and participant 7 at 2025-02-14T23:42:32.451580587Z[Etc/UTC].
+    23:42:32.353 |  30 nPool-1-worker-4 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AssessmentTeamComplaintIntegrationTest#submitComplaintAboutModelingAssessment_validDueDate'
+    23:42:32.356 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 155 and participant 7 (result to be deleted: null)
+    23:42:32.356 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 155 and participant 7 at 2025-02-14T23:42:32.456579346Z[Etc/UTC].
+    23:42:32.358 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/complaints
+    23:42:32.359 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.a.web.ComplaintResource    : REST request to save Complaint: ComplaintRequestDTO[resultId=82, complaintText=This is not fair, complaintType=COMPLAINT, examId=Optional.empty]
+    23:42:32.367 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 155 and participant 7 (result to be deleted: null)
+    23:42:32.367 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 155 and participant 7 at 2025-02-14T23:42:32.467452138Z[Etc/UTC].
+
+  Starting logs for AssessmentTeamComplaintIntegrationTest > submitComplaintResponse_updateAssessment_asOtherTutor_forbidden()
+    23:42:32.414 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:32.420 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:42:32.425 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:32.426 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:32.429 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:32.431 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:42:32.432 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:42:32.432 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:42:32.436 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:42:32.477 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 156 and participant 8 (result to be deleted: null)
+    23:42:32.477 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 156 and participant 8 at 2025-02-14T23:42:32.577707086Z[Etc/UTC].
+    23:42:32.483 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 156 and participant 8 (result to be deleted: null)
+    23:42:32.483 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 156 and participant 8 at 2025-02-14T23:42:32.583785879Z[Etc/UTC].
+    23:42:32.490 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 156 and participant 8 (result to be deleted: null)
+    23:42:32.490 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 156 and participant 8 at 2025-02-14T23:42:32.590266171Z[Etc/UTC].
+    23:42:32.494 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 156 and participant 8 (result to be deleted: null)
+    23:42:32.494 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 156 and participant 8 at 2025-02-14T23:42:32.594983977Z[Etc/UTC].
+    23:42:32.500 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 156 and participant 8 (result to be deleted: null)
+    23:42:32.500 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 156 and participant 8 at 2025-02-14T23:42:32.600528364Z[Etc/UTC].
+    23:42:32.504 |  30 nPool-1-worker-4 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AssessmentTeamComplaintIntegrationTest#submitComplaintResponse_updateAssessment_asOtherTutor_forbidden'
+    23:42:32.524 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/modeling-submissions/64/assessment-after-complaint
+    23:42:32.533 |  30 nPool-1-worker-4 | DEBUG | c.a.a.m.w.ModelingAssessmentResource : REST request to update the assessment of submission 64 after complaint.
+    23:42:32.544 |  30 nPool-1-worker-4 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Insufficient permission for resolving the complaint
+
+  Starting logs for AssessmentTeamComplaintIntegrationTest > requestMoreFeedbackAboutModelingAssessment_noLimit()
+    23:42:32.568 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:32.574 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:42:32.582 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:32.583 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:32.586 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:32.587 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:42:32.589 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:42:32.589 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:42:32.595 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:42:32.627 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 157 and participant 9 (result to be deleted: null)
+    23:42:32.627 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 157 and participant 9 at 2025-02-14T23:42:32.727374146Z[Etc/UTC].
+    23:42:32.630 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 157 and participant 9 (result to be deleted: null)
+    23:42:32.630 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 157 and participant 9 at 2025-02-14T23:42:32.730920608Z[Etc/UTC].
+    23:42:32.637 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 157 and participant 9 (result to be deleted: null)
+    23:42:32.637 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 157 and participant 9 at 2025-02-14T23:42:32.737368148Z[Etc/UTC].
+    23:42:32.641 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 157 and participant 9 (result to be deleted: null)
+    23:42:32.642 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 157 and participant 9 at 2025-02-14T23:42:32.742026333Z[Etc/UTC].
+    23:42:32.652 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 157 and participant 9 (result to be deleted: null)
+    23:42:32.652 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 157 and participant 9 at 2025-02-14T23:42:32.752254142Z[Etc/UTC].
+    23:42:32.658 |  30 nPool-1-worker-4 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AssessmentTeamComplaintIntegrationTest#requestMoreFeedbackAboutModelingAssessment_noLimit'
+    23:42:32.663 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 157 and participant 9 (result to be deleted: null)
+    23:42:32.663 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 157 and participant 9 at 2025-02-14T23:42:32.763345340Z[Etc/UTC].
+    23:42:32.666 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 157 and participant 9 (result to be deleted: null)
+    23:42:32.666 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 157 and participant 9 at 2025-02-14T23:42:32.766413471Z[Etc/UTC].
+    23:42:32.667 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 157 and participant 9 (result to be deleted: null)
+    23:42:32.667 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 157 and participant 9 at 2025-02-14T23:42:32.767329719Z[Etc/UTC].
+    23:42:32.668 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 157 and participant 9 (result to be deleted: null)
+    23:42:32.668 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 157 and participant 9 at 2025-02-14T23:42:32.768452272Z[Etc/UTC].
+    23:42:32.671 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 157 and participant 9 (result to be deleted: null)
+    23:42:32.671 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 157 and participant 9 at 2025-02-14T23:42:32.771613295Z[Etc/UTC].
+    23:42:32.673 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/complaints
+    23:42:32.676 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.a.web.ComplaintResource    : REST request to save Complaint: ComplaintRequestDTO[resultId=84, complaintText=This is not fair, complaintType=COMPLAINT, examId=Optional.empty]
+    23:42:32.699 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 157 and participant 9 (result to be deleted: null)
+    23:42:32.699 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 157 and participant 9 at 2025-02-14T23:42:32.799355527Z[Etc/UTC].
+    23:42:32.717 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/complaints
+    23:42:32.718 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.a.web.ComplaintResource    : REST request to save Complaint: ComplaintRequestDTO[resultId=84, complaintText=Please explain, complaintType=MORE_FEEDBACK, examId=Optional.empty]
+    23:42:32.723 |  30 nPool-1-worker-4 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, A complaint for this result already exists
+    23:42:32.723 |  30 nPool-1-worker-4 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: A complaint for this result already exists
+
+  Starting logs for AssessmentTeamComplaintIntegrationTest > submitComplaintResponse_rejectComplaint_asOtherTutor_forbidden()
+    23:42:32.762 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:32.768 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 2 tutors...
+    23:42:32.778 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:32.779 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:32.784 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:32.788 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:42:32.790 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:42:32.790 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:42:32.802 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:42:32.858 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 158 and participant 10 (result to be deleted: null)
+    23:42:32.859 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 158 and participant 10 at 2025-02-14T23:42:32.958220306Z[Etc/UTC].
+    23:42:32.868 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 158 and participant 10 (result to be deleted: null)
+    23:42:32.868 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 158 and participant 10 at 2025-02-14T23:42:32.968893923Z[Etc/UTC].
+    23:42:32.883 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 158 and participant 10 (result to be deleted: null)
+    23:42:32.883 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 158 and participant 10 at 2025-02-14T23:42:32.983231814Z[Etc/UTC].
+    23:42:32.900 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 158 and participant 10 (result to be deleted: null)
+    23:42:32.902 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 158 and participant 10 at 2025-02-14T23:42:33.000557827Z[Etc/UTC].
+    23:42:32.914 |  30 nPool-1-worker-4 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 158 and participant 10 (result to be deleted: null)
+    23:42:32.914 |  30 nPool-1-worker-4 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 158 and participant 10 at 2025-02-14T23:42:33.014354439Z[Etc/UTC].
+    23:42:32.920 |  30 nPool-1-worker-4 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AssessmentTeamComplaintIntegrationTest#submitComplaintResponse_rejectComplaint_asOtherTutor_forbidden'
+    23:42:32.926 |  30 nPool-1-worker-4 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PATCH /api/complaints/63/response
+    23:42:32.928 |  30 nPool-1-worker-4 | DEBUG | .c.a.a.a.w.ComplaintResponseResource : REST request to resolve the complaint with id: 63
+    23:42:32.935 |  30 nPool-1-worker-4 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Insufficient permission for modifying the lock on the complaint
+
+Finished logs for AssessmentTeamComplaintIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

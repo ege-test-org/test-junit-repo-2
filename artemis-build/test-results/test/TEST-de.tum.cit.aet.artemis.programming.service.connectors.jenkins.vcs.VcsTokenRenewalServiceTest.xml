@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.service.connectors.jenkins.vcs.VcsTokenRenewalServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:15" hostname="fv-az1721-502" time="0.311">
+  <properties/>
+  <testcase name="testDoNothingIfNoTokenManagementService()" classname="de.tum.cit.aet.artemis.programming.service.connectors.jenkins.vcs.VcsTokenRenewalServiceTest" time="0.297"/>
+  <testcase name="[1] expectedRenewalCount=2, expectedCreationCount=3" classname="de.tum.cit.aet.artemis.programming.service.connectors.jenkins.vcs.VcsTokenRenewalServiceTest" time="0.005"/>
+  <testcase name="[2] expectedRenewalCount=0, expectedCreationCount=4" classname="de.tum.cit.aet.artemis.programming.service.connectors.jenkins.vcs.VcsTokenRenewalServiceTest" time="0.003"/>
+  <testcase name="[3] expectedRenewalCount=3, expectedCreationCount=0" classname="de.tum.cit.aet.artemis.programming.service.connectors.jenkins.vcs.VcsTokenRenewalServiceTest" time="0.003"/>
+  <testcase name="testDoNothingIfNoTokenRequiredInServerConfig()" classname="de.tum.cit.aet.artemis.programming.service.connectors.jenkins.vcs.VcsTokenRenewalServiceTest" time="0.001"/>
+  <system-out><![CDATA[
+Starting logs for VcsTokenRenewalServiceTest
+
+  Starting logs for VcsTokenRenewalServiceTest > testDoNothingIfNoTokenManagementService()
+
+  Starting logs for VcsTokenRenewalServiceTest > [1] expectedRenewalCount=2, expectedCreationCount=3
+    23:46:15.573 |  27 nPool-1-worker-1 | INFO  | t.c.a.a.p.s.v.VcsTokenRenewalService : Started scheduled access token renewal
+    23:46:15.574 |  27 nPool-1-worker-1 | INFO  | t.c.a.a.p.s.v.VcsTokenRenewalService : Finished scheduled access token renewal: renewed 2 and created 3
+
+  Starting logs for VcsTokenRenewalServiceTest > [2] expectedRenewalCount=0, expectedCreationCount=4
+    23:46:15.577 |  27 nPool-1-worker-1 | INFO  | t.c.a.a.p.s.v.VcsTokenRenewalService : Started scheduled access token renewal
+    23:46:15.577 |  27 nPool-1-worker-1 | INFO  | t.c.a.a.p.s.v.VcsTokenRenewalService : Finished scheduled access token renewal: renewed 0 and created 4
+
+  Starting logs for VcsTokenRenewalServiceTest > [3] expectedRenewalCount=3, expectedCreationCount=0
+    23:46:15.580 |  27 nPool-1-worker-1 | INFO  | t.c.a.a.p.s.v.VcsTokenRenewalService : Started scheduled access token renewal
+    23:46:15.580 |  27 nPool-1-worker-1 | INFO  | t.c.a.a.p.s.v.VcsTokenRenewalService : Finished scheduled access token renewal: renewed 3 and created 0
+
+  Starting logs for VcsTokenRenewalServiceTest > testDoNothingIfNoTokenRequiredInServerConfig()
+
+Finished logs for VcsTokenRenewalServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

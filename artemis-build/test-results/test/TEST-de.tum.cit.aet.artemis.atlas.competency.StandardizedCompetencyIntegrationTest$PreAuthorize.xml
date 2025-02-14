@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.atlas.competency.StandardizedCompetencyIntegrationTest$PreAuthorize" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:13" hostname="fv-az1721-502" time="0.15">
+  <properties/>
+  <testcase name="shouldFailAsTutor()" classname="de.tum.cit.aet.artemis.atlas.competency.StandardizedCompetencyIntegrationTest$PreAuthorize" time="0.045"/>
+  <testcase name="shouldFailAsStudent()" classname="de.tum.cit.aet.artemis.atlas.competency.StandardizedCompetencyIntegrationTest$PreAuthorize" time="0.058"/>
+  <testcase name="shouldFailAsEditor()" classname="de.tum.cit.aet.artemis.atlas.competency.StandardizedCompetencyIntegrationTest$PreAuthorize" time="0.043"/>
+  <system-out><![CDATA[
+Starting logs for PreAuthorize
+
+  Starting logs for PreAuthorize > shouldFailAsTutor()
+    23:43:13.450 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:13.452 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:13.455 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:13.458 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:13.461 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:13.462 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:13.463 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:13.463 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:13.466 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:13.468 | 122 Pool-1-worker-37 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PreAuthorize#shouldFailAsTutor'
+    23:43:13.469 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/standardized-competencies/1
+    23:43:13.472 | 122 Pool-1-worker-37 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:43:13.474 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/standardized-competencies/for-tree-view
+    23:43:13.475 | 122 Pool-1-worker-37 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:43:13.477 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/standardized-competencies/knowledge-areas/1
+    23:43:13.479 | 122 Pool-1-worker-37 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for PreAuthorize > shouldFailAsStudent()
+    23:43:13.508 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:13.515 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:13.519 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:13.525 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:13.527 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:13.528 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:13.530 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:13.530 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:13.534 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:13.535 | 122 Pool-1-worker-37 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PreAuthorize#shouldFailAsStudent'
+    23:43:13.536 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/standardized-competencies/1
+    23:43:13.537 | 122 Pool-1-worker-37 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:43:13.539 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/standardized-competencies/for-tree-view
+    23:43:13.539 | 122 Pool-1-worker-37 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:43:13.540 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/standardized-competencies/knowledge-areas/1
+    23:43:13.541 | 122 Pool-1-worker-37 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for PreAuthorize > shouldFailAsEditor()
+    23:43:13.555 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:13.557 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:13.560 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:13.562 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:13.565 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:13.566 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:13.567 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:13.567 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:13.571 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:13.572 | 122 Pool-1-worker-37 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PreAuthorize#shouldFailAsEditor'
+    23:43:13.573 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/standardized-competencies/1
+    23:43:13.575 | 122 Pool-1-worker-37 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:43:13.576 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/standardized-competencies/for-tree-view
+    23:43:13.576 | 122 Pool-1-worker-37 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:43:13.577 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/standardized-competencies/knowledge-areas/1
+    23:43:13.578 | 122 Pool-1-worker-37 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+Finished logs for PreAuthorize
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

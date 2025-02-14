@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassDiagramTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:04" hostname="fv-az1721-502" time="0.17">
+  <properties/>
+  <testcase name="getElementByJSONID_getClass()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassDiagramTest" time="0.087"/>
+  <testcase name="getElementByJSONID_getMethod()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassDiagramTest" time="0.002"/>
+  <testcase name="getElementByJSONID_getPackage()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassDiagramTest" time="0.002"/>
+  <testcase name="getElementByJSONID_getRelationship()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassDiagramTest" time="0.002"/>
+  <testcase name="getModelElements()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassDiagramTest" time="0.002"/>
+  <testcase name="similarityClassDiagram_v3_EqualModels()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassDiagramTest" time="0.017"/>
+  <testcase name="getElementByJSONID_emptyString()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassDiagramTest" time="0.002"/>
+  <testcase name="getElementByJSONID_null()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassDiagramTest" time="0.002"/>
+  <testcase name="getModelElements_emptyElementLists()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassDiagramTest" time="0.004"/>
+  <testcase name="similarityClassDiagram_EqualModels()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassDiagramTest" time="0.012"/>
+  <testcase name="similarityClassDiagram_v3_DifferentModels()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassDiagramTest" time="0.01"/>
+  <testcase name="similarityClassDiagram_DifferentModels()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassDiagramTest" time="0.009"/>
+  <testcase name="getElementByJSONID_notExisting()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassDiagramTest" time="0.005"/>
+  <testcase name="getElementByJSONID_getAttribute()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassDiagramTest" time="0.002"/>
+  <system-out><![CDATA[
+Starting logs for UMLClassDiagramTest
+
+  Starting logs for UMLClassDiagramTest > getElementByJSONID_getClass()
+
+  Starting logs for UMLClassDiagramTest > getElementByJSONID_getMethod()
+
+  Starting logs for UMLClassDiagramTest > getElementByJSONID_getPackage()
+
+  Starting logs for UMLClassDiagramTest > getElementByJSONID_getRelationship()
+
+  Starting logs for UMLClassDiagramTest > getModelElements()
+
+  Starting logs for UMLClassDiagramTest > similarityClassDiagram_v3_EqualModels()
+    23:40:04.215 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.216 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.218 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:04.222 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 1.0
+    23:40:04.222 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 1.0
+    23:40:04.222 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.8)
+    23:40:04.223 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.224 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.226 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:04.228 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 1.0
+    23:40:04.228 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 1.0
+    23:40:04.228 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.8)
+
+  Starting logs for UMLClassDiagramTest > getElementByJSONID_emptyString()
+
+  Starting logs for UMLClassDiagramTest > getElementByJSONID_null()
+
+  Starting logs for UMLClassDiagramTest > getModelElements_emptyElementLists()
+
+  Starting logs for UMLClassDiagramTest > similarityClassDiagram_EqualModels()
+    23:40:04.241 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.243 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.244 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:04.246 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 1.0
+    23:40:04.247 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 1.0
+    23:40:04.247 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.8)
+    23:40:04.247 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.248 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.249 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:04.250 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 1.0
+    23:40:04.250 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 1.0
+    23:40:04.250 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.8)
+
+  Starting logs for UMLClassDiagramTest > similarityClassDiagram_v3_DifferentModels()
+    23:40:04.254 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.255 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.257 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:04.258 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.30954411764705886
+    23:40:04.258 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.30954411764705886
+    23:40:04.258 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.0)
+    23:40:04.258 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.260 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.261 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:04.262 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.30954411764705886
+    23:40:04.262 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.30954411764705886
+    23:40:04.262 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.0)
+
+  Starting logs for UMLClassDiagramTest > similarityClassDiagram_DifferentModels()
+    23:40:04.268 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.272 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.273 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:04.274 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.30954411764705886
+    23:40:04.274 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.30954411764705886
+    23:40:04.274 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.0)
+
+  Starting logs for UMLClassDiagramTest > getElementByJSONID_notExisting()
+
+  Starting logs for UMLClassDiagramTest > getElementByJSONID_getAttribute()
+
+Finished logs for UMLClassDiagramTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

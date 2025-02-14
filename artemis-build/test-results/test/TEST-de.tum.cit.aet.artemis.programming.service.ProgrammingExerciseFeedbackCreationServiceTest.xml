@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:57" hostname="fv-az1721-502" time="0.685">
+  <properties/>
+  <testcase name="shouldSetAllTestCasesToInactiveIfFeedbackListIsEmpty()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.041"/>
+  <testcase name="createFeedbackFromTestCaseSuccessfulNoMessage()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.035"/>
+  <testcase name="shouldFilterOutDuplicateTestCases()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.035"/>
+  <testcase name="shouldUpdateActiveFlagsOfTestCases()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.029"/>
+  <testcase name="createFeedbackFromTestCaseWithStackTraceAndCause()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.031"/>
+  <testcase name="createFeedbackFromTestCaseSuccessfulWithMessage()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.038"/>
+  <testcase name="shouldGenerateNewTestCases()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.038"/>
+  <testcase name="createFeedbackFromTestCaseUnchanged()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.038"/>
+  <testcase name="createFeedbackFromTestCaseMatchMultiple()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.035"/>
+  <testcase name="shouldGenerateNewTestCasesWithVisibilityAlways()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.033"/>
+  <testcase name="createFeedbackFromTestCaseOfAssertJ()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.031"/>
+  <testcase name="createTimeoutFeedback()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.032"/>
+  <testcase name="shouldMapBehavioralTestCaseTypesCorrectly()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.03"/>
+  <testcase name="createFeedbackFromTestCaseWithStackTrace()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.034"/>
+  <testcase name="shouldGenerateNewTestCasesWithVisibilityAfterDueDate()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.043"/>
+  <testcase name="createFeedbackFromTestCaseCombineMultiple()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.036"/>
+  <testcase name="shouldMapNonJavaTestsToDefaultTestCaseType()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.032"/>
+  <testcase name="staticCodeAnalysisReportNotTruncatedFurther()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.036"/>
+  <testcase name="shouldMapStructuralTestCaseTypesCorrectly()" classname="de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseFeedbackCreationServiceTest" time="0.035"/>
+  <system-out><![CDATA[[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: /usr/share/apache-maven-3.9.9
+Java version: 17.0.14, vendor: Eclipse Adoptium, runtime: /usr/lib/jvm/temurin-17-jdk-amd64
+Default locale: en, platform encoding: UTF-8
+OS name: "linux", version: "6.8.0-1021-azure", arch: "amd64", family: "unix"
+
+Starting logs for ProgrammingExerciseFeedbackCreationServiceTest
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > shouldSetAllTestCasesToInactiveIfFeedbackListIsEmpty()
+    23:47:57.587 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#shouldSetAllTestCasesToInactiveIfFeedbackListIsEmpty'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > createFeedbackFromTestCaseSuccessfulNoMessage()
+    23:47:57.628 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#createFeedbackFromTestCaseSuccessfulNoMessage'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > shouldFilterOutDuplicateTestCases()
+    23:47:57.663 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#shouldFilterOutDuplicateTestCases'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > shouldUpdateActiveFlagsOfTestCases()
+    23:47:57.692 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#shouldUpdateActiveFlagsOfTestCases'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > createFeedbackFromTestCaseWithStackTraceAndCause()
+    23:47:57.728 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#createFeedbackFromTestCaseWithStackTraceAndCause'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > createFeedbackFromTestCaseSuccessfulWithMessage()
+    23:47:57.759 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#createFeedbackFromTestCaseSuccessfulWithMessage'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > shouldGenerateNewTestCases()
+    23:47:57.801 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#shouldGenerateNewTestCases'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > createFeedbackFromTestCaseUnchanged()
+    23:47:57.843 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#createFeedbackFromTestCaseUnchanged'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > createFeedbackFromTestCaseMatchMultiple()
+    23:47:57.881 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#createFeedbackFromTestCaseMatchMultiple'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > shouldGenerateNewTestCasesWithVisibilityAlways()
+    23:47:57.911 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#shouldGenerateNewTestCasesWithVisibilityAlways'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > createFeedbackFromTestCaseOfAssertJ()
+    23:47:57.947 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#createFeedbackFromTestCaseOfAssertJ'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > createTimeoutFeedback()
+    23:47:57.980 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#createTimeoutFeedback'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > shouldMapBehavioralTestCaseTypesCorrectly()
+    23:47:58.013 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#shouldMapBehavioralTestCaseTypesCorrectly'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > createFeedbackFromTestCaseWithStackTrace()
+    23:47:58.046 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#createFeedbackFromTestCaseWithStackTrace'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > shouldGenerateNewTestCasesWithVisibilityAfterDueDate()
+    23:47:58.083 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#shouldGenerateNewTestCasesWithVisibilityAfterDueDate'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > createFeedbackFromTestCaseCombineMultiple()
+    23:47:58.126 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#createFeedbackFromTestCaseCombineMultiple'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > shouldMapNonJavaTestsToDefaultTestCaseType()
+    23:47:58.163 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#shouldMapNonJavaTestsToDefaultTestCaseType'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > staticCodeAnalysisReportNotTruncatedFurther()
+    23:47:58.199 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#staticCodeAnalysisReportNotTruncatedFurther'
+
+  Starting logs for ProgrammingExerciseFeedbackCreationServiceTest > shouldMapStructuralTestCaseTypesCorrectly()
+    23:47:58.236 | 493 ool-1-worker-257 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseFeedbackCreationServiceTest#shouldMapStructuralTestCaseTypesCorrectly'
+
+Finished logs for ProgrammingExerciseFeedbackCreationServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

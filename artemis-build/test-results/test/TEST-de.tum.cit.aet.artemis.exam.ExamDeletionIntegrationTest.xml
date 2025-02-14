@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.exam.ExamDeletionIntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:42" hostname="fv-az1721-502" time="0.057">
+  <properties/>
+  <testcase name="testDeletionSummary()" classname="de.tum.cit.aet.artemis.exam.ExamDeletionIntegrationTest" time="0.057"/>
+  <system-out><![CDATA[
+Starting logs for ExamDeletionIntegrationTest
+    23:45:42.500 | 360 ool-1-worker-124 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:45:42.503 | 360 ool-1-worker-124 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:45:42.505 | 360 ool-1-worker-124 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:45:42.506 | 360 ool-1-worker-124 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:45:42.508 | 360 ool-1-worker-124 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:45:42.509 | 360 ool-1-worker-124 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:45:42.510 | 360 ool-1-worker-124 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:45:42.510 | 360 ool-1-worker-124 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:45:42.513 | 360 ool-1-worker-124 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+
+  Starting logs for ExamDeletionIntegrationTest > testDeletionSummary()
+    23:45:42.570 | 360 ool-1-worker-124 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExamDeletionIntegrationTest#testDeletionSummary'
+    23:45:42.571 | 360 ool-1-worker-124 | DEBUG | d.t.c.a.a.e.s.ExamSessionService     : Exam session started
+    23:45:42.572 | 360 ool-1-worker-124 | DEBUG | d.t.c.a.a.e.s.ExamSessionService     : Exam session started
+    23:45:42.572 | 360 ool-1-worker-124 | DEBUG | d.t.c.a.a.e.s.ExamSessionService     : Exam session started
+    23:45:42.580 | 360 ool-1-worker-124 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:45:42.590 | 360 ool-1-worker-124 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1820 and participant 365 (result to be deleted: null)
+    23:45:42.590 | 360 ool-1-worker-124 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1820 and participant 365 at 2025-02-14T23:45:42.690719507Z[Etc/UTC].
+    23:45:42.592 | 360 ool-1-worker-124 | DEBUG | d.t.c.a.a.e.s.ExamSessionService     : Exam session started
+    23:45:42.598 | 360 ool-1-worker-124 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/1556/exams/181/deletion-summary
+    23:45:42.602 | 360 ool-1-worker-124 | DEBUG | d.t.c.a.a.exam.web.ExamResource      : REST request to get deletion summary for exam : 181
+
+Finished logs for ExamDeletionIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

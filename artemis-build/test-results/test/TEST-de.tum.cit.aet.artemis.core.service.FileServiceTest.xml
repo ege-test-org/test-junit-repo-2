@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.service.FileServiceTest" tests="30" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:39" hostname="fv-az1721-502" time="0.671">
+  <properties/>
+  <testcase name="testCopyExistingFileToTarget()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.014"/>
+  <testcase name="testMergePdf_nullInput_shouldReturnEmptyOptional()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.011"/>
+  <testcase name="testReplaceVariablesInFileRecursive_shouldThrowException()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.018"/>
+  <testcase name="testSanitizeByCheckingIfPathContainsSubPathElseThrow_Picture_Valid()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.024"/>
+  <testcase name="normalizeFileEndingsUnix_normalized()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.012"/>
+  <testcase name="testGetFileFOrPath_notFound()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.013"/>
+  <testcase name="testSanitizeByCheckingIfPathContainsSubPathElseThrow_Picture_Invalid_Path()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.012"/>
+  <testcase name="testCopyResourceKeepDirectories(Path)" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.019"/>
+  <testcase name="testIgnoreDirectoryFalsePositives(Path)" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.013"/>
+  <testcase name="testGetFileForPath()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.012"/>
+  <testcase name="normalizeFileEndingsWindows_noChange()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.011"/>
+  <testcase name="normalizeFileEndingsUnix_noChange()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.011"/>
+  <testcase name="testSanitizeByCheckingIfPathContainsSubPathElseThrow_Background_Valid()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.014"/>
+  <testcase name="testNormalizeLineEndingsDirectory_shouldThrowException()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.012"/>
+  <testcase name="testMergePdf()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.021"/>
+  <testcase name="normalizeEncodingISO_8559_1()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.044"/>
+  <testcase name="testMergePdf_emptyList_shouldReturnEmptyOptional()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.01"/>
+  <testcase name="testGetUniqueTemporaryPath_shouldNotThrowException()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.012"/>
+  <testcase name="replacePlaceHolder()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.012"/>
+  <testcase name="testCopyExistingFileToTarget_temporaryFile()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.01"/>
+  <testcase name="testConvertToUTF8Directory_shouldThrowException()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.01"/>
+  <testcase name="testDeleteFiles_shouldNotThrowException()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.011"/>
+  <testcase name="replacePlaceHolderIgnoreNames()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.01"/>
+  <testcase name="testHandleSaveFile_noOriginalFilename()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.213"/>
+  <testcase name="normalizeEncodingUTF8()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.017"/>
+  <testcase name="testSanitizeByCheckingIfPathContainsSubPathElseThrow_Background_Invalid_Path()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.01"/>
+  <testcase name="testCopyResourceRemovePrefix(Path)" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.011"/>
+  <testcase name="normalizeFileEndingsWindows_normalized()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.01"/>
+  <testcase name="testCopyExistingFileToTarget_newFile()" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.009"/>
+  <testcase name="testCopyResourceDoNotKeepDirectory(Path)" classname="de.tum.cit.aet.artemis.core.service.FileServiceTest" time="0.011"/>
+  <system-out><![CDATA[
+Starting logs for FileServiceTest
+
+  Starting logs for FileServiceTest > testCopyExistingFileToTarget()
+    23:45:39.192 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testCopyExistingFileToTarget'
+    23:45:39.193 | 351 ool-1-worker-115 | DEBUG | d.t.c.a.a.core.service.FileService   : Moved File from ./exportTest/testFile.txt to ./exportTest/newFolder/Unspecified_2025-02-14T23-45-39-193_add82431.txt
+
+  Starting logs for FileServiceTest > testMergePdf_nullInput_shouldReturnEmptyOptional()
+    23:45:39.207 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testMergePdf_nullInput_shouldReturnEmptyOptional'
+
+  Starting logs for FileServiceTest > testReplaceVariablesInFileRecursive_shouldThrowException()
+    23:45:39.219 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testReplaceVariablesInFileRecursive_shouldThrowException'
+    23:45:39.219 | 351 ool-1-worker-115 | DEBUG | d.t.c.a.a.core.service.FileService   : Replacing {} in files in directory some-path
+
+  Starting logs for FileServiceTest > testSanitizeByCheckingIfPathContainsSubPathElseThrow_Picture_Valid()
+    23:45:39.246 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testSanitizeByCheckingIfPathContainsSubPathElseThrow_Picture_Valid'
+
+  Starting logs for FileServiceTest > normalizeFileEndingsUnix_normalized()
+    23:45:39.266 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#normalizeFileEndingsUnix_normalized'
+    23:45:39.266 | 351 ool-1-worker-115 | DEBUG | d.t.c.a.a.core.service.FileService   : Normalizing line endings in file ./exportTest/LineEndingsUnix.java
+
+  Starting logs for FileServiceTest > testGetFileFOrPath_notFound()
+    23:45:39.278 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testGetFileFOrPath_notFound'
+
+  Starting logs for FileServiceTest > testSanitizeByCheckingIfPathContainsSubPathElseThrow_Picture_Invalid_Path()
+    23:45:39.294 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testSanitizeByCheckingIfPathContainsSubPathElseThrow_Picture_Invalid_Path'
+
+  Starting logs for FileServiceTest > testCopyResourceKeepDirectories(Path)
+    23:45:39.310 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testCopyResourceKeepDirectories'
+
+  Starting logs for FileServiceTest > testIgnoreDirectoryFalsePositives(Path)
+    23:45:39.330 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testIgnoreDirectoryFalsePositives'
+
+  Starting logs for FileServiceTest > testGetFileForPath()
+    23:45:39.345 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testGetFileForPath'
+
+  Starting logs for FileServiceTest > normalizeFileEndingsWindows_noChange()
+    23:45:39.358 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#normalizeFileEndingsWindows_noChange'
+
+  Starting logs for FileServiceTest > normalizeFileEndingsUnix_noChange()
+    23:45:39.371 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#normalizeFileEndingsUnix_noChange'
+
+  Starting logs for FileServiceTest > testSanitizeByCheckingIfPathContainsSubPathElseThrow_Background_Valid()
+    23:45:39.388 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testSanitizeByCheckingIfPathContainsSubPathElseThrow_Background_Valid'
+
+  Starting logs for FileServiceTest > testNormalizeLineEndingsDirectory_shouldThrowException()
+    23:45:39.401 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testNormalizeLineEndingsDirectory_shouldThrowException'
+    23:45:39.402 | 351 ool-1-worker-115 | DEBUG | d.t.c.a.a.core.service.FileService   : Normalizing file endings in directory some-path
+
+  Starting logs for FileServiceTest > testMergePdf()
+    23:45:39.415 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testMergePdf'
+
+  Starting logs for FileServiceTest > normalizeEncodingISO_8559_1()
+    23:45:39.438 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#normalizeEncodingISO_8559_1'
+    23:45:39.465 | 351 ool-1-worker-115 | DEBUG | d.t.c.a.a.core.service.FileService   : Converting file ./exportTest/EncodingISO_8559_1.java to UTF-8
+    23:45:39.467 | 351 ool-1-worker-115 | DEBUG | d.t.c.a.a.core.service.FileService   : Detected charset for file ./exportTest/EncodingISO_8559_1.java is ISO-8859-1
+
+  Starting logs for FileServiceTest > testMergePdf_emptyList_shouldReturnEmptyOptional()
+    23:45:39.483 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testMergePdf_emptyList_shouldReturnEmptyOptional'
+
+  Starting logs for FileServiceTest > testGetUniqueTemporaryPath_shouldNotThrowException()
+    23:45:39.495 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testGetUniqueTemporaryPath_shouldNotThrowException'
+
+  Starting logs for FileServiceTest > replacePlaceHolder()
+    23:45:39.508 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#replacePlaceHolder'
+    23:45:39.509 | 351 ool-1-worker-115 | DEBUG | d.t.c.a.a.core.service.FileService   : Replacing {${exerciseName}=SomeCoolExerciseName} in files in directory ./exportTest
+    23:45:39.509 | 351 ool-1-worker-115 | DEBUG | d.t.c.a.a.core.service.FileService   : Replacing {${exerciseName}=SomeCoolExerciseName} in file /home/runner/work/Artemis/Artemis/./exportTest/pom.xml
+
+  Starting logs for FileServiceTest > testCopyExistingFileToTarget_temporaryFile()
+    23:45:39.521 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testCopyExistingFileToTarget_temporaryFile'
+
+  Starting logs for FileServiceTest > testConvertToUTF8Directory_shouldThrowException()
+    23:45:39.532 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testConvertToUTF8Directory_shouldThrowException'
+    23:45:39.533 | 351 ool-1-worker-115 | DEBUG | d.t.c.a.a.core.service.FileService   : Converting files in directory some-path to UTF-8
+
+  Starting logs for FileServiceTest > testDeleteFiles_shouldNotThrowException()
+    23:45:39.545 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testDeleteFiles_shouldNotThrowException'
+    23:45:39.545 | 351 ool-1-worker-115 | WARN  | d.t.c.a.a.core.service.FileService   : Could not delete file some-random-path-which-does-not-exist. Error message: some-random-path-which-does-not-exist
+
+  Starting logs for FileServiceTest > replacePlaceHolderIgnoreNames()
+    23:45:39.556 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#replacePlaceHolderIgnoreNames'
+    23:45:39.556 | 351 ool-1-worker-115 | DEBUG | d.t.c.a.a.core.service.FileService   : Replacing {${exerciseName}=SomeCoolExerciseName} in files in directory ./exportTest
+
+  Starting logs for FileServiceTest > testHandleSaveFile_noOriginalFilename()
+    23:45:39.567 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testHandleSaveFile_noOriginalFilename'
+
+  Starting logs for FileServiceTest > normalizeEncodingUTF8()
+    23:45:39.783 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#normalizeEncodingUTF8'
+
+  Starting logs for FileServiceTest > testSanitizeByCheckingIfPathContainsSubPathElseThrow_Background_Invalid_Path()
+    23:45:39.804 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testSanitizeByCheckingIfPathContainsSubPathElseThrow_Background_Invalid_Path'
+
+  Starting logs for FileServiceTest > testCopyResourceRemovePrefix(Path)
+    23:45:39.815 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testCopyResourceRemovePrefix'
+
+  Starting logs for FileServiceTest > normalizeFileEndingsWindows_normalized()
+    23:45:39.828 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#normalizeFileEndingsWindows_normalized'
+    23:45:39.828 | 351 ool-1-worker-115 | DEBUG | d.t.c.a.a.core.service.FileService   : Normalizing line endings in file ./exportTest/LineEndingsWindows.java
+
+  Starting logs for FileServiceTest > testCopyExistingFileToTarget_newFile()
+    23:45:39.839 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testCopyExistingFileToTarget_newFile'
+
+  Starting logs for FileServiceTest > testCopyResourceDoNotKeepDirectory(Path)
+    23:45:39.849 | 351 ool-1-worker-115 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileServiceTest#testCopyResourceDoNotKeepDirectory'
+
+Finished logs for FileServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

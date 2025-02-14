@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.GitServiceTest" tests="37" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:20" hostname="fv-az1721-502" time="5.582">
+  <properties/>
+  <testcase name="testCheckoutRepositoryNotOnServer()" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.129"/>
+  <testcase name="testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [1] defaultBranchVCS=master, defaultBranchArtemis=master" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.179"/>
+  <testcase name="testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [2] defaultBranchVCS=master, defaultBranchArtemis=main" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.177"/>
+  <testcase name="testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [3] defaultBranchVCS=master, defaultBranchArtemis=someOtherName" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.188"/>
+  <testcase name="testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [4] defaultBranchVCS=main, defaultBranchArtemis=master" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.197"/>
+  <testcase name="testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [5] defaultBranchVCS=main, defaultBranchArtemis=main" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.15"/>
+  <testcase name="testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [6] defaultBranchVCS=main, defaultBranchArtemis=someOtherName" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.156"/>
+  <testcase name="testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [7] defaultBranchVCS=someOtherName, defaultBranchArtemis=master" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.182"/>
+  <testcase name="testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [8] defaultBranchVCS=someOtherName, defaultBranchArtemis=main" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.155"/>
+  <testcase name="testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [9] defaultBranchVCS=someOtherName, defaultBranchArtemis=someOtherName" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.312"/>
+  <testcase name="testGetFileByName()" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.097"/>
+  <testcase name="testListFilesAndFolders()" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.067"/>
+  <testcase name="testPushSourceToTargetRepoWithBranch(String) [1] defaultBranch=master" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.152"/>
+  <testcase name="testPushSourceToTargetRepoWithBranch(String) [2] defaultBranch=main" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.214"/>
+  <testcase name="testPushSourceToTargetRepoWithBranch(String) [3] defaultBranch=someOtherName" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.185"/>
+  <testcase name="testCheckoutRepositoryAtCommitGitApiExceptionThrowsGitException()" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.081"/>
+  <testcase name="testListFilesAndFoldersAndOmitBinary()" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.101"/>
+  <testcase name="testDoSomeCommits()" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.093"/>
+  <testcase name="testListFiles()" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.063"/>
+  <testcase name="testGetCommitsInfo()" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.08"/>
+  <testcase name="testGetExistingCheckedOutRepositoryByLocalPathRemovesEmptyRepo()" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.097"/>
+  <testcase name="testGetOriginHead(String) [1] defaultBranch=master" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.197"/>
+  <testcase name="testGetOriginHead(String) [2] defaultBranch=main" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.217"/>
+  <testcase name="testGetOriginHead(String) [3] defaultBranch=someOtherName" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.187"/>
+  <testcase name="testCheckoutRepositoryAlreadyOnServer()" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.164"/>
+  <testcase name="testResetToOriginHead(String) [1] defaultBranch=master" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.174"/>
+  <testcase name="testResetToOriginHead(String) [2] defaultBranch=main" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.121"/>
+  <testcase name="testResetToOriginHead(String) [3] defaultBranch=someOtherName" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.128"/>
+  <testcase name="testCombineAllCommitsIntoInitialCommitTest()" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.134"/>
+  <testcase name="[1] hideStudentName=true, zipOutput=true" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.161"/>
+  <testcase name="[2] hideStudentName=true, zipOutput=false" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.132"/>
+  <testcase name="[3] hideStudentName=false, zipOutput=true" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.174"/>
+  <testcase name="[4] hideStudentName=false, zipOutput=false" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.139"/>
+  <testcase name="[1] withUri=true" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.121"/>
+  <testcase name="[2] withUri=false" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.105"/>
+  <testcase name="testCombineAllCommitsIntoInitialCommitWithoutNewCommitsTest()" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.099"/>
+  <testcase name="testSwitchBackToDefaultBranchHead()" classname="de.tum.cit.aet.artemis.programming.GitServiceTest" time="0.116"/>
+  <system-out><![CDATA[
+Starting logs for GitServiceTest
+
+  Starting logs for GitServiceTest > testCheckoutRepositoryNotOnServer()
+    23:47:20.350 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testCheckoutRepositoryNotOnServer'
+    23:47:20.353 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from file:/tmp/remotegittest16139057492033873711/scm/test-repository/ to repos/server-integration-test/test-repository
+    23:47:20.388 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [1] defaultBranchVCS=master, defaultBranchArtemis=master
+    23:47:20.495 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly'
+    23:47:20.587 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Deleted Repository at repos/server-integration-test/test-repository
+    23:47:20.587 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [2] defaultBranchVCS=master, defaultBranchArtemis=main
+    23:47:20.680 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly'
+    23:47:20.764 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Deleted Repository at repos/server-integration-test/test-repository
+    23:47:20.764 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [3] defaultBranchVCS=master, defaultBranchArtemis=someOtherName
+    23:47:20.883 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly'
+    23:47:20.963 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Deleted Repository at repos/server-integration-test/test-repository
+    23:47:20.963 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [4] defaultBranchVCS=main, defaultBranchArtemis=master
+    23:47:21.069 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly'
+    23:47:21.161 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Deleted Repository at repos/server-integration-test/test-repository
+    23:47:21.161 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [5] defaultBranchVCS=main, defaultBranchArtemis=main
+    23:47:21.253 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly'
+    23:47:21.323 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Deleted Repository at repos/server-integration-test/test-repository
+    23:47:21.323 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [6] defaultBranchVCS=main, defaultBranchArtemis=someOtherName
+    23:47:21.410 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly'
+    23:47:21.484 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Deleted Repository at repos/server-integration-test/test-repository
+    23:47:21.484 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [7] defaultBranchVCS=someOtherName, defaultBranchArtemis=master
+    23:47:21.586 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly'
+    23:47:21.665 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Deleted Repository at repos/server-integration-test/test-repository
+    23:47:21.666 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [8] defaultBranchVCS=someOtherName, defaultBranchArtemis=main
+    23:47:21.765 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly'
+    23:47:21.822 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Deleted Repository at repos/server-integration-test/test-repository
+    23:47:21.825 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly(String, String) [9] defaultBranchVCS=someOtherName, defaultBranchArtemis=someOtherName
+    23:47:22.055 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetExistingCheckedOutRepositoryByLocalPathSetsBranchCorrectly'
+    23:47:22.128 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Deleted Repository at repos/server-integration-test/test-repository
+    23:47:22.129 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testGetFileByName()
+    23:47:22.228 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetFileByName'
+
+  Starting logs for GitServiceTest > testListFilesAndFolders()
+    23:47:22.322 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testListFilesAndFolders'
+
+  Starting logs for GitServiceTest > testPushSourceToTargetRepoWithBranch(String) [1] defaultBranch=master
+    23:47:22.374 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testPushSourceToTargetRepoWithBranch'
+    23:47:22.449 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.service.GitService       : pushSourceToTargetRepo -> Push file:/tmp/remotegittest16139057492033873711/scm/test-repository/
+
+  Starting logs for GitServiceTest > testPushSourceToTargetRepoWithBranch(String) [2] defaultBranch=main
+    23:47:22.556 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testPushSourceToTargetRepoWithBranch'
+    23:47:22.657 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.service.GitService       : pushSourceToTargetRepo -> Push file:/tmp/remotegittest16139057492033873711/scm/test-repository/
+
+  Starting logs for GitServiceTest > testPushSourceToTargetRepoWithBranch(String) [3] defaultBranch=someOtherName
+    23:47:22.775 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testPushSourceToTargetRepoWithBranch'
+    23:47:22.839 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.service.GitService       : pushSourceToTargetRepo -> Push file:/tmp/remotegittest16139057492033873711/scm/test-repository/
+
+  Starting logs for GitServiceTest > testCheckoutRepositoryAtCommitGitApiExceptionThrowsGitException()
+    23:47:22.961 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testCheckoutRepositoryAtCommitGitApiExceptionThrowsGitException'
+    23:47:22.966 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testListFilesAndFoldersAndOmitBinary()
+    23:47:23.041 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testListFilesAndFoldersAndOmitBinary'
+    23:47:23.050 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.service.GitService       : Omitting binary file: FILE4.jar
+
+  Starting logs for GitServiceTest > testDoSomeCommits()
+    23:47:23.149 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testDoSomeCommits'
+
+  Starting logs for GitServiceTest > testListFiles()
+    23:47:23.217 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testListFiles'
+
+  Starting logs for GitServiceTest > testGetCommitsInfo()
+    23:47:23.292 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetCommitsInfo'
+    23:47:23.305 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.service.GitService       : Checking out repo file:/home/runner/work/Artemis/Artemis/repos/server-integration-test/test-repository/ to get commit info
+    23:47:23.307 | 442 ool-1-worker-206 | INFO  | d.t.c.a.a.p.service.GitService       : Pull repos/server-integration-test/test-repository
+    23:47:23.307 | 442 ool-1-worker-206 | INFO  | d.t.c.a.a.p.service.GitService       : Replace existing remote url /tmp/remotegittest16139057492033873711/scm/test-repository with new remote url file:/home/runner/work/Artemis/Artemis/repos/server-integration-test/test-repository/
+    23:47:23.307 | 442 ool-1-worker-206 | INFO  | d.t.c.a.a.p.service.GitService       : New remote url: file:/home/runner/work/Artemis/Artemis/repos/server-integration-test/test-repository/
+    23:47:23.315 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testGetExistingCheckedOutRepositoryByLocalPathRemovesEmptyRepo()
+    23:47:23.392 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetExistingCheckedOutRepositoryByLocalPathRemovesEmptyRepo'
+
+  Starting logs for GitServiceTest > testGetOriginHead(String) [1] defaultBranch=master
+    23:47:23.504 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetOriginHead'
+    23:47:23.604 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testGetOriginHead(String) [2] defaultBranch=main
+    23:47:23.695 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetOriginHead'
+    23:47:23.815 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testGetOriginHead(String) [3] defaultBranch=someOtherName
+    23:47:23.924 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetOriginHead'
+    23:47:24.007 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testCheckoutRepositoryAlreadyOnServer()
+    23:47:24.121 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testCheckoutRepositoryAlreadyOnServer'
+
+  Starting logs for GitServiceTest > testResetToOriginHead(String) [1] defaultBranch=master
+    23:47:24.290 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testResetToOriginHead'
+    23:47:24.349 | 641 nt.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5704 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=619.4M, swap.space.total=0, swap.space.free=0, heap.memory.used=2.7G, heap.memory.free=782.3M, heap.memory.total=3.5G, heap.memory.max=6.0G, heap.memory.used/total=78.14%, heap.memory.used/max=45.53%, minor.gc.count=210, minor.gc.time=10051ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=89, unknown.gc.time=1981ms, load.process=0.00%, load.system=100.00%, load.systemAverage=7.00, thread.count=503, thread.peakCount=517, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=5865, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=213, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+    23:47:24.354 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.service.GitService       : Fetch repos/server-integration-test/test-repository
+    23:47:24.354 | 442 ool-1-worker-206 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:47:24.364 | 442 ool-1-worker-206 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:47:24.370 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testResetToOriginHead(String) [2] defaultBranch=main
+    23:47:24.438 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testResetToOriginHead'
+    23:47:24.480 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.service.GitService       : Fetch repos/server-integration-test/test-repository
+    23:47:24.480 | 442 ool-1-worker-206 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:47:24.493 | 442 ool-1-worker-206 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:47:24.499 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testResetToOriginHead(String) [3] defaultBranch=someOtherName
+    23:47:24.571 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testResetToOriginHead'
+    23:47:24.631 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.service.GitService       : Fetch repos/server-integration-test/test-repository
+    23:47:24.631 | 442 ool-1-worker-206 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:47:24.636 | 442 ool-1-worker-206 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:47:24.639 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testCombineAllCommitsIntoInitialCommitTest()
+    23:47:24.698 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testCombineAllCommitsIntoInitialCommitTest'
+    23:47:24.722 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.service.GitService       : Fetch repos/server-integration-test/test-repository
+    23:47:24.722 | 442 ool-1-worker-206 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:47:24.746 | 442 ool-1-worker-206 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:47:24.754 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.service.GitService       : combineAllCommitsIntoInitialCommit -> Push repos/server-integration-test/test-repository
+
+  Starting logs for GitServiceTest > [1] hideStudentName=true, zipOutput=true
+    23:47:24.835 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetRepositoryWithParticipation'
+    23:47:24.933 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Deleted Repository at repos/server-integration-test/test-repository
+    23:47:24.933 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > [2] hideStudentName=true, zipOutput=false
+    23:47:25.021 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetRepositoryWithParticipation'
+    23:47:25.078 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Deleted Repository at repos/server-integration-test/test-repository
+    23:47:25.078 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > [3] hideStudentName=false, zipOutput=true
+    23:47:25.137 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetRepositoryWithParticipation'
+    23:47:25.238 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Deleted Repository at repos/server-integration-test/test-repository
+    23:47:25.239 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > [4] hideStudentName=false, zipOutput=false
+    23:47:25.342 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testGetRepositoryWithParticipation'
+    23:47:25.398 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Deleted Repository at repos/server-integration-test/test-repository
+    23:47:25.399 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > [1] withUri=true
+    23:47:25.457 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testCheckoutRepositoryAtCommit'
+    23:47:25.480 | 442 ool-1-worker-206 | INFO  | d.t.c.a.a.p.service.GitService       : Pull repos/server-integration-test/test-repository
+    23:47:25.480 | 442 ool-1-worker-206 | INFO  | d.t.c.a.a.p.service.GitService       : Replace existing remote url /tmp/remotegittest16139057492033873711/scm/test-repository with new remote url file:/home/runner/work/Artemis/Artemis/repos/server-integration-test/test-repository/
+    23:47:25.481 | 442 ool-1-worker-206 | INFO  | d.t.c.a.a.p.service.GitService       : New remote url: file:/home/runner/work/Artemis/Artemis/repos/server-integration-test/test-repository/
+    23:47:25.504 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > [2] withUri=false
+    23:47:25.594 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testCheckoutRepositoryAtCommit'
+    23:47:25.619 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+  Starting logs for GitServiceTest > testCombineAllCommitsIntoInitialCommitWithoutNewCommitsTest()
+    23:47:25.702 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testCombineAllCommitsIntoInitialCommitWithoutNewCommitsTest'
+    23:47:25.702 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.service.GitService       : Fetch repos/server-integration-test/test-repository
+    23:47:25.702 | 442 ool-1-worker-206 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:47:25.711 | 442 ool-1-worker-206 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:47:25.719 | 442 ool-1-worker-206 | DEBUG | d.t.c.a.a.p.service.GitService       : Did not combine the repository Repository[repos/server-integration-test/test-repository/.git] as there were no changes to commit. Exception: Updating the ref HEAD to AnyObjectId[0086c54266c6dc3c7b81e14da2bf2917d86c6f80] failed. ReturnCode from RefUpdate.update() was NO_CHANGE
+
+  Starting logs for GitServiceTest > testSwitchBackToDefaultBranchHead()
+    23:47:25.809 | 442 ool-1-worker-206 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GitServiceTest#testSwitchBackToDefaultBranchHead'
+    23:47:25.854 | 442 ool-1-worker-206 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[repos/server-integration-test/test-repository/.git]
+
+Finished logs for GitServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

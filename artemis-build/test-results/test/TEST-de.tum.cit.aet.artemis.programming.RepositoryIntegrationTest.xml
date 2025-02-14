@@ -1,0 +1,1262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" tests="62" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:49:10" hostname="fv-az1721-502" time="4.582">
+  <properties/>
+  <testcase name="testResetNotAllowedForLockedParticipation()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.087"/>
+  <testcase name="testCreateFolder()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.067"/>
+  <testcase name="testLockStudentRepository_beforeStateRepoConfigured()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.058"/>
+  <testcase name="testRenameFile()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.062"/>
+  <testcase name="testPullChanges()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.103"/>
+  <testcase name="testUnlockStudentRepository()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.059"/>
+  <testcase name="testGetFilesWithRelevantPlagiarismCaseAfterExam()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.092"/>
+  <testcase name="testGetFiles()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.059"/>
+  <testcase name="testGetFilesWithContent()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.061"/>
+  <testcase name="testSaveFilesAndCommit()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.086"/>
+  <testcase name="testGetFilesAtCommitInstructorNotInCourseForbidden()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.073"/>
+  <testcase name="testGetFilesWithInfoAboutChange_noChange()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.066"/>
+  <testcase name="testGetFileAsInstructorWithRelevantPlagiarismCaseAfterExam()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.1"/>
+  <testcase name="testGetFilesWithInfoAboutChange_withNewFile()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.066"/>
+  <testcase name="testGetFilesWithOmitBinaries()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.059"/>
+  <testcase name="testBuildLogs()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.078"/>
+  <testcase name="testResetToLastCommit()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.123"/>
+  <testcase name="testBuildLogsFromDatabaseForSpecificResults_otherParticipation()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.094"/>
+  <testcase name="testGetFilesWithContent_shouldNotThrowException()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.06"/>
+  <testcase name="testCommitChanges()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.085"/>
+  <testcase name="testGetFileBeforeExamExerciseStartForbidden()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.084"/>
+  <testcase name="testUnlockStudentRepository_beforeStateRepoConfigured()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.056"/>
+  <testcase name="testGetFile()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.059"/>
+  <testcase name="testGetFilesWithContentAtCommit()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.073"/>
+  <testcase name="testBuildLogsFromDatabaseForSpecificResults()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.106"/>
+  <testcase name="testLockStudentRepository()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.064"/>
+  <testcase name="testFindStudentParticipation()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.057"/>
+  <testcase name="testStashChangesInStudentRepositoryAfterDueDateHasPassed_throwError()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.057"/>
+  <testcase name="testStashChanges()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.094"/>
+  <testcase name="testGetFile_shouldThrowException()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.061"/>
+  <testcase name="testCommitChangesAllowedForPracticeModeAfterDueDate()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.096"/>
+  <testcase name="testRenameFolder()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.068"/>
+  <testcase name="testCreateFile()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.063"/>
+  <testcase name="testGetFiles_solutionParticipation()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.068"/>
+  <testcase name="testGetFilesAsDifferentStudentWithRelevantPlagiarismCase()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.065"/>
+  <testcase name="testSaveFiles()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.061"/>
+  <testcase name="testResetNotAllowedBeforeDueDate()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.065"/>
+  <testcase name="testCanGetFileAsInstructorWithRelevantPlagiarismCaseBeforeExerciseDueDate()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.063"/>
+  <testcase name="testUpdateParticipationFiles_cannotAccessParticipation()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.061"/>
+  <testcase name="testGetFilesAtCommitTutorNotInCourseForbidden()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.071"/>
+  <testcase name="testResetNotAllowedForExamBeforeDueDate()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.088"/>
+  <testcase name="testDeleteFile()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.06"/>
+  <testcase name="testCannotGetFileAsDifferentStudentWithRelevantPlagiarismCaseBeforeExerciseDueDate()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.067"/>
+  <testcase name="testGetFileExerciseStartForbidden()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.061"/>
+  <testcase name="testGetFilesAsDifferentStudentForbidden()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.06"/>
+  <testcase name="testSaveFilesAfterDueDateAsInstructor()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.087"/>
+  <testcase name="testStashChangesInStudentRepositoryAfterDueDateHasPassed_beforeStateRepoConfigured()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.067"/>
+  <testcase name="testGetFileAsDifferentStudentWithRelevantPlagiarismCase()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.065"/>
+  <testcase name="testGetFilesWithInfoAboutChange_withChange()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.064"/>
+  <testcase name="testBuildLogsNoSubmission()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.059"/>
+  <testcase name="testGetStatus()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.083"/>
+  <testcase name="testGetFilesWithRelevantPlagiarismCaseAfterExam_forbidden()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.089"/>
+  <testcase name="testBuildLogsFromDatabase()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.062"/>
+  <testcase name="testGetFilesWithContentAtCommitParticipationNotFound()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.061"/>
+  <testcase name="testGetFilesAtCommitEditorNotInCourseForbidden()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.067"/>
+  <testcase name="testCommitChangesNotAllowedForLockedParticipation()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.088"/>
+  <testcase name="testBuildLogsWithManualResult()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.081"/>
+  <testcase name="testStashChangesInStudentRepositoryAfterDueDateHasPassed_dueDatePassed()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.088"/>
+  <testcase name="testGetFileWithRelevantPlagiarismCaseAfterExam()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.089"/>
+  <testcase name="testGetBuildLogs_cannotAccessParticipation()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.06"/>
+  <testcase name="testGetFileAsDifferentStudentForbidden()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.06"/>
+  <testcase name="testBuildLogsWithSubmissionBuildSuccessful()" classname="de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest" time="0.061"/>
+  <system-out><![CDATA[
+Starting logs for RepositoryIntegrationTest
+
+  Starting logs for RepositoryIntegrationTest > testResetNotAllowedForLockedParticipation()
+    23:49:10.724 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:10.726 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:10.728 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:10.729 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:10.731 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:10.732 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 15 users from all courses...
+    23:49:10.733 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 15 users from all courses. Done
+    23:49:10.733 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:10.735 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:10.771 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testResetNotAllowedForLockedParticipation'
+    23:49:10.775 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5320
+    23:49:10.776 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get clean status for Repository for domainId : 5320
+    23:49:10.794 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/repository/5320/reset
+    23:49:10.797 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the repository of this programming exercise.
+
+  Starting logs for RepositoryIntegrationTest > testCreateFolder()
+    23:49:10.812 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:10.816 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:10.818 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:10.820 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:10.822 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:10.823 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:10.824 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:10.824 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:10.830 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:10.863 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testCreateFolder'
+    23:49:10.863 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/repository/5324/folder
+    23:49:10.864 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to create file newFolder for domainId : 5324
+
+  Starting logs for RepositoryIntegrationTest > testLockStudentRepository_beforeStateRepoConfigured()
+    23:49:10.881 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:10.884 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:10.886 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:10.888 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:10.890 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:10.891 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:10.892 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:10.892 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:10.895 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:10.927 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testLockStudentRepository_beforeStateRepoConfigured'
+    23:49:10.927 | 465 ool-1-worker-229 | WARN  | grammingExerciseParticipationService : Cannot lock student repository for participation 5328 because the repository was not copied yet!
+
+  Starting logs for RepositoryIntegrationTest > testRenameFile()
+    23:49:10.940 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:10.944 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:10.946 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:10.948 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:10.950 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:10.951 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:10.952 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:10.952 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:10.954 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:10.986 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testRenameFile'
+    23:49:10.987 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/repository/5332/rename-file
+    23:49:10.988 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to rename file currentFileName to newFileName for domainId : 5332
+
+  Starting logs for RepositoryIntegrationTest > testPullChanges()
+    23:49:11.004 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:11.007 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:11.009 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:11.011 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:11.013 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:11.014 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:11.015 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:11.015 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:11.018 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:11.048 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testPullChanges'
+    23:49:11.049 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/repository/5336/commit
+    23:49:11.050 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to commit Repository for domainId : 5336
+    23:49:11.059 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.p.service.GitService       : commitAndPush -> Push /tmp/studentLocalRepo4528844787340359810
+    23:49:11.059 | 465 ool-1-worker-229 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:49:11.077 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5336/pull
+    23:49:11.078 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to commit Repository for domainId : 5336
+    23:49:11.080 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.p.service.GitService       : Pull ignore conflicts /tmp/studentLocalRepo4528844787340359810
+    23:49:11.080 | 465 ool-1-worker-229 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:49:11.092 | 465 ool-1-worker-229 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/studentLocalRepo4528844787340359810/.git]
+    23:49:11.092 | 465 ool-1-worker-229 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/studentOriginRepo9974439909701446601/.git]
+
+  Starting logs for RepositoryIntegrationTest > testUnlockStudentRepository()
+    23:49:11.108 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:11.112 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:11.114 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:11.116 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:11.118 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:11.119 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:11.120 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:11.120 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:11.123 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:11.154 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testUnlockStudentRepository'
+
+  Starting logs for RepositoryIntegrationTest > testGetFilesWithRelevantPlagiarismCaseAfterExam()
+    23:49:11.169 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:11.172 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:11.174 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:11.177 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:11.179 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:11.180 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:11.181 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:11.181 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:11.183 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:11.215 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFilesWithRelevantPlagiarismCaseAfterExam'
+    23:49:11.234 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5344/files-plagiarism-view
+    23:49:11.235 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to files for plagiarism view for domainId : 5344
+
+  Starting logs for RepositoryIntegrationTest > testGetFiles()
+    23:49:11.262 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:11.266 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:11.268 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:11.270 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:11.272 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:11.273 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:11.274 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:11.274 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:11.276 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:11.307 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFiles'
+    23:49:11.308 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5350/files
+    23:49:11.308 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to files for domainId : 5350
+
+  Starting logs for RepositoryIntegrationTest > testGetFilesWithContent()
+    23:49:11.323 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:11.327 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:11.329 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:11.331 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:11.333 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:11.334 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:11.335 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:11.335 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:11.337 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:11.368 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFilesWithContent'
+    23:49:11.369 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5354/files-content
+
+  Starting logs for RepositoryIntegrationTest > testSaveFilesAndCommit()
+    23:49:11.386 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:11.390 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:11.392 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:11.394 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:11.396 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:11.397 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:11.398 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:11.398 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:11.400 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:11.431 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testSaveFilesAndCommit'
+    23:49:11.432 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5358
+    23:49:11.433 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get clean status for Repository for domainId : 5358
+    23:49:11.436 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/repository/5358/files
+    23:49:11.439 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to commit Repository for domainId : 5358
+    23:49:11.446 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.p.service.GitService       : commitAndPush -> Push /tmp/studentLocalRepo9600606352817902163
+    23:49:11.446 | 465 ool-1-worker-229 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:49:11.456 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5358
+    23:49:11.456 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get clean status for Repository for domainId : 5358
+
+  Starting logs for RepositoryIntegrationTest > testGetFilesAtCommitInstructorNotInCourseForbidden()
+    23:49:11.477 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:11.481 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:11.483 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:11.486 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:11.488 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:11.489 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:11.490 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:11.490 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:11.492 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:11.523 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFilesAtCommitInstructorNotInCourseForbidden'
+    23:49:11.531 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository-files-content/f3f020251f98f591b02bd0605c38126a0d57751d
+    23:49:11.532 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to files for domainId 5362 at commitId f3f020251f98f591b02bd0605c38126a0d57751d
+    23:49:11.534 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the repository of this programming exercise.
+
+  Starting logs for RepositoryIntegrationTest > testGetFilesWithInfoAboutChange_noChange()
+    23:49:11.549 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:11.553 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:11.555 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:11.557 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:11.559 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:11.560 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:11.561 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:11.561 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:11.563 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:11.594 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFilesWithInfoAboutChange_noChange'
+    23:49:11.595 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5366/files-change
+
+  Starting logs for RepositoryIntegrationTest > testGetFileAsInstructorWithRelevantPlagiarismCaseAfterExam()
+    23:49:11.618 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:11.621 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:11.623 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:11.625 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:11.627 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:11.628 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:11.629 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:11.629 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:11.632 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:11.662 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFileAsInstructorWithRelevantPlagiarismCaseAfterExam'
+    23:49:11.689 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5370/file-plagiarism-view
+    23:49:11.690 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to file currentFileName for plagiarism view for domainId : 5370
+
+  Starting logs for RepositoryIntegrationTest > testGetFilesWithInfoAboutChange_withNewFile()
+    23:49:11.719 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:11.723 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:11.725 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:11.727 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:11.729 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:11.730 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:11.730 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:11.730 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:11.733 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:11.767 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFilesWithInfoAboutChange_withNewFile'
+    23:49:11.768 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5376/files-change
+
+  Starting logs for RepositoryIntegrationTest > testGetFilesWithOmitBinaries()
+    23:49:11.787 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:11.790 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:11.792 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:11.794 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:11.797 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:11.798 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:11.798 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:11.798 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:11.801 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:11.831 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFilesWithOmitBinaries'
+    23:49:11.832 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5380/files-content
+    23:49:11.834 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.p.service.GitService       : Omitting binary file: currentFileName.jar
+
+  Starting logs for RepositoryIntegrationTest > testBuildLogs()
+    23:49:11.847 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:11.851 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:11.853 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:11.855 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:11.857 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:11.858 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:11.858 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:11.858 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:11.861 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:11.891 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testBuildLogs'
+    23:49:11.893 | 465 ool-1-worker-229 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3613 and participant 795 (result to be deleted: null)
+    23:49:11.893 | 465 ool-1-worker-229 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3613 and participant 795 at 2025-02-14T23:49:11.993146595Z[Etc/UTC].
+    23:49:11.908 | 465 ool-1-worker-229 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3613 and participant 795 (result to be deleted: null)
+    23:49:11.908 | 465 ool-1-worker-229 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3613 and participant 795 at 2025-02-14T23:49:12.008630813Z[Etc/UTC].
+    23:49:11.911 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5384/buildlogs
+    23:49:11.911 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get build log : 5384
+
+  Starting logs for RepositoryIntegrationTest > testResetToLastCommit()
+    23:49:11.927 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:11.930 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:11.932 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:11.934 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:11.936 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:11.937 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:11.938 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:11.938 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:11.940 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:11.970 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testResetToLastCommit'
+    23:49:11.973 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5388
+    23:49:11.973 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get clean status for Repository for domainId : 5388
+    23:49:11.976 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/repository/5388/commit
+    23:49:11.977 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to commit Repository for domainId : 5388
+    23:49:11.984 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.p.service.GitService       : commitAndPush -> Push /tmp/studentLocalRepo16148075244313216410
+    23:49:11.984 | 465 ool-1-worker-229 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:49:11.993 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5388
+    23:49:11.994 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get clean status for Repository for domainId : 5388
+    23:49:12.016 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/repository/5388/reset
+    23:49:12.019 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.p.service.GitService       : Fetch /tmp/studentLocalRepo16148075244313216410
+    23:49:12.019 | 465 ool-1-worker-229 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:49:12.023 | 465 ool-1-worker-229 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:49:12.030 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5388
+    23:49:12.031 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get clean status for Repository for domainId : 5388
+    23:49:12.035 | 465 ool-1-worker-229 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/studentOriginRepo5761543458303719026/.git]
+    23:49:12.035 | 465 ool-1-worker-229 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/studentLocalRepo16148075244313216410/.git]
+
+  Starting logs for RepositoryIntegrationTest > testBuildLogsFromDatabaseForSpecificResults_otherParticipation()
+    23:49:12.051 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:12.054 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:12.056 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:12.058 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:12.060 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:12.062 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:12.062 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:12.062 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:12.065 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:12.096 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testBuildLogsFromDatabaseForSpecificResults_otherParticipation'
+    23:49:12.099 | 465 ool-1-worker-229 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3615 and participant 797 (result to be deleted: null)
+    23:49:12.099 | 465 ool-1-worker-229 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3615 and participant 797 at 2025-02-14T23:49:12.199715341Z[Etc/UTC].
+    23:49:12.108 | 465 ool-1-worker-229 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3615 and participant 797 (result to be deleted: null)
+    23:49:12.108 | 465 ool-1-worker-229 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3615 and participant 797 at 2025-02-14T23:49:12.208225682Z[Etc/UTC].
+    23:49:12.123 | 465 ool-1-worker-229 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3615 and participant 797 (result to be deleted: null)
+    23:49:12.123 | 465 ool-1-worker-229 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3615 and participant 797 at 2025-02-14T23:49:12.223131761Z[Etc/UTC].
+    23:49:12.124 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5392/buildlogs
+    23:49:12.125 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get build log : 5392
+    23:49:12.129 | 465 ool-1-worker-229 | WARN  | rammingExerciseParticipationResource : Participation ID 5392 tried to access the build logs of another participation's submission with ID 1730.
+    23:49:12.130 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: No permission to access the build log of another participation's submission
+
+  Starting logs for RepositoryIntegrationTest > testGetFilesWithContent_shouldNotThrowException()
+    23:49:12.146 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:12.149 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:12.151 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:12.153 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:12.155 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:12.156 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:12.157 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:12.157 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:12.159 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:12.190 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFilesWithContent_shouldNotThrowException'
+    23:49:12.192 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5397/files-content
+    23:49:12.194 | 465 ool-1-worker-229 | ERROR | d.t.c.a.a.p.s.RepositoryService      : Content of file: Mock for File, hashCode: 607159908 could not be loaded and throws the following error: null
+
+  Starting logs for RepositoryIntegrationTest > testCommitChanges()
+    23:49:12.207 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:12.210 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:12.212 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:12.214 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:12.216 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:12.217 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:12.218 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:12.218 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:12.221 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:12.251 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testCommitChanges'
+    23:49:12.252 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5401
+    23:49:12.253 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get clean status for Repository for domainId : 5401
+    23:49:12.256 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/repository/5401/commit
+    23:49:12.256 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to commit Repository for domainId : 5401
+    23:49:12.264 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.p.service.GitService       : commitAndPush -> Push /tmp/studentLocalRepo16543735291843035454
+    23:49:12.264 | 465 ool-1-worker-229 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:49:12.273 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5401
+    23:49:12.274 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get clean status for Repository for domainId : 5401
+
+  Starting logs for RepositoryIntegrationTest > testGetFileBeforeExamExerciseStartForbidden()
+    23:49:12.293 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:12.296 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:12.298 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:12.300 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:12.302 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:12.303 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:12.304 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:12.304 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:12.306 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:12.337 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFileBeforeExamExerciseStartForbidden'
+    23:49:12.353 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5405/file
+    23:49:12.354 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to file currentFileName for domainId : 5405
+    23:49:12.364 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the repository of this programming exercise.
+
+  Starting logs for RepositoryIntegrationTest > testUnlockStudentRepository_beforeStateRepoConfigured()
+    23:49:12.378 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:12.381 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:12.383 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:12.385 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:12.387 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:12.388 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:12.389 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:12.389 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:12.391 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:12.422 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testUnlockStudentRepository_beforeStateRepoConfigured'
+    23:49:12.422 | 465 ool-1-worker-229 | WARN  | grammingExerciseParticipationService : Cannot unlock student repository for participation 5411 because the repository was not copied yet!
+
+  Starting logs for RepositoryIntegrationTest > testGetFile()
+    23:49:12.435 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:12.438 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:12.440 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:12.442 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:12.445 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:12.446 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:12.446 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:12.446 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:12.449 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:12.479 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFile'
+    23:49:12.480 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5415/file
+    23:49:12.481 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to file currentFileName for domainId : 5415
+
+  Starting logs for RepositoryIntegrationTest > testGetFilesWithContentAtCommit()
+    23:49:12.495 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:12.499 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:12.501 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:12.503 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:12.505 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:12.506 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:12.507 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:12.507 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:12.509 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:12.540 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFilesWithContentAtCommit'
+    23:49:12.547 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository-files-content/b1ab11ebdafc3bcd5a869989ad5471a91178fdfc
+    23:49:12.548 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to files for domainId 5419 at commitId b1ab11ebdafc3bcd5a869989ad5471a91178fdfc
+    23:49:12.549 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.p.s.RepositoryService      : Checking out repo to get files at commit b1ab11ebdafc3bcd5a869989ad5471a91178fdfc for participation 5419
+
+  Starting logs for RepositoryIntegrationTest > testBuildLogsFromDatabaseForSpecificResults()
+    23:49:12.570 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:12.573 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:12.575 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:12.577 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:12.579 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:12.581 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:12.581 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:12.581 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:12.584 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:12.616 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testBuildLogsFromDatabaseForSpecificResults'
+    23:49:12.618 | 465 ool-1-worker-229 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3623 and participant 795 (result to be deleted: null)
+    23:49:12.618 | 465 ool-1-worker-229 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3623 and participant 795 at 2025-02-14T23:49:12.718573697Z[Etc/UTC].
+    23:49:12.634 | 465 ool-1-worker-229 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3623 and participant 795 (result to be deleted: null)
+    23:49:12.634 | 465 ool-1-worker-229 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3623 and participant 795 at 2025-02-14T23:49:12.734285729Z[Etc/UTC].
+    23:49:12.637 | 465 ool-1-worker-229 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3623 and participant 795 (result to be deleted: null)
+    23:49:12.637 | 465 ool-1-worker-229 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3623 and participant 795 at 2025-02-14T23:49:12.737217717Z[Etc/UTC].
+    23:49:12.651 | 465 ool-1-worker-229 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3623 and participant 795 (result to be deleted: null)
+    23:49:12.651 | 465 ool-1-worker-229 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3623 and participant 795 at 2025-02-14T23:49:12.751840499Z[Etc/UTC].
+    23:49:12.654 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5423/buildlogs
+    23:49:12.654 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get build log : 5423
+    23:49:12.659 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5423/buildlogs
+    23:49:12.659 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get build log : 5423
+    23:49:12.661 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5423/buildlogs
+    23:49:12.662 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get build log : 5423
+
+  Starting logs for RepositoryIntegrationTest > testLockStudentRepository()
+    23:49:12.677 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:12.680 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:12.682 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:12.684 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:12.686 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:12.687 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:12.688 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:12.688 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:12.691 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:12.725 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testLockStudentRepository'
+
+  Starting logs for RepositoryIntegrationTest > testFindStudentParticipation()
+    23:49:12.741 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:12.745 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:12.747 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:12.749 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:12.751 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:12.753 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:12.753 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:12.753 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:12.756 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:12.787 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testFindStudentParticipation'
+
+  Starting logs for RepositoryIntegrationTest > testStashChangesInStudentRepositoryAfterDueDateHasPassed_throwError()
+    23:49:12.800 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:12.803 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:12.805 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:12.807 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:12.809 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:12.810 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:12.811 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:12.811 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:12.814 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:12.844 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testStashChangesInStudentRepositoryAfterDueDateHasPassed_throwError'
+    23:49:12.845 | 465 ool-1-worker-229 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 5435 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+
+  Starting logs for RepositoryIntegrationTest > testStashChanges()
+    23:49:12.858 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:12.861 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:12.863 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:12.865 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:12.867 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:12.868 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:12.869 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:12.869 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:12.871 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:12.902 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testStashChanges'
+    23:49:12.903 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/repository/5439/files
+    23:49:12.906 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to commit Repository for domainId : 5439
+    23:49:12.913 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.p.service.GitService       : commitAndPush -> Push /tmp/studentLocalRepo9586589311518989705
+    23:49:12.913 | 465 ool-1-worker-229 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:49:12.923 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/repository/5439/files
+
+  Starting logs for RepositoryIntegrationTest > testGetFile_shouldThrowException()
+    23:49:12.954 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:12.957 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:12.959 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:12.961 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:12.963 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:12.965 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:12.965 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:12.965 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:12.968 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:12.999 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFile_shouldThrowException'
+    23:49:13.000 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5443/file
+    23:49:13.000 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to file currentFileName for domainId : 5443
+    23:49:13.002 | 465 ool-1-worker-229 | ERROR | rammingExerciseParticipationResource : FileNotFoundException during repository operation
+java.io.FileNotFoundException: null
+	at de.tum.cit.aet.artemis.programming.service.RepositoryService.getFile(RepositoryService.java:249)
+	at de.tum.cit.aet.artemis.programming.service.RepositoryService.getFileFromRepository(RepositoryService.java:512)
+	at de.tum.cit.aet.artemis.programming.web.repository.RepositoryResource.lambda$getFile$1(RepositoryResource.java:155)
+	at de.tum.cit.aet.artemis.programming.web.repository.RepositoryResource.executeAndCheckForExceptions(RepositoryResource.java:357)
+	at de.tum.cit.aet.artemis.programming.web.repository.RepositoryResource.getFile(RepositoryResource.java:153)
+	at de.tum.cit.aet.artemis.programming.web.repository.RepositoryProgrammingExerciseParticipationResource.getFile(RepositoryProgrammingExerciseParticipationResource.java:256)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.proceed(AuthorizationManagerBeforeMethodInterceptor.java:268)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.attemptAuthorization(AuthorizationManagerBeforeMethodInterceptor.java:263)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:196)
+	at org.springframework.security.config.annotation.method.configuration.DeferringMethodInterceptor.invoke(DeferringMethodInterceptor.java:44)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at de.tum.cit.aet.artemis.programming.web.repository.RepositoryProgrammingExerciseParticipationResource$$SpringCGLIB$$0.getFile(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:527)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at de.tum.cit.aet.artemis.core.security.filter.ApiVersionFilter.doFilter(ApiVersionFilter.java:55)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at io.sentry.spring.jakarta.SentryUserFilter.doFilterInternal(SentryUserFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at de.tum.cit.aet.artemis.core.security.filter.SpaWebFilter.doFilterInternal(SpaWebFilter.java:23)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at de.tum.cit.aet.artemis.lti.config.Lti13LaunchFilter.doFilterInternal(Lti13LaunchFilter.java:60)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at de.tum.cit.aet.artemis.core.security.jwt.JWTFilter.doFilter(JWTFilter.java:55)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at de.tum.cit.aet.artemis.core.security.jwt.JWTFilter.doFilter(JWTFilter.java:55)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at uk.ac.ox.ctl.lti13.security.oauth2.client.lti.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:142)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at io.sentry.spring.jakarta.tracing.SentryTracingFilter.doFilterInternal(SentryTracingFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at io.sentry.spring.jakarta.SentrySpringFilter.doFilterInternal(SentrySpringFilter.java:76)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at de.tum.cit.aet.artemis.core.util.RequestUtilService.performMvcRequest(RequestUtilService.java:79)
+	at de.tum.cit.aet.artemis.core.util.RequestUtilService.get(RequestUtilService.java:656)
+	at de.tum.cit.aet.artemis.core.util.RequestUtilService.get(RequestUtilService.java:622)
+	at de.tum.cit.aet.artemis.programming.RepositoryIntegrationTest.testGetFile_shouldThrowException(RepositoryIntegrationTest.java:679)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.execSync(ForkJoinPoolHierarchicalTestExecutorService.java:247)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.executeSync(ForkJoinPoolHierarchicalTestExecutorService.java:194)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:166)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+    23:49:13.003 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Not Found: File not found
+
+  Starting logs for RepositoryIntegrationTest > testCommitChangesAllowedForPracticeModeAfterDueDate()
+    23:49:13.016 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:13.020 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:13.022 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:13.024 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:13.026 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:13.027 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:13.028 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:13.028 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:13.030 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:13.062 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testCommitChangesAllowedForPracticeModeAfterDueDate'
+    23:49:13.064 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5447
+    23:49:13.065 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get clean status for Repository for domainId : 5447
+    23:49:13.077 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/repository/5447/commit
+    23:49:13.078 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to commit Repository for domainId : 5447
+    23:49:13.085 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.p.service.GitService       : commitAndPush -> Push /tmp/studentLocalRepo15973291797014437294
+    23:49:13.085 | 465 ool-1-worker-229 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:49:13.094 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5447
+    23:49:13.095 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get clean status for Repository for domainId : 5447
+
+  Starting logs for RepositoryIntegrationTest > testRenameFolder()
+    23:49:13.115 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:13.120 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:13.122 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:13.125 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:13.127 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:13.128 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:13.129 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:13.129 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:13.131 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:13.163 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testRenameFolder'
+    23:49:13.165 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/repository/5451/rename-file
+    23:49:13.165 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to rename file currentFolderName to newFolderName for domainId : 5451
+
+  Starting logs for RepositoryIntegrationTest > testCreateFile()
+    23:49:13.183 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:13.186 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:13.188 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:13.190 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:13.192 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:13.194 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:13.194 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:13.194 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:13.197 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:13.229 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testCreateFile'
+    23:49:13.230 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/repository/5455/file
+    23:49:13.231 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to create file newFile for domainId : 5455
+
+  Starting logs for RepositoryIntegrationTest > testGetFiles_solutionParticipation()
+    23:49:13.247 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:13.250 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:13.252 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:13.254 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:13.256 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:13.257 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:13.258 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:13.258 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:13.260 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:13.291 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFiles_solutionParticipation'
+    23:49:13.299 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5461/files
+    23:49:13.299 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to files for domainId : 5461
+
+  Starting logs for RepositoryIntegrationTest > testGetFilesAsDifferentStudentWithRelevantPlagiarismCase()
+    23:49:13.316 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:13.319 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:13.321 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:13.323 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:13.325 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:13.327 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:13.327 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:13.327 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:13.330 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:13.361 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFilesAsDifferentStudentWithRelevantPlagiarismCase'
+    23:49:13.364 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5464/files-plagiarism-view
+    23:49:13.364 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to files for plagiarism view for domainId : 5464
+
+  Starting logs for RepositoryIntegrationTest > testSaveFiles()
+    23:49:13.382 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:13.385 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:13.388 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:13.390 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:13.392 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:13.393 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:13.393 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:13.393 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:13.396 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:13.428 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testSaveFiles'
+    23:49:13.429 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/repository/5468/files
+
+  Starting logs for RepositoryIntegrationTest > testResetNotAllowedBeforeDueDate()
+    23:49:13.445 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:13.448 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:13.450 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:13.452 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:13.454 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:13.455 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:13.456 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:13.456 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:13.458 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:13.490 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testResetNotAllowedBeforeDueDate'
+    23:49:13.491 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5472
+    23:49:13.492 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get clean status for Repository for domainId : 5472
+    23:49:13.495 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/repository/5472/reset
+    23:49:13.498 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the repository of this programming exercise.
+
+  Starting logs for RepositoryIntegrationTest > testCanGetFileAsInstructorWithRelevantPlagiarismCaseBeforeExerciseDueDate()
+    23:49:13.511 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:13.514 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:13.516 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:13.518 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:13.520 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:13.521 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:13.522 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:13.522 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:13.524 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:13.556 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testCanGetFileAsInstructorWithRelevantPlagiarismCaseBeforeExerciseDueDate'
+    23:49:13.560 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5476/file-plagiarism-view
+    23:49:13.560 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to file currentFileName for plagiarism view for domainId : 5476
+
+  Starting logs for RepositoryIntegrationTest > testUpdateParticipationFiles_cannotAccessParticipation()
+    23:49:13.575 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:13.578 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:13.580 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:13.582 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:13.584 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:13.585 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:13.586 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:13.586 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:13.589 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:13.620 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testUpdateParticipationFiles_cannotAccessParticipation'
+    23:49:13.621 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/repository/5480/files
+    23:49:13.624 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: 403 FORBIDDEN "You are not allowed to access the repository of this programming exercise."
+
+  Starting logs for RepositoryIntegrationTest > testGetFilesAtCommitTutorNotInCourseForbidden()
+    23:49:13.637 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:13.640 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:13.642 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:13.645 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:13.647 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:13.648 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:13.648 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:13.648 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:13.651 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:13.683 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFilesAtCommitTutorNotInCourseForbidden'
+    23:49:13.692 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository-files-content/5fd228e53b8bbbc715dbc4b0d7598a852e912878
+    23:49:13.692 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to files for domainId 5484 at commitId 5fd228e53b8bbbc715dbc4b0d7598a852e912878
+    23:49:13.694 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the repository of this programming exercise.
+
+  Starting logs for RepositoryIntegrationTest > testResetNotAllowedForExamBeforeDueDate()
+    23:49:13.709 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:13.713 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:13.715 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:13.717 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:13.719 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:13.720 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:13.721 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:13.721 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:13.723 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:13.755 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testResetNotAllowedForExamBeforeDueDate'
+    23:49:13.770 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5488
+    23:49:13.770 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get clean status for Repository for domainId : 5488
+    23:49:13.783 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/repository/5488/reset
+    23:49:13.785 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the repository of this programming exercise.
+
+  Starting logs for RepositoryIntegrationTest > testDeleteFile()
+    23:49:13.799 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:13.802 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:13.804 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:13.806 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:13.808 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:13.809 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:13.810 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:13.810 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:13.812 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:13.844 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testDeleteFile'
+    23:49:13.844 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/repository/5494/file
+    23:49:13.845 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to delete file currentFileName for domainId : 5494
+
+  Starting logs for RepositoryIntegrationTest > testCannotGetFileAsDifferentStudentWithRelevantPlagiarismCaseBeforeExerciseDueDate()
+    23:49:13.860 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:13.863 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:13.865 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:13.867 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:13.869 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:13.871 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:13.871 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:13.871 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:13.874 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:13.906 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testCannotGetFileAsDifferentStudentWithRelevantPlagiarismCaseBeforeExerciseDueDate'
+    23:49:13.909 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5498/file-plagiarism-view
+    23:49:13.910 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to file currentFileName for plagiarism view for domainId : 5498
+    23:49:13.914 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the plagiarism result of this programming exercise.
+
+  Starting logs for RepositoryIntegrationTest > testGetFileExerciseStartForbidden()
+    23:49:13.927 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:13.931 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:13.933 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:13.935 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:13.937 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:13.938 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:13.938 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:13.938 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:13.941 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:13.972 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFileExerciseStartForbidden'
+    23:49:13.974 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5502/file
+    23:49:13.974 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to file currentFileName for domainId : 5502
+    23:49:13.977 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the repository of this programming exercise.
+
+  Starting logs for RepositoryIntegrationTest > testGetFilesAsDifferentStudentForbidden()
+    23:49:13.990 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:13.993 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:13.995 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:13.997 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:13.999 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:14.000 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:14.001 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:14.001 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:14.004 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:14.035 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFilesAsDifferentStudentForbidden'
+    23:49:14.036 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5506/files
+    23:49:14.036 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to files for domainId : 5506
+    23:49:14.038 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the repository of this programming exercise.
+
+  Starting logs for RepositoryIntegrationTest > testSaveFilesAfterDueDateAsInstructor()
+    23:49:14.051 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:14.054 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:14.056 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:14.058 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:14.060 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:14.061 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:14.062 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:14.062 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:14.065 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:14.097 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testSaveFilesAfterDueDateAsInstructor'
+    23:49:14.105 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/repository/5512/files
+    23:49:14.107 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to commit Repository for domainId : 5512
+    23:49:14.113 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.p.service.GitService       : commitAndPush -> Push /tmp/localInstructorAssignmentRepo4408993379702588009
+    23:49:14.113 | 465 ool-1-worker-229 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+
+  Starting logs for RepositoryIntegrationTest > testStashChangesInStudentRepositoryAfterDueDateHasPassed_beforeStateRepoConfigured()
+    23:49:14.139 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:14.143 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:14.146 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:14.149 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:14.152 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:14.154 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:14.155 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:14.155 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:14.159 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:14.194 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testStashChangesInStudentRepositoryAfterDueDateHasPassed_beforeStateRepoConfigured'
+    23:49:14.194 | 465 ool-1-worker-229 | WARN  | grammingExerciseParticipationService : Cannot stash student repository for participation 5515 because the repository was not copied yet!
+
+  Starting logs for RepositoryIntegrationTest > testGetFileAsDifferentStudentWithRelevantPlagiarismCase()
+    23:49:14.207 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:14.210 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:14.212 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:14.214 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:14.216 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:14.218 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:14.218 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:14.218 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:14.221 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:14.252 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFileAsDifferentStudentWithRelevantPlagiarismCase'
+    23:49:14.256 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5519/file-plagiarism-view
+    23:49:14.256 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to file currentFileName for plagiarism view for domainId : 5519
+
+  Starting logs for RepositoryIntegrationTest > testGetFilesWithInfoAboutChange_withChange()
+    23:49:14.274 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:14.277 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:14.279 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:14.281 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:14.283 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:14.284 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:14.285 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:14.285 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:14.287 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:14.318 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFilesWithInfoAboutChange_withChange'
+    23:49:14.319 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5523/files-change
+
+  Starting logs for RepositoryIntegrationTest > testBuildLogsNoSubmission()
+    23:49:14.339 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:14.342 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:14.344 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:14.346 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:14.348 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:14.350 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:14.350 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:14.350 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:14.353 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:14.383 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testBuildLogsNoSubmission'
+    23:49:14.384 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5527/buildlogs
+    23:49:14.385 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get build log : 5527
+
+  Starting logs for RepositoryIntegrationTest > testGetStatus()
+    23:49:14.399 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:14.402 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:14.405 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:14.407 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:14.409 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:14.410 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:14.410 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:14.410 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:14.413 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:14.444 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetStatus'
+    23:49:14.445 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5531
+    23:49:14.445 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get clean status for Repository for domainId : 5531
+    23:49:14.448 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/repository/5531/commit
+    23:49:14.449 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to commit Repository for domainId : 5531
+    23:49:14.456 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.p.service.GitService       : commitAndPush -> Push /tmp/studentLocalRepo16528394870731176480
+    23:49:14.456 | 465 ool-1-worker-229 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:49:14.466 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5531
+    23:49:14.467 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get clean status for Repository for domainId : 5531
+
+  Starting logs for RepositoryIntegrationTest > testGetFilesWithRelevantPlagiarismCaseAfterExam_forbidden()
+    23:49:14.484 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:14.488 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:14.490 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:14.492 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:14.494 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:14.495 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:14.496 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:14.496 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:14.498 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:14.530 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFilesWithRelevantPlagiarismCaseAfterExam_forbidden'
+    23:49:14.548 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5535/files-plagiarism-view
+    23:49:14.549 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to files for plagiarism view for domainId : 5535
+    23:49:14.561 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the plagiarism result of this programming exercise.
+
+  Starting logs for RepositoryIntegrationTest > testBuildLogsFromDatabase()
+    23:49:14.575 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:14.579 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:14.581 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:14.583 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:14.585 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:14.586 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:14.586 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:14.586 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:14.589 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:14.620 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testBuildLogsFromDatabase'
+    23:49:14.622 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5541/buildlogs
+    23:49:14.622 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get build log : 5541
+
+  Starting logs for RepositoryIntegrationTest > testGetFilesWithContentAtCommitParticipationNotFound()
+    23:49:14.638 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:14.641 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:14.643 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:14.645 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:14.647 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:14.648 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:14.649 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:14.649 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:14.651 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:14.683 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFilesWithContentAtCommitParticipationNotFound'
+    23:49:14.684 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository-files-content/abc
+    23:49:14.684 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to files for domainId -5534026339917307133 at commitId abc
+    23:49:14.687 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Not Found: Participation with identifier: "-5534026339917307133" does not exist
+
+  Starting logs for RepositoryIntegrationTest > testGetFilesAtCommitEditorNotInCourseForbidden()
+    23:49:14.700 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:14.703 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:14.705 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:14.708 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:14.710 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:14.711 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:14.711 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:14.711 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:14.714 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:14.745 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFilesAtCommitEditorNotInCourseForbidden'
+    23:49:14.753 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository-files-content/602dce6a5e4ba926ddf0536c83e182c76321124b
+    23:49:14.753 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to files for domainId 5549 at commitId 602dce6a5e4ba926ddf0536c83e182c76321124b
+    23:49:14.755 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the repository of this programming exercise.
+
+  Starting logs for RepositoryIntegrationTest > testCommitChangesNotAllowedForLockedParticipation()
+    23:49:14.769 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:14.773 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:14.775 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:14.777 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:14.779 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:14.780 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:14.781 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:14.781 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:14.783 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:14.822 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testCommitChangesNotAllowedForLockedParticipation'
+    23:49:14.825 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5553
+    23:49:14.825 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get clean status for Repository for domainId : 5553
+    23:49:14.843 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/repository/5553/commit
+    23:49:14.844 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to commit Repository for domainId : 5553
+    23:49:14.846 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the repository of this programming exercise.
+
+  Starting logs for RepositoryIntegrationTest > testBuildLogsWithManualResult()
+    23:49:14.859 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:14.862 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:14.864 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:14.867 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:14.869 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:14.870 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:14.870 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:14.870 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:14.873 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:14.906 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testBuildLogsWithManualResult'
+    23:49:14.907 | 465 ool-1-worker-229 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3657 and participant 795 (result to be deleted: null)
+    23:49:14.907 | 465 ool-1-worker-229 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3657 and participant 795 at 2025-02-14T23:49:15.007523938Z[Etc/UTC].
+    23:49:14.923 | 465 ool-1-worker-229 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3657 and participant 795 (result to be deleted: null)
+    23:49:14.923 | 465 ool-1-worker-229 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3657 and participant 795 at 2025-02-14T23:49:15.023487830Z[Etc/UTC].
+    23:49:14.925 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5557/buildlogs
+    23:49:14.926 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get build log : 5557
+
+  Starting logs for RepositoryIntegrationTest > testStashChangesInStudentRepositoryAfterDueDateHasPassed_dueDatePassed()
+    23:49:14.942 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:14.945 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:14.947 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:14.949 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:14.951 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:14.952 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:14.953 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:14.953 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:14.955 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:14.987 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testStashChangesInStudentRepositoryAfterDueDateHasPassed_dueDatePassed'
+    23:49:14.988 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/repository/5561/files
+    23:49:14.990 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to commit Repository for domainId : 5561
+    23:49:14.997 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.p.service.GitService       : commitAndPush -> Push /tmp/studentLocalRepo4092807012825186405
+    23:49:14.997 | 465 ool-1-worker-229 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:49:15.008 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/repository/5561/files
+
+  Starting logs for RepositoryIntegrationTest > testGetFileWithRelevantPlagiarismCaseAfterExam()
+    23:49:15.031 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:15.035 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:15.037 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:15.039 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:15.041 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:15.042 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:15.043 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:15.043 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:15.045 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:15.077 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFileWithRelevantPlagiarismCaseAfterExam'
+    23:49:15.094 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5565/file-plagiarism-view
+    23:49:15.095 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to file currentFileName for plagiarism view for domainId : 5565
+
+  Starting logs for RepositoryIntegrationTest > testGetBuildLogs_cannotAccessParticipation()
+    23:49:15.121 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:15.124 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:15.127 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:15.129 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:15.131 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:15.132 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:15.132 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:15.132 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:15.135 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:15.166 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetBuildLogs_cannotAccessParticipation'
+    23:49:15.167 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5571/buildlogs
+    23:49:15.167 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get build log : 5571
+    23:49:15.169 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the participation with id 5571
+
+  Starting logs for RepositoryIntegrationTest > testGetFileAsDifferentStudentForbidden()
+    23:49:15.182 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:15.186 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:15.188 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:15.190 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:15.192 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:15.193 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:15.194 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:15.194 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:15.196 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:15.227 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testGetFileAsDifferentStudentForbidden'
+    23:49:15.229 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5575/file
+    23:49:15.229 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to file currentFileName for domainId : 5575
+    23:49:15.231 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the repository of this programming exercise.
+
+  Starting logs for RepositoryIntegrationTest > testBuildLogsWithSubmissionBuildSuccessful()
+    23:49:15.244 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:49:15.247 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:49:15.249 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:49:15.251 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:49:15.253 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:15.254 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:15.255 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:15.255 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:49:15.258 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:49:15.289 | 465 ool-1-worker-229 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryIntegrationTest#testBuildLogsWithSubmissionBuildSuccessful'
+    23:49:15.290 | 465 ool-1-worker-229 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5579/buildlogs
+    23:49:15.291 | 465 ool-1-worker-229 | DEBUG | rammingExerciseParticipationResource : REST request to get build log : 5579
+    23:49:15.293 | 465 ool-1-worker-229 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Build logs cannot be retrieved when the build hasn't failed!
+
+Finished logs for RepositoryIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

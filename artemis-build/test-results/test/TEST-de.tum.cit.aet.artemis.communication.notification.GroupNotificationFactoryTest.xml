@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.notification.GroupNotificationFactoryTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:27" hostname="fv-az1721-502" time="0.703">
+  <properties/>
+  <testcase name="createNotificationBasedOnExercise_withNotificationType_ExerciseCreated()" classname="de.tum.cit.aet.artemis.communication.notification.GroupNotificationFactoryTest" time="0.131"/>
+  <testcase name="createNotificationBasedOnCourse_withNotificationType_CourseArchiveStarted()" classname="de.tum.cit.aet.artemis.communication.notification.GroupNotificationFactoryTest" time="0.008"/>
+  <testcase name="createNotificationBasedOnCourse_withNotificationType_CourseArchiveFailed()" classname="de.tum.cit.aet.artemis.communication.notification.GroupNotificationFactoryTest" time="0.009"/>
+  <testcase name="createNotificationBasedOnExam_withNotificationType_ExamArchiveFinished()" classname="de.tum.cit.aet.artemis.communication.notification.GroupNotificationFactoryTest" time="0.011"/>
+  <testcase name="createNotificationBasedOnExam_withNotificationType_DuplicateTestCase()" classname="de.tum.cit.aet.artemis.communication.notification.GroupNotificationFactoryTest" time="0.009"/>
+  <testcase name="createNotificationBasedOnExercise_withNotificationType_ExerciseUpdated_CourseExercise()" classname="de.tum.cit.aet.artemis.communication.notification.GroupNotificationFactoryTest" time="0.013"/>
+  <testcase name="createNotificationBasedOnExam_withNotificationType_ExamArchiveStarted()" classname="de.tum.cit.aet.artemis.communication.notification.GroupNotificationFactoryTest" time="0.011"/>
+  <testcase name="createNotificationBasedOnCourse_withNotificationType_CourseArchiveFinished()" classname="de.tum.cit.aet.artemis.communication.notification.GroupNotificationFactoryTest" time="0.011"/>
+  <testcase name="createNotificationBasedOnAttachment()" classname="de.tum.cit.aet.artemis.communication.notification.GroupNotificationFactoryTest" time="0.018"/>
+  <testcase name="createNotificationBasedOnExam_withNotificationType_ExamArchiveFailed()" classname="de.tum.cit.aet.artemis.communication.notification.GroupNotificationFactoryTest" time="0.011"/>
+  <testcase name="createNotificationBasedOnExercise_withNotificationType_ExercisePractice()" classname="de.tum.cit.aet.artemis.communication.notification.GroupNotificationFactoryTest" time="0.017"/>
+  <testcase name="createNotificationBasedOnExercise_withNotificationType_ProgrammingTestCasesChanged()" classname="de.tum.cit.aet.artemis.communication.notification.GroupNotificationFactoryTest" time="0.015"/>
+  <testcase name="createNotificationBasedOnExercise_withNotificationType_ExerciseUpdated_ExamExercise()" classname="de.tum.cit.aet.artemis.communication.notification.GroupNotificationFactoryTest" time="0.025"/>
+  <testcase name="createNotificationBasedOnExercise_withNotificationType_QuizExerciseStarted()" classname="de.tum.cit.aet.artemis.communication.notification.GroupNotificationFactoryTest" time="0.018"/>
+  <testcase name="createNotificationBasedOnPost_withNotificationType_NewAnnouncementPost()" classname="de.tum.cit.aet.artemis.communication.notification.GroupNotificationFactoryTest" time="0.364"/>
+  <system-out><![CDATA[
+Starting logs for GroupNotificationFactoryTest
+
+  Starting logs for GroupNotificationFactoryTest > createNotificationBasedOnExercise_withNotificationType_ExerciseCreated()
+
+  Starting logs for GroupNotificationFactoryTest > createNotificationBasedOnCourse_withNotificationType_CourseArchiveStarted()
+
+  Starting logs for GroupNotificationFactoryTest > createNotificationBasedOnCourse_withNotificationType_CourseArchiveFailed()
+
+  Starting logs for GroupNotificationFactoryTest > createNotificationBasedOnExam_withNotificationType_ExamArchiveFinished()
+
+  Starting logs for GroupNotificationFactoryTest > createNotificationBasedOnExam_withNotificationType_DuplicateTestCase()
+
+  Starting logs for GroupNotificationFactoryTest > createNotificationBasedOnExercise_withNotificationType_ExerciseUpdated_CourseExercise()
+
+  Starting logs for GroupNotificationFactoryTest > createNotificationBasedOnExam_withNotificationType_ExamArchiveStarted()
+
+  Starting logs for GroupNotificationFactoryTest > createNotificationBasedOnCourse_withNotificationType_CourseArchiveFinished()
+
+  Starting logs for GroupNotificationFactoryTest > createNotificationBasedOnAttachment()
+
+  Starting logs for GroupNotificationFactoryTest > createNotificationBasedOnExam_withNotificationType_ExamArchiveFailed()
+
+  Starting logs for GroupNotificationFactoryTest > createNotificationBasedOnExercise_withNotificationType_ExercisePractice()
+
+  Starting logs for GroupNotificationFactoryTest > createNotificationBasedOnExercise_withNotificationType_ProgrammingTestCasesChanged()
+
+  Starting logs for GroupNotificationFactoryTest > createNotificationBasedOnExercise_withNotificationType_ExerciseUpdated_ExamExercise()
+
+  Starting logs for GroupNotificationFactoryTest > createNotificationBasedOnExercise_withNotificationType_QuizExerciseStarted()
+
+  Starting logs for GroupNotificationFactoryTest > createNotificationBasedOnPost_withNotificationType_NewAnnouncementPost()
+
+Finished logs for GroupNotificationFactoryTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

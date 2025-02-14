@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.exam.service.ExamServiceTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:52" hostname="fv-az1721-502" time="0.362">
+  <properties/>
+  <testcase name="validateForStudentExamGeneration_tooManyPointsInMandatoryExercises_shouldThrowException()" classname="de.tum.cit.aet.artemis.exam.service.ExamServiceTest" time="0.056"/>
+  <testcase name="testSetExamProperties()" classname="de.tum.cit.aet.artemis.exam.service.ExamServiceTest" time="0.046"/>
+  <testcase name="validateForStudentExamGeneration_differentPointsInExerciseGroup_shouldThrowException()" classname="de.tum.cit.aet.artemis.exam.service.ExamServiceTest" time="0.041"/>
+  <testcase name="getChecklistStatsEmpty()" classname="de.tum.cit.aet.artemis.exam.service.ExamServiceTest" time="0.032"/>
+  <testcase name="testForNullIndexColumnError()" classname="de.tum.cit.aet.artemis.exam.service.ExamServiceTest" time="0.032"/>
+  <testcase name="validateForStudentExamGeneration_differentCalculationTypesInExerciseGroup_shouldThrowException()" classname="de.tum.cit.aet.artemis.exam.service.ExamServiceTest" time="0.034"/>
+  <testcase name="testCanGetCurrentAndUpcomingExams()" classname="de.tum.cit.aet.artemis.exam.service.ExamServiceTest" time="0.046"/>
+  <testcase name="validateForStudentExamGeneration_differentBonusInExerciseGroup_shouldThrowException()" classname="de.tum.cit.aet.artemis.exam.service.ExamServiceTest" time="0.029"/>
+  <testcase name="validateForStudentExamGeneration_tooFewPointsInExercisesGroups_shouldThrowException()" classname="de.tum.cit.aet.artemis.exam.service.ExamServiceTest" time="0.034"/>
+  <system-out><![CDATA[
+Starting logs for ExamServiceTest
+
+  Starting logs for ExamServiceTest > validateForStudentExamGeneration_tooManyPointsInMandatoryExercises_shouldThrowException()
+    23:45:52.423 | 374 ool-1-worker-138 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExamServiceTest#validateForStudentExamGeneration_tooManyPointsInMandatoryExercises_shouldThrowException'
+    23:45:52.425 | 374 ool-1-worker-138 | WARN  | .c.a.a.c.s.TitleCacheEvictionService : Unable to clear title of exercises from exercise group 297: Exercises not initialized
+
+  Starting logs for ExamServiceTest > testSetExamProperties()
+    23:45:52.458 | 374 ool-1-worker-138 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExamServiceTest#testSetExamProperties'
+    23:45:52.469 | 374 ool-1-worker-138 | WARN  | .c.a.a.c.s.TitleCacheEvictionService : Unable to clear title of exercises from exercise group 298: Exercises not initialized
+
+  Starting logs for ExamServiceTest > validateForStudentExamGeneration_differentPointsInExerciseGroup_shouldThrowException()
+    23:45:52.513 | 374 ool-1-worker-138 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExamServiceTest#validateForStudentExamGeneration_differentPointsInExerciseGroup_shouldThrowException'
+    23:45:52.515 | 374 ool-1-worker-138 | WARN  | .c.a.a.c.s.TitleCacheEvictionService : Unable to clear title of exercises from exercise group 299: Exercises not initialized
+
+  Starting logs for ExamServiceTest > getChecklistStatsEmpty()
+    23:45:52.545 | 374 ool-1-worker-138 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExamServiceTest#getChecklistStatsEmpty'
+    23:45:52.545 | 374 ool-1-worker-138 | INFO  | d.t.c.a.a.exam.service.ExamService   : getStatsForChecklist invoked for exam 349
+    23:45:52.546 | 374 ool-1-worker-138 | DEBUG | d.t.c.a.a.exam.service.ExamService   : StatsTimeLog: number of generated student exams done in 819µs
+    23:45:52.547 | 374 ool-1-worker-138 | DEBUG | d.t.c.a.a.exam.service.ExamService   : StatsTimeLog: number of test runs done in 1.24ms
+    23:45:52.547 | 374 ool-1-worker-138 | DEBUG | d.t.c.a.a.exam.service.ExamService   : StatsTimeLog: number of student exams started done in 1.70ms
+    23:45:52.547 | 374 ool-1-worker-138 | DEBUG | d.t.c.a.a.exam.service.ExamService   : StatsTimeLog: number of student exams submitted done in 2.11ms
+    23:45:52.549 | 374 ool-1-worker-138 | WARN  | .c.a.a.c.s.TitleCacheEvictionService : Unable to clear title of exercises from exercise group 300: Exercises not initialized
+
+  Starting logs for ExamServiceTest > testForNullIndexColumnError()
+    23:45:52.579 | 374 ool-1-worker-138 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExamServiceTest#testForNullIndexColumnError'
+    23:45:52.582 | 374 ool-1-worker-138 | WARN  | .c.a.a.c.s.TitleCacheEvictionService : Unable to clear title of exercises from exercise group 301: Exercises not initialized
+
+  Starting logs for ExamServiceTest > validateForStudentExamGeneration_differentCalculationTypesInExerciseGroup_shouldThrowException()
+    23:45:52.615 | 374 ool-1-worker-138 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExamServiceTest#validateForStudentExamGeneration_differentCalculationTypesInExerciseGroup_shouldThrowException'
+    23:45:52.617 | 374 ool-1-worker-138 | WARN  | .c.a.a.c.s.TitleCacheEvictionService : Unable to clear title of exercises from exercise group 302: Exercises not initialized
+
+  Starting logs for ExamServiceTest > testCanGetCurrentAndUpcomingExams()
+    23:45:52.646 | 374 ool-1-worker-138 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExamServiceTest#testCanGetCurrentAndUpcomingExams'
+    23:45:52.664 | 374 ool-1-worker-138 | WARN  | .c.a.a.c.s.TitleCacheEvictionService : Unable to clear title of exercises from exercise group 303: Exercises not initialized
+
+  Starting logs for ExamServiceTest > validateForStudentExamGeneration_differentBonusInExerciseGroup_shouldThrowException()
+    23:45:52.694 | 374 ool-1-worker-138 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExamServiceTest#validateForStudentExamGeneration_differentBonusInExerciseGroup_shouldThrowException'
+    23:45:52.695 | 374 ool-1-worker-138 | WARN  | .c.a.a.c.s.TitleCacheEvictionService : Unable to clear title of exercises from exercise group 304: Exercises not initialized
+
+  Starting logs for ExamServiceTest > validateForStudentExamGeneration_tooFewPointsInExercisesGroups_shouldThrowException()
+    23:45:52.729 | 374 ool-1-worker-138 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExamServiceTest#validateForStudentExamGeneration_tooFewPointsInExercisesGroups_shouldThrowException'
+    23:45:52.731 | 374 ool-1-worker-138 | WARN  | .c.a.a.c.s.TitleCacheEvictionService : Unable to clear title of exercises from exercise group 305: Exercises not initialized
+
+Finished logs for ExamServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

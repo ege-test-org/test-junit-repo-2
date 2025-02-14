@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.assessment.architecture.AssessmentCodeStyleArchitectureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:14" hostname="fv-az1721-502" time="0.091">
+  <properties/>
+  <testcase name="testDTOImplementations()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentCodeStyleArchitectureTest" time="0.091"/>
+  <system-out><![CDATA[23:38:42,612 |-WARN in ch.qos.logback.core.joran.action.ConversionRuleAction - [converterClass] attribute is deprecated and replaced by [class]. See element [conversionRule] near line 7
+23:38:42,617 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@2a5ca9c - Adding [jar:file:/home/runner/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/3.4.2/b2514201ba6b838bd638a51619515501c5baefea/spring-boot-3.4.2.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+23:38:42,617 |-INFO in ConfigurationWatchList(mainURL=file:/home/runner/work/Artemis/Artemis/build/resources/test/logback.xml, fileWatchList={/home/runner/work/Artemis/Artemis/build/resources/test/logback.xml}, urlWatchList=[}) - Cannot watch [jar:file:/home/runner/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/3.4.2/b2514201ba6b838bd638a51619515501c5baefea/spring-boot-3.4.2.jar!/org/springframework/boot/logging/logback/defaults.xml] as its protocol is not one of file, http or https.
+23:38:42,623 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word applicationName with class [org.springframework.boot.logging.logback.ApplicationNameConverter]
+23:38:42,623 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+23:38:42,623 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word correlationId with class [org.springframework.boot.logging.logback.CorrelationIdConverter]
+23:38:42,623 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word esb with class [org.springframework.boot.logging.logback.EnclosedInSquareBracketsConverter]
+23:38:42,623 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+23:38:42,623 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+23:38:42,623 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5ca4c094 - value "%clr(%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX}){faint} %clr(%5p){} %clr(2037){magenta} %clr(--- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%15.15t] ){faint}%clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx" substituted for "${CONSOLE_LOG_PATTERN:-%clr(%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd'T'HH:mm:ss.SSSXXX}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}){} %clr(${PID:-}){magenta} %clr(--- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%15.15t] ${LOG_CORRELATION_PATTERN:-}){faint}%clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"
+23:38:42,623 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5ca4c094 - value "UTF-8" substituted for "${CONSOLE_LOG_CHARSET:-${file.encoding:-UTF-8}}"
+23:38:42,623 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5ca4c094 - value "TRACE" substituted for "${CONSOLE_LOG_THRESHOLD:-TRACE}"
+23:38:42,623 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5ca4c094 - value "" substituted for "${CONSOLE_LOG_STRUCTURED_FORMAT:-}"
+23:38:42,623 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5ca4c094 - value "%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX} %5p 2037 --- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%t] %-40.40logger{39} : %m%n%wEx" substituted for "${FILE_LOG_PATTERN:-%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd'T'HH:mm:ss.SSSXXX}} ${LOG_LEVEL_PATTERN:-%5p} ${PID:-} --- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%t] ${LOG_CORRELATION_PATTERN:-}%-40.40logger{39} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"
+23:38:42,623 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5ca4c094 - value "UTF-8" substituted for "${FILE_LOG_CHARSET:-${file.encoding:-UTF-8}}"
+23:38:42,623 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5ca4c094 - value "TRACE" substituted for "${FILE_LOG_THRESHOLD:-TRACE}"
+23:38:42,623 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@5ca4c094 - value "" substituted for "${FILE_LOG_STRUCTURED_FORMAT:-}"
+23:38:42,623 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word threadId with class [de.tum.cit.aet.artemis.core.util.junit_parallel_logging.ThreadIdConverter]
+23:38:42,628 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1739576322628)
+23:38:42,628 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - No 'scanPeriod' specified. Defaulting to 1 minutes
+23:38:42,628 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [ConfigurationWatchList(mainURL=file:/home/runner/work/Artemis/Artemis/build/resources/test/logback.xml, fileWatchList={/home/runner/work/Artemis/Artemis/build/resources/test/logback.xml}, urlWatchList=[})] 
+23:38:42,628 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 1 minutes
+23:38:42,629 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+23:38:42,629 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating ERROR level on Logger[org.apache.catalina.startup.DigesterFactory] onto the JUL framework
+23:38:42,630 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+23:38:42,630 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating ERROR level on Logger[org.apache.catalina.util.LifecycleBase] onto the JUL framework
+23:38:42,630 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+23:38:42,630 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[org.apache.coyote.http11.Http11NioProtocol] onto the JUL framework
+23:38:42,630 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+23:38:42,630 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[org.apache.sshd.common.util.SecurityUtils] onto the JUL framework
+23:38:42,630 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+23:38:42,630 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[org.apache.tomcat.util.net.NioSelectorPool] onto the JUL framework
+23:38:42,630 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+23:38:42,630 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating ERROR level on Logger[org.eclipse.jetty.util.component.AbstractLifeCycle] onto the JUL framework
+23:38:42,630 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+23:38:42,630 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[org.hibernate.validator.internal.util.Version] onto the JUL framework
+23:38:42,630 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate.endpoint.jmx] to WARN
+23:38:42,630 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[org.springframework.boot.actuate.endpoint.jmx] onto the JUL framework
+23:38:42,630 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ParallelConsoleAppender]
+23:38:42,630 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [de.tum.cit.aet.artemis.core.util.junit_parallel_logging.ParallelConsoleAppender]
+23:38:42,630 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+23:38:42,632 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [de.tum.cit.aet.artemis] to INFO
+23:38:42,633 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating INFO level on Logger[de.tum.cit.aet.artemis] onto the JUL framework
+23:38:42,633 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [tech.jhipster] to WARN
+23:38:42,633 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[tech.jhipster] onto the JUL framework
+23:38:42,633 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [javax.activation] to WARN
+23:38:42,633 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[javax.activation] onto the JUL framework
+23:38:42,633 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [javax.mail] to WARN
+23:38:42,633 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[javax.mail] onto the JUL framework
+23:38:42,633 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [javax.xml.bind] to WARN
+23:38:42,633 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[javax.xml.bind] onto the JUL framework
+23:38:42,634 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [ch.qos.logback] to WARN
+23:38:42,634 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[ch.qos.logback] onto the JUL framework
+23:38:42,634 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.codahale.metrics] to WARN
+23:38:42,634 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[com.codahale.metrics] onto the JUL framework
+23:38:42,634 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.ryantenney] to WARN
+23:38:42,634 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[com.ryantenney] onto the JUL framework
+23:38:42,634 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.sun] to WARN
+23:38:42,634 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[com.sun] onto the JUL framework
+23:38:42,634 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.zaxxer] to WARN
+23:38:42,634 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[com.zaxxer] onto the JUL framework
+23:38:42,634 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.github.dockerjava] to WARN
+23:38:42,634 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[com.github.dockerjava] onto the JUL framework
+23:38:42,634 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache] to WARN
+23:38:42,634 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[org.apache] onto the JUL framework
+23:38:42,634 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to OFF
+23:38:42,634 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating OFF level on Logger[org.apache.catalina.startup.DigesterFactory] onto the JUL framework
+23:38:42,634 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.bson] to WARN
+23:38:42,634 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[org.bson] onto the JUL framework
+23:38:42,634 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.validator] to WARN
+23:38:42,634 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[org.hibernate.validator] onto the JUL framework
+23:38:42,634 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to WARN
+23:38:42,634 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[org.hibernate] onto the JUL framework
+23:38:42,634 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.ejb.HibernatePersistence] to OFF
+23:38:42,634 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating OFF level on Logger[org.hibernate.ejb.HibernatePersistence] onto the JUL framework
+23:38:42,634 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to WARN
+23:38:42,634 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[org.springframework] onto the JUL framework
+23:38:42,635 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.web] to WARN
+23:38:42,635 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[org.springframework.web] onto the JUL framework
+23:38:42,635 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.security] to WARN
+23:38:42,635 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[org.springframework.security] onto the JUL framework
+23:38:42,635 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.cache] to WARN
+23:38:42,635 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[org.springframework.cache] onto the JUL framework
+23:38:42,635 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.thymeleaf] to WARN
+23:38:42,635 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[org.thymeleaf] onto the JUL framework
+23:38:42,635 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.xnio] to WARN
+23:38:42,635 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[org.xnio] onto the JUL framework
+23:38:42,635 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [springfox] to WARN
+23:38:42,635 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[springfox] onto the JUL framework
+23:38:42,635 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [sun.rmi] to WARN
+23:38:42,635 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[sun.rmi] onto the JUL framework
+23:38:42,635 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [liquibase] to WARN
+23:38:42,635 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[liquibase] onto the JUL framework
+23:38:42,635 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [LiquibaseSchemaResolver] to INFO
+23:38:42,635 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating INFO level on Logger[LiquibaseSchemaResolver] onto the JUL framework
+23:38:42,635 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [sun.rmi.transport] to WARN
+23:38:42,635 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[sun.rmi.transport] onto the JUL framework
+23:38:42,635 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to WARN
+23:38:42,635 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@4031b14a - Propagating WARN level on Logger[ROOT] onto the JUL framework
+23:38:42,635 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ParallelConsoleAppender] to Logger[ROOT]
+23:38:42,635 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@63c22eee - End of configuration.
+23:38:42,636 |-INFO in org.springframework.boot.logging.logback.SpringBootJoranConfigurator@b6cc07c - Registering current configuration as safe fallback point
+
+
+   █████╗ ██████╗ ████████╗███████╗███╗   ███╗██╗███████╗
+  ██╔══██╗██╔══██╗╚══██╔══╝██╔════╝████╗ ████║██║██╔════╝
+  ███████║██████╔╝   ██║   █████╗  ██╔████╔██║██║███████╗
+  ██╔══██║██╔══██╗   ██║   ██╔══╝  ██║╚██╔╝██║██║╚════██║
+  ██║  ██║██║  ██║   ██║   ███████╗██║ ╚═╝ ██║██║███████║
+  ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝     ╚═╝╚═╝╚══════╝
+
+:: Interactive Learning with Individual Feedback ::
+
+:: Powered by Spring Boot 3.4.2 ::
+
+
+Starting logs for AssessmentCodeStyleArchitectureTest
+
+  Starting logs for AssessmentCodeStyleArchitectureTest > testDTOImplementations()
+    23:39:14.513 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTO classes: 3
+    23:39:14.514 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTO classes: [Class <de.tum.cit.aet.artemis.assessment.dto.FeedbackAffectedStudentDTO> is not annotated with @JsonInclude in (FeedbackAffectedStudentDTO.java:0), Class <de.tum.cit.aet.artemis.assessment.dto.FeedbackPageableDTO> is no record in (FeedbackPageableDTO.java:0), Class <de.tum.cit.aet.artemis.assessment.dto.FeedbackPageableDTO> is not annotated with @JsonInclude in (FeedbackPageableDTO.java:0)]
+    23:39:14.546 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTOs that do not end with "DTO": 1
+    23:39:14.547 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTOs that do not end with "DTO": [Class <de.tum.cit.aet.artemis.assessment.dto.ComplaintAction> does not have simple name ending with 'DTO' in (ComplaintAction.java:0)]
+
+Finished logs for AssessmentCodeStyleArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

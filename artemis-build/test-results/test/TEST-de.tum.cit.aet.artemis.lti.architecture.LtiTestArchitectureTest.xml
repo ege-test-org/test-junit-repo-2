@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lti.architecture.LtiTestArchitectureTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:01" hostname="fv-az1721-502" time="0.009">
+  <properties/>
+  <testcase name="integrationTestsShouldExtendAbstractModuleIntegrationTest()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiTestArchitectureTest" time="0.001"/>
+  <testcase name="integrationTestsShouldNotAutowireMembers()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiTestArchitectureTest" time="0.008"/>
+  <system-out><![CDATA[
+Starting logs for LtiTestArchitectureTest
+
+  Starting logs for LtiTestArchitectureTest > integrationTestsShouldExtendAbstractModuleIntegrationTest()
+
+  Starting logs for LtiTestArchitectureTest > integrationTestsShouldNotAutowireMembers()
+
+Finished logs for LtiTestArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

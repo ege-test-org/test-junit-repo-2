@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.service.FeatureToggleServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:38" hostname="fv-az1721-502" time="0.139">
+  <properties/>
+  <testcase name="testSetFeaturesDisabled()" classname="de.tum.cit.aet.artemis.core.service.FeatureToggleServiceTest" time="0.041"/>
+  <testcase name="testShouldNotDisableTwice()" classname="de.tum.cit.aet.artemis.core.service.FeatureToggleServiceTest" time="0.03"/>
+  <testcase name="testEnableDisableFeature()" classname="de.tum.cit.aet.artemis.core.service.FeatureToggleServiceTest" time="0.025"/>
+  <testcase name="testShouldNotEnableTwice()" classname="de.tum.cit.aet.artemis.core.service.FeatureToggleServiceTest" time="0.018"/>
+  <testcase name="testSetFeaturesEnabled()" classname="de.tum.cit.aet.artemis.core.service.FeatureToggleServiceTest" time="0.011"/>
+  <system-out><![CDATA[
+Starting logs for FeatureToggleServiceTest
+
+  Starting logs for FeatureToggleServiceTest > testSetFeaturesDisabled()
+    23:45:38.979 | 349 ool-1-worker-113 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FeatureToggleServiceTest#testSetFeaturesDisabled'
+
+  Starting logs for FeatureToggleServiceTest > testShouldNotDisableTwice()
+    23:45:39.028 | 349 ool-1-worker-113 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FeatureToggleServiceTest#testShouldNotDisableTwice'
+
+  Starting logs for FeatureToggleServiceTest > testEnableDisableFeature()
+    23:45:39.058 | 349 ool-1-worker-113 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FeatureToggleServiceTest#testEnableDisableFeature'
+
+  Starting logs for FeatureToggleServiceTest > testShouldNotEnableTwice()
+    23:45:39.087 | 349 ool-1-worker-113 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FeatureToggleServiceTest#testShouldNotEnableTwice'
+
+  Starting logs for FeatureToggleServiceTest > testSetFeaturesEnabled()
+    23:45:39.099 | 349 ool-1-worker-113 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FeatureToggleServiceTest#testSetFeaturesEnabled'
+
+Finished logs for FeatureToggleServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

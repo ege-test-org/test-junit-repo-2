@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.security.OAuth2JWKSServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:36" hostname="fv-az1721-502" time="9.941">
+  <properties/>
+  <testcase name="updateKey()" classname="de.tum.cit.aet.artemis.core.security.OAuth2JWKSServiceTest" time="6.368"/>
+  <testcase name="getJWK()" classname="de.tum.cit.aet.artemis.core.security.OAuth2JWKSServiceTest" time="1.078"/>
+  <testcase name="updateKeyMissingClientRegistration()" classname="de.tum.cit.aet.artemis.core.security.OAuth2JWKSServiceTest" time="2.489"/>
+  <system-out><![CDATA[
+Starting logs for OAuth2JWKSServiceTest
+
+  Starting logs for OAuth2JWKSServiceTest > updateKey()
+
+  Starting logs for OAuth2JWKSServiceTest > getJWK()
+
+  Starting logs for OAuth2JWKSServiceTest > updateKeyMissingClientRegistration()
+
+Finished logs for OAuth2JWKSServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

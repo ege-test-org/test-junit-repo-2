@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.MetricsIntegrationTest$LectureMetrics" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:26" hostname="fv-az1721-502" time="0.432">
+  <properties/>
+  <testcase name="shouldReturnLectureUnitInformation()" classname="de.tum.cit.aet.artemis.core.MetricsIntegrationTest$LectureMetrics" time="0.432"/>
+  <system-out><![CDATA[
+Starting logs for LectureMetrics
+
+  Starting logs for LectureMetrics > shouldReturnLectureUnitInformation()
+    23:44:26.671 | 188 Pool-1-worker-81 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:44:26.676 | 188 Pool-1-worker-81 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:44:26.679 | 188 Pool-1-worker-81 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:44:26.682 | 188 Pool-1-worker-81 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:44:26.685 | 188 Pool-1-worker-81 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:44:26.687 | 188 Pool-1-worker-81 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:44:26.688 | 188 Pool-1-worker-81 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:44:26.688 | 188 Pool-1-worker-81 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:44:26.693 | 188 Pool-1-worker-81 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:44:26.702 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1551 and participant 264 (result to be deleted: null)
+    23:44:26.702 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1551 and participant 264 at 2025-02-14T23:44:26.802866232Z[Etc/UTC].
+    23:44:26.703 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1552 and participant 264 (result to be deleted: null)
+    23:44:26.703 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1552 and participant 264 at 2025-02-14T23:44:26.803468175Z[Etc/UTC].
+    23:44:26.703 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1553 and participant 264 (result to be deleted: null)
+    23:44:26.704 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1553 and participant 264 at 2025-02-14T23:44:26.804000919Z[Etc/UTC].
+    23:44:26.704 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1555 and participant 264 (result to be deleted: null)
+    23:44:26.704 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1555 and participant 264 at 2025-02-14T23:44:26.804540935Z[Etc/UTC].
+    23:44:26.705 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1554 and participant 264 (result to be deleted: null)
+    23:44:26.705 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1554 and participant 264 at 2025-02-14T23:44:26.805055635Z[Etc/UTC].
+    23:44:26.743 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1551 and participant 264 (result to be deleted: null)
+    23:44:26.743 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1551 and participant 264 at 2025-02-14T23:44:26.843155985Z[Etc/UTC].
+    23:44:26.752 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1552 and participant 264 (result to be deleted: null)
+    23:44:26.752 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1552 and participant 264 at 2025-02-14T23:44:26.852599736Z[Etc/UTC].
+    23:44:26.760 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1553 and participant 264 (result to be deleted: null)
+    23:44:26.760 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1553 and participant 264 at 2025-02-14T23:44:26.860909522Z[Etc/UTC].
+    23:44:26.770 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1555 and participant 264 (result to be deleted: null)
+    23:44:26.770 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1555 and participant 264 at 2025-02-14T23:44:26.870530072Z[Etc/UTC].
+    23:44:26.780 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1554 and participant 264 (result to be deleted: null)
+    23:44:26.780 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1554 and participant 264 at 2025-02-14T23:44:26.880432538Z[Etc/UTC].
+    23:44:26.897 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1556 and participant 264 (result to be deleted: null)
+    23:44:26.897 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1556 and participant 264 at 2025-02-14T23:44:26.997679633Z[Etc/UTC].
+    23:44:26.898 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1557 and participant 264 (result to be deleted: null)
+    23:44:26.898 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1557 and participant 264 at 2025-02-14T23:44:26.998070332Z[Etc/UTC].
+    23:44:26.898 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1558 and participant 264 (result to be deleted: null)
+    23:44:26.898 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1558 and participant 264 at 2025-02-14T23:44:26.998456542Z[Etc/UTC].
+    23:44:26.898 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1560 and participant 264 (result to be deleted: null)
+    23:44:26.898 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1560 and participant 264 at 2025-02-14T23:44:26.998827694Z[Etc/UTC].
+    23:44:26.899 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1559 and participant 264 (result to be deleted: null)
+    23:44:26.899 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1559 and participant 264 at 2025-02-14T23:44:26.999215828Z[Etc/UTC].
+    23:44:26.949 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1556 and participant 264 (result to be deleted: null)
+    23:44:26.949 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1556 and participant 264 at 2025-02-14T23:44:27.049779216Z[Etc/UTC].
+    23:44:26.952 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1557 and participant 264 (result to be deleted: null)
+    23:44:26.952 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1557 and participant 264 at 2025-02-14T23:44:27.052952574Z[Etc/UTC].
+    23:44:26.957 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1558 and participant 264 (result to be deleted: null)
+    23:44:26.957 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1558 and participant 264 at 2025-02-14T23:44:27.057950153Z[Etc/UTC].
+    23:44:26.963 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1560 and participant 264 (result to be deleted: null)
+    23:44:26.963 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1560 and participant 264 at 2025-02-14T23:44:27.063654771Z[Etc/UTC].
+    23:44:26.972 | 188 Pool-1-worker-81 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1559 and participant 264 (result to be deleted: null)
+    23:44:26.972 | 188 Pool-1-worker-81 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1559 and participant 264 at 2025-02-14T23:44:27.072562171Z[Etc/UTC].
+    23:44:27.044 | 188 Pool-1-worker-81 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LectureMetrics#shouldReturnLectureUnitInformation'
+    23:44:27.054 | 188 Pool-1-worker-81 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/metrics/course/1259/student
+    23:44:27.056 | 188 Pool-1-worker-81 | DEBUG | d.t.c.a.a.atlas.web.MetricsResource  : REST request to get the metrics for the user with id 264 in the course with id 1259
+
+Finished logs for LectureMetrics
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

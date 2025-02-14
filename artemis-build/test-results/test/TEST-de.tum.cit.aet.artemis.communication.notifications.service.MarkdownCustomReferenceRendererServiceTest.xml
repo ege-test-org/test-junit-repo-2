@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.notifications.service.MarkdownCustomReferenceRendererServiceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:31" hostname="fv-az1721-502" time="0.025">
+  <properties/>
+  <testcase name="shouldRenderUserReferenceWhenValidUserTagProvided()" classname="de.tum.cit.aet.artemis.communication.notifications.service.MarkdownCustomReferenceRendererServiceTest" time="0.006"/>
+  <testcase name="shouldReturnOriginalContentWhenNoValidTagsFound()" classname="de.tum.cit.aet.artemis.communication.notifications.service.MarkdownCustomReferenceRendererServiceTest" time="0.0"/>
+  <testcase name="shouldHandleEmptyContentWithoutError()" classname="de.tum.cit.aet.artemis.communication.notifications.service.MarkdownCustomReferenceRendererServiceTest" time="0.0"/>
+  <testcase name="shouldHandleInvalidTagsGracefully()" classname="de.tum.cit.aet.artemis.communication.notifications.service.MarkdownCustomReferenceRendererServiceTest" time="0.001"/>
+  <testcase name="shouldRenderMultipleReferencesInSingleContent()" classname="de.tum.cit.aet.artemis.communication.notifications.service.MarkdownCustomReferenceRendererServiceTest" time="0.0"/>
+  <testcase name="shouldRenderChannelReferenceWhenValidChannelTagProvided()" classname="de.tum.cit.aet.artemis.communication.notifications.service.MarkdownCustomReferenceRendererServiceTest" time="0.0"/>
+  <testcase name="shouldRenderReferenceWithAdditionalTextBeforeAndAfter()" classname="de.tum.cit.aet.artemis.communication.notifications.service.MarkdownCustomReferenceRendererServiceTest" time="0.0"/>
+  <system-out><![CDATA[
+Starting logs for MarkdownCustomReferenceRendererServiceTest
+
+  Starting logs for MarkdownCustomReferenceRendererServiceTest > shouldRenderUserReferenceWhenValidUserTagProvided()
+
+  Starting logs for MarkdownCustomReferenceRendererServiceTest > shouldReturnOriginalContentWhenNoValidTagsFound()
+
+  Starting logs for MarkdownCustomReferenceRendererServiceTest > shouldHandleEmptyContentWithoutError()
+
+  Starting logs for MarkdownCustomReferenceRendererServiceTest > shouldHandleInvalidTagsGracefully()
+
+  Starting logs for MarkdownCustomReferenceRendererServiceTest > shouldRenderMultipleReferencesInSingleContent()
+
+  Starting logs for MarkdownCustomReferenceRendererServiceTest > shouldRenderChannelReferenceWhenValidChannelTagProvided()
+
+  Starting logs for MarkdownCustomReferenceRendererServiceTest > shouldRenderReferenceWithAdditionalTextBeforeAndAfter()
+
+Finished logs for MarkdownCustomReferenceRendererServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

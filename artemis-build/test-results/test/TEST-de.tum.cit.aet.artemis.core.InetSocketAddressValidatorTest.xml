@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.InetSocketAddressValidatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:34" hostname="fv-az1721-502" time="0.314">
+  <properties/>
+  <testcase name="shouldDenyIncorrectAddress()" classname="de.tum.cit.aet.artemis.core.InetSocketAddressValidatorTest" time="0.01"/>
+  <testcase name="shouldAllowCorrectAddress()" classname="de.tum.cit.aet.artemis.core.InetSocketAddressValidatorTest" time="0.303"/>
+  <system-out><![CDATA[
+Starting logs for InetSocketAddressValidatorTest
+
+  Starting logs for InetSocketAddressValidatorTest > shouldDenyIncorrectAddress()
+
+  Starting logs for InetSocketAddressValidatorTest > shouldAllowCorrectAddress()
+
+Finished logs for InetSocketAddressValidatorTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

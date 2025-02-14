@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.service.TelemetryServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:40" hostname="fv-az1721-502" time="0.716">
+  <properties/>
+  <testcase name="testSendTelemetry_TelemetryDisabled()" classname="de.tum.cit.aet.artemis.core.service.TelemetryServiceTest" time="0.353"/>
+  <testcase name="testSendTelemetry_TelemetryEnabled()" classname="de.tum.cit.aet.artemis.core.service.TelemetryServiceTest" time="0.123"/>
+  <testcase name="testSendTelemetry_TelemetryEnabledWithoutPersonalData()" classname="de.tum.cit.aet.artemis.core.service.TelemetryServiceTest" time="0.116"/>
+  <testcase name="testSendTelemetry_ExceptionHandling()" classname="de.tum.cit.aet.artemis.core.service.TelemetryServiceTest" time="0.117"/>
+  <system-out><![CDATA[
+Starting logs for TelemetryServiceTest
+
+  Starting logs for TelemetryServiceTest > testSendTelemetry_TelemetryDisabled()
+    23:45:40.197 | 353 ool-1-worker-117 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TelemetryServiceTest#testSendTelemetry_TelemetryDisabled'
+
+  Starting logs for TelemetryServiceTest > testSendTelemetry_TelemetryEnabled()
+    23:45:40.560 | 353 ool-1-worker-117 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TelemetryServiceTest#testSendTelemetry_TelemetryEnabled'
+    23:45:40.560 | 353 ool-1-worker-117 | INFO  | d.t.c.a.a.c.s.t.TelemetryService     : Start sending telemetry data asynchronously
+    23:45:40.561 | 621 artemis-task-1   | INFO  | .c.a.a.c.s.t.TelemetrySendingService : Sending telemetry to http://localhost:8081
+    23:45:40.562 | 621 artemis-task-1   | INFO  | .c.a.a.c.s.t.TelemetrySendingService : Successfully sent telemetry data. "Success!"
+
+  Starting logs for TelemetryServiceTest > testSendTelemetry_TelemetryEnabledWithoutPersonalData()
+    23:45:40.678 | 353 ool-1-worker-117 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TelemetryServiceTest#testSendTelemetry_TelemetryEnabledWithoutPersonalData'
+    23:45:40.681 | 353 ool-1-worker-117 | INFO  | d.t.c.a.a.c.s.t.TelemetryService     : Start sending telemetry data asynchronously
+    23:45:40.684 | 621 artemis-task-1   | INFO  | .c.a.a.c.s.t.TelemetrySendingService : Sending telemetry to http://localhost:8081
+    23:45:40.685 | 621 artemis-task-1   | INFO  | .c.a.a.c.s.t.TelemetrySendingService : Successfully sent telemetry data. "Success!"
+
+  Starting logs for TelemetryServiceTest > testSendTelemetry_ExceptionHandling()
+    23:45:40.798 | 353 ool-1-worker-117 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TelemetryServiceTest#testSendTelemetry_ExceptionHandling'
+    23:45:40.799 | 353 ool-1-worker-117 | INFO  | d.t.c.a.a.c.s.t.TelemetryService     : Start sending telemetry data asynchronously
+    23:45:40.799 | 621 artemis-task-1   | INFO  | .c.a.a.c.s.t.TelemetrySendingService : Sending telemetry to http://localhost:8081
+    23:45:40.800 | 621 artemis-task-1   | WARN  | .c.a.a.c.s.t.TelemetrySendingService : Exception in sendTelemetry, with dst URI: http://localhost:8081
+org.springframework.web.client.HttpServerErrorException$InternalServerError: 500 Internal Server Error on POST request for "http://localhost:8081/api/telemetry": ""Failure!""
+	at org.springframework.web.client.HttpServerErrorException.create(HttpServerErrorException.java:102)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:189)
+	at org.springframework.web.client.DefaultResponseErrorHandler.handleError(DefaultResponseErrorHandler.java:147)
+	at org.springframework.web.client.RestTemplate.handleResponse(RestTemplate.java:953)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:902)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801)
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:549)
+	at de.tum.cit.aet.artemis.core.service.telemetry.TelemetrySendingService.sendTelemetryByPostRequest(TelemetrySendingService.java:96)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114)
+	at tech.jhipster.async.ExceptionHandlingAsyncTaskExecutor.lambda$createCallable$0(ExceptionHandlingAsyncTaskExecutor.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+Finished logs for TelemetryServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

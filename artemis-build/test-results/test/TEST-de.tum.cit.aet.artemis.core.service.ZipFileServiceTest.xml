@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.service.ZipFileServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:41" hostname="fv-az1721-502" time="0.041">
+  <properties/>
+  <testcase name="testCreateTemporaryZipFileSchedulesFileForDeletion()" classname="de.tum.cit.aet.artemis.core.service.ZipFileServiceTest" time="0.012"/>
+  <testcase name="testExtractZipFileRecursively_unzipsNestedZipCorrectly()" classname="de.tum.cit.aet.artemis.core.service.ZipFileServiceTest" time="0.026"/>
+  <system-out><![CDATA[
+Starting logs for ZipFileServiceTest
+    23:45:41.246 | 566 localvc.event-13 | DEBUG | a.p.s.l.SharedQueueManagementService : Build agent updated: null
+
+  Starting logs for ZipFileServiceTest > testCreateTemporaryZipFileSchedulesFileForDeletion()
+    23:45:41.258 | 356 ool-1-worker-120 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ZipFileServiceTest#testCreateTemporaryZipFileSchedulesFileForDeletion'
+
+  Starting logs for ZipFileServiceTest > testExtractZipFileRecursively_unzipsNestedZipCorrectly()
+    23:45:41.272 | 356 ool-1-worker-120 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ZipFileServiceTest#testExtractZipFileRecursively_unzipsNestedZipCorrectly'
+
+Finished logs for ZipFileServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.exercise.service.PresentationPointsCalculationServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:11" hostname="fv-az1721-502" time="0.308">
+  <properties/>
+  <testcase name="calculateAchievedPresentationPointsWithoutPresentations()" classname="de.tum.cit.aet.artemis.exercise.service.PresentationPointsCalculationServiceTest" time="0.064"/>
+  <testcase name="calculateReachableAndAchievedPresentationPoints()" classname="de.tum.cit.aet.artemis.exercise.service.PresentationPointsCalculationServiceTest" time="0.089"/>
+  <testcase name="calculateReachableAndAchievedPresentationPointsWithoutBaseReachablePoints()" classname="de.tum.cit.aet.artemis.exercise.service.PresentationPointsCalculationServiceTest" time="0.099"/>
+  <testcase name="calculateReachableAndAchievedPresentationPointsWithoutGradingScale()" classname="de.tum.cit.aet.artemis.exercise.service.PresentationPointsCalculationServiceTest" time="0.048"/>
+  <system-out><![CDATA[
+Starting logs for PresentationPointsCalculationServiceTest
+
+  Starting logs for PresentationPointsCalculationServiceTest > calculateAchievedPresentationPointsWithoutPresentations()
+    23:46:11.052 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:11.054 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:46:11.055 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:46:11.056 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:46:11.059 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:46:11.061 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:11.062 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:11.062 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:46:11.063 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:46:11.095 | 389 ool-1-worker-153 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:46:11.098 | 389 ool-1-worker-153 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PresentationPointsCalculationServiceTest#calculateAchievedPresentationPointsWithoutPresentations'
+
+  Starting logs for PresentationPointsCalculationServiceTest > calculateReachableAndAchievedPresentationPoints()
+    23:46:11.116 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:11.121 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:46:11.122 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:46:11.123 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:46:11.125 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:46:11.129 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:46:11.130 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:46:11.130 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:46:11.137 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:46:11.173 | 389 ool-1-worker-153 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:46:11.179 | 389 ool-1-worker-153 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PresentationPointsCalculationServiceTest#calculateReachableAndAchievedPresentationPoints'
+    23:46:11.190 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : Build job completed: BuildJobQueueItem[id=20711739576769873, name=SHORT119ADC0203685047B60A48204B1EA14EB29EIMPORTED-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=2071, courseId=1007, exerciseId=2625, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=short119adc0203685047b60a48204b1ea14eb29eimported-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT119ADC0203685047B60A48204B1EA14EB29EIMPORTED/short119adc0203685047b60a48204b1ea14eb29eimported-exercise.git, testRepositoryUri=http://localhost:49152/git/SHORT119ADC0203685047B60A48204B1EA14EB29EIMPORTED/short119adc0203685047b60a48204b1ea14eb29eimported-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@5990b2c6, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@2bb76496], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:46:09.873880717Z[Etc/UTC], buildStartDate=2025-02-14T23:46:09.877078790Z[Etc/UTC], buildCompletionDate=null, estimatedCompletionDate=2025-02-14T23:46:28.877074652Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+chmod +x ./gradlew
+./gradlew clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=fdf5d18917d97180fa8cd8dbe85fef02e40bdd6d, testCommitHash=fdf5d18917d97180fa8cd8dbe85fef02e40bdd6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_GRADLE, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/test-results/test/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]
+    23:46:11.193 | 567 localvc.event-14 | DEBUG | a.p.s.l.LocalCIQueueWebsocketService : CIBuildJobQueueItem removed from processing jobs: BuildJobQueueItem[id=20711739576769873, name=SHORT119ADC0203685047B60A48204B1EA14EB29EIMPORTED-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=2071, courseId=1007, exerciseId=2625, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=short119adc0203685047b60a48204b1ea14eb29eimported-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT119ADC0203685047B60A48204B1EA14EB29EIMPORTED/short119adc0203685047b60a48204b1ea14eb29eimported-exercise.git, testRepositoryUri=http://localhost:49152/git/SHORT119ADC0203685047B60A48204B1EA14EB29EIMPORTED/short119adc0203685047b60a48204b1ea14eb29eimported-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@6d9b363f, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@55531b5b], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:46:09.873880717Z[Etc/UTC], buildStartDate=2025-02-14T23:46:09.877078790Z[Etc/UTC], buildCompletionDate=null, estimatedCompletionDate=2025-02-14T23:46:28.877074652Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+chmod +x ./gradlew
+./gradlew clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=fdf5d18917d97180fa8cd8dbe85fef02e40bdd6d, testCommitHash=fdf5d18917d97180fa8cd8dbe85fef02e40bdd6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_GRADLE, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/test-results/test/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]
+    23:46:11.193 | 567 localvc.event-14 | DEBUG | s.l.LocalCIWebsocketMessagingService : Sending message on topic /topic/admin/running-jobs: []
+    23:46:11.193 | 567 localvc.event-14 | DEBUG | s.l.LocalCIWebsocketMessagingService : Sending message on topic /topic/courses/1007/running-jobs: []
+
+  Starting logs for PresentationPointsCalculationServiceTest > calculateReachableAndAchievedPresentationPointsWithoutBaseReachablePoints()
+    23:46:11.207 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:46:11.208 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:46:11.217 | 566 localvc.event-13 | INFO  | a.a.b.s.SharedQueueProcessingService : Processing build job: BuildJobQueueItem[id=20721739576769890, name=SHORT119ADC0203685047B60A48204B1EA14EB29EIMPORTED-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=2072, courseId=1007, exerciseId=2625, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=short119adc0203685047b60a48204b1ea14eb29eimported-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT119ADC0203685047B60A48204B1EA14EB29EIMPORTED/short119adc0203685047b60a48204b1ea14eb29eimported-solution.git, testRepositoryUri=http://localhost:49152/git/SHORT119ADC0203685047B60A48204B1EA14EB29EIMPORTED/short119adc0203685047b60a48204b1ea14eb29eimported-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@3a1b8053, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@6ade1944], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:46:09.890822804Z[Etc/UTC], buildStartDate=2025-02-14T23:46:11.208247329Z[Etc/UTC], buildCompletionDate=null, estimatedCompletionDate=2025-02-14T23:46:30.208240637Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+chmod +x ./gradlew
+./gradlew clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=fdf5d18917d97180fa8cd8dbe85fef02e40bdd6d, testCommitHash=fdf5d18917d97180fa8cd8dbe85fef02e40bdd6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_GRADLE, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/test-results/test/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]
+    23:46:11.220 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:11.223 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:46:11.227 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:46:11.229 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:46:11.233 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:46:11.235 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:46:11.239 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:46:11.239 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:46:11.244 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:46:11.291 | 389 ool-1-worker-153 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:46:11.293 | 389 ool-1-worker-153 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PresentationPointsCalculationServiceTest#calculateReachableAndAchievedPresentationPointsWithoutBaseReachablePoints'
+
+  Starting logs for PresentationPointsCalculationServiceTest > calculateReachableAndAchievedPresentationPointsWithoutGradingScale()
+    23:46:11.310 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:11.313 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:46:11.315 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:46:11.316 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:46:11.318 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:46:11.320 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:46:11.321 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:46:11.321 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:46:11.323 | 389 ool-1-worker-153 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:46:11.341 | 389 ool-1-worker-153 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:46:11.343 | 389 ool-1-worker-153 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PresentationPointsCalculationServiceTest#calculateReachableAndAchievedPresentationPointsWithoutGradingScale'
+
+Finished logs for PresentationPointsCalculationServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

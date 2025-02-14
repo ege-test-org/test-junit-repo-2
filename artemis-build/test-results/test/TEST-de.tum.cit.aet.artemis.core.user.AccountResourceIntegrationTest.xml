@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" tests="30" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:41" hostname="fv-az1721-502" time="0.789">
+  <properties/>
+  <testcase name="passwordResetFinishInvalidKey()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.017"/>
+  <testcase name="saveAccountRegistrationDisabled()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.053"/>
+  <testcase name="passwordResetByUsername()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.061"/>
+  <testcase name="getAccountWithoutLoggedInUser()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.011"/>
+  <testcase name="activateAccountNoUser()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.015"/>
+  <testcase name="changeLanguageKeyNotSupported()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.02"/>
+  <testcase name="registerAccount()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.026"/>
+  <testcase name="saveAccountEmailInUse()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.021"/>
+  <testcase name="registerAccountRegistrationConfigEmpty()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.013"/>
+  <testcase name="registerAccountInvalidEmail()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.015"/>
+  <testcase name="saveAccount()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.02"/>
+  <testcase name="isAuthenticated()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.011"/>
+  <testcase name="activateAccountRegistrationDisabled()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.012"/>
+  <testcase name="getAccount()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.017"/>
+  <testcase name="changePasswordExternalUser()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.019"/>
+  <testcase name="changePasswordSamePassword()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.018"/>
+  <testcase name="changeLanguageKey()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.018"/>
+  <testcase name="activateAccount()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.024"/>
+  <testcase name="passwordResetFinishInvalidPassword()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.012"/>
+  <testcase name="passwordResetInitUserExternal()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.014"/>
+  <testcase name="changePassword()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.051"/>
+  <testcase name="passwordResetInvalidEmail()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.042"/>
+  <testcase name="registerAccountTooLongPassword()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.034"/>
+  <testcase name="registerAccountTooShortPassword()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.03"/>
+  <testcase name="passwordResetByEmail()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.047"/>
+  <testcase name="registerAccountEmptyEmailPattern()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.03"/>
+  <testcase name="isAuthenticatedWithoutLoggedInUser()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.026"/>
+  <testcase name="changePasswordInvalidPassword()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.025"/>
+  <testcase name="registerAccountEmptyPassword()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.013"/>
+  <testcase name="registerAccountRegistrationDisabled()" classname="de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest" time="0.014"/>
+  <system-out><![CDATA[
+Starting logs for AccountResourceIntegrationTest
+
+  Starting logs for AccountResourceIntegrationTest > passwordResetFinishInvalidKey()
+    23:45:41.312 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#passwordResetFinishInvalidKey'
+    23:45:41.313 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/account/reset-password/finish
+    23:45:41.315 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Invalid key for password reset
+
+  Starting logs for AccountResourceIntegrationTest > saveAccountRegistrationDisabled()
+    23:45:41.329 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#saveAccountRegistrationDisabled'
+    23:45:41.340 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/account
+    23:45:41.359 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Can't edit user information as user registration is disabled
+
+  Starting logs for AccountResourceIntegrationTest > passwordResetByUsername()
+    23:45:41.391 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#passwordResetByUsername'
+    23:45:41.405 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/account/reset-password/init
+    23:45:41.408 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.service.user.UserService : Save user User{login='authenticateduser', firstName='authenticateduserFirst', lastName='authenticateduserLast', email='authenticateduser@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:45:41.411 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending password reset email to 'authenticateduser@test.de'
+    23:45:41.419 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='authenticateduser', firstName='authenticateduserFirst', lastName='authenticateduserLast', email='authenticateduser@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}' with subject 'Artemis password reset'
+    23:45:41.419 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'Artemis password reset' to User 'User{login='authenticateduser', firstName='authenticateduserFirst', lastName='authenticateduserLast', email='authenticateduser@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}'
+    23:45:41.421 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/account/reset-password/finish
+    23:45:41.421 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.service.user.UserService : Reset user password for reset key OnPeAigj3JB8r8i8hY98
+    23:45:41.429 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.service.user.UserService : Save user User{login='authenticateduser', firstName='authenticateduserFirst', lastName='authenticateduserLast', email='authenticateduser@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+
+  Starting logs for AccountResourceIntegrationTest > getAccountWithoutLoggedInUser()
+    23:45:41.446 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#getAccountWithoutLoggedInUser'
+    23:45:41.447 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/public/account
+
+  Starting logs for AccountResourceIntegrationTest > activateAccountNoUser()
+    23:45:41.458 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#activateAccountNoUser'
+    23:45:41.459 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/public/activate
+    23:45:41.459 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.service.user.UserService : Activating user for activation key 
+    23:45:41.461 | 357 ool-1-worker-121 | ERROR | o.z.p.spring.common.AdviceTraits     : Internal Server Error
+de.tum.cit.aet.artemis.core.exception.InternalServerErrorException: No user was found for this activation key
+	at de.tum.cit.aet.artemis.core.web.open.PublicAccountResource.activateAccount(PublicAccountResource.java:123)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.proceed(AuthorizationManagerBeforeMethodInterceptor.java:268)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.attemptAuthorization(AuthorizationManagerBeforeMethodInterceptor.java:263)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:196)
+	at org.springframework.security.config.annotation.method.configuration.DeferringMethodInterceptor.invoke(DeferringMethodInterceptor.java:44)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:727)
+	at de.tum.cit.aet.artemis.core.web.open.PublicAccountResource$$SpringCGLIB$$0.activateAccount(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:257)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:190)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:986)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:891)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:527)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at org.springframework.test.web.servlet.TestDispatcherServlet.service(TestDispatcherServlet.java:72)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:614)
+	at org.springframework.mock.web.MockFilterChain$ServletFilterProxy.doFilter(MockFilterChain.java:165)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at de.tum.cit.aet.artemis.core.security.filter.ApiVersionFilter.doFilter(ApiVersionFilter.java:55)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at io.sentry.spring.jakarta.SentryUserFilter.doFilterInternal(SentryUserFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:479)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:340)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:82)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:128)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at de.tum.cit.aet.artemis.core.security.filter.SpaWebFilter.doFilterInternal(SpaWebFilter.java:23)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at de.tum.cit.aet.artemis.lti.config.Lti13LaunchFilter.doFilterInternal(Lti13LaunchFilter.java:60)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at de.tum.cit.aet.artemis.core.security.jwt.JWTFilter.doFilter(JWTFilter.java:55)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at de.tum.cit.aet.artemis.core.security.jwt.JWTFilter.doFilter(JWTFilter.java:55)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at uk.ac.ox.ctl.lti13.security.oauth2.client.lti.web.OAuth2AuthorizationRequestRedirectFilter.doFilterInternal(OAuth2AuthorizationRequestRedirectFilter.java:142)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:227)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:240)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:323)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:224)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:137)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:243)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:238)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:114)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at io.sentry.spring.jakarta.tracing.SentryTracingFilter.doFilterInternal(SentryTracingFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at io.sentry.spring.jakarta.SentrySpringFilter.doFilterInternal(SentrySpringFilter.java:76)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.test.web.servlet.setup.MockMvcFilterDecorator.doFilter(MockMvcFilterDecorator.java:162)
+	at org.springframework.mock.web.MockFilterChain.doFilter(MockFilterChain.java:132)
+	at org.springframework.test.web.servlet.MockMvc.perform(MockMvc.java:201)
+	at de.tum.cit.aet.artemis.core.util.RequestUtilService.performMvcRequest(RequestUtilService.java:79)
+	at de.tum.cit.aet.artemis.core.util.RequestUtilService.get(RequestUtilService.java:656)
+	at de.tum.cit.aet.artemis.core.util.RequestUtilService.get(RequestUtilService.java:622)
+	at de.tum.cit.aet.artemis.core.user.AccountResourceIntegrationTest.activateAccountNoUser(AccountResourceIntegrationTest.java:205)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.execSync(ForkJoinPoolHierarchicalTestExecutorService.java:247)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.executeSync(ForkJoinPoolHierarchicalTestExecutorService.java:194)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:166)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+
+  Starting logs for AccountResourceIntegrationTest > changeLanguageKeyNotSupported()
+    23:45:41.475 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#changeLanguageKeyNotSupported'
+    23:45:41.480 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/account/change-language
+    23:45:41.482 | 357 ool-1-worker-121 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Language key loremIpsum not supported!
+    23:45:41.482 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Language key loremIpsum not supported!
+
+  Starting logs for AccountResourceIntegrationTest > registerAccount()
+    23:45:41.496 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#registerAccount'
+    23:45:41.497 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/register
+    23:45:41.505 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.service.user.UserService : Save user User{login='ab123cde', firstName='ab123cdeFirst', lastName='ab123cdeLast', email='ab123cde@test.de', imageUrl='null', activated='false', langKey='en', activationKey='WrGhvwl08mc5wEiF6rNI'}
+    23:45:41.506 | 357 ool-1-worker-121 | INFO  | .c.s.m.InstanceMessageReceiveService : Received remove non-activated user for user 347
+    23:45:41.507 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.service.user.UserService : Created Information for User: User{login='ab123cde', firstName='ab123cdeFirst', lastName='ab123cdeLast', email='ab123cde@test.de', imageUrl='null', activated='false', langKey='en', activationKey='WrGhvwl08mc5wEiF6rNI'}
+    23:45:41.507 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending activation email to 'ab123cde@test.de'
+    23:45:41.510 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='ab123cde', firstName='ab123cdeFirst', lastName='ab123cdeLast', email='ab123cde@test.de', imageUrl='null', activated='false', langKey='en', activationKey='WrGhvwl08mc5wEiF6rNI'}' with subject 'Artemis account activation'
+    23:45:41.510 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'Artemis account activation' to User 'User{login='ab123cde', firstName='ab123cdeFirst', lastName='ab123cdeLast', email='ab123cde@test.de', imageUrl='null', activated='false', langKey='en', activationKey='WrGhvwl08mc5wEiF6rNI'}'
+
+  Starting logs for AccountResourceIntegrationTest > saveAccountEmailInUse()
+    23:45:41.524 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#saveAccountEmailInUse'
+    23:45:41.530 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/account
+    23:45:41.532 | 357 ool-1-worker-121 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Email is already in use!
+    23:45:41.532 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Email is already in use!
+
+  Starting logs for AccountResourceIntegrationTest > registerAccountRegistrationConfigEmpty()
+    23:45:41.547 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#registerAccountRegistrationConfigEmpty'
+    23:45:41.548 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/register
+    23:45:41.550 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: User Registration is disabled
+
+  Starting logs for AccountResourceIntegrationTest > registerAccountInvalidEmail()
+    23:45:41.562 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#registerAccountInvalidEmail'
+    23:45:41.563 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/register
+    23:45:41.566 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> de.tum.cit.aet.artemis.core.web.open.PublicAccountResource.registerAccount(de.tum.cit.aet.artemis.core.dto.vm.ManagedUserVM) throws java.net.URISyntaxException with 2 errors: [Field error in object 'managedUserVM' on field 'email': rejected value [-]; codes [Email.managedUserVM.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [managedUserVM.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@15ea8558,.*]; default message [must be a well-formed email address]] [Field error in object 'managedUserVM' on field 'email': rejected value [-]; codes [Size.managedUserVM.email,Size.email,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [managedUserVM.email,email]; arguments []; default message [email],100,5]; default message [size must be between 5 and 100]] 
+
+  Starting logs for AccountResourceIntegrationTest > saveAccount()
+    23:45:41.580 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#saveAccount'
+    23:45:41.584 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/account
+    23:45:41.587 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Save user User{login='authenticateduser', firstName='UpdatedFirstName', lastName='authenticateduserLast', email='authenticateduser@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:45:41.588 | 357 ool-1-worker-121 | INFO  | d.t.c.a.a.c.s.u.UserCreationService  : Changed Information for User: User{login='authenticateduser', firstName='UpdatedFirstName', lastName='authenticateduserLast', email='authenticateduser@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+
+  Starting logs for AccountResourceIntegrationTest > isAuthenticated()
+    23:45:41.601 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#isAuthenticated'
+    23:45:41.602 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/public/authenticate
+    23:45:41.602 | 357 ool-1-worker-121 | DEBUG | .t.c.a.a.c.w.o.PublicAccountResource : REST request to check if the current user is authenticated
+
+  Starting logs for AccountResourceIntegrationTest > activateAccountRegistrationDisabled()
+    23:45:41.614 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#activateAccountRegistrationDisabled'
+    23:45:41.614 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/public/activate
+    23:45:41.615 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: User Registration is disabled
+
+  Starting logs for AccountResourceIntegrationTest > getAccount()
+    23:45:41.627 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#getAccount'
+    23:45:41.631 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/public/account
+    23:45:41.632 | 357 ool-1-worker-121 | DEBUG | .t.c.a.a.c.w.o.PublicAccountResource : GET /account authenticateduser took 0ms
+
+  Starting logs for AccountResourceIntegrationTest > changePasswordExternalUser()
+    23:45:41.645 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#changePasswordExternalUser'
+    23:45:41.651 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/account/change-password
+    23:45:41.653 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Only users with internally saved credentials can change their password.
+
+  Starting logs for AccountResourceIntegrationTest > changePasswordSamePassword()
+    23:45:41.665 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#changePasswordSamePassword'
+    23:45:41.669 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/account/change-password
+    23:45:41.671 | 357 ool-1-worker-121 | WARN  | o.s.s.c.bcrypt.BCryptPasswordEncoder : Encoded password does not look like BCrypt
+    23:45:41.672 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Incorrect password
+
+  Starting logs for AccountResourceIntegrationTest > changeLanguageKey()
+    23:45:41.685 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#changeLanguageKey'
+    23:45:41.690 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/account/change-language
+
+  Starting logs for AccountResourceIntegrationTest > activateAccount()
+    23:45:41.704 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#activateAccount'
+    23:45:41.706 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/public/activate
+    23:45:41.706 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.service.user.UserService : Activating user for activation key testActivationKey
+    23:45:41.707 | 357 ool-1-worker-121 | INFO  | .c.s.m.InstanceMessageReceiveService : Received cancel removal of non-activated user for user 349
+    23:45:41.713 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Save user User{login='ab123cdm', firstName='ab123cdmFirst', lastName='ab123cdmLast', email='ab123cdm@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:45:41.713 | 357 ool-1-worker-121 | INFO  | d.t.c.a.a.c.s.u.UserCreationService  : Activated user: User{login='ab123cdm', firstName='ab123cdmFirst', lastName='ab123cdmLast', email='ab123cdm@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+
+  Starting logs for AccountResourceIntegrationTest > passwordResetFinishInvalidPassword()
+    23:45:41.731 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#passwordResetFinishInvalidPassword'
+    23:45:41.732 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/account/reset-password/finish
+    23:45:41.733 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Incorrect password
+
+  Starting logs for AccountResourceIntegrationTest > passwordResetInitUserExternal()
+    23:45:41.744 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#passwordResetInitUserExternal'
+    23:45:41.746 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/account/reset-password/init
+    23:45:41.748 | 357 ool-1-worker-121 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The user is handled externally. The password can't be reset within Artemis.
+    23:45:41.748 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The user is handled externally. The password can't be reset within Artemis.
+
+  Starting logs for AccountResourceIntegrationTest > changePassword()
+    23:45:41.765 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#changePassword'
+    23:45:41.777 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/account/change-password
+    23:45:41.787 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.service.user.UserService : Save user User{login='authenticateduser', firstName='authenticateduserFirst', lastName='authenticateduserLast', email='authenticateduser@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:45:41.788 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.service.user.UserService : Changed password for User: User{login='authenticateduser', firstName='authenticateduserFirst', lastName='authenticateduserLast', email='authenticateduser@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+
+  Starting logs for AccountResourceIntegrationTest > passwordResetInvalidEmail()
+    23:45:41.823 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#passwordResetInvalidEmail'
+    23:45:41.831 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/account/reset-password/init
+    23:45:41.836 | 357 ool-1-worker-121 | WARN  | .t.c.a.a.c.w.o.PublicAccountResource : Password reset requested for non-existing mail or username 'invalidemail'
+
+  Starting logs for AccountResourceIntegrationTest > registerAccountTooLongPassword()
+    23:45:41.872 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#registerAccountTooLongPassword'
+    23:45:41.873 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/register
+    23:45:41.874 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> de.tum.cit.aet.artemis.core.web.open.PublicAccountResource.registerAccount(de.tum.cit.aet.artemis.core.dto.vm.ManagedUserVM) throws java.net.URISyntaxException: [Field error in object 'managedUserVM' on field 'password': rejected value [eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee]; codes [Size.managedUserVM.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [managedUserVM.password,password]; arguments []; default message [password],100,8]; default message [size must be between 8 and 100]] 
+
+  Starting logs for AccountResourceIntegrationTest > registerAccountTooShortPassword()
+    23:45:41.904 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#registerAccountTooShortPassword'
+    23:45:41.904 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/register
+    23:45:41.909 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> de.tum.cit.aet.artemis.core.web.open.PublicAccountResource.registerAccount(de.tum.cit.aet.artemis.core.dto.vm.ManagedUserVM) throws java.net.URISyntaxException: [Field error in object 'managedUserVM' on field 'password': rejected value [eeeeeee]; codes [Size.managedUserVM.password,Size.password,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [managedUserVM.password,password]; arguments []; default message [password],100,8]; default message [size must be between 8 and 100]] 
+
+  Starting logs for AccountResourceIntegrationTest > passwordResetByEmail()
+    23:45:41.938 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#passwordResetByEmail'
+    23:45:41.946 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/account/reset-password/init
+    23:45:41.947 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.service.user.UserService : Save user User{login='authenticateduser', firstName='authenticateduserFirst', lastName='authenticateduserLast', email='authenticateduser@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:45:41.948 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending password reset email to 'authenticateduser@test.de'
+    23:45:41.950 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='authenticateduser', firstName='authenticateduserFirst', lastName='authenticateduserLast', email='authenticateduser@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}' with subject 'Artemis password reset'
+    23:45:41.951 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'Artemis password reset' to User 'User{login='authenticateduser', firstName='authenticateduserFirst', lastName='authenticateduserLast', email='authenticateduser@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}'
+    23:45:41.954 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/account/reset-password/finish
+    23:45:41.954 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.service.user.UserService : Reset user password for reset key 0URaLPavHZfUNAahg6fz
+    23:45:41.957 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.service.user.UserService : Save user User{login='authenticateduser', firstName='authenticateduserFirst', lastName='authenticateduserLast', email='authenticateduser@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+
+  Starting logs for AccountResourceIntegrationTest > registerAccountEmptyEmailPattern()
+    23:45:41.984 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#registerAccountEmptyEmailPattern'
+    23:45:41.989 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/register
+    23:45:41.994 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<java.lang.Void> de.tum.cit.aet.artemis.core.web.open.PublicAccountResource.registerAccount(de.tum.cit.aet.artemis.core.dto.vm.ManagedUserVM) throws java.net.URISyntaxException with 2 errors: [Field error in object 'managedUserVM' on field 'email': rejected value [-]; codes [Email.managedUserVM.email,Email.email,Email.java.lang.String,Email]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [managedUserVM.email,email]; arguments []; default message [email],[Ljakarta.validation.constraints.Pattern$Flag;@15ea8558,.*]; default message [must be a well-formed email address]] [Field error in object 'managedUserVM' on field 'email': rejected value [-]; codes [Size.managedUserVM.email,Size.email,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [managedUserVM.email,email]; arguments []; default message [email],100,5]; default message [size must be between 5 and 100]] 
+
+  Starting logs for AccountResourceIntegrationTest > isAuthenticatedWithoutLoggedInUser()
+    23:45:42.019 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#isAuthenticatedWithoutLoggedInUser'
+    23:45:42.022 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/public/authenticate
+    23:45:42.022 | 357 ool-1-worker-121 | DEBUG | .t.c.a.a.c.w.o.PublicAccountResource : REST request to check if the current user is authenticated
+
+  Starting logs for AccountResourceIntegrationTest > changePasswordInvalidPassword()
+    23:45:42.047 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#changePasswordInvalidPassword'
+    23:45:42.053 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/account/change-password
+    23:45:42.056 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Incorrect password
+
+  Starting logs for AccountResourceIntegrationTest > registerAccountEmptyPassword()
+    23:45:42.070 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#registerAccountEmptyPassword'
+    23:45:42.071 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/register
+    23:45:42.072 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Incorrect password
+
+  Starting logs for AccountResourceIntegrationTest > registerAccountRegistrationDisabled()
+    23:45:42.085 | 357 ool-1-worker-121 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AccountResourceIntegrationTest#registerAccountRegistrationDisabled'
+    23:45:42.087 | 357 ool-1-worker-121 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/register
+    23:45:42.088 | 357 ool-1-worker-121 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: User Registration is disabled
+
+Finished logs for AccountResourceIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

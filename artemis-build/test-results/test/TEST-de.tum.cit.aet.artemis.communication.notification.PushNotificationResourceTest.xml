@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.notification.PushNotificationResourceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:13" hostname="fv-az1721-502" time="0.194">
+  <properties/>
+  <testcase name="testRegister()" classname="de.tum.cit.aet.artemis.communication.notification.PushNotificationResourceTest" time="0.09"/>
+  <testcase name="testUnregister()" classname="de.tum.cit.aet.artemis.communication.notification.PushNotificationResourceTest" time="0.065"/>
+  <testcase name="testUnregisterNonExistentRegistration()" classname="de.tum.cit.aet.artemis.communication.notification.PushNotificationResourceTest" time="0.031"/>
+  <system-out><![CDATA[
+Starting logs for PushNotificationResourceTest
+
+  Starting logs for PushNotificationResourceTest > testRegister()
+    23:44:13.615 | 170 Pool-1-worker-63 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PushNotificationResourceTest#testRegister'
+    23:44:13.620 | 170 Pool-1-worker-63 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/push_notification/register
+
+  Starting logs for PushNotificationResourceTest > testUnregister()
+    23:44:13.710 | 170 Pool-1-worker-63 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PushNotificationResourceTest#testUnregister'
+    23:44:13.711 | 170 Pool-1-worker-63 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/push_notification/register
+    23:44:13.729 | 170 Pool-1-worker-63 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/push_notification/unregister
+
+  Starting logs for PushNotificationResourceTest > testUnregisterNonExistentRegistration()
+    23:44:13.772 | 170 Pool-1-worker-63 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PushNotificationResourceTest#testUnregisterNonExistentRegistration'
+    23:44:13.773 | 170 Pool-1-worker-63 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/push_notification/unregister
+
+Finished logs for PushNotificationResourceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

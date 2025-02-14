@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.notifications.service.MarkdownCustomLinkRendererServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:31" hostname="fv-az1721-502" time="0.065">
+  <properties/>
+  <testcase name="shouldRenderMultipleTagsWhenMultipleTagsAreSupplied()" classname="de.tum.cit.aet.artemis.communication.notifications.service.MarkdownCustomLinkRendererServiceTest" time="0.045"/>
+  <testcase name="shouldReturnEmptyOutputWhenSuppliedWithEmptyInput()" classname="de.tum.cit.aet.artemis.communication.notifications.service.MarkdownCustomLinkRendererServiceTest" time="0.001"/>
+  <testcase name="shouldNotRenderWhenLinkIsOmitted()" classname="de.tum.cit.aet.artemis.communication.notifications.service.MarkdownCustomLinkRendererServiceTest" time="0.001"/>
+  <testcase name="shouldRenderProperlyWhenProgrammingTagIsSupplied()" classname="de.tum.cit.aet.artemis.communication.notifications.service.MarkdownCustomLinkRendererServiceTest" time="0.001"/>
+  <testcase name="shouldNotRenderWhenUnsupportedTagsAreSupplied()" classname="de.tum.cit.aet.artemis.communication.notifications.service.MarkdownCustomLinkRendererServiceTest" time="0.004"/>
+  <system-out><![CDATA[
+Starting logs for MarkdownCustomLinkRendererServiceTest
+
+  Starting logs for MarkdownCustomLinkRendererServiceTest > shouldRenderMultipleTagsWhenMultipleTagsAreSupplied()
+
+  Starting logs for MarkdownCustomLinkRendererServiceTest > shouldReturnEmptyOutputWhenSuppliedWithEmptyInput()
+
+  Starting logs for MarkdownCustomLinkRendererServiceTest > shouldNotRenderWhenLinkIsOmitted()
+
+  Starting logs for MarkdownCustomLinkRendererServiceTest > shouldRenderProperlyWhenProgrammingTagIsSupplied()
+
+  Starting logs for MarkdownCustomLinkRendererServiceTest > shouldNotRenderWhenUnsupportedTagsAreSupplied()
+
+Finished logs for MarkdownCustomLinkRendererServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

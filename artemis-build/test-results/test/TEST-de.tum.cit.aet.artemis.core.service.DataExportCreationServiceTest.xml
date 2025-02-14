@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.service.DataExportCreationServiceTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:27" hostname="fv-az1721-502" time="7.997">
+  <properties/>
+  <testcase name="testDataExportCreationSuccess_containsCorrectExamContent()" classname="de.tum.cit.aet.artemis.core.service.DataExportCreationServiceTest" time="1.207"/>
+  <testcase name="testDataExportSuccess_informsUser()" classname="de.tum.cit.aet.artemis.core.service.DataExportCreationServiceTest" time="0.167"/>
+  <testcase name="testDataExportDoesntLeakResultsIfAssessmentDueDateInTheFuture()" classname="de.tum.cit.aet.artemis.core.service.DataExportCreationServiceTest" time="2.284"/>
+  <testcase name="testDataExportCreationError_handlesErrorAndInformsUserAndAdmin()" classname="de.tum.cit.aet.artemis.core.service.DataExportCreationServiceTest" time="0.239"/>
+  <testcase name="testDataExportContainsDataAboutCourseStudentUnenrolled()" classname="de.tum.cit.aet.artemis.core.service.DataExportCreationServiceTest" time="1.446"/>
+  <testcase name="testDataExportCreationSuccess_containsCorrectCourseContent()" classname="de.tum.cit.aet.artemis.core.service.DataExportCreationServiceTest" time="1.527"/>
+  <testcase name="resultsPublicationDateInTheFuture_noResultsLeaked()" classname="de.tum.cit.aet.artemis.core.service.DataExportCreationServiceTest" time="1.085"/>
+  <system-out><![CDATA[
+Starting logs for DataExportCreationServiceTest
+
+  Starting logs for DataExportCreationServiceTest > testDataExportCreationSuccess_containsCorrectExamContent()
+    23:42:27.276 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:27.287 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 5 tutors...
+    23:42:27.292 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 tutors generated. Generate 0 editors...
+    23:42:27.293 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:27.298 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:27.300 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:42:27.301 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:42:27.301 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database...
+    23:42:27.306 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database. Done
+    23:42:27.506 | 347 ool-1-worker-111 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='DataExportCreationServiceTest#testDataExportCreationSuccess_containsCorrectExamContent'
+    23:42:27.737 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 213 and participant 623 (result to be deleted: null)
+    23:42:27.737 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 213 and participant 623 at 2025-02-14T23:42:27.837604986Z[Etc/UTC].
+    23:42:27.765 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 215 and participant 623 (result to be deleted: null)
+    23:42:27.765 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 215 and participant 623 at 2025-02-14T23:42:27.865497792Z[Etc/UTC].
+    23:42:27.782 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 217 and participant 623 (result to be deleted: null)
+    23:42:27.782 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 217 and participant 623 at 2025-02-14T23:42:27.882806530Z[Etc/UTC].
+    23:42:27.800 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 219 and participant 623 (result to be deleted: null)
+    23:42:27.800 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 219 and participant 623 at 2025-02-14T23:42:27.900890243Z[Etc/UTC].
+    23:42:27.815 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 223 and participant 623 (result to be deleted: null)
+    23:42:27.816 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 223 and participant 623 at 2025-02-14T23:42:27.915978260Z[Etc/UTC].
+    23:42:27.828 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 213 and participant 623 (result to be deleted: null)
+    23:42:27.828 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 213 and participant 623 at 2025-02-14T23:42:27.928519037Z[Etc/UTC].
+    23:42:27.834 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 213 and participant 623 (result to be deleted: null)
+    23:42:27.834 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 213 and participant 623 at 2025-02-14T23:42:27.934748454Z[Etc/UTC].
+    23:42:27.865 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 215 and participant 623 to update participant scores.
+    23:42:27.875 | 347 ool-1-worker-111 | INFO  | .a.a.c.s.e.DataExportCreationService : Creating data export for user dataexportcreationstudent1
+    23:42:27.877 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 14.
+    23:42:27.877 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 215 and participant 623 took 12 ms.
+    23:42:27.882 | 329 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 217 and participant 623 to update participant scores.
+    23:42:27.888 | 329 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 15.
+    23:42:27.888 | 329 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 217 and participant 623 took 6 ms.
+    23:42:27.901 | 326 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 219 and participant 623 to update participant scores.
+    23:42:27.906 | 326 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 16.
+    23:42:27.910 | 326 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 219 and participant 623 took 10 ms.
+    23:42:27.916 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 223 and participant 623 to update participant scores.
+    23:42:27.921 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 17.
+    23:42:27.927 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 223 and participant 623 took 11 ms.
+    23:42:27.929 | 347 ool-1-worker-111 | INFO  | .e.DataExportExerciseCreationService : Cannot include submission for file upload exercise stored at uploads/file-upload-exercises/217/310
+    23:42:27.933 | 347 ool-1-worker-111 | INFO  | c.a.a.m.s.a.ApollonConversionService : Calling Remote Service to convert for model.
+    23:42:27.934 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 213 and participant 623 to update participant scores.
+    23:42:27.946 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 18.
+    23:42:27.947 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 213 and participant 623 took 13 ms.
+    23:42:27.970 | 347 ool-1-worker-111 | INFO  | p.s.ProgrammingExerciseExportService : Request to export the repositories of programming exercise 223 with title 'Programmingbee' of 1 students or teams
+    23:42:27.970 | 347 ool-1-worker-111 | DEBUG | p.s.ProgrammingExerciseExportService : Export repositories for students or teams: dataexportcreationstudent1
+    23:42:27.970 | 347 ool-1-worker-111 | INFO  | p.s.ProgrammingExerciseExportService : export student repositories for programming exercise 223 in parallel
+    23:42:27.971 | 884 pool-87-thread-1 | DEBUG | p.s.ProgrammingExerciseExportService : invoke createZipForRepositoryWithParticipation for participation 436
+    23:42:27.972 | 884 pool-87-thread-1 | DEBUG | d.t.c.a.a.p.service.GitService       : Fetch /tmp/studentRepo9589023244929469074
+    23:42:27.972 | 884 pool-87-thread-1 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:42:28.102 | 884 pool-87-thread-1 | ERROR | d.t.c.a.a.p.service.GitService       : Cannot hard reset the repo /tmp/studentRepo9589023244929469074 to origin/HEAD because it is empty.
+    23:42:28.110 | 884 pool-87-thread-1 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/studentRepo9589023244929469074/.git]
+    23:42:28.110 | 884 pool-87-thread-1 | DEBUG | p.s.ProgrammingExerciseExportService : Create temporary directory for repository /tmp/studentRepo9589023244929469074
+    23:42:28.220 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'DATA_EXPORT_CREATED' notification email to 'dataexportcreationstudent1@test.de'
+    23:42:28.407 |  68 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='dataexportcreationstudent1', firstName='dataexportcreationstudent1First', lastName='dataexportcreationstudent1Last', email='dataexportcreationstudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}' with subject 'Your Artemis data export has been successfully created'
+    23:42:28.407 |  68 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'Your Artemis data export has been successfully created' to User 'User{login='dataexportcreationstudent1', firstName='dataexportcreationstudent1First', lastName='dataexportcreationstudent1Last', email='dataexportcreationstudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}'
+
+  Starting logs for DataExportCreationServiceTest > testDataExportSuccess_informsUser()
+    23:42:28.477 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:28.481 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 5 tutors...
+    23:42:28.490 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 tutors generated. Generate 0 editors...
+    23:42:28.492 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:28.495 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:28.499 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses...
+    23:42:28.501 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses. Done
+    23:42:28.501 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database...
+    23:42:28.523 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database. Done
+    23:42:28.538 | 347 ool-1-worker-111 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='DataExportCreationServiceTest#testDataExportSuccess_informsUser'
+    23:42:28.544 | 347 ool-1-worker-111 | INFO  | .a.a.c.s.e.DataExportCreationService : Creating data export for user dataexportcreationstudent1
+    23:42:28.570 | 347 ool-1-worker-111 | INFO  | .e.DataExportExerciseCreationService : Cannot include submission for file upload exercise stored at uploads/file-upload-exercises/217/310
+    23:42:28.573 | 347 ool-1-worker-111 | INFO  | c.a.a.m.s.a.ApollonConversionService : Calling Remote Service to convert for model.
+    23:42:28.583 | 347 ool-1-worker-111 | INFO  | p.s.ProgrammingExerciseExportService : Request to export the repositories of programming exercise 223 with title 'Programmingbee' of 1 students or teams
+    23:42:28.583 | 347 ool-1-worker-111 | DEBUG | p.s.ProgrammingExerciseExportService : Export repositories for students or teams: dataexportcreationstudent1
+    23:42:28.583 | 347 ool-1-worker-111 | INFO  | p.s.ProgrammingExerciseExportService : export student repositories for programming exercise 223 in parallel
+    23:42:28.583 | 889 ool-102-thread-1 | DEBUG | p.s.ProgrammingExerciseExportService : invoke createZipForRepositoryWithParticipation for participation 436
+    23:42:28.585 | 889 ool-102-thread-1 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from file:/tmp/studentRepo9589023244929469074/EXAMC7D62D4E08019046D808E890BCE2994E7205TE51/examc7d62d4e08019046d808e890bce2994e7205te51-dataexportcreationstudent1.git to repos-download/server-integration-test/1739576548583/1739576548584/examc7d62d4e08019046d808e890bce2994e7205te51-dataexportcreationstudent1.git
+    23:42:28.591 | 889 ool-102-thread-1 | ERROR | d.t.c.a.a.p.service.GitService       : Could not delete directory after failed clone: /home/runner/work/Artemis/Artemis/repos-download/server-integration-test/1739576548583/1739576548584/examc7d62d4e08019046d808e890bce2994e7205te51-dataexportcreationstudent1.git
+    23:42:28.592 | 889 ool-102-thread-1 | ERROR | p.s.ProgrammingExerciseExportService : Failed to create zip for participation id 436 with exercise id 223 because of the following exception 
+de.tum.cit.aet.artemis.core.exception.GitException: org.eclipse.jgit.api.errors.InvalidRemoteException: Invalid remote: origin
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:409)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:368)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:348)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:331)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:272)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:271)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:214)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:213)
+	at de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseExportService.getRepositoryWithParticipation(ProgrammingExerciseExportService.java:715)
+	at de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseExportService.lambda$exportStudentRepositories$5(ProgrammingExerciseExportService.java:622)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.eclipse.jgit.api.errors.InvalidRemoteException: Invalid remote: origin
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:246)
+	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:319)
+	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:189)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:400)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:368)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:348)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:348)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:331)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:331)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:272)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:271)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:214)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	... 7 common frames omitted
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: file:///tmp/studentRepo9589023244929469074/EXAMC7D62D4E08019046D808E890BCE2994E7205TE51/examc7d62d4e08019046d808e890bce2994e7205te51-dataexportcreationstudent1.git: not found.
+	at org.eclipse.jgit.transport.TransportLocal$1.open(TransportLocal.java:100)
+	at org.eclipse.jgit.transport.TransportBundleFile$1.open(TransportBundleFile.java:74)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:525)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:400)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:279)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:247)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:217)
+	... 88 common frames omitted
+    23:42:28.627 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/exerciseLocalRepo8950973591205925417/.git]
+    23:42:28.627 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/exerciseOriginRepo13794386848067902415]
+    23:42:28.627 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/testLocalRepo14406288704211491719/.git]
+    23:42:28.627 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/testOriginRepo16690338126169162050]
+    23:42:28.627 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/solutionLocalRepo5685548740188642547/.git]
+    23:42:28.627 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/solutionOriginRepo16391981105989969429]
+    23:42:28.627 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/sourceExerciseLocalRepo12850743459633592210/.git]
+    23:42:28.627 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/sourceExerciseOriginRepo17386592904131527534]
+    23:42:28.627 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/sourceTestLocalRepo15811388603113575799/.git]
+    23:42:28.628 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/sourceTestOriginRepo645492726278001990]
+    23:42:28.628 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/sourceSolutionLocalRepo17811023811628738409/.git]
+    23:42:28.628 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/sourceSolutionOriginRepo2332454451348395864]
+    23:42:28.628 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/sourceAuxLocalRepo16893438023612338966/.git]
+    23:42:28.628 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/sourceAuxOriginRepo15308034313150727281]
+    23:42:28.628 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/studentRepo9589023244929469074/.git]
+    23:42:28.628 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/studentOriginRepo4326098023129392834]
+    23:42:28.628 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/studentTeamRepo10209874819582023863/.git]
+    23:42:28.628 | 347 ool-1-worker-111 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/studentTeamOriginRepo15703070282835544812]
+
+  Starting logs for DataExportCreationServiceTest > testDataExportDoesntLeakResultsIfAssessmentDueDateInTheFuture()
+    23:42:28.646 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:28.650 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 5 tutors...
+    23:42:28.658 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 tutors generated. Generate 0 editors...
+    23:42:28.659 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:28.662 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:28.664 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses...
+    23:42:28.665 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses. Done
+    23:42:28.665 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database...
+    23:42:28.673 | 347 ool-1-worker-111 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database. Done
+    23:42:28.689 | 347 ool-1-worker-111 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='DataExportCreationServiceTest#testDataExportDoesntLeakResultsIfAssessmentDueDateInTheFuture'
+    23:42:28.726 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 224 and participant 623 (result to be deleted: null)
+    23:42:28.726 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 224 and participant 623 at 2025-02-14T23:42:29.226671066Z[Etc/UTC].
+    23:42:28.732 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 224 and participant 623 (result to be deleted: null)
+    23:42:28.732 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 224 and participant 623 at 2025-02-14T23:42:28.832425324Z[Etc/UTC].
+    23:42:28.794 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 225 and participant 623 (result to be deleted: null)
+    23:42:28.794 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 225 and participant 623 at 2025-02-14T23:42:28.894976826Z[Etc/UTC].
+    23:42:28.800 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 225 and participant 623 (result to be deleted: null)
+    23:42:28.800 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 225 and participant 623 at 2025-02-14T23:42:28.900551310Z[Etc/UTC].
+    23:42:28.835 | 329 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 224 and participant 623 to update participant scores.
+    23:42:28.837 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 226 and participant 623 (result to be deleted: null)
+    23:42:28.837 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 226 and participant 623 at 2025-02-14T23:42:28.937363509Z[Etc/UTC].
+    23:42:28.843 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 226 and participant 623 (result to be deleted: null)
+    23:42:28.843 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 226 and participant 623 at 2025-02-14T23:42:28.943890498Z[Etc/UTC].
+    23:42:28.844 | 329 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 19.
+    23:42:28.845 | 329 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 224 and participant 623 took 10 ms.
+    23:42:28.880 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 227 and participant 623 (result to be deleted: null)
+    23:42:28.880 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 227 and participant 623 at 2025-02-14T23:42:28.980193992Z[Etc/UTC].
+    23:42:28.884 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 227 and participant 623 (result to be deleted: null)
+    23:42:28.885 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 227 and participant 623 at 2025-02-14T23:42:28.985011424Z[Etc/UTC].
+    23:42:28.900 | 326 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 225 and participant 623 to update participant scores.
+    23:42:28.911 | 326 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 20.
+    23:42:28.912 | 326 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 225 and participant 623 took 12 ms.
+    23:42:28.943 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 226 and participant 623 to update participant scores.
+    23:42:28.950 | 347 ool-1-worker-111 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '228' from title cache 'exerciseTitle'
+    23:42:28.953 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 21.
+    23:42:28.957 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 226 and participant 623 took 14 ms.
+    23:42:28.985 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 227 and participant 623 to update participant scores.
+    23:42:28.990 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 22.
+    23:42:28.995 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 227 and participant 623 took 10 ms.
+    23:42:29.026 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 228 and participant 623 (result to be deleted: null)
+    23:42:29.026 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 228 and participant 623 at 2025-02-14T23:42:29.126155001Z[Etc/UTC].
+    23:42:29.087 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 228 and participant 623 (result to be deleted: null)
+    23:42:29.087 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 228 and participant 623 at 2025-02-14T23:42:29.187338644Z[Etc/UTC].
+    23:42:29.187 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 228 and participant 623 to update participant scores.
+    23:42:29.199 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 23.
+    23:42:29.199 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 228 and participant 623 took 12 ms.
+    23:42:29.227 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 229 and participant 623 (result to be deleted: null)
+    23:42:29.227 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 229 and participant 623 at 2025-02-14T23:42:29.327517974Z[Etc/UTC].
+    23:42:29.234 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 229 and participant 623 (result to be deleted: null)
+    23:42:29.234 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 229 and participant 623 at 2025-02-14T23:42:29.334619394Z[Etc/UTC].
+    23:42:29.238 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 229 and participant 623 (result to be deleted: null)
+    23:42:29.238 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 229 and participant 623 at 2025-02-14T23:42:29.338759460Z[Etc/UTC].
+    23:42:29.247 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 229 and participant 623 (result to be deleted: null)
+    23:42:29.247 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 229 and participant 623 at 2025-02-14T23:42:29.347895383Z[Etc/UTC].
+    23:42:29.258 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 229 and participant 623 (result to be deleted: null)
+    23:42:29.258 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 229 and participant 623 at 2025-02-14T23:42:29.358332942Z[Etc/UTC].
+    23:42:29.264 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 229 and participant 623 (result to be deleted: null)
+    23:42:29.264 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 229 and participant 623 at 2025-02-14T23:42:29.364807464Z[Etc/UTC].
+    23:42:29.267 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 229 and participant 623 (result to be deleted: null)
+    23:42:29.268 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 229 and participant 623 at 2025-02-14T23:42:29.367984216Z[Etc/UTC].
+    23:42:29.277 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 229 and participant 623 (result to be deleted: null)
+    23:42:29.277 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 229 and participant 623 at 2025-02-14T23:42:29.377890145Z[Etc/UTC].
+    23:42:29.292 | 347 ool-1-worker-111 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 229 and participant 623 (result to be deleted: null)
+    23:42:29.292 | 347 ool-1-worker-111 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 229 and participant 623 at 2025-02-14T23:42:29.392963327Z[Etc/UTC].
+    23:42:29.387 | 347 ool-1-worker-111 | INFO  | .a.a.c.s.e.DataExportCreationService : Creating data export for user dataexportcreationstudent1
+    23:42:29.393 | 329 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 229 and participant 623 to update participant scores.
+    23:42:29.400 | 347 ool-1-worker-111 | INFO  | c.a.a.m.s.a.ApollonConversionService : Calling Remote Service to convert for model.
+    23:42:29.405 | 329 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 24.
+    23:42:29.405 | 329 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 229 and participant 623 took 12 ms.
+    23:42:29.408 | 347 ool-1-worker-111 | INFO  | c.a.a.m.s.a.ApollonConversionService : Calling Remote Service to convert for model.
+    23:42:30.646 | 347 ool-1-worker-111 | INFO  | p.s.ProgrammingExerciseExportService : Request to export the repositories of programming exercise 229 with title 'Programming' of 1 students or teams
+    23:42:30.646 | 347 ool-1-worker-111 | DEBUG | p.s.ProgrammingExerciseExportService : Export repositories for students or teams: dataexportcreationstudent1
+    23:42:30.646 | 347 ool-1-worker-111 | INFO  | p.s.ProgrammingExerciseExportService : export student repositories for programming exercise 229 in parallel
+    23:42:30.650 | 896 ool-191-thread-1 | DEBUG | p.s.ProgrammingExerciseExportService : invoke createZipForRepositoryWithParticipation for participation 448
+    23:42:30.695 | 896 ool-191-thread-1 | DEBUG | d.t.c.a.a.p.service.GitService       : Fetch /tmp/studentRepo6966133362892667074
+    23:42:30.695 | 896 ool-191-thread-1 | WARN  | d.t.c.a.a.p.service.GitService       : Cannot set remoteUrl because it is null!
+    23:42:30.712 | 896 ool-191-thread-1 | ERROR | d.t.c.a.a.p.service.GitService       : Cannot hard reset the repo /tmp/studentRepo6966133362892667074 to origin/HEAD because it is empty.
+    23:42:30.713 | 896 ool-191-thread-1 | WARN  | org.eclipse.jgit.lib.Repository      : close() called when useCnt is already zero for Repository[/tmp/studentRepo6966133362892667074/.git]
+    23:42:30.713 | 896 ool-191-thread-1 | DEBUG | p.s.ProgrammingExerciseExportService : Create temporary directory for repository /tmp/studentRepo6966133362892667074
+    23:42:30.764 | 347 ool-1-worker-111 | INFO  | .e.DataExportExerciseCreationService : Cannot include submission for file upload exercise stored at uploads/file-upload-exercises/217/310
+    23:42:30.772 | 347 ool-1-worker-111 | INFO  | c.a.a.m.s.a.ApollonConversionService : Calling Remote Service to convert for model.
+    23:42:30.789 | 347 ool-1-worker-111 | INFO  | p.s.ProgrammingExerciseExportService : Request to export the repositories of programming exercise 223 with title 'Programmingbee' of 1 students or teams
+    23:42:30.789 | 347 ool-1-worker-111 | DEBUG | p.s.ProgrammingExerciseExportService : Export repositories for students or teams: dataexportcreationstudent1
+    23:42:30.789 | 347 ool-1-worker-111 | INFO  | p.s.ProgrammingExerciseExportService : export student repositories for programming exercise 223 in parallel
+    23:42:30.789 | 899 ool-200-thread-1 | DEBUG | p.s.ProgrammingExerciseExportService : invoke createZipForRepositoryWithParticipation for participation 436
+    23:42:30.792 | 899 ool-200-thread-1 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from file:/tmp/studentRepo9589023244929469074/EXAMC7D62D4E08019046D808E890BCE2994E7205TE51/examc7d62d4e08019046d808e890bce2994e7205te51-dataexportcreationstudent1.git to repos-download/server-integration-test/1739576550786/1739576550791/examc7d62d4e08019046d808e890bce2994e7205te51-dataexportcreationstudent1.git
+    23:42:30.803 | 899 ool-200-thread-1 | ERROR | d.t.c.a.a.p.service.GitService       : Could not delete directory after failed clone: /home/runner/work/Artemis/Artemis/repos-download/server-integration-test/1739576550786/1739576550791/examc7d62d4e08019046d808e890bce2994e7205te51-dataexportcreationstudent1.git
+    23:42:30.804 | 899 ool-200-thread-1 | ERROR | p.s.ProgrammingExerciseExportService : Failed to create zip for participation id 436 with exercise id 223 because of the following exception 
+de.tum.cit.aet.artemis.core.exception.GitException: org.eclipse.jgit.api.errors.InvalidRemoteException: Invalid remote: origin
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:409)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:368)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:348)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:331)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:272)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:271)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:214)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:213)
+	at de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseExportService.getRepositoryWithParticipation(ProgrammingExerciseExportService.java:715)
+	at de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseExportService.lambda$exportStudentRepositories$5(ProgrammingExerciseExportService.java:622)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.eclipse.jgit.api.errors.InvalidRemoteException: Invalid remote: origin
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:246)
+	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:319)
+	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:189)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:400)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:368)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:348)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:348)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:331)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

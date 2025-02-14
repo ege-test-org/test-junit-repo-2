@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLMethodTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:04" hostname="fv-az1721-502" time="0.027">
+  <properties/>
+  <testcase name="similarity_null()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLMethodTest" time="0.001"/>
+  <testcase name="similarity_sameMethod()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLMethodTest" time="0.004"/>
+  <testcase name="similarity_differentMethodName()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLMethodTest" time="0.001"/>
+  <testcase name="similarity_differentElementType()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLMethodTest" time="0.003"/>
+  <testcase name="similarity_differentArguments()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLMethodTest" time="0.002"/>
+  <testcase name="similarity_nullReferenceValues()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLMethodTest" time="0.001"/>
+  <testcase name="similarity_sameMethod_differentParent_noParentSimilarityId()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLMethodTest" time="0.002"/>
+  <testcase name="similarity_differentReturnType()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLMethodTest" time="0.002"/>
+  <testcase name="similarity_sameMethod_noParentSimilarityId()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLMethodTest" time="0.002"/>
+  <testcase name="similarity_sameMethod_differentParent()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLMethodTest" time="0.002"/>
+  <system-out><![CDATA[
+Starting logs for UMLMethodTest
+
+  Starting logs for UMLMethodTest > similarity_null()
+
+  Starting logs for UMLMethodTest > similarity_sameMethod()
+
+  Starting logs for UMLMethodTest > similarity_differentMethodName()
+
+  Starting logs for UMLMethodTest > similarity_differentElementType()
+
+  Starting logs for UMLMethodTest > similarity_differentArguments()
+
+  Starting logs for UMLMethodTest > similarity_nullReferenceValues()
+
+  Starting logs for UMLMethodTest > similarity_sameMethod_differentParent_noParentSimilarityId()
+
+  Starting logs for UMLMethodTest > similarity_differentReturnType()
+
+  Starting logs for UMLMethodTest > similarity_sameMethod_noParentSimilarityId()
+
+  Starting logs for UMLMethodTest > similarity_sameMethod_differentParent()
+
+Finished logs for UMLMethodTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.atlas.architecture.AtlasTestArchitectureTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:18" hostname="fv-az1721-502" time="0.017">
+  <properties/>
+  <testcase name="integrationTestsShouldExtendAbstractModuleIntegrationTest()" classname="de.tum.cit.aet.artemis.atlas.architecture.AtlasTestArchitectureTest" time="0.004"/>
+  <testcase name="integrationTestsShouldNotAutowireMembers()" classname="de.tum.cit.aet.artemis.atlas.architecture.AtlasTestArchitectureTest" time="0.013"/>
+  <system-out><![CDATA[
+Starting logs for AtlasTestArchitectureTest
+
+  Starting logs for AtlasTestArchitectureTest > integrationTestsShouldExtendAbstractModuleIntegrationTest()
+
+  Starting logs for AtlasTestArchitectureTest > integrationTestsShouldNotAutowireMembers()
+
+Finished logs for AtlasTestArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

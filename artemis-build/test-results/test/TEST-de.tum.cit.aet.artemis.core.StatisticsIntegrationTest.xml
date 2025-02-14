@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.StatisticsIntegrationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:27" hostname="fv-az1721-502" time="2.271">
+  <properties/>
+  <testcase name="testGetCourseStatistics()" classname="de.tum.cit.aet.artemis.core.StatisticsIntegrationTest" time="0.391"/>
+  <testcase name="testGetChartDataForCourse()" classname="de.tum.cit.aet.artemis.core.StatisticsIntegrationTest" time="0.219"/>
+  <testcase name="testDataRangeEachGraph(SpanType) [1] span=DAY" classname="de.tum.cit.aet.artemis.core.StatisticsIntegrationTest" time="0.185"/>
+  <testcase name="testDataRangeEachGraph(SpanType) [2] span=WEEK" classname="de.tum.cit.aet.artemis.core.StatisticsIntegrationTest" time="0.253"/>
+  <testcase name="testDataRangeEachGraph(SpanType) [3] span=MONTH" classname="de.tum.cit.aet.artemis.core.StatisticsIntegrationTest" time="0.169"/>
+  <testcase name="testDataRangeEachGraph(SpanType) [4] span=QUARTER" classname="de.tum.cit.aet.artemis.core.StatisticsIntegrationTest" time="0.232"/>
+  <testcase name="testDataRangeEachGraph(SpanType) [5] span=YEAR" classname="de.tum.cit.aet.artemis.core.StatisticsIntegrationTest" time="0.225"/>
+  <testcase name="testGetChartDataForExercise()" classname="de.tum.cit.aet.artemis.core.StatisticsIntegrationTest" time="0.143"/>
+  <testcase name="testGetExerciseStatistics()" classname="de.tum.cit.aet.artemis.core.StatisticsIntegrationTest" time="0.434"/>
+  <system-out><![CDATA[
+Starting logs for StatisticsIntegrationTest
+
+  Starting logs for StatisticsIntegrationTest > testGetCourseStatistics()
+    23:44:28.007 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:44:28.014 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:44:28.016 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:44:28.020 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:44:28.022 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:44:28.027 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:44:28.028 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:44:28.028 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:44:28.034 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:44:28.061 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1572 and participant 271 (result to be deleted: null)
+    23:44:28.061 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1572 and participant 271 at 2025-02-14T23:44:28.161561705Z[Etc/UTC].
+    23:44:28.070 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1572 and participant 271 (result to be deleted: null)
+    23:44:28.070 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1572 and participant 271 at 2025-02-14T23:44:28.170780216Z[Etc/UTC].
+    23:44:28.091 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1572 and participant 272 (result to be deleted: null)
+    23:44:28.091 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1572 and participant 272 at 2025-02-14T23:44:28.191610871Z[Etc/UTC].
+    23:44:28.102 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1572 and participant 272 (result to be deleted: null)
+    23:44:28.102 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1572 and participant 272 at 2025-02-14T23:44:28.202260901Z[Etc/UTC].
+    23:44:28.117 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1572 and participant 273 (result to be deleted: null)
+    23:44:28.117 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1572 and participant 273 at 2025-02-14T23:44:28.217183850Z[Etc/UTC].
+    23:44:28.126 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1572 and participant 273 (result to be deleted: null)
+    23:44:28.126 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1572 and participant 273 at 2025-02-14T23:44:28.226469306Z[Etc/UTC].
+    23:44:28.136 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1572 and participant 274 (result to be deleted: null)
+    23:44:28.136 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1572 and participant 274 at 2025-02-14T23:44:28.236982982Z[Etc/UTC].
+    23:44:28.141 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1572 and participant 274 (result to be deleted: null)
+    23:44:28.141 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1572 and participant 274 at 2025-02-14T23:44:28.241944244Z[Etc/UTC].
+    23:44:28.150 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1572 and participant 275 (result to be deleted: null)
+    23:44:28.150 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1572 and participant 275 at 2025-02-14T23:44:28.250606538Z[Etc/UTC].
+    23:44:28.155 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1572 and participant 275 (result to be deleted: null)
+    23:44:28.155 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1572 and participant 275 at 2025-02-14T23:44:28.255316271Z[Etc/UTC].
+    23:44:28.157 | 190 Pool-1-worker-83 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsIntegrationTest#testGetCourseStatistics'
+    23:44:28.168 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1573 and participant 271 (result to be deleted: null)
+    23:44:28.168 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1573 and participant 271 at 2025-02-14T23:44:28.268633134Z[Etc/UTC].
+    23:44:28.170 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1572 and participant 271 to update participant scores.
+    23:44:28.180 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1572 and participant 271 took 10 ms.
+    23:44:28.182 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1573 and participant 272 (result to be deleted: null)
+    23:44:28.182 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1573 and participant 272 at 2025-02-14T23:44:28.282375311Z[Etc/UTC].
+    23:44:28.194 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1574 and participant 271 (result to be deleted: null)
+    23:44:28.194 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1574 and participant 271 at 2025-02-14T23:44:28.294223987Z[Etc/UTC].
+    23:44:28.202 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1572 and participant 272 to update participant scores.
+    23:44:28.218 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1572 and participant 272 took 16 ms.
+    23:44:28.221 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1574 and participant 272 (result to be deleted: null)
+    23:44:28.221 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1574 and participant 272 at 2025-02-14T23:44:28.321786827Z[Etc/UTC].
+    23:44:28.226 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1572 and participant 273 to update participant scores.
+    23:44:28.233 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1572 and participant 273 took 7 ms.
+    23:44:28.242 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1572 and participant 274 to update participant scores.
+    23:44:28.249 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1572 and participant 274 took 7 ms.
+    23:44:28.255 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1572 and participant 275 to update participant scores.
+    23:44:28.265 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1572 and participant 275 took 10 ms.
+    23:44:28.270 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1573 and participant 271 to update participant scores.
+    23:44:28.277 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 49.
+    23:44:28.284 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1573 and participant 272 to update participant scores.
+    23:44:28.288 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1573 and participant 271 took 18 ms.
+    23:44:28.295 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 50.
+    23:44:28.296 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1574 and participant 271 to update participant scores.
+    23:44:28.302 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1573 and participant 272 took 18 ms.
+    23:44:28.306 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 51.
+    23:44:28.309 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1574 and participant 271 took 13 ms.
+    23:44:28.321 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1574 and participant 272 to update participant scores.
+    23:44:28.329 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 52.
+    23:44:28.337 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1574 and participant 272 took 16 ms.
+    23:44:28.347 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/course-statistics
+
+  Starting logs for StatisticsIntegrationTest > testGetChartDataForCourse()
+    23:44:28.399 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:44:28.412 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:44:28.415 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:44:28.416 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:44:28.418 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:44:28.419 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:44:28.420 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:44:28.420 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:44:28.435 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:44:28.449 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1576 and participant 271 (result to be deleted: null)
+    23:44:28.449 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1576 and participant 271 at 2025-02-14T23:44:28.549893336Z[Etc/UTC].
+    23:44:28.462 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1576 and participant 271 (result to be deleted: null)
+    23:44:28.462 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1576 and participant 271 at 2025-02-14T23:44:28.562868022Z[Etc/UTC].
+    23:44:28.480 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1576 and participant 272 (result to be deleted: null)
+    23:44:28.480 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1576 and participant 272 at 2025-02-14T23:44:28.580190616Z[Etc/UTC].
+    23:44:28.485 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1576 and participant 272 (result to be deleted: null)
+    23:44:28.485 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1576 and participant 272 at 2025-02-14T23:44:28.585150795Z[Etc/UTC].
+    23:44:28.494 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1576 and participant 273 (result to be deleted: null)
+    23:44:28.494 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1576 and participant 273 at 2025-02-14T23:44:28.594677962Z[Etc/UTC].
+    23:44:28.500 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1576 and participant 273 (result to be deleted: null)
+    23:44:28.500 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1576 and participant 273 at 2025-02-14T23:44:28.600525436Z[Etc/UTC].
+    23:44:28.509 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1576 and participant 274 (result to be deleted: null)
+    23:44:28.509 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1576 and participant 274 at 2025-02-14T23:44:28.609421756Z[Etc/UTC].
+    23:44:28.519 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1576 and participant 274 (result to be deleted: null)
+    23:44:28.519 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1576 and participant 274 at 2025-02-14T23:44:28.619270102Z[Etc/UTC].
+    23:44:28.535 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1576 and participant 275 (result to be deleted: null)
+    23:44:28.535 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1576 and participant 275 at 2025-02-14T23:44:28.635312795Z[Etc/UTC].
+    23:44:28.541 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1576 and participant 275 (result to be deleted: null)
+    23:44:28.542 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1576 and participant 275 at 2025-02-14T23:44:28.642028730Z[Etc/UTC].
+    23:44:28.544 | 190 Pool-1-worker-83 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsIntegrationTest#testGetChartDataForCourse'
+    23:44:28.545 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:28.554 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:28.559 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:28.562 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:28.562 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1576 and participant 271 to update participant scores.
+    23:44:28.568 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:28.572 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:28.572 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1576 and participant 271 took 10 ms.
+    23:44:28.575 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:28.579 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:28.582 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:28.585 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1576 and participant 272 to update participant scores.
+    23:44:28.585 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:28.589 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:28.592 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:28.600 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1576 and participant 272 took 15 ms.
+
+  Starting logs for StatisticsIntegrationTest > testDataRangeEachGraph(SpanType) [1] span=DAY
+    23:44:28.616 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:44:28.623 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:44:28.626 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:44:28.627 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:44:28.630 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:44:28.632 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:44:28.633 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:44:28.633 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:44:28.638 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:44:28.651 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1578 and participant 271 (result to be deleted: null)
+    23:44:28.651 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1578 and participant 271 at 2025-02-14T23:44:28.751293480Z[Etc/UTC].
+    23:44:28.656 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1578 and participant 271 (result to be deleted: null)
+    23:44:28.656 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1578 and participant 271 at 2025-02-14T23:44:28.756239073Z[Etc/UTC].
+    23:44:28.665 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1578 and participant 272 (result to be deleted: null)
+    23:44:28.665 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1578 and participant 272 at 2025-02-14T23:44:28.765425514Z[Etc/UTC].
+    23:44:28.670 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1578 and participant 272 (result to be deleted: null)
+    23:44:28.670 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1578 and participant 272 at 2025-02-14T23:44:28.770580487Z[Etc/UTC].
+    23:44:28.679 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1578 and participant 273 (result to be deleted: null)
+    23:44:28.680 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1578 and participant 273 at 2025-02-14T23:44:28.779994933Z[Etc/UTC].
+    23:44:28.684 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1578 and participant 273 (result to be deleted: null)
+    23:44:28.685 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1578 and participant 273 at 2025-02-14T23:44:28.785014764Z[Etc/UTC].
+    23:44:28.694 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1578 and participant 274 (result to be deleted: null)
+    23:44:28.694 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1578 and participant 274 at 2025-02-14T23:44:28.794574101Z[Etc/UTC].
+    23:44:28.699 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1578 and participant 274 (result to be deleted: null)
+    23:44:28.699 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1578 and participant 274 at 2025-02-14T23:44:28.799597268Z[Etc/UTC].
+    23:44:28.708 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1578 and participant 275 (result to be deleted: null)
+    23:44:28.708 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1578 and participant 275 at 2025-02-14T23:44:28.808833142Z[Etc/UTC].
+    23:44:28.713 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1578 and participant 275 (result to be deleted: null)
+    23:44:28.713 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1578 and participant 275 at 2025-02-14T23:44:28.813698024Z[Etc/UTC].
+    23:44:28.715 | 190 Pool-1-worker-83 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsIntegrationTest#testDataRangeEachGraph'
+    23:44:28.717 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:28.717 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:28.722 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:28.722 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:28.732 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:28.732 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:28.734 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:28.734 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:28.737 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:28.737 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:28.743 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:28.743 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:28.745 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:28.745 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:28.747 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:28.747 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:28.749 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:28.749 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:28.754 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:28.754 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:28.756 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1578 and participant 271 to update participant scores.
+    23:44:28.763 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:28.764 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:28.770 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1578 and participant 272 to update participant scores.
+    23:44:28.775 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1578 and participant 271 took 19 ms.
+    23:44:28.785 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1578 and participant 272 took 15 ms.
+
+  Starting logs for StatisticsIntegrationTest > testDataRangeEachGraph(SpanType) [2] span=WEEK
+    23:44:28.811 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:44:28.827 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:44:28.833 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:44:28.834 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:44:28.840 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:44:28.846 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:44:28.850 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:44:28.850 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:44:28.857 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:44:28.870 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1580 and participant 271 (result to be deleted: null)
+    23:44:28.870 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1580 and participant 271 at 2025-02-14T23:44:28.970371955Z[Etc/UTC].
+    23:44:28.878 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1580 and participant 271 (result to be deleted: null)
+    23:44:28.878 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1580 and participant 271 at 2025-02-14T23:44:28.978283900Z[Etc/UTC].
+    23:44:28.887 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1580 and participant 272 (result to be deleted: null)
+    23:44:28.887 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1580 and participant 272 at 2025-02-14T23:44:28.987499896Z[Etc/UTC].
+    23:44:28.892 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1580 and participant 272 (result to be deleted: null)
+    23:44:28.892 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1580 and participant 272 at 2025-02-14T23:44:28.992538833Z[Etc/UTC].
+    23:44:28.902 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1580 and participant 273 (result to be deleted: null)
+    23:44:28.902 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1580 and participant 273 at 2025-02-14T23:44:29.002130389Z[Etc/UTC].
+    23:44:28.907 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1580 and participant 273 (result to be deleted: null)
+    23:44:28.907 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1580 and participant 273 at 2025-02-14T23:44:29.007384888Z[Etc/UTC].
+    23:44:28.916 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1580 and participant 274 (result to be deleted: null)
+    23:44:28.916 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1580 and participant 274 at 2025-02-14T23:44:29.016791319Z[Etc/UTC].
+    23:44:28.921 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1580 and participant 274 (result to be deleted: null)
+    23:44:28.921 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1580 and participant 274 at 2025-02-14T23:44:29.021798727Z[Etc/UTC].
+    23:44:28.931 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1580 and participant 275 (result to be deleted: null)
+    23:44:28.931 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1580 and participant 275 at 2025-02-14T23:44:29.031302090Z[Etc/UTC].
+    23:44:28.936 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1580 and participant 275 (result to be deleted: null)
+    23:44:28.936 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1580 and participant 275 at 2025-02-14T23:44:29.036262069Z[Etc/UTC].
+    23:44:28.938 | 190 Pool-1-worker-83 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsIntegrationTest#testDataRangeEachGraph'
+    23:44:28.939 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:28.939 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:28.952 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:28.953 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:28.972 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:28.973 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:28.978 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1580 and participant 271 to update participant scores.
+    23:44:28.980 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:28.980 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:28.991 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1580 and participant 271 took 13 ms.
+    23:44:28.991 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:28.992 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:28.992 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1580 and participant 272 to update participant scores.
+    23:44:29.002 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1580 and participant 272 took 10 ms.
+    23:44:29.002 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.003 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.005 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.005 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.006 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.006 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.007 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1580 and participant 273 to update participant scores.
+    23:44:29.014 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1580 and participant 273 took 7 ms.
+    23:44:29.015 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.015 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.019 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.019 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.021 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1580 and participant 274 to update participant scores.
+    23:44:29.029 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1580 and participant 274 took 8 ms.
+    23:44:29.030 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.031 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.036 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1580 and participant 275 to update participant scores.
+    23:44:29.042 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1580 and participant 275 took 6 ms.
+
+  Starting logs for StatisticsIntegrationTest > testDataRangeEachGraph(SpanType) [3] span=MONTH
+    23:44:29.057 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:44:29.065 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:44:29.067 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:44:29.069 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:44:29.072 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:44:29.074 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:44:29.075 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:44:29.075 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:44:29.081 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:44:29.094 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1582 and participant 271 (result to be deleted: null)
+    23:44:29.094 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1582 and participant 271 at 2025-02-14T23:44:29.194342643Z[Etc/UTC].
+    23:44:29.099 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1582 and participant 271 (result to be deleted: null)
+    23:44:29.099 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1582 and participant 271 at 2025-02-14T23:44:29.199577184Z[Etc/UTC].
+    23:44:29.109 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1582 and participant 272 (result to be deleted: null)
+    23:44:29.109 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1582 and participant 272 at 2025-02-14T23:44:29.209274067Z[Etc/UTC].
+    23:44:29.114 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1582 and participant 272 (result to be deleted: null)
+    23:44:29.114 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1582 and participant 272 at 2025-02-14T23:44:29.214589299Z[Etc/UTC].
+    23:44:29.124 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1582 and participant 273 (result to be deleted: null)
+    23:44:29.124 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1582 and participant 273 at 2025-02-14T23:44:29.224421584Z[Etc/UTC].
+    23:44:29.129 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1582 and participant 273 (result to be deleted: null)
+    23:44:29.129 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1582 and participant 273 at 2025-02-14T23:44:29.229947239Z[Etc/UTC].
+    23:44:29.139 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1582 and participant 274 (result to be deleted: null)
+    23:44:29.139 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1582 and participant 274 at 2025-02-14T23:44:29.239073588Z[Etc/UTC].
+    23:44:29.142 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1582 and participant 274 (result to be deleted: null)
+    23:44:29.142 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1582 and participant 274 at 2025-02-14T23:44:29.242628738Z[Etc/UTC].
+    23:44:29.149 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1582 and participant 275 (result to be deleted: null)
+    23:44:29.149 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1582 and participant 275 at 2025-02-14T23:44:29.249250055Z[Etc/UTC].
+    23:44:29.152 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1582 and participant 275 (result to be deleted: null)
+    23:44:29.152 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1582 and participant 275 at 2025-02-14T23:44:29.252429775Z[Etc/UTC].
+    23:44:29.153 | 190 Pool-1-worker-83 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsIntegrationTest#testDataRangeEachGraph'
+    23:44:29.154 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.154 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.160 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.161 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.173 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.173 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.175 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.175 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.183 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.183 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.188 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.188 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.190 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.190 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.191 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.191 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.193 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.193 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.197 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.197 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.199 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1582 and participant 271 to update participant scores.
+    23:44:29.203 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.203 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.213 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1582 and participant 271 took 14 ms.
+
+  Starting logs for StatisticsIntegrationTest > testDataRangeEachGraph(SpanType) [4] span=QUARTER
+    23:44:29.226 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:44:29.234 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:44:29.236 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:44:29.238 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:44:29.240 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:44:29.242 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:44:29.243 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:44:29.243 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:44:29.248 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:44:29.261 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1584 and participant 271 (result to be deleted: null)
+    23:44:29.261 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1584 and participant 271 at 2025-02-14T23:44:29.361137917Z[Etc/UTC].
+    23:44:29.266 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1584 and participant 271 (result to be deleted: null)
+    23:44:29.266 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1584 and participant 271 at 2025-02-14T23:44:29.366206469Z[Etc/UTC].
+    23:44:29.276 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1584 and participant 272 (result to be deleted: null)
+    23:44:29.276 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1584 and participant 272 at 2025-02-14T23:44:29.376223939Z[Etc/UTC].
+    23:44:29.281 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1584 and participant 272 (result to be deleted: null)
+    23:44:29.281 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1584 and participant 272 at 2025-02-14T23:44:29.381697877Z[Etc/UTC].
+    23:44:29.290 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1584 and participant 273 (result to be deleted: null)
+    23:44:29.290 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1584 and participant 273 at 2025-02-14T23:44:29.390977462Z[Etc/UTC].
+    23:44:29.294 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1584 and participant 273 (result to be deleted: null)
+    23:44:29.294 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1584 and participant 273 at 2025-02-14T23:44:29.394146993Z[Etc/UTC].
+    23:44:29.300 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1584 and participant 274 (result to be deleted: null)
+    23:44:29.300 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1584 and participant 274 at 2025-02-14T23:44:29.400427335Z[Etc/UTC].
+    23:44:29.303 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1584 and participant 274 (result to be deleted: null)
+    23:44:29.303 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1584 and participant 274 at 2025-02-14T23:44:29.403650445Z[Etc/UTC].
+    23:44:29.310 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1584 and participant 275 (result to be deleted: null)
+    23:44:29.310 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1584 and participant 275 at 2025-02-14T23:44:29.410164974Z[Etc/UTC].
+    23:44:29.313 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1584 and participant 275 (result to be deleted: null)
+    23:44:29.313 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1584 and participant 275 at 2025-02-14T23:44:29.413125584Z[Etc/UTC].
+    23:44:29.314 | 190 Pool-1-worker-83 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsIntegrationTest#testDataRangeEachGraph'
+    23:44:29.315 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.315 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.332 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.332 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.348 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.349 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.351 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.351 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.362 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.362 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.366 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1584 and participant 271 to update participant scores.
+    23:44:29.377 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1584 and participant 271 took 11 ms.
+    23:44:29.378 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.378 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.381 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1584 and participant 272 to update participant scores.
+    23:44:29.390 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.391 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.393 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1584 and participant 272 took 12 ms.
+    23:44:29.394 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1584 and participant 273 to update participant scores.
+    23:44:29.397 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.398 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.404 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1584 and participant 274 to update participant scores.
+    23:44:29.408 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1584 and participant 273 took 14 ms.
+    23:44:29.410 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.410 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.416 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1584 and participant 275 to update participant scores.
+    23:44:29.421 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.422 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.423 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1584 and participant 274 took 19 ms.
+    23:44:29.430 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1584 and participant 275 took 14 ms.
+    23:44:29.435 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.435 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+
+  Starting logs for StatisticsIntegrationTest > testDataRangeEachGraph(SpanType) [5] span=YEAR
+    23:44:29.460 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:44:29.467 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:44:29.470 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:44:29.472 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:44:29.474 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:44:29.476 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:44:29.477 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:44:29.477 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:44:29.483 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:44:29.496 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1586 and participant 271 (result to be deleted: null)
+    23:44:29.496 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1586 and participant 271 at 2025-02-14T23:44:29.596402675Z[Etc/UTC].
+    23:44:29.501 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1586 and participant 271 (result to be deleted: null)
+    23:44:29.501 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1586 and participant 271 at 2025-02-14T23:44:29.601625985Z[Etc/UTC].
+    23:44:29.511 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1586 and participant 272 (result to be deleted: null)
+    23:44:29.511 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1586 and participant 272 at 2025-02-14T23:44:29.611420160Z[Etc/UTC].
+    23:44:29.516 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1586 and participant 272 (result to be deleted: null)
+    23:44:29.516 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1586 and participant 272 at 2025-02-14T23:44:29.616435542Z[Etc/UTC].
+    23:44:29.525 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1586 and participant 273 (result to be deleted: null)
+    23:44:29.525 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1586 and participant 273 at 2025-02-14T23:44:29.625514393Z[Etc/UTC].
+    23:44:29.530 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1586 and participant 273 (result to be deleted: null)
+    23:44:29.530 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1586 and participant 273 at 2025-02-14T23:44:29.630431432Z[Etc/UTC].
+    23:44:29.539 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1586 and participant 274 (result to be deleted: null)
+    23:44:29.539 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1586 and participant 274 at 2025-02-14T23:44:29.639868982Z[Etc/UTC].
+    23:44:29.544 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1586 and participant 274 (result to be deleted: null)
+    23:44:29.544 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1586 and participant 274 at 2025-02-14T23:44:29.644798394Z[Etc/UTC].
+    23:44:29.554 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1586 and participant 275 (result to be deleted: null)
+    23:44:29.554 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1586 and participant 275 at 2025-02-14T23:44:29.654450674Z[Etc/UTC].
+    23:44:29.559 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1586 and participant 275 (result to be deleted: null)
+    23:44:29.559 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1586 and participant 275 at 2025-02-14T23:44:29.659724409Z[Etc/UTC].
+    23:44:29.561 | 190 Pool-1-worker-83 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsIntegrationTest#testDataRangeEachGraph'
+    23:44:29.562 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.562 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.576 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.576 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.592 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.592 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.594 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.595 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.601 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1586 and participant 271 to update participant scores.
+    23:44:29.608 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.609 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.612 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1586 and participant 271 took 11 ms.
+    23:44:29.616 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1586 and participant 272 to update participant scores.
+    23:44:29.624 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.625 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.626 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1586 and participant 272 took 10 ms.
+    23:44:29.628 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.628 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.630 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1586 and participant 273 to update participant scores.
+    23:44:29.636 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.636 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.638 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1586 and participant 273 took 8 ms.
+    23:44:29.641 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.641 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.644 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1586 and participant 274 to update participant scores.
+    23:44:29.647 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.647 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.656 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/management/statistics/data
+    23:44:29.657 | 190 Pool-1-worker-83 | DEBUG | .c.a.a.c.w.a.AdminStatisticsResource : REST request to get graph data
+    23:44:29.659 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1586 and participant 274 took 15 ms.
+    23:44:29.659 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1586 and participant 275 to update participant scores.
+    23:44:29.671 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1586 and participant 275 took 12 ms.
+
+  Starting logs for StatisticsIntegrationTest > testGetChartDataForExercise()
+    23:44:29.690 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:44:29.698 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:44:29.701 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:44:29.702 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:44:29.705 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:44:29.707 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:44:29.708 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:44:29.708 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:44:29.713 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:44:29.726 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1588 and participant 271 (result to be deleted: null)
+    23:44:29.726 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1588 and participant 271 at 2025-02-14T23:44:29.826309258Z[Etc/UTC].
+    23:44:29.731 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1588 and participant 271 (result to be deleted: null)
+    23:44:29.731 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1588 and participant 271 at 2025-02-14T23:44:29.831447740Z[Etc/UTC].
+    23:44:29.742 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1588 and participant 272 (result to be deleted: null)
+    23:44:29.742 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1588 and participant 272 at 2025-02-14T23:44:29.842326507Z[Etc/UTC].
+    23:44:29.747 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1588 and participant 272 (result to be deleted: null)
+    23:44:29.747 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1588 and participant 272 at 2025-02-14T23:44:29.847291837Z[Etc/UTC].
+    23:44:29.756 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1588 and participant 273 (result to be deleted: null)
+    23:44:29.756 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1588 and participant 273 at 2025-02-14T23:44:29.856675295Z[Etc/UTC].
+    23:44:29.761 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1588 and participant 273 (result to be deleted: null)
+    23:44:29.761 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1588 and participant 273 at 2025-02-14T23:44:29.861608255Z[Etc/UTC].
+    23:44:29.771 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1588 and participant 274 (result to be deleted: null)
+    23:44:29.771 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1588 and participant 274 at 2025-02-14T23:44:29.871450589Z[Etc/UTC].
+    23:44:29.776 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1588 and participant 274 (result to be deleted: null)
+    23:44:29.776 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1588 and participant 274 at 2025-02-14T23:44:29.876560428Z[Etc/UTC].
+    23:44:29.785 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1588 and participant 275 (result to be deleted: null)
+    23:44:29.785 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1588 and participant 275 at 2025-02-14T23:44:29.885640821Z[Etc/UTC].
+    23:44:29.790 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1588 and participant 275 (result to be deleted: null)
+    23:44:29.790 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1588 and participant 275 at 2025-02-14T23:44:29.890647488Z[Etc/UTC].
+    23:44:29.792 | 190 Pool-1-worker-83 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsIntegrationTest#testGetChartDataForExercise'
+    23:44:29.793 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:29.797 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:29.801 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:29.804 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:29.808 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:29.812 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+    23:44:29.816 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/data-for-content
+
+  Starting logs for StatisticsIntegrationTest > testGetExerciseStatistics()
+    23:44:29.835 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:44:29.843 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:44:29.846 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:44:29.847 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:44:29.850 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:44:29.852 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:44:29.853 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:44:29.853 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:44:29.858 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:44:29.871 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1590 and participant 271 (result to be deleted: null)
+    23:44:29.871 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1590 and participant 271 at 2025-02-14T23:44:29.971400218Z[Etc/UTC].
+    23:44:29.877 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1590 and participant 271 (result to be deleted: null)
+    23:44:29.877 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1590 and participant 271 at 2025-02-14T23:44:29.977294850Z[Etc/UTC].
+    23:44:29.886 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1590 and participant 272 (result to be deleted: null)
+    23:44:29.886 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1590 and participant 272 at 2025-02-14T23:44:29.986741787Z[Etc/UTC].
+    23:44:29.891 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1590 and participant 272 (result to be deleted: null)
+    23:44:29.892 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1590 and participant 272 at 2025-02-14T23:44:29.992033355Z[Etc/UTC].
+    23:44:29.963 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1590 and participant 273 (result to be deleted: null)
+    23:44:29.963 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1590 and participant 273 at 2025-02-14T23:44:30.063409589Z[Etc/UTC].
+    23:44:29.975 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1590 and participant 273 (result to be deleted: null)
+    23:44:29.975 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1590 and participant 273 at 2025-02-14T23:44:30.075332423Z[Etc/UTC].
+    23:44:29.977 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1590 and participant 271 to update participant scores.
+    23:44:29.983 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1590 and participant 271 took 6 ms.
+    23:44:29.992 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1590 and participant 272 to update participant scores.
+    23:44:29.994 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1590 and participant 274 (result to be deleted: null)
+    23:44:29.994 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1590 and participant 274 at 2025-02-14T23:44:30.094655898Z[Etc/UTC].
+    23:44:30.004 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1590 and participant 272 took 12 ms.
+    23:44:30.005 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1590 and participant 274 (result to be deleted: null)
+    23:44:30.005 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1590 and participant 274 at 2025-02-14T23:44:30.105910506Z[Etc/UTC].
+    23:44:30.024 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1590 and participant 275 (result to be deleted: null)
+    23:44:30.024 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1590 and participant 275 at 2025-02-14T23:44:30.124388476Z[Etc/UTC].
+    23:44:30.037 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1590 and participant 275 (result to be deleted: null)
+    23:44:30.037 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1590 and participant 275 at 2025-02-14T23:44:30.137283493Z[Etc/UTC].
+    23:44:30.041 | 190 Pool-1-worker-83 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsIntegrationTest#testGetExerciseStatistics'
+    23:44:30.065 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1591 and participant 271 (result to be deleted: null)
+    23:44:30.065 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1591 and participant 271 at 2025-02-14T23:44:30.165622610Z[Etc/UTC].
+    23:44:30.075 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1590 and participant 273 to update participant scores.
+    23:44:30.084 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1590 and participant 273 took 9 ms.
+    23:44:30.088 | 190 Pool-1-worker-83 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1591 and participant 272 (result to be deleted: null)
+    23:44:30.088 | 190 Pool-1-worker-83 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1591 and participant 272 at 2025-02-14T23:44:30.188539715Z[Etc/UTC].
+    23:44:30.105 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1590 and participant 274 to update participant scores.
+    23:44:30.114 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1590 and participant 274 took 9 ms.
+    23:44:30.137 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1590 and participant 275 to update participant scores.
+    23:44:30.143 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1590 and participant 275 took 6 ms.
+    23:44:30.165 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1591 and participant 271 to update participant scores.
+    23:44:30.174 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 53.
+    23:44:30.176 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1591 and participant 271 took 11 ms.
+    23:44:30.188 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1591 and participant 272 to update participant scores.
+    23:44:30.195 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 54.
+    23:44:30.197 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1591 and participant 272 took 9 ms.
+    23:44:30.208 | 190 Pool-1-worker-83 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/management/statistics/exercise-statistics
+
+Finished logs for StatisticsIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

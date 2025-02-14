@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.exercise.architecture.ExerciseResourceArchitectureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:57" hostname="fv-az1721-502" time="0.161">
+  <properties/>
+  <testcase name="testNoOverrideOfEnforceAdmin()" classname="de.tum.cit.aet.artemis.exercise.architecture.ExerciseResourceArchitectureTest" time="0.014"/>
+  <testcase name="testUseKebabCaseForRestEndpoints()" classname="de.tum.cit.aet.artemis.exercise.architecture.ExerciseResourceArchitectureTest" time="0.06"/>
+  <testcase name="allPublicMethodsShouldReturnResponseEntity()" classname="de.tum.cit.aet.artemis.exercise.architecture.ExerciseResourceArchitectureTest" time="0.033"/>
+  <testcase name="testClassWithEnforceAdminInCorrectlyNamed()" classname="de.tum.cit.aet.artemis.exercise.architecture.ExerciseResourceArchitectureTest" time="0.003"/>
+  <testcase name="shouldBeNamedResource()" classname="de.tum.cit.aet.artemis.exercise.architecture.ExerciseResourceArchitectureTest" time="0.001"/>
+  <testcase name="shouldBeInResourcePackage()" classname="de.tum.cit.aet.artemis.exercise.architecture.ExerciseResourceArchitectureTest" time="0.002"/>
+  <testcase name="shouldCorrectlyUseRequestMappingAnnotations()" classname="de.tum.cit.aet.artemis.exercise.architecture.ExerciseResourceArchitectureTest" time="0.045"/>
+  <system-out><![CDATA[
+Starting logs for ExerciseResourceArchitectureTest
+
+  Starting logs for ExerciseResourceArchitectureTest > testNoOverrideOfEnforceAdmin()
+
+  Starting logs for ExerciseResourceArchitectureTest > testUseKebabCaseForRestEndpoints()
+
+  Starting logs for ExerciseResourceArchitectureTest > allPublicMethodsShouldReturnResponseEntity()
+
+  Starting logs for ExerciseResourceArchitectureTest > testClassWithEnforceAdminInCorrectlyNamed()
+
+  Starting logs for ExerciseResourceArchitectureTest > shouldBeNamedResource()
+
+  Starting logs for ExerciseResourceArchitectureTest > shouldBeInResourcePackage()
+
+  Starting logs for ExerciseResourceArchitectureTest > shouldCorrectlyUseRequestMappingAnnotations()
+
+Finished logs for ExerciseResourceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

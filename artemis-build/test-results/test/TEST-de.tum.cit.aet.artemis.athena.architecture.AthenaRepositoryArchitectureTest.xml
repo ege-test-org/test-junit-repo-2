@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:15" hostname="fv-az1721-502" time="0.457">
+  <properties/>
+  <testcase name="testNoEntityGraphsOnQueries()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" time="0.018"/>
+  <testcase name="testNoUnusedRepositoryMethods()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" time="0.024"/>
+  <testcase name="testTransactional()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" time="0.037"/>
+  <testcase name="shouldBeInRepositoryPackage()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" time="0.01"/>
+  <testcase name="testRepositoryParamAnnotation()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" time="0.203"/>
+  <testcase name="orElseThrowShouldNotBeCalled()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" time="0.008"/>
+  <testcase name="repositoriesImplementArtemisJpaRepository()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" time="0.009"/>
+  <testcase name="persistenceShouldNotAccessServices()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" time="0.008"/>
+  <testcase name="usedInProductionCode()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" time="0.032"/>
+  <testcase name="shouldBeAnnotatedRepository()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" time="0.006"/>
+  <testcase name="enforceUsageOfTestRepository()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" time="0.006"/>
+  <testcase name="testJPQLStyle()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" time="0.019"/>
+  <testcase name="shouldBeNamedRepository()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" time="0.003"/>
+  <testcase name="enforceStructureOfTestRepositories()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" time="0.011"/>
+  <testcase name="testOnlySpringTransactionalAnnotation()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" time="0.023"/>
+  <testcase name="enforcePrimaryBeanAnnotationOnTestRepositories()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaRepositoryArchitectureTest" time="0.002"/>
+  <system-out><![CDATA[
+Starting logs for AthenaRepositoryArchitectureTest
+
+  Starting logs for AthenaRepositoryArchitectureTest > testNoEntityGraphsOnQueries()
+
+  Starting logs for AthenaRepositoryArchitectureTest > testNoUnusedRepositoryMethods()
+
+  Starting logs for AthenaRepositoryArchitectureTest > testTransactional()
+
+  Starting logs for AthenaRepositoryArchitectureTest > shouldBeInRepositoryPackage()
+
+  Starting logs for AthenaRepositoryArchitectureTest > testRepositoryParamAnnotation()
+
+  Starting logs for AthenaRepositoryArchitectureTest > orElseThrowShouldNotBeCalled()
+
+  Starting logs for AthenaRepositoryArchitectureTest > repositoriesImplementArtemisJpaRepository()
+
+  Starting logs for AthenaRepositoryArchitectureTest > persistenceShouldNotAccessServices()
+
+  Starting logs for AthenaRepositoryArchitectureTest > usedInProductionCode()
+
+  Starting logs for AthenaRepositoryArchitectureTest > shouldBeAnnotatedRepository()
+
+  Starting logs for AthenaRepositoryArchitectureTest > enforceUsageOfTestRepository()
+
+  Starting logs for AthenaRepositoryArchitectureTest > testJPQLStyle()
+
+  Starting logs for AthenaRepositoryArchitectureTest > shouldBeNamedRepository()
+
+  Starting logs for AthenaRepositoryArchitectureTest > enforceStructureOfTestRepositories()
+
+  Starting logs for AthenaRepositoryArchitectureTest > testOnlySpringTransactionalAnnotation()
+
+  Starting logs for AthenaRepositoryArchitectureTest > enforcePrimaryBeanAnnotationOnTestRepositories()
+
+Finished logs for AthenaRepositoryArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

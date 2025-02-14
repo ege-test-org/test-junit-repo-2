@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.atlas.competency.StandardizedCompetencyIntegrationTest$AdminStandardizedCompetencyResource$ImportStandardizedCompetencies" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:12" hostname="fv-az1721-502" time="0.136">
+  <properties/>
+  <testcase name="shouldImport()" classname="de.tum.cit.aet.artemis.atlas.competency.StandardizedCompetencyIntegrationTest$AdminStandardizedCompetencyResource$ImportStandardizedCompetencies" time="0.081"/>
+  <testcase name="shouldReturnBadRequestForInvalidSources()" classname="de.tum.cit.aet.artemis.atlas.competency.StandardizedCompetencyIntegrationTest$AdminStandardizedCompetencyResource$ImportStandardizedCompetencies" time="0.047"/>
+  <system-out><![CDATA[
+Starting logs for ImportStandardizedCompetencies
+
+  Starting logs for ImportStandardizedCompetencies > shouldImport()
+    23:43:12.394 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:12.398 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:12.401 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:12.403 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:12.406 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:12.407 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:12.408 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:12.408 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:12.412 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:12.413 | 122 Pool-1-worker-37 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ImportStandardizedCompetencies#shouldImport'
+    23:43:12.420 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/admin/standardized-competencies/import
+    23:43:12.436 | 122 Pool-1-worker-37 | DEBUG | .AdminStandardizedCompetencyResource : REST request to import standardized competency catalog
+
+  Starting logs for ImportStandardizedCompetencies > shouldReturnBadRequestForInvalidSources()
+    23:43:12.479 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:12.482 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:12.490 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:12.493 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:12.496 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:12.497 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:12.498 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:12.498 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:12.502 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:12.503 | 122 Pool-1-worker-37 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ImportStandardizedCompetencies#shouldReturnBadRequestForInvalidSources'
+    23:43:12.504 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/admin/standardized-competencies/import
+    23:43:12.505 | 122 Pool-1-worker-37 | DEBUG | .AdminStandardizedCompetencyResource : REST request to import standardized competency catalog
+    23:43:12.506 | 122 Pool-1-worker-37 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The source with id 1 used in the competency "title" does not exist in your import file!
+
+Finished logs for ImportStandardizedCompetencies
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

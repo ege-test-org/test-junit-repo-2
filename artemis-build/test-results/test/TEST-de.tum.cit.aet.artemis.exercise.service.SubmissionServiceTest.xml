@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:11" hostname="fv-az1721-502" time="3.659">
+  <properties/>
+  <testcase name="testTextExerciseGetRandomSubmissionEligibleForNewAssessmentOneAssessmentsWithoutLock()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.276"/>
+  <testcase name="testTextExerciseGetRandomSubmissionEligibleForNewAssessmentOneAssessmentsWithLock()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.225"/>
+  <testcase name="testModelingExerciseGetRandomSubmissionEligibleForNewAssessmentNoAssessments()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.248"/>
+  <testcase name="testTextExerciseGetRandomSubmissionEligibleForNewAssessmentOneAssessmentsInSecondCorrectionRoundWithLock()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.275"/>
+  <testcase name="testTextExerciseGetRandomSubmissionEligibleForNewAssessmentNoAssessments()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.176"/>
+  <testcase name="testFileUploadExerciseGetRandomSubmissionEligibleForNewAssessmentWithoutSubmission()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.122"/>
+  <testcase name="testGetSubmissionsWithComplaintsForExerciseAsInstructor()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.244"/>
+  <testcase name="testGetSubmissionsWithMoreFeedbackRequestsForExerciseAsTutor()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.214"/>
+  <testcase name="testModelingExerciseGetRandomSubmissionEligibleForNewAssessmentOneAssessmentsWithoutLock()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.217"/>
+  <testcase name="testGetSubmissionsWithComplaintsForExerciseAsTutor()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.301"/>
+  <testcase name="testModelingExerciseGetRandomSubmissionEligibleForNewAssessmentOneAssessmentsInSecondCorrectionRoundWithLock()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.276"/>
+  <testcase name="testCheckSubmissionAllowanceGroupCheck()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.141"/>
+  <testcase name="testModelingExerciseGetRandomSubmissionEligibleForNewAssessmentOneAssessmentsWithLock()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.177"/>
+  <testcase name="testTextExerciseGetRandomSubmissionEligibleForNewAssessmentOneAssessmentsInSecondCorrectionRoundWithoutLock()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.162"/>
+  <testcase name="testFileUploadExerciseGetRandomSubmissionEligibleForNewAssessment()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.186"/>
+  <testcase name="testModelingExerciseGetRandomSubmissionEligibleForNewAssessmentOneAssessmentsInSecondCorrectionRoundWithoutLock()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.142"/>
+  <testcase name="testProgrammingExerciseGetRandomSubmissionEligibleForNewAssessmentNoAssessments()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.154"/>
+  <testcase name="testCopyFeedbackSetValues()" classname="de.tum.cit.aet.artemis.exercise.service.SubmissionServiceTest" time="0.086"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

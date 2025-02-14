@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.aelous.AeolusServiceTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:57" hostname="fv-az1721-502" time="0.133">
+  <properties/>
+  <testcase name="testShouldNotGenerateAnything()" classname="de.tum.cit.aet.artemis.programming.aelous.AeolusServiceTest" time="0.012"/>
+  <testcase name="testSuccessfulPublishBuildPlan()" classname="de.tum.cit.aet.artemis.programming.aelous.AeolusServiceTest" time="0.013"/>
+  <testcase name="testReturnsNullonUrlNull()" classname="de.tum.cit.aet.artemis.programming.aelous.AeolusServiceTest" time="0.055"/>
+  <testcase name="testGetDefaultWindfileFor()" classname="de.tum.cit.aet.artemis.programming.aelous.AeolusServiceTest" time="0.01"/>
+  <testcase name="testRepositoryMapForJavaWindfileCreation()" classname="de.tum.cit.aet.artemis.programming.aelous.AeolusServiceTest" time="0.007"/>
+  <testcase name="testGetWindfileFor()" classname="de.tum.cit.aet.artemis.programming.aelous.AeolusServiceTest" time="0.006"/>
+  <testcase name="testBuildScriptGeneration()" classname="de.tum.cit.aet.artemis.programming.aelous.AeolusServiceTest" time="0.008"/>
+  <testcase name="testRepositoryMapForHaskellWindfileCreation()" classname="de.tum.cit.aet.artemis.programming.aelous.AeolusServiceTest" time="0.006"/>
+  <testcase name="testFailedPublishBuildPlan()" classname="de.tum.cit.aet.artemis.programming.aelous.AeolusServiceTest" time="0.007"/>
+  <system-out><![CDATA[[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 s -- in de.test.AttributeTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.216 s
+[INFO] Finished at: 2025-02-14T23:47:57Z
+[INFO] ------------------------------------------------------------------------
+
+Starting logs for AeolusServiceTest
+
+  Starting logs for AeolusServiceTest > testShouldNotGenerateAnything()
+    23:47:57.224 | 471 ool-1-worker-235 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AeolusServiceTest#testShouldNotGenerateAnything'
+
+  Starting logs for AeolusServiceTest > testSuccessfulPublishBuildPlan()
+    23:47:57.235 | 471 ool-1-worker-235 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AeolusServiceTest#testSuccessfulPublishBuildPlan'
+
+  Starting logs for AeolusServiceTest > testReturnsNullonUrlNull()
+    23:47:57.250 | 471 ool-1-worker-235 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AeolusServiceTest#testReturnsNullonUrlNull'
+    23:47:57.250 | 471 ool-1-worker-235 | ERROR | t.c.a.a.p.s.a.AeolusBuildPlanService : Could not publish build plan {} to Aeolus target JENKINS, no CI URL configured
+
+  Starting logs for AeolusServiceTest > testGetDefaultWindfileFor()
+    23:47:57.306 | 471 ool-1-worker-235 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AeolusServiceTest#testGetDefaultWindfileFor'
+    23:47:57.306 | 471 ool-1-worker-235 | ERROR | .t.c.a.a.p.s.a.AeolusTemplateService : No windfile found for key haskell_default_static_sequential.yaml
+
+  Starting logs for AeolusServiceTest > testRepositoryMapForJavaWindfileCreation()
+    23:47:57.316 | 471 ool-1-worker-235 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AeolusServiceTest#testRepositoryMapForJavaWindfileCreation'
+
+  Starting logs for AeolusServiceTest > testGetWindfileFor()
+    23:47:57.324 | 471 ool-1-worker-235 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AeolusServiceTest#testGetWindfileFor'
+
+  Starting logs for AeolusServiceTest > testBuildScriptGeneration()
+    23:47:57.331 | 471 ool-1-worker-235 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AeolusServiceTest#testBuildScriptGeneration'
+
+  Starting logs for AeolusServiceTest > testRepositoryMapForHaskellWindfileCreation()
+    23:47:57.340 | 471 ool-1-worker-235 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AeolusServiceTest#testRepositoryMapForHaskellWindfileCreation'
+
+  Starting logs for AeolusServiceTest > testFailedPublishBuildPlan()
+    23:47:57.347 | 471 ool-1-worker-235 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AeolusServiceTest#testFailedPublishBuildPlan'
+    23:47:57.347 | 471 ool-1-worker-235 | ERROR | t.c.a.a.p.s.a.AeolusBuildPlanService : Could not publish build plan {"metadata":{"id":"PROJECT-PLAN"}} to Aeolus target JENKINS, no CI URL configured
+
+Finished logs for AeolusServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

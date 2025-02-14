@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.compass.umlmodel.flowchart.FlowchartTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:04" hostname="fv-az1721-502" time="0.099">
+  <properties/>
+  <testcase name="similarityFlowchartEqualModels()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.flowchart.FlowchartTest" time="0.012"/>
+  <testcase name="similarityFlowchartDifferentModels()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.flowchart.FlowchartTest" time="0.003"/>
+  <testcase name="similarityFlowchartDifferentModels_v3()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.flowchart.FlowchartTest" time="0.004"/>
+  <testcase name="parseFlowchartModelCorrectly_v3()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.flowchart.FlowchartTest" time="0.06"/>
+  <testcase name="similarityFlowchartEqualModels_v3()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.flowchart.FlowchartTest" time="0.012"/>
+  <testcase name="parseFlowchartModelCorrectly()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.flowchart.FlowchartTest" time="0.002"/>
+  <system-out><![CDATA[
+Starting logs for FlowchartTest
+
+  Starting logs for FlowchartTest > similarityFlowchartEqualModels()
+    23:40:04.881 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.884 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.884 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:04.885 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.9999999999999996
+    23:40:04.885 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.9999999999999996
+    23:40:04.885 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.8)
+    23:40:04.885 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.886 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.887 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:04.887 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 1.0
+    23:40:04.888 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 1.0
+    23:40:04.888 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.8)
+    23:40:04.888 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.888 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.889 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:04.889 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.9999999999999996
+    23:40:04.889 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.9999999999999996
+    23:40:04.890 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.8)
+
+  Starting logs for FlowchartTest > similarityFlowchartDifferentModels()
+    23:40:04.892 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.893 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.893 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:04.894 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.4700000000000001
+    23:40:04.894 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.4700000000000001
+    23:40:04.894 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.0)
+
+  Starting logs for FlowchartTest > similarityFlowchartDifferentModels_v3()
+    23:40:04.896 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.897 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.898 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:04.899 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.4700000000000001
+    23:40:04.899 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.4700000000000001
+    23:40:04.899 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.0)
+
+  Starting logs for FlowchartTest > parseFlowchartModelCorrectly_v3()
+
+  Starting logs for FlowchartTest > similarityFlowchartEqualModels_v3()
+    23:40:04.961 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.962 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.965 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:04.966 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.9999999999999996
+    23:40:04.966 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.9999999999999996
+    23:40:04.967 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.8)
+    23:40:04.967 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.968 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.968 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:04.970 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 1.0
+    23:40:04.970 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 1.0
+    23:40:04.970 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.8)
+    23:40:04.971 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.971 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:04.972 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:04.972 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.9999999999999996
+    23:40:04.972 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.9999999999999996
+    23:40:04.972 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.8)
+
+  Starting logs for FlowchartTest > parseFlowchartModelCorrectly()
+
+Finished logs for FlowchartTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

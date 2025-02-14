@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.security.lti.Lti13TokenRetrieverTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:48" hostname="fv-az1721-502" time="7.553">
+  <properties/>
+  <testcase name="getTokenNoReturn()" classname="de.tum.cit.aet.artemis.core.security.lti.Lti13TokenRetrieverTest" time="1.441"/>
+  <testcase name="getTokenNoScopes()" classname="de.tum.cit.aet.artemis.core.security.lti.Lti13TokenRetrieverTest" time="0.003"/>
+  <testcase name="getTokenNoRegistrationId()" classname="de.tum.cit.aet.artemis.core.security.lti.Lti13TokenRetrieverTest" time="0.001"/>
+  <testcase name="getTokenNoJWK()" classname="de.tum.cit.aet.artemis.core.security.lti.Lti13TokenRetrieverTest" time="0.002"/>
+  <testcase name="getTokenClientError()" classname="de.tum.cit.aet.artemis.core.security.lti.Lti13TokenRetrieverTest" time="2.306"/>
+  <testcase name="getJWTToken()" classname="de.tum.cit.aet.artemis.core.security.lti.Lti13TokenRetrieverTest" time="1.169"/>
+  <testcase name="getTokenInvalidKey()" classname="de.tum.cit.aet.artemis.core.security.lti.Lti13TokenRetrieverTest" time="0.423"/>
+  <testcase name="getToken()" classname="de.tum.cit.aet.artemis.core.security.lti.Lti13TokenRetrieverTest" time="2.207"/>
+  <system-out><![CDATA[
+Starting logs for Lti13TokenRetrieverTest
+
+  Starting logs for Lti13TokenRetrieverTest > getTokenNoReturn()
+    23:39:49.770 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.l.c.Lti13TokenRetriever    : Trying to retrieve access token for client
+    23:39:49.886 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.l.c.Lti13TokenRetriever    : Created signed token: eyJraWQiOiJVMHNnakFuMGdTK3V5ZDVhYTFtZGFpMmZJc3hMYXhRNG1Edm1mMU9PY25FPSIsInR5cCI6IkpXVCIsImFsZyI6IlJTMjU2In0.eyJpc3MiOiJjbGllbnRJZCIsInN1YiI6ImNsaWVudElkIiwiYXVkIjoidG9rZW5VcmkiLCJleHAiOjE3Mzk1NzY0NDksImlhdCI6MTczOTU3NjM4OSwianRpIjoiZmI4MTcxZDMtNzA4YS00MTJkLTk3OTMtMjFjOThhMzEwNjdlIn0.jD7zYdrg-UjsaeYXkg4j2EPzQODhuqnSFKcegDH_CwR9OiNBME7bIFja1JLvucoM2huY_Q7QzgB28aBevbVViuobwvMYvfBCeiMiAHggfRNhfxGzs3uD95am7rDzntiDLFIVyuQLBNmlWRg68gutEyw2UzWPMhUESwGJcjml8yxtFUsSuM6wiz4bPJXArvAmfaks7MI__TzoZRy1EIzznwcXenDdhro1mkRPcpF1wYQajflL6uirv3X8GkcGJkNg0yx3_dA1kGplffQz6LVSmk6Slc338QiOc6ZiV5fITlg88u8ROZlMt7mosrnS_RRccslrbC-ieDxUOIUrhz80VgNPJR1Ck-5NCdz5uBW6yC8J8X3VyAUYIksxxvt1a9r5VLNkqc60PWAEcoPMzzNQfEh0_ruOsbyQijyj2HQPqPUkftu0nDuWBRkvoSYy2ApdB3HXGqyyIVExjsVFL6z-eUJ9d7Lh_4lYm926J91DyHzP8uYy4TYCT2bbl5R3_Sdq
+
+  Starting logs for Lti13TokenRetrieverTest > getTokenNoScopes()
+    23:39:49.892 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.l.c.Lti13TokenRetriever    : Trying to retrieve access token for client
+
+  Starting logs for Lti13TokenRetrieverTest > getTokenNoRegistrationId()
+    23:39:49.895 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.l.c.Lti13TokenRetriever    : Trying to retrieve access token for client
+
+  Starting logs for Lti13TokenRetrieverTest > getTokenNoJWK()
+    23:39:49.897 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.l.c.Lti13TokenRetriever    : Trying to retrieve access token for client
+
+  Starting logs for Lti13TokenRetrieverTest > getTokenClientError()
+    23:39:52.187 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.l.c.Lti13TokenRetriever    : Trying to retrieve access token for client
+    23:39:52.202 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.l.c.Lti13TokenRetriever    : Created signed token: eyJraWQiOiIxOXhuMFpoeE0xdlhlTHl1Q1ZidTBOdDRBTEQwTzJMWkVIYlVZQ2QzTk04PSIsInR5cCI6IkpXVCIsImFsZyI6IlJTMjU2In0.eyJpc3MiOiJjbGllbnRJZCIsInN1YiI6ImNsaWVudElkIiwiYXVkIjoidG9rZW5VcmkiLCJleHAiOjE3Mzk1NzY0NTIsImlhdCI6MTczOTU3NjM5MiwianRpIjoiZDI5YjI2OTMtYTQyNi00ZGJlLWE4MjctZWNlMzUzZjkyOWU1In0.nVo_U3u-LctsJn2y83wfzknxakWfVvak7xu2po7wtkSvZCwhDmioe3yuWS0D41rcsObU2bcSBhnGVDyLne9EfCoEfSzTblQHTQHUskhSTNcLuVymCwNxUDcdpnuJFrnDC6-U4Cplb0LTPwVTi4ct4DjEqPV4gWoCZxncJnsd0_sEhxrY-XiXb2jMbH7xlttqd71ryxgRnyIjPSJn749e0pIMlYF8Gk80H7ZHYD8uAkQFr33AqGbrc2F26JkqNkBkeYh-ND6G-Ux1HU1G3kTUrPQkbFF7rRt0AL688Fr5urJtSJU_YsPTCYvv9vKChdltrTqaFmSQEAr_nBlcHAxvGH1xYtX_LwV_FpaZs8Op9BbK9hsMz93y92tJpV7VFChj1EXER5OLGUWLNbQap94UZZ23GB7g714J3C6KtE6qb0L6GgPgbKFzbkAMnEOd21J0neAgqJD8tr2p6rZNQFK90Digl8xlp0U8qbW7iJo0W2c6Z_j6reUwlExljzz2VLS-
+    23:39:52.203 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.l.c.Lti13TokenRetriever    : Could not retrieve access token for client clientId: null
+
+  Starting logs for Lti13TokenRetrieverTest > getJWTToken()
+    23:39:53.365 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.l.c.Lti13TokenRetriever    : Created signed token: eyJraWQiOiJSanRUdno4dmpqU3JKcWwrUXM1VDBSYXBlWlJlU28zaitkdzRnNS8ySnhRPSIsInR5cCI6IkpXVCIsImFsZyI6IlJTMjU2In0.eyJjdXN0b21DbGFpbTEiOiJ2YWx1ZTEiLCJjdXN0b21DbGFpbTIiOiJ2YWx1ZTIiLCJleHAiOjE3Mzk1NzY0NTMsImlhdCI6MTczOTU3NjM5M30.ZjduQoYR3nPj0prWkWJUmIa1BG2Czv8hjxVQWLknv5UwnRolcwDNnMyWUYn_fyQlAH-dHXsER3Im7v14b_UhH-Qry2gS6QJxv4KJZzivizkgTY6bcZj6-EXn1l1eakcDV6uZu_GR5JJVg6XF3b2RYnuoI8I1rO-KZiBuSEuE8h_oVv_6jEbRzKMvISvvIXqRVkf5GfbbiCBdJ8GMM5S8zN7IzFzQ821EKoe09UfJl33x3cR60AtvYf1SwKhLIGU-J63bQpVeTR5spPaw9rqIGvC-oq4jziodk7xyFTJSbR2CfKVIaySv6GOcTBs65Hgv69AKNaSWAv0LAZfgJ0coq4Pf-nX2mpOHSh12AOsCm6NJ_aIse05hr-Apc5Y8EWci6qdiUYVJMwEFaT_nPyXLgZJW2L4mYuhCvhV1K1idTWC5z2dWQMXX8yvHTpc4LG0TyrKWc-rO0XAF38HxAIsYf1ENDdQaqJhTT051Fny4os5QjYWrCxg_WlZ1T6UVEI41
+
+  Starting logs for Lti13TokenRetrieverTest > getTokenInvalidKey()
+    23:39:53.796 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.l.c.Lti13TokenRetriever    : Trying to retrieve access token for client
+    23:39:53.797 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.l.c.Lti13TokenRetriever    : Could not create keypair for clientRegistrationId regId
+
+  Starting logs for Lti13TokenRetrieverTest > getToken()
+    23:39:55.991 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.l.c.Lti13TokenRetriever    : Trying to retrieve access token for client
+    23:39:56.002 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.l.c.Lti13TokenRetriever    : Created signed token: eyJraWQiOiJBNEFwTUljY0ZpSVJ0RjBHVTltVVI2eWlaYVdwdTZZNVJTU0pCWk1MYnJNPSIsInR5cCI6IkpXVCIsImFsZyI6IlJTMjU2In0.eyJpc3MiOiJjbGllbnRJZCIsInN1YiI6ImNsaWVudElkIiwiYXVkIjoidG9rZW5VcmkiLCJleHAiOjE3Mzk1NzY0NTUsImlhdCI6MTczOTU3NjM5NSwianRpIjoiOWFiMjY1NmYtY2Q3My00YWUyLTgyMzItYTQ4ZTM2ODEzMWRhIn0.tR_a_Xgn-xiN3x3EZ6RFCxYXAO4cnmtRoMxXwgkNk8A7aN9p8Lah5w_AOl9905c7zdsCiD26Qaik4Ka_oywmeFRJXDsua_eBuDuYMolpyGSgyqAxqL8hDxJic_EWjjk_YDl7sEqkjYgP3Svq0TosNA5dXjKzY_0Z-ohWbTPq7q7ktP1SP3LyJKYgWxMNBoCEX8fYR0QGJfpjzOCReyw00OInzYjuMS6xeppi9PiquNeOrNrzKzfdEWphfVSY9SrT_buPzVUDwwYiHegaCLcdlFHVRP7D8QLWmvusxDn_M6F7GLr7zijH_CZyGf58PjzXLasTVC2qJUivt2JaNzmpZeOlYTeG5JABhNbuud-AEuXvxIrLJr729Awe9mr8CNCRIlHY6SmFFxEvpHuoe_in9sBsG_zROzFgWpltjRQtIFWO8sOnMSFjSYJL-qi-vBirx9q8KG9WVplcbHy7Ujvz-p2lbPU-DVhlh6YFHOqxoq_qW2Jo2W0AkWe9SDYRzVPe
+
+Finished logs for Lti13TokenRetrieverTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

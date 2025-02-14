@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.ProgrammingExerciseServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:57" hostname="fv-az1721-502" time="0.099">
+  <properties/>
+  <testcase name="shouldFindProgrammingExerciseWithBuildAndTestDateInFuture()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseServiceTest" time="0.099"/>
+  <system-out><![CDATA[[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional.empty, executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[protected org.junit.jupiter.api.DynamicContainer de.test.AttributeTest.generateTestsForAllClasses() throws java.net.URISyntaxException], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-19,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-19,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[protected org.junit.jupiter.api.DynamicContainer de.test.AttributeTest.generateTestsForAllClasses() throws java.net.URISyntaxException], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-20,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-20,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[protected org.junit.jupiter.api.DynamicContainer de.test.AttributeTest.generateTestsForAllClasses() throws java.net.URISyntaxException], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-21,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-21,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+
+Starting logs for ProgrammingExerciseServiceTest
+
+  Starting logs for ProgrammingExerciseServiceTest > shouldFindProgrammingExerciseWithBuildAndTestDateInFuture()
+    23:47:57.108 | 459 ool-1-worker-223 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:47:57.109 | 459 ool-1-worker-223 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 0 tutors...
+    23:47:57.111 | 459 ool-1-worker-223 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:47:57.112 | 459 ool-1-worker-223 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:47:57.116 | 459 ool-1-worker-223 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:47:57.118 | 459 ool-1-worker-223 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:47:57.118 | 459 ool-1-worker-223 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:47:57.118 | 459 ool-1-worker-223 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:47:57.119 | 459 ool-1-worker-223 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:47:57.147 | 459 ool-1-worker-223 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseServiceTest#shouldFindProgrammingExerciseWithBuildAndTestDateInFuture'
+
+Finished logs for ProgrammingExerciseServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.iris.IrisExerciseChatSessionIntegrationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:47" hostname="fv-az1721-502" time="1.582">
+  <properties/>
+  <testcase name="testDeleteExerciseWithIrisMessagesWithJsonMessageContent()" classname="de.tum.cit.aet.artemis.iris.IrisExerciseChatSessionIntegrationTest" time="0.174"/>
+  <testcase name="testDeleteExerciseWithIrisMessagesWithTextMessageContent()" classname="de.tum.cit.aet.artemis.iris.IrisExerciseChatSessionIntegrationTest" time="0.114"/>
+  <testcase name="createSession()" classname="de.tum.cit.aet.artemis.iris.IrisExerciseChatSessionIntegrationTest" time="0.077"/>
+  <testcase name="getCurrentSession()" classname="de.tum.cit.aet.artemis.iris.IrisExerciseChatSessionIntegrationTest" time="0.136"/>
+  <testcase name="irisStatus()" classname="de.tum.cit.aet.artemis.iris.IrisExerciseChatSessionIntegrationTest" time="0.593"/>
+  <testcase name="testDeleteExerciseWithIrisSession()" classname="de.tum.cit.aet.artemis.iris.IrisExerciseChatSessionIntegrationTest" time="0.104"/>
+  <testcase name="getAllSessions()" classname="de.tum.cit.aet.artemis.iris.IrisExerciseChatSessionIntegrationTest" time="0.178"/>
+  <testcase name="createSession_alreadyExists()" classname="de.tum.cit.aet.artemis.iris.IrisExerciseChatSessionIntegrationTest" time="0.189"/>
+  <system-out><![CDATA[
+Starting logs for IrisExerciseChatSessionIntegrationTest
+
+  Starting logs for IrisExerciseChatSessionIntegrationTest > testDeleteExerciseWithIrisMessagesWithJsonMessageContent()
+    23:43:47.674 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:47.678 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:43:47.679 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:47.684 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:43:47.689 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:47.690 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:47.694 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:47.694 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:43:47.695 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:43:47.723 | 401 ool-1-worker-165 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisExerciseChatSessionIntegrationTest#testDeleteExerciseWithIrisMessagesWithJsonMessageContent'
+    23:43:47.769 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/programming-exercises/438
+    23:43:47.771 | 401 ool-1-worker-165 | INFO  | .a.a.p.w.ProgrammingExerciseResource : REST request to delete ProgrammingExercise : 438
+    23:43:47.780 | 401 ool-1-worker-165 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User irischatsessionintegrationinstructor1 has requested to delete ProgrammingExercise Programming with id 438
+    23:43:47.781 | 401 ool-1-worker-165 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Request to delete ProgrammingExercise with id 438
+    23:43:47.781 | 401 ool-1-worker-165 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Deleting the channel took 402µs
+    23:43:47.791 | 401 ool-1-worker-165 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 438
+    23:43:47.798 | 401 ool-1-worker-165 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for programming exercise 438
+    23:43:47.798 | 401 ool-1-worker-165 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for potential Athena exercise 438
+    23:43:47.803 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 869
+    23:43:47.808 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 870
+    23:43:47.811 | 401 ool-1-worker-165 | DEBUG | c.a.a.p.s.ProgrammingExerciseService : Delete programming exercises with student participations: []
+    23:43:47.817 | 401 ool-1-worker-165 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '438' from title cache 'exerciseTitle'
+
+  Starting logs for IrisExerciseChatSessionIntegrationTest > testDeleteExerciseWithIrisMessagesWithTextMessageContent()
+    23:43:47.840 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:47.843 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:43:47.844 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:47.846 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:43:47.849 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:47.851 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:43:47.851 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:43:47.851 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:43:47.856 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:43:47.879 | 401 ool-1-worker-165 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisExerciseChatSessionIntegrationTest#testDeleteExerciseWithIrisMessagesWithTextMessageContent'
+    23:43:47.894 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/programming-exercises/439
+    23:43:47.895 | 401 ool-1-worker-165 | INFO  | .a.a.p.w.ProgrammingExerciseResource : REST request to delete ProgrammingExercise : 439
+    23:43:47.899 | 401 ool-1-worker-165 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User irischatsessionintegrationinstructor1 has requested to delete ProgrammingExercise Programming with id 439
+    23:43:47.900 | 401 ool-1-worker-165 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Request to delete ProgrammingExercise with id 439
+    23:43:47.901 | 401 ool-1-worker-165 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Deleting the channel took 382µs
+    23:43:47.907 | 401 ool-1-worker-165 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 439
+    23:43:47.914 | 401 ool-1-worker-165 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for programming exercise 439
+    23:43:47.914 | 401 ool-1-worker-165 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for potential Athena exercise 439
+    23:43:47.917 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 871
+    23:43:47.921 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 872
+    23:43:47.926 | 401 ool-1-worker-165 | DEBUG | c.a.a.p.s.ProgrammingExerciseService : Delete programming exercises with student participations: []
+    23:43:47.933 | 401 ool-1-worker-165 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '439' from title cache 'exerciseTitle'
+
+  Starting logs for IrisExerciseChatSessionIntegrationTest > createSession()
+    23:43:47.956 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:47.958 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:43:47.960 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:47.961 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:43:47.964 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:47.965 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:43:47.966 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:43:47.966 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:43:47.968 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:43:47.992 | 401 ool-1-worker-165 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisExerciseChatSessionIntegrationTest#createSession'
+    23:43:47.993 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/exercise-chat/440/sessions
+
+  Starting logs for IrisExerciseChatSessionIntegrationTest > getCurrentSession()
+    23:43:48.040 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:48.044 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:43:48.046 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:48.051 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:43:48.056 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:48.057 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:43:48.058 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:43:48.058 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:43:48.068 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:43:48.094 | 401 ool-1-worker-165 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisExerciseChatSessionIntegrationTest#getCurrentSession'
+    23:43:48.095 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/exercise-chat/441/sessions
+    23:43:48.126 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/exercise-chat/441/sessions/current
+
+  Starting logs for IrisExerciseChatSessionIntegrationTest > irisStatus()
+    23:43:48.174 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:48.177 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:43:48.178 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:48.180 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:43:48.183 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:48.184 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:43:48.185 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:43:48.185 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:43:48.187 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:43:48.210 | 401 ool-1-worker-165 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisExerciseChatSessionIntegrationTest#irisStatus'
+    23:43:48.214 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/iris/status
+    23:43:48.223 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/iris/status
+    23:43:48.740 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/iris/status
+
+  Starting logs for IrisExerciseChatSessionIntegrationTest > testDeleteExerciseWithIrisSession()
+    23:43:48.771 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:48.774 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:43:48.775 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:48.778 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:43:48.781 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:48.783 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:43:48.783 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:43:48.783 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:43:48.787 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:43:48.811 | 401 ool-1-worker-165 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisExerciseChatSessionIntegrationTest#testDeleteExerciseWithIrisSession'
+    23:43:48.812 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/exercise-chat/443/sessions
+    23:43:48.826 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/programming-exercises/443
+    23:43:48.827 | 401 ool-1-worker-165 | INFO  | .a.a.p.w.ProgrammingExerciseResource : REST request to delete ProgrammingExercise : 443
+    23:43:48.831 | 401 ool-1-worker-165 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User irischatsessionintegrationinstructor1 has requested to delete ProgrammingExercise Programming with id 443
+    23:43:48.832 | 401 ool-1-worker-165 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Request to delete ProgrammingExercise with id 443
+    23:43:48.833 | 401 ool-1-worker-165 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Deleting the channel took 418µs
+    23:43:48.837 | 401 ool-1-worker-165 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 443
+    23:43:48.841 | 401 ool-1-worker-165 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for programming exercise 443
+    23:43:48.841 | 401 ool-1-worker-165 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for potential Athena exercise 443
+    23:43:48.843 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 879
+    23:43:48.846 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 880
+    23:43:48.849 | 401 ool-1-worker-165 | DEBUG | c.a.a.p.s.ProgrammingExerciseService : Delete programming exercises with student participations: []
+    23:43:48.854 | 401 ool-1-worker-165 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '443' from title cache 'exerciseTitle'
+
+  Starting logs for IrisExerciseChatSessionIntegrationTest > getAllSessions()
+    23:43:48.880 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:48.883 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:43:48.885 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:48.886 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:43:48.890 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:48.892 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:43:48.895 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:43:48.895 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:43:48.900 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:43:48.945 | 401 ool-1-worker-165 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisExerciseChatSessionIntegrationTest#getAllSessions'
+    23:43:48.951 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/exercise-chat/444/sessions
+    23:43:48.979 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/exercise-chat/444/sessions
+    23:43:49.007 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/iris/exercise-chat/444/sessions
+
+  Starting logs for IrisExerciseChatSessionIntegrationTest > createSession_alreadyExists()
+    23:43:49.065 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:49.071 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:43:49.076 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:49.079 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:43:49.085 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:49.088 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:43:49.088 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:43:49.088 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:43:49.094 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:43:49.143 | 401 ool-1-worker-165 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisExerciseChatSessionIntegrationTest#createSession_alreadyExists'
+    23:43:49.147 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/exercise-chat/445/sessions
+    23:43:49.169 | 401 ool-1-worker-165 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/exercise-chat/445/sessions
+
+Finished logs for IrisExerciseChatSessionIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

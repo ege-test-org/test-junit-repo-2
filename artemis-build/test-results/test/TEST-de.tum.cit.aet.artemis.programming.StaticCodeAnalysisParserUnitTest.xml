@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.StaticCodeAnalysisParserUnitTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:06" hostname="fv-az1721-502" time="0.311">
+  <properties/>
+  <testcase name="testInvalidName()" classname="de.tum.cit.aet.artemis.programming.StaticCodeAnalysisParserUnitTest" time="0.004"/>
+  <testcase name="testSpotbugsParser()" classname="de.tum.cit.aet.artemis.programming.StaticCodeAnalysisParserUnitTest" time="0.074"/>
+  <testcase name="testPMDParser()" classname="de.tum.cit.aet.artemis.programming.StaticCodeAnalysisParserUnitTest" time="0.034"/>
+  <testcase name="testCheckstyleParser()" classname="de.tum.cit.aet.artemis.programming.StaticCodeAnalysisParserUnitTest" time="0.025"/>
+  <testcase name="testPMDCPDParser()" classname="de.tum.cit.aet.artemis.programming.StaticCodeAnalysisParserUnitTest" time="0.023"/>
+  <testcase name="testRubocopParser()" classname="de.tum.cit.aet.artemis.programming.StaticCodeAnalysisParserUnitTest" time="0.077"/>
+  <testcase name="testParseInvalidXML()" classname="de.tum.cit.aet.artemis.programming.StaticCodeAnalysisParserUnitTest" time="0.032"/>
+  <testcase name="testRuffParser()" classname="de.tum.cit.aet.artemis.programming.StaticCodeAnalysisParserUnitTest" time="0.036"/>
+  <system-out><![CDATA[
+Starting logs for StaticCodeAnalysisParserUnitTest
+
+  Starting logs for StaticCodeAnalysisParserUnitTest > testInvalidName()
+
+  Starting logs for StaticCodeAnalysisParserUnitTest > testSpotbugsParser()
+
+  Starting logs for StaticCodeAnalysisParserUnitTest > testPMDParser()
+
+  Starting logs for StaticCodeAnalysisParserUnitTest > testCheckstyleParser()
+
+  Starting logs for StaticCodeAnalysisParserUnitTest > testPMDCPDParser()
+
+  Starting logs for StaticCodeAnalysisParserUnitTest > testRubocopParser()
+
+  Starting logs for StaticCodeAnalysisParserUnitTest > testParseInvalidXML()
+
+  Starting logs for StaticCodeAnalysisParserUnitTest > testRuffParser()
+
+Finished logs for StaticCodeAnalysisParserUnitTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

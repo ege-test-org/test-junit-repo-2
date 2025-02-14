@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.exam.architecture.ExamResourceArchitectureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:56" hostname="fv-az1721-502" time="0.135">
+  <properties/>
+  <testcase name="testNoOverrideOfEnforceAdmin()" classname="de.tum.cit.aet.artemis.exam.architecture.ExamResourceArchitectureTest" time="0.013"/>
+  <testcase name="testUseKebabCaseForRestEndpoints()" classname="de.tum.cit.aet.artemis.exam.architecture.ExamResourceArchitectureTest" time="0.05"/>
+  <testcase name="allPublicMethodsShouldReturnResponseEntity()" classname="de.tum.cit.aet.artemis.exam.architecture.ExamResourceArchitectureTest" time="0.022"/>
+  <testcase name="testClassWithEnforceAdminInCorrectlyNamed()" classname="de.tum.cit.aet.artemis.exam.architecture.ExamResourceArchitectureTest" time="0.003"/>
+  <testcase name="shouldBeNamedResource()" classname="de.tum.cit.aet.artemis.exam.architecture.ExamResourceArchitectureTest" time="0.001"/>
+  <testcase name="shouldBeInResourcePackage()" classname="de.tum.cit.aet.artemis.exam.architecture.ExamResourceArchitectureTest" time="0.003"/>
+  <testcase name="shouldCorrectlyUseRequestMappingAnnotations()" classname="de.tum.cit.aet.artemis.exam.architecture.ExamResourceArchitectureTest" time="0.041"/>
+  <system-out><![CDATA[
+Starting logs for ExamResourceArchitectureTest
+
+  Starting logs for ExamResourceArchitectureTest > testNoOverrideOfEnforceAdmin()
+
+  Starting logs for ExamResourceArchitectureTest > testUseKebabCaseForRestEndpoints()
+
+  Starting logs for ExamResourceArchitectureTest > allPublicMethodsShouldReturnResponseEntity()
+
+  Starting logs for ExamResourceArchitectureTest > testClassWithEnforceAdminInCorrectlyNamed()
+
+  Starting logs for ExamResourceArchitectureTest > shouldBeNamedResource()
+
+  Starting logs for ExamResourceArchitectureTest > shouldBeInResourcePackage()
+
+  Starting logs for ExamResourceArchitectureTest > shouldCorrectlyUseRequestMappingAnnotations()
+
+Finished logs for ExamResourceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

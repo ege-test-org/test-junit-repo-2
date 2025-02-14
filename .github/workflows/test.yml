@@ -53,50 +53,8 @@ jobs:
         set -o pipefail
         echo "Executing all tests"
         ./gradlew --console=plain test | tee tests.log
-    - name: Print failed tests
-      if: failure()
-      run: grep "Test >.* FAILED\$" tests.log || echo "No failed tests."
-    # - name: "Codacy: Report coverage"
-    #   uses: codacy/codacy-coverage-reporter-action@master
-    #   with:
-    #     project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-    #     coverage-reports: build/reports/jacoco/test/jacocoTestReport.xml
-    #   if: (github.event.pull_request.head.repo.full_name == github.event.pull_request.base.repo.full_name) && (success() || failure()) && github.event.pull_request.user.login != 'dependabot[bot]'
-    
-
-    # upload test results to github
     - name: Upload Test Results
       uses: actions/upload-artifact@v4
       with:
-        name: Test Results
-        path: build/test-results/test
-    
-    # - name: Annotate Server Test Results
-    #   uses: ashley-taylor/junit-report-annotations-action@f9c1a5cbe28479439f82b80a5402a6d3aa1990ac
-    #   if: always() && github.event.pull_request.user.login != 'dependabot[bot]'
-    #   with:
-    #     access-token: ${{ secrets.GITHUB_TOKEN }}
-    #     path: build/test-results/test/*.xml
-    #     numFailures: 99
-    # - name: Test Report
-    #   uses: dorny/test-reporter@v1
-    #   if: success() || failure()    # run this step even if previous step failed
-    #   with:
-    #     name: H2 Tests
-    #     path: build/test-results/test/*.xml
-    #     reporter: java-junit
-    # - name: Number of Server Starts
-    #   if: success() || failure()
-    #   run: bash supporting_scripts/extract_number_of_server_starts.sh
-    # - name: Upload Server Test Coverage Report
-    #   if: success() || failure()
-    #   uses: actions/upload-artifact@v4
-    #   with:
-    #     name: Coverage Report Server Tests
-    #     path: build/reports/jacoco/test/html
-    # - name: Append Per-Module Coverage to Job Summary
-    #   if: success()
-    #   run: |
-    #     AGGREGATED_REPORT_FILE=./module_coverage_report.md
-    #     python3 ./supporting_scripts/code-coverage/per_module_cov_report/parse_module_coverage.py build/reports/jacoco $AGGREGATED_REPORT_FILE
-    #     cat $AGGREGATED_REPORT_FILE > $GITHUB_STEP_SUMMARY
+        name: JUnit Test Results
+        path: build/test-results/test/*.xml

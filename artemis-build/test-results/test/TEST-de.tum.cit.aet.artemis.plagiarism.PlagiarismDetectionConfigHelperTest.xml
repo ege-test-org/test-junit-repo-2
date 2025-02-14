@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.plagiarism.PlagiarismDetectionConfigHelperTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:05" hostname="fv-az1721-502" time="0.157">
+  <properties/>
+  <testcase name="shouldDoNothingIfCourseExerciseHasPlagiarismDetectionConfig()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismDetectionConfigHelperTest" time="0.127"/>
+  <testcase name="shouldReplaceConfigWithGivenValues()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismDetectionConfigHelperTest" time="0.001"/>
+  <testcase name="shouldAddDefaultConfigIfExerciseDoesNotHavePlagiarismDetectionConfig()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismDetectionConfigHelperTest" time="0.028"/>
+  <testcase name="shouldDoNothingIfExamExercise()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismDetectionConfigHelperTest" time="0.0"/>
+  <system-out><![CDATA[
+Starting logs for PlagiarismDetectionConfigHelperTest
+
+  Starting logs for PlagiarismDetectionConfigHelperTest > shouldDoNothingIfCourseExerciseHasPlagiarismDetectionConfig()
+
+  Starting logs for PlagiarismDetectionConfigHelperTest > shouldReplaceConfigWithGivenValues()
+
+  Starting logs for PlagiarismDetectionConfigHelperTest > shouldAddDefaultConfigIfExerciseDoesNotHavePlagiarismDetectionConfig()
+    23:40:05.975 |  27 nPool-1-worker-1 | INFO  | .p.s.PlagiarismDetectionConfigHelper : Filling missing plagiarisms checks config: exerciseId=null, type=MODELING.
+
+  Starting logs for PlagiarismDetectionConfigHelperTest > shouldDoNothingIfExamExercise()
+
+Finished logs for PlagiarismDetectionConfigHelperTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

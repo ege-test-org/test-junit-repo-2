@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:41:55" hostname="fv-az1721-502" time="20.598">
+  <properties/>
+  <testcase name="shouldNotExecuteScheduledIfBuildAndTestAfterDueDateChangesToNull()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="1.831"/>
+  <testcase name="shouldNotUpdateScoresIfHasTestsAfterDueDateAndBuildAfterDueDate()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="1.377"/>
+  <testcase name="shouldExecuteScheduledBuildAndTestAfterDueDate()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="0.667"/>
+  <testcase name="shouldNotExecuteScheduledIfBuildAndTestAfterDueDateIsNull()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="1.256"/>
+  <testcase name="scheduleIndividualDueDateNoBuildAndTestDateLock()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="1.919"/>
+  <testcase name="shouldCancelAllTasksIfSchedulingNoLongerNeeded()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="1.394"/>
+  <testcase name="shouldNotExecuteScheduledTwiceIfSameExercise()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="0.523"/>
+  <testcase name="shouldScheduleExercisesWithManualAssessment()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="1.271"/>
+  <testcase name="shouldNotExecuteScheduledIfBuildAndTestAfterDueDateHasPassed()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="0.208"/>
+  <testcase name="cancelAllSchedulesOnRemovingExerciseDueDate()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="0.176"/>
+  <testcase name="shouldScheduleExercisesWithBuildAndTestDateInFuture()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="0.814"/>
+  <testcase name="keepIndividualScheduleOnExerciseDueDateChange()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="0.184"/>
+  <testcase name="testStudentExamIndividualWorkingTimeChangeDuringConduction()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="0.212"/>
+  <testcase name="scheduleIndividualDueDateAfterBuildAndTestDate()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="0.226"/>
+  <testcase name="shouldScheduleExerciseIfAnyIndividualDueDateInFuture()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="0.167"/>
+  <testcase name="updateIndividualScheduleOnIndividualDueDateChange()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="0.2"/>
+  <testcase name="scheduleIndividualDueDateBetweenDueDateAndBuildAndTestDate()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="3.078"/>
+  <testcase name="cancelIndividualSchedulesOnRemovingIndividualDueDate()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="0.244"/>
+  <testcase name="shouldUpdateScoresIfHasTestsAfterDueDateAndNoBuildAfterDueDate()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="1.167"/>
+  <testcase name="shouldNotUpdateScoresIfHasNoTestsAfterDueDate(boolean) [1] hasBuildAndTestAfterDueDate=true" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="1.261"/>
+  <testcase name="shouldNotUpdateScoresIfHasNoTestsAfterDueDate(boolean) [2] hasBuildAndTestAfterDueDate=false" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="1.172"/>
+  <testcase name="testCombineTemplateBeforeRelease()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="0.515"/>
+  <testcase name="testRescheduleExamDuringConduction()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="0.42"/>
+  <testcase name="scheduleIndividualDueDateTestsAfterDueDateNoBuildAndTestDate()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseScheduleServiceTest" time="0.197"/>
+  <system-out><![CDATA[	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.execSync(ForkJoinPoolHierarchicalTestExecutorService.java:247)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.executeSync(ForkJoinPoolHierarchicalTestExecutorService.java:194)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:166)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.net.SocketTimeoutException: Mocked SocketTimeoutException
+	at de.tum.cit.aet.artemis.core.connector.AthenaRequestMockProvider.mockGetSelectedSubmissionAndExpectNetworkingException(AthenaRequestMockProvider.java:158)
+	at de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest.testProgrammingSubmissionSelectionWithException(AthenaSubmissionSelectionServiceTest.java:181)
+	... 47 common frames omitted
+    23:42:07.860 | 116 Pool-1-worker-31 | ERROR | a.s.AthenaSubmissionSelectionService : Exception occurred while calling Athena: An error occurred while calling Athena: An Error occurred while calling Athena. Check Remote Logs for debugging information.
+
+  Starting logs for AthenaSubmissionSelectionServiceTest > testSubmissionSelectionFromTwoProgramming()
+    23:42:07.904 | 116 Pool-1-worker-31 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaSubmissionSelectionServiceTest#testSubmissionSelectionFromTwoProgramming'
+    23:42:07.904 | 116 Pool-1-worker-31 | DEBUG | a.s.AthenaSubmissionSelectionService : Start Athena Submission Selection Service for Exercise 'Title' (#146).
+    23:42:07.904 | 116 Pool-1-worker-31 | INFO  | a.s.AthenaSubmissionSelectionService : Calling Athena to calculate next proposed submissions for 2 submissions.
+    23:42:07.906 | 116 Pool-1-worker-31 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Calling Athena.
+    23:42:07.907 | 116 Pool-1-worker-31 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Finished remote call in 1.39ms
+    23:42:07.907 | 116 Pool-1-worker-31 | INFO  | a.s.AthenaSubmissionSelectionService : Athena to calculate next proposes submissions responded: 4
+
+  Starting logs for AthenaSubmissionSelectionServiceTest > testProgrammingNoSubmissionSelectionFromOne()
+    23:42:07.974 | 116 Pool-1-worker-31 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaSubmissionSelectionServiceTest#testProgrammingNoSubmissionSelectionFromOne'
+    23:42:07.977 | 116 Pool-1-worker-31 | DEBUG | a.s.AthenaSubmissionSelectionService : Start Athena Submission Selection Service for Exercise 'Title' (#148).
+    23:42:07.977 | 116 Pool-1-worker-31 | INFO  | a.s.AthenaSubmissionSelectionService : Calling Athena to calculate next proposed submissions for 1 submissions.
+    23:42:07.978 | 116 Pool-1-worker-31 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Calling Athena.
+    23:42:07.983 | 116 Pool-1-worker-31 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Finished remote call in 4.33ms
+    23:42:07.983 | 116 Pool-1-worker-31 | INFO  | a.s.AthenaSubmissionSelectionService : Athena to calculate next proposes submissions responded: -1
+
+  Starting logs for AthenaSubmissionSelectionServiceTest > testTextSubmissionSelectionWithException()
+    23:42:08.059 | 116 Pool-1-worker-31 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaSubmissionSelectionServiceTest#testTextSubmissionSelectionWithException'
+    23:42:08.064 | 116 Pool-1-worker-31 | DEBUG | a.s.AthenaSubmissionSelectionService : Start Athena Submission Selection Service for Exercise 'Title' (#149).
+    23:42:08.064 | 116 Pool-1-worker-31 | INFO  | a.s.AthenaSubmissionSelectionService : Calling Athena to calculate next proposed submissions for 1 submissions.
+    23:42:08.068 | 116 Pool-1-worker-31 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Calling Athena.
+    23:42:08.072 | 116 Pool-1-worker-31 | ERROR | d.t.c.a.a.a.service.AthenaConnector  : Athena did not respond successfully in time
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:5100/modules/text/module_text_test/select_submission": Mocked SocketTimeoutException
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801)
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:549)
+	at de.tum.cit.aet.artemis.athena.service.AthenaConnector.invoke(AthenaConnector.java:63)
+	at de.tum.cit.aet.artemis.athena.service.AthenaConnector.invokeWithRetry(AthenaConnector.java:96)
+	at de.tum.cit.aet.artemis.athena.service.AthenaSubmissionSelectionService.getProposedSubmissionId(AthenaSubmissionSelectionService.java:86)
+	at de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest.lambda$testTextSubmissionSelectionWithException$2(AthenaSubmissionSelectionServiceTest.java:175)
+	at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:63)
+	at org.assertj.core.api.NotThrownAssert.isThrownBy(NotThrownAssert.java:43)
+	at de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest.testTextSubmissionSelectionWithException(AthenaSubmissionSelectionServiceTest.java:175)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$8(TestMethodTestDescriptor.java:217)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:156)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.execSync(ForkJoinPoolHierarchicalTestExecutorService.java:247)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.executeSync(ForkJoinPoolHierarchicalTestExecutorService.java:194)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService.invokeAll(ForkJoinPoolHierarchicalTestExecutorService.java:166)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:160)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: java.net.SocketTimeoutException: Mocked SocketTimeoutException
+	at de.tum.cit.aet.artemis.core.connector.AthenaRequestMockProvider.mockGetSelectedSubmissionAndExpectNetworkingException(AthenaRequestMockProvider.java:158)
+	at de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest.testTextSubmissionSelectionWithException(AthenaSubmissionSelectionServiceTest.java:174)
+	... 47 common frames omitted
+    23:42:08.072 | 116 Pool-1-worker-31 | ERROR | a.s.AthenaSubmissionSelectionService : Exception occurred while calling Athena: An error occurred while calling Athena: An Error occurred while calling Athena. Check Remote Logs for debugging information.
+
+  Starting logs for AthenaSubmissionSelectionServiceTest > testProgrammingSubmissionSelectionWithFeedbackSuggestionsDisabled()
+    23:42:08.122 | 116 Pool-1-worker-31 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaSubmissionSelectionServiceTest#testProgrammingSubmissionSelectionWithFeedbackSuggestionsDisabled'
+
+Finished logs for AthenaSubmissionSelectionServiceTest
+
+Starting logs for ProgrammingExerciseScheduleServiceTest
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > shouldNotExecuteScheduledIfBuildAndTestAfterDueDateChangesToNull()
+    23:41:56.072 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:41:56.084 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:41:56.091 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:41:56.096 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:41:56.111 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:41:56.112 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate admin
+    23:41:56.117 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate admin done
+    23:41:56.118 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 0 users from all courses...
+    23:41:56.119 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 0 users from all courses. Done
+    23:41:56.119 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:41:56.139 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:41:56.259 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:41:56.285 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:41:56.309 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:41:56.331 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#shouldNotExecuteScheduledIfBuildAndTestAfterDueDateChangesToNull'
+    23:41:56.333 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 4
+    23:41:56.354 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#4) to trigger on RELEASE.
+    23:41:56.354 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#4) for 2025-02-15T23:41:56.145134Z.
+    23:41:56.360 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#4) to trigger on DUE.
+    23:41:56.360 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#4) for 2025-02-16T23:41:56.145144Z.
+    23:41:56.360 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#4) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:41:56.360 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'Programming' (#4) for 2025-02-19T23:41:56.145147Z.
+    23:41:56.372 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 4
+    23:41:56.384 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task RELEASE for Exercise (#4).
+    23:41:56.384 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#4) to trigger on RELEASE.
+    23:41:56.384 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#4) for 2025-02-15T23:41:56.145134Z.
+    23:41:56.384 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task DUE for Exercise (#4).
+    23:41:56.384 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#4) to trigger on DUE.
+    23:41:56.384 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#4) for 2025-02-16T23:41:56.145144Z.
+    23:41:56.385 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task BUILD_AND_TEST_AFTER_DUE_DATE for Exercise (#4).
+    23:41:56.385 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#4) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:41:56.385 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'Programming' (#4) for 2025-02-19T23:41:56.145147Z.
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > shouldNotUpdateScoresIfHasTestsAfterDueDateAndBuildAfterDueDate()
+    23:41:57.495 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:41:57.511 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:41:57.518 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:41:57.519 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:41:57.523 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:41:57.526 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:41:57.529 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:41:57.529 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:41:57.562 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:41:57.693 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:41:57.702 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:41:57.711 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:41:57.726 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#shouldNotUpdateScoresIfHasTestsAfterDueDateAndBuildAfterDueDate'
+    23:41:57.791 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 5
+    23:41:57.798 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#5) to trigger on RELEASE.
+    23:41:57.798 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#5) for 2025-02-15T23:41:57.568645Z.
+    23:41:57.798 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#5) to trigger on DUE.
+    23:41:57.798 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#5) for 2025-02-14T23:41:58.071622Z.
+    23:41:57.798 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#5) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:41:57.798 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'Programming' (#5) for 2025-02-14T23:41:58.371644Z.
+    23:41:58.076 | 544 taskScheduler-3  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 5.
+    23:41:58.092 | 707 pool-30-thread-1 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORTEE8237FC07A9E04C3E09F56042FED3DE9376TSTEXC/shortee8237fc07a9e04c3e09f56042fed3de9376tstexc-programmingexercisescheduleservicestudent3
+    23:41:58.095 | 709 pool-30-thread-3 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORTEE8237FC07A9E04C3E09F56042FED3DE9376TSTEXC/shortee8237fc07a9e04c3e09f56042fed3de9376tstexc-programmingexercisescheduleservicestudent2
+    23:41:58.097 | 708 pool-30-thread-2 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORTEE8237FC07A9E04C3E09F56042FED3DE9376TSTEXC/shortee8237fc07a9e04c3e09f56042fed3de9376tstexc-programmingexercisescheduleservicestudent1
+    23:41:58.102 | 709 pool-30-thread-3 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 5.
+    23:41:58.111 | 544 taskScheduler-3  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'stash changes from all student repositories' for programming exercise with id 5.
+    23:41:58.156 | 710 pool-31-thread-1 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 16 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:41:58.157 | 712 pool-31-thread-3 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 15 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:41:58.157 | 711 pool-31-thread-2 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 14 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:41:58.157 | 711 pool-31-thread-2 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'stash changes from all student repositories' for programming exercise with id 5.
+    23:41:58.371 | 543 taskScheduler-2  | INFO  | s.ProgrammingExerciseScheduleService : Invoking scheduled task programming exercise with id 5.
+    23:41:58.392 | 501 artemis-task-1   | INFO  | .c.a.a.p.s.ProgrammingTriggerService : Sleep for 0s during triggerBuild
+    23:41:58.398 | 501 artemis-task-1   | INFO  | .c.a.a.p.s.ProgrammingTriggerService : Sleep for 0s during triggerBuild
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > shouldExecuteScheduledBuildAndTestAfterDueDate()
+    23:41:58.896 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:41:58.913 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:41:58.919 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:41:58.926 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:41:58.932 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:41:58.937 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:41:58.943 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:41:58.943 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:41:58.965 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:41:59.072 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:41:59.094 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:41:59.112 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:41:59.124 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#shouldExecuteScheduledBuildAndTestAfterDueDate'
+    23:41:59.151 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 6
+    23:41:59.158 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#6) to trigger on RELEASE.
+    23:41:59.158 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#6) for 2025-02-15T23:41:58.967726Z.
+    23:41:59.158 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#6) to trigger on DUE.
+    23:41:59.158 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#6) for 2025-02-14T23:41:59.444737Z.
+    23:41:59.158 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#6) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:41:59.158 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'Programming' (#6) for 2025-02-14T23:41:59.444759Z.
+    23:41:59.446 | 545 taskScheduler-4  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 6.
+    23:41:59.449 | 544 taskScheduler-3  | INFO  | s.ProgrammingExerciseScheduleService : Invoking scheduled task programming exercise with id 6.
+    23:41:59.460 | 723 pool-32-thread-2 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT60CD2F270831504BD5086D305840D1A3749BTSTEXC/short60cd2f270831504bd5086d305840d1a3749btstexc-programmingexercisescheduleservicestudent2
+    23:41:59.462 | 724 pool-32-thread-3 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT60CD2F270831504BD5086D305840D1A3749BTSTEXC/short60cd2f270831504bd5086d305840d1a3749btstexc-programmingexercisescheduleservicestudent3
+    23:41:59.463 | 722 pool-32-thread-1 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT60CD2F270831504BD5086D305840D1A3749BTSTEXC/short60cd2f270831504bd5086d305840d1a3749btstexc-programmingexercisescheduleservicestudent1
+    23:41:59.474 | 724 pool-32-thread-3 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 6.
+    23:41:59.474 | 501 artemis-task-1   | INFO  | .c.a.a.p.s.ProgrammingTriggerService : Sleep for 0s during triggerBuild
+    23:41:59.481 | 545 taskScheduler-4  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'stash changes from all student repositories' for programming exercise with id 6.
+    23:41:59.482 | 501 artemis-task-1   | INFO  | .c.a.a.p.s.ProgrammingTriggerService : Sleep for 0s during triggerBuild
+    23:41:59.494 | 726 pool-33-thread-2 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 20 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:41:59.495 | 725 pool-33-thread-1 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 19 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:41:59.495 | 727 pool-33-thread-3 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 21 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:41:59.495 | 727 pool-33-thread-3 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'stash changes from all student repositories' for programming exercise with id 6.
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > shouldNotExecuteScheduledIfBuildAndTestAfterDueDateIsNull()
+    23:41:59.565 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:41:59.592 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:41:59.601 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:41:59.604 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:41:59.613 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:41:59.615 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:41:59.621 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:41:59.621 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:41:59.647 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:41:59.729 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:41:59.737 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:41:59.745 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:41:59.750 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#shouldNotExecuteScheduledIfBuildAndTestAfterDueDateIsNull'
+    23:41:59.751 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 7
+    23:41:59.754 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#7) to trigger on RELEASE.
+    23:41:59.754 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#7) for 2025-02-15T23:41:59.655255Z.
+    23:41:59.754 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#7) to trigger on DUE.
+    23:41:59.754 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#7) for 2025-02-16T23:41:59.655262Z.
+    23:41:59.755 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#7) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:41:59.755 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'Programming' (#7) for 2025-02-19T23:41:59.655265Z.
+    23:42:00.004 | 544 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Schedule tasks to process...
+    23:42:00.006 | 544 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 0 results and 0 participant scores.
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > scheduleIndividualDueDateNoBuildAndTestDateLock()
+    23:42:00.828 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:00.845 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:00.854 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:00.858 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:00.864 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:00.870 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:00.878 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:00.878 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:00.900 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:00.964 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:00.984 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:01.001 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:01.017 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#scheduleIndividualDueDateNoBuildAndTestDateLock'
+    23:42:01.080 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 8
+    23:42:01.092 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#8) to trigger on RELEASE.
+    23:42:01.092 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#8) for 2025-02-15T23:42:00.903998Z.
+    23:42:01.100 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#8) to trigger on DUE.
+    23:42:01.100 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#8) for 2025-02-14T23:42:01.342400Z.
+    23:42:01.115 | 457 ool-1-worker-221 | DEBUG | .a.e.s.ParticipationLifecycleService : Scheduled task for participation 31 in exercise 'Programming' (8) to trigger on DUE.
+    23:42:01.115 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled task to lock repository for participation 31 at the individual due date.
+    23:42:01.342 | 543 taskScheduler-2  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 8.
+    23:42:01.354 | 736 pool-34-thread-1 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORTA60C6626035EE04EA90A41F009417B0C0AE3TSTEXC/shorta60c6626035ee04ea90a41f009417b0c0ae3tstexc-programmingexercisescheduleservicestudent1
+    23:42:01.355 | 737 pool-34-thread-2 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORTA60C6626035EE04EA90A41F009417B0C0AE3TSTEXC/shorta60c6626035ee04ea90a41f009417b0c0ae3tstexc-programmingexercisescheduleservicestudent2
+    23:42:01.358 | 737 pool-34-thread-2 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 8.
+    23:42:01.365 | 543 taskScheduler-2  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'stash changes from all student repositories' for programming exercise with id 8.
+    23:42:01.378 | 740 pool-35-thread-2 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 30 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:01.385 | 739 pool-35-thread-1 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 29 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:01.385 | 739 pool-35-thread-1 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'stash changes from all student repositories' for programming exercise with id 8.
+    23:42:02.645 | 545 taskScheduler-4  | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORTA60C6626035EE04EA90A41F009417B0C0AE3TSTEXC/shorta60c6626035ee04ea90a41f009417b0c0ae3tstexc-programmingexercisescheduleservicestudent3
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > shouldCancelAllTasksIfSchedulingNoLongerNeeded()
+    23:42:02.805 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:02.846 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:02.859 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:02.861 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:02.878 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:02.889 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:02.895 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:02.895 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:02.918 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:03.004 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:03.024 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:03.045 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:03.060 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#shouldCancelAllTasksIfSchedulingNoLongerNeeded'
+    23:42:03.090 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 9
+    23:42:03.915 | 522 ci.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5702 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=3.3G, swap.space.total=0, swap.space.free=0, heap.memory.used=2.0G, heap.memory.free=805.2M, heap.memory.total=2.8G, heap.memory.max=6.0G, heap.memory.used/total=72.00%, heap.memory.used/max=33.70%, minor.gc.count=94, minor.gc.time=5358ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=43, unknown.gc.time=606ms, load.process=0.00%, load.system=99.43%, load.systemAverage=4.24, thread.count=471, thread.peakCount=473, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=222, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=200, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > shouldNotExecuteScheduledTwiceIfSameExercise()
+    23:42:04.135 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:04.150 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:04.156 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:04.160 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:04.170 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:04.174 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:04.180 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:04.180 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:04.201 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:04.258 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:04.273 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:04.289 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:04.295 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#shouldNotExecuteScheduledTwiceIfSameExercise'
+    23:42:04.309 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 10
+    23:42:04.314 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#10) to trigger on RELEASE.
+    23:42:04.314 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#10) for 2025-02-15T23:42:04.205194Z.
+    23:42:04.315 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#10) to trigger on DUE.
+    23:42:04.315 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#10) for 2025-02-14T23:42:04.604747Z.
+    23:42:04.315 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#10) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:42:04.315 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'Programming' (#10) for 2025-02-14T23:42:04.604762Z.
+    23:42:04.322 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 10
+    23:42:04.325 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task RELEASE for Exercise (#10).
+    23:42:04.325 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#10) to trigger on RELEASE.
+    23:42:04.325 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#10) for 2025-02-15T23:42:04.205194Z.
+    23:42:04.326 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task DUE for Exercise (#10).
+    23:42:04.326 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#10) to trigger on DUE.
+    23:42:04.326 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#10) for 2025-02-14T23:42:04.604747Z.
+    23:42:04.326 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task BUILD_AND_TEST_AFTER_DUE_DATE for Exercise (#10).
+    23:42:04.326 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#10) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:42:04.326 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'Programming' (#10) for 2025-02-14T23:42:04.618350Z.
+    23:42:04.605 | 542 taskScheduler-1  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 10.
+    23:42:04.612 | 754 pool-36-thread-1 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORTD53A7C4A0BE0C04355086D80C99EF2FA80F1TSTEXC/shortd53a7c4a0be0c04355086d80c99ef2fa80f1tstexc-programmingexercisescheduleservicestudent1
+    23:42:04.613 | 756 pool-36-thread-3 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORTD53A7C4A0BE0C04355086D80C99EF2FA80F1TSTEXC/shortd53a7c4a0be0c04355086d80c99ef2fa80f1tstexc-programmingexercisescheduleservicestudent3
+    23:42:04.614 | 755 pool-36-thread-2 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORTD53A7C4A0BE0C04355086D80C99EF2FA80F1TSTEXC/shortd53a7c4a0be0c04355086d80c99ef2fa80f1tstexc-programmingexercisescheduleservicestudent2
+    23:42:04.618 | 543 taskScheduler-2  | INFO  | s.ProgrammingExerciseScheduleService : Invoking scheduled task programming exercise with id 10.
+    23:42:04.618 | 754 pool-36-thread-1 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 10.
+    23:42:04.629 | 542 taskScheduler-1  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'stash changes from all student repositories' for programming exercise with id 10.
+    23:42:04.632 | 501 artemis-task-1   | INFO  | .c.a.a.p.s.ProgrammingTriggerService : Sleep for 0s during triggerBuild
+    23:42:04.640 | 501 artemis-task-1   | INFO  | .c.a.a.p.s.ProgrammingTriggerService : Sleep for 0s during triggerBuild
+    23:42:04.648 | 757 pool-37-thread-1 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from https://version-control.fake.fake/git/SHORTD53A7C4A0BE0C04355086D80C99EF2FA80F1TSTEXC/shortd53a7c4a0be0c04355086d80c99ef2fa80f1tstexc-programmingexercisescheduleservicestudent1.git to repos/server-integration-test/SHORTD53A7C4A0BE0C04355086D80C99EF2FA80F1TSTEXC/shortd53a7c4a0be0c04355086d80c99ef2fa80f1tstexc-programmingexercisescheduleservicestudent1
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > shouldScheduleExercisesWithManualAssessment()
+    23:42:04.653 | 759 pool-37-thread-3 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from https://version-control.fake.fake/git/SHORTD53A7C4A0BE0C04355086D80C99EF2FA80F1TSTEXC/shortd53a7c4a0be0c04355086d80c99ef2fa80f1tstexc-programmingexercisescheduleservicestudent3.git to repos/server-integration-test/SHORTD53A7C4A0BE0C04355086D80C99EF2FA80F1TSTEXC/shortd53a7c4a0be0c04355086d80c99ef2fa80f1tstexc-programmingexercisescheduleservicestudent3
+    23:42:04.654 | 758 pool-37-thread-2 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from https://version-control.fake.fake/git/SHORTD53A7C4A0BE0C04355086D80C99EF2FA80F1TSTEXC/shortd53a7c4a0be0c04355086d80c99ef2fa80f1tstexc-programmingexercisescheduleservicestudent2.git to repos/server-integration-test/SHORTD53A7C4A0BE0C04355086D80C99EF2FA80F1TSTEXC/shortd53a7c4a0be0c04355086d80c99ef2fa80f1tstexc-programmingexercisescheduleservicestudent2
+    23:42:04.687 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:04.696 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:04.705 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:04.708 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:04.719 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:04.727 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:04.730 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:04.730 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:04.749 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:04.799 | 759 pool-37-thread-3 | ERROR | d.t.c.a.a.p.service.GitService       : Could not delete directory after failed clone: /home/runner/work/Artemis/Artemis/repos/server-integration-test/SHORTD53A7C4A0BE0C04355086D80C99EF2FA80F1TSTEXC/shortd53a7c4a0be0c04355086d80c99ef2fa80f1tstexc-programmingexercisescheduleservicestudent3
+    23:42:04.801 | 757 pool-37-thread-1 | ERROR | d.t.c.a.a.p.service.GitService       : Could not delete directory after failed clone: /home/runner/work/Artemis/Artemis/repos/server-integration-test/SHORTD53A7C4A0BE0C04355086D80C99EF2FA80F1TSTEXC/shortd53a7c4a0be0c04355086d80c99ef2fa80f1tstexc-programmingexercisescheduleservicestudent1
+    23:42:04.803 | 758 pool-37-thread-2 | ERROR | d.t.c.a.a.p.service.GitService       : Could not delete directory after failed clone: /home/runner/work/Artemis/Artemis/repos/server-integration-test/SHORTD53A7C4A0BE0C04355086D80C99EF2FA80F1TSTEXC/shortd53a7c4a0be0c04355086d80c99ef2fa80f1tstexc-programmingexercisescheduleservicestudent2
+    23:42:04.811 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:04.823 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:04.842 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:04.850 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#shouldScheduleExercisesWithManualAssessment'
+    23:42:04.871 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 11
+    23:42:04.879 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#11) to trigger on RELEASE.
+    23:42:04.879 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#11) for 2025-02-15T23:42:04.750559Z.
+    23:42:04.880 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#11) to trigger on DUE.
+    23:42:04.880 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#11) for 2025-02-14T23:42:05.164676Z.
+    23:42:05.164 | 545 taskScheduler-4  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 11.
+    23:42:05.174 | 761 pool-38-thread-1 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT171E644C0C80D045BD096F205B398B6D2C56TSTEXC/short171e644c0c80d045bd096f205b398b6d2c56tstexc-programmingexercisescheduleservicestudent1
+    23:42:05.176 | 762 pool-38-thread-2 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT171E644C0C80D045BD096F205B398B6D2C56TSTEXC/short171e644c0c80d045bd096f205b398b6d2c56tstexc-programmingexercisescheduleservicestudent2
+    23:42:05.177 | 763 pool-38-thread-3 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT171E644C0C80D045BD096F205B398B6D2C56TSTEXC/short171e644c0c80d045bd096f205b398b6d2c56tstexc-programmingexercisescheduleservicestudent3
+    23:42:05.181 | 763 pool-38-thread-3 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 11.
+    23:42:05.185 | 545 taskScheduler-4  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'stash changes from all student repositories' for programming exercise with id 11.
+    23:42:05.200 | 765 pool-39-thread-2 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 45 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:05.201 | 764 pool-39-thread-1 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 44 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:05.202 | 766 pool-39-thread-3 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 46 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:05.202 | 766 pool-39-thread-3 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'stash changes from all student repositories' for programming exercise with id 11.
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > shouldNotExecuteScheduledIfBuildAndTestAfterDueDateHasPassed()
+    23:42:05.972 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:05.992 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:06.002 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:06.003 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:06.010 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:06.015 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:06.017 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:06.017 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:06.026 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:06.065 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:06.077 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:06.084 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:06.093 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#shouldNotExecuteScheduledIfBuildAndTestAfterDueDateHasPassed'
+    23:42:06.102 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 12
+    23:42:06.106 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#12) to trigger on RELEASE.
+    23:42:06.106 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#12) for 2025-02-15T23:42:06.027574Z.
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > cancelAllSchedulesOnRemovingExerciseDueDate()
+    23:42:06.152 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:06.172 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:06.177 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:06.179 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:06.182 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:06.184 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:06.186 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:06.186 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:06.195 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:06.230 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:06.236 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:06.242 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:06.247 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#cancelAllSchedulesOnRemovingExerciseDueDate'
+    23:42:06.262 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 13
+    23:42:06.266 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#13) to trigger on RELEASE.
+    23:42:06.266 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#13) for 2025-02-15T23:42:06.196186Z.
+    23:42:06.266 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#13) to trigger on DUE.
+    23:42:06.266 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#13) for 2025-02-14T23:42:06.552688Z.
+    23:42:06.269 | 457 ool-1-worker-221 | DEBUG | .a.e.s.ParticipationLifecycleService : Scheduled task for participation 56 in exercise 'Programming' (13) to trigger on DUE.
+    23:42:06.269 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled task to lock repository for participation 56 at the individual due date.
+    23:42:06.272 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 13
+    23:42:06.276 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task RELEASE for Exercise (#13).
+    23:42:06.276 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#13) to trigger on RELEASE.
+    23:42:06.276 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#13) for 2025-02-15T23:42:06.196186Z.
+    23:42:06.276 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task DUE for Exercise (#13).
+    23:42:06.280 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task DUE for Participation (#56).
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > shouldScheduleExercisesWithBuildAndTestDateInFuture()
+    23:42:06.346 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:06.362 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:06.369 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:06.370 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:06.380 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:06.382 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:06.387 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:06.387 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:06.398 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:06.453 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:06.460 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:06.475 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:06.486 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#shouldScheduleExercisesWithBuildAndTestDateInFuture'
+    23:42:06.508 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 14
+    23:42:06.514 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#14) to trigger on RELEASE.
+    23:42:06.514 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#14) for 2025-02-15T23:42:06.400070Z.
+    23:42:06.514 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#14) to trigger on DUE.
+    23:42:06.514 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#14) for 2025-02-14T23:42:06.802017Z.
+    23:42:06.514 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#14) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:42:06.514 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'Programming' (#14) for 2025-02-14T23:42:07.102025Z.
+    23:42:06.802 | 544 taskScheduler-3  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 14.
+    23:42:06.813 | 776 pool-40-thread-1 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT9DCCC64E0D4C60456F087460901340FF5F37TSTEXC/short9dccc64e0d4c60456f087460901340ff5f37tstexc-programmingexercisescheduleservicestudent1
+    23:42:06.813 | 777 pool-40-thread-2 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT9DCCC64E0D4C60456F087460901340FF5F37TSTEXC/short9dccc64e0d4c60456f087460901340ff5f37tstexc-programmingexercisescheduleservicestudent2
+    23:42:06.814 | 778 pool-40-thread-3 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT9DCCC64E0D4C60456F087460901340FF5F37TSTEXC/short9dccc64e0d4c60456f087460901340ff5f37tstexc-programmingexercisescheduleservicestudent3
+    23:42:06.818 | 776 pool-40-thread-1 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 14.
+    23:42:06.822 | 544 taskScheduler-3  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'stash changes from all student repositories' for programming exercise with id 14.
+    23:42:06.839 | 779 pool-41-thread-1 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 59 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:06.843 | 780 pool-41-thread-2 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 60 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:06.844 | 781 pool-41-thread-3 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 61 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:06.844 | 781 pool-41-thread-3 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'stash changes from all student repositories' for programming exercise with id 14.
+    23:42:07.102 | 543 taskScheduler-2  | INFO  | s.ProgrammingExerciseScheduleService : Invoking scheduled task programming exercise with id 14.
+    23:42:07.108 | 501 artemis-task-1   | INFO  | .c.a.a.p.s.ProgrammingTriggerService : Sleep for 0s during triggerBuild
+    23:42:07.118 | 501 artemis-task-1   | INFO  | .c.a.a.p.s.ProgrammingTriggerService : Sleep for 0s during triggerBuild
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > keepIndividualScheduleOnExerciseDueDateChange()
+    23:42:07.144 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:07.151 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:07.154 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:07.156 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:07.160 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:07.161 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:07.163 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:07.163 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:07.181 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:07.230 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:07.240 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:07.247 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:07.251 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#keepIndividualScheduleOnExerciseDueDateChange'
+    23:42:07.269 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 15
+    23:42:07.272 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#15) to trigger on RELEASE.
+    23:42:07.272 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#15) for 2025-02-15T23:42:07.182781Z.
+    23:42:07.273 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#15) to trigger on DUE.
+    23:42:07.273 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#15) for 2025-02-14T23:42:08.258092Z.
+    23:42:07.277 | 457 ool-1-worker-221 | DEBUG | .a.e.s.ParticipationLifecycleService : Scheduled task for participation 66 in exercise 'Programming' (15) to trigger on DUE.
+    23:42:07.277 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled task to lock repository for participation 66 at the individual due date.
+    23:42:07.283 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 15
+    23:42:07.290 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task RELEASE for Exercise (#15).
+    23:42:07.290 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#15) to trigger on RELEASE.
+    23:42:07.290 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#15) for 2025-02-15T23:42:07.182781Z.
+    23:42:07.291 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task DUE for Exercise (#15).
+    23:42:07.291 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#15) to trigger on DUE.
+    23:42:07.291 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#15) for 2025-02-14T23:42:07.577888Z.
+    23:42:07.294 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task DUE for Participation (#66).
+    23:42:07.294 | 457 ool-1-worker-221 | DEBUG | .a.e.s.ParticipationLifecycleService : Scheduled task for participation 66 in exercise 'Programming' (15) to trigger on DUE.
+    23:42:07.294 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled task to lock repository for participation 66 at the individual due date.
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > testStudentExamIndividualWorkingTimeChangeDuringConduction()
+    23:42:07.345 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:07.355 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:07.358 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:07.359 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:07.363 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:07.365 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:07.367 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:07.367 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:07.376 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:07.421 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:07.428 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:07.434 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:07.439 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#testStudentExamIndividualWorkingTimeChangeDuringConduction'
+    23:42:07.485 | 457 ool-1-worker-221 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 17 and participant 8 (result to be deleted: null)
+    23:42:07.485 | 457 ool-1-worker-221 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 17 and participant 8 at 2025-02-14T23:42:07.585864778Z[Etc/UTC].
+    23:42:07.491 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received reschedule of student exam during conduction 1
+    23:42:07.502 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Testtitle" (#17) to trigger on DUE.
+    23:42:07.503 | 542 taskScheduler-1  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 17.
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > scheduleIndividualDueDateAfterBuildAndTestDate()
+    23:42:07.554 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:07.564 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:07.574 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:07.575 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:07.582 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:07.586 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:07.588 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:07.588 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:07.602 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:07.658 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:07.664 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:07.673 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:07.678 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#scheduleIndividualDueDateAfterBuildAndTestDate'
+    23:42:07.712 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 18
+    23:42:07.721 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#18) to trigger on RELEASE.
+    23:42:07.721 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#18) for 2025-02-15T23:42:07.606162Z.
+    23:42:07.721 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#18) to trigger on DUE.
+    23:42:07.721 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#18) for 2025-02-14T23:42:07.991204Z.
+    23:42:07.721 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#18) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:42:07.721 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'Programming' (#18) for 2025-02-14T23:42:07.991204Z.
+    23:42:07.730 | 457 ool-1-worker-221 | DEBUG | .a.e.s.ParticipationLifecycleService : Scheduled task for participation 79 in exercise 'Programming' (18) to trigger on DUE.
+    23:42:07.730 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled task to lock repository for participation 79 at the individual due date.
+    23:42:07.731 | 457 ool-1-worker-221 | DEBUG | .a.e.s.ParticipationLifecycleService : Scheduled task for participation 79 in exercise 'Programming' (18) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > shouldScheduleExerciseIfAnyIndividualDueDateInFuture()
+    23:42:07.792 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:07.810 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:07.816 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:07.818 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:07.821 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:07.823 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:07.826 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:07.826 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:07.835 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:07.865 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:07.871 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:07.878 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:07.882 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#shouldScheduleExerciseIfAnyIndividualDueDateInFuture'
+    23:42:07.900 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 19
+    23:42:07.906 | 457 ool-1-worker-221 | DEBUG | .a.e.s.ParticipationLifecycleService : Scheduled task for participation 84 in exercise 'Programming' (19) to trigger on DUE.
+    23:42:07.906 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled task to lock repository for participation 84 at the individual due date.
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > updateIndividualScheduleOnIndividualDueDateChange()
+    23:42:07.960 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:07.968 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:07.971 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:07.973 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:07.976 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:07.978 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:07.980 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:07.980 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:07.988 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:08.027 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:08.033 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:08.041 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:08.046 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#updateIndividualScheduleOnIndividualDueDateChange'
+    23:42:08.072 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 20
+    23:42:08.076 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#20) to trigger on RELEASE.
+    23:42:08.076 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#20) for 2025-02-15T23:42:07.989661Z.
+    23:42:08.080 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#20) to trigger on DUE.
+    23:42:08.080 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#20) for 2025-02-14T23:42:08.353746Z.
+    23:42:08.087 | 457 ool-1-worker-221 | DEBUG | .a.e.s.ParticipationLifecycleService : Scheduled task for participation 89 in exercise 'Programming' (20) to trigger on DUE.
+    23:42:08.087 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled task to lock repository for participation 89 at the individual due date.
+    23:42:08.091 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 20
+    23:42:08.098 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task RELEASE for Exercise (#20).
+    23:42:08.099 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#20) to trigger on RELEASE.
+    23:42:08.099 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#20) for 2025-02-15T23:42:07.989661Z.
+    23:42:08.099 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task DUE for Exercise (#20).
+    23:42:08.099 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#20) to trigger on DUE.
+    23:42:08.100 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#20) for 2025-02-14T23:42:08.353746Z.
+    23:42:08.107 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task DUE for Participation (#89).
+    23:42:08.108 | 457 ool-1-worker-221 | DEBUG | .a.e.s.ParticipationLifecycleService : Scheduled task for participation 89 in exercise 'Programming' (20) to trigger on DUE.
+    23:42:08.108 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled task to lock repository for participation 89 at the individual due date.
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > scheduleIndividualDueDateBetweenDueDateAndBuildAndTestDate()
+    23:42:08.170 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:08.180 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:08.187 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:08.188 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:08.191 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:08.193 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:08.195 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:08.195 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:08.206 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:08.241 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:08.249 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:08.256 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:08.261 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#scheduleIndividualDueDateBetweenDueDateAndBuildAndTestDate'
+    23:42:08.281 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 21
+    23:42:08.285 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#21) to trigger on RELEASE.
+    23:42:08.285 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#21) for 2025-02-15T23:42:08.207223Z.
+    23:42:08.285 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#21) to trigger on DUE.
+    23:42:08.285 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#21) for 2025-02-14T23:42:08.571686Z.
+    23:42:08.285 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#21) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:42:08.285 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'Programming' (#21) for 2025-02-14T23:42:10.271686Z.
+    23:42:08.288 | 457 ool-1-worker-221 | DEBUG | .a.e.s.ParticipationLifecycleService : Scheduled task for participation 94 in exercise 'Programming' (21) to trigger on DUE.
+    23:42:08.288 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled task to lock repository for participation 94 at the individual due date.
+    23:42:08.580 | 543 taskScheduler-2  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 21.
+    23:42:08.590 | 793 pool-43-thread-1 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT3AB82C04045D904AB608F4F0892D88A5B8FDTSTEXC/short3ab82c04045d904ab608f4f0892d88a5b8fdtstexc-programmingexercisescheduleservicestudent1
+    23:42:08.596 | 794 pool-43-thread-2 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT3AB82C04045D904AB608F4F0892D88A5B8FDTSTEXC/short3ab82c04045d904ab608f4f0892d88a5b8fdtstexc-programmingexercisescheduleservicestudent2
+    23:42:08.598 | 793 pool-43-thread-1 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 21.
+    23:42:08.606 | 543 taskScheduler-2  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'stash changes from all student repositories' for programming exercise with id 21.
+    23:42:08.613 | 797 pool-44-thread-2 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 93 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:08.614 | 796 pool-44-thread-1 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 92 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:08.614 | 796 pool-44-thread-1 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'stash changes from all student repositories' for programming exercise with id 21.
+    23:42:09.872 | 544 taskScheduler-3  | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT3AB82C04045D904AB608F4F0892D88A5B8FDTSTEXC/short3ab82c04045d904ab608f4f0892d88a5b8fdtstexc-programmingexercisescheduleservicestudent3
+    23:42:10.271 | 542 taskScheduler-1  | INFO  | s.ProgrammingExerciseScheduleService : Invoking scheduled task programming exercise with id 21.
+    23:42:10.287 | 501 artemis-task-1   | INFO  | .c.a.a.p.s.ProgrammingTriggerService : Sleep for 0s during triggerBuild
+    23:42:10.294 | 501 artemis-task-1   | INFO  | .c.a.a.p.s.ProgrammingTriggerService : Sleep for 0s during triggerBuild
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > cancelIndividualSchedulesOnRemovingIndividualDueDate()
+    23:42:11.263 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:11.280 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:11.287 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:11.289 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:11.298 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:11.303 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:11.306 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:11.306 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:11.322 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:11.364 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:11.371 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:11.378 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:11.382 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#cancelIndividualSchedulesOnRemovingIndividualDueDate'
+    23:42:11.405 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 22
+    23:42:11.408 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#22) to trigger on RELEASE.
+    23:42:11.408 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#22) for 2025-02-15T23:42:11.326219Z.
+    23:42:11.409 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#22) to trigger on DUE.
+    23:42:11.409 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#22) for 2025-02-14T23:42:11.692133Z.
+    23:42:11.413 | 457 ool-1-worker-221 | DEBUG | .a.e.s.ParticipationLifecycleService : Scheduled task for participation 99 in exercise 'Programming' (22) to trigger on DUE.
+    23:42:11.413 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled task to lock repository for participation 99 at the individual due date.
+    23:42:11.417 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 22
+    23:42:11.422 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task RELEASE for Exercise (#22).
+    23:42:11.422 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#22) to trigger on RELEASE.
+    23:42:11.423 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#22) for 2025-02-15T23:42:11.326219Z.
+    23:42:11.423 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task DUE for Exercise (#22).
+    23:42:11.423 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#22) to trigger on DUE.
+    23:42:11.423 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#22) for 2025-02-14T23:42:11.692133Z.
+    23:42:11.430 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task DUE for Participation (#99).
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > shouldUpdateScoresIfHasTestsAfterDueDateAndNoBuildAfterDueDate()
+    23:42:11.510 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:11.523 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:11.527 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:11.528 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:11.532 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:11.534 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:11.535 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:11.535 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:11.545 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:11.581 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:11.588 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:11.594 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:11.599 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#shouldUpdateScoresIfHasTestsAfterDueDateAndNoBuildAfterDueDate'
+    23:42:11.613 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 23
+    23:42:11.617 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#23) to trigger on RELEASE.
+    23:42:11.617 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#23) for 2025-02-15T23:42:11.546573Z.
+    23:42:11.617 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#23) to trigger on DUE.
+    23:42:11.617 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#23) for 2025-02-14T23:42:11.907891Z.
+    23:42:11.908 | 544 taskScheduler-3  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 23.
+    23:42:11.916 | 809 pool-45-thread-1 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORTDA6120C00F8A7042100BDCC0737031E159B0TSTEXC/shortda6120c00f8a7042100bdcc0737031e159b0tstexc-programmingexercisescheduleservicestudent1
+    23:42:11.919 | 810 pool-45-thread-2 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORTDA6120C00F8A7042100BDCC0737031E159B0TSTEXC/shortda6120c00f8a7042100bdcc0737031e159b0tstexc-programmingexercisescheduleservicestudent2
+    23:42:11.919 | 811 pool-45-thread-3 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORTDA6120C00F8A7042100BDCC0737031E159B0TSTEXC/shortda6120c00f8a7042100bdcc0737031e159b0tstexc-programmingexercisescheduleservicestudent3
+    23:42:11.923 | 809 pool-45-thread-1 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 23.
+    23:42:11.934 | 544 taskScheduler-3  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'stash changes from all student repositories' for programming exercise with id 23.
+    23:42:11.942 | 812 pool-46-thread-1 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 102 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:11.944 | 814 pool-46-thread-3 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 104 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:11.944 | 813 pool-46-thread-2 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 103 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:11.944 | 813 pool-46-thread-2 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'stash changes from all student repositories' for programming exercise with id 23.
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > shouldNotUpdateScoresIfHasNoTestsAfterDueDate(boolean) [1] hasBuildAndTestAfterDueDate=true
+    23:42:12.678 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:12.691 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:12.698 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:12.699 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:12.706 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:12.717 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:12.722 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:12.722 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:12.741 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:12.808 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:12.824 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:12.837 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:12.849 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#shouldNotUpdateScoresIfHasNoTestsAfterDueDate'
+    23:42:12.875 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 24
+    23:42:12.881 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#24) to trigger on RELEASE.
+    23:42:12.881 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#24) for 2025-02-15T23:42:12.745402Z.
+    23:42:12.881 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#24) to trigger on DUE.
+    23:42:12.881 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#24) for 2025-02-14T23:42:13.166684Z.
+    23:42:12.881 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#24) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:42:12.881 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'Programming' (#24) for 2025-02-14T23:42:13.466725Z.
+    23:42:13.167 | 545 taskScheduler-4  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 24.
+    23:42:13.181 | 818 pool-47-thread-1 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT2F0050C6053CE0483B0AA51038FFAC378CB6TSTEXC/short2f0050c6053ce0483b0aa51038ffac378cb6tstexc-programmingexercisescheduleservicestudent1
+    23:42:13.184 | 819 pool-47-thread-2 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT2F0050C6053CE0483B0AA51038FFAC378CB6TSTEXC/short2f0050c6053ce0483b0aa51038ffac378cb6tstexc-programmingexercisescheduleservicestudent2
+    23:42:13.190 | 820 pool-47-thread-3 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT2F0050C6053CE0483B0AA51038FFAC378CB6TSTEXC/short2f0050c6053ce0483b0aa51038ffac378cb6tstexc-programmingexercisescheduleservicestudent3
+    23:42:13.191 | 820 pool-47-thread-3 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 24.
+    23:42:13.198 | 545 taskScheduler-4  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'stash changes from all student repositories' for programming exercise with id 24.
+    23:42:13.215 | 822 pool-48-thread-2 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 108 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:13.216 | 821 pool-48-thread-1 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 107 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:13.217 | 823 pool-48-thread-3 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 109 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:13.217 | 823 pool-48-thread-3 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'stash changes from all student repositories' for programming exercise with id 24.
+    23:42:13.466 | 543 taskScheduler-2  | INFO  | s.ProgrammingExerciseScheduleService : Invoking scheduled task programming exercise with id 24.
+    23:42:13.481 | 501 artemis-task-1   | INFO  | .c.a.a.p.s.ProgrammingTriggerService : Sleep for 0s during triggerBuild
+    23:42:13.487 | 501 artemis-task-1   | INFO  | .c.a.a.p.s.ProgrammingTriggerService : Sleep for 0s during triggerBuild
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > shouldNotUpdateScoresIfHasNoTestsAfterDueDate(boolean) [2] hasBuildAndTestAfterDueDate=false
+    23:42:13.951 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:13.959 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:13.962 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:13.963 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:13.967 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:13.968 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:13.970 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:13.970 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:13.976 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:14.008 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:14.013 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:14.019 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:14.024 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#shouldNotUpdateScoresIfHasNoTestsAfterDueDate'
+    23:42:14.039 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 25
+    23:42:14.042 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#25) to trigger on RELEASE.
+    23:42:14.042 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#25) for 2025-02-15T23:42:13.977958Z.
+    23:42:14.043 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#25) to trigger on DUE.
+    23:42:14.043 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#25) for 2025-02-14T23:42:14.333308Z.
+    23:42:14.333 | 544 taskScheduler-3  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 25.
+    23:42:14.348 | 828 pool-49-thread-1 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT370DBF2D0907204C8D0A9F206E99E4F9862ATSTEXC/short370dbf2d0907204c8d0a9f206e99e4f9862atstexc-programmingexercisescheduleservicestudent1
+    23:42:14.352 | 830 pool-49-thread-3 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT370DBF2D0907204C8D0A9F206E99E4F9862ATSTEXC/short370dbf2d0907204c8d0a9f206e99e4f9862atstexc-programmingexercisescheduleservicestudent3
+    23:42:14.353 | 829 pool-49-thread-2 | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Adding user 1 with permissions 20 to repository SHORT370DBF2D0907204C8D0A9F206E99E4F9862ATSTEXC/short370dbf2d0907204c8d0a9f206e99e4f9862atstexc-programmingexercisescheduleservicestudent2
+    23:42:14.359 | 830 pool-49-thread-3 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 25.
+    23:42:14.365 | 544 taskScheduler-3  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'stash changes from all student repositories' for programming exercise with id 25.
+    23:42:14.374 | 831 pool-50-thread-1 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 112 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:14.375 | 833 pool-50-thread-3 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 114 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:14.375 | 832 pool-50-thread-2 | ERROR | grammingExerciseParticipationService : Stashing student repository for participation 113 in exercise 'Programming' did not work as expected: HEAD required to stash local changes
+    23:42:14.375 | 832 pool-50-thread-2 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'stash changes from all student repositories' for programming exercise with id 25.
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > testCombineTemplateBeforeRelease()
+    23:42:15.128 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:15.146 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:15.153 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:15.154 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:15.166 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:15.171 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:15.172 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:15.172 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:15.185 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:15.230 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:15.236 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:15.244 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:15.254 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#testCombineTemplateBeforeRelease'
+    23:42:15.268 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 26
+    23:42:15.272 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#26) to trigger on RELEASE.
+    23:42:15.272 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#26) for 2025-02-14T23:42:30.560503Z.
+    23:42:15.272 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#26) to trigger on DUE.
+    23:42:15.272 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#26) for 2025-02-16T23:42:15.189366Z.
+    23:42:15.272 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#26) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:42:15.272 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'Programming' (#26) for 2025-02-19T23:42:15.189369Z.
+    23:42:15.563 | 542 taskScheduler-1  | DEBUG | s.ProgrammingExerciseScheduleService : Combined template repository commits of programming exercise 26.
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > testRescheduleExamDuringConduction()
+    23:42:15.704 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:15.719 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:15.725 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:15.730 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:15.733 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:15.740 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:15.754 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:15.754 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:15.768 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:15.842 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:15.858 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:15.869 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:15.878 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#testRescheduleExamDuringConduction'
+    23:42:15.947 | 457 ool-1-worker-221 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 28 and participant 8 (result to be deleted: null)
+    23:42:15.948 | 457 ool-1-worker-221 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 28 and participant 8 at 2025-02-14T23:42:16.047791922Z[Etc/UTC].
+    23:42:15.958 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received reschedule of exam during conduction 2
+    23:42:15.974 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Testtitle" (#28) to trigger on DUE.
+    23:42:15.974 | 544 taskScheduler-3  | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 28.
+
+  Starting logs for ProgrammingExerciseScheduleServiceTest > scheduleIndividualDueDateTestsAfterDueDateNoBuildAndTestDate()
+    23:42:16.062 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:42:16.076 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 1 tutors...
+    23:42:16.081 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:16.083 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:16.086 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:16.088 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:16.089 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:16.089 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:16.099 | 457 ool-1-worker-221 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:16.154 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:16.179 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:16.187 | 457 ool-1-worker-221 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:42:16.191 | 457 ool-1-worker-221 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='ProgrammingExerciseScheduleServiceTest#scheduleIndividualDueDateTestsAfterDueDateNoBuildAndTestDate'
+    23:42:16.206 | 457 ool-1-worker-221 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 29
+    23:42:16.209 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#29) to trigger on RELEASE.
+    23:42:16.209 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#29) for 2025-02-15T23:42:16.100652Z.
+    23:42:16.209 | 457 ool-1-worker-221 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#29) to trigger on DUE.
+    23:42:16.209 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#29) for 2025-02-14T23:42:16.496686Z.
+    23:42:16.212 | 457 ool-1-worker-221 | DEBUG | .a.e.s.ParticipationLifecycleService : Scheduled task for participation 132 in exercise 'Programming' (29) to trigger on DUE.
+    23:42:16.212 | 457 ool-1-worker-221 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled task to lock repository for participation 132 at the individual due date.
+
+Finished logs for ProgrammingExerciseScheduleServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

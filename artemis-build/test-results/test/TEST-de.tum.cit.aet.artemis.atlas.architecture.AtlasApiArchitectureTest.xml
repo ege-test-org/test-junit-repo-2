@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.atlas.architecture.AtlasApiArchitectureTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:16" hostname="fv-az1721-502" time="0.952">
+  <properties/>
+  <testcase name="apiClassesShouldInheritFromAbstractApi()" classname="de.tum.cit.aet.artemis.atlas.architecture.AtlasApiArchitectureTest" time="0.003"/>
+  <testcase name="shouldOnlyAccessApiDomainDto()" classname="de.tum.cit.aet.artemis.atlas.architecture.AtlasApiArchitectureTest" time="0.946"/>
+  <testcase name="apiClassesShouldBeAbstractOrAnnotatedWithController()" classname="de.tum.cit.aet.artemis.atlas.architecture.AtlasApiArchitectureTest" time="0.003"/>
+  <system-out><![CDATA[
+Starting logs for AtlasApiArchitectureTest
+
+  Starting logs for AtlasApiArchitectureTest > apiClassesShouldInheritFromAbstractApi()
+
+  Starting logs for AtlasApiArchitectureTest > shouldOnlyAccessApiDomainDto()
+
+  Starting logs for AtlasApiArchitectureTest > apiClassesShouldBeAbstractOrAnnotatedWithController()
+
+Finished logs for AtlasApiArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

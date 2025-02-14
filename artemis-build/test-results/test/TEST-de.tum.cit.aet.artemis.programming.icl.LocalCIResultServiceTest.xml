@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.icl.LocalCIResultServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:06" hostname="fv-az1721-502" time="0.166">
+  <properties/>
+  <testcase name="testThrowsExceptionWhenResultIsNotLocalCIBuildResult()" classname="de.tum.cit.aet.artemis.programming.icl.LocalCIResultServiceTest" time="0.166"/>
+  <system-out><![CDATA[
+Starting logs for LocalCIResultServiceTest
+
+  Starting logs for LocalCIResultServiceTest > testThrowsExceptionWhenResultIsNotLocalCIBuildResult()
+    23:45:06.792 | 474 ool-1-worker-238 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:45:06.802 | 474 ool-1-worker-238 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:45:06.803 | 474 ool-1-worker-238 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:45:06.811 | 474 ool-1-worker-238 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:45:06.818 | 474 ool-1-worker-238 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:45:06.823 | 474 ool-1-worker-238 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:45:06.824 | 474 ool-1-worker-238 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:45:06.824 | 474 ool-1-worker-238 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:45:06.829 | 474 ool-1-worker-238 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:45:06.919 | 474 ool-1-worker-238 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='LocalCIResultServiceTest#testThrowsExceptionWhenResultIsNotLocalCIBuildResult'
+
+Finished logs for LocalCIResultServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

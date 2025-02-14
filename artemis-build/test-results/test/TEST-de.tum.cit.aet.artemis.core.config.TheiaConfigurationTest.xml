@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.config.TheiaConfigurationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:28" hostname="fv-az1721-502" time="0.051">
+  <properties/>
+  <testcase name="testAutowired()" classname="de.tum.cit.aet.artemis.core.config.TheiaConfigurationTest" time="0.018"/>
+  <testcase name="testNonExistentLanguage()" classname="de.tum.cit.aet.artemis.core.config.TheiaConfigurationTest" time="0.009"/>
+  <testcase name="testFlavorsForLanguage()" classname="de.tum.cit.aet.artemis.core.config.TheiaConfigurationTest" time="0.009"/>
+  <testcase name="testAmountOfLanguageImages()" classname="de.tum.cit.aet.artemis.core.config.TheiaConfigurationTest" time="0.01"/>
+  <system-out><![CDATA[
+Starting logs for TheiaConfigurationTest
+
+  Starting logs for TheiaConfigurationTest > testAutowired()
+    23:45:28.182 | 334 Pool-1-worker-98 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TheiaConfigurationTest#testAutowired'
+
+  Starting logs for TheiaConfigurationTest > testNonExistentLanguage()
+    23:45:28.198 | 334 Pool-1-worker-98 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TheiaConfigurationTest#testNonExistentLanguage'
+
+  Starting logs for TheiaConfigurationTest > testFlavorsForLanguage()
+    23:45:28.209 | 334 Pool-1-worker-98 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TheiaConfigurationTest#testFlavorsForLanguage'
+
+  Starting logs for TheiaConfigurationTest > testAmountOfLanguageImages()
+    23:45:28.220 | 334 Pool-1-worker-98 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TheiaConfigurationTest#testAmountOfLanguageImages'
+
+Finished logs for TheiaConfigurationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.ProgrammingExerciseTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:48:48" hostname="fv-az1721-502" time="0.958">
+  <properties/>
+  <testcase name="updateProgrammingExerciseOnce()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseTest" time="0.085"/>
+  <testcase name="updateExerciseTestCasesZeroWeight(AssessmentType) [1] assessmentType=AUTOMATIC" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseTest" time="0.079"/>
+  <testcase name="updateExerciseTestCasesZeroWeight(AssessmentType) [2] assessmentType=SEMI_AUTOMATIC" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseTest" time="0.07"/>
+  <testcase name="updateExerciseTestCasesZeroWeight(AssessmentType) [3] assessmentType=MANUAL" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseTest" time="0.071"/>
+  <testcase name="updateExerciseTestCasesZeroWeight(AssessmentType) [4] assessmentType=AUTOMATIC_ATHENA" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseTest" time="0.072"/>
+  <testcase name="updateExerciseAutomaticFeedbackNoTestCases()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseTest" time="0.068"/>
+  <testcase name="updateProblemStatement_courseExercise()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseTest" time="0.058"/>
+  <testcase name="updateExerciseAutomaticFeedbackTestCasesPositiveWeight()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseTest" time="0.072"/>
+  <testcase name="testFindRelevantParticipations()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseTest" time="0.045"/>
+  <testcase name="updateProgrammingExerciseTwice()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseTest" time="0.086"/>
+  <testcase name="findAppropriateSubmissionRespectingIndividualDueDate(boolean) [1] isSubmissionAfterIndividualDueDate=true" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseTest" time="0.041"/>
+  <testcase name="findAppropriateSubmissionRespectingIndividualDueDate(boolean) [2] isSubmissionAfterIndividualDueDate=false" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseTest" time="0.038"/>
+  <testcase name="updateProblemStatement_examExercise()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseTest" time="0.057"/>
+  <testcase name="testDeleteProgrammingExerciseChannel()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseTest" time="0.093"/>
+  <system-out><![CDATA[
+Starting logs for ProgrammingExerciseTest
+
+  Starting logs for ProgrammingExerciseTest > updateProgrammingExerciseOnce()
+    23:48:48.232 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:48:48.237 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:48:48.239 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:48:48.240 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:48:48.243 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:48:48.246 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 11 users from all courses...
+    23:48:48.249 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 11 users from all courses. Done
+    23:48:48.249 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:48:48.253 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:48:48.268 | 461 ool-1-worker-225 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ProgrammingExerciseTest#updateProgrammingExerciseOnce'
+    23:48:48.275 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises
+    23:48:48.279 | 461 ool-1-worker-225 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise : ProgrammingExercise{id=3181, templateRepositoryUri='https://version-control.fake.fake/git/SHORTBB562A7D071B0048FC0B73E057E3BA4BC118TSTEXC/shortbb562a7d071b0048fc0b73e057e3ba4bc118tstexc-exercise.git', solutionRepositoryUri='https://version-control.fake.fake/git/SHORTBB562A7D071B0048FC0B73E057E3BA4BC118TSTEXC/shortbb562a7d071b0048fc0b73e057e3ba4bc118tstexc-solution.git', templateBuildPlanId='SHORTBB562A7D071B0048FC0B73E057E3BA4BC118TSTEXC-BASE', solutionBuildPlanId='SHORTBB562A7D071B0048FC0B73E057E3BA4BC118TSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:48:48.292 | 461 ool-1-worker-225 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '3181' from title cache 'exerciseTitle'
+    23:48:48.293 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 3181
+    23:48:48.295 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new title 1" (#3181) to trigger on RELEASE.
+    23:48:48.295 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "new title 1" (#3181) for 2025-02-15T23:48:48.254599Z.
+    23:48:48.295 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 1" (#3181) to trigger on DUE.
+    23:48:48.295 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'new title 1' (#3181) for 2025-02-16T23:48:48.254625Z.
+    23:48:48.295 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 1" (#3181) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:48:48.295 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'new title 1' (#3181) for 2025-02-19T23:48:48.254641Z.
+    23:48:48.296 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for potential Athena exercise 3181
+    23:48:48.297 | 461 ool-1-worker-225 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User peinttestinstructor1 has updated ProgrammingExercise new title 1 with id 3181
+
+  Starting logs for ProgrammingExerciseTest > updateExerciseTestCasesZeroWeight(AssessmentType) [1] assessmentType=AUTOMATIC
+    23:48:48.316 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:48:48.320 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:48:48.322 | 060 pool-4-thread-3  | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Unprotecting branch main for Gitlab repository SHORT3E844DDA08CF004A7F086D305B1D783DBF52TDEA/short3e844dda08cf004a7f086d305b1d783dbf52tdea-exercise
+    23:48:48.324 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:48:48.325 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:48:48.329 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:48:48.330 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:48:48.331 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:48:48.331 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:48:48.342 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:48:48.355 | 461 ool-1-worker-225 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ProgrammingExerciseTest#updateExerciseTestCasesZeroWeight'
+    23:48:48.362 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises
+    23:48:48.363 | 461 ool-1-worker-225 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise : ProgrammingExercise{id=3182, templateRepositoryUri='https://version-control.fake.fake/git/SHORT3D3D4DD00361A0458C091480988FA6A25BC7TSTEXC/short3d3d4dd00361a0458c091480988fa6a25bc7tstexc-exercise.git', solutionRepositoryUri='https://version-control.fake.fake/git/SHORT3D3D4DD00361A0458C091480988FA6A25BC7TSTEXC/short3d3d4dd00361a0458c091480988fa6a25bc7tstexc-solution.git', templateBuildPlanId='SHORT3D3D4DD00361A0458C091480988FA6A25BC7TSTEXC-BASE', solutionBuildPlanId='SHORT3D3D4DD00361A0458C091480988FA6A25BC7TSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:48:48.376 | 461 ool-1-worker-225 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '3182' from title cache 'exerciseTitle'
+    23:48:48.377 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 3182
+    23:48:48.379 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new title 1" (#3182) to trigger on RELEASE.
+    23:48:48.379 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "new title 1" (#3182) for 2025-02-15T23:48:48.342830Z.
+    23:48:48.379 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 1" (#3182) to trigger on DUE.
+    23:48:48.379 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'new title 1' (#3182) for 2025-02-16T23:48:48.342833Z.
+    23:48:48.379 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 1" (#3182) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:48:48.379 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'new title 1' (#3182) for 2025-02-19T23:48:48.342835Z.
+    23:48:48.380 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for potential Athena exercise 3182
+    23:48:48.381 | 461 ool-1-worker-225 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User peinttestinstructor1 has updated ProgrammingExercise new title 1 with id 3182
+
+  Starting logs for ProgrammingExerciseTest > updateExerciseTestCasesZeroWeight(AssessmentType) [2] assessmentType=SEMI_AUTOMATIC
+    23:48:48.397 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:48:48.401 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:48:48.405 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:48:48.406 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:48:48.410 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:48:48.412 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:48:48.413 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:48:48.413 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:48:48.417 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:48:48.430 | 461 ool-1-worker-225 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ProgrammingExerciseTest#updateExerciseTestCasesZeroWeight'
+    23:48:48.436 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises
+    23:48:48.437 | 461 ool-1-worker-225 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise : ProgrammingExercise{id=3183, templateRepositoryUri='https://version-control.fake.fake/git/SHORT3EA91A8F0E664048A80B8FF00A50276316F8TSTEXC/short3ea91a8f0e664048a80b8ff00a50276316f8tstexc-exercise.git', solutionRepositoryUri='https://version-control.fake.fake/git/SHORT3EA91A8F0E664048A80B8FF00A50276316F8TSTEXC/short3ea91a8f0e664048a80b8ff00a50276316f8tstexc-solution.git', templateBuildPlanId='SHORT3EA91A8F0E664048A80B8FF00A50276316F8TSTEXC-BASE', solutionBuildPlanId='SHORT3EA91A8F0E664048A80B8FF00A50276316F8TSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:48:48.448 | 461 ool-1-worker-225 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '3183' from title cache 'exerciseTitle'
+    23:48:48.449 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 3183
+    23:48:48.451 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new title 1" (#3183) to trigger on RELEASE.
+    23:48:48.451 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "new title 1" (#3183) for 2025-02-15T23:48:48.417965Z.
+    23:48:48.451 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 1" (#3183) to trigger on DUE.
+    23:48:48.451 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'new title 1' (#3183) for 2025-02-16T23:48:48.417967Z.
+    23:48:48.451 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 1" (#3183) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:48:48.451 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'new title 1' (#3183) for 2025-02-19T23:48:48.417969Z.
+    23:48:48.452 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for potential Athena exercise 3183
+    23:48:48.453 | 461 ool-1-worker-225 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User peinttestinstructor1 has updated ProgrammingExercise new title 1 with id 3183
+
+  Starting logs for ProgrammingExerciseTest > updateExerciseTestCasesZeroWeight(AssessmentType) [3] assessmentType=MANUAL
+    23:48:48.469 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:48:48.473 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:48:48.477 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:48:48.478 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:48:48.482 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:48:48.484 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:48:48.485 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:48:48.485 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:48:48.489 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:48:48.502 | 461 ool-1-worker-225 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ProgrammingExerciseTest#updateExerciseTestCasesZeroWeight'
+    23:48:48.508 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises
+    23:48:48.509 | 461 ool-1-worker-225 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise : ProgrammingExercise{id=3184, templateRepositoryUri='https://version-control.fake.fake/git/SHORTFDDF25360F49004338086630F9199E69A5B5TSTEXC/shortfddf25360f49004338086630f9199e69a5b5tstexc-exercise.git', solutionRepositoryUri='https://version-control.fake.fake/git/SHORTFDDF25360F49004338086630F9199E69A5B5TSTEXC/shortfddf25360f49004338086630f9199e69a5b5tstexc-solution.git', templateBuildPlanId='SHORTFDDF25360F49004338086630F9199E69A5B5TSTEXC-BASE', solutionBuildPlanId='SHORTFDDF25360F49004338086630F9199E69A5B5TSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:48:48.520 | 461 ool-1-worker-225 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '3184' from title cache 'exerciseTitle'
+    23:48:48.521 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 3184
+    23:48:48.523 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new title 1" (#3184) to trigger on RELEASE.
+    23:48:48.523 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "new title 1" (#3184) for 2025-02-15T23:48:48.489625Z.
+    23:48:48.523 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 1" (#3184) to trigger on DUE.
+    23:48:48.523 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'new title 1' (#3184) for 2025-02-16T23:48:48.489627Z.
+    23:48:48.523 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 1" (#3184) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:48:48.523 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'new title 1' (#3184) for 2025-02-19T23:48:48.489629Z.
+    23:48:48.524 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for potential Athena exercise 3184
+    23:48:48.525 | 461 ool-1-worker-225 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User peinttestinstructor1 has updated ProgrammingExercise new title 1 with id 3184
+
+  Starting logs for ProgrammingExerciseTest > updateExerciseTestCasesZeroWeight(AssessmentType) [4] assessmentType=AUTOMATIC_ATHENA
+    23:48:48.541 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:48:48.545 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:48:48.549 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:48:48.550 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:48:48.554 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:48:48.556 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:48:48.557 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:48:48.557 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:48:48.561 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:48:48.574 | 461 ool-1-worker-225 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ProgrammingExerciseTest#updateExerciseTestCasesZeroWeight'
+    23:48:48.580 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises
+    23:48:48.581 | 461 ool-1-worker-225 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise : ProgrammingExercise{id=3185, templateRepositoryUri='https://version-control.fake.fake/git/SHORTB8D8AA4D019A504EFD09DFF0535A29425531TSTEXC/shortb8d8aa4d019a504efd09dff0535a29425531tstexc-exercise.git', solutionRepositoryUri='https://version-control.fake.fake/git/SHORTB8D8AA4D019A504EFD09DFF0535A29425531TSTEXC/shortb8d8aa4d019a504efd09dff0535a29425531tstexc-solution.git', templateBuildPlanId='SHORTB8D8AA4D019A504EFD09DFF0535A29425531TSTEXC-BASE', solutionBuildPlanId='SHORTB8D8AA4D019A504EFD09DFF0535A29425531TSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:48:48.595 | 461 ool-1-worker-225 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '3185' from title cache 'exerciseTitle'
+    23:48:48.595 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 3185
+    23:48:48.597 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new title 1" (#3185) to trigger on RELEASE.
+    23:48:48.597 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "new title 1" (#3185) for 2025-02-15T23:48:48.561765Z.
+    23:48:48.597 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 1" (#3185) to trigger on DUE.
+    23:48:48.597 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'new title 1' (#3185) for 2025-02-16T23:48:48.561767Z.
+    23:48:48.597 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 1" (#3185) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:48:48.597 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'new title 1' (#3185) for 2025-02-19T23:48:48.561769Z.
+    23:48:48.598 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for potential Athena exercise 3185
+    23:48:48.599 | 461 ool-1-worker-225 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User peinttestinstructor1 has updated ProgrammingExercise new title 1 with id 3185
+
+  Starting logs for ProgrammingExerciseTest > updateExerciseAutomaticFeedbackNoTestCases()
+    23:48:48.616 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:48:48.620 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:48:48.623 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:48:48.625 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:48:48.628 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:48:48.630 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:48:48.631 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:48:48.631 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:48:48.635 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:48:48.648 | 461 ool-1-worker-225 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ProgrammingExerciseTest#updateExerciseAutomaticFeedbackNoTestCases'
+    23:48:48.653 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises
+    23:48:48.653 | 461 ool-1-worker-225 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise : ProgrammingExercise{id=3186, templateRepositoryUri='https://version-control.fake.fake/git/SHORT10C58E2F0D00404BDE09E84091EA475C20E3TSTEXC/short10c58e2f0d00404bde09e84091ea475c20e3tstexc-exercise.git', solutionRepositoryUri='https://version-control.fake.fake/git/SHORT10C58E2F0D00404BDE09E84091EA475C20E3TSTEXC/short10c58e2f0d00404bde09e84091ea475c20e3tstexc-solution.git', templateBuildPlanId='SHORT10C58E2F0D00404BDE09E84091EA475C20E3TSTEXC-BASE', solutionBuildPlanId='SHORT10C58E2F0D00404BDE09E84091EA475C20E3TSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:48:48.664 | 461 ool-1-worker-225 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '3186' from title cache 'exerciseTitle'
+    23:48:48.665 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 3186
+    23:48:48.667 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new title 1" (#3186) to trigger on RELEASE.
+    23:48:48.667 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "new title 1" (#3186) for 2025-02-15T23:48:48.635953Z.
+    23:48:48.667 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 1" (#3186) to trigger on DUE.
+    23:48:48.667 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'new title 1' (#3186) for 2025-02-16T23:48:48.635955Z.
+    23:48:48.667 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 1" (#3186) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:48:48.667 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'new title 1' (#3186) for 2025-02-19T23:48:48.635957Z.
+    23:48:48.668 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for potential Athena exercise 3186
+    23:48:48.669 | 461 ool-1-worker-225 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User peinttestinstructor1 has updated ProgrammingExercise new title 1 with id 3186
+
+  Starting logs for ProgrammingExerciseTest > updateProblemStatement_courseExercise()
+    23:48:48.685 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:48:48.689 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:48:48.693 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:48:48.694 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:48:48.698 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:48:48.700 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:48:48.701 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:48:48.701 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:48:48.705 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:48:48.720 | 461 ool-1-worker-225 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ProgrammingExerciseTest#updateProblemStatement_courseExercise'
+    23:48:48.722 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PATCH /api/programming-exercises/3187/problem-statement
+    23:48:48.722 | 461 ool-1-worker-225 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise with new problem statement: a new problem statement
+    23:48:48.728 | 461 ool-1-worker-225 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User peinttestinstructor1 has updated ProgrammingExercise Programming with id 3187
+
+  Starting logs for ProgrammingExerciseTest > updateExerciseAutomaticFeedbackTestCasesPositiveWeight()
+    23:48:48.745 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:48:48.751 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:48:48.755 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:48:48.756 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:48:48.760 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:48:48.762 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:48:48.763 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:48:48.763 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:48:48.767 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:48:48.781 | 461 ool-1-worker-225 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ProgrammingExerciseTest#updateExerciseAutomaticFeedbackTestCasesPositiveWeight'
+    23:48:48.786 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises
+    23:48:48.787 | 461 ool-1-worker-225 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise : ProgrammingExercise{id=3188, templateRepositoryUri='https://version-control.fake.fake/git/SHORTF3D203B80AE580456D0A62B0402F8859DDAFTSTEXC/shortf3d203b80ae580456d0a62b0402f8859ddaftstexc-exercise.git', solutionRepositoryUri='https://version-control.fake.fake/git/SHORTF3D203B80AE580456D0A62B0402F8859DDAFTSTEXC/shortf3d203b80ae580456d0a62b0402f8859ddaftstexc-solution.git', templateBuildPlanId='SHORTF3D203B80AE580456D0A62B0402F8859DDAFTSTEXC-BASE', solutionBuildPlanId='SHORTF3D203B80AE580456D0A62B0402F8859DDAFTSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:48:48.798 | 461 ool-1-worker-225 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '3188' from title cache 'exerciseTitle'
+    23:48:48.799 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 3188
+    23:48:48.801 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new title 1" (#3188) to trigger on RELEASE.
+    23:48:48.801 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "new title 1" (#3188) for 2025-02-15T23:48:48.768213Z.
+    23:48:48.801 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 1" (#3188) to trigger on DUE.
+    23:48:48.801 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'new title 1' (#3188) for 2025-02-16T23:48:48.768220Z.
+    23:48:48.801 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 1" (#3188) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:48:48.801 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'new title 1' (#3188) for 2025-02-19T23:48:48.768222Z.
+    23:48:48.802 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for potential Athena exercise 3188
+    23:48:48.803 | 461 ool-1-worker-225 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User peinttestinstructor1 has updated ProgrammingExercise new title 1 with id 3188
+
+  Starting logs for ProgrammingExerciseTest > testFindRelevantParticipations()
+    23:48:48.819 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:48:48.823 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:48:48.826 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:48:48.828 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:48:48.831 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:48:48.833 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:48:48.834 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:48:48.834 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:48:48.838 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:48:48.852 | 461 ool-1-worker-225 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ProgrammingExerciseTest#testFindRelevantParticipations'
+
+  Starting logs for ProgrammingExerciseTest > updateProgrammingExerciseTwice()
+    23:48:48.865 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:48:48.869 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:48:48.873 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:48:48.874 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:48:48.878 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:48:48.879 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:48:48.880 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:48:48.880 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:48:48.884 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:48:48.898 | 461 ool-1-worker-225 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ProgrammingExerciseTest#updateProgrammingExerciseTwice'
+    23:48:48.902 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises
+    23:48:48.903 | 461 ool-1-worker-225 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise : ProgrammingExercise{id=3190, templateRepositoryUri='https://version-control.fake.fake/git/SHORT16ED3A110075E040920B1B302F547F67D6DCTSTEXC/short16ed3a110075e040920b1b302f547f67d6dctstexc-exercise.git', solutionRepositoryUri='https://version-control.fake.fake/git/SHORT16ED3A110075E040920B1B302F547F67D6DCTSTEXC/short16ed3a110075e040920b1b302f547f67d6dctstexc-solution.git', templateBuildPlanId='SHORT16ED3A110075E040920B1B302F547F67D6DCTSTEXC-BASE', solutionBuildPlanId='SHORT16ED3A110075E040920B1B302F547F67D6DCTSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:48:48.915 | 461 ool-1-worker-225 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '3190' from title cache 'exerciseTitle'
+    23:48:48.915 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 3190
+    23:48:48.917 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new title 1" (#3190) to trigger on RELEASE.
+    23:48:48.917 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "new title 1" (#3190) for 2025-02-15T23:48:48.885508Z.
+    23:48:48.917 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 1" (#3190) to trigger on DUE.
+    23:48:48.917 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'new title 1' (#3190) for 2025-02-16T23:48:48.885510Z.
+    23:48:48.917 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 1" (#3190) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:48:48.917 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'new title 1' (#3190) for 2025-02-19T23:48:48.885512Z.
+    23:48:48.918 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for potential Athena exercise 3190
+    23:48:48.918 | 461 ool-1-worker-225 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User peinttestinstructor1 has updated ProgrammingExercise new title 1 with id 3190
+    23:48:48.923 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises
+    23:48:48.923 | 461 ool-1-worker-225 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise : ProgrammingExercise{id=3190, templateRepositoryUri='https://version-control.fake.fake/git/SHORT16ED3A110075E040920B1B302F547F67D6DCTSTEXC/short16ed3a110075e040920b1b302f547f67d6dctstexc-exercise.git', solutionRepositoryUri='https://version-control.fake.fake/git/SHORT16ED3A110075E040920B1B302F547F67D6DCTSTEXC/short16ed3a110075e040920b1b302f547f67d6dctstexc-solution.git', templateBuildPlanId='SHORT16ED3A110075E040920B1B302F547F67D6DCTSTEXC-BASE', solutionBuildPlanId='SHORT16ED3A110075E040920B1B302F547F67D6DCTSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:48:48.934 | 461 ool-1-worker-225 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '3190' from title cache 'exerciseTitle'
+    23:48:48.935 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 3190
+    23:48:48.937 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task RELEASE for Exercise (#3190).
+    23:48:48.937 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new title 2" (#3190) to trigger on RELEASE.
+    23:48:48.937 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "new title 2" (#3190) for 2025-02-15T23:48:48.885508Z.
+    23:48:48.937 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task DUE for Exercise (#3190).
+    23:48:48.937 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 2" (#3190) to trigger on DUE.
+    23:48:48.937 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'new title 2' (#3190) for 2025-02-16T23:48:48.885510Z.
+    23:48:48.937 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task BUILD_AND_TEST_AFTER_DUE_DATE for Exercise (#3190).
+    23:48:48.937 | 461 ool-1-worker-225 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new title 2" (#3190) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:48:48.937 | 461 ool-1-worker-225 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'new title 2' (#3190) for 2025-02-19T23:48:48.885512Z.
+    23:48:48.938 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for potential Athena exercise 3190
+    23:48:48.938 | 461 ool-1-worker-225 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User peinttestinstructor1 has updated ProgrammingExercise new title 2 with id 3190
+
+  Starting logs for ProgrammingExerciseTest > findAppropriateSubmissionRespectingIndividualDueDate(boolean) [1] isSubmissionAfterIndividualDueDate=true
+    23:48:48.952 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:48:48.955 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:48:48.958 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:48:48.960 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:48:48.963 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:48:48.964 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:48:48.964 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:48:48.964 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:48:48.967 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:48:48.979 | 461 ool-1-worker-225 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ProgrammingExerciseTest#findAppropriateSubmissionRespectingIndividualDueDate'
+    23:48:48.982 | 461 ool-1-worker-225 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+
+  Starting logs for ProgrammingExerciseTest > findAppropriateSubmissionRespectingIndividualDueDate(boolean) [2] isSubmissionAfterIndividualDueDate=false
+    23:48:48.994 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:48:48.997 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:48:49.000 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:48:49.001 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:48:49.004 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:48:49.006 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:48:49.006 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:48:49.006 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:48:49.009 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:48:49.019 | 461 ool-1-worker-225 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ProgrammingExerciseTest#findAppropriateSubmissionRespectingIndividualDueDate'
+    23:48:49.021 | 461 ool-1-worker-225 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+
+  Starting logs for ProgrammingExerciseTest > updateProblemStatement_examExercise()
+    23:48:49.033 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:48:49.036 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:48:49.039 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:48:49.040 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:48:49.043 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:48:49.044 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:48:49.045 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:48:49.045 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:48:49.048 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:48:49.057 | 461 ool-1-worker-225 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ProgrammingExerciseTest#updateProblemStatement_examExercise'
+    23:48:49.070 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PATCH /api/programming-exercises/3194/problem-statement
+    23:48:49.070 | 461 ool-1-worker-225 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise with new problem statement: a new problem statement
+    23:48:49.075 | 461 ool-1-worker-225 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User peinttestinstructor1 has updated ProgrammingExercise Testtitle with id 3194
+
+  Starting logs for ProgrammingExerciseTest > testDeleteProgrammingExerciseChannel()
+    23:48:49.093 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:48:49.097 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:48:49.102 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:48:49.103 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:48:49.107 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:48:49.109 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:48:49.110 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:48:49.110 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:48:49.114 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:48:49.128 | 461 ool-1-worker-225 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ProgrammingExerciseTest#testDeleteProgrammingExerciseChannel'
+    23:48:49.143 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/programming-exercises/3196
+    23:48:49.144 | 461 ool-1-worker-225 | INFO  | .a.a.p.w.ProgrammingExerciseResource : REST request to delete ProgrammingExercise : 3196
+    23:48:49.147 | 461 ool-1-worker-225 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User peinttestinstructor1 has requested to delete ProgrammingExercise Programming with id 3196
+    23:48:49.148 | 461 ool-1-worker-225 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Request to delete ProgrammingExercise with id 3196
+    23:48:49.152 | 461 ool-1-worker-225 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Deleting the channel took 3.83ms
+    23:48:49.153 | 461 ool-1-worker-225 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 3196
+    23:48:49.156 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for programming exercise 3196
+    23:48:49.157 | 461 ool-1-worker-225 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for potential Athena exercise 3196
+    23:48:49.158 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 3875
+    23:48:49.160 | 461 ool-1-worker-225 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 3876
+    23:48:49.163 | 461 ool-1-worker-225 | DEBUG | c.a.a.p.s.ProgrammingExerciseService : Delete programming exercises with student participations: []
+    23:48:49.171 | 461 ool-1-worker-225 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '3196' from title cache 'exerciseTitle'
+
+Finished logs for ProgrammingExerciseTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

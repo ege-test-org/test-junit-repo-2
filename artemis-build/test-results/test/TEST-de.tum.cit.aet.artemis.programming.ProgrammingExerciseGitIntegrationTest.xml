@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGitIntegrationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:36" hostname="fv-az1721-502" time="0.451">
+  <properties/>
+  <testcase name="testRepositoryMethods()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGitIntegrationTest" time="0.1"/>
+  <testcase name="testCombineTemplateRepositoryCommits_instructorNotInCourse_forbidden()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGitIntegrationTest" time="0.119"/>
+  <testcase name="testCombineTemplateRepositoryCommits()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGitIntegrationTest" time="0.148"/>
+  <testcase name="testCombineTemplateRepositoryCommits_invalidId_notFound()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGitIntegrationTest" time="0.081"/>
+  <system-out><![CDATA[
+Starting logs for ProgrammingExerciseGitIntegrationTest
+
+  Starting logs for ProgrammingExerciseGitIntegrationTest > testRepositoryMethods()
+    23:47:36.342 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:47:36.348 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:47:36.354 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:47:36.355 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:47:36.360 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:47:36.363 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:36.364 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:36.364 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:36.367 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:36.388 | 448 ool-1-worker-212 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:36.392 | 448 ool-1-worker-212 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:36.404 | 448 ool-1-worker-212 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGitIntegrationTest#testRepositoryMethods'
+
+  Starting logs for ProgrammingExerciseGitIntegrationTest > testCombineTemplateRepositoryCommits_instructorNotInCourse_forbidden()
+    23:47:36.434 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:47:36.440 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:47:36.444 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:47:36.445 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:47:36.449 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:47:36.451 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:36.452 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:36.452 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:36.465 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:36.487 | 448 ool-1-worker-212 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:36.494 | 448 ool-1-worker-212 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:36.519 | 448 ool-1-worker-212 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGitIntegrationTest#testCombineTemplateRepositoryCommits_instructorNotInCourse_forbidden'
+    23:47:36.528 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises/3319/combine-template-commits
+    23:47:36.532 | 448 ool-1-worker-212 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to combine the commits of the template repository of ProgrammingExercise with id: 3319
+    23:47:36.537 | 448 ool-1-worker-212 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Course with id 2534
+
+  Starting logs for ProgrammingExerciseGitIntegrationTest > testCombineTemplateRepositoryCommits()
+    23:47:36.556 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:47:36.562 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:47:36.566 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:47:36.567 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:47:36.572 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:47:36.575 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses...
+    23:47:36.576 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses. Done
+    23:47:36.576 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:36.587 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:36.614 | 448 ool-1-worker-212 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:36.619 | 448 ool-1-worker-212 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:36.633 | 448 ool-1-worker-212 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGitIntegrationTest#testCombineTemplateRepositoryCommits'
+    23:47:36.648 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises/3320/combine-template-commits
+    23:47:36.649 | 448 ool-1-worker-212 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to combine the commits of the template repository of ProgrammingExercise with id: 3320
+    23:47:36.668 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.p.service.GitService       : combineAllCommitsIntoInitialCommit -> Push /tmp/repo17912715485616795429
+
+  Starting logs for ProgrammingExerciseGitIntegrationTest > testCombineTemplateRepositoryCommits_invalidId_notFound()
+    23:47:36.705 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:47:36.710 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:47:36.714 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:47:36.715 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 2 instructors...
+    23:47:36.719 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:47:36.721 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:36.722 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:36.722 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:36.727 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:36.748 | 448 ool-1-worker-212 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:36.752 | 448 ool-1-worker-212 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:36.765 | 448 ool-1-worker-212 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGitIntegrationTest#testCombineTemplateRepositoryCommits_invalidId_notFound'
+    23:47:36.766 | 448 ool-1-worker-212 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises/798724305923532/combine-template-commits
+    23:47:36.766 | 448 ool-1-worker-212 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to combine the commits of the template repository of ProgrammingExercise with id: 798724305923532
+    23:47:36.769 | 448 ool-1-worker-212 | WARN  | o.z.p.spring.common.AdviceTraits     : Not Found: ProgrammingExercise with identifier: "798724305923532" does not exist
+
+Finished logs for ProgrammingExerciseGitIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

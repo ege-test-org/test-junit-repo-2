@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" tests="35" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:27" hostname="fv-az1721-502" time="5.909">
+  <properties/>
+  <testcase name="testOverrideAssessment_saveSameTutorAfterAssessmentDueDatePossible()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.177"/>
+  <testcase name="multipleCorrectionRoundsForExam()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.486"/>
+  <testcase name="testOverrideAssessment_submitSameTutorPossible()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.207"/>
+  <testcase name="testOverrideAssessment_submitSameTutorAfterAssessmentDueDatePossible()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.258"/>
+  <testcase name="testSubmitFileUploadAssessment_withResultOver100Percent()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.206"/>
+  <testcase name="testdeleteResult_failAsResultHasAComplaint()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.187"/>
+  <testcase name="testSubmitFileUploadAssessment_studentHidden()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.116"/>
+  <testcase name="testUpdateFileUploadAssessmentAfterComplaint_studentHidden()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.328"/>
+  <testcase name="testOverrideAssessment_submitOtherTutorForbidden()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.149"/>
+  <testcase name="testCancelAssessmentOfOtherTutorAsTutor()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.082"/>
+  <testcase name="testCancelOwnAssessmentAsTutor()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.095"/>
+  <testcase name="testOverrideAssessment_saveSameTutorAfterAssessmentDueDateForbidden()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.082"/>
+  <testcase name="testOverrideAssessment_saveInstructorAfterAssessmentDueDatePossible()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.084"/>
+  <testcase name="testCancelAssessmentOfOtherTutorAsInstructor()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.147"/>
+  <testcase name="testdeleteResult()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.316"/>
+  <testcase name="testOverrideAssessment_submitOtherTutorAfterAssessmentDueDateForbidden()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.112"/>
+  <testcase name="testdeleteResult_invalidResultSubmissionCombination()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.163"/>
+  <testcase name="testManualAssessmentSubmitWithBonus(IncludedInOverallScore, boolean) [1] includedInOverallScore=INCLUDED_COMPLETELY, bonus=true" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.169"/>
+  <testcase name="testManualAssessmentSubmitWithBonus(IncludedInOverallScore, boolean) [2] includedInOverallScore=INCLUDED_COMPLETELY, bonus=false" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.133"/>
+  <testcase name="testManualAssessmentSubmitWithBonus(IncludedInOverallScore, boolean) [3] includedInOverallScore=INCLUDED_AS_BONUS, bonus=true" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.199"/>
+  <testcase name="testManualAssessmentSubmitWithBonus(IncludedInOverallScore, boolean) [4] includedInOverallScore=INCLUDED_AS_BONUS, bonus=false" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.13"/>
+  <testcase name="testManualAssessmentSubmitWithBonus(IncludedInOverallScore, boolean) [5] includedInOverallScore=NOT_INCLUDED, bonus=true" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.122"/>
+  <testcase name="testManualAssessmentSubmitWithBonus(IncludedInOverallScore, boolean) [6] includedInOverallScore=INCLUDED_AS_BONUS, bonus=false" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.115"/>
+  <testcase name="testOverrideAssessment_saveOtherTutorForbidden()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.083"/>
+  <testcase name="testSaveFileUploadAssessment_studentHidden()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.083"/>
+  <testcase name="getOwnAssessmentAsStudent()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.102"/>
+  <testcase name="testOverrideAssessment_submitSameTutorAfterAssessmentDueDateForbidden()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.08"/>
+  <testcase name="testOverrideAssessment_submitInstructorAfterAssessmentDueDatePossible()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.231"/>
+  <testcase name="testOverrideAssessment_saveOtherTutorAfterAssessmentDueDateForbidden()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.146"/>
+  <testcase name="getAssessmentOfOtherStudentAsStudent()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.139"/>
+  <testcase name="testSubmitFileUploadAssessment_asInstructor()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.217"/>
+  <testcase name="testOverrideAssessment_submitInstructorPossible()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.217"/>
+  <testcase name="testCancelOwnAssessmentAsStudent()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.203"/>
+  <testcase name="testOverrideAssessment_saveSameTutorPossible()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.155"/>
+  <testcase name="testOverrideAssessment_saveInstructorPossible()" classname="de.tum.cit.aet.artemis.fileupload.FileUploadAssessmentIntegrationTest" time="0.086"/>
+  <system-out><![CDATA[
+Starting logs for FileUploadAssessmentIntegrationTest
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testOverrideAssessment_saveSameTutorAfterAssessmentDueDatePossible()
+    23:46:27.377 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:27.382 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:27.388 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:27.389 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:27.394 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:27.396 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:46:27.401 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:46:27.401 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:27.406 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:27.417 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testOverrideAssessment_saveSameTutorAfterAssessmentDueDatePossible'
+    23:46:27.430 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2382 and participant 543 (result to be deleted: null)
+    23:46:27.430 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2382 and participant 543 at 2025-02-14T23:46:27.530804117Z[Etc/UTC].
+    23:46:27.445 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2382 and participant 543 (result to be deleted: null)
+    23:46:27.445 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2382 and participant 543 at 2025-02-14T23:46:27.545607715Z[Etc/UTC].
+    23:46:27.468 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2382 and participant 543 (result to be deleted: null)
+    23:46:27.468 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2382 and participant 543 at 2025-02-14T23:46:27.568413817Z[Etc/UTC].
+    23:46:27.495 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2382 and participant 543 (result to be deleted: null)
+    23:46:27.495 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2382 and participant 543 at 2025-02-14T23:46:27.595325616Z[Etc/UTC].
+    23:46:27.497 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1201/feedback
+    23:46:27.521 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2382 and participant 543 (result to be deleted: null)
+    23:46:27.521 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2382 and participant 543 at 2025-02-14T23:46:27.621377492Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > multipleCorrectionRoundsForExam()
+    23:46:27.559 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:27.566 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:27.572 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:27.581 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:27.589 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:27.595 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:27.596 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:27.596 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:27.619 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:27.628 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#multipleCorrectionRoundsForExam'
+    23:46:27.664 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/exercises/2388/file-upload-submission-without-assessment
+    23:46:27.669 | 394 ool-1-worker-158 | DEBUG | a.a.f.w.FileUploadSubmissionResource : REST request to get a file upload submission without assessment
+    23:46:27.695 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2388 and participant 543 (result to be deleted: null)
+    23:46:27.698 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2388 and participant 543 at 2025-02-14T23:46:27.798146788Z[Etc/UTC].
+    23:46:27.715 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2388 and participant 543 (result to be deleted: null)
+    23:46:27.715 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2388 and participant 543 at 2025-02-14T23:46:27.815391278Z[Etc/UTC].
+    23:46:27.734 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2388 and participant 543 (result to be deleted: null)
+    23:46:27.734 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2388 and participant 543 at 2025-02-14T23:46:27.834296725Z[Etc/UTC].
+    23:46:27.743 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/exercises/2388/file-upload-submissions
+    23:46:27.744 | 394 ool-1-worker-158 | DEBUG | a.a.f.w.FileUploadSubmissionResource : REST request to get all file upload submissions
+    23:46:27.760 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1202/feedback
+    23:46:27.784 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2388 and participant 543 (result to be deleted: null)
+    23:46:27.784 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2388 and participant 543 at 2025-02-14T23:46:27.884283168Z[Etc/UTC].
+    23:46:27.794 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2388 and participant 543 (result to be deleted: null)
+    23:46:27.794 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2388 and participant 543 at 2025-02-14T23:46:27.894379376Z[Etc/UTC].
+    23:46:27.797 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/exercises/2388/file-upload-submissions
+    23:46:27.801 | 394 ool-1-worker-158 | DEBUG | a.a.f.w.FileUploadSubmissionResource : REST request to get all file upload submissions
+    23:46:27.815 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/exercises/2388/file-upload-submission-without-assessment
+    23:46:27.819 | 394 ool-1-worker-158 | DEBUG | a.a.f.w.FileUploadSubmissionResource : REST request to get a file upload submission without assessment
+    23:46:27.844 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2388 and participant 543 (result to be deleted: null)
+    23:46:27.844 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2388 and participant 543 at 2025-02-14T23:46:27.944339620Z[Etc/UTC].
+    23:46:27.867 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2388 and participant 543 (result to be deleted: null)
+    23:46:27.867 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2388 and participant 543 at 2025-02-14T23:46:27.967851058Z[Etc/UTC].
+    23:46:27.896 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2388 and participant 543 (result to be deleted: null)
+    23:46:27.896 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2388 and participant 543 at 2025-02-14T23:46:27.996350618Z[Etc/UTC].
+    23:46:27.919 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2388 and participant 543 (result to be deleted: null)
+    23:46:27.919 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2388 and participant 543 at 2025-02-14T23:46:28.019341294Z[Etc/UTC].
+    23:46:27.940 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1202/feedback
+    23:46:27.967 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2388 and participant 543 (result to be deleted: null)
+    23:46:27.967 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2388 and participant 543 at 2025-02-14T23:46:28.067256704Z[Etc/UTC].
+    23:46:27.978 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2388 and participant 543 (result to be deleted: null)
+    23:46:27.978 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2388 and participant 543 at 2025-02-14T23:46:28.078860565Z[Etc/UTC].
+    23:46:27.984 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/exercises/2388/file-upload-submissions
+    23:46:27.991 | 394 ool-1-worker-158 | DEBUG | a.a.f.w.FileUploadSubmissionResource : REST request to get all file upload submissions
+    23:46:27.999 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/exercises/2388/file-upload-submissions
+    23:46:28.003 | 394 ool-1-worker-158 | DEBUG | a.a.f.w.FileUploadSubmissionResource : REST request to get all file upload submissions
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testOverrideAssessment_submitSameTutorPossible()
+    23:46:28.052 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:28.063 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:28.073 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:28.074 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:28.080 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:28.085 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:28.086 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:28.086 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:28.099 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:28.109 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testOverrideAssessment_submitSameTutorPossible'
+    23:46:28.119 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2389 and participant 543 (result to be deleted: null)
+    23:46:28.119 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2389 and participant 543 at 2025-02-14T23:46:28.219778519Z[Etc/UTC].
+    23:46:28.134 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2389 and participant 543 (result to be deleted: null)
+    23:46:28.134 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2389 and participant 543 at 2025-02-14T23:46:28.234297416Z[Etc/UTC].
+    23:46:28.156 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2389 and participant 543 (result to be deleted: null)
+    23:46:28.156 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2389 and participant 543 at 2025-02-14T23:46:28.256985989Z[Etc/UTC].
+    23:46:28.192 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2389 and participant 543 (result to be deleted: null)
+    23:46:28.192 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2389 and participant 543 at 2025-02-14T23:46:28.292525559Z[Etc/UTC].
+    23:46:28.193 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1203/feedback
+    23:46:28.214 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2389 and participant 543 (result to be deleted: null)
+    23:46:28.214 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2389 and participant 543 at 2025-02-14T23:46:28.314540127Z[Etc/UTC].
+    23:46:28.223 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2389 and participant 543 (result to be deleted: null)
+    23:46:28.223 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2389 and participant 543 at 2025-02-14T23:46:28.323981455Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testOverrideAssessment_submitSameTutorAfterAssessmentDueDatePossible()
+    23:46:28.259 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:28.268 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:28.278 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:28.279 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:28.289 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:28.291 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:28.298 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:28.298 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:28.305 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:28.327 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testOverrideAssessment_submitSameTutorAfterAssessmentDueDatePossible'
+    23:46:28.347 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2392 and participant 543 (result to be deleted: null)
+    23:46:28.351 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2392 and participant 543 at 2025-02-14T23:46:28.448046153Z[Etc/UTC].
+    23:46:28.360 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2392 and participant 543 (result to be deleted: null)
+    23:46:28.360 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2392 and participant 543 at 2025-02-14T23:46:28.460652112Z[Etc/UTC].
+    23:46:28.385 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2392 and participant 543 (result to be deleted: null)
+    23:46:28.385 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2392 and participant 543 at 2025-02-14T23:46:28.485188040Z[Etc/UTC].
+    23:46:28.412 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2392 and participant 543 (result to be deleted: null)
+    23:46:28.412 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2392 and participant 543 at 2025-02-14T23:46:28.512344495Z[Etc/UTC].
+    23:46:28.414 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1204/feedback
+    23:46:28.440 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2392 and participant 543 (result to be deleted: null)
+    23:46:28.440 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2392 and participant 543 at 2025-02-14T23:46:28.540728008Z[Etc/UTC].
+    23:46:28.453 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2392 and participant 543 (result to be deleted: null)
+    23:46:28.453 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2392 and participant 543 at 2025-02-14T23:46:28.553304793Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testSubmitFileUploadAssessment_withResultOver100Percent()
+    23:46:28.531 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:28.540 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:28.551 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:28.552 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:28.556 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:28.563 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:28.568 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:28.568 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:28.576 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:28.588 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testSubmitFileUploadAssessment_withResultOver100Percent'
+    23:46:28.618 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1205/feedback
+    23:46:28.624 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2395 and participant 543 (result to be deleted: null)
+    23:46:28.627 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2395 and participant 543 at 2025-02-14T23:46:28.724501452Z[Etc/UTC].
+    23:46:28.642 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2395 and participant 543 (result to be deleted: null)
+    23:46:28.642 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2395 and participant 543 at 2025-02-14T23:46:28.742154924Z[Etc/UTC].
+    23:46:28.663 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2395 and participant 543 (result to be deleted: null)
+    23:46:28.663 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2395 and participant 543 at 2025-02-14T23:46:28.763284550Z[Etc/UTC].
+    23:46:28.670 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2395 and participant 543 (result to be deleted: null)
+    23:46:28.670 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2395 and participant 543 at 2025-02-14T23:46:28.770182684Z[Etc/UTC].
+    23:46:28.676 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1205/feedback
+    23:46:28.698 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2395 and participant 543 (result to be deleted: null)
+    23:46:28.698 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2395 and participant 543 at 2025-02-14T23:46:28.798631900Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testdeleteResult_failAsResultHasAComplaint()
+    23:46:28.733 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:28.740 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:28.750 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:28.755 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:28.761 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:28.763 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:28.764 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:28.764 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:28.775 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:28.786 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testdeleteResult_failAsResultHasAComplaint'
+    23:46:28.825 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2401 and participant 543 (result to be deleted: null)
+    23:46:28.825 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2401 and participant 543 at 2025-02-14T23:46:28.925340151Z[Etc/UTC].
+    23:46:28.861 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2401 and participant 543 (result to be deleted: null)
+    23:46:28.861 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2401 and participant 543 at 2025-02-14T23:46:28.961359705Z[Etc/UTC].
+    23:46:28.866 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2401 and participant 543 (result to be deleted: null)
+    23:46:28.866 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2401 and participant 543 at 2025-02-14T23:46:28.966618573Z[Etc/UTC].
+    23:46:28.869 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/participations/1610/file-upload-submissions/1206/results/922
+    23:46:28.873 | 394 ool-1-worker-158 | INFO  | d.t.c.a.a.a.web.AssessmentResource   : REST request by user: admin to delete result 922
+    23:46:28.886 | 394 ool-1-worker-158 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Result has a complaint
+    23:46:28.886 | 394 ool-1-worker-158 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Result has a complaint
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testSubmitFileUploadAssessment_studentHidden()
+    23:46:28.919 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:28.929 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:28.936 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:28.937 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:28.944 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:28.950 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:28.952 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:28.952 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:28.966 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:28.980 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testSubmitFileUploadAssessment_studentHidden'
+    23:46:28.991 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1207/feedback
+    23:46:28.994 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2402 and participant 543 (result to be deleted: null)
+    23:46:28.994 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2402 and participant 543 at 2025-02-14T23:46:29.094743266Z[Etc/UTC].
+    23:46:29.001 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2402 and participant 543 (result to be deleted: null)
+    23:46:29.001 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2402 and participant 543 at 2025-02-14T23:46:29.101617195Z[Etc/UTC].
+    23:46:29.009 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2402 and participant 543 (result to be deleted: null)
+    23:46:29.009 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2402 and participant 543 at 2025-02-14T23:46:29.109909490Z[Etc/UTC].
+    23:46:29.013 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2402 and participant 543 (result to be deleted: null)
+    23:46:29.013 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2402 and participant 543 at 2025-02-14T23:46:29.113753960Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testUpdateFileUploadAssessmentAfterComplaint_studentHidden()
+    23:46:29.042 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:29.065 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:29.076 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:29.078 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:29.088 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:29.097 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:29.103 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:29.103 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:29.111 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:29.123 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testUpdateFileUploadAssessmentAfterComplaint_studentHidden'
+    23:46:29.140 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2405 and participant 543 (result to be deleted: null)
+    23:46:29.140 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2405 and participant 543 at 2025-02-14T23:46:29.240468584Z[Etc/UTC].
+    23:46:29.153 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2405 and participant 543 (result to be deleted: null)
+    23:46:29.153 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2405 and participant 543 at 2025-02-14T23:46:29.253631352Z[Etc/UTC].
+    23:46:29.180 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2405 and participant 543 (result to be deleted: null)
+    23:46:29.180 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2405 and participant 543 at 2025-02-14T23:46:29.280867465Z[Etc/UTC].
+    23:46:29.209 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1208/assessment-after-complaint
+    23:46:29.214 | 394 ool-1-worker-158 | DEBUG | a.a.f.w.FileUploadAssessmentResource : REST request to update the assessment of submission 1208 after complaint.
+    23:46:29.237 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2405 and participant 543 (result to be deleted: null)
+    23:46:29.238 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2405 and participant 543 at 2025-02-14T23:46:29.338016714Z[Etc/UTC].
+    23:46:29.257 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2405 and participant 543 (result to be deleted: null)
+    23:46:29.257 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2405 and participant 543 at 2025-02-14T23:46:29.357841236Z[Etc/UTC].
+    23:46:29.286 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2405 and participant 543 (result to be deleted: null)
+    23:46:29.286 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2405 and participant 543 at 2025-02-14T23:46:29.386904016Z[Etc/UTC].
+    23:46:29.306 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2405 and participant 543 (result to be deleted: null)
+    23:46:29.306 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2405 and participant 543 at 2025-02-14T23:46:29.406300088Z[Etc/UTC].
+    23:46:29.330 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2405 and participant 543 (result to be deleted: null)
+    23:46:29.330 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2405 and participant 543 at 2025-02-14T23:46:29.430200170Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testOverrideAssessment_submitOtherTutorForbidden()
+    23:46:29.370 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:29.377 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:29.388 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:29.389 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:29.394 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:29.401 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:29.402 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:29.402 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:29.416 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:29.424 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testOverrideAssessment_submitOtherTutorForbidden'
+    23:46:29.436 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2408 and participant 543 (result to be deleted: null)
+    23:46:29.436 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2408 and participant 543 at 2025-02-14T23:46:29.536799660Z[Etc/UTC].
+    23:46:29.453 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2408 and participant 543 (result to be deleted: null)
+    23:46:29.453 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2408 and participant 543 at 2025-02-14T23:46:29.553307166Z[Etc/UTC].
+    23:46:29.478 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2408 and participant 543 (result to be deleted: null)
+    23:46:29.478 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2408 and participant 543 at 2025-02-14T23:46:29.578804887Z[Etc/UTC].
+    23:46:29.492 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2408 and participant 543 (result to be deleted: null)
+    23:46:29.492 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2408 and participant 543 at 2025-02-14T23:46:29.592821517Z[Etc/UTC].
+    23:46:29.494 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1209/feedback
+    23:46:29.497 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.a.web.AssessmentResource   : The user fileuploadassessmenttutor2 is not allowed to override the assessment for the submission 1209
+    23:46:29.498 | 394 ool-1-worker-158 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: The user is not allowed to override the assessment
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testCancelAssessmentOfOtherTutorAsTutor()
+    23:46:29.515 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:29.519 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:29.523 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:29.524 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:29.527 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:29.529 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:29.530 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:29.530 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:29.535 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:29.541 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testCancelAssessmentOfOtherTutorAsTutor'
+    23:46:29.546 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2411 and participant 543 (result to be deleted: null)
+    23:46:29.546 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2411 and participant 543 at 2025-02-14T23:46:29.646985859Z[Etc/UTC].
+    23:46:29.553 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2411 and participant 543 (result to be deleted: null)
+    23:46:29.553 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2411 and participant 543 at 2025-02-14T23:46:29.653858576Z[Etc/UTC].
+    23:46:29.564 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2411 and participant 543 (result to be deleted: null)
+    23:46:29.564 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2411 and participant 543 at 2025-02-14T23:46:29.664851528Z[Etc/UTC].
+    23:46:29.577 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2411 and participant 543 (result to be deleted: null)
+    23:46:29.577 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2411 and participant 543 at 2025-02-14T23:46:29.677354555Z[Etc/UTC].
+    23:46:29.579 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1210/cancel-assessment
+    23:46:29.579 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.a.web.AssessmentResource   : REST request to cancel assessment of submission: 1210
+    23:46:29.583 | 394 ool-1-worker-158 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access this resource
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testCancelOwnAssessmentAsTutor()
+    23:46:29.598 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:29.603 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:29.607 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:29.609 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:29.611 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:29.614 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:29.615 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:29.615 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:29.619 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:29.625 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testCancelOwnAssessmentAsTutor'
+    23:46:29.630 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2414 and participant 543 (result to be deleted: null)
+    23:46:29.630 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2414 and participant 543 at 2025-02-14T23:46:29.730739003Z[Etc/UTC].
+    23:46:29.637 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2414 and participant 543 (result to be deleted: null)
+    23:46:29.637 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2414 and participant 543 at 2025-02-14T23:46:29.737277938Z[Etc/UTC].
+    23:46:29.648 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2414 and participant 543 (result to be deleted: null)
+    23:46:29.648 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2414 and participant 543 at 2025-02-14T23:46:29.748725496Z[Etc/UTC].
+    23:46:29.663 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2414 and participant 543 (result to be deleted: null)
+    23:46:29.663 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2414 and participant 543 at 2025-02-14T23:46:29.763285790Z[Etc/UTC].
+    23:46:29.664 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1211/cancel-assessment
+    23:46:29.665 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.a.web.AssessmentResource   : REST request to cancel assessment of submission: 1211
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testOverrideAssessment_saveSameTutorAfterAssessmentDueDateForbidden()
+    23:46:29.698 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:29.703 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:29.707 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:29.708 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:29.711 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:29.713 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:29.714 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:29.714 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:29.719 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:29.724 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testOverrideAssessment_saveSameTutorAfterAssessmentDueDateForbidden'
+    23:46:29.732 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2417 and participant 543 (result to be deleted: null)
+    23:46:29.732 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2417 and participant 543 at 2025-02-14T23:46:29.832096677Z[Etc/UTC].
+    23:46:29.738 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2417 and participant 543 (result to be deleted: null)
+    23:46:29.738 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2417 and participant 543 at 2025-02-14T23:46:29.838783808Z[Etc/UTC].
+    23:46:29.749 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2417 and participant 543 (result to be deleted: null)
+    23:46:29.749 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2417 and participant 543 at 2025-02-14T23:46:29.849375561Z[Etc/UTC].
+    23:46:29.760 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2417 and participant 543 (result to be deleted: null)
+    23:46:29.760 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2417 and participant 543 at 2025-02-14T23:46:29.860629910Z[Etc/UTC].
+    23:46:29.762 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1212/feedback
+    23:46:29.765 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.a.web.AssessmentResource   : The user fileuploadassessmenttutor1 is not allowed to override the assessment for the submission 1212
+    23:46:29.765 | 394 ool-1-worker-158 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: The user is not allowed to override the assessment
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testOverrideAssessment_saveInstructorAfterAssessmentDueDatePossible()
+    23:46:29.780 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:29.784 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:29.788 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:29.790 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:29.793 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:29.795 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:29.796 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:29.796 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:29.801 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:29.806 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testOverrideAssessment_saveInstructorAfterAssessmentDueDatePossible'
+    23:46:29.814 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2420 and participant 543 (result to be deleted: null)
+    23:46:29.814 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2420 and participant 543 at 2025-02-14T23:46:29.914077586Z[Etc/UTC].
+    23:46:29.820 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2420 and participant 543 (result to be deleted: null)
+    23:46:29.820 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2420 and participant 543 at 2025-02-14T23:46:29.920641026Z[Etc/UTC].
+    23:46:29.831 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2420 and participant 543 (result to be deleted: null)
+    23:46:29.831 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2420 and participant 543 at 2025-02-14T23:46:29.931434595Z[Etc/UTC].
+    23:46:29.842 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2420 and participant 543 (result to be deleted: null)
+    23:46:29.842 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2420 and participant 543 at 2025-02-14T23:46:29.942768292Z[Etc/UTC].
+    23:46:29.844 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1213/feedback
+    23:46:29.851 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2420 and participant 543 (result to be deleted: null)
+    23:46:29.851 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2420 and participant 543 at 2025-02-14T23:46:29.951426529Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testCancelAssessmentOfOtherTutorAsInstructor()
+    23:46:29.867 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:29.872 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:29.876 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:29.877 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:29.880 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:29.885 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:29.886 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:29.886 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:29.896 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:29.904 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testCancelAssessmentOfOtherTutorAsInstructor'
+    23:46:29.916 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2423 and participant 543 (result to be deleted: null)
+    23:46:29.916 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2423 and participant 543 at 2025-02-14T23:46:30.016670785Z[Etc/UTC].
+    23:46:29.932 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2423 and participant 543 (result to be deleted: null)
+    23:46:29.932 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2423 and participant 543 at 2025-02-14T23:46:30.032279494Z[Etc/UTC].
+    23:46:29.953 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2423 and participant 543 (result to be deleted: null)
+    23:46:29.953 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2423 and participant 543 at 2025-02-14T23:46:30.053370850Z[Etc/UTC].
+    23:46:29.977 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2423 and participant 543 (result to be deleted: null)
+    23:46:29.977 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2423 and participant 543 at 2025-02-14T23:46:30.077755947Z[Etc/UTC].
+    23:46:29.981 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1214/cancel-assessment
+    23:46:29.982 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.a.web.AssessmentResource   : REST request to cancel assessment of submission: 1214
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testdeleteResult()
+    23:46:30.098 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:30.107 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:30.125 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:30.126 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:30.135 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:30.138 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:30.142 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:30.142 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:30.153 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:30.165 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testdeleteResult'
+    23:46:30.202 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2429 and participant 543 (result to be deleted: null)
+    23:46:30.205 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2429 and participant 543 at 2025-02-14T23:46:30.302730905Z[Etc/UTC].
+    23:46:30.233 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2429 and participant 543 (result to be deleted: null)
+    23:46:30.233 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2429 and participant 543 at 2025-02-14T23:46:30.333682858Z[Etc/UTC].
+    23:46:30.268 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2429 and participant 543 (result to be deleted: null)
+    23:46:30.268 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2429 and participant 543 at 2025-02-14T23:46:30.368714399Z[Etc/UTC].
+    23:46:30.278 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/participations/1619/file-upload-submissions/1215/results/932
+    23:46:30.279 | 394 ool-1-worker-158 | INFO  | d.t.c.a.a.a.web.AssessmentResource   : REST request by user: admin to delete result 932
+    23:46:30.292 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result references 932
+    23:46:30.310 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2429 and participant 543 (result to be deleted: 932)
+    23:46:30.310 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2429 and participant 543 at 2025-02-14T23:46:30.410877731Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testOverrideAssessment_submitOtherTutorAfterAssessmentDueDateForbidden()
+    23:46:30.338 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:30.342 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:30.346 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:30.347 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:30.350 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:30.352 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:30.353 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:30.353 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:30.357 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:30.363 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testOverrideAssessment_submitOtherTutorAfterAssessmentDueDateForbidden'
+    23:46:30.400 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2430 and participant 543 (result to be deleted: null)
+    23:46:30.400 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2430 and participant 543 at 2025-02-14T23:46:30.500182047Z[Etc/UTC].
+    23:46:30.406 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2430 and participant 543 (result to be deleted: null)
+    23:46:30.406 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2430 and participant 543 at 2025-02-14T23:46:30.506244292Z[Etc/UTC].
+    23:46:30.416 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2430 and participant 543 (result to be deleted: null)
+    23:46:30.416 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2430 and participant 543 at 2025-02-14T23:46:30.516654507Z[Etc/UTC].
+    23:46:30.427 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2430 and participant 543 (result to be deleted: null)
+    23:46:30.427 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2430 and participant 543 at 2025-02-14T23:46:30.527554584Z[Etc/UTC].
+    23:46:30.429 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1216/feedback
+    23:46:30.433 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.a.web.AssessmentResource   : The user fileuploadassessmenttutor2 is not allowed to override the assessment for the submission 1216
+    23:46:30.434 | 394 ool-1-worker-158 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: The user is not allowed to override the assessment
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testdeleteResult_invalidResultSubmissionCombination()
+    23:46:30.450 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:30.455 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:30.458 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:30.460 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:30.462 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:30.464 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:30.465 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:30.465 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:30.477 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:30.482 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testdeleteResult_invalidResultSubmissionCombination'
+    23:46:30.503 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2436 and participant 543 (result to be deleted: null)
+    23:46:30.503 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2436 and participant 543 at 2025-02-14T23:46:30.603334488Z[Etc/UTC].
+    23:46:30.513 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2436 and participant 544 (result to be deleted: null)
+    23:46:30.513 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2436 and participant 544 at 2025-02-14T23:46:30.613136338Z[Etc/UTC].
+    23:46:30.527 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2436 and participant 543 (result to be deleted: null)
+    23:46:30.527 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2436 and participant 543 at 2025-02-14T23:46:30.627385913Z[Etc/UTC].
+    23:46:30.541 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2436 and participant 544 (result to be deleted: null)
+    23:46:30.541 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2436 and participant 544 at 2025-02-14T23:46:30.641063009Z[Etc/UTC].
+    23:46:30.556 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2436 and participant 543 (result to be deleted: null)
+    23:46:30.557 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2436 and participant 543 at 2025-02-14T23:46:30.656993789Z[Etc/UTC].
+    23:46:30.573 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2436 and participant 544 (result to be deleted: null)
+    23:46:30.573 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2436 and participant 544 at 2025-02-14T23:46:30.673097101Z[Etc/UTC].
+    23:46:30.583 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/participations/1621/file-upload-submissions/1217/results/941
+    23:46:30.584 | 394 ool-1-worker-158 | INFO  | d.t.c.a.a.a.web.AssessmentResource   : REST request by user: admin to delete result 941
+    23:46:30.589 | 394 ool-1-worker-158 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The specified result does not belong to the submission.
+    23:46:30.589 | 394 ool-1-worker-158 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The specified result does not belong to the submission.
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testManualAssessmentSubmitWithBonus(IncludedInOverallScore, boolean) [1] includedInOverallScore=INCLUDED_COMPLETELY, bonus=true
+    23:46:30.633 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:30.640 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:30.649 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:30.654 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:30.659 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:30.661 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:30.662 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:30.662 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:30.666 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:30.670 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testManualAssessmentSubmitWithBonus'
+    23:46:30.688 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1219/feedback
+    23:46:30.696 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2437 and participant 543 (result to be deleted: null)
+    23:46:30.696 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2437 and participant 543 at 2025-02-14T23:46:30.796967783Z[Etc/UTC].
+    23:46:30.710 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2437 and participant 543 (result to be deleted: null)
+    23:46:30.710 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2437 and participant 543 at 2025-02-14T23:46:30.810409932Z[Etc/UTC].
+    23:46:30.722 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2437 and participant 543 (result to be deleted: null)
+    23:46:30.722 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2437 and participant 543 at 2025-02-14T23:46:30.822605055Z[Etc/UTC].
+    23:46:30.726 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2437 and participant 543 (result to be deleted: null)
+    23:46:30.726 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2437 and participant 543 at 2025-02-14T23:46:30.826312108Z[Etc/UTC].
+    23:46:30.730 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1219/feedback
+    23:46:30.740 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2437 and participant 543 (result to be deleted: null)
+    23:46:30.741 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2437 and participant 543 at 2025-02-14T23:46:30.841023494Z[Etc/UTC].
+    23:46:30.743 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1219/feedback
+    23:46:30.753 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2437 and participant 543 (result to be deleted: null)
+    23:46:30.753 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2437 and participant 543 at 2025-02-14T23:46:30.853783330Z[Etc/UTC].
+    23:46:30.756 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1219/feedback
+    23:46:30.767 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2437 and participant 543 (result to be deleted: null)
+    23:46:30.767 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2437 and participant 543 at 2025-02-14T23:46:30.867245145Z[Etc/UTC].
+    23:46:30.769 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1219/feedback
+    23:46:30.780 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2437 and participant 543 (result to be deleted: null)
+    23:46:30.781 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2437 and participant 543 at 2025-02-14T23:46:30.881021177Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testManualAssessmentSubmitWithBonus(IncludedInOverallScore, boolean) [2] includedInOverallScore=INCLUDED_COMPLETELY, bonus=false
+    23:46:30.798 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:30.803 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:30.807 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:30.808 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:30.811 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:30.813 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:30.814 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:30.814 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:30.818 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:30.823 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testManualAssessmentSubmitWithBonus'
+    23:46:30.834 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1220/feedback
+    23:46:30.838 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2440 and participant 543 (result to be deleted: null)
+    23:46:30.838 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2440 and participant 543 at 2025-02-14T23:46:30.938308373Z[Etc/UTC].
+    23:46:30.847 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2440 and participant 543 (result to be deleted: null)
+    23:46:30.847 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2440 and participant 543 at 2025-02-14T23:46:30.947787992Z[Etc/UTC].
+    23:46:30.864 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2440 and participant 543 (result to be deleted: null)
+    23:46:30.864 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2440 and participant 543 at 2025-02-14T23:46:30.964860511Z[Etc/UTC].
+    23:46:30.870 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2440 and participant 543 (result to be deleted: null)
+    23:46:30.870 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2440 and participant 543 at 2025-02-14T23:46:30.970779419Z[Etc/UTC].
+    23:46:30.876 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1220/feedback
+    23:46:30.890 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2440 and participant 543 (result to be deleted: null)
+    23:46:30.890 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2440 and participant 543 at 2025-02-14T23:46:30.990384021Z[Etc/UTC].
+    23:46:30.893 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1220/feedback
+    23:46:30.909 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2440 and participant 543 (result to be deleted: null)
+    23:46:30.909 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2440 and participant 543 at 2025-02-14T23:46:31.009067514Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testManualAssessmentSubmitWithBonus(IncludedInOverallScore, boolean) [3] includedInOverallScore=INCLUDED_AS_BONUS, bonus=true
+    23:46:30.943 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:30.952 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:30.961 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:30.962 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:30.967 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:30.972 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:30.973 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:30.973 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:30.979 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:30.985 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testManualAssessmentSubmitWithBonus'
+    23:46:30.996 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1221/feedback
+    23:46:30.999 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2443 and participant 543 (result to be deleted: null)
+    23:46:30.999 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2443 and participant 543 at 2025-02-14T23:46:31.099907403Z[Etc/UTC].
+    23:46:31.006 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2443 and participant 543 (result to be deleted: null)
+    23:46:31.006 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2443 and participant 543 at 2025-02-14T23:46:31.106531376Z[Etc/UTC].
+    23:46:31.023 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2443 and participant 543 (result to be deleted: null)
+    23:46:31.023 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2443 and participant 543 at 2025-02-14T23:46:31.123602513Z[Etc/UTC].
+    23:46:31.028 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2443 and participant 543 (result to be deleted: null)
+    23:46:31.029 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2443 and participant 543 at 2025-02-14T23:46:31.129026608Z[Etc/UTC].
+    23:46:31.036 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1221/feedback
+    23:46:31.057 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2443 and participant 543 (result to be deleted: null)
+    23:46:31.057 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2443 and participant 543 at 2025-02-14T23:46:31.157963814Z[Etc/UTC].
+    23:46:31.063 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1221/feedback
+    23:46:31.087 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2443 and participant 543 (result to be deleted: null)
+    23:46:31.087 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2443 and participant 543 at 2025-02-14T23:46:31.187345529Z[Etc/UTC].
+    23:46:31.091 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1221/feedback
+    23:46:31.107 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2443 and participant 543 (result to be deleted: null)
+    23:46:31.107 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2443 and participant 543 at 2025-02-14T23:46:31.207630008Z[Etc/UTC].
+    23:46:31.110 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1221/feedback
+    23:46:31.122 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2443 and participant 543 (result to be deleted: null)
+    23:46:31.122 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2443 and participant 543 at 2025-02-14T23:46:31.222324653Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testManualAssessmentSubmitWithBonus(IncludedInOverallScore, boolean) [4] includedInOverallScore=INCLUDED_AS_BONUS, bonus=false
+    23:46:31.139 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:31.144 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:31.148 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:31.149 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:31.152 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:31.154 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:31.155 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:31.155 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:31.159 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:31.164 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testManualAssessmentSubmitWithBonus'
+    23:46:31.184 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1222/feedback
+    23:46:31.189 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2446 and participant 543 (result to be deleted: null)
+    23:46:31.189 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2446 and participant 543 at 2025-02-14T23:46:31.289440196Z[Etc/UTC].
+    23:46:31.204 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2446 and participant 543 (result to be deleted: null)
+    23:46:31.204 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2446 and participant 543 at 2025-02-14T23:46:31.304410354Z[Etc/UTC].
+    23:46:31.222 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2446 and participant 543 (result to be deleted: null)
+    23:46:31.222 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2446 and participant 543 at 2025-02-14T23:46:31.322706555Z[Etc/UTC].
+    23:46:31.228 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2446 and participant 543 (result to be deleted: null)
+    23:46:31.228 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2446 and participant 543 at 2025-02-14T23:46:31.328982629Z[Etc/UTC].
+    23:46:31.231 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1222/feedback
+    23:46:31.241 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2446 and participant 543 (result to be deleted: null)
+    23:46:31.241 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2446 and participant 543 at 2025-02-14T23:46:31.341341528Z[Etc/UTC].
+    23:46:31.243 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1222/feedback
+    23:46:31.254 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2446 and participant 543 (result to be deleted: null)
+    23:46:31.254 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2446 and participant 543 at 2025-02-14T23:46:31.354250302Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testManualAssessmentSubmitWithBonus(IncludedInOverallScore, boolean) [5] includedInOverallScore=NOT_INCLUDED, bonus=true
+    23:46:31.269 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:31.273 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:31.277 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:31.278 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:31.281 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:31.283 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:31.283 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:31.283 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:31.287 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:31.292 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testManualAssessmentSubmitWithBonus'
+    23:46:31.303 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1223/feedback
+    23:46:31.306 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2449 and participant 543 (result to be deleted: null)
+    23:46:31.307 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2449 and participant 543 at 2025-02-14T23:46:31.407016457Z[Etc/UTC].
+    23:46:31.313 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2449 and participant 543 (result to be deleted: null)
+    23:46:31.313 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2449 and participant 543 at 2025-02-14T23:46:31.413352243Z[Etc/UTC].
+    23:46:31.320 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2449 and participant 543 (result to be deleted: null)
+    23:46:31.320 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2449 and participant 543 at 2025-02-14T23:46:31.420761580Z[Etc/UTC].
+    23:46:31.323 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2449 and participant 543 (result to be deleted: null)
+    23:46:31.323 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2449 and participant 543 at 2025-02-14T23:46:31.423761315Z[Etc/UTC].
+    23:46:31.326 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1223/feedback
+    23:46:31.336 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2449 and participant 543 (result to be deleted: null)
+    23:46:31.336 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2449 and participant 543 at 2025-02-14T23:46:31.436477590Z[Etc/UTC].
+    23:46:31.339 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1223/feedback
+    23:46:31.350 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2449 and participant 543 (result to be deleted: null)
+    23:46:31.350 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2449 and participant 543 at 2025-02-14T23:46:31.450425652Z[Etc/UTC].
+    23:46:31.353 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1223/feedback
+    23:46:31.363 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2449 and participant 543 (result to be deleted: null)
+    23:46:31.363 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2449 and participant 543 at 2025-02-14T23:46:31.463554977Z[Etc/UTC].
+    23:46:31.366 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1223/feedback
+    23:46:31.377 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2449 and participant 543 (result to be deleted: null)
+    23:46:31.377 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2449 and participant 543 at 2025-02-14T23:46:31.477413903Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testManualAssessmentSubmitWithBonus(IncludedInOverallScore, boolean) [6] includedInOverallScore=INCLUDED_AS_BONUS, bonus=false
+    23:46:31.393 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:31.398 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:31.402 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:31.403 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:31.408 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:31.410 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:31.411 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:31.411 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:31.423 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:31.431 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testManualAssessmentSubmitWithBonus'
+    23:46:31.449 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1224/feedback
+    23:46:31.452 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2452 and participant 543 (result to be deleted: null)
+    23:46:31.453 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2452 and participant 543 at 2025-02-14T23:46:31.553030692Z[Etc/UTC].
+    23:46:31.459 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2452 and participant 543 (result to be deleted: null)
+    23:46:31.459 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2452 and participant 543 at 2025-02-14T23:46:31.559313550Z[Etc/UTC].
+    23:46:31.466 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2452 and participant 543 (result to be deleted: null)
+    23:46:31.466 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2452 and participant 543 at 2025-02-14T23:46:31.566857639Z[Etc/UTC].
+    23:46:31.469 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2452 and participant 543 (result to be deleted: null)
+    23:46:31.469 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2452 and participant 543 at 2025-02-14T23:46:31.569889673Z[Etc/UTC].
+    23:46:31.472 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1224/feedback
+    23:46:31.482 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2452 and participant 543 (result to be deleted: null)
+    23:46:31.482 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2452 and participant 543 at 2025-02-14T23:46:31.582369136Z[Etc/UTC].
+    23:46:31.484 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1224/feedback
+    23:46:31.495 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2452 and participant 543 (result to be deleted: null)
+    23:46:31.495 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2452 and participant 543 at 2025-02-14T23:46:31.595216666Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testOverrideAssessment_saveOtherTutorForbidden()
+    23:46:31.511 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:31.515 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:31.519 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:31.520 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:31.523 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:31.525 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:31.526 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:31.526 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:31.530 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:31.534 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testOverrideAssessment_saveOtherTutorForbidden'
+    23:46:31.540 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2455 and participant 543 (result to be deleted: null)
+    23:46:31.540 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2455 and participant 543 at 2025-02-14T23:46:31.640270959Z[Etc/UTC].
+    23:46:31.547 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2455 and participant 543 (result to be deleted: null)
+    23:46:31.547 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2455 and participant 543 at 2025-02-14T23:46:31.647449830Z[Etc/UTC].
+    23:46:31.557 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2455 and participant 543 (result to be deleted: null)
+    23:46:31.557 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2455 and participant 543 at 2025-02-14T23:46:31.657728479Z[Etc/UTC].
+    23:46:31.568 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2455 and participant 543 (result to be deleted: null)
+    23:46:31.568 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2455 and participant 543 at 2025-02-14T23:46:31.668066118Z[Etc/UTC].
+    23:46:31.569 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1225/feedback
+    23:46:31.572 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.a.web.AssessmentResource   : The user fileuploadassessmenttutor2 is not allowed to override the assessment for the submission 1225
+    23:46:31.572 | 394 ool-1-worker-158 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: The user is not allowed to override the assessment
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testSaveFileUploadAssessment_studentHidden()
+    23:46:31.601 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:31.612 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:31.621 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:31.623 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:31.628 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:31.634 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:31.634 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:31.634 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:31.638 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:31.643 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testSaveFileUploadAssessment_studentHidden'
+    23:46:31.653 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1226/feedback
+    23:46:31.656 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2458 and participant 543 (result to be deleted: null)
+    23:46:31.656 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2458 and participant 543 at 2025-02-14T23:46:31.756393940Z[Etc/UTC].
+    23:46:31.662 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2458 and participant 543 (result to be deleted: null)
+    23:46:31.662 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2458 and participant 543 at 2025-02-14T23:46:31.762612748Z[Etc/UTC].
+    23:46:31.669 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2458 and participant 543 (result to be deleted: null)
+    23:46:31.669 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2458 and participant 543 at 2025-02-14T23:46:31.769249104Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > getOwnAssessmentAsStudent()
+    23:46:31.688 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:31.692 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:31.696 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:31.697 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:31.700 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:31.701 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:31.702 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:31.702 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:31.706 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:31.715 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#getOwnAssessmentAsStudent'
+    23:46:31.726 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2463 and participant 543 (result to be deleted: null)
+    23:46:31.726 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2463 and participant 543 at 2025-02-14T23:46:31.826175207Z[Etc/UTC].
+    23:46:31.733 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2463 and participant 543 (result to be deleted: null)
+    23:46:31.733 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2463 and participant 543 at 2025-02-14T23:46:31.833707555Z[Etc/UTC].
+    23:46:31.744 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2463 and participant 543 (result to be deleted: null)
+    23:46:31.744 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2463 and participant 543 at 2025-02-14T23:46:31.844287165Z[Etc/UTC].
+    23:46:31.754 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/file-upload-submissions/1227/result
+    23:46:31.755 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.a.web.AssessmentResource   : REST request to get assessment for submission with id 1227
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testOverrideAssessment_submitSameTutorAfterAssessmentDueDateForbidden()
+    23:46:31.787 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:31.792 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:31.795 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:31.797 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:31.799 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:31.801 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:31.802 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:31.802 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:31.806 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:31.811 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testOverrideAssessment_submitSameTutorAfterAssessmentDueDateForbidden'
+    23:46:31.817 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2464 and participant 543 (result to be deleted: null)
+    23:46:31.817 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2464 and participant 543 at 2025-02-14T23:46:31.917433921Z[Etc/UTC].
+    23:46:31.823 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2464 and participant 543 (result to be deleted: null)
+    23:46:31.823 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2464 and participant 543 at 2025-02-14T23:46:31.923546751Z[Etc/UTC].
+    23:46:31.834 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2464 and participant 543 (result to be deleted: null)
+    23:46:31.834 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2464 and participant 543 at 2025-02-14T23:46:31.934052764Z[Etc/UTC].
+    23:46:31.844 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2464 and participant 543 (result to be deleted: null)
+    23:46:31.844 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2464 and participant 543 at 2025-02-14T23:46:31.944319260Z[Etc/UTC].
+    23:46:31.845 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1228/feedback
+    23:46:31.848 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.a.web.AssessmentResource   : The user fileuploadassessmenttutor1 is not allowed to override the assessment for the submission 1228
+    23:46:31.849 | 394 ool-1-worker-158 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: The user is not allowed to override the assessment
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testOverrideAssessment_submitInstructorAfterAssessmentDueDatePossible()
+    23:46:31.878 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:31.885 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:31.931 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:31.933 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:31.943 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:31.947 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:31.951 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:31.951 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:31.960 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:31.971 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testOverrideAssessment_submitInstructorAfterAssessmentDueDatePossible'
+    23:46:31.983 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2467 and participant 543 (result to be deleted: null)
+    23:46:31.983 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2467 and participant 543 at 2025-02-14T23:46:32.083577784Z[Etc/UTC].
+    23:46:31.995 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2467 and participant 543 (result to be deleted: null)
+    23:46:31.995 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2467 and participant 543 at 2025-02-14T23:46:32.095267124Z[Etc/UTC].
+    23:46:32.016 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2467 and participant 543 (result to be deleted: null)
+    23:46:32.016 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2467 and participant 543 at 2025-02-14T23:46:32.116885280Z[Etc/UTC].
+    23:46:32.037 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2467 and participant 543 (result to be deleted: null)
+    23:46:32.038 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2467 and participant 543 at 2025-02-14T23:46:32.138052735Z[Etc/UTC].
+    23:46:32.040 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1229/feedback
+    23:46:32.055 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2467 and participant 543 (result to be deleted: null)
+    23:46:32.055 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2467 and participant 543 at 2025-02-14T23:46:32.155833244Z[Etc/UTC].
+    23:46:32.062 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2467 and participant 543 (result to be deleted: null)
+    23:46:32.062 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2467 and participant 543 at 2025-02-14T23:46:32.162335080Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testOverrideAssessment_saveOtherTutorAfterAssessmentDueDateForbidden()
+    23:46:32.107 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:32.116 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:32.126 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:32.127 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:32.132 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:32.134 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:32.137 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:32.137 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:32.147 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:32.155 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testOverrideAssessment_saveOtherTutorAfterAssessmentDueDateForbidden'
+    23:46:32.169 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2470 and participant 543 (result to be deleted: null)
+    23:46:32.170 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2470 and participant 543 at 2025-02-14T23:46:32.269944514Z[Etc/UTC].
+    23:46:32.182 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2470 and participant 543 (result to be deleted: null)
+    23:46:32.182 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2470 and participant 543 at 2025-02-14T23:46:32.282811580Z[Etc/UTC].
+    23:46:32.203 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2470 and participant 543 (result to be deleted: null)
+    23:46:32.203 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2470 and participant 543 at 2025-02-14T23:46:32.303219238Z[Etc/UTC].
+    23:46:32.224 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2470 and participant 543 (result to be deleted: null)
+    23:46:32.224 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2470 and participant 543 at 2025-02-14T23:46:32.324963570Z[Etc/UTC].
+    23:46:32.229 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1230/feedback
+    23:46:32.234 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.a.web.AssessmentResource   : The user fileuploadassessmenttutor2 is not allowed to override the assessment for the submission 1230
+    23:46:32.235 | 394 ool-1-worker-158 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: The user is not allowed to override the assessment
+
+  Starting logs for FileUploadAssessmentIntegrationTest > getAssessmentOfOtherStudentAsStudent()
+    23:46:32.248 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:32.252 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:32.256 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:32.257 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:32.260 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:32.262 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:32.266 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:32.266 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:32.272 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:32.282 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#getAssessmentOfOtherStudentAsStudent'
+    23:46:32.292 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2475 and participant 543 (result to be deleted: null)
+    23:46:32.292 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2475 and participant 543 at 2025-02-14T23:46:32.392937687Z[Etc/UTC].
+    23:46:32.302 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2475 and participant 543 (result to be deleted: null)
+    23:46:32.302 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2475 and participant 543 at 2025-02-14T23:46:32.402735850Z[Etc/UTC].
+    23:46:32.323 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2475 and participant 543 (result to be deleted: null)
+    23:46:32.323 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2475 and participant 543 at 2025-02-14T23:46:32.423871146Z[Etc/UTC].
+    23:46:32.348 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/file-upload-submissions/1231/result
+    23:46:32.348 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.a.web.AssessmentResource   : REST request to get assessment for submission with id 1231
+    23:46:32.359 | 394 ool-1-worker-158 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access this resource
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testSubmitFileUploadAssessment_asInstructor()
+    23:46:32.399 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:32.409 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:32.415 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:32.416 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:32.423 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:32.425 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:32.426 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:32.426 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:32.438 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:32.446 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testSubmitFileUploadAssessment_asInstructor'
+    23:46:32.479 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-exercises/2476
+    23:46:32.481 | 394 ool-1-worker-158 | DEBUG | c.a.a.f.w.FileUploadExerciseResource : REST request to update FileUploadExercise : FileUploadExercise{id=2476}
+    23:46:32.507 | 394 ool-1-worker-158 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User fileuploadassessmentinstructor1 has updated FileUploadExercise released with id 2476
+    23:46:32.514 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1232/feedback
+    23:46:32.524 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2476 and participant 543 (result to be deleted: null)
+    23:46:32.525 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2476 and participant 543 at 2025-02-14T23:46:32.624353951Z[Etc/UTC].
+    23:46:32.539 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2476 and participant 543 (result to be deleted: null)
+    23:46:32.539 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2476 and participant 543 at 2025-02-14T23:46:32.639582440Z[Etc/UTC].
+    23:46:32.559 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2476 and participant 543 (result to be deleted: null)
+    23:46:32.559 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2476 and participant 543 at 2025-02-14T23:46:32.659371917Z[Etc/UTC].
+    23:46:32.567 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2476 and participant 543 (result to be deleted: null)
+    23:46:32.567 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2476 and participant 543 at 2025-02-14T23:46:32.667588981Z[Etc/UTC].
+    23:46:32.573 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/1940/for-assessment-dashboard
+    23:46:32.578 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.core.web.CourseResource    : REST request /courses/{courseId}/for-assessment-dashboard
+    23:46:32.582 | 394 ool-1-worker-158 | DEBUG | c.a.a.a.s.AssessmentDashboardService : generateStatisticsForExercisesForAssessmentDashboard invoked
+    23:46:32.586 | 394 ool-1-worker-158 | DEBUG | c.a.a.a.s.AssessmentDashboardService : Finished >> complaintService.calculateNrOfOpenComplaints all << in 3.17ms
+    23:46:32.588 | 394 ool-1-worker-158 | DEBUG | c.a.a.a.s.AssessmentDashboardService : Finished >> assessmentDashboardService.calculateNumberOfSubmissions all << in 2.47ms
+    23:46:32.589 | 394 ool-1-worker-158 | DEBUG | c.a.a.a.s.AssessmentDashboardService : Finished >> resultRepository.countNumberOfFinishedAssessmentsForExercise << call for exercise 2476 in 694µs
+    23:46:32.590 | 394 ool-1-worker-158 | DEBUG | c.a.a.a.s.AssessmentDashboardService : Finished >> exampleSubmissionRepository.findAllWithResultByExerciseId << call for course 2476 in 768µs
+    23:46:32.591 | 394 ool-1-worker-158 | DEBUG | c.a.a.a.s.AssessmentDashboardService : Finished >> assessmentDashboardLoopIteration << call for exercise 2476 in 8.77ms
+    23:46:32.592 | 394 ool-1-worker-158 | DEBUG | c.a.a.a.s.AssessmentDashboardService : Finished >> resultRepository.countNumberOfFinishedAssessmentsForExercise << call for exercise 2477 in 2.23ms
+    23:46:32.593 | 394 ool-1-worker-158 | DEBUG | c.a.a.a.s.AssessmentDashboardService : Finished >> exampleSubmissionRepository.findAllWithResultByExerciseId << call for course 2477 in 823µs
+    23:46:32.593 | 394 ool-1-worker-158 | DEBUG | c.a.a.a.s.AssessmentDashboardService : Finished >> assessmentDashboardLoopIteration << call for exercise 2477 in 10.63ms
+    23:46:32.594 | 394 ool-1-worker-158 | DEBUG | c.a.a.a.s.AssessmentDashboardService : Finished >> resultRepository.countNumberOfFinishedAssessmentsForExercise << call for exercise 2478 in 978µs
+    23:46:32.594 | 394 ool-1-worker-158 | DEBUG | c.a.a.a.s.AssessmentDashboardService : Finished >> exampleSubmissionRepository.findAllWithResultByExerciseId << call for course 2478 in 677µs
+    23:46:32.595 | 394 ool-1-worker-158 | DEBUG | c.a.a.a.s.AssessmentDashboardService : Finished >> assessmentDashboardLoopIteration << call for exercise 2478 in 12.36ms
+    23:46:32.595 | 394 ool-1-worker-158 | DEBUG | c.a.a.a.s.AssessmentDashboardService : Finished >> generateStatisticsForExercisesForAssessmentDashboard << call in 12.38ms
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testOverrideAssessment_submitInstructorPossible()
+    23:46:32.613 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:32.617 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:32.621 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:32.622 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:32.625 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:32.627 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:32.628 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:32.628 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:32.633 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:32.638 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testOverrideAssessment_submitInstructorPossible'
+    23:46:32.644 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2479 and participant 543 (result to be deleted: null)
+    23:46:32.644 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2479 and participant 543 at 2025-02-14T23:46:32.744504012Z[Etc/UTC].
+    23:46:32.654 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2479 and participant 543 (result to be deleted: null)
+    23:46:32.654 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2479 and participant 543 at 2025-02-14T23:46:32.754905309Z[Etc/UTC].
+    23:46:32.676 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2479 and participant 543 (result to be deleted: null)
+    23:46:32.676 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2479 and participant 543 at 2025-02-14T23:46:32.776928491Z[Etc/UTC].
+    23:46:32.745 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2479 and participant 543 (result to be deleted: null)
+    23:46:32.746 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2479 and participant 543 at 2025-02-14T23:46:32.846020095Z[Etc/UTC].
+    23:46:32.756 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1233/feedback
+    23:46:32.780 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2479 and participant 543 (result to be deleted: null)
+    23:46:32.780 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2479 and participant 543 at 2025-02-14T23:46:32.880541736Z[Etc/UTC].
+    23:46:32.793 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2479 and participant 543 (result to be deleted: null)
+    23:46:32.793 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2479 and participant 543 at 2025-02-14T23:46:32.893459667Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testCancelOwnAssessmentAsStudent()
+    23:46:32.850 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:32.863 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:32.876 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:32.880 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:32.889 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:32.897 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:32.898 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:32.898 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:32.909 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:32.917 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testCancelOwnAssessmentAsStudent'
+    23:46:32.928 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2482 and participant 543 (result to be deleted: null)
+    23:46:32.928 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2482 and participant 543 at 2025-02-14T23:46:33.028062881Z[Etc/UTC].
+    23:46:32.942 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2482 and participant 543 (result to be deleted: null)
+    23:46:32.942 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2482 and participant 543 at 2025-02-14T23:46:33.042377768Z[Etc/UTC].
+    23:46:32.975 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2482 and participant 543 (result to be deleted: null)
+    23:46:32.975 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2482 and participant 543 at 2025-02-14T23:46:33.075651381Z[Etc/UTC].
+    23:46:33.005 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2482 and participant 543 (result to be deleted: null)
+    23:46:33.005 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2482 and participant 543 at 2025-02-14T23:46:33.105601305Z[Etc/UTC].
+    23:46:33.009 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1234/cancel-assessment
+    23:46:33.010 | 394 ool-1-worker-158 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testOverrideAssessment_saveSameTutorPossible()
+    23:46:33.046 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:33.058 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:33.068 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:33.070 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:33.072 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:33.081 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:33.081 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:33.081 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:33.095 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:33.105 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testOverrideAssessment_saveSameTutorPossible'
+    23:46:33.120 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2485 and participant 543 (result to be deleted: null)
+    23:46:33.120 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2485 and participant 543 at 2025-02-14T23:46:33.220094465Z[Etc/UTC].
+    23:46:33.132 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2485 and participant 543 (result to be deleted: null)
+    23:46:33.132 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2485 and participant 543 at 2025-02-14T23:46:33.232075519Z[Etc/UTC].
+    23:46:33.149 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2485 and participant 543 (result to be deleted: null)
+    23:46:33.149 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2485 and participant 543 at 2025-02-14T23:46:33.249700789Z[Etc/UTC].
+    23:46:33.165 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2485 and participant 543 (result to be deleted: null)
+    23:46:33.165 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2485 and participant 543 at 2025-02-14T23:46:33.265167211Z[Etc/UTC].
+    23:46:33.166 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1235/feedback
+    23:46:33.174 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2485 and participant 543 (result to be deleted: null)
+    23:46:33.174 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2485 and participant 543 at 2025-02-14T23:46:33.274942774Z[Etc/UTC].
+
+  Starting logs for FileUploadAssessmentIntegrationTest > testOverrideAssessment_saveInstructorPossible()
+    23:46:33.189 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:46:33.192 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:46:33.196 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:46:33.197 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:33.200 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:33.202 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:46:33.203 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:46:33.203 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:46:33.207 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:46:33.212 | 394 ool-1-worker-158 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FileUploadAssessmentIntegrationTest#testOverrideAssessment_saveInstructorPossible'
+    23:46:33.217 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2488 and participant 543 (result to be deleted: null)
+    23:46:33.217 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2488 and participant 543 at 2025-02-14T23:46:33.317472216Z[Etc/UTC].
+    23:46:33.223 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2488 and participant 543 (result to be deleted: null)
+    23:46:33.223 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2488 and participant 543 at 2025-02-14T23:46:33.323397275Z[Etc/UTC].
+    23:46:33.233 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2488 and participant 543 (result to be deleted: null)
+    23:46:33.233 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2488 and participant 543 at 2025-02-14T23:46:33.333988277Z[Etc/UTC].
+    23:46:33.244 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2488 and participant 543 (result to be deleted: null)
+    23:46:33.244 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2488 and participant 543 at 2025-02-14T23:46:33.344522623Z[Etc/UTC].
+    23:46:33.245 | 394 ool-1-worker-158 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/file-upload-submissions/1236/feedback
+    23:46:33.258 | 394 ool-1-worker-158 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2488 and participant 543 (result to be deleted: null)
+    23:46:33.258 | 394 ool-1-worker-158 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2488 and participant 543 at 2025-02-14T23:46:33.358295097Z[Etc/UTC].
+
+Finished logs for FileUploadAssessmentIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

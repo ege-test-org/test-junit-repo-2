@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupScheduleIntegrationTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:48:33" hostname="fv-az1721-502" time="0.937">
+  <properties/>
+  <testcase name="modifyExistingScheduleOfTutorialGroup_shouldRecreateScheduledSessionsButKeepIndividualSessions()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupScheduleIntegrationTest" time="0.113"/>
+  <testcase name="createNewTutorialGroupWithSchedule_periodCoversDSTChange_shouldHandleDaylightSavingTimeSwitchCorrectly()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupScheduleIntegrationTest" time="0.08"/>
+  <testcase name="addScheduleToTutorialGroupWithoutSchedule_scheduledSessionFallsOnAlreadyExistingSession_shouldReturnBadRequest()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupScheduleIntegrationTest" time="0.05"/>
+  <testcase name="updateTutorialGroupWithSchedule_OnlyLocationChanged_ShouldNotRecreateSessionsOrScheduleButUpdateLocation()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupScheduleIntegrationTest" time="0.105"/>
+  <testcase name="addScheduleToTutorialGroupWithoutSchedule_asInstructor_shouldAddScheduleAndCreateSessions()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupScheduleIntegrationTest" time="0.048"/>
+  <testcase name="deleteScheduleOfTutorialGroup_shouldDeleteAllScheduledSessionsButKeepIndividualSessions()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupScheduleIntegrationTest" time="0.087"/>
+  <testcase name="createNewTutorialGroupWithSchedule_wrongDateFormatInSchedule_shouldReturnBadRequest()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupScheduleIntegrationTest" time="0.1"/>
+  <testcase name="updateTutorialGroupWithSchedule_NoChangesToSchedule_ShouldNotRecreateSessionsOrSchedule()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupScheduleIntegrationTest" time="0.102"/>
+  <testcase name="createNewTutorialGroupWithSchedule_sessionFallsOnTutorialGroupFreeDay_shouldCreateCancelledSession()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupScheduleIntegrationTest" time="0.088"/>
+  <testcase name="deleteTutorialGroupWithSchedule_shouldDeleteScheduleAndSessions()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupScheduleIntegrationTest" time="0.085"/>
+  <testcase name="createNewTutorialGroupWithSchedule_everyTwoWeeks_shouldCreateWithOneWeekPauseInBetween()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupScheduleIntegrationTest" time="0.062"/>
+  <system-out><![CDATA[[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 3 source files with javac [debug target 17] to target/classes
+
+Starting logs for TutorialGroupScheduleIntegrationTest
+
+  Starting logs for TutorialGroupScheduleIntegrationTest > modifyExistingScheduleOfTutorialGroup_shouldRecreateScheduledSessionsButKeepIndividualSessions()
+    23:48:33.186 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:48:33.187 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:48:33.189 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:48:33.190 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:48:33.192 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:33.195 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:33.195 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:33.195 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:48:33.197 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:48:33.197 | 112 Pool-1-worker-27 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupScheduleIntegrationTest#modifyExistingScheduleOfTutorialGroup_shouldRecreateScheduledSessionsButKeepIndividualSessions'
+    23:48:33.200 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3276/tutorial-groups
+    23:48:33.201 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3276
+    23:48:33.216 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1663 for tutorial group with id 241
+    23:48:33.219 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1663 to tutorial group with id 241
+    23:48:33.221 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1663 of the tutorial group with id 241
+    23:48:33.226 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 756 to the channel with id 1663 of the tutorial group with id 241
+    23:48:33.232 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 756 moderator role for the channel with id 1663 of the tutorial group with id 241
+    23:48:33.232 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 241 with channel id 1663
+    23:48:33.237 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3276/tutorial-groups/241
+    23:48:33.239 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to update TutorialGroup : de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@f1
+
+  Starting logs for TutorialGroupScheduleIntegrationTest > createNewTutorialGroupWithSchedule_periodCoversDSTChange_shouldHandleDaylightSavingTimeSwitchCorrectly()
+    23:48:33.310 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:48:33.311 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:48:33.314 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:48:33.316 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:48:33.318 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:33.320 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:48:33.321 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:48:33.321 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:48:33.326 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:48:33.326 | 112 Pool-1-worker-27 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupScheduleIntegrationTest#createNewTutorialGroupWithSchedule_periodCoversDSTChange_shouldHandleDaylightSavingTimeSwitchCorrectly'
+    23:48:33.328 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3277/tutorial-groups
+    23:48:33.329 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3277
+    23:48:33.340 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1664 for tutorial group with id 242
+    23:48:33.343 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1664 to tutorial group with id 242
+    23:48:33.345 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1664 of the tutorial group with id 242
+    23:48:33.349 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 756 to the channel with id 1664 of the tutorial group with id 242
+    23:48:33.355 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 756 moderator role for the channel with id 1664 of the tutorial group with id 242
+    23:48:33.355 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 242 with channel id 1664
+
+  Starting logs for TutorialGroupScheduleIntegrationTest > addScheduleToTutorialGroupWithoutSchedule_scheduledSessionFallsOnAlreadyExistingSession_shouldReturnBadRequest()
+    23:48:33.379 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:48:33.381 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:48:33.384 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:48:33.385 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:48:33.388 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:33.390 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:48:33.390 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:48:33.390 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:48:33.393 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:48:33.393 | 112 Pool-1-worker-27 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupScheduleIntegrationTest#addScheduleToTutorialGroupWithoutSchedule_scheduledSessionFallsOnAlreadyExistingSession_shouldReturnBadRequest'
+    23:48:33.397 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3278/tutorial-groups/243
+    23:48:33.398 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to update TutorialGroup : de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@f3
+    23:48:33.408 | 112 Pool-1-worker-27 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Schedule overlaps with an existing session
+    23:48:33.408 | 112 Pool-1-worker-27 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Schedule overlaps with an existing session
+
+  Starting logs for TutorialGroupScheduleIntegrationTest > updateTutorialGroupWithSchedule_OnlyLocationChanged_ShouldNotRecreateSessionsOrScheduleButUpdateLocation()
+    23:48:33.435 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:48:33.437 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:48:33.440 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:48:33.441 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:48:33.443 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:33.445 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:48:33.446 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:48:33.446 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:48:33.448 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:48:33.448 | 112 Pool-1-worker-27 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupScheduleIntegrationTest#updateTutorialGroupWithSchedule_OnlyLocationChanged_ShouldNotRecreateSessionsOrScheduleButUpdateLocation'
+    23:48:33.451 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3279/tutorial-groups
+    23:48:33.452 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3279
+    23:48:33.464 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1665 for tutorial group with id 244
+    23:48:33.469 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1665 to tutorial group with id 244
+    23:48:33.474 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1665 of the tutorial group with id 244
+    23:48:33.486 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 756 to the channel with id 1665 of the tutorial group with id 244
+    23:48:33.492 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 756 moderator role for the channel with id 1665 of the tutorial group with id 244
+    23:48:33.492 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 244 with channel id 1665
+    23:48:33.503 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3279/tutorial-groups/244
+    23:48:33.504 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to update TutorialGroup : de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@f4
+
+  Starting logs for TutorialGroupScheduleIntegrationTest > addScheduleToTutorialGroupWithoutSchedule_asInstructor_shouldAddScheduleAndCreateSessions()
+    23:48:33.537 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:48:33.539 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:48:33.541 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:48:33.543 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:48:33.545 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:33.547 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:48:33.548 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:48:33.548 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:48:33.550 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:48:33.550 | 112 Pool-1-worker-27 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupScheduleIntegrationTest#addScheduleToTutorialGroupWithoutSchedule_asInstructor_shouldAddScheduleAndCreateSessions'
+    23:48:33.553 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3280/tutorial-groups/245
+    23:48:33.554 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to update TutorialGroup : de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@f5
+
+  Starting logs for TutorialGroupScheduleIntegrationTest > deleteScheduleOfTutorialGroup_shouldDeleteAllScheduledSessionsButKeepIndividualSessions()
+    23:48:33.588 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:48:33.590 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:48:33.593 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:48:33.594 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:48:33.597 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:33.599 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:48:33.599 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:48:33.599 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:48:33.602 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:48:33.602 | 112 Pool-1-worker-27 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupScheduleIntegrationTest#deleteScheduleOfTutorialGroup_shouldDeleteAllScheduledSessionsButKeepIndividualSessions'
+    23:48:33.604 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3281/tutorial-groups
+    23:48:33.605 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3281
+    23:48:33.616 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1666 for tutorial group with id 246
+    23:48:33.619 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1666 to tutorial group with id 246
+    23:48:33.620 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1666 of the tutorial group with id 246
+    23:48:33.625 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 756 to the channel with id 1666 of the tutorial group with id 246
+    23:48:33.630 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 756 moderator role for the channel with id 1666 of the tutorial group with id 246
+    23:48:33.630 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 246 with channel id 1666
+    23:48:33.635 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3281/tutorial-groups/246
+    23:48:33.636 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to update TutorialGroup : de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@f6
+
+  Starting logs for TutorialGroupScheduleIntegrationTest > createNewTutorialGroupWithSchedule_wrongDateFormatInSchedule_shouldReturnBadRequest()
+    23:48:33.678 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:48:33.680 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:48:33.682 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:48:33.684 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:48:33.687 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:33.692 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:48:33.692 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:48:33.692 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:48:33.698 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:48:33.698 | 112 Pool-1-worker-27 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupScheduleIntegrationTest#createNewTutorialGroupWithSchedule_wrongDateFormatInSchedule_shouldReturnBadRequest'
+    23:48:33.703 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3282/tutorial-groups
+    23:48:33.704 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3282
+    23:48:33.712 | 112 Pool-1-worker-27 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Schedule valid to and from must be valid ISO 8601 date strings
+    23:48:33.717 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3282/tutorial-groups
+    23:48:33.721 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3282
+    23:48:33.726 | 112 Pool-1-worker-27 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Schedule valid to and from must be valid ISO 8601 date strings
+    23:48:33.728 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3282/tutorial-groups
+    23:48:33.729 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3282
+    23:48:33.733 | 112 Pool-1-worker-27 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Schedule start and end time must be valid ISO 8601 time strings
+    23:48:33.737 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3282/tutorial-groups
+    23:48:33.741 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3282
+    23:48:33.748 | 112 Pool-1-worker-27 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Schedule start and end time must be valid ISO 8601 time strings
+
+  Starting logs for TutorialGroupScheduleIntegrationTest > updateTutorialGroupWithSchedule_NoChangesToSchedule_ShouldNotRecreateSessionsOrSchedule()
+    23:48:33.795 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:48:33.796 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:48:33.802 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:48:33.806 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:48:33.813 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:33.815 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:48:33.815 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:48:33.815 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:48:33.818 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:48:33.818 | 112 Pool-1-worker-27 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupScheduleIntegrationTest#updateTutorialGroupWithSchedule_NoChangesToSchedule_ShouldNotRecreateSessionsOrSchedule'
+    23:48:33.820 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3283/tutorial-groups
+    23:48:33.821 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3283
+    23:48:33.831 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1667 for tutorial group with id 247
+    23:48:33.834 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1667 to tutorial group with id 247
+    23:48:33.836 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1667 of the tutorial group with id 247
+    23:48:33.840 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 756 to the channel with id 1667 of the tutorial group with id 247
+    23:48:33.846 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 756 moderator role for the channel with id 1667 of the tutorial group with id 247
+    23:48:33.846 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 247 with channel id 1667
+    23:48:33.850 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3283/tutorial-groups/247
+    23:48:33.851 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to update TutorialGroup : de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@f7
+
+  Starting logs for TutorialGroupScheduleIntegrationTest > createNewTutorialGroupWithSchedule_sessionFallsOnTutorialGroupFreeDay_shouldCreateCancelledSession()
+    23:48:33.882 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:48:33.884 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:48:33.887 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:48:33.888 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:48:33.891 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:33.894 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:48:33.894 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:48:33.894 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:48:33.897 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:48:33.897 | 112 Pool-1-worker-27 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupScheduleIntegrationTest#createNewTutorialGroupWithSchedule_sessionFallsOnTutorialGroupFreeDay_shouldCreateCancelledSession'
+    23:48:33.903 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3284/tutorial-groups
+    23:48:33.906 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3284
+    23:48:33.928 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1668 for tutorial group with id 248
+    23:48:33.931 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1668 to tutorial group with id 248
+    23:48:33.933 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1668 of the tutorial group with id 248
+    23:48:33.938 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 756 to the channel with id 1668 of the tutorial group with id 248
+    23:48:33.944 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 756 moderator role for the channel with id 1668 of the tutorial group with id 248
+    23:48:33.944 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 248 with channel id 1668
+
+  Starting logs for TutorialGroupScheduleIntegrationTest > deleteTutorialGroupWithSchedule_shouldDeleteScheduleAndSessions()
+    23:48:33.971 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:48:33.973 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:48:33.976 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:48:33.977 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:48:33.980 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:33.982 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:48:33.983 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:48:33.983 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:48:33.985 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:48:33.985 | 112 Pool-1-worker-27 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupScheduleIntegrationTest#deleteTutorialGroupWithSchedule_shouldDeleteScheduleAndSessions'
+    23:48:33.988 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3285/tutorial-groups
+    23:48:33.989 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3285
+    23:48:34.000 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1669 for tutorial group with id 249
+    23:48:34.002 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1669 to tutorial group with id 249
+    23:48:34.004 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1669 of the tutorial group with id 249
+    23:48:34.009 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 756 to the channel with id 1669 of the tutorial group with id 249
+    23:48:34.015 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 756 moderator role for the channel with id 1669 of the tutorial group with id 249
+    23:48:34.015 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 249 with channel id 1669
+    23:48:34.019 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/3285/tutorial-groups/249
+    23:48:34.020 | 112 Pool-1-worker-27 | INFO  | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to delete a TutorialGroup: 249 of course: 3285
+    23:48:34.032 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Tutorial group with id 249 does not have a channel, cannot delete channel
+
+  Starting logs for TutorialGroupScheduleIntegrationTest > createNewTutorialGroupWithSchedule_everyTwoWeeks_shouldCreateWithOneWeekPauseInBetween()
+    23:48:34.058 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:48:34.060 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:48:34.062 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:48:34.064 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:48:34.066 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:34.068 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:48:34.069 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:48:34.069 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:48:34.071 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:48:34.071 | 112 Pool-1-worker-27 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupScheduleIntegrationTest#createNewTutorialGroupWithSchedule_everyTwoWeeks_shouldCreateWithOneWeekPauseInBetween'
+    23:48:34.073 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3286/tutorial-groups
+    23:48:34.074 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3286
+    23:48:34.084 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1670 for tutorial group with id 250
+    23:48:34.087 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1670 to tutorial group with id 250
+    23:48:34.089 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1670 of the tutorial group with id 250
+    23:48:34.093 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 756 to the channel with id 1670 of the tutorial group with id 250
+    23:48:34.099 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 756 moderator role for the channel with id 1670 of the tutorial group with id 250
+    23:48:34.099 | 112 Pool-1-worker-27 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 250 with channel id 1670
+
+Finished logs for TutorialGroupScheduleIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.exercise.architecture.ExerciseCodeStyleArchitectureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:56" hostname="fv-az1721-502" time="0.007">
+  <properties/>
+  <testcase name="testDTOImplementations()" classname="de.tum.cit.aet.artemis.exercise.architecture.ExerciseCodeStyleArchitectureTest" time="0.007"/>
+  <system-out><![CDATA[
+Starting logs for ExerciseCodeStyleArchitectureTest
+
+  Starting logs for ExerciseCodeStyleArchitectureTest > testDTOImplementations()
+    23:39:56.811 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTO classes: 2
+    23:39:56.812 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTO classes: [Class <de.tum.cit.aet.artemis.exercise.dto.ExerciseTypeCountDTO> is not annotated with @JsonInclude in (ExerciseTypeCountDTO.java:0), Class <de.tum.cit.aet.artemis.exercise.dto.SubmissionExportOptionsDTO> is no record in (SubmissionExportOptionsDTO.java:0)]
+    23:39:56.814 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTOs that do not end with "DTO": 7
+    23:39:56.814 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTOs that do not end with "DTO": [Class <de.tum.cit.aet.artemis.exercise.dto.ExerciseScoresAggregatedInformation> does not have simple name ending with 'DTO' in (ExerciseScoresAggregatedInformation.java:0), Class <de.tum.cit.aet.artemis.exercise.dto.ExerciseTypeMetricsEntry> does not have simple name ending with 'DTO' in (ExerciseTypeMetricsEntry.java:0), Class <de.tum.cit.aet.artemis.exercise.dto.SubmissionPatch> does not have simple name ending with 'DTO' in (SubmissionPatch.java:0), Class <de.tum.cit.aet.artemis.exercise.dto.SubmissionPatchPayload> does not have simple name ending with 'DTO' in (SubmissionPatchPayload.java:0), Class <de.tum.cit.aet.artemis.exercise.dto.SubmissionSyncPayload> does not have simple name ending with 'DTO' in (SubmissionSyncPayload.java:0), Class <de.tum.cit.aet.artemis.exercise.dto.TeamAssignmentPayload> does not have simple name ending with 'DTO' in (TeamAssignmentPayload.java:0), Class <de.tum.cit.aet.artemis.exercise.dto.TeamImportStrategyType> does not have simple name ending with 'DTO' in (TeamImportStrategyType.java:0)]
+
+Finished logs for ExerciseCodeStyleArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

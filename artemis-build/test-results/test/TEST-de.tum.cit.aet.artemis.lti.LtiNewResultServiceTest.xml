@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lti.LtiNewResultServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:00" hostname="fv-az1721-502" time="0.002">
+  <properties/>
+  <testcase name="onNewResult_notOnlineCourse()" classname="de.tum.cit.aet.artemis.lti.LtiNewResultServiceTest" time="0.001"/>
+  <testcase name="onNewResult_onlineCourse()" classname="de.tum.cit.aet.artemis.lti.LtiNewResultServiceTest" time="0.0"/>
+  <system-out><![CDATA[
+Starting logs for LtiNewResultServiceTest
+
+  Starting logs for LtiNewResultServiceTest > onNewResult_notOnlineCourse()
+
+  Starting logs for LtiNewResultServiceTest > onNewResult_onlineCourse()
+
+Finished logs for LtiNewResultServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

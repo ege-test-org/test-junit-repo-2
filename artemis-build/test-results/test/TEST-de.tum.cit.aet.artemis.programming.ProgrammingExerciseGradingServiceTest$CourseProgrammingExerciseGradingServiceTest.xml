@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" tests="26" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:36" hostname="fv-az1721-502" time="4.347">
+  <properties/>
+  <testcase name="shouldCalculateScoreWithStaticCodeAnalysisPenaltiesWithoutCaps()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.184"/>
+  <testcase name="shouldCalculateScoreWithStaticCodeAnalysisPenalties()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.262"/>
+  <testcase name="shouldRecalculateScoreBasedOnTestCasesWeightAutomatic()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.1"/>
+  <testcase name="shouldAddFeedbackForDuplicateTestCases()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.153"/>
+  <testcase name="shouldRecalculateScoreWithTestCaseBonusAndExerciseBonus()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.163"/>
+  <testcase name="shouldKeepTestsWithAfterDueDateFlagIfDueDateHasPassed()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.165"/>
+  <testcase name="shouldRecalculateScoreWithTestCaseBonusButNoExerciseBonus()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.13"/>
+  <testcase name="shouldRemoveInvisibleStaticCodeAnalysisFeedbackOnGrading()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.094"/>
+  <testcase name="shouldUpdateOnlyResultsForParticipationsWithoutIndividualDueDate()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.222"/>
+  <testcase name="testWeightSumZero()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.224"/>
+  <testcase name="shouldGetCorrectLatestAutomaticResults()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.188"/>
+  <testcase name="shouldRecalculateScoreBasedOnTestCasesWeightManual()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.09"/>
+  <testcase name="shouldReEvaluateScoreOfTheCorrectResults()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.18"/>
+  <testcase name="shouldCalculateScoreWithStaticCodeAnalysisPenalties_cappedByExerciseMaxPenalty()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.158"/>
+  <testcase name="shouldUpdateTheLatestResultOfASingleParticipation()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.167"/>
+  <testcase name="shouldNotIncludeTestsMarkedAsNeverVisibleInScoreCalculation(boolean) [1] isAfterDueDate=false" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.209"/>
+  <testcase name="shouldNotIncludeTestsMarkedAsNeverVisibleInScoreCalculation(boolean) [2] isAfterDueDate=true" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.229"/>
+  <testcase name="shouldCalculateCorrectStatistics()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.22"/>
+  <testcase name="shouldNotUpdateResultIfNoTestCasesExist()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.096"/>
+  <testcase name="shouldGetCorrectLatestAutomaticResultsWithMultipleResults()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.178"/>
+  <testcase name="shouldRemoveTestsWithAfterDueDateFlagIfDueDateHasNotPassed()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.104"/>
+  <testcase name="shouldNotIncludeTestsInResultWithAfterDueDateFlagIfDueDateHasNotPassedForNonStudentParticipation()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.09"/>
+  <testcase name="shouldSetScoreCorrectlyIfWeightSumIsReallyBigOrReallySmall()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.094"/>
+  <testcase name="shouldCalculateScoreWithStaticCodeAnalysisPenaltiesWithBonus()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.124"/>
+  <testcase name="[1] templateParticipation=false" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.238"/>
+  <testcase name="[2] templateParticipation=true" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$CourseProgrammingExerciseGradingServiceTest" time="0.241"/>
+  <system-out><![CDATA[[WARN] Maven will be executed in interactive mode, but no input stream has been configured for this MavenInvoker instance.
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: /usr/share/apache-maven-3.9.9
+Java version: 17.0.14, vendor: Eclipse Adoptium, runtime: /usr/lib/jvm/temurin-17-jdk-amd64
+Default locale: en, platform encoding: UTF-8
+OS name: "linux", version: "6.8.0-1021-azure", arch: "amd64", family: "unix"
+[INFO] Scanning for projects...
+
+Starting logs for CourseProgrammingExerciseGradingServiceTest
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldCalculateScoreWithStaticCodeAnalysisPenaltiesWithoutCaps()
+    23:47:36.800 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:36.804 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:36.806 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:36.807 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:36.809 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:36.811 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:36.812 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:36.812 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:36.815 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:36.885 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:36.886 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldCalculateScoreWithStaticCodeAnalysisPenaltiesWithoutCaps'
+    23:47:36.892 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:36.903 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3324 and participant 696 (result to be deleted: null)
+    23:47:36.903 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3324 and participant 696 at 2025-02-14T23:47:37.003075986Z[Etc/UTC].
+    23:47:36.909 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:36.916 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3324 and participant 697 (result to be deleted: null)
+    23:47:36.916 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3324 and participant 697 at 2025-02-14T23:47:37.016195804Z[Etc/UTC].
+    23:47:36.929 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:36.945 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3324 and participant 698 (result to be deleted: null)
+    23:47:36.945 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3324 and participant 698 at 2025-02-14T23:47:37.045622493Z[Etc/UTC].
+    23:47:36.958 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:36.966 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3324 and participant 699 (result to be deleted: null)
+    23:47:36.967 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3324 and participant 699 at 2025-02-14T23:47:37.067015500Z[Etc/UTC].
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldCalculateScoreWithStaticCodeAnalysisPenalties()
+    23:47:36.984 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:36.992 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:36.995 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:36.996 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:36.999 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:37.001 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:37.003 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:37.003 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:37.017 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:37.171 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:37.172 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldCalculateScoreWithStaticCodeAnalysisPenalties'
+    23:47:37.177 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:37.183 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3327 and participant 696 (result to be deleted: null)
+    23:47:37.183 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3327 and participant 696 at 2025-02-14T23:47:37.283419603Z[Etc/UTC].
+    23:47:37.187 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:37.193 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3327 and participant 697 (result to be deleted: null)
+    23:47:37.193 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3327 and participant 697 at 2025-02-14T23:47:37.293314226Z[Etc/UTC].
+    23:47:37.197 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:37.203 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3327 and participant 698 (result to be deleted: null)
+    23:47:37.203 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3327 and participant 698 at 2025-02-14T23:47:37.303930625Z[Etc/UTC].
+    23:47:37.208 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:37.214 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3327 and participant 699 (result to be deleted: null)
+    23:47:37.214 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3327 and participant 699 at 2025-02-14T23:47:37.314791671Z[Etc/UTC].
+    23:47:37.219 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:37.225 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3327 and participant 700 (result to be deleted: null)
+    23:47:37.225 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3327 and participant 700 at 2025-02-14T23:47:37.325781967Z[Etc/UTC].
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldRecalculateScoreBasedOnTestCasesWeightAutomatic()
+    23:47:37.249 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:37.257 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:37.260 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:37.261 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:37.264 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:37.267 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:37.268 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:37.268 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:37.273 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:37.332 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:37.333 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldRecalculateScoreBasedOnTestCasesWeightAutomatic'
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldAddFeedbackForDuplicateTestCases()
+    23:47:37.349 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:37.368 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:37.371 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:37.372 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:37.376 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:37.379 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:37.380 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:37.381 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:37.386 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:37.457 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:37.458 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldAddFeedbackForDuplicateTestCases'
+    23:47:37.471 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'DUPLICATE_TEST_CASE' notification email to 'progexgradingserviceinstructor1@test.de'
+    23:47:37.482 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='progexgradingserviceinstructor1', firstName='progexgradingserviceinstructor1First', lastName='progexgradingserviceinstructor1Last', email='progexgradingserviceinstructor1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}' with subject 'Duplicate test case was found.'
+    23:47:37.483 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'Duplicate test case was found.' to User 'User{login='progexgradingserviceinstructor1', firstName='progexgradingserviceinstructor1First', lastName='progexgradingserviceinstructor1Last', email='progexgradingserviceinstructor1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}'
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldRecalculateScoreWithTestCaseBonusAndExerciseBonus()
+    23:47:37.504 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:37.512 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:37.515 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:37.516 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:37.521 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:37.527 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:37.528 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:37.528 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:37.539 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:37.614 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:37.616 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldRecalculateScoreWithTestCaseBonusAndExerciseBonus'
+    23:47:37.628 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3335 and participant 696 (result to be deleted: null)
+    23:47:37.629 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3335 and participant 696 at 2025-02-14T23:47:37.728985886Z[Etc/UTC].
+    23:47:37.632 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3335 and participant 696 (result to be deleted: null)
+    23:47:37.632 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3335 and participant 696 at 2025-02-14T23:47:37.732815087Z[Etc/UTC].
+    23:47:37.641 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3335 and participant 696 (result to be deleted: null)
+    23:47:37.642 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3335 and participant 696 at 2025-02-14T23:47:37.741996700Z[Etc/UTC].
+    23:47:37.648 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3335 and participant 696 (result to be deleted: null)
+    23:47:37.648 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3335 and participant 696 at 2025-02-14T23:47:37.748507863Z[Etc/UTC].
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldKeepTestsWithAfterDueDateFlagIfDueDateHasPassed()
+    23:47:37.679 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:37.696 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:37.701 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:37.702 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:37.705 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:37.707 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:37.708 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:37.708 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:37.713 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:37.807 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:37.809 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldKeepTestsWithAfterDueDateFlagIfDueDateHasPassed'
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldRecalculateScoreWithTestCaseBonusButNoExerciseBonus()
+    23:47:37.836 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:37.844 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:37.848 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:37.850 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:37.856 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:37.860 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:37.862 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:37.862 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:37.874 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:37.925 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:37.926 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldRecalculateScoreWithTestCaseBonusButNoExerciseBonus'
+    23:47:37.932 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3341 and participant 696 (result to be deleted: null)
+    23:47:37.932 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3341 and participant 696 at 2025-02-14T23:47:38.032670450Z[Etc/UTC].
+    23:47:37.936 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3341 and participant 696 (result to be deleted: null)
+    23:47:37.936 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3341 and participant 696 at 2025-02-14T23:47:38.036579029Z[Etc/UTC].
+    23:47:37.940 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3341 and participant 696 (result to be deleted: null)
+    23:47:37.940 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3341 and participant 696 at 2025-02-14T23:47:38.040091619Z[Etc/UTC].
+    23:47:37.943 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3341 and participant 696 (result to be deleted: null)
+    23:47:37.943 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3341 and participant 696 at 2025-02-14T23:47:38.043647351Z[Etc/UTC].
+    23:47:37.947 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3341 and participant 696 (result to be deleted: null)
+    23:47:37.947 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3341 and participant 696 at 2025-02-14T23:47:38.047746566Z[Etc/UTC].
+    23:47:37.950 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3341 and participant 696 (result to be deleted: null)
+    23:47:37.950 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3341 and participant 696 at 2025-02-14T23:47:38.050820388Z[Etc/UTC].
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldRemoveInvisibleStaticCodeAnalysisFeedbackOnGrading()
+    23:47:37.969 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:37.976 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:37.979 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:37.980 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:37.983 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:37.985 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:37.986 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:37.986 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:37.991 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:38.042 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.043 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldRemoveInvisibleStaticCodeAnalysisFeedbackOnGrading'
+    23:47:38.046 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.049 | 450 ool-1-worker-214 | DEBUG | mmingExerciseFeedbackCreationService : Error occurred parsing feedback Feedback{text='SCAFeedbackIdentifier:', detailText='', hasLongFeedbackText=false, reference='CHECKSTYLE', credits=null, positive=null, type=AUTOMATIC, visibility=null} to static code analysis issue: No content to map due to end-of-input
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1]
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldUpdateOnlyResultsForParticipationsWithoutIndividualDueDate()
+    23:47:38.064 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:38.075 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:38.078 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:38.082 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:38.085 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:38.088 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:38.090 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:38.090 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:38.096 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:38.156 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.158 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldUpdateOnlyResultsForParticipationsWithoutIndividualDueDate'
+    23:47:38.189 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3347 and participant 696 (result to be deleted: null)
+    23:47:38.189 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3347 and participant 696 at 2025-02-14T23:47:38.289368488Z[Etc/UTC].
+    23:47:38.193 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.197 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3347 and participant 697 (result to be deleted: null)
+    23:47:38.197 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3347 and participant 697 at 2025-02-14T23:47:38.297519439Z[Etc/UTC].
+    23:47:38.201 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3347 and participant 697 (result to be deleted: null)
+    23:47:38.202 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3347 and participant 697 at 2025-02-14T23:47:38.302004123Z[Etc/UTC].
+    23:47:38.207 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.211 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.215 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3347 and participant 699 (result to be deleted: null)
+    23:47:38.215 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3347 and participant 699 at 2025-02-14T23:47:38.315691549Z[Etc/UTC].
+    23:47:38.219 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.222 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3347 and participant 700 (result to be deleted: null)
+    23:47:38.222 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3347 and participant 700 at 2025-02-14T23:47:38.322976145Z[Etc/UTC].
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > testWeightSumZero()
+    23:47:38.288 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:38.297 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:38.299 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:38.300 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:38.303 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:38.305 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:38.306 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:38.306 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:38.312 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:38.367 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.369 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#testWeightSumZero'
+    23:47:38.393 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3350 and participant 696 (result to be deleted: null)
+    23:47:38.393 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3350 and participant 696 at 2025-02-14T23:47:38.493064940Z[Etc/UTC].
+    23:47:38.400 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.407 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3350 and participant 697 (result to be deleted: null)
+    23:47:38.408 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3350 and participant 697 at 2025-02-14T23:47:38.508045849Z[Etc/UTC].
+    23:47:38.422 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3350 and participant 697 (result to be deleted: null)
+    23:47:38.422 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3350 and participant 697 at 2025-02-14T23:47:38.522468055Z[Etc/UTC].
+    23:47:38.432 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.436 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.441 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3350 and participant 699 (result to be deleted: null)
+    23:47:38.441 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3350 and participant 699 at 2025-02-14T23:47:38.541396616Z[Etc/UTC].
+    23:47:38.444 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.447 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3350 and participant 700 (result to be deleted: null)
+    23:47:38.448 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3350 and participant 700 at 2025-02-14T23:47:38.548019958Z[Etc/UTC].
+    23:47:38.493 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 3350 and participant 696 to update participant scores.
+    23:47:38.500 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 3350 and participant 696 took 7 ms.
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldGetCorrectLatestAutomaticResults()
+    23:47:38.516 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:38.524 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:38.527 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:38.528 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:38.531 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:38.533 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:38.534 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:38.534 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:38.539 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:38.612 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.614 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldGetCorrectLatestAutomaticResults'
+    23:47:38.617 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.622 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3354 and participant 696 (result to be deleted: null)
+    23:47:38.622 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3354 and participant 696 at 2025-02-14T23:47:38.722940755Z[Etc/UTC].
+    23:47:38.626 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.632 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3354 and participant 697 (result to be deleted: null)
+    23:47:38.632 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3354 and participant 697 at 2025-02-14T23:47:38.732961831Z[Etc/UTC].
+    23:47:38.637 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.655 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3354 and participant 698 (result to be deleted: null)
+    23:47:38.655 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3354 and participant 698 at 2025-02-14T23:47:38.755515432Z[Etc/UTC].
+    23:47:38.659 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.665 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3354 and participant 699 (result to be deleted: null)
+    23:47:38.665 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3354 and participant 699 at 2025-02-14T23:47:38.765768012Z[Etc/UTC].
+    23:47:38.670 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.676 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3354 and participant 700 (result to be deleted: null)
+    23:47:38.676 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3354 and participant 700 at 2025-02-14T23:47:38.776132892Z[Etc/UTC].
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldRecalculateScoreBasedOnTestCasesWeightManual()
+    23:47:38.702 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:38.710 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:38.712 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:38.714 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:38.716 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:38.719 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:38.720 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:38.720 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:38.725 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:38.775 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.776 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldRecalculateScoreBasedOnTestCasesWeightManual'
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldReEvaluateScoreOfTheCorrectResults()
+    23:47:38.793 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:38.801 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:38.803 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:38.805 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:38.807 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:38.809 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:38.810 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:38.810 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:38.813 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:38.854 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.856 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldReEvaluateScoreOfTheCorrectResults'
+    23:47:38.876 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3359 and participant 696 (result to be deleted: null)
+    23:47:38.876 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3359 and participant 696 at 2025-02-14T23:47:38.976886980Z[Etc/UTC].
+    23:47:38.880 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.883 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3359 and participant 697 (result to be deleted: null)
+    23:47:38.883 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3359 and participant 697 at 2025-02-14T23:47:38.983772939Z[Etc/UTC].
+    23:47:38.886 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3359 and participant 697 (result to be deleted: null)
+    23:47:38.886 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3359 and participant 697 at 2025-02-14T23:47:38.986347470Z[Etc/UTC].
+    23:47:38.889 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.893 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.897 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3359 and participant 699 (result to be deleted: null)
+    23:47:38.897 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3359 and participant 699 at 2025-02-14T23:47:38.997600526Z[Etc/UTC].
+    23:47:38.901 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:38.904 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3359 and participant 700 (result to be deleted: null)
+    23:47:38.904 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3359 and participant 700 at 2025-02-14T23:47:39.004834637Z[Etc/UTC].
+    23:47:38.906 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises/3359/grading/re-evaluate
+    23:47:38.907 | 450 ool-1-worker-214 | DEBUG | w.ProgrammingExerciseGradingResource : REST request to re-evaluate the graded results of exercise 3359
+    23:47:38.950 | 450 ool-1-worker-214 | INFO  | .s.ProgrammingExerciseGradingService : User progexgradingserviceinstructor1 triggered a re-evaluation of 7 results for exercise Programming with id 3359
+    23:47:38.953 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3359 and participant 696 (result to be deleted: null)
+    23:47:38.953 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3359 and participant 696 at 2025-02-14T23:47:39.053400580Z[Etc/UTC].
+    23:47:38.953 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3359 and participant 697 (result to be deleted: null)
+    23:47:38.953 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3359 and participant 697 at 2025-02-14T23:47:39.053530963Z[Etc/UTC].
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldCalculateScoreWithStaticCodeAnalysisPenalties_cappedByExerciseMaxPenalty()
+    23:47:38.975 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:38.983 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:38.985 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:38.987 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:38.989 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:38.992 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:38.993 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:38.993 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:38.998 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:39.057 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.058 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldCalculateScoreWithStaticCodeAnalysisPenalties_cappedByExerciseMaxPenalty'
+    23:47:39.065 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.073 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3363 and participant 696 (result to be deleted: null)
+    23:47:39.073 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3363 and participant 696 at 2025-02-14T23:47:39.173155669Z[Etc/UTC].
+    23:47:39.077 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.083 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3363 and participant 697 (result to be deleted: null)
+    23:47:39.083 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3363 and participant 697 at 2025-02-14T23:47:39.183174414Z[Etc/UTC].
+    23:47:39.087 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.092 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3363 and participant 698 (result to be deleted: null)
+    23:47:39.092 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3363 and participant 698 at 2025-02-14T23:47:39.192811767Z[Etc/UTC].
+    23:47:39.096 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.102 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3363 and participant 699 (result to be deleted: null)
+    23:47:39.102 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3363 and participant 699 at 2025-02-14T23:47:39.202712601Z[Etc/UTC].
+    23:47:39.107 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.113 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3363 and participant 700 (result to be deleted: null)
+    23:47:39.113 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3363 and participant 700 at 2025-02-14T23:47:39.213763137Z[Etc/UTC].
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldUpdateTheLatestResultOfASingleParticipation()
+    23:47:39.134 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:39.142 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:39.145 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:39.146 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:39.149 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:39.151 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:39.152 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:39.152 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:39.156 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:39.204 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.206 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldUpdateTheLatestResultOfASingleParticipation'
+    23:47:39.227 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3365 and participant 696 (result to be deleted: null)
+    23:47:39.227 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3365 and participant 696 at 2025-02-14T23:47:39.327064611Z[Etc/UTC].
+    23:47:39.230 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.234 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3365 and participant 697 (result to be deleted: null)
+    23:47:39.234 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3365 and participant 697 at 2025-02-14T23:47:39.334854438Z[Etc/UTC].
+    23:47:39.238 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3365 and participant 697 (result to be deleted: null)
+    23:47:39.238 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3365 and participant 697 at 2025-02-14T23:47:39.338528099Z[Etc/UTC].
+    23:47:39.242 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.246 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.250 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3365 and participant 699 (result to be deleted: null)
+    23:47:39.250 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3365 and participant 699 at 2025-02-14T23:47:39.350487663Z[Etc/UTC].
+    23:47:39.254 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.257 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3365 and participant 700 (result to be deleted: null)
+    23:47:39.257 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3365 and participant 700 at 2025-02-14T23:47:39.357619814Z[Etc/UTC].
+    23:47:39.265 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3365 and participant 696 (result to be deleted: null)
+    23:47:39.265 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3365 and participant 696 at 2025-02-14T23:47:39.365210450Z[Etc/UTC].
+    23:47:39.274 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3365 and participant 697 (result to be deleted: null)
+    23:47:39.274 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3365 and participant 697 at 2025-02-14T23:47:39.374539135Z[Etc/UTC].
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldNotIncludeTestsMarkedAsNeverVisibleInScoreCalculation(boolean) [1] isAfterDueDate=false
+    23:47:39.305 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:39.313 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:39.316 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:39.317 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:39.320 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:39.323 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:39.324 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:39.324 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:39.329 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:39.382 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.383 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldNotIncludeTestsMarkedAsNeverVisibleInScoreCalculation'
+    23:47:39.408 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3368 and participant 696 (result to be deleted: null)
+    23:47:39.408 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3368 and participant 696 at 2025-02-14T23:47:39.508129636Z[Etc/UTC].
+    23:47:39.411 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.416 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3368 and participant 697 (result to be deleted: null)
+    23:47:39.416 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3368 and participant 697 at 2025-02-14T23:47:39.516615862Z[Etc/UTC].
+    23:47:39.420 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3368 and participant 697 (result to be deleted: null)
+    23:47:39.420 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3368 and participant 697 at 2025-02-14T23:47:39.520209494Z[Etc/UTC].
+    23:47:39.424 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.428 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.432 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3368 and participant 699 (result to be deleted: null)
+    23:47:39.432 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3368 and participant 699 at 2025-02-14T23:47:39.532370103Z[Etc/UTC].
+    23:47:39.436 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.439 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3368 and participant 700 (result to be deleted: null)
+    23:47:39.439 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3368 and participant 700 at 2025-02-14T23:47:39.539922979Z[Etc/UTC].
+    23:47:39.442 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises/3368/grading/re-evaluate
+    23:47:39.442 | 450 ool-1-worker-214 | DEBUG | w.ProgrammingExerciseGradingResource : REST request to re-evaluate the graded results of exercise 3368
+    23:47:39.487 | 450 ool-1-worker-214 | INFO  | .s.ProgrammingExerciseGradingService : User progexgradingserviceinstructor1 triggered a re-evaluation of 7 results for exercise Programming with id 3368
+    23:47:39.491 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3368 and participant 696 (result to be deleted: null)
+    23:47:39.491 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3368 and participant 696 at 2025-02-14T23:47:39.591195068Z[Etc/UTC].
+    23:47:39.491 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3368 and participant 697 (result to be deleted: null)
+    23:47:39.491 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3368 and participant 697 at 2025-02-14T23:47:39.591340159Z[Etc/UTC].
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldNotIncludeTestsMarkedAsNeverVisibleInScoreCalculation(boolean) [2] isAfterDueDate=true
+    23:47:39.517 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:39.525 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:39.528 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:39.529 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:39.532 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:39.535 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:39.536 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:39.536 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:39.542 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:39.615 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.616 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldNotIncludeTestsMarkedAsNeverVisibleInScoreCalculation'
+    23:47:39.638 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3371 and participant 696 (result to be deleted: null)
+    23:47:39.638 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3371 and participant 696 at 2025-02-14T23:47:39.738694163Z[Etc/UTC].
+    23:47:39.642 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.646 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3371 and participant 697 (result to be deleted: null)
+    23:47:39.646 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3371 and participant 697 at 2025-02-14T23:47:39.746287935Z[Etc/UTC].
+    23:47:39.649 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3371 and participant 697 (result to be deleted: null)
+    23:47:39.649 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3371 and participant 697 at 2025-02-14T23:47:39.749560448Z[Etc/UTC].
+    23:47:39.653 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.656 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.660 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3371 and participant 699 (result to be deleted: null)
+    23:47:39.660 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3371 and participant 699 at 2025-02-14T23:47:39.760859570Z[Etc/UTC].
+    23:47:39.664 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.667 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3371 and participant 700 (result to be deleted: null)
+    23:47:39.667 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3371 and participant 700 at 2025-02-14T23:47:39.767383637Z[Etc/UTC].
+    23:47:39.669 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises/3371/grading/re-evaluate
+    23:47:39.669 | 450 ool-1-worker-214 | DEBUG | w.ProgrammingExerciseGradingResource : REST request to re-evaluate the graded results of exercise 3371
+    23:47:39.716 | 450 ool-1-worker-214 | INFO  | .s.ProgrammingExerciseGradingService : User progexgradingserviceinstructor1 triggered a re-evaluation of 7 results for exercise Programming with id 3371
+    23:47:39.721 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3371 and participant 696 (result to be deleted: null)
+    23:47:39.721 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3371 and participant 696 at 2025-02-14T23:47:39.821184402Z[Etc/UTC].
+    23:47:39.721 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3371 and participant 697 (result to be deleted: null)
+    23:47:39.721 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3371 and participant 697 at 2025-02-14T23:47:39.821347837Z[Etc/UTC].
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldCalculateCorrectStatistics()
+    23:47:39.746 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:39.754 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:39.757 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:39.758 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:39.761 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:39.763 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:39.764 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:39.764 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:39.771 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:39.852 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.854 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldCalculateCorrectStatistics'
+    23:47:39.858 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.865 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3375 and participant 696 (result to be deleted: null)
+    23:47:39.865 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3375 and participant 696 at 2025-02-14T23:47:39.965187579Z[Etc/UTC].
+    23:47:39.873 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.882 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3375 and participant 697 (result to be deleted: null)
+    23:47:39.882 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3375 and participant 697 at 2025-02-14T23:47:39.982923559Z[Etc/UTC].
+    23:47:39.887 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.893 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3375 and participant 698 (result to be deleted: null)
+    23:47:39.893 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3375 and participant 698 at 2025-02-14T23:47:39.993317202Z[Etc/UTC].
+    23:47:39.902 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.908 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3375 and participant 699 (result to be deleted: null)
+    23:47:39.908 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3375 and participant 699 at 2025-02-14T23:47:40.008581900Z[Etc/UTC].
+    23:47:39.913 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:39.920 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3375 and participant 700 (result to be deleted: null)
+    23:47:39.920 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3375 and participant 700 at 2025-02-14T23:47:40.020130848Z[Etc/UTC].
+    23:47:39.923 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/programming-exercises/3375/grading/statistics
+    23:47:39.924 | 450 ool-1-worker-214 | DEBUG | w.ProgrammingExerciseGradingResource : REST request to get test case statistics for programming exercise 3375
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldNotUpdateResultIfNoTestCasesExist()
+    23:47:39.966 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:39.974 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:39.977 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:39.978 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:39.981 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:39.983 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:39.984 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:39.984 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:39.989 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:40.044 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:40.045 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldNotUpdateResultIfNoTestCasesExist'
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldGetCorrectLatestAutomaticResultsWithMultipleResults()
+    23:47:40.064 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:40.072 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:40.075 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:40.076 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:40.079 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:40.082 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:40.083 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:40.083 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:40.089 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:40.144 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:40.146 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldGetCorrectLatestAutomaticResultsWithMultipleResults'
+    23:47:40.149 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:40.155 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3381 and participant 696 (result to be deleted: null)
+    23:47:40.155 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3381 and participant 696 at 2025-02-14T23:47:40.255901724Z[Etc/UTC].
+    23:47:40.165 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3381 and participant 696 (result to be deleted: null)
+    23:47:40.165 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3381 and participant 696 at 2025-02-14T23:47:40.265882067Z[Etc/UTC].
+    23:47:40.171 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:40.180 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3381 and participant 697 (result to be deleted: null)
+    23:47:40.180 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3381 and participant 697 at 2025-02-14T23:47:40.280120651Z[Etc/UTC].
+    23:47:40.184 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:40.190 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3381 and participant 698 (result to be deleted: null)
+    23:47:40.190 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3381 and participant 698 at 2025-02-14T23:47:40.290229483Z[Etc/UTC].
+    23:47:40.194 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:40.201 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3381 and participant 699 (result to be deleted: null)
+    23:47:40.201 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3381 and participant 699 at 2025-02-14T23:47:40.301337983Z[Etc/UTC].
+    23:47:40.205 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:40.213 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3381 and participant 700 (result to be deleted: null)
+    23:47:40.213 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3381 and participant 700 at 2025-02-14T23:47:40.313199234Z[Etc/UTC].
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldRemoveTestsWithAfterDueDateFlagIfDueDateHasNotPassed()
+    23:47:40.244 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:40.252 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:40.255 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:40.256 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:40.259 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:40.261 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:40.265 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:40.265 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:40.271 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:40.328 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:40.329 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldRemoveTestsWithAfterDueDateFlagIfDueDateHasNotPassed'
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldNotIncludeTestsInResultWithAfterDueDateFlagIfDueDateHasNotPassedForNonStudentParticipation()
+    23:47:40.348 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:40.357 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:40.360 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:40.361 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:40.364 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:40.366 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:40.367 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:40.367 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:40.373 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:40.420 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:40.422 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldNotIncludeTestsInResultWithAfterDueDateFlagIfDueDateHasNotPassedForNonStudentParticipation'
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldSetScoreCorrectlyIfWeightSumIsReallyBigOrReallySmall()
+    23:47:40.439 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:40.447 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:40.450 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:40.451 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:40.454 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:40.456 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:40.458 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:40.458 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:40.464 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:40.514 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:40.516 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldSetScoreCorrectlyIfWeightSumIsReallyBigOrReallySmall'
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > shouldCalculateScoreWithStaticCodeAnalysisPenaltiesWithBonus()
+    23:47:40.536 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:40.545 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:40.548 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:40.549 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:40.552 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:40.554 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:40.555 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:40.555 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:40.561 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:40.613 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:40.615 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldCalculateScoreWithStaticCodeAnalysisPenaltiesWithBonus'
+    23:47:40.620 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:40.627 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3393 and participant 696 (result to be deleted: null)
+    23:47:40.627 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3393 and participant 696 at 2025-02-14T23:47:40.727602931Z[Etc/UTC].
+    23:47:40.635 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:40.641 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3393 and participant 697 (result to be deleted: null)
+    23:47:40.641 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3393 and participant 697 at 2025-02-14T23:47:40.741984232Z[Etc/UTC].
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > [1] templateParticipation=false
+    23:47:40.664 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:40.672 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:40.675 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:40.677 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:40.680 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:40.682 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:40.684 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:40.684 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:40.689 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:40.741 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:40.743 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldUpdateScoresWithSCAAndLongFeedbackText'
+    23:47:40.761 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:40.763 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3397 and participant 696 (result to be deleted: null)
+    23:47:40.764 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3397 and participant 696 at 2025-02-14T23:47:40.863989278Z[Etc/UTC].
+    23:47:40.778 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3397 and participant 696 (result to be deleted: null)
+    23:47:40.778 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3397 and participant 696 at 2025-02-14T23:47:40.878743764Z[Etc/UTC].
+    23:47:40.787 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3397 and participant 696 (result to be deleted: null)
+    23:47:40.787 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3397 and participant 696 at 2025-02-14T23:47:40.887073859Z[Etc/UTC].
+    23:47:40.800 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3397 and participant 696 (result to be deleted: null)
+    23:47:40.800 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3397 and participant 696 at 2025-02-14T23:47:40.900817901Z[Etc/UTC].
+    23:47:40.809 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3397 and participant 696 (result to be deleted: null)
+    23:47:40.809 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3397 and participant 696 at 2025-02-14T23:47:40.909721285Z[Etc/UTC].
+    23:47:40.818 | 450 ool-1-worker-214 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3397 and participant 696 (result to be deleted: null)
+    23:47:40.818 | 450 ool-1-worker-214 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3397 and participant 696 at 2025-02-14T23:47:40.918160454Z[Etc/UTC].
+
+  Starting logs for CourseProgrammingExerciseGradingServiceTest > [2] templateParticipation=true
+    23:47:40.904 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:40.912 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:40.915 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:40.916 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:40.919 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:40.921 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:40.922 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:40.922 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:40.927 | 450 ool-1-worker-214 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:40.979 | 450 ool-1-worker-214 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:40.981 | 450 ool-1-worker-214 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldUpdateScoresWithSCAAndLongFeedbackText'
+
+Finished logs for CourseProgrammingExerciseGradingServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lecture.AttachmentUnitIntegrationTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:40" hostname="fv-az1721-502" time="2.871">
+  <properties/>
+  <testcase name="updateAttachmentUnit_withoutLecture_shouldReturnBadRequest()" classname="de.tum.cit.aet.artemis.lecture.AttachmentUnitIntegrationTest" time="0.039"/>
+  <testcase name="updateLectureAttachmentUnitWithSameFileName()" classname="de.tum.cit.aet.artemis.lecture.AttachmentUnitIntegrationTest" time="0.05"/>
+  <testcase name="updateAttachmentUnit_asInstructor_shouldKeepOrdering()" classname="de.tum.cit.aet.artemis.lecture.AttachmentUnitIntegrationTest" time="0.04"/>
+  <testcase name="createAttachmentUnit_InstructorNotInCourse_shouldReturnForbidden()" classname="de.tum.cit.aet.artemis.lecture.AttachmentUnitIntegrationTest" time="0.743"/>
+  <testcase name="deleteAttachmentUnit_withAttachment_shouldDeleteAttachment()" classname="de.tum.cit.aet.artemis.lecture.AttachmentUnitIntegrationTest" time="0.075"/>
+  <testcase name="createAttachmentUnit_withAttachmentId_shouldReturnBadRequest()" classname="de.tum.cit.aet.artemis.lecture.AttachmentUnitIntegrationTest" time="0.048"/>
+  <testcase name="updateAttachmentUnit_asInstructor_shouldUpdateAttachmentUnit()" classname="de.tum.cit.aet.artemis.lecture.AttachmentUnitIntegrationTest" time="1.181"/>
+  <testcase name="updateAttachmentUnit_notInstructorInCourse_shouldReturnForbidden()" classname="de.tum.cit.aet.artemis.lecture.AttachmentUnitIntegrationTest" time="0.049"/>
+  <testcase name="testAll_asTutor()" classname="de.tum.cit.aet.artemis.lecture.AttachmentUnitIntegrationTest" time="0.051"/>
+  <testcase name="testAll_asStudent()" classname="de.tum.cit.aet.artemis.lecture.AttachmentUnitIntegrationTest" time="0.077"/>
+  <testcase name="getAttachmentUnit_correctId_shouldReturnAttachmentUnit()" classname="de.tum.cit.aet.artemis.lecture.AttachmentUnitIntegrationTest" time="0.058"/>
+  <testcase name="createAttachmentUnit_asInstructor_shouldCreateAttachmentUnit()" classname="de.tum.cit.aet.artemis.lecture.AttachmentUnitIntegrationTest" time="0.388"/>
+  <testcase name="createAttachmentUnit_withUnitId_shouldReturnBadRequest()" classname="de.tum.cit.aet.artemis.lecture.AttachmentUnitIntegrationTest" time="0.054"/>
+  <system-out><![CDATA[
+Starting logs for AttachmentUnitIntegrationTest
+
+  Starting logs for AttachmentUnitIntegrationTest > updateAttachmentUnit_withoutLecture_shouldReturnBadRequest()
+    23:46:40.484 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:40.486 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:40.488 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:40.489 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:40.491 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:40.493 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:46:40.493 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:46:40.493 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:40.495 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:40.499 | 411 ool-1-worker-175 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AttachmentUnitIntegrationTest#updateAttachmentUnit_withoutLecture_shouldReturnBadRequest'
+    23:46:40.506 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/615/attachment-units/596
+    23:46:40.507 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.l.w.AttachmentUnitResource : REST request to update an attachment unit : de.tum.cit.aet.artemis.lecture.domain.AttachmentUnit@254
+    23:46:40.511 | 411 ool-1-worker-175 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Attachment unit must be associated to an attachment
+    23:46:40.511 | 411 ool-1-worker-175 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Attachment unit must be associated to an attachment
+
+  Starting logs for AttachmentUnitIntegrationTest > updateLectureAttachmentUnitWithSameFileName()
+    23:46:40.523 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:40.525 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:40.528 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:40.529 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:40.531 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:40.532 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:40.533 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:40.533 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:40.538 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:40.546 | 411 ool-1-worker-175 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AttachmentUnitIntegrationTest#updateLectureAttachmentUnitWithSameFileName'
+    23:46:40.551 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/616/attachment-units/597
+    23:46:40.552 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.l.w.AttachmentUnitResource : REST request to update an attachment unit : de.tum.cit.aet.artemis.lecture.domain.AttachmentUnit@255
+    23:46:40.556 | 411 ool-1-worker-175 | INFO  | d.t.c.a.a.core.service.FileService   : Invalidate files cache for uploads/attachments/attachment-unit/597/AttachmentUnit_2025-02-14T23-46-40-555_test_48388cc3.jpg
+    23:46:40.559 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/files/attachments/attachment-unit/597/AttachmentUnit_2025-02-14T23-46-40-555_test_48388cc3.jpg
+    23:46:40.559 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.core.web.FileResource      : REST request to get the file for attachment unit 597 for students
+
+  Starting logs for AttachmentUnitIntegrationTest > updateAttachmentUnit_asInstructor_shouldKeepOrdering()
+    23:46:40.572 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:40.575 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:40.577 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:40.579 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:40.581 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:40.582 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:40.583 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:40.583 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:40.585 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:40.591 | 411 ool-1-worker-175 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AttachmentUnitIntegrationTest#updateAttachmentUnit_asInstructor_shouldKeepOrdering'
+    23:46:40.599 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/617/attachment-units/599
+    23:46:40.599 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.l.w.AttachmentUnitResource : REST request to update an attachment unit : de.tum.cit.aet.artemis.lecture.domain.AttachmentUnit@257
+
+  Starting logs for AttachmentUnitIntegrationTest > createAttachmentUnit_InstructorNotInCourse_shouldReturnForbidden()
+    23:46:40.614 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:40.616 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:40.618 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:40.620 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:40.622 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:40.623 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:40.624 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:40.624 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:40.626 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:40.633 | 411 ool-1-worker-175 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AttachmentUnitIntegrationTest#createAttachmentUnit_InstructorNotInCourse_shouldReturnForbidden'
+    23:46:41.313 | 411 ool-1-worker-175 | WARN  | o.a.p.p.font.FileSystemFontProvider  : Could not load font file '/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf': 'loca' table is mandatory
+    23:46:41.335 | 411 ool-1-worker-175 | WARN  | o.a.p.p.PDAbstractContentStream      : You did not call endText(), some viewers won't display your text
+    23:46:41.340 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/618/attachment-units
+    23:46:41.343 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.l.w.AttachmentUnitResource : REST request to create AttachmentUnit de.tum.cit.aet.artemis.lecture.domain.AttachmentUnit@0 with Attachment Attachment{id=null, name='LoremIpsum', link='/api/files/temp/example.txt', version='1', uploadDate='null', releaseDate='null', attachmentType='FILE'}
+    23:46:41.346 | 411 ool-1-worker-175 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Course with id 2122
+
+  Starting logs for AttachmentUnitIntegrationTest > deleteAttachmentUnit_withAttachment_shouldDeleteAttachment()
+    23:46:41.362 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:41.365 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:41.368 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:41.369 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:41.372 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:41.374 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:41.375 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:41.375 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:41.378 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:41.387 | 411 ool-1-worker-175 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AttachmentUnitIntegrationTest#deleteAttachmentUnit_withAttachment_shouldDeleteAttachment'
+    23:46:41.389 | 411 ool-1-worker-175 | WARN  | o.a.p.p.PDAbstractContentStream      : You did not call endText(), some viewers won't display your text
+    23:46:41.392 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/619/attachment-units
+    23:46:41.393 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.l.w.AttachmentUnitResource : REST request to create AttachmentUnit de.tum.cit.aet.artemis.lecture.domain.AttachmentUnit@0 with Attachment Attachment{id=null, name='LoremIpsum', link='/api/files/temp/example.txt', version='1', uploadDate='null', releaseDate='null', attachmentType='FILE'}
+    23:46:41.400 | 411 ool-1-worker-175 | INFO  | d.t.c.a.a.core.service.FileService   : Invalidate files cache for uploads/attachments/attachment-unit/600/AttachmentUnit_2025-02-14T23-46-41-400_fe4dbd72.pdf
+    23:46:41.407 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.l.s.SlideSplitterService   : Splitting Attachment Unit file LoremIpsum into single slides
+    23:46:41.409 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/lectures/619/lecture-units/600
+    23:46:41.409 | 411 ool-1-worker-175 | INFO  | d.t.c.a.a.l.web.LectureUnitResource  : REST request to delete lecture unit: 600
+    23:46:41.420 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/lectures/619/attachment-units/600
+    23:46:41.420 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.l.w.AttachmentUnitResource : REST request to get AttachmentUnit : 600
+    23:46:41.424 | 411 ool-1-worker-175 | WARN  | o.z.p.spring.common.AdviceTraits     : Not Found: AttachmentUnit with identifier: "600" does not exist
+
+  Starting logs for AttachmentUnitIntegrationTest > createAttachmentUnit_withAttachmentId_shouldReturnBadRequest()
+    23:46:41.437 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:41.440 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:41.442 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:41.444 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:41.447 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:41.448 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:41.449 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:41.449 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:41.452 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:41.465 | 411 ool-1-worker-175 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AttachmentUnitIntegrationTest#createAttachmentUnit_withAttachmentId_shouldReturnBadRequest'
+    23:46:41.466 | 411 ool-1-worker-175 | WARN  | o.a.p.p.PDAbstractContentStream      : You did not call endText(), some viewers won't display your text
+    23:46:41.472 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/620/attachment-units
+    23:46:41.473 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.l.w.AttachmentUnitResource : REST request to create AttachmentUnit de.tum.cit.aet.artemis.lecture.domain.AttachmentUnit@0 with Attachment Attachment{id=99, name='LoremIpsum', link='/api/files/temp/example.txt', version='1', uploadDate='null', releaseDate='null', attachmentType='FILE'}
+    23:46:41.473 | 411 ool-1-worker-175 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, A new attachment cannot already have an ID
+    23:46:41.473 | 411 ool-1-worker-175 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: A new attachment cannot already have an ID
+
+  Starting logs for AttachmentUnitIntegrationTest > updateAttachmentUnit_asInstructor_shouldUpdateAttachmentUnit()
+    23:46:41.487 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:41.490 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:41.493 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:41.495 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:41.498 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:41.500 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:41.500 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:41.500 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:41.503 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:41.507 | 338 pool-20-thread-1 | INFO  | d.t.c.a.a.c.s.UserScheduleService    : Removing user User{login='ab123cde', firstName='ab123cdeFirst', lastName='ab123cdeLast', email='ab123cde@test.de', imageUrl='null', activated='false', langKey='en', activationKey='WrGhvwl08mc5wEiF6rNI'} because it hasn't been activated within the hour.
+    23:46:41.522 | 411 ool-1-worker-175 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AttachmentUnitIntegrationTest#updateAttachmentUnit_asInstructor_shouldUpdateAttachmentUnit'
+    23:46:41.523 | 411 ool-1-worker-175 | WARN  | o.a.p.p.PDAbstractContentStream      : You did not call endText(), some viewers won't display your text
+    23:46:41.531 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/621/attachment-units
+    23:46:41.532 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.l.w.AttachmentUnitResource : REST request to create AttachmentUnit de.tum.cit.aet.artemis.lecture.domain.AttachmentUnit@0 with Attachment Attachment{id=null, name='LoremIpsum', link='/api/files/temp/example.txt', version='1', uploadDate='null', releaseDate='null', attachmentType='FILE'}
+    23:46:41.550 | 411 ool-1-worker-175 | INFO  | d.t.c.a.a.core.service.FileService   : Invalidate files cache for uploads/attachments/attachment-unit/601/AttachmentUnit_2025-02-14T23-46-41-549_6d58d70c.pdf
+    23:46:41.686 | 621 artemis-task-1   | WARN  | o.h.e.jdbc.spi.SqlExceptionHelper    : SQL Error: 23506, SQLState: 23506
+    23:46:41.686 | 621 artemis-task-1   | ERROR | o.h.e.jdbc.spi.SqlExceptionHelper    : Referential integrity constraint violation: "FK_SLIDE_ID: PUBLIC.SLIDE FOREIGN KEY(ATTACHMENT_UNIT_ID) REFERENCES PUBLIC.LECTURE_UNIT(ID) (CAST(600 AS BIGINT))"; SQL statement:
+insert into slide (attachment_unit_id,slide_image_path,slide_number,id) values (?,?,?,default) [23506-224]
+    23:46:41.689 | 621 artemis-task-1   | ERROR | .SimpleAsyncUncaughtExceptionHandler : Unexpected exception occurred invoking async method: public void de.tum.cit.aet.artemis.lecture.service.SlideSplitterService.splitAttachmentUnitIntoSingleSlides(de.tum.cit.aet.artemis.lecture.domain.AttachmentUnit)
+org.springframework.dao.DataIntegrityViolationException: could not execute statement [Referential integrity constraint violation: "FK_SLIDE_ID: PUBLIC.SLIDE FOREIGN KEY(ATTACHMENT_UNIT_ID) REFERENCES PUBLIC.LECTURE_UNIT(ID) (CAST(600 AS BIGINT))"; SQL statement:
+insert into slide (attachment_unit_id,slide_image_path,slide_number,id) values (?,?,?,default) [23506-224]] [insert into slide (attachment_unit_id,slide_image_path,slide_number,id) values (?,?,?,default)]; SQL [insert into slide (attachment_unit_id,slide_image_path,slide_number,id) values (?,?,?,default)]; constraint [FK_SLIDE_ID]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:290)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:343)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:165)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy3/jdk.proxy3.$Proxy417.save(Unknown Source)
+	at de.tum.cit.aet.artemis.lecture.service.SlideSplitterService.splitAttachmentUnitIntoSingleSlides(SlideSplitterService.java:96)
+	at de.tum.cit.aet.artemis.lecture.service.SlideSplitterService.splitAttachmentUnitIntoSingleSlides(SlideSplitterService.java:62)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114)
+	at tech.jhipster.async.ExceptionHandlingAsyncTaskExecutor.lambda$createCallable$0(ExceptionHandlingAsyncTaskExecutor.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.hibernate.exception.ConstraintViolationException: could not execute statement [Referential integrity constraint violation: "FK_SLIDE_ID: PUBLIC.SLIDE FOREIGN KEY(ATTACHMENT_UNIT_ID) REFERENCES PUBLIC.LECTURE_UNIT(ID) (CAST(600 AS BIGINT))"; SQL statement:
+insert into slide (attachment_unit_id,slide_image_path,slide_number,id) values (?,?,?,default) [23506-224]] [insert into slide (attachment_unit_id,slide_image_path,slide_number,id) values (?,?,?,default)]
+	at org.hibernate.exception.internal.SQLExceptionTypeDelegate.convert(SQLExceptionTypeDelegate.java:62)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performInsert(GetGeneratedKeysDelegate.java:107)
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorPostInsertSingleTable.execute(MutationExecutorPostInsertSingleTable.java:100)
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:175)
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:113)
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2862)
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81)
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:670)
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:291)
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:272)
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:322)
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:388)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:302)
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:221)
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:135)
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175)
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77)
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127)
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:758)
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:742)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:320)
+	at jdk.proxy3/jdk.proxy3.$Proxy319.persist(Unknown Source)
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:627)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:515)
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:284)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:752)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:174)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	... 18 common frames omitted
+Caused by: org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Referential integrity constraint violation: "FK_SLIDE_ID: PUBLIC.SLIDE FOREIGN KEY(ATTACHMENT_UNIT_ID) REFERENCES PUBLIC.LECTURE_UNIT(ID) (CAST(600 AS BIGINT))"; SQL statement:
+insert into slide (attachment_unit_id,slide_image_path,slide_number,id) values (?,?,?,default) [23506-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:520)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.constraint.ConstraintReferential.checkRowOwnTable(ConstraintReferential.java:311)
+	at org.h2.constraint.ConstraintReferential.checkRow(ConstraintReferential.java:252)
+	at org.h2.table.Table.fireConstraints(Table.java:1200)
+	at org.h2.table.Table.fireAfterRow(Table.java:1218)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:188)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.CommandContainer.executeUpdateWithGeneratedKeys(CommandContainer.java:242)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:163)
+	at org.h2.command.Command.executeUpdate(Command.java:256)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdateInternal(JdbcPreparedStatement.java:216)
+	at org.h2.jdbc.JdbcPreparedStatement.executeUpdate(JdbcPreparedStatement.java:174)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:194)
+	... 63 common frames omitted
+    23:46:41.692 | 621 artemis-task-1   | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress for 0 users.
+    23:46:41.693 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.l.s.SlideSplitterService   : Splitting Attachment Unit file LoremIpsum into single slides
+    23:46:41.997 | 621 artemis-task-1   | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress for 0 users.
+    23:46:42.289 | 411 ool-1-worker-175 | WARN  | o.a.p.p.PDAbstractContentStream      : You did not call endText(), some viewers won't display your text
+    23:46:42.311 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/621/attachment-units/601
+    23:46:42.317 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.l.w.AttachmentUnitResource : REST request to update an attachment unit : de.tum.cit.aet.artemis.lecture.domain.AttachmentUnit@259
+    23:46:42.334 | 411 ool-1-worker-175 | INFO  | d.t.c.a.a.core.service.FileService   : Invalidate files cache for uploads/attachments/attachment-unit/601/AttachmentUnit_2025-02-14T23-46-42-332_4124c968.pdf
+    23:46:42.345 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.l.s.SlideSplitterService   : Splitting Attachment Unit file LoremIpsum into single slides
+
+  Starting logs for AttachmentUnitIntegrationTest > updateAttachmentUnit_notInstructorInCourse_shouldReturnForbidden()
+    23:46:42.669 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:42.672 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:42.675 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:42.676 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:42.679 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:42.681 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:42.682 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:42.682 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:42.685 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:42.695 | 411 ool-1-worker-175 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AttachmentUnitIntegrationTest#updateAttachmentUnit_notInstructorInCourse_shouldReturnForbidden'
+    23:46:42.701 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/622/attachment-units/602
+    23:46:42.702 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.l.w.AttachmentUnitResource : REST request to update an attachment unit : de.tum.cit.aet.artemis.lecture.domain.AttachmentUnit@25a
+    23:46:42.705 | 411 ool-1-worker-175 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Course with id 2126
+
+  Starting logs for AttachmentUnitIntegrationTest > testAll_asTutor()
+    23:46:42.718 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:42.721 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:42.724 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:42.725 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:42.728 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:42.730 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:42.731 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:42.731 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:42.734 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:42.744 | 411 ool-1-worker-175 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AttachmentUnitIntegrationTest#testAll_asTutor'
+    23:46:42.746 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/623/attachment-units/42
+    23:46:42.747 | 411 ool-1-worker-175 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:46:42.750 | 411 ool-1-worker-175 | WARN  | o.a.p.p.PDAbstractContentStream      : You did not call endText(), some viewers won't display your text
+    23:46:42.753 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/623/attachment-units
+    23:46:42.754 | 411 ool-1-worker-175 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:46:42.756 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/lectures/623/attachment-units/42
+    23:46:42.757 | 411 ool-1-worker-175 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for AttachmentUnitIntegrationTest > testAll_asStudent()
+    23:46:42.771 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:42.774 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:42.777 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:42.778 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:42.781 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:42.783 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:42.784 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:42.784 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:42.788 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:42.815 | 411 ool-1-worker-175 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AttachmentUnitIntegrationTest#testAll_asStudent'
+    23:46:42.816 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/lectures/624/attachment-units/42
+    23:46:42.817 | 411 ool-1-worker-175 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:46:42.819 | 411 ool-1-worker-175 | WARN  | o.a.p.p.PDAbstractContentStream      : You did not call endText(), some viewers won't display your text
+    23:46:42.825 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/624/attachment-units
+    23:46:42.826 | 411 ool-1-worker-175 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:46:42.828 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/lectures/624/attachment-units/42
+    23:46:42.831 | 411 ool-1-worker-175 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for AttachmentUnitIntegrationTest > getAttachmentUnit_correctId_shouldReturnAttachmentUnit()
+    23:46:42.852 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:42.854 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:42.857 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:42.859 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:42.861 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:42.863 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:42.864 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:42.864 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:42.868 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:42.878 | 411 ool-1-worker-175 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AttachmentUnitIntegrationTest#getAttachmentUnit_correctId_shouldReturnAttachmentUnit'
+    23:46:42.891 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/lectures/625/attachment-units/603
+    23:46:42.892 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.l.w.AttachmentUnitResource : REST request to get AttachmentUnit : 603
+
+  Starting logs for AttachmentUnitIntegrationTest > createAttachmentUnit_asInstructor_shouldCreateAttachmentUnit()
+    23:46:42.909 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:42.912 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:42.915 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:42.916 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:42.919 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:42.921 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:42.922 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:42.922 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:42.925 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:42.939 | 411 ool-1-worker-175 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AttachmentUnitIntegrationTest#createAttachmentUnit_asInstructor_shouldCreateAttachmentUnit'
+    23:46:42.940 | 411 ool-1-worker-175 | WARN  | o.a.p.p.PDAbstractContentStream      : You did not call endText(), some viewers won't display your text
+    23:46:42.947 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/626/attachment-units
+    23:46:42.951 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.l.w.AttachmentUnitResource : REST request to create AttachmentUnit de.tum.cit.aet.artemis.lecture.domain.AttachmentUnit@0 with Attachment Attachment{id=null, name='LoremIpsum', link='/api/files/temp/example.txt', version='1', uploadDate='null', releaseDate='null', attachmentType='FILE'}
+    23:46:42.961 | 411 ool-1-worker-175 | INFO  | d.t.c.a.a.core.service.FileService   : Invalidate files cache for uploads/attachments/attachment-unit/604/AttachmentUnit_2025-02-14T23-46-42-960_f60161ae.pdf
+    23:46:42.973 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.l.s.SlideSplitterService   : Splitting Attachment Unit file LoremIpsum into single slides
+    23:46:43.116 | 621 artemis-task-1   | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress for 0 users.
+
+  Starting logs for AttachmentUnitIntegrationTest > createAttachmentUnit_withUnitId_shouldReturnBadRequest()
+    23:46:43.302 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:46:43.313 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:46:43.316 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:46:43.319 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:46:43.322 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:46:43.324 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:46:43.325 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:46:43.325 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:46:43.328 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:46:43.338 | 411 ool-1-worker-175 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AttachmentUnitIntegrationTest#createAttachmentUnit_withUnitId_shouldReturnBadRequest'
+    23:46:43.339 | 411 ool-1-worker-175 | WARN  | o.a.p.p.PDAbstractContentStream      : You did not call endText(), some viewers won't display your text
+    23:46:43.341 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/lectures/627/attachment-units
+    23:46:43.342 | 411 ool-1-worker-175 | DEBUG | d.t.c.a.a.l.w.AttachmentUnitResource : REST request to create AttachmentUnit de.tum.cit.aet.artemis.lecture.domain.AttachmentUnit@63 with Attachment Attachment{id=null, name='LoremIpsum', link='/api/files/temp/example.txt', version='1', uploadDate='null', releaseDate='null', attachmentType='FILE'}
+    23:46:43.343 | 411 ool-1-worker-175 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, A new attachment unit cannot already have an ID
+    23:46:43.343 | 411 ool-1-worker-175 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: A new attachment unit cannot already have an ID
+
+Finished logs for AttachmentUnitIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

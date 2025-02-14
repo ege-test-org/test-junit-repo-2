@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lti.OAuth2JWKSIntegrationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:04" hostname="fv-az1721-502" time="1.178">
+  <properties/>
+  <testcase name="getKeysetIsPublicAndReturnsJson()" classname="de.tum.cit.aet.artemis.lti.OAuth2JWKSIntegrationTest" time="0.021"/>
+  <testcase name="getKeysetHasKey()" classname="de.tum.cit.aet.artemis.lti.OAuth2JWKSIntegrationTest" time="1.154"/>
+  <system-out><![CDATA[
+Starting logs for OAuth2JWKSIntegrationTest
+
+  Starting logs for OAuth2JWKSIntegrationTest > getKeysetIsPublicAndReturnsJson()
+    23:47:04.957 | 425 ool-1-worker-189 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='OAuth2JWKSIntegrationTest#getKeysetIsPublicAndReturnsJson'
+    23:47:04.957 | 425 ool-1-worker-189 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /.well-known/jwks.json
+
+  Starting logs for OAuth2JWKSIntegrationTest > getKeysetHasKey()
+    23:47:04.974 | 425 ool-1-worker-189 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='OAuth2JWKSIntegrationTest#getKeysetHasKey'
+    23:47:04.980 | 425 ool-1-worker-189 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '1' from title cache 'courseTitle'
+    23:47:06.113 | 425 ool-1-worker-189 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /.well-known/jwks.json
+
+Finished logs for OAuth2JWKSIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

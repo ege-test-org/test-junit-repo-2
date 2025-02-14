@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.notification.TutorialGroupNotificationFactoryTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:28" hostname="fv-az1721-502" time="0.023">
+  <properties/>
+  <testcase name="createNotification_TutorialGroupDeleted()" classname="de.tum.cit.aet.artemis.communication.notification.TutorialGroupNotificationFactoryTest" time="0.011"/>
+  <testcase name="createNotification_TutorialGroupUpdated()" classname="de.tum.cit.aet.artemis.communication.notification.TutorialGroupNotificationFactoryTest" time="0.011"/>
+  <system-out><![CDATA[
+Starting logs for TutorialGroupNotificationFactoryTest
+
+  Starting logs for TutorialGroupNotificationFactoryTest > createNotification_TutorialGroupDeleted()
+
+  Starting logs for TutorialGroupNotificationFactoryTest > createNotification_TutorialGroupUpdated()
+
+Finished logs for TutorialGroupNotificationFactoryTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

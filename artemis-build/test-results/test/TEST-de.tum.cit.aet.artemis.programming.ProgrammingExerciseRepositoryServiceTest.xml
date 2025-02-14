@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.ProgrammingExerciseRepositoryServiceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:56" hostname="fv-az1721-502" time="0.678">
+  <properties/>
+  <testcase name="shouldLockRepositoriesAndParticipationsWhenExerciseGetsUnreleased()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseRepositoryServiceTest" time="0.157"/>
+  <testcase name="shouldUnlockRepositoriesWhenOfflineIDEGetsAllowed()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseRepositoryServiceTest" time="0.055"/>
+  <testcase name="shouldLockParticipationsAndRepositoriesSeparatelyWhenDueDateIsSetInThePastAndOfflineIDEGetsForbidden()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseRepositoryServiceTest" time="0.083"/>
+  <testcase name="shouldLockRepositoriesAndParticipationsWhenDueDateIsSetInThePast()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseRepositoryServiceTest" time="0.057"/>
+  <testcase name="shouldLockRepositoriesAndParticipationsWhenDueDateIsSetInThePastAndNoDueDateBefore()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseRepositoryServiceTest" time="0.05"/>
+  <testcase name="shouldUnlockRepositoriesAndParticipationsWhenOfflineIDEGetsAllowedAndStartDateIsSetInThePast()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseRepositoryServiceTest" time="0.046"/>
+  <testcase name="shouldOnlyUnlockParticipationsWhenDueDateIsSetInTheFutureAndNoOfflineIDE()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseRepositoryServiceTest" time="0.054"/>
+  <testcase name="shouldUnlockRepositoriesAndParticipationsWhenDueDateIsSetInTheFuture()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseRepositoryServiceTest" time="0.046"/>
+  <testcase name="shouldUnlockRepositoriesAndParticipationsWhenExerciseGetsReleasedImmediately()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseRepositoryServiceTest" time="0.053"/>
+  <testcase name="shouldLockRepositoriesWhenOfflineIDEGetsForbidden()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseRepositoryServiceTest" time="0.058"/>
+  <system-out><![CDATA[[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[protected org.junit.jupiter.api.DynamicContainer de.test.MethodTest.generateTestsForAllClasses() throws java.net.URISyntaxException], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-5,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-5,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[protected org.junit.jupiter.api.DynamicContainer de.test.MethodTest.generateTestsForAllClasses() throws java.net.URISyntaxException], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-6,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-6,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.180 s -- in de.test.MethodTest
+[INFO] Running de.test.SortingExampleBehaviorTest
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional.empty, executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[void de.test.SortingExampleBehaviorTest.testMergeSort()], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-7,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-7,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[void de.test.SortingExampleBehaviorTest.testMergeSort()], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-8,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-8,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional.empty, executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[void de.test.SortingExampleBehaviorTest.testUseBubbleSortForSmallList() throws java.lang.ReflectiveOperationException], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-9,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-9,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[void de.test.SortingExampleBehaviorTest.testUseBubbleSortForSmallList() throws java.lang.ReflectiveOperationException], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-10,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-10,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional.empty, executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[void de.test.SortingExampleBehaviorTest.testBubbleSort()], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-11,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-11,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[void de.test.SortingExampleBehaviorTest.testBubbleSort()], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-12,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-12,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional.empty, executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[void de.test.SortingExampleBehaviorTest.testUseMergeSortForBigList() throws java.lang.ReflectiveOperationException], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-13,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-13,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[void de.test.SortingExampleBehaviorTest.testUseMergeSortForBigList() throws java.lang.ReflectiveOperationException], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-14,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-14,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.402 s -- in de.test.SortingExampleBehaviorTest
+[INFO] Running de.test.ClassTest
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional.empty, executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[protected org.junit.jupiter.api.DynamicContainer de.test.ClassTest.generateTestsForAllClasses() throws java.net.URISyntaxException], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-15,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-15,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[protected org.junit.jupiter.api.DynamicContainer de.test.ClassTest.generateTestsForAllClasses() throws java.net.URISyntaxException], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-16,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-16,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[protected org.junit.jupiter.api.DynamicContainer de.test.ClassTest.generateTestsForAllClasses() throws java.net.URISyntaxException], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-17,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-17,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[DEBUG] [main] Validated build configuration regarding trusted package rules, 0 are missing.
+[INFO] [main] Request install with ASC-Impl [testMethod=Optional[protected org.junit.jupiter.api.DynamicContainer de.test.ClassTest.generateTestsForAllClasses() throws java.net.URISyntaxException], executionPath=/tmp/testLocalRepo8086663005378633686, whitelistedPaths=Optional[[PathRule["target" (STARTS_WITH) in WHITELIST; level READ]]], blacklistedPaths=[PathRule["target/test-classes" (STARTS_WITH) in BLACKLIST; level READ]], allowedLocalPorts=[], trustedPackages=[]]
+[INFO] [main] Request whitelisting: Thread[ajts-to-18,5,Test-Threadgroup] []
+[INFO] [main] Thread whitelisted: Thread[ajts-to-18,5,Test-Threadgroup]
+[INFO] [main] Request uninstall
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.174 s -- in de.test.ClassTest
+[INFO] Running de.test.AttributeTest
+
+Starting logs for ProgrammingExerciseRepositoryServiceTest
+
+  Starting logs for ProgrammingExerciseRepositoryServiceTest > shouldLockRepositoriesAndParticipationsWhenExerciseGetsUnreleased()
+    23:47:56.414 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:56.417 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:47:56.418 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:47:56.419 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:47:56.421 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:47:56.424 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses...
+    23:47:56.425 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses. Done
+    23:47:56.425 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:47:56.426 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:47:56.445 | 455 ool-1-worker-219 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:56.448 | 455 ool-1-worker-219 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseRepositoryServiceTest#shouldLockRepositoriesAndParticipationsWhenExerciseGetsUnreleased'
+    23:47:56.449 | 455 ool-1-worker-219 | INFO  | .c.s.m.InstanceMessageReceiveService : Received lock all repositories and participations for programming exercise 3605
+    23:47:56.451 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 3605.
+    23:47:56.454 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 3605.
+    23:47:56.456 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'stash changes from all student repositories' for programming exercise with id 3605.
+    23:47:56.460 | 856 l-10663-thread-1 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from https://version-control.fake.fake/git/SHORTEA7CA228041D104830081FA0D889619B242ATSTEXC/shortea7ca228041d104830081fa0d889619b242atstexc-progexreposervicestudent1.git to repos/server-integration-test/SHORTEA7CA228041D104830081FA0D889619B242ATSTEXC/shortea7ca228041d104830081fa0d889619b242atstexc-progexreposervicestudent1
+    23:47:56.554 | 856 l-10663-thread-1 | ERROR | d.t.c.a.a.p.service.GitService       : Could not delete directory after failed clone: /home/runner/work/Artemis/Artemis/repos/server-integration-test/SHORTEA7CA228041D104830081FA0D889619B242ATSTEXC/shortea7ca228041d104830081fa0d889619b242atstexc-progexreposervicestudent1
+
+  Starting logs for ProgrammingExerciseRepositoryServiceTest > shouldUnlockRepositoriesWhenOfflineIDEGetsAllowed()
+    23:47:56.573 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:56.576 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:47:56.577 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:47:56.578 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:47:56.580 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:47:56.582 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:47:56.582 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:47:56.582 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:47:56.585 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:47:56.605 | 455 ool-1-worker-219 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:56.608 | 455 ool-1-worker-219 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseRepositoryServiceTest#shouldUnlockRepositoriesWhenOfflineIDEGetsAllowed'
+    23:47:56.609 | 455 ool-1-worker-219 | INFO  | .c.s.m.InstanceMessageReceiveService : Received unlock all repositories with earlier start date and later due date for programming exercise 3606
+    23:47:56.611 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'add write permissions to all student repositories' for programming exercise with id 3606.
+    23:47:56.613 | 857 l-10664-thread-1 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'add write permissions to all student repositories' for programming exercise with id 3606.
+    23:47:56.615 | 455 ool-1-worker-219 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#3606) to trigger on DUE.
+
+  Starting logs for ProgrammingExerciseRepositoryServiceTest > shouldLockParticipationsAndRepositoriesSeparatelyWhenDueDateIsSetInThePastAndOfflineIDEGetsForbidden()
+    23:47:56.634 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:56.640 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:47:56.641 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:47:56.643 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:47:56.644 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:47:56.646 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:47:56.647 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:47:56.647 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:47:56.649 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:47:56.667 | 455 ool-1-worker-219 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:56.670 | 455 ool-1-worker-219 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseRepositoryServiceTest#shouldLockParticipationsAndRepositoriesSeparatelyWhenDueDateIsSetInThePastAndOfflineIDEGetsForbidden'
+    23:47:56.671 | 455 ool-1-worker-219 | INFO  | .c.s.m.InstanceMessageReceiveService : Received lock all repositories for programming exercise 3607
+    23:47:56.673 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories' for programming exercise with id 3607.
+    23:47:56.676 | 858 l-10665-thread-1 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'remove write permissions from all student repositories' for programming exercise with id 3607.
+    23:47:56.678 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'stash changes from all student repositories' for programming exercise with id 3607.
+    23:47:56.680 | 859 l-10666-thread-1 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from https://version-control.fake.fake/git/SHORT6E5DC1E5079AA04344080E30DF91735137A3TSTEXC/short6e5dc1e5079aa04344080e30df91735137a3tstexc-progexreposervicestudent1.git to repos/server-integration-test/SHORT6E5DC1E5079AA04344080E30DF91735137A3TSTEXC/short6e5dc1e5079aa04344080e30df91735137a3tstexc-progexreposervicestudent1
+    23:47:56.686 | 859 l-10666-thread-1 | ERROR | d.t.c.a.a.p.service.GitService       : Could not delete directory after failed clone: /home/runner/work/Artemis/Artemis/repos/server-integration-test/SHORT6E5DC1E5079AA04344080E30DF91735137A3TSTEXC/short6e5dc1e5079aa04344080e30df91735137a3tstexc-progexreposervicestudent1
+    23:47:56.687 | 455 ool-1-worker-219 | INFO  | .c.s.m.InstanceMessageReceiveService : Received lock all participations with a due date in the past for programming exercise 3607
+    23:47:56.690 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'lock all student participations' for programming exercise with id 3607.
+    23:47:56.692 | 860 l-10667-thread-1 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'lock all student participations' for programming exercise with id 3607.
+    23:47:56.694 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'stash changes from all student repositories' for programming exercise with id 3607.
+    23:47:56.696 | 861 l-10668-thread-1 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from https://version-control.fake.fake/git/SHORT6E5DC1E5079AA04344080E30DF91735137A3TSTEXC/short6e5dc1e5079aa04344080e30df91735137a3tstexc-progexreposervicestudent1.git to repos/server-integration-test/SHORT6E5DC1E5079AA04344080E30DF91735137A3TSTEXC/short6e5dc1e5079aa04344080e30df91735137a3tstexc-progexreposervicestudent1
+    23:47:56.702 | 861 l-10668-thread-1 | ERROR | d.t.c.a.a.p.service.GitService       : Could not delete directory after failed clone: /home/runner/work/Artemis/Artemis/repos/server-integration-test/SHORT6E5DC1E5079AA04344080E30DF91735137A3TSTEXC/short6e5dc1e5079aa04344080e30df91735137a3tstexc-progexreposervicestudent1
+
+  Starting logs for ProgrammingExerciseRepositoryServiceTest > shouldLockRepositoriesAndParticipationsWhenDueDateIsSetInThePast()
+    23:47:56.714 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:56.717 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:47:56.718 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:47:56.719 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:47:56.721 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:47:56.723 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:47:56.723 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:47:56.723 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:47:56.725 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:47:56.742 | 455 ool-1-worker-219 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:56.744 | 455 ool-1-worker-219 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseRepositoryServiceTest#shouldLockRepositoriesAndParticipationsWhenDueDateIsSetInThePast'
+    23:47:56.745 | 455 ool-1-worker-219 | INFO  | .c.s.m.InstanceMessageReceiveService : Received lock all repositories and participations with earlier due date for programming exercise 3608
+    23:47:56.747 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 3608.
+    23:47:56.749 | 862 l-10669-thread-1 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 3608.
+    23:47:56.752 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'stash changes from all student repositories' for programming exercise with id 3608.
+    23:47:56.755 | 863 l-10670-thread-1 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from https://version-control.fake.fake/git/SHORT6DA18FEA051690463E0B40D094CE8C75C199TSTEXC/short6da18fea051690463e0b40d094ce8c75c199tstexc-progexreposervicestudent1.git to repos/server-integration-test/SHORT6DA18FEA051690463E0B40D094CE8C75C199TSTEXC/short6da18fea051690463e0b40d094ce8c75c199tstexc-progexreposervicestudent1
+    23:47:56.761 | 863 l-10670-thread-1 | ERROR | d.t.c.a.a.p.service.GitService       : Could not delete directory after failed clone: /home/runner/work/Artemis/Artemis/repos/server-integration-test/SHORT6DA18FEA051690463E0B40D094CE8C75C199TSTEXC/short6da18fea051690463e0b40d094ce8c75c199tstexc-progexreposervicestudent1
+
+  Starting logs for ProgrammingExerciseRepositoryServiceTest > shouldLockRepositoriesAndParticipationsWhenDueDateIsSetInThePastAndNoDueDateBefore()
+    23:47:56.773 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:56.776 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:47:56.778 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:47:56.779 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:47:56.780 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:47:56.781 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:47:56.782 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:47:56.782 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:47:56.783 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:47:56.798 | 455 ool-1-worker-219 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:56.801 | 455 ool-1-worker-219 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseRepositoryServiceTest#shouldLockRepositoriesAndParticipationsWhenDueDateIsSetInThePastAndNoDueDateBefore'
+    23:47:56.801 | 455 ool-1-worker-219 | INFO  | .c.s.m.InstanceMessageReceiveService : Received lock all repositories and participations with earlier due date for programming exercise 3609
+    23:47:56.803 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 3609.
+    23:47:56.804 | 864 l-10671-thread-1 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'remove write permissions from all student repositories and lock participations' for programming exercise with id 3609.
+    23:47:56.805 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'stash changes from all student repositories' for programming exercise with id 3609.
+    23:47:56.807 | 865 l-10672-thread-1 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from https://version-control.fake.fake/git/SHORTF0E773C401ABA04DB40A93507499719CC5CBTSTEXC/shortf0e773c401aba04db40a93507499719cc5cbtstexc-progexreposervicestudent1.git to repos/server-integration-test/SHORTF0E773C401ABA04DB40A93507499719CC5CBTSTEXC/shortf0e773c401aba04db40a93507499719cc5cbtstexc-progexreposervicestudent1
+    23:47:56.812 | 865 l-10672-thread-1 | ERROR | d.t.c.a.a.p.service.GitService       : Could not delete directory after failed clone: /home/runner/work/Artemis/Artemis/repos/server-integration-test/SHORTF0E773C401ABA04DB40A93507499719CC5CBTSTEXC/shortf0e773c401aba04db40a93507499719cc5cbtstexc-progexreposervicestudent1
+
+  Starting logs for ProgrammingExerciseRepositoryServiceTest > shouldUnlockRepositoriesAndParticipationsWhenOfflineIDEGetsAllowedAndStartDateIsSetInThePast()
+    23:47:56.825 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:56.829 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:47:56.831 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:47:56.832 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:47:56.833 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:47:56.835 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:47:56.835 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:47:56.835 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:47:56.836 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:47:56.850 | 455 ool-1-worker-219 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:56.853 | 455 ool-1-worker-219 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseRepositoryServiceTest#shouldUnlockRepositoriesAndParticipationsWhenOfflineIDEGetsAllowedAndStartDateIsSetInThePast'
+    23:47:56.854 | 455 ool-1-worker-219 | INFO  | .c.s.m.InstanceMessageReceiveService : Received unlock all repositories and participations with earlier start date and later due date for programming exercise 3610
+    23:47:56.856 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'add write permissions to all student repositories' for programming exercise with id 3610.
+    23:47:56.858 | 866 l-10673-thread-1 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'add write permissions to all student repositories' for programming exercise with id 3610.
+    23:47:56.860 | 455 ool-1-worker-219 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#3610) to trigger on DUE.
+
+  Starting logs for ProgrammingExerciseRepositoryServiceTest > shouldOnlyUnlockParticipationsWhenDueDateIsSetInTheFutureAndNoOfflineIDE()
+    23:47:56.875 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:56.879 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:47:56.881 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:47:56.882 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:47:56.883 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:47:56.886 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:47:56.886 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:47:56.886 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:47:56.888 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:47:56.907 | 455 ool-1-worker-219 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:56.910 | 455 ool-1-worker-219 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseRepositoryServiceTest#shouldOnlyUnlockParticipationsWhenDueDateIsSetInTheFutureAndNoOfflineIDE'
+    23:47:56.911 | 455 ool-1-worker-219 | INFO  | .c.s.m.InstanceMessageReceiveService : Received unlock all participations with earlier start date and later due date for programming exercise 3611
+    23:47:56.914 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'add write permissions to all student repositories' for programming exercise with id 3611.
+    23:47:56.916 | 867 l-10674-thread-1 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'add write permissions to all student repositories' for programming exercise with id 3611.
+    23:47:56.917 | 455 ool-1-worker-219 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#3611) to trigger on DUE.
+
+  Starting logs for ProgrammingExerciseRepositoryServiceTest > shouldUnlockRepositoriesAndParticipationsWhenDueDateIsSetInTheFuture()
+    23:47:56.931 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:56.934 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:47:56.936 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:47:56.938 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:47:56.939 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:47:56.941 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:47:56.942 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:47:56.942 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:47:56.944 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:47:56.957 | 455 ool-1-worker-219 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:56.959 | 455 ool-1-worker-219 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseRepositoryServiceTest#shouldUnlockRepositoriesAndParticipationsWhenDueDateIsSetInTheFuture'
+    23:47:56.960 | 455 ool-1-worker-219 | INFO  | .c.s.m.InstanceMessageReceiveService : Received unlock all repositories and participations with earlier start date and later due date for programming exercise 3612
+    23:47:56.961 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'add write permissions to all student repositories' for programming exercise with id 3612.
+    23:47:56.963 | 868 l-10675-thread-1 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'add write permissions to all student repositories' for programming exercise with id 3612.
+    23:47:56.965 | 455 ool-1-worker-219 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#3612) to trigger on DUE.
+
+  Starting logs for ProgrammingExerciseRepositoryServiceTest > shouldUnlockRepositoriesAndParticipationsWhenExerciseGetsReleasedImmediately()
+    23:47:56.979 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:56.982 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:47:56.983 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:47:56.984 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:47:56.986 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:47:56.988 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:47:56.988 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:47:56.988 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:47:56.990 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:47:57.009 | 455 ool-1-worker-219 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:57.012 | 455 ool-1-worker-219 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseRepositoryServiceTest#shouldUnlockRepositoriesAndParticipationsWhenExerciseGetsReleasedImmediately'
+    23:47:57.013 | 455 ool-1-worker-219 | INFO  | .c.s.m.InstanceMessageReceiveService : Received unlock all repositories and participations with earlier start date and later due date for programming exercise 3613
+    23:47:57.015 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'add write permissions to all student repositories' for programming exercise with id 3613.
+    23:47:57.017 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'add write permissions to all student repositories' for programming exercise with id 3613.
+    23:47:57.019 | 455 ool-1-worker-219 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#3613) to trigger on DUE.
+
+  Starting logs for ProgrammingExerciseRepositoryServiceTest > shouldLockRepositoriesWhenOfflineIDEGetsForbidden()
+    23:47:57.032 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:47:57.035 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:47:57.036 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:47:57.037 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:47:57.039 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:47:57.041 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:47:57.042 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:47:57.042 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:47:57.044 | 455 ool-1-worker-219 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:47:57.059 | 455 ool-1-worker-219 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:57.061 | 455 ool-1-worker-219 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseRepositoryServiceTest#shouldLockRepositoriesWhenOfflineIDEGetsForbidden'
+    23:47:57.062 | 455 ool-1-worker-219 | INFO  | .c.s.m.InstanceMessageReceiveService : Received lock all repositories for programming exercise 3614
+    23:47:57.063 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'remove write permissions from all student repositories' for programming exercise with id 3614.
+    23:47:57.065 | 870 l-10677-thread-1 | INFO  | s.ProgrammingExerciseScheduleService : Finished executing (scheduled) task 'remove write permissions from all student repositories' for programming exercise with id 3614.
+    23:47:57.067 | 455 ool-1-worker-219 | INFO  | s.ProgrammingExerciseScheduleService : Invoking (scheduled) task 'stash changes from all student repositories' for programming exercise with id 3614.
+    23:47:57.071 | 871 l-10678-thread-1 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from https://version-control.fake.fake/git/SHORT5BC32F480E570040C60A30B0ADFC0FD1073FTSTEXC/short5bc32f480e570040c60a30b0adfc0fd1073ftstexc-progexreposervicestudent1.git to repos/server-integration-test/SHORT5BC32F480E570040C60A30B0ADFC0FD1073FTSTEXC/short5bc32f480e570040c60a30b0adfc0fd1073ftstexc-progexreposervicestudent1
+    23:47:57.078 | 871 l-10678-thread-1 | ERROR | d.t.c.a.a.p.service.GitService       : Could not delete directory after failed clone: /home/runner/work/Artemis/Artemis/repos/server-integration-test/SHORT5BC32F480E570040C60A30B0ADFC0FD1073FTSTEXC/short5bc32f480e570040c60a30b0adfc0fd1073ftstexc-progexreposervicestudent1
+
+Finished logs for ProgrammingExerciseRepositoryServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

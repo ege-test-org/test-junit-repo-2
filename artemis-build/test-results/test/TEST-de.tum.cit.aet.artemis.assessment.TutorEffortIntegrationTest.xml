@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.assessment.TutorEffortIntegrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:46" hostname="fv-az1721-502" time="0.204">
+  <properties/>
+  <testcase name="testCalculateTutorEffortsDistance5Minutes()" classname="de.tum.cit.aet.artemis.assessment.TutorEffortIntegrationTest" time="0.131"/>
+  <testcase name="testCalculateTutorEfforts0MinutesOneTimestamp()" classname="de.tum.cit.aet.artemis.assessment.TutorEffortIntegrationTest" time="0.035"/>
+  <testcase name="testCalculateTutorEffortsDistance10Minutes()" classname="de.tum.cit.aet.artemis.assessment.TutorEffortIntegrationTest" time="0.034"/>
+  <system-out><![CDATA[
+Starting logs for TutorEffortIntegrationTest
+
+  Starting logs for TutorEffortIntegrationTest > testCalculateTutorEffortsDistance5Minutes()
+    23:42:46.969 |  42 Pool-1-worker-16 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorEffortIntegrationTest#testCalculateTutorEffortsDistance5Minutes'
+    23:42:46.974 |  42 Pool-1-worker-16 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/383/exercises/294/tutor-effort
+    23:42:46.977 |  42 Pool-1-worker-16 | DEBUG | d.t.c.a.a.a.web.TutorEffortResource  : tutor-effort with argument[s] course = 383, exercise = 294
+
+  Starting logs for TutorEffortIntegrationTest > testCalculateTutorEfforts0MinutesOneTimestamp()
+    23:42:47.045 |  42 Pool-1-worker-16 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorEffortIntegrationTest#testCalculateTutorEfforts0MinutesOneTimestamp'
+    23:42:47.047 |  42 Pool-1-worker-16 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/384/exercises/295/tutor-effort
+    23:42:47.048 |  42 Pool-1-worker-16 | DEBUG | d.t.c.a.a.a.web.TutorEffortResource  : tutor-effort with argument[s] course = 384, exercise = 295
+
+  Starting logs for TutorEffortIntegrationTest > testCalculateTutorEffortsDistance10Minutes()
+    23:42:47.081 |  42 Pool-1-worker-16 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorEffortIntegrationTest#testCalculateTutorEffortsDistance10Minutes'
+    23:42:47.084 |  42 Pool-1-worker-16 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/385/exercises/296/tutor-effort
+    23:42:47.084 |  42 Pool-1-worker-16 | DEBUG | d.t.c.a.a.a.web.TutorEffortResource  : tutor-effort with argument[s] course = 385, exercise = 296
+
+Finished logs for TutorEffortIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

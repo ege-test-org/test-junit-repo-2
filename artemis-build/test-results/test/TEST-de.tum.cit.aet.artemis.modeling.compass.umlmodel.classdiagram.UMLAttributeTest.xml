@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLAttributeTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:03" hostname="fv-az1721-502" time="0.259">
+  <properties/>
+  <testcase name="similarity_differentElementType()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLAttributeTest" time="0.244"/>
+  <testcase name="similarity_nullReference()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLAttributeTest" time="0.001"/>
+  <testcase name="similarity_nullReferenceValues()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLAttributeTest" time="0.002"/>
+  <testcase name="similarity_sameAttribute_differentParent_noParentSimilarityId()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLAttributeTest" time="0.002"/>
+  <testcase name="similarity_sameAttribute()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLAttributeTest" time="0.001"/>
+  <testcase name="similarity_differentAttributeName()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLAttributeTest" time="0.001"/>
+  <testcase name="similarity_differentAttributeType()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLAttributeTest" time="0.002"/>
+  <testcase name="similarity_sameAttribute_noParentSimilarityId()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLAttributeTest" time="0.002"/>
+  <testcase name="similarity_sameAttribute_differentParent()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLAttributeTest" time="0.002"/>
+  <system-out><![CDATA[
+Starting logs for UMLAttributeTest
+
+  Starting logs for UMLAttributeTest > similarity_differentElementType()
+
+  Starting logs for UMLAttributeTest > similarity_nullReference()
+
+  Starting logs for UMLAttributeTest > similarity_nullReferenceValues()
+
+  Starting logs for UMLAttributeTest > similarity_sameAttribute_differentParent_noParentSimilarityId()
+
+  Starting logs for UMLAttributeTest > similarity_sameAttribute()
+
+  Starting logs for UMLAttributeTest > similarity_differentAttributeName()
+
+  Starting logs for UMLAttributeTest > similarity_differentAttributeType()
+
+  Starting logs for UMLAttributeTest > similarity_sameAttribute_noParentSimilarityId()
+
+  Starting logs for UMLAttributeTest > similarity_sameAttribute_differentParent()
+
+Finished logs for UMLAttributeTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

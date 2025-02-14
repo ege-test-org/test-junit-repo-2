@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.atlas.competency.StandardizedCompetencyIntegrationTest$AdminStandardizedCompetencyResource$ExportStandardizedCompetencies" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:12" hostname="fv-az1721-502" time="0.072">
+  <properties/>
+  <testcase name="shouldExport()" classname="de.tum.cit.aet.artemis.atlas.competency.StandardizedCompetencyIntegrationTest$AdminStandardizedCompetencyResource$ExportStandardizedCompetencies" time="0.072"/>
+  <system-out><![CDATA[
+Starting logs for ExportStandardizedCompetencies
+
+  Starting logs for ExportStandardizedCompetencies > shouldExport()
+    23:43:12.289 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:12.292 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:12.295 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:12.297 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:12.300 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:12.302 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:12.303 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:12.303 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:12.308 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:12.309 | 122 Pool-1-worker-37 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExportStandardizedCompetencies#shouldExport'
+    23:43:12.314 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/standardized-competencies/export
+    23:43:12.317 | 122 Pool-1-worker-37 | DEBUG | .AdminStandardizedCompetencyResource : REST request to export standardized competency catalog
+
+Finished logs for ExportStandardizedCompetencies
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

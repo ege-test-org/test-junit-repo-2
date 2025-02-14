@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lti.LtiIntegrationTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:03" hostname="fv-az1721-502" time="1.191">
+  <properties/>
+  <testcase name="testFindByRegistrationId()" classname="de.tum.cit.aet.artemis.lti.LtiIntegrationTest" time="0.014"/>
+  <testcase name="getAllConfiguredLtiPlatformsAsStudent()" classname="de.tum.cit.aet.artemis.lti.LtiIntegrationTest" time="0.013"/>
+  <testcase name="getLtiPlatformConfigurationByIdAsAdmin()" classname="de.tum.cit.aet.artemis.lti.LtiIntegrationTest" time="0.03"/>
+  <testcase name="dynamicRegistrationFailsAsStudent()" classname="de.tum.cit.aet.artemis.lti.LtiIntegrationTest" time="0.029"/>
+  <testcase name="dynamicRegistrationFailsWithoutOpenIdConfiguration()" classname="de.tum.cit.aet.artemis.lti.LtiIntegrationTest" time="0.03"/>
+  <testcase name="testFindByIdElseThrow()" classname="de.tum.cit.aet.artemis.lti.LtiIntegrationTest" time="0.047"/>
+  <testcase name="testFindLtiPlatformConfigurationWithEagerLoadedCoursesByIdElseThrow()" classname="de.tum.cit.aet.artemis.lti.LtiIntegrationTest" time="0.047"/>
+  <testcase name="deleteLtiPlatformConfigurationByIdAsAdmin()" classname="de.tum.cit.aet.artemis.lti.LtiIntegrationTest" time="0.037"/>
+  <testcase name="getAllConfiguredLtiPlatformsAsAdmin()" classname="de.tum.cit.aet.artemis.lti.LtiIntegrationTest" time="0.04"/>
+  <testcase name="createNewLtiPlatformConfigurationAsAdmin()" classname="de.tum.cit.aet.artemis.lti.LtiIntegrationTest" time="0.843"/>
+  <testcase name="updateLtiPlatformConfigurationAsAdmin()" classname="de.tum.cit.aet.artemis.lti.LtiIntegrationTest" time="0.025"/>
+  <system-out><![CDATA[
+Starting logs for LtiIntegrationTest
+
+  Starting logs for LtiIntegrationTest > testFindByRegistrationId()
+    23:47:03.739 | 424 ool-1-worker-188 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LtiIntegrationTest#testFindByRegistrationId'
+
+  Starting logs for LtiIntegrationTest > getAllConfiguredLtiPlatformsAsStudent()
+    23:47:03.752 | 424 ool-1-worker-188 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LtiIntegrationTest#getAllConfiguredLtiPlatformsAsStudent'
+    23:47:03.753 | 424 ool-1-worker-188 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/lti-platforms
+    23:47:03.754 | 424 ool-1-worker-188 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for LtiIntegrationTest > getLtiPlatformConfigurationByIdAsAdmin()
+    23:47:03.767 | 424 ool-1-worker-188 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LtiIntegrationTest#getLtiPlatformConfigurationByIdAsAdmin'
+    23:47:03.769 | 424 ool-1-worker-188 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/lti-platform/1
+    23:47:03.770 | 424 ool-1-worker-188 | DEBUG | .l.w.a.AdminLtiConfigurationResource : REST request to configured lti platform
+
+  Starting logs for LtiIntegrationTest > dynamicRegistrationFailsAsStudent()
+    23:47:03.810 | 424 ool-1-worker-188 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LtiIntegrationTest#dynamicRegistrationFailsAsStudent'
+    23:47:03.811 | 424 ool-1-worker-188 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for LtiIntegrationTest > dynamicRegistrationFailsWithoutOpenIdConfiguration()
+    23:47:03.839 | 424 ool-1-worker-188 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LtiIntegrationTest#dynamicRegistrationFailsWithoutOpenIdConfiguration'
+    23:47:03.840 | 424 ool-1-worker-188 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/admin/lti13/dynamic-registration
+    23:47:03.841 | 424 ool-1-worker-188 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Required request parameter 'openid_configuration' for method parameter type String is not present
+
+  Starting logs for LtiIntegrationTest > testFindByIdElseThrow()
+    23:47:03.875 | 424 ool-1-worker-188 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LtiIntegrationTest#testFindByIdElseThrow'
+
+  Starting logs for LtiIntegrationTest > testFindLtiPlatformConfigurationWithEagerLoadedCoursesByIdElseThrow()
+    23:47:03.932 | 424 ool-1-worker-188 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LtiIntegrationTest#testFindLtiPlatformConfigurationWithEagerLoadedCoursesByIdElseThrow'
+
+  Starting logs for LtiIntegrationTest > deleteLtiPlatformConfigurationByIdAsAdmin()
+    23:47:03.983 | 424 ool-1-worker-188 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LtiIntegrationTest#deleteLtiPlatformConfigurationByIdAsAdmin'
+    23:47:03.988 | 424 ool-1-worker-188 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/admin/lti-platform/1
+    23:47:03.989 | 424 ool-1-worker-188 | DEBUG | .l.w.a.AdminLtiConfigurationResource : REST request to configured lti platform
+
+  Starting logs for LtiIntegrationTest > getAllConfiguredLtiPlatformsAsAdmin()
+    23:47:04.022 | 424 ool-1-worker-188 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LtiIntegrationTest#getAllConfiguredLtiPlatformsAsAdmin'
+    23:47:04.028 | 424 ool-1-worker-188 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/lti-platforms
+    23:47:04.028 | 424 ool-1-worker-188 | INFO  | d.t.c.a.artemis.lti.web.LtiResource  : REST request to get all configured LTI platforms
+
+  Starting logs for LtiIntegrationTest > createNewLtiPlatformConfigurationAsAdmin()
+    23:47:04.063 | 424 ool-1-worker-188 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LtiIntegrationTest#createNewLtiPlatformConfigurationAsAdmin'
+    23:47:04.064 | 424 ool-1-worker-188 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/admin/lti-platform
+    23:47:04.068 | 424 ool-1-worker-188 | DEBUG | .l.w.a.AdminLtiConfigurationResource : REST request to add new lti platform
+    23:47:04.348 | 641 nt.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5704 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=991.5M, swap.space.total=0, swap.space.free=0, heap.memory.used=2.8G, heap.memory.free=608.8M, heap.memory.total=3.4G, heap.memory.max=6.0G, heap.memory.used/total=82.68%, heap.memory.used/max=47.31%, minor.gc.count=208, minor.gc.time=9862ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=88, unknown.gc.time=1853ms, load.process=0.00%, load.system=100.00%, load.systemAverage=7.00, thread.count=511, thread.peakCount=517, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=5735, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=213, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+
+  Starting logs for LtiIntegrationTest > updateLtiPlatformConfigurationAsAdmin()
+    23:47:04.906 | 424 ool-1-worker-188 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LtiIntegrationTest#updateLtiPlatformConfigurationAsAdmin'
+    23:47:04.907 | 424 ool-1-worker-188 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/admin/lti-platform
+    23:47:04.908 | 424 ool-1-worker-188 | DEBUG | .l.w.a.AdminLtiConfigurationResource : REST request to update configured lti platform
+
+Finished logs for LtiIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

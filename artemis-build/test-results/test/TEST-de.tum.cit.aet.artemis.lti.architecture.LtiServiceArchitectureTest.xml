@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lti.architecture.LtiServiceArchitectureTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:01" hostname="fv-az1721-502" time="0.087">
+  <properties/>
+  <testcase name="testCorrectAsyncCalls()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiServiceArchitectureTest" time="0.012"/>
+  <testcase name="shouldBeNamedService()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiServiceArchitectureTest" time="0.002"/>
+  <testcase name="testCorrectServiceAnnotation()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiServiceArchitectureTest" time="0.013"/>
+  <testcase name="shouldBeInServicePackage()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiServiceArchitectureTest" time="0.005"/>
+  <testcase name="testNoWrongServiceImports()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiServiceArchitectureTest" time="0.05"/>
+  <system-out><![CDATA[
+Starting logs for LtiServiceArchitectureTest
+
+  Starting logs for LtiServiceArchitectureTest > testCorrectAsyncCalls()
+
+  Starting logs for LtiServiceArchitectureTest > shouldBeNamedService()
+
+  Starting logs for LtiServiceArchitectureTest > testCorrectServiceAnnotation()
+
+  Starting logs for LtiServiceArchitectureTest > shouldBeInServicePackage()
+
+  Starting logs for LtiServiceArchitectureTest > testNoWrongServiceImports()
+
+Finished logs for LtiServiceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

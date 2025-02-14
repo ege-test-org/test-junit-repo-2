@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.GuidedTourSettingResourceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:19" hostname="fv-az1721-502" time="0.239">
+  <properties/>
+  <testcase name="deleteGuidedTourSetting()" classname="de.tum.cit.aet.artemis.core.GuidedTourSettingResourceTest" time="0.128"/>
+  <testcase name="guidedTourSettingsIsInitiallyNull()" classname="de.tum.cit.aet.artemis.core.GuidedTourSettingResourceTest" time="0.047"/>
+  <testcase name="updateGuidedTourSettings()" classname="de.tum.cit.aet.artemis.core.GuidedTourSettingResourceTest" time="0.06"/>
+  <system-out><![CDATA[
+Starting logs for GuidedTourSettingResourceTest
+
+  Starting logs for GuidedTourSettingResourceTest > deleteGuidedTourSetting()
+    23:44:19.846 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:44:19.848 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:44:19.852 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:44:19.853 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:44:19.857 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:44:19.866 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:44:19.870 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:44:19.870 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:44:19.874 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:44:19.874 | 184 Pool-1-worker-77 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GuidedTourSettingResourceTest#deleteGuidedTourSetting'
+    23:44:19.874 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.l.s.SlideSplitterService   : Splitting Attachment Unit file TestAttachment into single slides
+    23:44:19.885 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/guided-tour-settings
+    23:44:19.889 | 184 Pool-1-worker-77 | DEBUG | c.a.a.c.w.GuidedTourSettingsResource : REST request to update GuidedTourSetting : [GuidedTourSetting{id=null, guidedTourKey='course_overview_tour', guidedTourStep=5, guidedTourState=FINISHED, user=null}, GuidedTourSetting{id=null, guidedTourKey='new_tour', guidedTourStep=7, guidedTourState=STARTED, user=null}]
+    23:44:19.902 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.service.user.UserService : Save user User{login='gtsettingteststudent1', firstName='gtsettingteststudent1First', lastName='gtsettingteststudent1Last', email='gtsettingteststudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:44:19.912 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/guided-tour-settings/new_tour
+    23:44:19.912 | 184 Pool-1-worker-77 | DEBUG | c.a.a.c.w.GuidedTourSettingsResource : REST request to delete GuidedTourSetting : new_tour
+    23:44:19.920 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.service.user.UserService : Save user User{login='gtsettingteststudent1', firstName='gtsettingteststudent1First', lastName='gtsettingteststudent1Last', email='gtsettingteststudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:44:19.929 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/public/account
+    23:44:19.930 | 184 Pool-1-worker-77 | DEBUG | .t.c.a.a.c.w.o.PublicAccountResource : GET /account gtsettingteststudent1 took 1ms
+
+  Starting logs for GuidedTourSettingResourceTest > guidedTourSettingsIsInitiallyNull()
+    23:44:19.965 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:44:19.968 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:44:19.969 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:44:19.971 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:44:19.972 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:44:19.976 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:44:19.977 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:44:19.977 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:44:19.983 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:44:19.983 | 184 Pool-1-worker-77 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GuidedTourSettingResourceTest#guidedTourSettingsIsInitiallyNull'
+    23:44:19.984 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/public/account
+    23:44:19.985 | 184 Pool-1-worker-77 | DEBUG | .t.c.a.a.c.w.o.PublicAccountResource : GET /account gtsettingteststudent1 took 1ms
+
+  Starting logs for GuidedTourSettingResourceTest > updateGuidedTourSettings()
+    23:44:20.022 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:44:20.027 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:44:20.032 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:44:20.033 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:44:20.038 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:44:20.043 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:44:20.043 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:44:20.043 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:44:20.048 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:44:20.048 | 184 Pool-1-worker-77 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GuidedTourSettingResourceTest#updateGuidedTourSettings'
+    23:44:20.050 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/guided-tour-settings
+    23:44:20.051 | 184 Pool-1-worker-77 | DEBUG | c.a.a.c.w.GuidedTourSettingsResource : REST request to update GuidedTourSetting : [GuidedTourSetting{id=null, guidedTourKey='course_overview_tour', guidedTourStep=5, guidedTourState=FINISHED, user=null}, GuidedTourSetting{id=null, guidedTourKey='new_tour', guidedTourStep=7, guidedTourState=STARTED, user=null}]
+    23:44:20.053 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.service.user.UserService : Save user User{login='gtsettingteststudent1', firstName='gtsettingteststudent1First', lastName='gtsettingteststudent1Last', email='gtsettingteststudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:44:20.055 | 184 Pool-1-worker-77 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/public/account
+    23:44:20.057 | 184 Pool-1-worker-77 | DEBUG | .t.c.a.a.c.w.o.PublicAccountResource : GET /account gtsettingteststudent1 took 1ms
+
+Finished logs for GuidedTourSettingResourceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismCodeStyleArchitectureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:06" hostname="fv-az1721-502" time="0.005">
+  <properties/>
+  <testcase name="testDTOImplementations()" classname="de.tum.cit.aet.artemis.plagiarism.architecture.PlagiarismCodeStyleArchitectureTest" time="0.005"/>
+  <system-out><![CDATA[
+Starting logs for PlagiarismCodeStyleArchitectureTest
+
+  Starting logs for PlagiarismCodeStyleArchitectureTest > testDTOImplementations()
+    23:40:06.373 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTO classes: 0
+    23:40:06.373 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTO classes: []
+    23:40:06.375 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTOs that do not end with "DTO": 1
+    23:40:06.375 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTOs that do not end with "DTO": [Class <de.tum.cit.aet.artemis.plagiarism.dto.PlagiarismResultStats> does not have simple name ending with 'DTO' in (PlagiarismResultStats.java:0)]
+
+Finished logs for PlagiarismCodeStyleArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

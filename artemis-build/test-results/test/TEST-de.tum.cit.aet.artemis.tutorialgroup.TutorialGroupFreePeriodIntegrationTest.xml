@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:48:31" hostname="fv-az1721-502" time="1.458">
+  <properties/>
+  <testcase name="request_asTutor_shouldReturnForbidden()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.08"/>
+  <testcase name="update_justReasonChange_shouldUpdateFreePeriodReason()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.079"/>
+  <testcase name="create_asInstructor_shouldCreateTutorialGroupFreePeriod()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.058"/>
+  <testcase name="create_overlapsWithExistingScheduledSession_shouldCancelSession()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.101"/>
+  <testcase name="update_asInstructor_shouldActivatePreviouslyCancelledSessionsAndCancelNowOverlappingSessions()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.089"/>
+  <testcase name="request_asInstructorNotInCourse_shouldReturnForbidden()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.053"/>
+  <testcase name="update_overlapsWithExistingFreePeriod_shouldReturnBadRequest()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.051"/>
+  <testcase name="request_asEditor_shouldReturnForbidden()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.046"/>
+  <testcase name="create_partialOverlapsWithExistingScheduledSession_shouldCancelSession_PeriodWithinDay()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.093"/>
+  <testcase name="create_startDateIsAfterEndDate_shouldNotCreateFreePeriod()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.082"/>
+  <testcase name="create_overlapsWithSessionAlreadyCancelledDueToFreePeriod_shouldNotUpdateTutorialFreePeriod()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.068"/>
+  <testcase name="create_noOverlapsWithExistingScheduledSessionOnSameDay_shouldNotCancelSession_PeriodWithinDay()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.086"/>
+  <testcase name="create_overlapsWithExistingFreePeriod_shouldReturnBadRequest()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.05"/>
+  <testcase name="delete_asInstructor_shouldActivatePreviouslyCancelledSessionsOnThatDate()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.096"/>
+  <testcase name="getOneOfConfiguration_asInstructor_shouldReturnTutorialGroupFreePeriod()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.046"/>
+  <testcase name="create_overlapsWithExistingIndividualSession_shouldCancelSession()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.052"/>
+  <testcase name="delete_cancelledSessionStillOverlapsWithAnotherFreePeriod_shouldNotActivateSession()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.071"/>
+  <testcase name="create_freePeriodStartTimeMatchesSessionEndTime_shouldNotCancelSession()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.081"/>
+  <testcase name="request_asStudent_shouldReturnForbidden()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.058"/>
+  <testcase name="create_freePeriodEndTimeMatchesSessionStartTime_shouldNotCancelSession()" classname="de.tum.cit.aet.artemis.tutorialgroup.TutorialGroupFreePeriodIntegrationTest" time="0.091"/>
+  <system-out><![CDATA[[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------< de.test:c158e41e-2bc5-4031-b355-35c851ab1d47-Tests >---------
+[INFO] Building c158e41e-2bc5-4031-b355-35c851ab1d47 Tests 1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ c158e41e-2bc5-4031-b355-35c851ab1d47-Tests ---
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ c158e41e-2bc5-4031-b355-35c851ab1d47-Tests ---
+[INFO] skip non existing resourceDirectory /tmp/testLocalRepo13293838197966424854/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ c158e41e-2bc5-4031-b355-35c851ab1d47-Tests ---
+
+Starting logs for TutorialGroupFreePeriodIntegrationTest
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > request_asTutor_shouldReturnForbidden()
+    23:48:31.714 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:31.716 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:31.717 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:31.719 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:31.723 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:31.725 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:31.726 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:31.726 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:31.728 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:31.731 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#request_asTutor_shouldReturnForbidden'
+    23:48:31.736 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/3256/tutorial-groups-configuration/163/tutorial-free-periods/1
+    23:48:31.739 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:48:31.742 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3256/tutorial-groups-configuration/163/tutorial-free-periods
+    23:48:31.755 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:48:31.757 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3256/tutorial-groups-configuration/163/tutorial-free-periods/1
+    23:48:31.759 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:48:31.760 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/3256/tutorial-groups-configuration/163/tutorial-free-periods/1
+    23:48:31.761 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > update_justReasonChange_shouldUpdateFreePeriodReason()
+    23:48:31.798 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:31.802 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:31.809 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:31.815 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:31.818 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:31.821 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:31.821 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:31.821 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:31.831 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:31.834 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#update_justReasonChange_shouldUpdateFreePeriodReason'
+    23:48:31.837 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3257/tutorial-groups-configuration/164/tutorial-free-periods/2
+    23:48:31.838 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to update TutorialGroupFreePeriod: 2 for tutorial group configuration: 164 of course: 3257
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > create_asInstructor_shouldCreateTutorialGroupFreePeriod()
+    23:48:31.873 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:31.877 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:31.880 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:31.883 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:31.886 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:31.890 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:31.891 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:31.891 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:31.896 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:31.902 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#create_asInstructor_shouldCreateTutorialGroupFreePeriod'
+    23:48:31.903 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3258/tutorial-groups-configuration/165/tutorial-free-periods
+    23:48:31.904 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to create TutorialGroupFreePeriod: TutorialGroupFreePeriodDTO[startDate=2022-08-01T00:00, endDate=2022-08-01T23:59, reason=Holiday] for tutorial group configuration: 165 of course: 3258
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > create_overlapsWithExistingScheduledSession_shouldCancelSession()
+    23:48:31.932 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:31.935 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:31.937 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:31.940 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:31.943 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:31.945 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:31.946 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:31.946 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:31.950 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:31.954 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#create_overlapsWithExistingScheduledSession_shouldCancelSession'
+    23:48:31.957 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3259/tutorial-groups
+    23:48:31.958 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3259
+    23:48:31.972 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1657 for tutorial group with id 218
+    23:48:31.975 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1657 to tutorial group with id 218
+    23:48:31.977 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1657 of the tutorial group with id 218
+    23:48:31.982 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 752 to the channel with id 1657 of the tutorial group with id 218
+    23:48:31.989 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 752 moderator role for the channel with id 1657 of the tutorial group with id 218
+    23:48:31.989 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 218 with channel id 1657
+    23:48:31.994 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3259/tutorial-groups-configuration/166/tutorial-free-periods
+    23:48:31.995 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to create TutorialGroupFreePeriod: TutorialGroupFreePeriodDTO[startDate=2022-08-01T00:00, endDate=2022-08-01T23:59, reason=Holiday] for tutorial group configuration: 166 of course: 3259
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > update_asInstructor_shouldActivatePreviouslyCancelledSessionsAndCancelNowOverlappingSessions()
+    23:48:32.037 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:32.043 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:32.046 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:32.048 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:32.051 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:32.053 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:32.054 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:32.054 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:32.057 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:32.059 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#update_asInstructor_shouldActivatePreviouslyCancelledSessionsAndCancelNowOverlappingSessions'
+    23:48:32.068 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3260/tutorial-groups-configuration/167/tutorial-free-periods
+    23:48:32.069 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to create TutorialGroupFreePeriod: TutorialGroupFreePeriodDTO[startDate=2022-08-01T00:00, endDate=2022-08-01T23:59, reason=Holiday] for tutorial group configuration: 167 of course: 3260
+    23:48:32.088 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3260/tutorial-groups-configuration/167/tutorial-free-periods/5
+    23:48:32.089 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to update TutorialGroupFreePeriod: 5 for tutorial group configuration: 167 of course: 3260
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > request_asInstructorNotInCourse_shouldReturnForbidden()
+    23:48:32.125 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:32.128 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:32.131 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:32.133 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:32.135 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:32.138 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:32.138 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:32.138 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:32.141 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:32.143 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#request_asInstructorNotInCourse_shouldReturnForbidden'
+    23:48:32.146 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/3261/tutorial-groups-configuration/168/tutorial-free-periods/6
+    23:48:32.146 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to get tutorial group free period: 6 of tutorial group configuration 168 of course: 3261
+    23:48:32.149 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Course with id 3261
+    23:48:32.150 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3261/tutorial-groups-configuration/168/tutorial-free-periods
+    23:48:32.151 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to create TutorialGroupFreePeriod: TutorialGroupFreePeriodDTO[startDate=2022-08-01T00:00, endDate=2022-08-01T23:59, reason=Holiday] for tutorial group configuration: 168 of course: 3261
+    23:48:32.152 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Course with id 3261
+    23:48:32.154 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3261/tutorial-groups-configuration/168/tutorial-free-periods/6
+    23:48:32.154 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to update TutorialGroupFreePeriod: 6 for tutorial group configuration: 168 of course: 3261
+    23:48:32.156 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Course with id 3261
+    23:48:32.157 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/3261/tutorial-groups-configuration/168/tutorial-free-periods/6
+    23:48:32.157 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to delete TutorialGroupFreePeriod: 6 of tutorial group configuration 168 of course: 3261
+    23:48:32.159 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Course with id 3261
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > update_overlapsWithExistingFreePeriod_shouldReturnBadRequest()
+    23:48:32.179 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:32.182 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:32.184 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:32.187 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:32.189 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:32.191 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:32.192 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:32.192 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:32.198 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:32.201 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#update_overlapsWithExistingFreePeriod_shouldReturnBadRequest'
+    23:48:32.205 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3262/tutorial-groups-configuration/169/tutorial-free-periods/7
+    23:48:32.206 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to update TutorialGroupFreePeriod: 7 for tutorial group configuration: 169 of course: 3262
+    23:48:32.210 |  52 Pool-1-worker-26 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The given tutorial group free period overlaps with another tutorial group free period with ID 8 in the same course.
+    23:48:32.210 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The given tutorial group free period overlaps with another tutorial group free period with ID 8 in the same course.
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > request_asEditor_shouldReturnForbidden()
+    23:48:32.231 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:32.234 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:32.237 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:32.239 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:32.241 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:32.244 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:32.244 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:32.244 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:32.247 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:32.249 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#request_asEditor_shouldReturnForbidden'
+    23:48:32.251 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/3263/tutorial-groups-configuration/170/tutorial-free-periods/9
+    23:48:32.253 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:48:32.254 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3263/tutorial-groups-configuration/170/tutorial-free-periods
+    23:48:32.255 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:48:32.256 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3263/tutorial-groups-configuration/170/tutorial-free-periods/9
+    23:48:32.257 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:48:32.258 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/3263/tutorial-groups-configuration/170/tutorial-free-periods/9
+    23:48:32.258 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > create_partialOverlapsWithExistingScheduledSession_shouldCancelSession_PeriodWithinDay()
+    23:48:32.275 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:32.278 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:32.281 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:32.284 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:32.287 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:32.289 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:32.290 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:32.290 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:32.293 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:32.295 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#create_partialOverlapsWithExistingScheduledSession_shouldCancelSession_PeriodWithinDay'
+    23:48:32.297 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3264/tutorial-groups
+    23:48:32.298 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3264
+    23:48:32.309 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1658 for tutorial group with id 225
+    23:48:32.315 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1658 to tutorial group with id 225
+    23:48:32.321 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1658 of the tutorial group with id 225
+    23:48:32.329 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 752 to the channel with id 1658 of the tutorial group with id 225
+    23:48:32.339 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 752 moderator role for the channel with id 1658 of the tutorial group with id 225
+    23:48:32.339 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 225 with channel id 1658
+    23:48:32.343 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3264/tutorial-groups-configuration/171/tutorial-free-periods
+    23:48:32.344 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to create TutorialGroupFreePeriod: TutorialGroupFreePeriodDTO[startDate=2022-08-01T10:00, endDate=2022-08-01T13:00, reason=Holiday] for tutorial group configuration: 171 of course: 3264
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > create_startDateIsAfterEndDate_shouldNotCreateFreePeriod()
+    23:48:32.373 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:32.376 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:32.379 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:32.381 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:32.384 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:32.386 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:32.387 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:32.387 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:32.391 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:32.393 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#create_startDateIsAfterEndDate_shouldNotCreateFreePeriod'
+    23:48:32.395 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3265/tutorial-groups
+    23:48:32.396 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3265
+    23:48:32.407 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1659 for tutorial group with id 227
+    23:48:32.410 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1659 to tutorial group with id 227
+    23:48:32.412 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1659 of the tutorial group with id 227
+    23:48:32.419 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 752 to the channel with id 1659 of the tutorial group with id 227
+    23:48:32.425 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 752 moderator role for the channel with id 1659 of the tutorial group with id 227
+    23:48:32.425 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 227 with channel id 1659
+    23:48:32.429 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3265/tutorial-groups-configuration/172/tutorial-free-periods
+    23:48:32.430 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to create TutorialGroupFreePeriod: TutorialGroupFreePeriodDTO[startDate=2022-08-01T23:59, endDate=2022-08-01T00:00, reason=Holiday] for tutorial group configuration: 172 of course: 3265
+    23:48:32.430 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The start date must be before the end date
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > create_overlapsWithSessionAlreadyCancelledDueToFreePeriod_shouldNotUpdateTutorialFreePeriod()
+    23:48:32.457 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:32.460 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:32.463 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:32.465 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:32.468 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:32.471 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:32.472 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:32.472 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:32.476 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:32.478 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#create_overlapsWithSessionAlreadyCancelledDueToFreePeriod_shouldNotUpdateTutorialFreePeriod'
+    23:48:32.484 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3266/tutorial-groups-configuration/173/tutorial-free-periods
+    23:48:32.485 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to create TutorialGroupFreePeriod: TutorialGroupFreePeriodDTO[startDate=2022-08-01T10:00, endDate=2022-08-01T11:00, reason=Holiday] for tutorial group configuration: 173 of course: 3266
+    23:48:32.494 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3266/tutorial-groups-configuration/173/tutorial-free-periods
+    23:48:32.495 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to create TutorialGroupFreePeriod: TutorialGroupFreePeriodDTO[startDate=2022-08-01T11:00, endDate=2022-08-01T13:00, reason=Holiday] for tutorial group configuration: 173 of course: 3266
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > create_noOverlapsWithExistingScheduledSessionOnSameDay_shouldNotCancelSession_PeriodWithinDay()
+    23:48:32.526 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:32.529 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:32.532 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:32.534 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:32.537 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:32.540 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:32.540 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:32.540 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:32.544 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:32.546 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#create_noOverlapsWithExistingScheduledSessionOnSameDay_shouldNotCancelSession_PeriodWithinDay'
+    23:48:32.548 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3267/tutorial-groups
+    23:48:32.549 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3267
+    23:48:32.563 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1660 for tutorial group with id 230
+    23:48:32.566 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1660 to tutorial group with id 230
+    23:48:32.568 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1660 of the tutorial group with id 230
+    23:48:32.573 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 752 to the channel with id 1660 of the tutorial group with id 230
+    23:48:32.579 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 752 moderator role for the channel with id 1660 of the tutorial group with id 230
+    23:48:32.579 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 230 with channel id 1660
+    23:48:32.584 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3267/tutorial-groups-configuration/174/tutorial-free-periods
+    23:48:32.585 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to create TutorialGroupFreePeriod: TutorialGroupFreePeriodDTO[startDate=2022-08-01T13:00, endDate=2022-08-01T18:00, reason=Holiday] for tutorial group configuration: 174 of course: 3267
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > create_overlapsWithExistingFreePeriod_shouldReturnBadRequest()
+    23:48:32.614 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:32.617 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:32.620 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:32.622 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:32.625 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:32.628 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:32.628 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:32.628 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:32.632 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:32.634 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#create_overlapsWithExistingFreePeriod_shouldReturnBadRequest'
+    23:48:32.637 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3268/tutorial-groups-configuration/175/tutorial-free-periods
+    23:48:32.638 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to create TutorialGroupFreePeriod: TutorialGroupFreePeriodDTO[startDate=2022-08-01T00:00, endDate=2022-08-01T23:59, reason=Holiday] for tutorial group configuration: 175 of course: 3268
+    23:48:32.641 |  52 Pool-1-worker-26 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The given tutorial group free period overlaps with another tutorial group free period with ID 14 in the same course.
+    23:48:32.641 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The given tutorial group free period overlaps with another tutorial group free period with ID 14 in the same course.
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > delete_asInstructor_shouldActivatePreviouslyCancelledSessionsOnThatDate()
+    23:48:32.665 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:32.668 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:32.670 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:32.673 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:32.676 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:32.681 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:32.682 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:32.682 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:32.691 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:32.697 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#delete_asInstructor_shouldActivatePreviouslyCancelledSessionsOnThatDate'
+    23:48:32.703 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3269/tutorial-groups-configuration/176/tutorial-free-periods
+    23:48:32.704 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to create TutorialGroupFreePeriod: TutorialGroupFreePeriodDTO[startDate=2022-08-01T00:00, endDate=2022-08-01T23:59, reason=Holiday] for tutorial group configuration: 176 of course: 3269
+    23:48:32.716 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/3269/tutorial-groups-configuration/176/tutorial-free-periods/15
+    23:48:32.720 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to delete TutorialGroupFreePeriod: 15 of tutorial group configuration 176 of course: 3269
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > getOneOfConfiguration_asInstructor_shouldReturnTutorialGroupFreePeriod()
+    23:48:32.762 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:32.766 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:32.768 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:32.771 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:32.774 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:32.776 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:32.777 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:32.777 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:32.780 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:32.783 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#getOneOfConfiguration_asInstructor_shouldReturnTutorialGroupFreePeriod'
+    23:48:32.785 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/3270/tutorial-groups-configuration/177/tutorial-free-periods/16
+    23:48:32.785 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to get tutorial group free period: 16 of tutorial group configuration 177 of course: 3270
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > create_overlapsWithExistingIndividualSession_shouldCancelSession()
+    23:48:32.810 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:32.813 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:32.816 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:32.818 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:32.821 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:32.824 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:32.824 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:32.824 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:32.828 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:32.830 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#create_overlapsWithExistingIndividualSession_shouldCancelSession'
+    23:48:32.833 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3271/tutorial-groups-configuration/178/tutorial-free-periods
+    23:48:32.834 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to create TutorialGroupFreePeriod: TutorialGroupFreePeriodDTO[startDate=2022-08-01T00:00, endDate=2022-08-01T23:59, reason=Holiday] for tutorial group configuration: 178 of course: 3271
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > delete_cancelledSessionStillOverlapsWithAnotherFreePeriod_shouldNotActivateSession()
+    23:48:32.864 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:32.867 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:32.870 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:32.872 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:32.875 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:32.878 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:32.878 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:32.878 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:32.882 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:32.884 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#delete_cancelledSessionStillOverlapsWithAnotherFreePeriod_shouldNotActivateSession'
+    23:48:32.887 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3272/tutorial-groups-configuration/179/tutorial-free-periods
+    23:48:32.888 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to create TutorialGroupFreePeriod: TutorialGroupFreePeriodDTO[startDate=2022-08-01T10:00, endDate=2022-08-01T11:00, reason=Holiday] for tutorial group configuration: 179 of course: 3272
+    23:48:32.895 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3272/tutorial-groups-configuration/179/tutorial-free-periods
+    23:48:32.896 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to create TutorialGroupFreePeriod: TutorialGroupFreePeriodDTO[startDate=2022-08-01T11:00, endDate=2022-08-01T13:00, reason=Holiday] for tutorial group configuration: 179 of course: 3272
+    23:48:32.902 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/3272/tutorial-groups-configuration/179/tutorial-free-periods/18
+    23:48:32.903 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to delete TutorialGroupFreePeriod: 18 of tutorial group configuration 179 of course: 3272
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > create_freePeriodStartTimeMatchesSessionEndTime_shouldNotCancelSession()
+    23:48:32.936 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:32.939 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:32.942 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:32.944 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:32.947 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:32.949 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:32.950 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:32.950 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:32.954 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:32.956 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#create_freePeriodStartTimeMatchesSessionEndTime_shouldNotCancelSession'
+    23:48:32.958 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3273/tutorial-groups
+    23:48:32.959 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3273
+    23:48:32.970 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1661 for tutorial group with id 237
+    23:48:32.973 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1661 to tutorial group with id 237
+    23:48:32.975 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1661 of the tutorial group with id 237
+    23:48:32.979 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 752 to the channel with id 1661 of the tutorial group with id 237
+    23:48:32.985 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 752 moderator role for the channel with id 1661 of the tutorial group with id 237
+    23:48:32.985 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 237 with channel id 1661
+    23:48:32.989 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3273/tutorial-groups-configuration/180/tutorial-free-periods
+    23:48:32.990 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to create TutorialGroupFreePeriod: TutorialGroupFreePeriodDTO[startDate=2022-08-01T12:00, endDate=2022-08-01T13:00, reason=Holiday] for tutorial group configuration: 180 of course: 3273
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > request_asStudent_shouldReturnForbidden()
+    23:48:33.019 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:33.022 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:33.025 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:33.027 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:33.030 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:33.038 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:33.039 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:33.039 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:33.044 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:33.046 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#request_asStudent_shouldReturnForbidden'
+    23:48:33.048 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/3274/tutorial-groups-configuration/181/tutorial-free-periods/21
+    23:48:33.049 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:48:33.051 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3274/tutorial-groups-configuration/181/tutorial-free-periods
+    23:48:33.052 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:48:33.053 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/3274/tutorial-groups-configuration/181/tutorial-free-periods/21
+    23:48:33.054 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:48:33.055 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/3274/tutorial-groups-configuration/181/tutorial-free-periods/21
+    23:48:33.055 |  52 Pool-1-worker-26 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for TutorialGroupFreePeriodIntegrationTest > create_freePeriodEndTimeMatchesSessionStartTime_shouldNotCancelSession()
+    23:48:33.081 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:48:33.087 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:48:33.095 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:48:33.098 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:48:33.101 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:48:33.104 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:48:33.104 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:48:33.104 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:48:33.108 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:48:33.111 |  52 Pool-1-worker-26 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorialGroupFreePeriodIntegrationTest#create_freePeriodEndTimeMatchesSessionStartTime_shouldNotCancelSession'
+    23:48:33.113 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3275/tutorial-groups
+    23:48:33.114 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.t.w.TutorialGroupResource  : REST request to create TutorialGroup: de.tum.cit.aet.artemis.tutorialgroup.domain.TutorialGroup@0 in course: 3275
+    23:48:33.125 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Created channel with id 1662 for tutorial group with id 240
+    23:48:33.128 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added channel with id 1662 to tutorial group with id 240
+    23:48:33.130 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added users with ids [] to the channel with id 1662 of the tutorial group with id 240
+    23:48:33.134 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Added teaching assistant with id 752 to the channel with id 1662 of the tutorial group with id 240
+    23:48:33.138 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Granted teaching assistant with id 752 moderator role for the channel with id 1662 of the tutorial group with id 240
+    23:48:33.138 |  52 Pool-1-worker-26 | DEBUG | utorialGroupChannelManagementService : Setup channel for tutorial group with id 240 with channel id 1662
+    23:48:33.142 |  52 Pool-1-worker-26 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/3275/tutorial-groups-configuration/182/tutorial-free-periods
+    23:48:33.143 |  52 Pool-1-worker-26 | DEBUG | .t.w.TutorialGroupFreePeriodResource : REST request to create TutorialGroupFreePeriod: TutorialGroupFreePeriodDTO[startDate=2022-08-01T08:00, endDate=2022-08-01T10:00, reason=Holiday] for tutorial group configuration: 182 of course: 3275
+
+Finished logs for TutorialGroupFreePeriodIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

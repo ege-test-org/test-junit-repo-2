@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.atlas.competency.StandardizedCompetencyIntegrationTest$StandardizedCompetencyResource$GetSources" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:13" hostname="fv-az1721-502" time="0.048">
+  <properties/>
+  <testcase name="shouldReturnSources()" classname="de.tum.cit.aet.artemis.atlas.competency.StandardizedCompetencyIntegrationTest$StandardizedCompetencyResource$GetSources" time="0.048"/>
+  <system-out><![CDATA[
+Starting logs for GetSources
+
+  Starting logs for GetSources > shouldReturnSources()
+    23:43:13.890 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:13.892 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:13.895 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:13.898 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:13.901 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:13.902 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:13.903 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:13.903 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:13.906 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:13.907 | 122 Pool-1-worker-37 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GetSources#shouldReturnSources'
+    23:43:13.909 | 122 Pool-1-worker-37 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/standardized-competencies/sources
+    23:43:13.913 | 122 Pool-1-worker-37 | DEBUG | a.a.w.StandardizedCompetencyResource : REST request to get all sources
+
+Finished logs for GetSources
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

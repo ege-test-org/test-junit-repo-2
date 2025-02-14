@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.service.EmailSummaryServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:16" hostname="fv-az1721-502" time="0.669">
+  <properties/>
+  <testcase name="testIfPrepareWeeklyEmailSummariesCorrectlySelectsExercisesAndCreatesEmail()" classname="de.tum.cit.aet.artemis.communication.service.EmailSummaryServiceTest" time="0.669"/>
+  <system-out><![CDATA[
+Starting logs for EmailSummaryServiceTest
+
+  Starting logs for EmailSummaryServiceTest > testIfPrepareWeeklyEmailSummariesCorrectlySelectsExercisesAndCreatesEmail()
+    23:44:16.911 | 175 Pool-1-worker-68 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:44:16.917 | 175 Pool-1-worker-68 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:44:16.919 | 175 Pool-1-worker-68 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:44:16.920 | 175 Pool-1-worker-68 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:44:16.927 | 175 Pool-1-worker-68 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:44:16.928 | 175 Pool-1-worker-68 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:44:16.932 | 175 Pool-1-worker-68 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:44:16.932 | 175 Pool-1-worker-68 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:44:16.933 | 175 Pool-1-worker-68 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:44:16.951 | 175 Pool-1-worker-68 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='EmailSummaryServiceTest#testIfPrepareWeeklyEmailSummariesCorrectlySelectsExercisesAndCreatesEmail'
+    23:44:17.088 | 175 Pool-1-worker-68 | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending weekly summary email to 'emailsummaryservicestudent2@test.de'
+    23:44:17.542 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='emailsummaryservicestudent2', firstName='emailsummaryservicestudent2First', lastName='emailsummaryservicestudent2Last', email='emailsummaryservicestudent2@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}' with subject 'Weekly Summary'
+    23:44:17.542 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'Weekly Summary' to User 'User{login='emailsummaryservicestudent2', firstName='emailsummaryservicestudent2First', lastName='emailsummaryservicestudent2Last', email='emailsummaryservicestudent2@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}'
+
+Finished logs for EmailSummaryServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

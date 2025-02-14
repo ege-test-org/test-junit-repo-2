@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lti.architecture.LtiResourceArchitectureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:01" hostname="fv-az1721-502" time="0.292">
+  <properties/>
+  <testcase name="testNoOverrideOfEnforceAdmin()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiResourceArchitectureTest" time="0.025"/>
+  <testcase name="testUseKebabCaseForRestEndpoints()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiResourceArchitectureTest" time="0.107"/>
+  <testcase name="allPublicMethodsShouldReturnResponseEntity()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiResourceArchitectureTest" time="0.053"/>
+  <testcase name="testClassWithEnforceAdminInCorrectlyNamed()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiResourceArchitectureTest" time="0.007"/>
+  <testcase name="shouldBeNamedResource()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiResourceArchitectureTest" time="0.004"/>
+  <testcase name="shouldBeInResourcePackage()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiResourceArchitectureTest" time="0.001"/>
+  <testcase name="shouldCorrectlyUseRequestMappingAnnotations()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiResourceArchitectureTest" time="0.086"/>
+  <system-out><![CDATA[
+Starting logs for LtiResourceArchitectureTest
+
+  Starting logs for LtiResourceArchitectureTest > testNoOverrideOfEnforceAdmin()
+
+  Starting logs for LtiResourceArchitectureTest > testUseKebabCaseForRestEndpoints()
+
+  Starting logs for LtiResourceArchitectureTest > allPublicMethodsShouldReturnResponseEntity()
+
+  Starting logs for LtiResourceArchitectureTest > testClassWithEnforceAdminInCorrectlyNamed()
+
+  Starting logs for LtiResourceArchitectureTest > shouldBeNamedResource()
+
+  Starting logs for LtiResourceArchitectureTest > shouldBeInResourcePackage()
+
+  Starting logs for LtiResourceArchitectureTest > shouldCorrectlyUseRequestMappingAnnotations()
+
+Finished logs for LtiResourceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

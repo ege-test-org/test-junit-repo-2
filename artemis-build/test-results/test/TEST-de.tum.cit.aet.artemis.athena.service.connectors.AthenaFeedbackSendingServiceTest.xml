@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.athena.service.connectors.AthenaFeedbackSendingServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:02" hostname="fv-az1721-502" time="4.385">
+  <properties/>
+  <testcase name="testEmptyFeedbackNotSending()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaFeedbackSendingServiceTest" time="3.442"/>
+  <testcase name="testSendFeedbackWithFeedbackSuggestionsDisabled()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaFeedbackSendingServiceTest" time="0.145"/>
+  <testcase name="testFeedbackSendingText()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaFeedbackSendingServiceTest" time="0.314"/>
+  <testcase name="testFeedbackSendingProgramming()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaFeedbackSendingServiceTest" time="0.228"/>
+  <testcase name="testFeedbackSendingTextWithGradingInstruction()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaFeedbackSendingServiceTest" time="0.246"/>
+  <system-out><![CDATA[
+Starting logs for AthenaFeedbackSendingServiceTest
+
+  Starting logs for AthenaFeedbackSendingServiceTest > testEmptyFeedbackNotSending()
+    23:42:02.755 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:02.765 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:42:02.766 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:42:02.779 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:42:02.787 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:42:02.789 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:42:02.800 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:42:02.800 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:42:02.810 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:42:02.913 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 113 and participant 8 (result to be deleted: null)
+    23:42:02.913 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 113 and participant 8 at 2025-02-14T23:42:03.013598627Z[Etc/UTC].
+    23:42:02.930 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 113 and participant 8 (result to be deleted: null)
+    23:42:02.931 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 113 and participant 8 at 2025-02-14T23:42:03.030974448Z[Etc/UTC].
+    23:42:02.989 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 114 and participant 9 (result to be deleted: null)
+    23:42:02.989 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 114 and participant 9 at 2025-02-14T23:42:03.089630528Z[Etc/UTC].
+    23:42:03.007 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 114 and participant 9 (result to be deleted: null)
+    23:42:03.007 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 114 and participant 9 at 2025-02-14T23:42:03.107440199Z[Etc/UTC].
+    23:42:03.028 | 112 Pool-1-worker-27 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaFeedbackSendingServiceTest#testEmptyFeedbackNotSending'
+    23:42:03.028 |  68 artemis-task-1   | DEBUG | a.a.a.s.AthenaFeedbackSendingService : Start Athena Feedback Sending Service for Exercise 'Title' (#113).
+    23:42:03.029 |  68 artemis-task-1   | DEBUG | a.a.a.s.AthenaFeedbackSendingService : No feedback given for submission #94.
+    23:42:03.029 |  68 artemis-task-1   | DEBUG | a.a.a.s.AthenaFeedbackSendingService : Start Athena Feedback Sending Service for Exercise 'Title' (#114).
+    23:42:03.029 |  68 artemis-task-1   | DEBUG | a.a.a.s.AthenaFeedbackSendingService : No feedback given for submission #95.
+    23:42:03.033 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 113 and participant 8 to update participant scores.
+    23:42:03.044 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 113 and participant 8 took 11 ms.
+    23:42:03.107 | 329 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 114 and participant 9 to update participant scores.
+    23:42:03.126 | 329 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 114 and participant 9 took 19 ms.
+
+  Starting logs for AthenaFeedbackSendingServiceTest > testSendFeedbackWithFeedbackSuggestionsDisabled()
+    23:42:06.183 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:06.194 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:42:06.195 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:42:06.197 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:42:06.198 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:42:06.201 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:42:06.202 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:42:06.202 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:42:06.208 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:42:06.241 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 115 and participant 8 (result to be deleted: null)
+    23:42:06.241 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 115 and participant 8 at 2025-02-14T23:42:06.341275703Z[Etc/UTC].
+    23:42:06.249 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 115 and participant 8 (result to be deleted: null)
+    23:42:06.249 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 115 and participant 8 at 2025-02-14T23:42:06.349403499Z[Etc/UTC].
+    23:42:06.284 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 116 and participant 9 (result to be deleted: null)
+    23:42:06.284 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 116 and participant 9 at 2025-02-14T23:42:06.384955047Z[Etc/UTC].
+    23:42:06.291 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 116 and participant 9 (result to be deleted: null)
+    23:42:06.291 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 116 and participant 9 at 2025-02-14T23:42:06.391224848Z[Etc/UTC].
+    23:42:06.292 | 112 Pool-1-worker-27 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaFeedbackSendingServiceTest#testSendFeedbackWithFeedbackSuggestionsDisabled'
+    23:42:06.294 |  68 artemis-task-1   | ERROR | .SimpleAsyncUncaughtExceptionHandler : Unexpected exception occurred invoking async method: public void de.tum.cit.aet.artemis.athena.service.AthenaFeedbackSendingService.sendFeedback(de.tum.cit.aet.artemis.exercise.domain.Exercise,de.tum.cit.aet.artemis.exercise.domain.Submission,java.util.List)
+java.lang.IllegalArgumentException: The exercise does not have feedback suggestions enabled.
+	at de.tum.cit.aet.artemis.athena.service.AthenaFeedbackSendingService.sendFeedback(AthenaFeedbackSendingService.java:84)
+	at de.tum.cit.aet.artemis.athena.service.AthenaFeedbackSendingService.sendFeedback(AthenaFeedbackSendingService.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114)
+	at tech.jhipster.async.ExceptionHandlingAsyncTaskExecutor.lambda$createCallable$0(ExceptionHandlingAsyncTaskExecutor.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+    23:42:06.298 |  68 artemis-task-1   | ERROR | .SimpleAsyncUncaughtExceptionHandler : Unexpected exception occurred invoking async method: public void de.tum.cit.aet.artemis.athena.service.AthenaFeedbackSendingService.sendFeedback(de.tum.cit.aet.artemis.exercise.domain.Exercise,de.tum.cit.aet.artemis.exercise.domain.Submission,java.util.List)
+java.lang.IllegalArgumentException: The exercise does not have feedback suggestions enabled.
+	at de.tum.cit.aet.artemis.athena.service.AthenaFeedbackSendingService.sendFeedback(AthenaFeedbackSendingService.java:84)
+	at de.tum.cit.aet.artemis.athena.service.AthenaFeedbackSendingService.sendFeedback(AthenaFeedbackSendingService.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.interceptor.AsyncExecutionInterceptor.lambda$invoke$0(AsyncExecutionInterceptor.java:114)
+	at tech.jhipster.async.ExceptionHandlingAsyncTaskExecutor.lambda$createCallable$0(ExceptionHandlingAsyncTaskExecutor.java:66)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+  Starting logs for AthenaFeedbackSendingServiceTest > testFeedbackSendingText()
+    23:42:06.323 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:06.328 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:42:06.330 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:42:06.331 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:42:06.332 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:42:06.334 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:42:06.335 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:42:06.335 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:42:06.340 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:42:06.358 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 117 and participant 8 (result to be deleted: null)
+    23:42:06.358 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 117 and participant 8 at 2025-02-14T23:42:06.458944361Z[Etc/UTC].
+    23:42:06.363 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 117 and participant 8 (result to be deleted: null)
+    23:42:06.363 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 117 and participant 8 at 2025-02-14T23:42:06.463818981Z[Etc/UTC].
+    23:42:06.380 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 118 and participant 9 (result to be deleted: null)
+    23:42:06.380 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 118 and participant 9 at 2025-02-14T23:42:06.480696722Z[Etc/UTC].
+    23:42:06.387 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 118 and participant 9 (result to be deleted: null)
+    23:42:06.387 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 118 and participant 9 at 2025-02-14T23:42:06.487292881Z[Etc/UTC].
+    23:42:06.388 | 112 Pool-1-worker-27 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaFeedbackSendingServiceTest#testFeedbackSendingText'
+    23:42:06.463 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 117 and participant 8 to update participant scores.
+    23:42:06.481 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 117 and participant 8 took 18 ms.
+    23:42:06.487 | 329 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 118 and participant 9 to update participant scores.
+    23:42:06.499 |  68 artemis-task-1   | DEBUG | a.a.a.s.AthenaFeedbackSendingService : Start Athena Feedback Sending Service for Exercise 'Title' (#117).
+    23:42:06.499 |  68 artemis-task-1   | INFO  | a.a.a.s.AthenaFeedbackSendingService : Calling Athena with given feedback.
+    23:42:06.504 | 329 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 118 and participant 9 took 17 ms.
+    23:42:06.505 |  68 artemis-task-1   | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Calling Athena.
+    23:42:06.538 |  68 artemis-task-1   | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Finished remote call in 33.28ms
+    23:42:06.538 |  68 artemis-task-1   | INFO  | a.a.a.s.AthenaFeedbackSendingService : Athena responded to feedback: null
+
+  Starting logs for AthenaFeedbackSendingServiceTest > testFeedbackSendingProgramming()
+    23:42:06.647 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:06.659 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:42:06.660 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:42:06.665 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:42:06.666 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:42:06.668 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:42:06.670 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:42:06.670 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:42:06.677 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:42:06.696 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 119 and participant 8 (result to be deleted: null)
+    23:42:06.696 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 119 and participant 8 at 2025-02-14T23:42:06.796508714Z[Etc/UTC].
+    23:42:06.701 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 119 and participant 8 (result to be deleted: null)
+    23:42:06.701 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 119 and participant 8 at 2025-02-14T23:42:06.801616686Z[Etc/UTC].
+    23:42:06.720 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 120 and participant 9 (result to be deleted: null)
+    23:42:06.720 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 120 and participant 9 at 2025-02-14T23:42:06.820652250Z[Etc/UTC].
+    23:42:06.726 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 120 and participant 9 (result to be deleted: null)
+    23:42:06.727 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 120 and participant 9 at 2025-02-14T23:42:06.826986742Z[Etc/UTC].
+    23:42:06.728 | 112 Pool-1-worker-27 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaFeedbackSendingServiceTest#testFeedbackSendingProgramming'
+    23:42:06.731 |  68 artemis-task-1   | DEBUG | a.a.a.s.AthenaFeedbackSendingService : Start Athena Feedback Sending Service for Exercise 'Title' (#120).
+    23:42:06.731 |  68 artemis-task-1   | INFO  | a.a.a.s.AthenaFeedbackSendingService : Calling Athena with given feedback.
+    23:42:06.733 |  68 artemis-task-1   | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Calling Athena.
+    23:42:06.736 |  68 artemis-task-1   | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Finished remote call in 3.66ms
+    23:42:06.736 |  68 artemis-task-1   | INFO  | a.a.a.s.AthenaFeedbackSendingService : Athena responded to feedback: null
+    23:42:06.801 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 119 and participant 8 to update participant scores.
+    23:42:06.812 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 119 and participant 8 took 11 ms.
+    23:42:06.827 | 326 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 120 and participant 9 to update participant scores.
+    23:42:06.838 | 326 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 120 and participant 9 took 11 ms.
+
+  Starting logs for AthenaFeedbackSendingServiceTest > testFeedbackSendingTextWithGradingInstruction()
+    23:42:06.869 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:06.879 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:42:06.880 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:42:06.882 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:42:06.883 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:42:06.885 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:42:06.886 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:42:06.886 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:42:06.891 | 112 Pool-1-worker-27 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:42:06.919 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 121 and participant 8 (result to be deleted: null)
+    23:42:06.919 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 121 and participant 8 at 2025-02-14T23:42:07.019695026Z[Etc/UTC].
+    23:42:06.932 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 121 and participant 8 (result to be deleted: null)
+    23:42:06.932 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 121 and participant 8 at 2025-02-14T23:42:07.032563314Z[Etc/UTC].
+    23:42:06.961 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 122 and participant 9 (result to be deleted: null)
+    23:42:06.961 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 122 and participant 9 at 2025-02-14T23:42:07.061792814Z[Etc/UTC].
+    23:42:06.974 | 112 Pool-1-worker-27 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 122 and participant 9 (result to be deleted: null)
+    23:42:06.974 | 112 Pool-1-worker-27 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 122 and participant 9 at 2025-02-14T23:42:07.074490130Z[Etc/UTC].
+    23:42:06.977 | 112 Pool-1-worker-27 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaFeedbackSendingServiceTest#testFeedbackSendingTextWithGradingInstruction'
+    23:42:06.993 |  68 artemis-task-1   | DEBUG | a.a.a.s.AthenaFeedbackSendingService : Start Athena Feedback Sending Service for Exercise 'Title' (#121).
+    23:42:06.993 |  68 artemis-task-1   | INFO  | a.a.a.s.AthenaFeedbackSendingService : Calling Athena with given feedback.
+    23:42:07.004 |  68 artemis-task-1   | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Calling Athena.
+    23:42:07.025 |  68 artemis-task-1   | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Finished remote call in 20.54ms
+    23:42:07.025 |  68 artemis-task-1   | INFO  | a.a.a.s.AthenaFeedbackSendingService : Athena responded to feedback: null
+    23:42:07.032 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 121 and participant 8 to update participant scores.
+    23:42:07.044 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 121 and participant 8 took 12 ms.
+    23:42:07.074 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 122 and participant 9 to update participant scores.
+    23:42:07.080 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 122 and participant 9 took 6 ms.
+
+Finished logs for AthenaFeedbackSendingServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

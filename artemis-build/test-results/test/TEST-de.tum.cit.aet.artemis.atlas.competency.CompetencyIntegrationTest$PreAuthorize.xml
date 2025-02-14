@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.atlas.competency.CompetencyIntegrationTest$PreAuthorize" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:59" hostname="fv-az1721-502" time="0.437">
+  <properties/>
+  <testcase name="shouldFailAsTutor()" classname="de.tum.cit.aet.artemis.atlas.competency.CompetencyIntegrationTest$PreAuthorize" time="0.124"/>
+  <testcase name="shouldFailAsStudent()" classname="de.tum.cit.aet.artemis.atlas.competency.CompetencyIntegrationTest$PreAuthorize" time="0.113"/>
+  <testcase name="shouldFailAsEditor()" classname="de.tum.cit.aet.artemis.atlas.competency.CompetencyIntegrationTest$PreAuthorize" time="0.192"/>
+  <system-out><![CDATA[
+Starting logs for PreAuthorize
+
+  Starting logs for PreAuthorize > shouldFailAsTutor()
+    23:42:59.395 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:59.403 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:42:59.409 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:42:59.414 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:42:59.417 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:59.418 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:59.419 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:59.419 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:59.425 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:59.457 | 118 Pool-1-worker-33 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PreAuthorize#shouldFailAsTutor'
+    23:42:59.459 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/577/competencies
+    23:42:59.461 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.462 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/577/competencies
+    23:42:59.464 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.465 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/577/competencies/74
+    23:42:59.466 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.468 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/577/competencies/bulk
+    23:42:59.470 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.471 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/577/competencies/import-all
+    23:42:59.472 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.474 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/577/competencies/import
+    23:42:59.478 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.480 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/577/competencies/import/bulk
+    23:42:59.484 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.486 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/577/competencies/import-standardized
+    23:42:59.490 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for PreAuthorize > shouldFailAsStudent()
+    23:42:59.522 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:59.527 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:42:59.530 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:42:59.533 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:42:59.535 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:59.537 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:59.538 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:59.538 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:59.543 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:59.575 | 118 Pool-1-worker-33 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PreAuthorize#shouldFailAsStudent'
+    23:42:59.576 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/579/competencies
+    23:42:59.578 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.579 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/579/competencies
+    23:42:59.580 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.582 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/579/competencies/75
+    23:42:59.583 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.584 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/579/competencies/bulk
+    23:42:59.585 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.586 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/579/competencies/import-all
+    23:42:59.587 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.590 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/579/competencies/import
+    23:42:59.594 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.596 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/579/competencies/import/bulk
+    23:42:59.599 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.601 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/579/competencies/import-standardized
+    23:42:59.605 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for PreAuthorize > shouldFailAsEditor()
+    23:42:59.642 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:59.651 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:42:59.656 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:42:59.663 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:42:59.669 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:59.671 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:59.672 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:59.672 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:59.686 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:59.793 | 118 Pool-1-worker-33 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PreAuthorize#shouldFailAsEditor'
+    23:42:59.796 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/581/competencies
+    23:42:59.799 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.801 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/581/competencies
+    23:42:59.802 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.803 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/581/competencies/76
+    23:42:59.804 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.805 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/581/competencies/bulk
+    23:42:59.807 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.808 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/581/competencies/import-all
+    23:42:59.809 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:59.810 | 118 Pool-1-worker-33 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/581/competencies/import
+    23:42:59.811 | 118 Pool-1-worker-33 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+Finished logs for PreAuthorize
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

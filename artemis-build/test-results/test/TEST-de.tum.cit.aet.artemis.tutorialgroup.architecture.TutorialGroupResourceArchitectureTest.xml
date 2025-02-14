@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupResourceArchitectureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:33" hostname="fv-az1721-502" time="0.329">
+  <properties/>
+  <testcase name="testNoOverrideOfEnforceAdmin()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupResourceArchitectureTest" time="0.03"/>
+  <testcase name="testUseKebabCaseForRestEndpoints()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupResourceArchitectureTest" time="0.159"/>
+  <testcase name="allPublicMethodsShouldReturnResponseEntity()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupResourceArchitectureTest" time="0.055"/>
+  <testcase name="testClassWithEnforceAdminInCorrectlyNamed()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupResourceArchitectureTest" time="0.006"/>
+  <testcase name="shouldBeNamedResource()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupResourceArchitectureTest" time="0.004"/>
+  <testcase name="shouldBeInResourcePackage()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupResourceArchitectureTest" time="0.004"/>
+  <testcase name="shouldCorrectlyUseRequestMappingAnnotations()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupResourceArchitectureTest" time="0.067"/>
+  <system-out><![CDATA[
+Starting logs for TutorialGroupResourceArchitectureTest
+
+  Starting logs for TutorialGroupResourceArchitectureTest > testNoOverrideOfEnforceAdmin()
+
+  Starting logs for TutorialGroupResourceArchitectureTest > testUseKebabCaseForRestEndpoints()
+
+  Starting logs for TutorialGroupResourceArchitectureTest > allPublicMethodsShouldReturnResponseEntity()
+
+  Starting logs for TutorialGroupResourceArchitectureTest > testClassWithEnforceAdminInCorrectlyNamed()
+
+  Starting logs for TutorialGroupResourceArchitectureTest > shouldBeNamedResource()
+
+  Starting logs for TutorialGroupResourceArchitectureTest > shouldBeInResourcePackage()
+
+  Starting logs for TutorialGroupResourceArchitectureTest > shouldCorrectlyUseRequestMappingAnnotations()
+
+Finished logs for TutorialGroupResourceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

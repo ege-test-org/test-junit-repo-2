@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.management.ManagementResourceIntegrationTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:32" hostname="fv-az1721-502" time="0.537">
+  <properties/>
+  <testcase name="getAllAuditEventsByDate()" classname="de.tum.cit.aet.artemis.core.management.ManagementResourceIntegrationTest" time="0.097"/>
+  <testcase name="getAllAuditEvents()" classname="de.tum.cit.aet.artemis.core.management.ManagementResourceIntegrationTest" time="0.092"/>
+  <testcase name="toggleFeatures()" classname="de.tum.cit.aet.artemis.core.management.ManagementResourceIntegrationTest" time="0.26"/>
+  <testcase name="getAuditEvent()" classname="de.tum.cit.aet.artemis.core.management.ManagementResourceIntegrationTest" time="0.075"/>
+  <system-out><![CDATA[
+Starting logs for ManagementResourceIntegrationTest
+
+  Starting logs for ManagementResourceIntegrationTest > getAllAuditEventsByDate()
+    23:43:32.135 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:32.137 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:43:32.144 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:32.146 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:32.150 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:32.151 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:32.155 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:32.155 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:43:32.156 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:43:32.162 | 337 ool-1-worker-101 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ManagementResourceIntegrationTest#getAllAuditEventsByDate'
+    23:43:32.167 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/audits
+
+  Starting logs for ManagementResourceIntegrationTest > getAllAuditEvents()
+    23:43:32.239 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:32.246 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:43:32.249 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:32.251 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:32.255 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:32.257 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:43:32.257 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:43:32.257 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:43:32.266 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:43:32.268 | 337 ool-1-worker-101 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ManagementResourceIntegrationTest#getAllAuditEvents'
+    23:43:32.271 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/audits
+
+  Starting logs for ManagementResourceIntegrationTest > toggleFeatures()
+    23:43:32.332 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:32.335 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:43:32.337 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:32.338 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:32.340 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:32.341 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:43:32.341 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:43:32.341 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:43:32.343 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:43:32.345 | 337 ool-1-worker-101 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ManagementResourceIntegrationTest#toggleFeatures'
+    23:43:32.368 | 337 ool-1-worker-101 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:32.374 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/exercises/317/resume-programming-participation/518
+    23:43:32.385 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.e.w.ParticipationResource  : REST request to resume Exercise : 317
+    23:43:32.419 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/participations/518/cleanup-build-plan
+    23:43:32.425 | 337 ool-1-worker-101 | INFO  | d.t.c.a.a.e.w.ParticipationResource  : Clean up participation with build plan SHORT8931FB4A0B06F04E3E0833706A5C53DD3D01TSTEXC-ADMIN by admin
+    23:43:32.432 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/programming-submissions/518/trigger-failed-build
+    23:43:32.458 | 337 ool-1-worker-101 | INFO  | .t.c.a.a.p.s.l.LocalCITriggerService : Triggering build for participation 518 and commit hash null
+    23:43:32.458 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORT8931FB4A0B06F04E3E0833706A5C53DD3D01TSTEXC/short8931fb4a0b06f04e3e0833706a5c53dd3d01tstexc-admin.git
+    23:43:32.459 | 337 ool-1-worker-101 | ERROR | .c.a.a.p.s.ProgrammingTriggerService : Trigger build failed for SHORT8931FB4A0B06F04E3E0833706A5C53DD3D01TSTEXC-ADMIN with the exception Could not retrieve the last commit hash for repoUri http://localhost:49152/git/SHORT8931FB4A0B06F04E3E0833706A5C53DD3D01TSTEXC/short8931fb4a0b06f04e3e0833706a5c53dd3d01tstexc-admin.git due to the following exception: org.eclipse.jgit.api.errors.TransportException: file:///tmp/SHORT8931FB4A0B06F04E3E0833706A5C53DD3D01TSTEXC/short8931fb4a0b06f04e3e0833706a5c53dd3d01tstexc-admin.git: not found.
+    23:43:32.463 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/programming-exercises/318
+    23:43:32.468 | 337 ool-1-worker-101 | INFO  | .a.a.p.w.ProgrammingExerciseResource : REST request to delete ProgrammingExercise : 318
+    23:43:32.472 | 337 ool-1-worker-101 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User admin has requested to delete ProgrammingExercise 9679ca04-72bf-408c-b471-692d0593eb62 with id 318
+    23:43:32.473 | 337 ool-1-worker-101 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Request to delete ProgrammingExercise with id 318
+    23:43:32.474 | 337 ool-1-worker-101 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Deleting the channel took 338µs
+    23:43:32.476 | 337 ool-1-worker-101 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 318
+    23:43:32.479 | 337 ool-1-worker-101 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for programming exercise 318
+    23:43:32.479 | 337 ool-1-worker-101 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for potential Athena exercise 318
+    23:43:32.483 | 337 ool-1-worker-101 | DEBUG | c.a.a.p.s.ProgrammingExerciseService : Delete programming exercises with student participations: []
+    23:43:32.490 | 337 ool-1-worker-101 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '318' from title cache 'exerciseTitle'
+    23:43:32.493 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/admin/feature-toggle
+    23:43:32.527 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/exercises/317/resume-programming-participation/518
+    23:43:32.529 | 337 ool-1-worker-101 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access this resource
+    23:43:32.534 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/participations/518/cleanup-build-plan
+    23:43:32.535 | 337 ool-1-worker-101 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access this resource
+    23:43:32.538 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/programming-submissions/518/trigger-failed-build
+    23:43:32.539 | 337 ool-1-worker-101 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access this resource
+    23:43:32.549 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/programming-exercises/319
+    23:43:32.552 | 337 ool-1-worker-101 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access this resource
+
+  Starting logs for ManagementResourceIntegrationTest > getAuditEvent()
+    23:43:32.601 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:32.605 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:43:32.612 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:32.613 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:32.614 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:32.619 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:43:32.619 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:43:32.619 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:43:32.621 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:43:32.623 | 337 ool-1-worker-101 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ManagementResourceIntegrationTest#getAuditEvent'
+    23:43:32.625 | 337 ool-1-worker-101 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/audits/17
+
+Finished logs for ManagementResourceIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

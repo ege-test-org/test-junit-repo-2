@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.config.TopicSubscriptionInterceptorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:28" hostname="fv-az1721-502" time="1.378">
+  <properties/>
+  <testcase name="testAllowSubscription()" classname="de.tum.cit.aet.artemis.core.config.TopicSubscriptionInterceptorTest" time="1.378"/>
+  <system-out><![CDATA[
+Starting logs for TopicSubscriptionInterceptorTest
+
+  Starting logs for TopicSubscriptionInterceptorTest > testAllowSubscription()
+    23:45:28.243 | 335 Pool-1-worker-99 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TopicSubscriptionInterceptorTest#testAllowSubscription'
+    23:45:28.243 | 335 Pool-1-worker-99 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:45:28.248 | 335 Pool-1-worker-99 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:45:28.251 | 335 Pool-1-worker-99 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 1 editors...
+    23:45:28.253 | 335 Pool-1-worker-99 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:45:28.261 | 335 Pool-1-worker-99 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:45:28.269 | 335 Pool-1-worker-99 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:45:28.270 | 335 Pool-1-worker-99 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:45:28.270 | 335 Pool-1-worker-99 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:45:28.278 | 335 Pool-1-worker-99 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:45:28.305 | 335 Pool-1-worker-99 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1776 and participant 313 (result to be deleted: null)
+    23:45:28.305 | 335 Pool-1-worker-99 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1776 and participant 313 at 2025-02-14T23:45:28.405373636Z[Etc/UTC].
+    23:45:28.305 | 335 Pool-1-worker-99 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1777 and participant 313 (result to be deleted: null)
+    23:45:28.305 | 335 Pool-1-worker-99 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1777 and participant 313 at 2025-02-14T23:45:28.405980438Z[Etc/UTC].
+    23:45:28.311 | 335 Pool-1-worker-99 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1778 and participant 313 (result to be deleted: null)
+    23:45:28.311 | 335 Pool-1-worker-99 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1778 and participant 313 at 2025-02-14T23:45:28.411496707Z[Etc/UTC].
+    23:45:28.311 | 335 Pool-1-worker-99 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1780 and participant 313 (result to be deleted: null)
+    23:45:28.312 | 335 Pool-1-worker-99 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1780 and participant 313 at 2025-02-14T23:45:28.412028559Z[Etc/UTC].
+    23:45:28.312 | 335 Pool-1-worker-99 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1779 and participant 313 (result to be deleted: null)
+    23:45:28.312 | 335 Pool-1-worker-99 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1779 and participant 313 at 2025-02-14T23:45:28.412551124Z[Etc/UTC].
+    23:45:28.405 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1776 and participant 313 to update participant scores.
+    23:45:28.406 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1777 and participant 313 to update participant scores.
+    23:45:28.412 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1778 and participant 313 to update participant scores.
+    23:45:28.412 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1780 and participant 313 to update participant scores.
+    23:45:28.420 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1776 and participant 313 took 15 ms.
+    23:45:28.420 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1779 and participant 313 to update participant scores.
+    23:45:28.428 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1777 and participant 313 took 22 ms.
+    23:45:28.432 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1779 and participant 313 took 12 ms.
+    23:45:28.433 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1780 and participant 313 took 21 ms.
+    23:45:28.433 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1778 and participant 313 took 21 ms.
+    23:45:28.435 | 335 Pool-1-worker-99 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1776 and participant 313 (result to be deleted: null)
+    23:45:28.435 | 335 Pool-1-worker-99 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1776 and participant 313 at 2025-02-14T23:45:28.535091833Z[Etc/UTC].
+    23:45:28.458 | 335 Pool-1-worker-99 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1777 and participant 313 (result to be deleted: null)
+    23:45:28.458 | 335 Pool-1-worker-99 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1777 and participant 313 at 2025-02-14T23:45:28.558166523Z[Etc/UTC].
+    23:45:28.480 | 335 Pool-1-worker-99 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1778 and participant 313 (result to be deleted: null)
+    23:45:28.480 | 335 Pool-1-worker-99 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1778 and participant 313 at 2025-02-14T23:45:28.580408159Z[Etc/UTC].
+    23:45:28.503 | 335 Pool-1-worker-99 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1780 and participant 313 (result to be deleted: null)
+    23:45:28.503 | 335 Pool-1-worker-99 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1780 and participant 313 at 2025-02-14T23:45:28.603773261Z[Etc/UTC].
+    23:45:28.515 | 335 Pool-1-worker-99 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1779 and participant 313 (result to be deleted: null)
+    23:45:28.515 | 335 Pool-1-worker-99 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1779 and participant 313 at 2025-02-14T23:45:28.615914858Z[Etc/UTC].
+    23:45:28.535 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1776 and participant 313 to update participant scores.
+    23:45:28.548 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1776 and participant 313 took 13 ms.
+    23:45:28.558 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1777 and participant 313 to update participant scores.
+    23:45:28.577 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1777 and participant 313 took 19 ms.
+    23:45:28.581 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1778 and participant 313 to update participant scores.
+    23:45:28.599 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1778 and participant 313 took 18 ms.
+    23:45:28.607 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1780 and participant 313 to update participant scores.
+    23:45:28.616 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1779 and participant 313 to update participant scores.
+    23:45:28.631 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1780 and participant 313 took 24 ms.
+    23:45:28.635 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1779 and participant 313 took 19 ms.
+    23:45:29.565 | 335 Pool-1-worker-99 | DEBUG | t.c.a.a.c.c.w.WebsocketConfiguration : topicsubscriptioninterceptorstudent1 wants to subscribe to /topic/participations/1128/team
+    23:45:29.572 | 335 Pool-1-worker-99 | DEBUG | t.c.a.a.c.c.w.WebsocketConfiguration : topicsubscriptioninterceptorstudent2 wants to subscribe to /topic/participations/1128/team
+    23:45:29.576 | 335 Pool-1-worker-99 | WARN  | t.c.a.a.c.c.w.WebsocketConfiguration : User with login 'topicsubscriptioninterceptorstudent2' tried to access the protected topic: /topic/participations/1128/team
+    23:45:29.576 | 335 Pool-1-worker-99 | DEBUG | t.c.a.a.c.c.w.WebsocketConfiguration : topicsubscriptioninterceptorinstructor1 wants to subscribe to /topic/exercise/1776/newResults
+    23:45:29.582 | 335 Pool-1-worker-99 | DEBUG | t.c.a.a.c.c.w.WebsocketConfiguration : topicsubscriptioninterceptoreditor1 wants to subscribe to /topic/exercise/1776/newResults
+    23:45:29.583 | 335 Pool-1-worker-99 | DEBUG | t.c.a.a.c.c.w.WebsocketConfiguration : topicsubscriptioninterceptorstudent1 wants to subscribe to /topic/exercise/1776/newResults
+    23:45:29.584 | 335 Pool-1-worker-99 | WARN  | t.c.a.a.c.c.w.WebsocketConfiguration : User with login 'topicsubscriptioninterceptorstudent1' tried to access the protected topic: /topic/exercise/1776/newResults
+    23:45:29.584 | 335 Pool-1-worker-99 | DEBUG | t.c.a.a.c.c.w.WebsocketConfiguration : topicsubscriptioninterceptorinstructor1 wants to subscribe to /topic/exercise/1781/newResults
+    23:45:29.588 | 335 Pool-1-worker-99 | DEBUG | t.c.a.a.c.c.w.WebsocketConfiguration : topicsubscriptioninterceptoreditor1 wants to subscribe to /topic/exercise/1781/newResults
+    23:45:29.589 | 335 Pool-1-worker-99 | WARN  | t.c.a.a.c.c.w.WebsocketConfiguration : User with login 'topicsubscriptioninterceptoreditor1' tried to access the protected topic: /topic/exercise/1781/newResults
+    23:45:29.589 | 335 Pool-1-worker-99 | DEBUG | t.c.a.a.c.c.w.WebsocketConfiguration : topicsubscriptioninterceptorstudent1 wants to subscribe to /topic/exercise/1781/newResults
+    23:45:29.590 | 335 Pool-1-worker-99 | WARN  | t.c.a.a.c.c.w.WebsocketConfiguration : User with login 'topicsubscriptioninterceptorstudent1' tried to access the protected topic: /topic/exercise/1781/newResults
+    23:45:29.590 | 335 Pool-1-worker-99 | DEBUG | t.c.a.a.c.c.w.WebsocketConfiguration : topicsubscriptioninterceptorinstructor1 wants to subscribe to /topic/exams/175/test
+    23:45:29.595 | 335 Pool-1-worker-99 | DEBUG | t.c.a.a.c.c.w.WebsocketConfiguration : topicsubscriptioninterceptoreditor1 wants to subscribe to /topic/exams/175/test
+    23:45:29.595 | 335 Pool-1-worker-99 | WARN  | t.c.a.a.c.c.w.WebsocketConfiguration : User with login 'topicsubscriptioninterceptoreditor1' tried to access the protected topic: /topic/exams/175/test
+    23:45:29.596 | 335 Pool-1-worker-99 | DEBUG | t.c.a.a.c.c.w.WebsocketConfiguration : topicsubscriptioninterceptorstudent1 wants to subscribe to /topic/exams/175/test
+    23:45:29.596 | 335 Pool-1-worker-99 | WARN  | t.c.a.a.c.c.w.WebsocketConfiguration : User with login 'topicsubscriptioninterceptorstudent1' tried to access the protected topic: /topic/exams/175/test
+
+Finished logs for TopicSubscriptionInterceptorTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

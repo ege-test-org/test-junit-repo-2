@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.migration.MigrationIntegrityTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:32" hostname="fv-az1721-502" time="0.022">
+  <properties/>
+  <testcase name="testIntegrity()" classname="de.tum.cit.aet.artemis.core.migration.MigrationIntegrityTest" time="0.022"/>
+  <system-out><![CDATA[
+Starting logs for MigrationIntegrityTest
+
+  Starting logs for MigrationIntegrityTest > testIntegrity()
+    23:45:32.973 | 338 ool-1-worker-102 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='MigrationIntegrityTest#testIntegrity'
+    23:45:32.974 | 338 ool-1-worker-102 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Starting migration integrity check
+    23:45:32.981 | 338 ool-1-worker-102 | DEBUG | d.t.c.a.a.c.c.m.MigrationService     : Ending migration integrity check.
+
+Finished logs for MigrationIntegrityTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

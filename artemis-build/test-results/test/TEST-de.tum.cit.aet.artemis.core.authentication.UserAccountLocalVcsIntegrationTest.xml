@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.authentication.UserAccountLocalVcsIntegrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:40" hostname="fv-az1721-502" time="0.409">
+  <properties/>
+  <testcase name="getAndCreateParticipationVcsAccessTokenByUser()" classname="de.tum.cit.aet.artemis.core.authentication.UserAccountLocalVcsIntegrationTest" time="0.22"/>
+  <testcase name="getParticipationVcsAccessTokenByUserForTeamExercise()" classname="de.tum.cit.aet.artemis.core.authentication.UserAccountLocalVcsIntegrationTest" time="0.088"/>
+  <testcase name="createAndDeleteUserVcsAccessTokenByUser()" classname="de.tum.cit.aet.artemis.core.authentication.UserAccountLocalVcsIntegrationTest" time="0.098"/>
+  <system-out><![CDATA[
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

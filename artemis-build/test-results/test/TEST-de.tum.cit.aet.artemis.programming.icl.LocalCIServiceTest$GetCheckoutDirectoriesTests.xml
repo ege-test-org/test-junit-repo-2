@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.icl.LocalCIServiceTest$GetCheckoutDirectoriesTests" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:07" hostname="fv-az1721-502" time="0.068">
+  <properties/>
+  <testcase name="getCheckoutDirectoriesForOcamlWithoutCheckingOutSolution()" classname="de.tum.cit.aet.artemis.programming.icl.LocalCIServiceTest$GetCheckoutDirectoriesTests" time="0.027"/>
+  <testcase name="getCheckoutDirectoriesForOcaml()" classname="de.tum.cit.aet.artemis.programming.icl.LocalCIServiceTest$GetCheckoutDirectoriesTests" time="0.017"/>
+  <testcase name="getCheckoutDirectoriesForJava()" classname="de.tum.cit.aet.artemis.programming.icl.LocalCIServiceTest$GetCheckoutDirectoriesTests" time="0.016"/>
+  <system-out><![CDATA[
+Starting logs for GetCheckoutDirectoriesTests
+
+  Starting logs for GetCheckoutDirectoriesTests > getCheckoutDirectoriesForOcamlWithoutCheckingOutSolution()
+    23:45:07.172 | 475 ool-1-worker-239 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='GetCheckoutDirectoriesTests#getCheckoutDirectoriesForOcamlWithoutCheckingOutSolution'
+
+  Starting logs for GetCheckoutDirectoriesTests > getCheckoutDirectoriesForOcaml()
+    23:45:07.206 | 475 ool-1-worker-239 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='GetCheckoutDirectoriesTests#getCheckoutDirectoriesForOcaml'
+
+  Starting logs for GetCheckoutDirectoriesTests > getCheckoutDirectoriesForJava()
+    23:45:07.224 | 475 ool-1-worker-239 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='GetCheckoutDirectoriesTests#getCheckoutDirectoriesForJava'
+
+Finished logs for GetCheckoutDirectoriesTests
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

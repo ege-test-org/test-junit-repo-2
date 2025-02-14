@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.architecture.CommunicationServiceArchitectureTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:26" hostname="fv-az1721-502" time="1.249">
+  <properties/>
+  <testcase name="testCorrectAsyncCalls()" classname="de.tum.cit.aet.artemis.communication.architecture.CommunicationServiceArchitectureTest" time="0.142"/>
+  <testcase name="shouldBeNamedService()" classname="de.tum.cit.aet.artemis.communication.architecture.CommunicationServiceArchitectureTest" time="0.023"/>
+  <testcase name="testCorrectServiceAnnotation()" classname="de.tum.cit.aet.artemis.communication.architecture.CommunicationServiceArchitectureTest" time="0.108"/>
+  <testcase name="shouldBeInServicePackage()" classname="de.tum.cit.aet.artemis.communication.architecture.CommunicationServiceArchitectureTest" time="0.028"/>
+  <testcase name="testNoWrongServiceImports()" classname="de.tum.cit.aet.artemis.communication.architecture.CommunicationServiceArchitectureTest" time="0.945"/>
+  <system-out><![CDATA[
+Starting logs for CommunicationServiceArchitectureTest
+
+  Starting logs for CommunicationServiceArchitectureTest > testCorrectAsyncCalls()
+
+  Starting logs for CommunicationServiceArchitectureTest > shouldBeNamedService()
+
+  Starting logs for CommunicationServiceArchitectureTest > testCorrectServiceAnnotation()
+
+  Starting logs for CommunicationServiceArchitectureTest > shouldBeInServicePackage()
+
+  Starting logs for CommunicationServiceArchitectureTest > testNoWrongServiceImports()
+
+Finished logs for CommunicationServiceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadCodeStyleArchitectureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:57" hostname="fv-az1721-502" time="0.004">
+  <properties/>
+  <testcase name="testDTOImplementations()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadCodeStyleArchitectureTest" time="0.004"/>
+  <system-out><![CDATA[
+Starting logs for FileUploadCodeStyleArchitectureTest
+
+  Starting logs for FileUploadCodeStyleArchitectureTest > testDTOImplementations()
+    23:39:57.341 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTO classes: 0
+    23:39:57.341 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTO classes: []
+    23:39:57.343 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTOs that do not end with "DTO": 0
+    23:39:57.343 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTOs that do not end with "DTO": []
+
+Finished logs for FileUploadCodeStyleArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

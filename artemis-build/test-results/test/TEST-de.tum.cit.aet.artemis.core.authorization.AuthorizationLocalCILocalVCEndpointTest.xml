@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.authorization.AuthorizationLocalCILocalVCEndpointTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:31" hostname="fv-az1721-502" time="0.042">
+  <properties/>
+  <testcase name="testEndpoints()" classname="de.tum.cit.aet.artemis.core.authorization.AuthorizationLocalCILocalVCEndpointTest" time="0.042"/>
+  <system-out><![CDATA[
+Starting logs for AuthorizationLocalCILocalVCEndpointTest
+
+  Starting logs for AuthorizationLocalCILocalVCEndpointTest > testEndpoints()
+    23:43:31.923 | 332 Pool-1-worker-96 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='AuthorizationLocalCILocalVCEndpointTest#testEndpoints'
+
+Finished logs for AuthorizationLocalCILocalVCEndpointTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

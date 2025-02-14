@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" tests="28" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:49:36" hostname="fv-az1721-502" time="2.777">
+  <properties/>
+  <testcase name="testQuizSubmit_partial_points()" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.105"/>
+  <testcase name="testQuizSubmitPreview(QuizMode) [1] quizMode=SYNCHRONIZED" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.234"/>
+  <testcase name="testQuizSubmitPreview(QuizMode) [2] quizMode=BATCHED" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.195"/>
+  <testcase name="testQuizSubmitPreview(QuizMode) [3] quizMode=INDIVIDUAL" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.157"/>
+  <testcase name="testQuizSubmitPractice_badRequest_noQuiz()" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.028"/>
+  <testcase name="testQuizScoringTypes()" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.084"/>
+  <testcase name="testQuizSubmitPreview_badRequest_submissionId()" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.03"/>
+  <testcase name="testQuizSubmitLiveMode_forbidden_notActive(QuizMode) [1] quizMode=SYNCHRONIZED" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.04"/>
+  <testcase name="testQuizSubmitLiveMode_forbidden_notActive(QuizMode) [2] quizMode=BATCHED" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.04"/>
+  <testcase name="testQuizSubmitLiveMode_forbidden_notActive(QuizMode) [3] quizMode=INDIVIDUAL" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.038"/>
+  <testcase name="submitExercise_shortAnswer_tooLarge(boolean) [1] tooLarge=true" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.053"/>
+  <testcase name="submitExercise_shortAnswer_tooLarge(boolean) [2] tooLarge=false" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.057"/>
+  <testcase name="testQuizScoringType(ScoringType) [1] scoringType=ALL_OR_NOTHING" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.085"/>
+  <testcase name="testQuizScoringType(ScoringType) [2] scoringType=PROPORTIONAL_WITH_PENALTY" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.088"/>
+  <testcase name="testQuizScoringType(ScoringType) [3] scoringType=PROPORTIONAL_WITHOUT_PENALTY" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.078"/>
+  <testcase name="testQuizSubmitPractice_badRequest()" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.048"/>
+  <testcase name="testQuizSubmitEmptyQuizInLiveMode()" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.037"/>
+  <testcase name="testQuizSubmitPractice(QuizMode) [1] quizMode=SYNCHRONIZED" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.264"/>
+  <testcase name="testQuizSubmitPractice(QuizMode) [2] quizMode=BATCHED" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.263"/>
+  <testcase name="testQuizSubmitPractice(QuizMode) [3] quizMode=INDIVIDUAL" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.275"/>
+  <testcase name="testQuizSubmitPractice_forbidden()" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.047"/>
+  <testcase name="testQuizSubmitPractice_accessForbidden_exam()" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.045"/>
+  <testcase name="testQuizSubmit_CalculateScore()" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.148"/>
+  <testcase name="testQuizSubmitPreview_forbidden()" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.039"/>
+  <testcase name="testQuizSubmitPractice_badRequest_submissionId()" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.031"/>
+  <testcase name="testQuizSubmitPreview_badRequest_noQuiz()" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.028"/>
+  <testcase name="testQuizSubmitPreview_forbidden_otherTa()" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.041"/>
+  <testcase name="testQuizSubmitScheduledAndDeleted()" classname="de.tum.cit.aet.artemis.quiz.QuizSubmissionIntegrationTest" time="0.159"/>
+  <system-out><![CDATA[    23:46:16.108 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:46:22.628 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:46:22.963 | 600 taskScheduler-1  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:46:26.108 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:46:32.630 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:46:32.963 | 600 taskScheduler-1  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:46:34.559 | 570 vc.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5703 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=1.5G, swap.space.total=0, swap.space.free=0, heap.memory.used=3.0G, heap.memory.free=417.6M, heap.memory.total=3.4G, heap.memory.max=6.0G, heap.memory.used/total=87.96%, heap.memory.used/max=49.82%, minor.gc.count=199, minor.gc.time=9489ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=84, unknown.gc.time=1694ms, load.process=0.00%, load.system=96.22%, load.systemAverage=7.27, thread.count=498, thread.peakCount=517, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=22858, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=216, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+    23:46:36.108 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:46:37.881 | 395 ool-1-worker-159 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from https://version-control.fake.fake/git/SHORTCF0872D304C8504B1A0A12B06649F1295F05TSTEXC/shortcf0872d304c8504b1a0a12b06649f1295f05tstexc-progexjenkgitlabstudent1.git to /tmp/jplag-repos18200874422898673949/SHORTCF0872D304C8504B1A0A12B06649F1295F05TSTEXC/3217-progexjenkgitlabstudent1
+    23:46:37.886 | 395 ool-1-worker-159 | ERROR | d.t.c.a.a.p.service.GitService       : Could not delete directory after failed clone: /tmp/jplag-repos18200874422898673949/SHORTCF0872D304C8504B1A0A12B06649F1295F05TSTEXC/3217-progexjenkgitlabstudent1
+    23:46:37.886 | 395 ool-1-worker-159 | ERROR | rogrammingPlagiarismDetectionService : Clone student repository https://version-control.fake.fake/git/SHORTCF0872D304C8504B1A0A12B06649F1295F05TSTEXC/shortcf0872d304c8504b1a0a12b06649f1295f05tstexc-progexjenkgitlabstudent1.git in exercise 'Programming' did not work as expected: org.eclipse.jgit.api.errors.TransportException: https://version-control.fake.fake/git/SHORTCF0872D304C8504B1A0A12B06649F1295F05TSTEXC/shortcf0872d304c8504b1a0a12b06649f1295f05tstexc-progexjenkgitlabstudent1.git: cannot open git-upload-pack
+    23:46:40.029 | 396 ool-1-worker-160 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from https://version-control.fake.fake/git/SHORT79E366F003324047C208B94035F064C2EFCETSTEXC/short79e366f003324047c208b94035f064c2efcetstexc-progexjenkgitlabteam1.git to /tmp/jplag-repos16632592645214789269/SHORT79E366F003324047C208B94035F064C2EFCETSTEXC/3336-progexjenkgitlabteam1
+    23:46:40.038 | 396 ool-1-worker-160 | ERROR | d.t.c.a.a.p.service.GitService       : Could not delete directory after failed clone: /tmp/jplag-repos16632592645214789269/SHORT79E366F003324047C208B94035F064C2EFCETSTEXC/3336-progexjenkgitlabteam1
+    23:46:40.038 | 396 ool-1-worker-160 | ERROR | rogrammingPlagiarismDetectionService : Clone student repository https://version-control.fake.fake/git/SHORT79E366F003324047C208B94035F064C2EFCETSTEXC/short79e366f003324047c208b94035f064c2efcetstexc-progexjenkgitlabteam1.git in exercise 'Programming' did not work as expected: org.eclipse.jgit.api.errors.TransportException: https://version-control.fake.fake/git/SHORT79E366F003324047C208B94035F064C2EFCETSTEXC/short79e366f003324047c208b94035f064c2efcetstexc-progexjenkgitlabteam1.git: cannot open git-upload-pack
+    23:46:42.625 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:46:42.965 | 600 taskScheduler-1  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:46:46.108 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:46:50.100 | 601 taskScheduler-2  | INFO  | a.p.s.l.SharedQueueManagementService : pushDockerImageCleanupInfo took 3ms
+    23:46:50.109 | 600 taskScheduler-1  | DEBUG | d.t.c.a.a.core.config.MetricsBean    : recalculateMetrics took 12ms
+    23:46:52.625 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:46:52.963 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:46:54.564 | 570 vc.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5703 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=1.4G, swap.space.total=0, swap.space.free=0, heap.memory.used=2.4G, heap.memory.free=1.0G, heap.memory.total=3.4G, heap.memory.max=6.0G, heap.memory.used/total=70.36%, heap.memory.used/max=40.26%, minor.gc.count=207, minor.gc.time=9816ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=86, unknown.gc.time=1777ms, load.process=0.00%, load.system=99.19%, load.systemAverage=6.82, thread.count=509, thread.peakCount=517, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=23184, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=216, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+    23:46:56.109 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:00.000 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Schedule tasks to process...
+    23:47:02.625 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:02.963 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:06.108 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:12.625 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:12.963 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:14.566 | 570 vc.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5703 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=796.5M, swap.space.total=0, swap.space.free=0, heap.memory.used=3.0G, heap.memory.free=461.5M, heap.memory.total=3.4G, heap.memory.max=6.0G, heap.memory.used/total=86.87%, heap.memory.used/max=49.71%, minor.gc.count=209, minor.gc.time=9933ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=88, unknown.gc.time=1853ms, load.process=0.00%, load.system=100.00%, load.systemAverage=6.74, thread.count=506, thread.peakCount=517, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=23238, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=216, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+    23:47:16.108 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 0
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 1
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 2
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 3
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 4
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 5
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 6
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 7
+    23:47:17.098 | 434 ool-1-worker-198 | INFO  | d.j.l.ProgressBarLogger$DummyBar     : Now at step 8
+    23:47:22.625 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:22.963 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:26.108 | 600 taskScheduler-1  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:32.626 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:32.963 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:34.569 | 570 vc.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5703 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=513.5M, swap.space.total=0, swap.space.free=0, heap.memory.used=2.9G, heap.memory.free=598.3M, heap.memory.total=3.5G, heap.memory.max=6.0G, heap.memory.used/total=83.28%, heap.memory.used/max=48.53%, minor.gc.count=211, minor.gc.time=10151ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=90, unknown.gc.time=1981ms, load.process=0.00%, load.system=99.51%, load.systemAverage=6.68, thread.count=504, thread.peakCount=517, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=23294, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=216, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+    23:47:36.108 | 600 taskScheduler-1  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:42.625 | 600 taskScheduler-1  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:42.964 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:46.108 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:52.625 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:52.963 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:47:54.570 | 570 vc.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5703 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=358.9M, swap.space.total=0, swap.space.free=0, heap.memory.used=2.8G, heap.memory.free=722.4M, heap.memory.total=3.5G, heap.memory.max=6.0G, heap.memory.used/total=79.86%, heap.memory.used/max=46.64%, minor.gc.count=214, minor.gc.time=10330ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=92, unknown.gc.time=2085ms, load.process=0.00%, load.system=90.89%, load.systemAverage=6.15, thread.count=507, thread.peakCount=517, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=23348, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=216, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+    23:47:56.108 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+
+Finished logs for ProgrammingExerciseParticipationIntegrationTest
+    23:48:00.000 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Schedule tasks to process...
+    23:48:02.625 | 600 taskScheduler-1  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:02.965 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:06.108 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:12.625 | 600 taskScheduler-1  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:12.963 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:14.571 | 570 vc.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5703 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=513.4M, swap.space.total=0, swap.space.free=0, heap.memory.used=2.1G, heap.memory.free=1.4G, heap.memory.total=3.5G, heap.memory.max=6.0G, heap.memory.used/total=60.86%, heap.memory.used/max=35.66%, minor.gc.count=218, minor.gc.time=10554ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=94, unknown.gc.time=2154ms, load.process=0.00%, load.system=97.07%, load.systemAverage=6.22, thread.count=509, thread.peakCount=517, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=23402, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=216, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+    23:48:16.108 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:22.625 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:22.963 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:26.108 | 600 taskScheduler-1  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:32.625 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:32.963 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:34.576 | 570 vc.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5703 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=508.4M, swap.space.total=0, swap.space.free=0, heap.memory.used=3.1G, heap.memory.free=406.6M, heap.memory.total=3.5G, heap.memory.max=6.0G, heap.memory.used/total=88.73%, heap.memory.used/max=52.10%, minor.gc.count=220, minor.gc.time=10686ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=96, unknown.gc.time=2238ms, load.process=0.00%, load.system=99.35%, load.systemAverage=6.26, thread.count=511, thread.peakCount=517, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=23458, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=216, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+    23:48:36.108 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:42.626 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:42.963 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:46.108 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:52.625 | 600 taskScheduler-1  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:52.963 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:48:56.108 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:49:00.000 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Schedule tasks to process...
+    23:49:02.625 | 600 taskScheduler-1  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:49:02.963 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:49:06.108 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:49:12.625 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:49:12.963 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:49:16.108 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:49:22.625 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:49:22.963 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:49:26.108 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:49:32.625 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:49:32.963 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+
+Finished logs for ParticipationIntegrationTest
+    23:49:36.108 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+
+Starting logs for QuizSubmissionIntegrationTest
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmit_partial_points()
+    23:49:36.566 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:36.569 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:36.570 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:36.571 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:36.573 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:36.574 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:49:36.574 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:49:36.574 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:36.576 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:36.576 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmit_partial_points'
+    23:49:36.582 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:36.582529223Z[Etc/UTC]', duration='240', dueDate='2025-02-14T23:53:41.582529223Z[Etc/UTC]'}
+    23:49:36.591 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2633
+    23:49:36.592 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2633) to trigger on DUE.
+    23:49:36.600 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2633 and participant 247 (result to be deleted: null)
+    23:49:36.600 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2633 and participant 247 at 2025-02-14T23:49:36.700903949Z[Etc/UTC].
+    23:49:36.610 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2633 and participant 247 (result to be deleted: null)
+    23:49:36.610 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2633 and participant 247 at 2025-02-14T23:49:36.710855727Z[Etc/UTC].
+    23:49:36.618 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2633 and participant 248 (result to be deleted: null)
+    23:49:36.618 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2633 and participant 248 at 2025-02-14T23:49:36.718663627Z[Etc/UTC].
+    23:49:36.625 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2633 and participant 248 (result to be deleted: null)
+    23:49:36.625 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2633 and participant 248 at 2025-02-14T23:49:36.725867952Z[Etc/UTC].
+    23:49:36.633 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2633 and participant 249 (result to be deleted: null)
+    23:49:36.633 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2633 and participant 249 at 2025-02-14T23:49:36.733896143Z[Etc/UTC].
+    23:49:36.646 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2633 and participant 249 (result to be deleted: null)
+    23:49:36.646 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2633 and participant 249 at 2025-02-14T23:49:36.746069364Z[Etc/UTC].
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitPreview(QuizMode) [1] quizMode=SYNCHRONIZED
+    23:49:36.672 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:36.677 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:36.679 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:36.681 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:36.683 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:36.684 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:36.684 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:36.684 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:36.692 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:36.692 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitPreview'
+    23:49:36.693 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:32.692406765Z[Etc/UTC]', duration='120', dueDate='2025-02-14T23:51:37.692406765Z[Etc/UTC]'}
+    23:49:36.701 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2634
+    23:49:36.702 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2634) to trigger on DUE.
+    23:49:36.709 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2634/submissions/preview
+    23:49:36.749 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:36.763 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2634/submissions/preview
+    23:49:36.767 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:36.779 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2634/submissions/preview
+    23:49:36.782 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:36.793 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2634/submissions/preview
+    23:49:36.795 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:36.805 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2634/submissions/preview
+    23:49:36.807 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:36.817 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2634/submissions/preview
+    23:49:36.819 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:36.829 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2634/submissions/preview
+    23:49:36.832 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:36.842 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2634/submissions/preview
+    23:49:36.845 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:36.855 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2634/submissions/preview
+    23:49:36.858 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:36.868 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2634/submissions/preview
+    23:49:36.870 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitPreview(QuizMode) [2] quizMode=BATCHED
+    23:49:36.910 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:36.917 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:36.920 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:36.922 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:36.924 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:36.926 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:36.927 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:36.927 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:36.931 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:36.931 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitPreview'
+    23:49:36.932 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:32.931875810Z[Etc/UTC]', duration='120', dueDate='null'}
+    23:49:36.943 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2635
+    23:49:36.946 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2635/submissions/preview
+    23:49:36.948 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:36.959 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2635/submissions/preview
+    23:49:36.962 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:36.972 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2635/submissions/preview
+    23:49:36.975 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:36.986 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2635/submissions/preview
+    23:49:36.989 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.000 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2635/submissions/preview
+    23:49:37.002 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.013 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2635/submissions/preview
+    23:49:37.016 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.026 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2635/submissions/preview
+    23:49:37.029 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.039 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2635/submissions/preview
+    23:49:37.041 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.054 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2635/submissions/preview
+    23:49:37.056 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.067 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2635/submissions/preview
+    23:49:37.069 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitPreview(QuizMode) [3] quizMode=INDIVIDUAL
+    23:49:37.106 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:37.113 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:37.116 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:37.117 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:37.120 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:37.121 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:37.122 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:37.122 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:37.126 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:37.126 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitPreview'
+    23:49:37.127 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:33.126900537Z[Etc/UTC]', duration='120', dueDate='null'}
+    23:49:37.137 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2636
+    23:49:37.140 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2636/submissions/preview
+    23:49:37.143 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.155 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2636/submissions/preview
+    23:49:37.158 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.168 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2636/submissions/preview
+    23:49:37.171 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.181 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2636/submissions/preview
+    23:49:37.183 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.193 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2636/submissions/preview
+    23:49:37.195 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.204 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2636/submissions/preview
+    23:49:37.206 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.213 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2636/submissions/preview
+    23:49:37.214 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.220 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2636/submissions/preview
+    23:49:37.221 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.228 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2636/submissions/preview
+    23:49:37.230 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.236 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2636/submissions/preview
+    23:49:37.238 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=null, scoreInPoints='null'}
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitPractice_badRequest_noQuiz()
+    23:49:37.262 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:37.268 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:37.270 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:37.271 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:37.273 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:37.274 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:37.275 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:37.275 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:37.278 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:37.278 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitPractice_badRequest_noQuiz'
+    23:49:37.279 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/11223344/submissions/practice
+    23:49:37.281 |  27 nPool-1-worker-1 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Exercise with id 11223344
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizScoringTypes()
+    23:49:37.292 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:37.297 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:37.299 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:37.300 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:37.302 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:37.303 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:37.304 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:37.304 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:37.307 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:37.307 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizScoringTypes'
+    23:49:37.308 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:48:37.308134204Z[Etc/UTC]', duration='60', dueDate='2025-02-14T23:49:42.308134204Z[Etc/UTC]'}
+    23:49:37.315 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2637
+    23:49:37.316 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2637) to trigger on DUE.
+    23:49:37.324 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2637 and participant 250 (result to be deleted: null)
+    23:49:37.324 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2637 and participant 250 at 2025-02-14T23:49:37.424403373Z[Etc/UTC].
+    23:49:37.337 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2637 and participant 250 (result to be deleted: null)
+    23:49:37.337 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2637 and participant 250 at 2025-02-14T23:49:37.437381836Z[Etc/UTC].
+    23:49:37.339 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.a.core.service.FileService   : Could not delete file dragItemImage2.png. Error message: dragItemImage2.png
+    23:49:37.339 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.a.core.service.FileService   : Could not delete file dragItemImage4.png. Error message: dragItemImage4.png
+    23:49:37.341 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizExerciseService    : Found 1 results to update for quiz re-evaluate
+    23:49:37.344 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2637 and participant 250 (result to be deleted: null)
+    23:49:37.345 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2637 and participant 250 at 2025-02-14T23:49:37.445011464Z[Etc/UTC].
+    23:49:37.345 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizExerciseService    : 1 results have been updated successfully for quiz re-evaluate
+    23:49:37.345 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=2637, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:48:37.308134204Z[Etc/UTC]', duration='60', dueDate='2025-02-14T23:49:42.308134204Z[Etc/UTC]'}
+    23:49:37.347 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic - this operation breaks ==
+    23:49:37.347 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic - this operation breaks ==
+    23:49:37.348 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic - this operation breaks ==
+    23:49:37.348 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic - this operation breaks ==
+    23:49:37.350 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic - this operation breaks ==
+    23:49:37.350 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic - this operation breaks ==
+    23:49:37.359 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2637
+    23:49:37.360 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task DUE for Exercise (#2637).
+    23:49:37.360 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2637) to trigger on DUE.
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitPreview_badRequest_submissionId()
+    23:49:37.377 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:37.382 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:37.384 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:37.385 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:37.387 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:37.388 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:37.389 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:37.389 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:37.392 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:37.392 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitPreview_badRequest_submissionId'
+    23:49:37.396 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2638/submissions/preview
+    23:49:37.398 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for preview : QuizSubmission{id=1, scoreInPoints='null'}
+    23:49:37.398 |  27 nPool-1-worker-1 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, A new quizSubmission cannot already have an ID.
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitLiveMode_forbidden_notActive(QuizMode) [1] quizMode=SYNCHRONIZED
+    23:49:37.409 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:37.414 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:37.416 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:37.417 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:37.420 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:37.421 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:37.421 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:37.421 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:37.424 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:37.424 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitLiveMode_forbidden_notActive'
+    23:49:37.425 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:57.424945106Z[Etc/UTC]', duration='10', dueDate='2025-02-14T23:50:12.424945106Z[Etc/UTC]'}
+    23:49:37.433 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2639
+    23:49:37.434 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new quiz" (#2639) to trigger on START.
+    23:49:37.434 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2639) to trigger on DUE.
+    23:49:37.435 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/2639/start-participation
+    23:49:37.437 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 2639
+    23:49:37.440 |  27 nPool-1-worker-1 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Students cannot start an exercise before the release date
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitLiveMode_forbidden_notActive(QuizMode) [2] quizMode=BATCHED
+    23:49:37.451 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:37.456 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:37.458 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:37.459 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:37.462 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:37.463 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:37.463 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:37.463 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:37.466 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:37.466 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitLiveMode_forbidden_notActive'
+    23:49:37.467 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:57.466912698Z[Etc/UTC]', duration='10', dueDate='2025-02-14T23:50:07.466914601Z[Etc/UTC]'}
+    23:49:37.475 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2640
+    23:49:37.477 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2640) to trigger on DUE.
+    23:49:37.477 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/2640/start-participation
+    23:49:37.478 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 2640
+    23:49:37.481 |  27 nPool-1-worker-1 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Students cannot start an exercise before the release date
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitLiveMode_forbidden_notActive(QuizMode) [3] quizMode=INDIVIDUAL
+    23:49:37.492 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:37.497 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:37.500 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:37.501 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:37.503 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:37.504 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:37.504 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:37.504 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:37.508 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:37.508 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitLiveMode_forbidden_notActive'
+    23:49:37.509 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:57.508463296Z[Etc/UTC]', duration='10', dueDate='2025-02-14T23:50:07.508465079Z[Etc/UTC]'}
+    23:49:37.516 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2641
+    23:49:37.517 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2641) to trigger on DUE.
+    23:49:37.518 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/2641/start-participation
+    23:49:37.519 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 2641
+    23:49:37.521 |  27 nPool-1-worker-1 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Students cannot start an exercise before the release date
+
+  Starting logs for QuizSubmissionIntegrationTest > submitExercise_shortAnswer_tooLarge(boolean) [1] tooLarge=true
+    23:49:37.532 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:37.537 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:37.539 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:37.540 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:37.542 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:37.543 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:37.544 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:37.544 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:37.547 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:37.547 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#submitExercise_shortAnswer_tooLarge'
+    23:49:37.547 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:32.547752834Z[Etc/UTC]', duration='10', dueDate='2025-02-14T23:49:47.547752834Z[Etc/UTC]'}
+    23:49:37.551 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2642
+    23:49:37.552 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2642) to trigger on DUE.
+    23:49:37.553 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/2642/start-participation
+    23:49:37.554 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 2642
+    23:49:37.573 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2642/submissions/live
+    23:49:37.576 |  27 nPool-1-worker-1 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<de.tum.cit.aet.artemis.quiz.domain.QuizSubmission> de.tum.cit.aet.artemis.quiz.web.QuizSubmissionResource.saveOrSubmitForLiveMode(java.lang.Long,de.tum.cit.aet.artemis.quiz.domain.QuizSubmission,boolean): [Field error in object 'quizSubmission' on field 'submittedAnswers[].submittedTexts[].text': rejected value [aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]; codes [Size.quizSubmission.submittedAnswers[].submittedTexts[].text,Size.quizSubmission.submittedAnswers[].submittedTexts.text,Size.quizSubmission.submittedAnswers.submittedTexts.text,Size.submittedAnswers[].submittedTexts[].text,Size.submittedAnswers[].submittedTexts.text,Size.submittedAnswers.submittedTexts.text,Size.text,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [quizSubmission.submittedAnswers[].submittedTexts[].text,submittedAnswers[].submittedTexts[].text]; arguments []; default message [submittedAnswers[].submittedTexts[].text],255,0]; default message [The submitted answer text is too long.]] 
+
+  Starting logs for QuizSubmissionIntegrationTest > submitExercise_shortAnswer_tooLarge(boolean) [2] tooLarge=false
+    23:49:37.587 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:37.592 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:37.594 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:37.595 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:37.597 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:37.598 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:37.599 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:37.599 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:37.602 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:37.602 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#submitExercise_shortAnswer_tooLarge'
+    23:49:37.602 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:32.602838709Z[Etc/UTC]', duration='10', dueDate='2025-02-14T23:49:47.602838709Z[Etc/UTC]'}
+    23:49:37.606 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2643
+    23:49:37.607 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2643) to trigger on DUE.
+    23:49:37.608 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/2643/start-participation
+    23:49:37.609 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 2643
+    23:49:37.625 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2643/submissions/live
+    23:49:37.627 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to save or submit QuizSubmission for live mode : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.628 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : save quiz in live mode:: Received quiz exercise for user quizsubmissionteststudent1 in quiz 2643 in 1247 µs.
+    23:49:37.632 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizSubmissionService  : save quiz in live mode: Saved quiz submission for user quizsubmissionteststudent1 in quiz 2643 after 4.46ms 
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizScoringType(ScoringType) [1] scoringType=ALL_OR_NOTHING
+    23:49:37.646 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:37.651 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:37.654 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:37.655 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:37.657 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:37.658 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:37.659 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:37.659 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:37.661 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:37.662 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizScoringType'
+    23:49:37.663 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:48:37.662713846Z[Etc/UTC]', duration='60', dueDate='2025-02-14T23:49:42.662713846Z[Etc/UTC]'}
+    23:49:37.671 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2644
+    23:49:37.672 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2644) to trigger on DUE.
+    23:49:37.680 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2644 and participant 249 (result to be deleted: null)
+    23:49:37.680 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2644 and participant 249 at 2025-02-14T23:49:37.780514681Z[Etc/UTC].
+    23:49:37.693 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2644 and participant 249 (result to be deleted: null)
+    23:49:37.693 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2644 and participant 249 at 2025-02-14T23:49:37.793637623Z[Etc/UTC].
+    23:49:37.695 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.a.core.service.FileService   : Could not delete file dragItemImage2.png. Error message: dragItemImage2.png
+    23:49:37.695 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.a.core.service.FileService   : Could not delete file dragItemImage4.png. Error message: dragItemImage4.png
+    23:49:37.697 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizExerciseService    : Found 1 results to update for quiz re-evaluate
+    23:49:37.700 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2644 and participant 249 (result to be deleted: null)
+    23:49:37.700 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2644 and participant 249 at 2025-02-14T23:49:37.800201954Z[Etc/UTC].
+    23:49:37.700 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizExerciseService    : 1 results have been updated successfully for quiz re-evaluate
+    23:49:37.700 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=2644, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:48:37.662713846Z[Etc/UTC]', duration='60', dueDate='2025-02-14T23:49:42.662713846Z[Etc/UTC]'}
+    23:49:37.703 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic - this operation breaks ==
+    23:49:37.703 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic - this operation breaks ==
+    23:49:37.704 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic - this operation breaks ==
+    23:49:37.704 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic - this operation breaks ==
+    23:49:37.705 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic - this operation breaks ==
+    23:49:37.705 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic - this operation breaks ==
+    23:49:37.715 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2644
+    23:49:37.716 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task DUE for Exercise (#2644).
+    23:49:37.716 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2644) to trigger on DUE.
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizScoringType(ScoringType) [2] scoringType=PROPORTIONAL_WITH_PENALTY
+    23:49:37.732 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:37.738 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:37.740 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:37.741 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:37.743 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:37.744 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:37.745 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:37.745 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:37.747 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:37.748 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizScoringType'
+    23:49:37.748 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:48:37.748688453Z[Etc/UTC]', duration='60', dueDate='2025-02-14T23:49:42.748688453Z[Etc/UTC]'}
+    23:49:37.756 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2645
+    23:49:37.757 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2645) to trigger on DUE.
+    23:49:37.765 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2645 and participant 249 (result to be deleted: null)
+    23:49:37.765 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2645 and participant 249 at 2025-02-14T23:49:37.865446183Z[Etc/UTC].
+    23:49:37.785 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2645 and participant 249 (result to be deleted: null)
+    23:49:37.785 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2645 and participant 249 at 2025-02-14T23:49:37.885183500Z[Etc/UTC].
+    23:49:37.787 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.a.core.service.FileService   : Could not delete file dragItemImage2.png. Error message: dragItemImage2.png
+    23:49:37.787 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.a.core.service.FileService   : Could not delete file dragItemImage4.png. Error message: dragItemImage4.png
+    23:49:37.789 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizExerciseService    : Found 1 results to update for quiz re-evaluate
+    23:49:37.792 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2645 and participant 249 (result to be deleted: null)
+    23:49:37.792 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2645 and participant 249 at 2025-02-14T23:49:37.892162234Z[Etc/UTC].
+    23:49:37.792 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizExerciseService    : 1 results have been updated successfully for quiz re-evaluate
+    23:49:37.792 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=2645, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:48:37.748688453Z[Etc/UTC]', duration='60', dueDate='2025-02-14T23:49:42.748688453Z[Etc/UTC]'}
+    23:49:37.794 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic - this operation breaks ==
+    23:49:37.794 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic - this operation breaks ==
+    23:49:37.795 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic - this operation breaks ==
+    23:49:37.796 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic - this operation breaks ==
+    23:49:37.797 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic - this operation breaks ==
+    23:49:37.797 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic - this operation breaks ==
+    23:49:37.806 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2645
+    23:49:37.807 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task DUE for Exercise (#2645).
+    23:49:37.807 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2645) to trigger on DUE.
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizScoringType(ScoringType) [3] scoringType=PROPORTIONAL_WITHOUT_PENALTY
+    23:49:37.821 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:37.826 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:37.828 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:37.829 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:37.832 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:37.832 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:37.833 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:37.833 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:37.836 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:37.836 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizScoringType'
+    23:49:37.837 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:48:37.836990882Z[Etc/UTC]', duration='60', dueDate='2025-02-14T23:49:42.836990882Z[Etc/UTC]'}
+    23:49:37.844 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2646
+    23:49:37.845 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2646) to trigger on DUE.
+    23:49:37.853 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2646 and participant 249 (result to be deleted: null)
+    23:49:37.853 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2646 and participant 249 at 2025-02-14T23:49:37.953672700Z[Etc/UTC].
+    23:49:37.866 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2646 and participant 249 (result to be deleted: null)
+    23:49:37.866 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2646 and participant 249 at 2025-02-14T23:49:37.966449416Z[Etc/UTC].
+    23:49:37.868 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.a.core.service.FileService   : Could not delete file dragItemImage2.png. Error message: dragItemImage2.png
+    23:49:37.868 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.a.core.service.FileService   : Could not delete file dragItemImage4.png. Error message: dragItemImage4.png
+    23:49:37.869 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizExerciseService    : Found 1 results to update for quiz re-evaluate
+    23:49:37.872 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2646 and participant 249 (result to be deleted: null)
+    23:49:37.872 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2646 and participant 249 at 2025-02-14T23:49:37.972313392Z[Etc/UTC].
+    23:49:37.872 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizExerciseService    : 1 results have been updated successfully for quiz re-evaluate
+    23:49:37.872 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=2646, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:48:37.836990882Z[Etc/UTC]', duration='60', dueDate='2025-02-14T23:49:42.836990882Z[Etc/UTC]'}
+    23:49:37.874 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic - this operation breaks ==
+    23:49:37.874 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic - this operation breaks ==
+    23:49:37.876 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic - this operation breaks ==
+    23:49:37.876 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic - this operation breaks ==
+    23:49:37.877 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic - this operation breaks ==
+    23:49:37.877 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic - this operation breaks ==
+    23:49:37.886 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2646
+    23:49:37.887 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task DUE for Exercise (#2646).
+    23:49:37.887 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2646) to trigger on DUE.
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitPractice_badRequest()
+    23:49:37.901 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:37.906 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:37.908 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:37.909 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:37.912 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:37.912 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:37.913 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:37.913 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:37.916 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:37.916 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitPractice_badRequest'
+    23:49:37.917 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:33.916631467Z[Etc/UTC]', duration='2', dueDate='2025-02-14T23:49:40.916631467Z[Etc/UTC]'}
+    23:49:37.925 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2647
+    23:49:37.926 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2647) to trigger on DUE.
+    23:49:37.929 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2647/submissions/practice
+    23:49:37.935 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for practice : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:37.940 |  27 nPool-1-worker-1 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The exercise is not open for practice or hasn't ended yet.
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitEmptyQuizInLiveMode()
+    23:49:37.951 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:37.956 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:37.958 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:37.959 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:37.961 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:37.962 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:37.963 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:37.963 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:37.965 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:37.966 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitEmptyQuizInLiveMode'
+    23:49:37.967 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T18:49:37.966575734Z[Etc/UTC]', duration='350', dueDate='2025-02-14T23:50:32.966912462Z[Etc/UTC]'}
+    23:49:37.974 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2648
+    23:49:37.975 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2648) to trigger on DUE.
+    23:49:37.976 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/-1/submissions/live
+    23:49:37.979 |  27 nPool-1-worker-1 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Exercise with id -1
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitPractice(QuizMode) [1] quizMode=SYNCHRONIZED
+    23:49:37.990 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:37.995 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:37.997 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:37.998 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:38.000 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:38.001 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:38.002 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:38.002 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:38.005 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:38.005 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitPractice'
+    23:49:38.006 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='true', releaseDate='2025-02-14T23:49:28.005448315Z[Etc/UTC]', duration='2', dueDate='2025-02-14T23:49:35.005448315Z[Etc/UTC]'}
+    23:49:38.013 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2649
+    23:49:38.017 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2649/submissions/practice
+    23:49:38.019 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for practice : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:38.027 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2649 and participant 247 (result to be deleted: null)
+    23:49:38.027 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2649 and participant 247 at 2025-02-14T23:49:38.127888191Z[Etc/UTC].
+    23:49:38.044 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2649 and participant 247 (result to be deleted: null)
+    23:49:38.044 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2649 and participant 247 at 2025-02-14T23:49:38.144539353Z[Etc/UTC].
+    23:49:38.049 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2649 and participant 247 (result to be deleted: null)
+    23:49:38.049 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2649 and participant 247 at 2025-02-14T23:49:38.149889129Z[Etc/UTC].
+    23:49:38.058 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit practice quiz finished: QuizSubmission{id=850, scoreInPoints='0.0'}
+    23:49:38.068 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2649/submissions/practice
+    23:49:38.070 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for practice : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:38.078 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2649 and participant 248 (result to be deleted: null)
+    23:49:38.078 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2649 and participant 248 at 2025-02-14T23:49:38.178238215Z[Etc/UTC].
+    23:49:38.093 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2649 and participant 248 (result to be deleted: null)
+    23:49:38.093 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2649 and participant 248 at 2025-02-14T23:49:38.193482052Z[Etc/UTC].
+    23:49:38.098 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2649 and participant 248 (result to be deleted: null)
+    23:49:38.098 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2649 and participant 248 at 2025-02-14T23:49:38.198848359Z[Etc/UTC].
+    23:49:38.108 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit practice quiz finished: QuizSubmission{id=851, scoreInPoints='4.0'}
+    23:49:38.117 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2649/submissions/practice
+    23:49:38.119 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for practice : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:38.126 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2649 and participant 249 (result to be deleted: null)
+    23:49:38.126 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2649 and participant 249 at 2025-02-14T23:49:38.226505125Z[Etc/UTC].
+    23:49:38.142 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2649 and participant 249 (result to be deleted: null)
+    23:49:38.142 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2649 and participant 249 at 2025-02-14T23:49:38.242125644Z[Etc/UTC].
+    23:49:38.147 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2649 and participant 249 (result to be deleted: null)
+    23:49:38.147 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2649 and participant 249 at 2025-02-14T23:49:38.247793664Z[Etc/UTC].
+    23:49:38.149 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 2649 and participant 247 to update participant scores.
+    23:49:38.153 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 89.
+    23:49:38.154 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 2649 and participant 247 took 5 ms.
+    23:49:38.160 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit practice quiz finished: QuizSubmission{id=852, scoreInPoints='3.0'}
+    23:49:38.168 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2649/submissions/practice
+    23:49:38.170 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for practice : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:38.178 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2649 and participant 250 (result to be deleted: null)
+    23:49:38.178 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2649 and participant 250 at 2025-02-14T23:49:38.278550951Z[Etc/UTC].
+    23:49:38.194 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2649 and participant 250 (result to be deleted: null)
+    23:49:38.194 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2649 and participant 250 at 2025-02-14T23:49:38.294222635Z[Etc/UTC].
+    23:49:38.198 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 2649 and participant 248 to update participant scores.
+    23:49:38.199 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2649 and participant 250 (result to be deleted: null)
+    23:49:38.199 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2649 and participant 250 at 2025-02-14T23:49:38.299990451Z[Etc/UTC].
+    23:49:38.202 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 90.
+    23:49:38.203 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 2649 and participant 248 took 5 ms.
+    23:49:38.216 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit practice quiz finished: QuizSubmission{id=853, scoreInPoints='6.0'}
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitPractice(QuizMode) [2] quizMode=BATCHED
+    23:49:38.255 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:38.260 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:38.262 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:38.264 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:38.266 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:38.267 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:38.267 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:38.267 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:38.270 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:38.270 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitPractice'
+    23:49:38.271 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='true', releaseDate='2025-02-14T23:49:28.270997677Z[Etc/UTC]', duration='2', dueDate='2025-02-14T23:49:30.271000953Z[Etc/UTC]'}
+    23:49:38.279 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2650
+    23:49:38.282 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2650/submissions/practice
+    23:49:38.285 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for practice : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:38.293 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2650 and participant 247 (result to be deleted: null)
+    23:49:38.294 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2650 and participant 247 at 2025-02-14T23:49:38.394009840Z[Etc/UTC].
+    23:49:38.308 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2650 and participant 247 (result to be deleted: null)
+    23:49:38.308 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2650 and participant 247 at 2025-02-14T23:49:38.408752854Z[Etc/UTC].
+    23:49:38.313 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2650 and participant 247 (result to be deleted: null)
+    23:49:38.313 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2650 and participant 247 at 2025-02-14T23:49:38.413639146Z[Etc/UTC].
+    23:49:38.321 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit practice quiz finished: QuizSubmission{id=854, scoreInPoints='0.0'}
+    23:49:38.331 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2650/submissions/practice
+    23:49:38.333 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for practice : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:38.340 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2650 and participant 248 (result to be deleted: null)
+    23:49:38.340 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2650 and participant 248 at 2025-02-14T23:49:38.440786661Z[Etc/UTC].
+    23:49:38.356 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2650 and participant 248 (result to be deleted: null)
+    23:49:38.356 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2650 and participant 248 at 2025-02-14T23:49:38.456192370Z[Etc/UTC].
+    23:49:38.362 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2650 and participant 248 (result to be deleted: null)
+    23:49:38.362 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2650 and participant 248 at 2025-02-14T23:49:38.462077354Z[Etc/UTC].
+    23:49:38.373 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit practice quiz finished: QuizSubmission{id=855, scoreInPoints='4.0'}
+    23:49:38.381 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2650/submissions/practice
+    23:49:38.383 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for practice : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:38.391 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2650 and participant 249 (result to be deleted: null)
+    23:49:38.391 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2650 and participant 249 at 2025-02-14T23:49:38.491136051Z[Etc/UTC].
+    23:49:38.406 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2650 and participant 249 (result to be deleted: null)
+    23:49:38.406 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2650 and participant 249 at 2025-02-14T23:49:38.506156511Z[Etc/UTC].
+    23:49:38.411 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2650 and participant 249 (result to be deleted: null)
+    23:49:38.411 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2650 and participant 249 at 2025-02-14T23:49:38.511376355Z[Etc/UTC].
+    23:49:38.413 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 2650 and participant 247 to update participant scores.
+    23:49:38.417 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 91.
+    23:49:38.417 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 2650 and participant 247 took 4 ms.
+    23:49:38.423 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit practice quiz finished: QuizSubmission{id=856, scoreInPoints='3.0'}
+    23:49:38.432 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2650/submissions/practice
+    23:49:38.434 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for practice : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:38.443 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2650 and participant 250 (result to be deleted: null)
+    23:49:38.443 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2650 and participant 250 at 2025-02-14T23:49:38.543377151Z[Etc/UTC].
+    23:49:38.460 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2650 and participant 250 (result to be deleted: null)
+    23:49:38.460 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2650 and participant 250 at 2025-02-14T23:49:38.560660802Z[Etc/UTC].
+    23:49:38.462 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 2650 and participant 248 to update participant scores.
+    23:49:38.465 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 92.
+    23:49:38.466 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 2650 and participant 248 took 4 ms.
+    23:49:38.467 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2650 and participant 250 (result to be deleted: null)
+    23:49:38.467 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2650 and participant 250 at 2025-02-14T23:49:38.567829971Z[Etc/UTC].
+    23:49:38.482 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit practice quiz finished: QuizSubmission{id=857, scoreInPoints='6.0'}
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitPractice(QuizMode) [3] quizMode=INDIVIDUAL
+    23:49:38.520 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:38.526 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:38.528 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:38.529 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:38.531 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:38.532 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:38.533 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:38.533 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:38.536 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:38.536 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitPractice'
+    23:49:38.537 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='true', releaseDate='2025-02-14T23:49:28.536492695Z[Etc/UTC]', duration='2', dueDate='2025-02-14T23:49:30.536497183Z[Etc/UTC]'}
+    23:49:38.544 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2651
+    23:49:38.548 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2651/submissions/practice
+    23:49:38.550 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for practice : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:38.559 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2651 and participant 247 (result to be deleted: null)
+    23:49:38.559 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2651 and participant 247 at 2025-02-14T23:49:38.659985004Z[Etc/UTC].
+    23:49:38.576 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2651 and participant 247 (result to be deleted: null)
+    23:49:38.576 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2651 and participant 247 at 2025-02-14T23:49:38.676147644Z[Etc/UTC].
+    23:49:38.582 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2651 and participant 247 (result to be deleted: null)
+    23:49:38.582 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2651 and participant 247 at 2025-02-14T23:49:38.682177379Z[Etc/UTC].
+    23:49:38.591 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit practice quiz finished: QuizSubmission{id=858, scoreInPoints='0.0'}
+    23:49:38.601 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2651/submissions/practice
+    23:49:38.602 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for practice : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:38.610 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2651 and participant 248 (result to be deleted: null)
+    23:49:38.611 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2651 and participant 248 at 2025-02-14T23:49:38.710990079Z[Etc/UTC].
+    23:49:38.626 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2651 and participant 248 (result to be deleted: null)
+    23:49:38.626 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2651 and participant 248 at 2025-02-14T23:49:38.726585332Z[Etc/UTC].
+    23:49:38.632 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2651 and participant 248 (result to be deleted: null)
+    23:49:38.632 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2651 and participant 248 at 2025-02-14T23:49:38.732165819Z[Etc/UTC].
+    23:49:38.642 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit practice quiz finished: QuizSubmission{id=859, scoreInPoints='4.0'}
+    23:49:38.651 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2651/submissions/practice
+    23:49:38.653 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for practice : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:38.660 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2651 and participant 249 (result to be deleted: null)
+    23:49:38.660 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2651 and participant 249 at 2025-02-14T23:49:38.760910713Z[Etc/UTC].
+    23:49:38.678 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2651 and participant 249 (result to be deleted: null)
+    23:49:38.678 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2651 and participant 249 at 2025-02-14T23:49:38.778397172Z[Etc/UTC].
+    23:49:38.682 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 2651 and participant 247 to update participant scores.
+    23:49:38.684 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2651 and participant 249 (result to be deleted: null)
+    23:49:38.684 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2651 and participant 249 at 2025-02-14T23:49:38.784346005Z[Etc/UTC].
+    23:49:38.685 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 93.
+    23:49:38.686 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 2651 and participant 247 took 4 ms.
+    23:49:38.697 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit practice quiz finished: QuizSubmission{id=860, scoreInPoints='3.0'}
+    23:49:38.706 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2651/submissions/practice
+    23:49:38.708 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for practice : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:38.717 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2651 and participant 250 (result to be deleted: null)
+    23:49:38.717 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2651 and participant 250 at 2025-02-14T23:49:38.817738316Z[Etc/UTC].
+    23:49:38.732 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 2651 and participant 248 to update participant scores.
+    23:49:38.736 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2651 and participant 250 (result to be deleted: null)
+    23:49:38.736 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2651 and participant 250 at 2025-02-14T23:49:38.836368127Z[Etc/UTC].
+    23:49:38.737 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 94.
+    23:49:38.738 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 2651 and participant 248 took 6 ms.
+    23:49:38.742 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2651 and participant 250 (result to be deleted: null)
+    23:49:38.742 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2651 and participant 250 at 2025-02-14T23:49:38.842931357Z[Etc/UTC].
+    23:49:38.757 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit practice quiz finished: QuizSubmission{id=861, scoreInPoints='6.0'}
+    23:49:38.784 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 2651 and participant 249 to update participant scores.
+    23:49:38.788 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 95.
+    23:49:38.788 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 2651 and participant 249 took 4 ms.
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitPractice_forbidden()
+    23:49:38.797 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:38.802 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:38.804 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:38.805 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:38.807 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:38.808 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:38.809 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:38.809 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:38.812 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:38.812 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitPractice_forbidden'
+    23:49:38.818 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:34.817920598Z[Etc/UTC]', duration='120', dueDate='2025-02-14T23:51:39.817920598Z[Etc/UTC]'}
+    23:49:38.827 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2652
+    23:49:38.829 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2652) to trigger on DUE.
+    23:49:38.830 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2652/submissions/practice
+    23:49:38.832 |  27 nPool-1-worker-1 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Exercise with id 2652
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitPractice_accessForbidden_exam()
+    23:49:38.846 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:38.851 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:38.853 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:38.855 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:38.857 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:38.858 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:38.859 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:38.859 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:38.861 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:38.862 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitPractice_accessForbidden_exam'
+    23:49:38.864 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='5e3a0c33-b778-4245-af20-0d995de2dd68', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='null', duration='10', dueDate='null'}
+    23:49:38.874 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2653/submissions/practice
+    23:49:38.876 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for practice : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:38.880 |  27 nPool-1-worker-1 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access this resource
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmit_CalculateScore()
+    23:49:38.891 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:38.896 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:38.898 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:38.900 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:38.902 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:38.903 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:38.903 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:38.903 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:38.906 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:38.906 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmit_CalculateScore'
+    23:49:38.911 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:38.911466004Z[Etc/UTC]', duration='240', dueDate='2025-02-14T23:53:43.911466004Z[Etc/UTC]'}
+    23:49:38.918 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2655
+    23:49:38.919 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2655) to trigger on DUE.
+    23:49:38.927 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2655 and participant 247 (result to be deleted: null)
+    23:49:38.927 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2655 and participant 247 at 2025-02-14T23:49:39.027321351Z[Etc/UTC].
+    23:49:38.941 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2655 and participant 247 (result to be deleted: null)
+    23:49:38.941 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2655 and participant 247 at 2025-02-14T23:49:39.041342138Z[Etc/UTC].
+    23:49:38.950 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2655 and participant 248 (result to be deleted: null)
+    23:49:38.950 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2655 and participant 248 at 2025-02-14T23:49:39.050479257Z[Etc/UTC].
+    23:49:38.964 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2655 and participant 248 (result to be deleted: null)
+    23:49:38.964 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2655 and participant 248 at 2025-02-14T23:49:39.064237533Z[Etc/UTC].
+    23:49:38.974 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2655 and participant 249 (result to be deleted: null)
+    23:49:38.974 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2655 and participant 249 at 2025-02-14T23:49:39.074509549Z[Etc/UTC].
+    23:49:38.988 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2655 and participant 249 (result to be deleted: null)
+    23:49:38.988 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2655 and participant 249 at 2025-02-14T23:49:39.088365949Z[Etc/UTC].
+    23:49:38.997 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2655 and participant 250 (result to be deleted: null)
+    23:49:38.997 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2655 and participant 250 at 2025-02-14T23:49:39.097974898Z[Etc/UTC].
+    23:49:39.011 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2655 and participant 250 (result to be deleted: null)
+    23:49:39.011 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2655 and participant 250 at 2025-02-14T23:49:39.111831388Z[Etc/UTC].
+    23:49:39.030 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : PointCounter{id=336, points='4.0', rated=1, unrated=0}
+    23:49:39.030 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : PointCounter{id=337, points='5.0', rated=0, unrated=0}
+    23:49:39.030 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : PointCounter{id=338, points='6.0', rated=1, unrated=0}
+    23:49:39.030 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : PointCounter{id=339, points='7.0', rated=0, unrated=0}
+    23:49:39.030 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : PointCounter{id=340, points='8.0', rated=0, unrated=0}
+    23:49:39.030 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : PointCounter{id=341, points='9.0', rated=0, unrated=0}
+    23:49:39.030 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : PointCounter{id=332, points='0.0', rated=1, unrated=0}
+    23:49:39.030 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : PointCounter{id=333, points='1.0', rated=0, unrated=0}
+    23:49:39.030 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : PointCounter{id=334, points='2.0', rated=0, unrated=0}
+    23:49:39.030 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : PointCounter{id=335, points='3.0', rated=1, unrated=0}
+    23:49:39.030 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic{ratedCorrectCounter=2, unRatedCorrectCounter=0participantsRated=4, participantsUnrated=0}
+    23:49:39.030 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic{ratedCorrectCounter=1, unRatedCorrectCounter=0participantsRated=4, participantsUnrated=0}
+    23:49:39.030 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic{ratedCorrectCounter=1, unRatedCorrectCounter=0participantsRated=4, participantsUnrated=0}
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitPreview_forbidden()
+    23:49:39.041 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:39.046 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:39.048 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:39.049 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:39.051 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:39.052 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:39.053 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:39.053 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:39.056 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:39.056 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitPreview_forbidden'
+    23:49:39.057 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:35.056813131Z[Etc/UTC]', duration='120', dueDate='2025-02-14T23:51:40.056813131Z[Etc/UTC]'}
+    23:49:39.065 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2656
+    23:49:39.066 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2656) to trigger on DUE.
+    23:49:39.067 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2656/submissions/preview
+    23:49:39.069 |  27 nPool-1-worker-1 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitPractice_badRequest_submissionId()
+    23:49:39.080 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:39.085 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:39.087 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:39.088 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:39.090 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:39.091 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:39.092 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:39.092 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:39.095 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:39.095 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitPractice_badRequest_submissionId'
+    23:49:39.099 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2657/submissions/practice
+    23:49:39.101 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to submit QuizSubmission for practice : QuizSubmission{id=1, scoreInPoints='null'}
+    23:49:39.101 |  27 nPool-1-worker-1 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, A new quizSubmission cannot already have an ID.
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitPreview_badRequest_noQuiz()
+    23:49:39.112 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:39.117 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:39.119 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:39.120 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:39.122 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:39.123 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:39.124 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:39.124 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:39.127 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:39.127 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitPreview_badRequest_noQuiz'
+    23:49:39.128 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/11223344/submissions/preview
+    23:49:39.130 |  27 nPool-1-worker-1 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Exercise with id 11223344
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitPreview_forbidden_otherTa()
+    23:49:39.141 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:39.146 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:39.148 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:39.149 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:39.152 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:39.152 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:39.153 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:39.153 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:39.156 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:39.156 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitPreview_forbidden_otherTa'
+    23:49:39.160 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:35.160305195Z[Etc/UTC]', duration='120', dueDate='2025-02-14T23:51:40.160305195Z[Etc/UTC]'}
+    23:49:39.168 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2658
+    23:49:39.169 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2658) to trigger on DUE.
+    23:49:39.170 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2658/submissions/preview
+    23:49:39.172 |  27 nPool-1-worker-1 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Exercise with id 2658
+
+  Starting logs for QuizSubmissionIntegrationTest > testQuizSubmitScheduledAndDeleted()
+    23:49:39.183 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:49:39.188 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 1 tutors...
+    23:49:39.190 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:39.192 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:39.194 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:39.195 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses...
+    23:49:39.195 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 6 users from all courses. Done
+    23:49:39.195 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database...
+    23:49:39.198 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 6 users to database. Done
+    23:49:39.198 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='QuizSubmissionIntegrationTest#testQuizSubmitScheduledAndDeleted'
+    23:49:39.199 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : // Creating the quiz exercise 2s in the future
+    23:49:39.199 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : // Saving the quiz initially
+    23:49:39.199 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:39.199338315Z[Etc/UTC]', duration='60', dueDate='2025-02-14T23:50:46.199336541Z[Etc/UTC]'}
+    23:49:39.207 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2659
+    23:49:39.208 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new quiz" (#2659) to trigger on START.
+    23:49:39.208 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2659) to trigger on DUE.
+    23:49:39.208 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : // Check that the quiz has not started and submissions are not allowed
+    23:49:39.209 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/2659/start-participation
+    23:49:39.210 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 2659
+    23:49:39.229 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/2659/submissions/live
+    23:49:39.231 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to save or submit QuizSubmission for live mode : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:39.232 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : save quiz in live mode:: Received quiz exercise for user quizsubmissiontestinstructor1 in quiz 2659 in 760 µs.
+    23:49:39.232 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.a.q.w.QuizSubmissionResource : QuizSubmissionException: The quiz is not active for user quizsubmissiontestinstructor1 in quiz 2659
+    23:49:39.232 |  27 nPool-1-worker-1 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The quiz is not active
+    23:49:39.233 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : // Rescheduling the quiz to now
+    23:49:39.233 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=2659, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:49:39.199338315Z[Etc/UTC]', duration='60', dueDate='2025-02-14T23:50:44.233768902Z[Etc/UTC]'}
+    23:49:39.235 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic - this operation breaks ==
+    23:49:39.236 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic - this operation breaks ==
+    23:49:39.237 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic - this operation breaks ==
+    23:49:39.245 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 2659
+    23:49:39.246 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task START for Exercise (#2659).
+    23:49:39.246 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.service.ScheduleService  : Cancelling scheduled task DUE for Exercise (#2659).
+    23:49:39.246 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#2659) to trigger on DUE.
+    23:49:39.246 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : // Check that the quiz has started
+    23:49:39.255 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2659 and participant 247 (result to be deleted: null)
+    23:49:39.255 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2659 and participant 247 at 2025-02-14T23:49:39.355312446Z[Etc/UTC].
+    23:49:39.268 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2659 and participant 247 (result to be deleted: null)
+    23:49:39.268 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2659 and participant 247 at 2025-02-14T23:49:39.368946271Z[Etc/UTC].
+    23:49:39.278 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2659 and participant 248 (result to be deleted: null)
+    23:49:39.278 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2659 and participant 248 at 2025-02-14T23:49:39.378459221Z[Etc/UTC].
+    23:49:39.291 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2659 and participant 248 (result to be deleted: null)
+    23:49:39.291 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2659 and participant 248 at 2025-02-14T23:49:39.391785773Z[Etc/UTC].
+    23:49:39.293 |  27 nPool-1-worker-1 | DEBUG | .a.a.q.QuizSubmissionIntegrationTest : // End the quiz and delete it
+    23:49:39.296 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic - this operation breaks ==
+    23:49:39.296 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic - this operation breaks ==
+    23:49:39.297 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic - this operation breaks ==
+    23:49:39.297 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic - this operation breaks ==
+    23:49:39.298 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic - this operation breaks ==
+    23:49:39.298 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic - this operation breaks ==
+    23:49:39.300 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/quiz-exercises/2659
+    23:49:39.301 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.web.QuizExerciseResource : REST request to delete quiz exercise : 2659
+    23:49:39.303 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.a.q.web.QuizExerciseResource : Could not find file dragItemImage2.png for deletion
+    23:49:39.303 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.a.q.web.QuizExerciseResource : Could not find file dragItemImage4.png for deletion
+    23:49:39.304 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User quizsubmissiontestinstructor1 has requested to delete QuizExercise new quiz with id 2659
+    23:49:39.304 |  27 nPool-1-worker-1 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Request to delete QuizExercise with id 2659
+    23:49:39.305 |  27 nPool-1-worker-1 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Deleting the channel took 234µs
+    23:49:39.306 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 3 participations of exercise with id : 2659
+    23:49:39.306 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete Participation : StudentParticipation{id=2116, presentationScore=null, student=User{login='quizsubmissiontestinstructor1', firstName='quizsubmissiontestinstructor1First', lastName='quizsubmissiontestinstructor1Last', email='quizsubmissiontestinstructor1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}}
+    23:49:39.307 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 2116
+    23:49:39.309 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete Participation : StudentParticipation{id=2117, presentationScore=null, student=User{login='quizsubmissionteststudent1', firstName='quizsubmissionteststudent1First', lastName='quizsubmissionteststudent1Last', email='quizsubmissionteststudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}}
+    23:49:39.309 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 2117
+    23:49:39.310 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result 670
+    23:49:39.310 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result references 670
+    23:49:39.315 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete Participation : StudentParticipation{id=2118, presentationScore=null, student=User{login='quizsubmissionteststudent2', firstName='quizsubmissionteststudent2First', lastName='quizsubmissionteststudent2Last', email='quizsubmissionteststudent2@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}}
+    23:49:39.315 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 2118
+    23:49:39.316 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result 671
+    23:49:39.316 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result references 671
+    23:49:39.323 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic - this operation breaks ==
+    23:49:39.325 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic - this operation breaks ==
+    23:49:39.325 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic - this operation breaks ==
+    23:49:39.328 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.artemis.quiz.domain.DragItem : Could not delete file with path dragItemImage2.png. Assume already deleted, DragAndDropQuestion 102 can be removed.
+    23:49:39.328 |  27 nPool-1-worker-1 | WARN  | d.t.c.a.artemis.quiz.domain.DragItem : Could not delete file with path dragItemImage4.png. Assume already deleted, DragAndDropQuestion 104 can be removed.
+    23:49:39.330 |  27 nPool-1-worker-1 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '2659' from title cache 'exerciseTitle'
+    23:49:39.331 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received cancel quiz start for quiz exercise 2659
+
+Finished logs for QuizSubmissionIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

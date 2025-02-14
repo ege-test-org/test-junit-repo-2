@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.iris.architecture.IrisResourceArchitectureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:58" hostname="fv-az1721-502" time="0.183">
+  <properties/>
+  <testcase name="testNoOverrideOfEnforceAdmin()" classname="de.tum.cit.aet.artemis.iris.architecture.IrisResourceArchitectureTest" time="0.015"/>
+  <testcase name="testUseKebabCaseForRestEndpoints()" classname="de.tum.cit.aet.artemis.iris.architecture.IrisResourceArchitectureTest" time="0.075"/>
+  <testcase name="allPublicMethodsShouldReturnResponseEntity()" classname="de.tum.cit.aet.artemis.iris.architecture.IrisResourceArchitectureTest" time="0.025"/>
+  <testcase name="testClassWithEnforceAdminInCorrectlyNamed()" classname="de.tum.cit.aet.artemis.iris.architecture.IrisResourceArchitectureTest" time="0.007"/>
+  <testcase name="shouldBeNamedResource()" classname="de.tum.cit.aet.artemis.iris.architecture.IrisResourceArchitectureTest" time="0.004"/>
+  <testcase name="shouldBeInResourcePackage()" classname="de.tum.cit.aet.artemis.iris.architecture.IrisResourceArchitectureTest" time="0.001"/>
+  <testcase name="shouldCorrectlyUseRequestMappingAnnotations()" classname="de.tum.cit.aet.artemis.iris.architecture.IrisResourceArchitectureTest" time="0.052"/>
+  <system-out><![CDATA[
+Starting logs for IrisResourceArchitectureTest
+
+  Starting logs for IrisResourceArchitectureTest > testNoOverrideOfEnforceAdmin()
+
+  Starting logs for IrisResourceArchitectureTest > testUseKebabCaseForRestEndpoints()
+
+  Starting logs for IrisResourceArchitectureTest > allPublicMethodsShouldReturnResponseEntity()
+
+  Starting logs for IrisResourceArchitectureTest > testClassWithEnforceAdminInCorrectlyNamed()
+
+  Starting logs for IrisResourceArchitectureTest > shouldBeNamedResource()
+
+  Starting logs for IrisResourceArchitectureTest > shouldBeInResourcePackage()
+
+  Starting logs for IrisResourceArchitectureTest > shouldCorrectlyUseRequestMappingAnnotations()
+
+Finished logs for IrisResourceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

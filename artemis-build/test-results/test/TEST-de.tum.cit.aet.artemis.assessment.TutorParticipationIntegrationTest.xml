@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.assessment.TutorParticipationIntegrationTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:47" hostname="fv-az1721-502" time="0.699">
+  <properties/>
+  <testcase name="testTutorParticipateInModelingExerciseWithExampleSubmissionAddingUnnecessaryFeedbackBadRequest()" classname="de.tum.cit.aet.artemis.assessment.TutorParticipationIntegrationTest" time="0.109"/>
+  <testcase name="testTutorParticipateInModelingExerciseWithExampleSubmissionAddingUnnecessaryUnreferencedFeedbackBadRequest()" classname="de.tum.cit.aet.artemis.assessment.TutorParticipationIntegrationTest" time="0.137"/>
+  <testcase name="testTutorParticipateInTextExerciseWithExampleSubmissionAddingUnnecessaryUnreferencedFeedbackBadRequest()" classname="de.tum.cit.aet.artemis.assessment.TutorParticipationIntegrationTest" time="0.11"/>
+  <testcase name="testTutorParticipateInTextExerciseWithExampleSubmissionAddingUnnecessaryFeedbackBadRequest()" classname="de.tum.cit.aet.artemis.assessment.TutorParticipationIntegrationTest" time="0.152"/>
+  <testcase name="testTutorParticipateInModelingExerciseWithExampleSubmission(boolean) [1] usedForTutorial=true" classname="de.tum.cit.aet.artemis.assessment.TutorParticipationIntegrationTest" time="0.084"/>
+  <testcase name="testTutorParticipateInModelingExerciseWithExampleSubmission(boolean) [2] usedForTutorial=false" classname="de.tum.cit.aet.artemis.assessment.TutorParticipationIntegrationTest" time="0.092"/>
+  <system-out><![CDATA[
+Starting logs for TutorParticipationIntegrationTest
+
+  Starting logs for TutorParticipationIntegrationTest > testTutorParticipateInModelingExerciseWithExampleSubmissionAddingUnnecessaryFeedbackBadRequest()
+    23:42:47.447 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:42:47.449 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:42:47.451 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:47.452 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:42:47.454 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:42:47.455 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:42:47.456 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:42:47.456 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:42:47.458 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:42:47.470 |  44 Pool-1-worker-18 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '300' from title cache 'exerciseTitle'
+    23:42:47.478 |  44 Pool-1-worker-18 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '299' from title cache 'exerciseTitle'
+    23:42:47.478 |  44 Pool-1-worker-18 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorParticipationIntegrationTest#testTutorParticipateInModelingExerciseWithExampleSubmissionAddingUnnecessaryFeedbackBadRequest'
+    23:42:47.488 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/299/tutor-participations
+    23:42:47.489 |  44 Pool-1-worker-18 | DEBUG | c.a.a.a.w.TutorParticipationResource : REST request to start tutor participation : 299
+    23:42:47.509 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/300/assess-example-submission
+    23:42:47.514 |  44 Pool-1-worker-18 | DEBUG | c.a.a.a.w.TutorParticipationResource : REST request to add example submission to exercise id : 300
+    23:42:47.530 |  44 Pool-1-worker-18 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, {"errors": [{
+  "reference" : "6aba5764-d102-4740-9675-b2bd0a4f2680",
+  "type" : "UNNECESSARY_FEEDBACK"
+}]}
+    23:42:47.530 |  44 Pool-1-worker-18 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: {"errors": [{
+  "reference" : "6aba5764-d102-4740-9675-b2bd0a4f2680",
+  "type" : "UNNECESSARY_FEEDBACK"
+}]}
+
+  Starting logs for TutorParticipationIntegrationTest > testTutorParticipateInModelingExerciseWithExampleSubmissionAddingUnnecessaryUnreferencedFeedbackBadRequest()
+    23:42:47.553 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:42:47.554 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:42:47.557 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:47.558 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:42:47.560 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:42:47.564 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:42:47.565 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:42:47.565 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:42:47.569 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:42:47.588 |  44 Pool-1-worker-18 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '302' from title cache 'exerciseTitle'
+    23:42:47.599 |  44 Pool-1-worker-18 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '301' from title cache 'exerciseTitle'
+    23:42:47.599 |  44 Pool-1-worker-18 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorParticipationIntegrationTest#testTutorParticipateInModelingExerciseWithExampleSubmissionAddingUnnecessaryUnreferencedFeedbackBadRequest'
+    23:42:47.615 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/301/tutor-participations
+    23:42:47.616 |  44 Pool-1-worker-18 | DEBUG | c.a.a.a.w.TutorParticipationResource : REST request to start tutor participation : 301
+    23:42:47.647 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/302/assess-example-submission
+    23:42:47.652 |  44 Pool-1-worker-18 | DEBUG | c.a.a.a.w.TutorParticipationResource : REST request to add example submission to exercise id : 302
+    23:42:47.664 |  44 Pool-1-worker-18 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, {"errors": [{
+  "reference" : null,
+  "type" : "UNNECESSARY_FEEDBACK"
+}]}
+    23:42:47.664 |  44 Pool-1-worker-18 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: {"errors": [{
+  "reference" : null,
+  "type" : "UNNECESSARY_FEEDBACK"
+}]}
+
+  Starting logs for TutorParticipationIntegrationTest > testTutorParticipateInTextExerciseWithExampleSubmissionAddingUnnecessaryUnreferencedFeedbackBadRequest()
+    23:42:47.691 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:42:47.692 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:42:47.695 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:47.696 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:42:47.698 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:42:47.699 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:42:47.699 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:42:47.699 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:42:47.702 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:42:47.710 |  44 Pool-1-worker-18 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '304' from title cache 'exerciseTitle'
+    23:42:47.718 |  44 Pool-1-worker-18 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '303' from title cache 'exerciseTitle'
+    23:42:47.718 |  44 Pool-1-worker-18 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorParticipationIntegrationTest#testTutorParticipateInTextExerciseWithExampleSubmissionAddingUnnecessaryUnreferencedFeedbackBadRequest'
+    23:42:47.759 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/303/tutor-participations
+    23:42:47.759 |  44 Pool-1-worker-18 | DEBUG | c.a.a.a.w.TutorParticipationResource : REST request to start tutor participation : 303
+    23:42:47.778 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/304/assess-example-submission
+    23:42:47.780 |  44 Pool-1-worker-18 | DEBUG | c.a.a.a.w.TutorParticipationResource : REST request to add example submission to exercise id : 304
+    23:42:47.785 |  44 Pool-1-worker-18 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, {"errors": []}
+    23:42:47.785 |  44 Pool-1-worker-18 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: {"errors": []}
+
+  Starting logs for TutorParticipationIntegrationTest > testTutorParticipateInTextExerciseWithExampleSubmissionAddingUnnecessaryFeedbackBadRequest()
+    23:42:47.800 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:42:47.801 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:42:47.804 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:47.806 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:42:47.808 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:42:47.809 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:42:47.810 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:42:47.810 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:42:47.815 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:42:47.835 |  44 Pool-1-worker-18 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '306' from title cache 'exerciseTitle'
+    23:42:47.848 |  44 Pool-1-worker-18 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '305' from title cache 'exerciseTitle'
+    23:42:47.848 |  44 Pool-1-worker-18 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorParticipationIntegrationTest#testTutorParticipateInTextExerciseWithExampleSubmissionAddingUnnecessaryFeedbackBadRequest'
+    23:42:47.876 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/305/tutor-participations
+    23:42:47.877 |  44 Pool-1-worker-18 | DEBUG | c.a.a.a.w.TutorParticipationResource : REST request to start tutor participation : 305
+    23:42:47.914 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/306/assess-example-submission
+    23:42:47.920 |  44 Pool-1-worker-18 | DEBUG | c.a.a.a.w.TutorParticipationResource : REST request to add example submission to exercise id : 306
+    23:42:47.927 |  44 Pool-1-worker-18 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, {"errors": []}
+    23:42:47.930 |  44 Pool-1-worker-18 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: {"errors": []}
+
+  Starting logs for TutorParticipationIntegrationTest > testTutorParticipateInModelingExerciseWithExampleSubmission(boolean) [1] usedForTutorial=true
+    23:42:47.967 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:42:47.968 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:42:47.971 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:47.972 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:42:47.974 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:42:47.975 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:42:47.976 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:42:47.976 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:42:47.977 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:42:47.987 |  44 Pool-1-worker-18 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '308' from title cache 'exerciseTitle'
+    23:42:47.993 |  44 Pool-1-worker-18 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '307' from title cache 'exerciseTitle'
+    23:42:47.994 |  44 Pool-1-worker-18 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorParticipationIntegrationTest#testTutorParticipateInModelingExerciseWithExampleSubmission'
+    23:42:48.004 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/307/tutor-participations
+    23:42:48.005 |  44 Pool-1-worker-18 | DEBUG | c.a.a.a.w.TutorParticipationResource : REST request to start tutor participation : 307
+    23:42:48.013 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/307/assess-example-submission
+    23:42:48.015 |  44 Pool-1-worker-18 | DEBUG | c.a.a.a.w.TutorParticipationResource : REST request to add example submission to exercise id : 307
+
+  Starting logs for TutorParticipationIntegrationTest > testTutorParticipateInModelingExerciseWithExampleSubmission(boolean) [2] usedForTutorial=false
+    23:42:48.048 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:42:48.050 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 1 tutors...
+    23:42:48.053 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:42:48.054 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:42:48.055 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:42:48.057 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:42:48.057 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:42:48.057 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:42:48.059 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:42:48.071 |  44 Pool-1-worker-18 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '310' from title cache 'exerciseTitle'
+    23:42:48.085 |  44 Pool-1-worker-18 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '309' from title cache 'exerciseTitle'
+    23:42:48.088 |  44 Pool-1-worker-18 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorParticipationIntegrationTest#testTutorParticipateInModelingExerciseWithExampleSubmission'
+    23:42:48.091 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/309/tutor-participations
+    23:42:48.092 |  44 Pool-1-worker-18 | DEBUG | c.a.a.a.w.TutorParticipationResource : REST request to start tutor participation : 309
+    23:42:48.099 |  44 Pool-1-worker-18 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/309/assess-example-submission
+    23:42:48.101 |  44 Pool-1-worker-18 | DEBUG | c.a.a.a.w.TutorParticipationResource : REST request to add example submission to exercise id : 309
+
+Finished logs for TutorParticipationIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

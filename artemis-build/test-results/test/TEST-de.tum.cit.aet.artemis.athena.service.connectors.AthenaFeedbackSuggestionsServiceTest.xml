@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.athena.service.connectors.AthenaFeedbackSuggestionsServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:07" hostname="fv-az1721-502" time="0.093">
+  <properties/>
+  <testcase name="testFeedbackSuggestionsProgramming()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaFeedbackSuggestionsServiceTest" time="0.022"/>
+  <testcase name="testFeedbackSuggestionsText()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaFeedbackSuggestionsServiceTest" time="0.042"/>
+  <testcase name="testFeedbackSuggestionsIdConflict()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaFeedbackSuggestionsServiceTest" time="0.022"/>
+  <system-out><![CDATA[
+Starting logs for AthenaFeedbackSuggestionsServiceTest
+
+  Starting logs for AthenaFeedbackSuggestionsServiceTest > testFeedbackSuggestionsProgramming()
+    23:42:07.143 | 113 Pool-1-worker-28 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaFeedbackSuggestionsServiceTest#testFeedbackSuggestionsProgramming'
+    23:42:07.144 | 113 Pool-1-worker-28 | DEBUG | a.s.AthenaFeedbackSuggestionsService : Start Athena 'Graded' Feedback Suggestions Service for Exercise 'Title' (#124).
+    23:42:07.145 | 113 Pool-1-worker-28 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Calling Athena.
+    23:42:07.147 | 113 Pool-1-worker-28 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Finished remote call in 1.79ms
+    23:42:07.147 | 113 Pool-1-worker-28 | INFO  | a.s.AthenaFeedbackSuggestionsService : Athena responded to 'Graded' feedback suggestions request: [ProgrammingFeedbackDTO[id=1, exerciseId=1, submissionId=1, title=Not so good, description=invoke infinite compression here, credits=-1.0, structuredGradingInstructionId=null, filePath=client.cpp, lineStart=3, lineEnd=4]]
+
+  Starting logs for AthenaFeedbackSuggestionsServiceTest > testFeedbackSuggestionsText()
+    23:42:07.168 | 113 Pool-1-worker-28 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaFeedbackSuggestionsServiceTest#testFeedbackSuggestionsText'
+    23:42:07.170 | 113 Pool-1-worker-28 | DEBUG | a.s.AthenaFeedbackSuggestionsService : Start Athena 'Graded' Feedback Suggestions Service for Exercise 'Title' (#125).
+    23:42:07.172 | 113 Pool-1-worker-28 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Calling Athena.
+    23:42:07.173 | 113 Pool-1-worker-28 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Finished remote call in 1.63ms
+    23:42:07.173 | 113 Pool-1-worker-28 | INFO  | a.s.AthenaFeedbackSuggestionsService : Athena responded to 'Graded' feedback suggestions request: [TextFeedbackDTO[id=1, exerciseId=1, submissionId=1, title=Not so good, description=This needs to be improved, credits=-1.0, structuredGradingInstructionId=null, indexStart=3, indexEnd=9]]
+
+  Starting logs for AthenaFeedbackSuggestionsServiceTest > testFeedbackSuggestionsIdConflict()
+    23:42:07.213 | 113 Pool-1-worker-28 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaFeedbackSuggestionsServiceTest#testFeedbackSuggestionsIdConflict'
+    23:42:07.214 | 113 Pool-1-worker-28 | DEBUG | a.s.AthenaFeedbackSuggestionsService : Start Athena 'Graded' Feedback Suggestions Service for Exercise 'Title' (#127).
+    23:42:07.214 | 113 Pool-1-worker-28 | ERROR | a.s.AthenaFeedbackSuggestionsService : Exercise id 127 does not match submission's exercise id null
+
+Finished logs for AthenaFeedbackSuggestionsServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

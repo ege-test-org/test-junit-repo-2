@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.icl.SshFingerprintsProviderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:31" hostname="fv-az1721-502" time="0.034">
+  <properties/>
+  <testcase name="shouldReturnFingerprints()" classname="de.tum.cit.aet.artemis.programming.icl.SshFingerprintsProviderTest" time="0.034"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

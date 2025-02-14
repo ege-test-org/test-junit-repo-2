@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.config.websocket.GzipMessageConverterTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:35" hostname="fv-az1721-502" time="0.487">
+  <properties/>
+  <testcase name="testConvertFromInternalWithoutCompressedPayload()" classname="de.tum.cit.aet.artemis.core.config.websocket.GzipMessageConverterTest" time="0.433"/>
+  <testcase name="testConvertToInternalWithoutCompression()" classname="de.tum.cit.aet.artemis.core.config.websocket.GzipMessageConverterTest" time="0.005"/>
+  <testcase name="testConvertFromInternalWithCompressedPayload()" classname="de.tum.cit.aet.artemis.core.config.websocket.GzipMessageConverterTest" time="0.022"/>
+  <testcase name="testSupportsAnyClass()" classname="de.tum.cit.aet.artemis.core.config.websocket.GzipMessageConverterTest" time="0.001"/>
+  <testcase name="testConvertToInternalWithCompressionEnabled()" classname="de.tum.cit.aet.artemis.core.config.websocket.GzipMessageConverterTest" time="0.019"/>
+  <system-out><![CDATA[
+Starting logs for GzipMessageConverterTest
+
+  Starting logs for GzipMessageConverterTest > testConvertFromInternalWithoutCompressedPayload()
+
+  Starting logs for GzipMessageConverterTest > testConvertToInternalWithoutCompression()
+
+  Starting logs for GzipMessageConverterTest > testConvertFromInternalWithCompressedPayload()
+    23:39:36.371 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.c.c.w.GzipMessageConverter : Decompressing message payload for incoming message
+
+  Starting logs for GzipMessageConverterTest > testSupportsAnyClass()
+
+  Starting logs for GzipMessageConverterTest > testConvertToInternalWithCompressionEnabled()
+    23:39:36.409 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.c.w.GzipMessageConverter : Compressed message payload from 58 to 96 (saved -65.5% payload size)
+
+Finished logs for GzipMessageConverterTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

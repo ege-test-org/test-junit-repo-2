@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.compass.umlmodel.bpmn.BPMNDiagramTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:03" hostname="fv-az1721-502" time="0.043">
+  <properties/>
+  <testcase name="parseLargeBpmnDiagramModelCorrectly()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.bpmn.BPMNDiagramTest" time="0.015"/>
+  <testcase name="similarityBpmnDiagramDifferentModels()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.bpmn.BPMNDiagramTest" time="0.012"/>
+  <testcase name="similarityBpmnDiagramEqualModels()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.bpmn.BPMNDiagramTest" time="0.009"/>
+  <testcase name="parseDiagramElementsCorrectly()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.bpmn.BPMNDiagramTest" time="0.004"/>
+  <system-out><![CDATA[
+Starting logs for BPMNDiagramTest
+
+  Starting logs for BPMNDiagramTest > parseLargeBpmnDiagramModelCorrectly()
+
+  Starting logs for BPMNDiagramTest > similarityBpmnDiagramDifferentModels()
+    23:40:03.823 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:03.824 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:03.826 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:03.828 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.15072727272727274
+    23:40:03.828 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.15072727272727274
+    23:40:03.828 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.0)
+    23:40:03.828 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:03.832 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:03.832 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:03.833 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.15072727272727274
+    23:40:03.833 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.15072727272727274
+    23:40:03.834 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.0)
+
+  Starting logs for BPMNDiagramTest > similarityBpmnDiagramEqualModels()
+    23:40:03.835 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:03.836 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:03.837 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:03.837 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 1.0
+    23:40:03.837 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 1.0
+    23:40:03.838 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.8)
+    23:40:03.838 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:03.840 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Build UML diagram from json
+    23:40:03.842 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 2 modeling submissions with at least 1 elements to compare
+    23:40:03.844 |  27 nPool-1-worker-1 | DEBUG | s.ModelingPlagiarismDetectionService : Compare result 0 with 1: 0.9999999999999994
+    23:40:03.844 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found similar models 0 with 1: 0.9999999999999994
+    23:40:03.844 |  27 nPool-1-worker-1 | INFO  | s.ModelingPlagiarismDetectionService : Found 1 similar modeling submission combinations (>0.8)
+
+  Starting logs for BPMNDiagramTest > parseDiagramElementsCorrectly()
+
+Finished logs for BPMNDiagramTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

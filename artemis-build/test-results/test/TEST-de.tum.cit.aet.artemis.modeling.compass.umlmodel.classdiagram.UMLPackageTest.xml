@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLPackageTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:04" hostname="fv-az1721-502" time="0.005">
+  <properties/>
+  <testcase name="similarity_null()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLPackageTest" time="0.001"/>
+  <testcase name="similarity_samePackageName()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLPackageTest" time="0.001"/>
+  <testcase name="similarity_differentElementType()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLPackageTest" time="0.001"/>
+  <testcase name="similarity_differentPackageName()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLPackageTest" time="0.001"/>
+  <system-out><![CDATA[
+Starting logs for UMLPackageTest
+
+  Starting logs for UMLPackageTest > similarity_null()
+
+  Starting logs for UMLPackageTest > similarity_samePackageName()
+
+  Starting logs for UMLPackageTest > similarity_differentElementType()
+
+  Starting logs for UMLPackageTest > similarity_differentPackageName()
+
+Finished logs for UMLPackageTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

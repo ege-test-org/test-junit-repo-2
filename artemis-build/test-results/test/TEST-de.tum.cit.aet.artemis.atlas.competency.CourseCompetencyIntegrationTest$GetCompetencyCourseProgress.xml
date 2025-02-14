@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.atlas.competency.CourseCompetencyIntegrationTest$GetCompetencyCourseProgress" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:03" hostname="fv-az1721-502" time="0.986">
+  <properties/>
+  <testcase name="shouldGetCompetencyCourseProgressWhenTeamExercise()" classname="de.tum.cit.aet.artemis.atlas.competency.CourseCompetencyIntegrationTest$GetCompetencyCourseProgress" time="0.552"/>
+  <testcase name="shouldGetCompetencyCourseProgress()" classname="de.tum.cit.aet.artemis.atlas.competency.CourseCompetencyIntegrationTest$GetCompetencyCourseProgress" time="0.432"/>
+  <system-out><![CDATA[
+Starting logs for GetCompetencyCourseProgress
+
+  Starting logs for GetCompetencyCourseProgress > shouldGetCompetencyCourseProgressWhenTeamExercise()
+    23:43:03.478 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:43:03.487 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:43:03.492 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:03.497 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:03.503 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:03.505 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:43:03.506 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:43:03.506 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:43:03.519 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:43:03.577 | 120 Pool-1-worker-35 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GetCompetencyCourseProgress#shouldGetCompetencyCourseProgressWhenTeamExercise'
+    23:43:03.623 | 120 Pool-1-worker-35 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 597 and participant 23 (result to be deleted: null)
+    23:43:03.623 | 120 Pool-1-worker-35 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 597 and participant 23 at 2025-02-14T23:43:03.723784502Z[Etc/UTC].
+    23:43:03.635 | 120 Pool-1-worker-35 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 597 and participant 23 (result to be deleted: null)
+    23:43:03.635 | 120 Pool-1-worker-35 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 597 and participant 23 at 2025-02-14T23:43:03.735143816Z[Etc/UTC].
+    23:43:03.644 | 120 Pool-1-worker-35 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 597 and participant 23 (result to be deleted: null)
+    23:43:03.644 | 120 Pool-1-worker-35 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 597 and participant 23 at 2025-02-14T23:43:03.744308587Z[Etc/UTC].
+    23:43:03.653 | 120 Pool-1-worker-35 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 597 and participant 23 (result to be deleted: null)
+    23:43:03.653 | 120 Pool-1-worker-35 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 597 and participant 23 at 2025-02-14T23:43:03.753828069Z[Etc/UTC].
+    23:43:03.659 | 120 Pool-1-worker-35 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 597 and participant 24 (result to be deleted: null)
+    23:43:03.659 | 120 Pool-1-worker-35 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 597 and participant 24 at 2025-02-14T23:43:03.759065876Z[Etc/UTC].
+    23:43:03.664 | 120 Pool-1-worker-35 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 597 and participant 24 (result to be deleted: null)
+    23:43:03.664 | 120 Pool-1-worker-35 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 597 and participant 24 at 2025-02-14T23:43:03.764787146Z[Etc/UTC].
+    23:43:03.979 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/641/course-competencies/170/course-progress
+    23:43:03.983 | 120 Pool-1-worker-35 | DEBUG | t.c.a.a.a.w.CourseCompetencyResource : REST request to get course progress for competency: 170
+
+  Starting logs for GetCompetencyCourseProgress > shouldGetCompetencyCourseProgress()
+    23:43:04.021 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:43:04.029 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:43:04.038 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:04.040 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:04.046 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:04.050 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:43:04.051 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:43:04.051 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:43:04.057 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:43:04.084 | 120 Pool-1-worker-35 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GetCompetencyCourseProgress#shouldGetCompetencyCourseProgress'
+    23:43:04.091 | 120 Pool-1-worker-35 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 598 and participant 87 (result to be deleted: null)
+    23:43:04.091 | 120 Pool-1-worker-35 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 598 and participant 87 at 2025-02-14T23:43:04.191443830Z[Etc/UTC].
+    23:43:04.094 | 120 Pool-1-worker-35 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 598 and participant 87 (result to be deleted: null)
+    23:43:04.094 | 120 Pool-1-worker-35 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 598 and participant 87 at 2025-02-14T23:43:04.194965657Z[Etc/UTC].
+    23:43:04.097 | 120 Pool-1-worker-35 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 598 and participant 87 (result to be deleted: null)
+    23:43:04.097 | 120 Pool-1-worker-35 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 598 and participant 87 at 2025-02-14T23:43:04.197152706Z[Etc/UTC].
+    23:43:04.100 | 120 Pool-1-worker-35 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 598 and participant 87 (result to be deleted: null)
+    23:43:04.100 | 120 Pool-1-worker-35 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 598 and participant 87 at 2025-02-14T23:43:04.200342013Z[Etc/UTC].
+    23:43:04.103 | 120 Pool-1-worker-35 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 598 and participant 88 (result to be deleted: null)
+    23:43:04.103 | 120 Pool-1-worker-35 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 598 and participant 88 at 2025-02-14T23:43:04.203583769Z[Etc/UTC].
+    23:43:04.106 | 120 Pool-1-worker-35 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 598 and participant 88 (result to be deleted: null)
+    23:43:04.106 | 120 Pool-1-worker-35 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 598 and participant 88 at 2025-02-14T23:43:04.206762016Z[Etc/UTC].
+    23:43:04.109 | 120 Pool-1-worker-35 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 598 and participant 91 (result to be deleted: null)
+    23:43:04.109 | 120 Pool-1-worker-35 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 598 and participant 91 at 2025-02-14T23:43:04.209846047Z[Etc/UTC].
+    23:43:04.112 | 120 Pool-1-worker-35 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 598 and participant 91 (result to be deleted: null)
+    23:43:04.112 | 120 Pool-1-worker-35 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 598 and participant 91 at 2025-02-14T23:43:04.212950115Z[Etc/UTC].
+    23:43:04.419 | 120 Pool-1-worker-35 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/643/course-competencies/171/course-progress
+    23:43:04.422 | 120 Pool-1-worker-35 | DEBUG | t.c.a.a.a.w.CourseCompetencyResource : REST request to get course progress for competency: 171
+
+Finished logs for GetCompetencyCourseProgress
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

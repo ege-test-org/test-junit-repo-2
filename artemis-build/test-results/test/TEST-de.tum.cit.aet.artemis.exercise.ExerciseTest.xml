@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.exercise.ExerciseTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:58" hostname="fv-az1721-502" time="0.197">
+  <properties/>
+  <testcase name="filterForCourseDashboard_submissionsWithRatedResultsOrder()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.015"/>
+  <testcase name="filterForCourseDashboard_nullParticipations()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.009"/>
+  <testcase name="filterForCourseDashboard_emptyParticipations()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.01"/>
+  <testcase name="filterForCourseDashboard_nullSubmissions()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.01"/>
+  <testcase name="findRelevantParticipation()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.01"/>
+  <testcase name="findRelevantParticipation_modelingExercise()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.009"/>
+  <testcase name="filterForCourseDashboard_submissionWithoutResultsAndSameCommitHashOrder()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.01"/>
+  <testcase name="filterForCourseDashboard_submissionWithoutResultsOrder()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.011"/>
+  <testcase name="findRelevantParticipation_empty()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.01"/>
+  <testcase name="filterForCourseDashboard_submissionWithMixedResults()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.01"/>
+  <testcase name="getExam_withExamExercise()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.009"/>
+  <testcase name="filterForCourseDashboard_emptySubmissions()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.01"/>
+  <testcase name="filterForCourseDashboard_submissionsWithUnratedResultsOrder()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.009"/>
+  <testcase name="testSanitizedExerciseTitleDoesntContainAnyIllegalCharacters()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.011"/>
+  <testcase name="findRelevantParticipation_textExercise()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.009"/>
+  <testcase name="filterForCourseDashboard_filterSensitiveInformation()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.011"/>
+  <testcase name="getExam_withoutExamExercise()" classname="de.tum.cit.aet.artemis.exercise.ExerciseTest" time="0.01"/>
+  <system-out><![CDATA[
+Starting logs for ExerciseTest
+
+  Starting logs for ExerciseTest > filterForCourseDashboard_submissionsWithRatedResultsOrder()
+    23:45:58.911 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#filterForCourseDashboard_submissionsWithRatedResultsOrder'
+
+  Starting logs for ExerciseTest > filterForCourseDashboard_nullParticipations()
+    23:45:58.923 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#filterForCourseDashboard_nullParticipations'
+
+  Starting logs for ExerciseTest > filterForCourseDashboard_emptyParticipations()
+    23:45:58.934 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#filterForCourseDashboard_emptyParticipations'
+
+  Starting logs for ExerciseTest > filterForCourseDashboard_nullSubmissions()
+    23:45:58.945 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#filterForCourseDashboard_nullSubmissions'
+
+  Starting logs for ExerciseTest > findRelevantParticipation()
+    23:45:58.957 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#findRelevantParticipation'
+
+  Starting logs for ExerciseTest > findRelevantParticipation_modelingExercise()
+    23:45:58.968 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#findRelevantParticipation_modelingExercise'
+
+  Starting logs for ExerciseTest > filterForCourseDashboard_submissionWithoutResultsAndSameCommitHashOrder()
+    23:45:58.980 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#filterForCourseDashboard_submissionWithoutResultsAndSameCommitHashOrder'
+
+  Starting logs for ExerciseTest > filterForCourseDashboard_submissionWithoutResultsOrder()
+    23:45:58.993 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#filterForCourseDashboard_submissionWithoutResultsOrder'
+
+  Starting logs for ExerciseTest > findRelevantParticipation_empty()
+    23:45:59.006 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#findRelevantParticipation_empty'
+
+  Starting logs for ExerciseTest > filterForCourseDashboard_submissionWithMixedResults()
+    23:45:59.017 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#filterForCourseDashboard_submissionWithMixedResults'
+
+  Starting logs for ExerciseTest > getExam_withExamExercise()
+    23:45:59.028 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#getExam_withExamExercise'
+
+  Starting logs for ExerciseTest > filterForCourseDashboard_emptySubmissions()
+    23:45:59.039 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#filterForCourseDashboard_emptySubmissions'
+
+  Starting logs for ExerciseTest > filterForCourseDashboard_submissionsWithUnratedResultsOrder()
+    23:45:59.050 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#filterForCourseDashboard_submissionsWithUnratedResultsOrder'
+
+  Starting logs for ExerciseTest > testSanitizedExerciseTitleDoesntContainAnyIllegalCharacters()
+    23:45:59.060 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#testSanitizedExerciseTitleDoesntContainAnyIllegalCharacters'
+
+  Starting logs for ExerciseTest > findRelevantParticipation_textExercise()
+    23:45:59.072 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#findRelevantParticipation_textExercise'
+
+  Starting logs for ExerciseTest > filterForCourseDashboard_filterSensitiveInformation()
+    23:45:59.083 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#filterForCourseDashboard_filterSensitiveInformation'
+
+  Starting logs for ExerciseTest > getExam_withoutExamExercise()
+    23:45:59.094 | 378 ool-1-worker-142 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ExerciseTest#getExam_withoutExamExercise'
+
+Finished logs for ExerciseTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

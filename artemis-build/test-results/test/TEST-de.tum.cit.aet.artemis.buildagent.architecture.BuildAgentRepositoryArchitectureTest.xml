@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:18" hostname="fv-az1721-502" time="0.204">
+  <properties/>
+  <testcase name="testNoEntityGraphsOnQueries()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" time="0.013"/>
+  <testcase name="testNoUnusedRepositoryMethods()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" time="0.022"/>
+  <testcase name="testTransactional()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" time="0.021"/>
+  <testcase name="shouldBeInRepositoryPackage()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" time="0.005"/>
+  <testcase name="testRepositoryParamAnnotation()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" time="0.023"/>
+  <testcase name="orElseThrowShouldNotBeCalled()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" time="0.004"/>
+  <testcase name="repositoriesImplementArtemisJpaRepository()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" time="0.004"/>
+  <testcase name="persistenceShouldNotAccessServices()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" time="0.004"/>
+  <testcase name="usedInProductionCode()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" time="0.021"/>
+  <testcase name="shouldBeAnnotatedRepository()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" time="0.005"/>
+  <testcase name="enforceUsageOfTestRepository()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" time="0.003"/>
+  <testcase name="testJPQLStyle()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" time="0.027"/>
+  <testcase name="shouldBeNamedRepository()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" time="0.003"/>
+  <testcase name="enforceStructureOfTestRepositories()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" time="0.009"/>
+  <testcase name="testOnlySpringTransactionalAnnotation()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" time="0.02"/>
+  <testcase name="enforcePrimaryBeanAnnotationOnTestRepositories()" classname="de.tum.cit.aet.artemis.buildagent.architecture.BuildAgentRepositoryArchitectureTest" time="0.003"/>
+  <system-out><![CDATA[
+Starting logs for BuildAgentRepositoryArchitectureTest
+
+  Starting logs for BuildAgentRepositoryArchitectureTest > testNoEntityGraphsOnQueries()
+
+  Starting logs for BuildAgentRepositoryArchitectureTest > testNoUnusedRepositoryMethods()
+
+  Starting logs for BuildAgentRepositoryArchitectureTest > testTransactional()
+
+  Starting logs for BuildAgentRepositoryArchitectureTest > shouldBeInRepositoryPackage()
+
+  Starting logs for BuildAgentRepositoryArchitectureTest > testRepositoryParamAnnotation()
+
+  Starting logs for BuildAgentRepositoryArchitectureTest > orElseThrowShouldNotBeCalled()
+
+  Starting logs for BuildAgentRepositoryArchitectureTest > repositoriesImplementArtemisJpaRepository()
+
+  Starting logs for BuildAgentRepositoryArchitectureTest > persistenceShouldNotAccessServices()
+
+  Starting logs for BuildAgentRepositoryArchitectureTest > usedInProductionCode()
+
+  Starting logs for BuildAgentRepositoryArchitectureTest > shouldBeAnnotatedRepository()
+
+  Starting logs for BuildAgentRepositoryArchitectureTest > enforceUsageOfTestRepository()
+
+  Starting logs for BuildAgentRepositoryArchitectureTest > testJPQLStyle()
+
+  Starting logs for BuildAgentRepositoryArchitectureTest > shouldBeNamedRepository()
+
+  Starting logs for BuildAgentRepositoryArchitectureTest > enforceStructureOfTestRepositories()
+
+  Starting logs for BuildAgentRepositoryArchitectureTest > testOnlySpringTransactionalAnnotation()
+
+  Starting logs for BuildAgentRepositoryArchitectureTest > enforcePrimaryBeanAnnotationOnTestRepositories()
+
+Finished logs for BuildAgentRepositoryArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

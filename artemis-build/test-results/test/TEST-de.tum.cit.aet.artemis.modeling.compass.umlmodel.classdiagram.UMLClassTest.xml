@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:04" hostname="fv-az1721-502" time="0.179">
+  <properties/>
+  <testcase name="similarity_differentClassName()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" time="0.01"/>
+  <testcase name="similarity_differentClassType()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" time="0.006"/>
+  <testcase name="similarity_null()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" time="0.003"/>
+  <testcase name="getElementByJSONID_getClass()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" time="0.004"/>
+  <testcase name="getElementByJSONID_getMethod()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" time="0.004"/>
+  <testcase name="overallSimilarity_sameClass()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" time="0.009"/>
+  <testcase name="similarity_nullReferenceName()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" time="0.078"/>
+  <testcase name="similarity_differentElementType()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" time="0.004"/>
+  <testcase name="overallSimilarity_differentElementType()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" time="0.005"/>
+  <testcase name="getType()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" time="0.004"/>
+  <testcase name="getElementByJSONID_noElementFound()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" time="0.004"/>
+  <testcase name="overallSimilarity_null()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" time="0.003"/>
+  <testcase name="overallSimilarity_differentAttributesAndMethods()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" time="0.008"/>
+  <testcase name="getElementCount()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" time="0.009"/>
+  <testcase name="getElementByJSONID_getAttribute()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" time="0.011"/>
+  <testcase name="similarity_sameClass()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLClassTest" time="0.007"/>
+  <system-out><![CDATA[
+Starting logs for UMLClassTest
+
+  Starting logs for UMLClassTest > similarity_differentClassName()
+
+  Starting logs for UMLClassTest > similarity_differentClassType()
+
+  Starting logs for UMLClassTest > similarity_null()
+
+  Starting logs for UMLClassTest > getElementByJSONID_getClass()
+
+  Starting logs for UMLClassTest > getElementByJSONID_getMethod()
+
+  Starting logs for UMLClassTest > overallSimilarity_sameClass()
+
+  Starting logs for UMLClassTest > similarity_nullReferenceName()
+
+  Starting logs for UMLClassTest > similarity_differentElementType()
+
+  Starting logs for UMLClassTest > overallSimilarity_differentElementType()
+
+  Starting logs for UMLClassTest > getType()
+
+  Starting logs for UMLClassTest > getElementByJSONID_noElementFound()
+
+  Starting logs for UMLClassTest > overallSimilarity_null()
+
+  Starting logs for UMLClassTest > overallSimilarity_differentAttributesAndMethods()
+
+  Starting logs for UMLClassTest > getElementCount()
+
+  Starting logs for UMLClassTest > getElementByJSONID_getAttribute()
+
+  Starting logs for UMLClassTest > similarity_sameClass()
+
+Finished logs for UMLClassTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

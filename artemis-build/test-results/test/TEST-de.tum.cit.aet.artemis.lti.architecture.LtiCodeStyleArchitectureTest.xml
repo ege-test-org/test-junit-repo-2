@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lti.architecture.LtiCodeStyleArchitectureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:00" hostname="fv-az1721-502" time="0.011">
+  <properties/>
+  <testcase name="testDTOImplementations()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiCodeStyleArchitectureTest" time="0.011"/>
+  <system-out><![CDATA[
+Starting logs for LtiCodeStyleArchitectureTest
+
+  Starting logs for LtiCodeStyleArchitectureTest > testDTOImplementations()
+    23:40:00.988 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTO classes: 0
+    23:40:00.988 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTO classes: []
+    23:40:00.993 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTOs that do not end with "DTO": 11
+    23:40:00.993 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTOs that do not end with "DTO": [Class <de.tum.cit.aet.artemis.lti.dto.Claims> does not have simple name ending with 'DTO' in (Claims.java:0), Class <de.tum.cit.aet.artemis.lti.dto.Lti13AgsClaim> does not have simple name ending with 'DTO' in (Lti13AgsClaim.java:0), Class <de.tum.cit.aet.artemis.lti.dto.Lti13AuthenticationResponse> does not have simple name ending with 'DTO' in (Lti13AuthenticationResponse.java:0), Class <de.tum.cit.aet.artemis.lti.dto.Lti13ClientRegistration> does not have simple name ending with 'DTO' in (Lti13ClientRegistration.java:0), Class <de.tum.cit.aet.artemis.lti.dto.Lti13ClientRegistrationFactory> does not have simple name ending with 'DTO' in (Lti13ClientRegistrationFactory.java:0), Class <de.tum.cit.aet.artemis.lti.dto.Lti13DeepLinkingResponse> does not have simple name ending with 'DTO' in (Lti13DeepLinkingResponse.java:0), Class <de.tum.cit.aet.artemis.lti.dto.Lti13LaunchRequest> does not have simple name ending with 'DTO' in (Lti13LaunchRequest.java:0), Class <de.tum.cit.aet.artemis.lti.dto.Lti13Message> does not have simple name ending with 'DTO' in (Lti13Message.java:0), Class <de.tum.cit.aet.artemis.lti.dto.Lti13PlatformConfiguration> does not have simple name ending with 'DTO' in (Lti13PlatformConfiguration.java:0), Class <de.tum.cit.aet.artemis.lti.dto.Lti13ToolConfiguration> does not have simple name ending with 'DTO' in (Lti13ToolConfiguration.java:0), Class <de.tum.cit.aet.artemis.lti.dto.Scopes> does not have simple name ending with 'DTO' in (Scopes.java:0)]
+
+Finished logs for LtiCodeStyleArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

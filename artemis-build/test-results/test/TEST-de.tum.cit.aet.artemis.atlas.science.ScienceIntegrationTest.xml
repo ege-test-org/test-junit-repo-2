@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.atlas.science.ScienceIntegrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:22" hostname="fv-az1721-502" time="0.149">
+  <properties/>
+  <testcase name="[1] type=LECTURE__OPEN" classname="de.tum.cit.aet.artemis.atlas.science.ScienceIntegrationTest" time="0.047"/>
+  <testcase name="[2] type=LECTURE__OPEN_UNIT" classname="de.tum.cit.aet.artemis.atlas.science.ScienceIntegrationTest" time="0.052"/>
+  <testcase name="[3] type=EXERCISE__OPEN" classname="de.tum.cit.aet.artemis.atlas.science.ScienceIntegrationTest" time="0.038"/>
+  <system-out><![CDATA[
+Starting logs for ScienceIntegrationTest
+
+  Starting logs for ScienceIntegrationTest > [1] type=LECTURE__OPEN
+    23:43:22.367 | 125 Pool-1-worker-40 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ScienceIntegrationTest#testLogEventOfType'
+    23:43:22.368 | 125 Pool-1-worker-40 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/science
+    23:43:22.375 | 125 Pool-1-worker-40 | DEBUG | d.t.c.a.a.atlas.web.ScienceResource  : REST request to log science event of type ScienceEventDTO[type=LECTURE__OPEN, resourceId=3]
+
+  Starting logs for ScienceIntegrationTest > [2] type=LECTURE__OPEN_UNIT
+    23:43:22.431 | 125 Pool-1-worker-40 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ScienceIntegrationTest#testLogEventOfType'
+    23:43:22.432 | 125 Pool-1-worker-40 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/science
+    23:43:22.437 | 125 Pool-1-worker-40 | DEBUG | d.t.c.a.a.atlas.web.ScienceResource  : REST request to log science event of type ScienceEventDTO[type=LECTURE__OPEN_UNIT, resourceId=3]
+
+  Starting logs for ScienceIntegrationTest > [3] type=EXERCISE__OPEN
+    23:43:22.475 | 125 Pool-1-worker-40 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ScienceIntegrationTest#testLogEventOfType'
+    23:43:22.477 | 125 Pool-1-worker-40 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/science
+    23:43:22.478 | 125 Pool-1-worker-40 | DEBUG | d.t.c.a.a.atlas.web.ScienceResource  : REST request to log science event of type ScienceEventDTO[type=EXERCISE__OPEN, resourceId=3]
+
+Finished logs for ScienceIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

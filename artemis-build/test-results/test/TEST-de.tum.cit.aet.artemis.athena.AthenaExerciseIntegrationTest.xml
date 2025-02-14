@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.athena.AthenaExerciseIntegrationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:41:45" hostname="fv-az1721-502" time="8.421">
+  <properties/>
+  <testcase name="testUpdateTextExercise_useRestrictedAthenaModule_success()" classname="de.tum.cit.aet.artemis.athena.AthenaExerciseIntegrationTest" time="6.278"/>
+  <testcase name="testUpdateCourse_revokeRestrictedAthenaModuleAccess_success()" classname="de.tum.cit.aet.artemis.athena.AthenaExerciseIntegrationTest" time="0.898"/>
+  <testcase name="testCreateTextExercise_useRestrictedAthenaModule_success()" classname="de.tum.cit.aet.artemis.athena.AthenaExerciseIntegrationTest" time="0.353"/>
+  <testcase name="testCreateTextExercise_useRestrictedAthenaModule_badRequest()" classname="de.tum.cit.aet.artemis.athena.AthenaExerciseIntegrationTest" time="0.223"/>
+  <testcase name="testCreateExamTextExercise_useAthena_badRequest()" classname="de.tum.cit.aet.artemis.athena.AthenaExerciseIntegrationTest" time="0.19"/>
+  <testcase name="testUpdateTextExercise_useRestrictedAthenaModule_badRequest()" classname="de.tum.cit.aet.artemis.athena.AthenaExerciseIntegrationTest" time="0.113"/>
+  <testcase name="testUpdateTextExercise_afterDueDate_badRequest()" classname="de.tum.cit.aet.artemis.athena.AthenaExerciseIntegrationTest" time="0.165"/>
+  <testcase name="testUpdateCourse_revokeRestrictedAthenaModuleAccess_badRequest()" classname="de.tum.cit.aet.artemis.athena.AthenaExerciseIntegrationTest" time="0.158"/>
+  <system-out><![CDATA[
+Starting logs for AthenaExerciseIntegrationTest
+    23:38:42.983 |  51 Pool-1-worker-25 | INFO  | .a.a.a.AthenaExerciseIntegrationTest : Starting AthenaExerciseIntegrationTest using Java 21.0.6 with PID 2037 (started by runner in /home/runner/work/Artemis/Artemis)
+    23:38:42.986 |  51 Pool-1-worker-25 | DEBUG | .a.a.a.AthenaExerciseIntegrationTest : Running with Spring Boot v3.4.2, Spring v6.2.2
+    23:38:42.987 |  51 Pool-1-worker-25 | INFO  | .a.a.a.AthenaExerciseIntegrationTest : The following 10 profiles are active: "test", "artemis", "core", "scheduling", "gitlab", "jenkins", "athena", "lti", "aeolus", "apollon"
+    23:38:49.335 |  51 Pool-1-worker-25 | INFO  | ddedDatabaseContextCustomizerFactory : Replacing 'dataSource' DataSource bean with embedded version
+    23:38:50.650 |  51 Pool-1-worker-25 | WARN  | ionDelegate$BeanPostProcessorChecker : Bean 'io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration' of type [io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [flywayPropertiesPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+    23:38:52.936 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.c.AsyncConfiguration     : Creating Async Task Executor
+    23:38:53.137 |  51 Pool-1-worker-25 | INFO  | d.t.c.a.a.c.c.LiquibaseConfiguration : Liquibase is enabled
+    23:38:53.992 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.c.CacheConfiguration     : Configuring Hazelcast
+    23:38:54.028 |  51 Pool-1-worker-25 | WARN  | c.h.i.impl.HazelcastInstanceFactory  : Hazelcast is starting in a Java modular environment (Java 9 and newer) but without proper access to required Java packages. Use additional Java arguments to provide Hazelcast access to Java internal API. The internal API access is used to get the best performance results. Arguments to be used:
+ --add-modules java.se --add-exports java.base/jdk.internal.ref=ALL-UNNAMED --add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/sun.nio.ch=ALL-UNNAMED --add-opens java.management/sun.management=ALL-UNNAMED --add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED
+    23:38:54.193 |  51 Pool-1-worker-25 | INFO  | d.t.c.a.a.c.c.CacheConfiguration     : No discovery service is set up, Hazelcast cannot create a multi-node cluster.
+    23:38:54.193 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.c.CacheConfiguration     : Binding Hazelcast to interface 127.0.0.1
+    23:38:54.424 |  51 Pool-1-worker-25 | INFO  | c.hazelcast.instance.AddressPicker   : [LOCAL] [dev] [5.5.0] Using public address: [127.0.0.1]:5701
+    23:38:54.478 |  51 Pool-1-worker-25 | INFO  | com.hazelcast.system.logo            : [127.0.0.1]:5701 [dev] [5.5.0] 
+    o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+    |    |    / \       /         |     /         / \    |         |
+    o----o       o     o   o----o |    o             o   o----o    |
+    |    |  *     \   /           |     \       *     \       |    |
+    o    o *       o o---o   o--o o----o o---o *       o o----o    o
+
+    23:38:54.478 |  51 Pool-1-worker-25 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5701 [dev] [5.5.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+    23:38:54.484 |  51 Pool-1-worker-25 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5701 [dev] [5.5.0] Hazelcast Platform 5.5.0 (20240725) starting at [127.0.0.1]:5701
+    23:38:54.484 |  51 Pool-1-worker-25 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5701 [dev] [5.5.0] Cluster name: dev
+    23:38:54.484 |  51 Pool-1-worker-25 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5701 [dev] [5.5.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+    23:38:54.494 |  51 Pool-1-worker-25 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5701 [dev] [5.5.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+    23:38:56.218 |  51 Pool-1-worker-25 | INFO  | com.hazelcast.system.security        : [127.0.0.1]:5701 [dev] [5.5.0] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see ]]>&#x1f512;<![CDATA[ security recommendations and the status of current config.
+    23:38:56.370 |  51 Pool-1-worker-25 | INFO  | com.hazelcast.instance.impl.Node     : [127.0.0.1]:5701 [dev] [5.5.0] Using TCP/IP discovery
+    23:38:57.114 |  51 Pool-1-worker-25 | INFO  | c.h.internal.diagnostics.Diagnostics : [127.0.0.1]:5701 [dev] [5.5.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+    23:38:57.132 |  51 Pool-1-worker-25 | INFO  | com.hazelcast.core.LifecycleService  : [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTING
+    23:38:57.219 |  51 Pool-1-worker-25 | INFO  | c.h.internal.cluster.ClusterService  : [127.0.0.1]:5701 [dev] [5.5.0] 
+
+Members {size:1, ver:1} [
+	Member [127.0.0.1]:5701 - 1d535488-975a-4126-b379-2b0f882419fb this
+]
+
+    23:38:57.256 |  51 Pool-1-worker-25 | INFO  | com.hazelcast.core.LifecycleService  : [127.0.0.1]:5701 [dev] [5.5.0] [127.0.0.1]:5701 is STARTED
+    23:39:02.548 |  51 Pool-1-worker-25 | WARN  | org.hibernate.orm.deprecation        : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+    23:39:03.691 |  51 Pool-1-worker-25 | WARN  | o.h.boot.model.internal.EntityBinder : HHH000457: Joined inheritance hierarchy [de.tum.cit.aet.artemis.iris.domain.message.IrisMessageContent] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+    23:39:04.625 |  51 Pool-1-worker-25 | INFO  | h.h.HazelcastLocalCacheRegionFactory : Starting up HazelcastLocalCacheRegionFactory
+    23:39:04.628 |  51 Pool-1-worker-25 | INFO  | c.h.h.i.IHazelcastInstanceFactory    : Using existing HazelcastInstance [Artemis_gitlabjenkins].
+    23:39:17.270 |  90 ns.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5701 [dev] [5.5.0] The HealthMonitor has detected a high load on the system. For more detailed information,
+enable Diagnostics by adding the property -Dhazelcast.diagnostics.enabled=true
+    23:39:17.275 |  90 ns.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5701 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=3.9G, swap.space.total=0, swap.space.free=0, heap.memory.used=2.1G, heap.memory.free=582.0M, heap.memory.total=2.7G, heap.memory.max=6.0G, heap.memory.used/total=78.54%, heap.memory.used/max=35.03%, minor.gc.count=32, minor.gc.time=2101ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=11, unknown.gc.time=81ms, load.process=0.00%, load.system=99.71%, load.systemAverage=3.78, thread.count=111, thread.peakCount=112, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=169, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=168, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+    23:39:37.279 |  90 ns.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5701 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=3.8G, swap.space.total=0, swap.space.free=0, heap.memory.used=1.7G, heap.memory.free=950.1M, heap.memory.total=2.7G, heap.memory.max=6.0G, heap.memory.used/total=65.30%, heap.memory.used/max=29.12%, minor.gc.count=37, minor.gc.time=2448ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=14, unknown.gc.time=137ms, load.process=0.00%, load.system=89.92%, load.systemAverage=3.89, thread.count=147, thread.peakCount=148, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=169, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=168, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+    23:39:44.339 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : file.encoding=UTF-8
+    23:39:44.339 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : sun.jnu.encoding=UTF-8
+    23:39:44.339 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Default Charset=UTF-8
+    23:39:44.339 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Default Charset in Use=UTF8
+    23:39:44.378 |  51 Pool-1-worker-25 | INFO  | d.t.c.a.a.p.service.GitService       : GitService will use username + token as authentication method to interact with remote git repositories
+    23:39:45.358 |  51 Pool-1-worker-25 | DEBUG | c.c.ProgrammingLanguageConfiguration : Set Docker flags to [DockerFlag[flag=--cpus, value=2], DockerFlag[flag=--memory, value=2g], DockerFlag[flag=--memory-swap, value=2g], DockerFlag[flag=--pids-limit, value=1000]]
+    23:39:45.433 |  51 Pool-1-worker-25 | DEBUG | c.c.ProgrammingLanguageConfiguration : Loaded Docker image configuration: {EMPTY={PLAIN=~~invalid~~}, JAVA={PLAIN=~~invalid~~}, PYTHON={PLAIN=~~invalid~~}, C={PLAIN=~~invalid~~}, HASKELL={PLAIN=~~invalid~~}, KOTLIN={PLAIN=~~invalid~~}, VHDL={PLAIN=~~invalid~~}, ASSEMBLER={PLAIN=~~invalid~~}, SWIFT={PLAIN=~~invalid~~}, OCAML={PLAIN=~~invalid~~}, JAVASCRIPT={PLAIN=~~invalid~~}, C_SHARP={PLAIN=~~invalid~~}, C_PLUS_PLUS={PLAIN=~~invalid~~}, R={PLAIN=~~invalid~~}, TYPESCRIPT={PLAIN=~~invalid~~}, RUST={PLAIN=~~invalid~~}, GO={PLAIN=~~invalid~~}, MATLAB={PLAIN=~~invalid~~}, BASH={PLAIN=~~invalid~~}, RUBY={PLAIN=~~invalid~~}}
+    23:39:48.446 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.c.CacheConfiguration     : Starting HazelcastCacheManager
+    23:39:48.824 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.s.jwt.TokenProvider      : Using a Base64-encoded JWT secret key
+    23:39:50.825 |  51 Pool-1-worker-25 | DEBUG | .a.a.c.c.TaskSchedulingConfiguration : Creating Task Scheduler 
+    23:39:51.072 |  51 Pool-1-worker-25 | DEBUG | t.c.a.a.c.c.w.WebsocketConfiguration : Did NOT enable StompBrokerRelay for WebSocket messages
+    23:39:53.138 | 111 monPool-worker-1 | ERROR | .a.a.c.s.n.p.PushNotificationService : Could not send APNS notifications
+    23:39:55.891 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.core.config.WebConfigurer  : Registering CORS filter
+    23:39:57.284 |  90 ns.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5701 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=3.8G, swap.space.total=0, swap.space.free=0, heap.memory.used=2.4G, heap.memory.free=292.5M, heap.memory.total=2.7G, heap.memory.max=6.0G, heap.memory.used/total=89.18%, heap.memory.used/max=39.77%, minor.gc.count=41, minor.gc.time=2789ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=16, unknown.gc.time=178ms, load.process=0.00%, load.system=89.63%, load.systemAverage=4.06, thread.count=148, thread.peakCount=150, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=169, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=169, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+    23:40:15.988 |  51 Pool-1-worker-25 | WARN  | itializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+    23:40:18.262 |  51 Pool-1-worker-25 | DEBUG | .c.a.a.c.c.EurekaClientConfiguration : Using RestClient for the Eureka client.
+    23:40:19.156 |  51 Pool-1-worker-25 | INFO  | c.h.i.p.i.PartitionStateManagerImpl  : [127.0.0.1]:5701 [dev] [5.5.0] Initializing cluster partition table arrangement...
+    23:40:19.878 |  51 Pool-1-worker-25 | WARN  | ation$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+    23:40:20.040 |  51 Pool-1-worker-25 | INFO  | .a.a.a.AthenaExerciseIntegrationTest : Started AthenaExerciseIntegrationTest in 98.1 seconds (process running for 103.336)
+    23:40:20.189 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.core.config.MetricsBean    : calculateCachedActiveUserLogins took 135ms
+    23:40:20.190 |  51 Pool-1-worker-25 | DEBUG | .c.a.a.c.s.TitleCacheEvictionService : Registered Hibernate listeners
+    23:40:20.360 |  51 Pool-1-worker-25 | INFO  | d.t.c.a.a.c.service.user.UserService : Create internal admin user artemis_admin
+    23:40:20.438 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Save user User{login='artemis_admin', firstName='Administrator', lastName='Administrator', email='admin@localhost', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:40:21.143 |  51 Pool-1-worker-25 | ERROR | d.t.c.a.a.c.service.user.UserService : An error occurred after application startup when creating or updating the admin user or in the LDAP search
+de.tum.cit.aet.artemis.programming.service.gitlab.GitLabException: Unable to get ID for user artemis_admin
+	at de.tum.cit.aet.artemis.programming.service.gitlab.GitLabUserManagementService.getUserIdCreateIfNotExists(GitLabUserManagementService.java:332)
+	at de.tum.cit.aet.artemis.programming.service.gitlab.GitLabUserManagementService.createVcsUser(GitLabUserManagementService.java:61)
+	at de.tum.cit.aet.artemis.core.service.user.UserCreationService.lambda$createUser$0(UserCreationService.java:199)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at de.tum.cit.aet.artemis.core.service.user.UserCreationService.createUser(UserCreationService.java:199)
+	at de.tum.cit.aet.artemis.core.service.user.UserService.applicationReady(UserService.java:181)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:382)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:254)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+	at org.springframework.boot.context.event.EventPublishingRunListener.ready(EventPublishingRunListener.java:109)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$ready$6(SpringApplicationRunListeners.java:80)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.ready(SpringApplicationRunListeners.java:80)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at io.zonky.test.db.EmbeddedDatabaseTestExecutionListener.forEachDatabase(EmbeddedDatabaseTestExecutionListener.java:94)
+	at io.zonky.test.db.EmbeddedDatabaseTestExecutionListener.resetDatabases(EmbeddedDatabaseTestExecutionListener.java:58)
+	at io.zonky.test.db.EmbeddedDatabaseTestExecutionListener.beforeTestClass(EmbeddedDatabaseTestExecutionListener.java:34)
+	at org.springframework.test.context.TestContextManager.beforeTestClass(TestContextManager.java:220)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeAll(SpringExtension.java:130)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllCallbacks$13(ClassBasedTestDescriptor.java:396)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllCallbacks(ClassBasedTestDescriptor.java:396)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:85)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:153)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: org.gitlab4j.api.GitLabApiException: java.net.UnknownHostException: version-control.fake.fake
+	at org.gitlab4j.api.AbstractApi.handle(AbstractApi.java:806)
+	at org.gitlab4j.api.AbstractApi.get(AbstractApi.java:264)
+	at org.gitlab4j.api.UserApi.getUser(UserApi.java:352)
+	at de.tum.cit.aet.artemis.programming.service.gitlab.GitLabUserManagementService.getUserIdCreateIfNotExists(GitLabUserManagementService.java:325)
+	at de.tum.cit.aet.artemis.programming.service.gitlab.GitLabUserManagementService.createVcsUser(GitLabUserManagementService.java:61)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	... 56 common frames omitted
+Caused by: jakarta.ws.rs.ProcessingException: java.net.UnknownHostException: version-control.fake.fake
+	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:288)
+	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:300)
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:674)
+	at org.glassfish.jersey.client.JerseyInvocation.call(JerseyInvocation.java:709)
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$runInScope$3(JerseyInvocation.java:703)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:391)
+	at org.glassfish.jersey.client.JerseyInvocation.runInScope(JerseyInvocation.java:703)
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:673)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:413)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.get(JerseyInvocation.java:313)
+	at org.gitlab4j.api.GitLabApiClient.get(GitLabApiClient.java:432)
+	at org.gitlab4j.api.GitLabApiClient.get(GitLabApiClient.java:420)
+	at org.gitlab4j.api.AbstractApi.get(AbstractApi.java:262)
+	... 73 common frames omitted
+Caused by: java.net.UnknownHostException: version-control.fake.fake
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1252)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1138)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1690)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1614)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307)
+	at org.glassfish.jersey.client.internal.HttpUrlConnector._apply(HttpUrlConnector.java:453)
+	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:286)
+	... 88 common frames omitted
+    23:40:21.173 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.p.service.PlantUmlService  : Storing UML theme to temporary directory
+    23:40:21.182 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.p.service.PlantUmlService  : UML theme stored successfully to /tmp/artemis-puml-theme/puml-theme-artemisdark.puml
+    23:40:21.182 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.p.service.PlantUmlService  : Storing UML theme to temporary directory
+    23:40:21.182 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.p.service.PlantUmlService  : UML theme stored successfully to /tmp/artemis-puml-theme/puml-theme-artemislight.puml
+    23:40:41.221 | 327 taskScheduler-2  | INFO  | s.ProgrammingExerciseScheduleService : Scheduled 0 programming exercises.
+    23:40:41.221 | 327 taskScheduler-2  | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled 0 programming exercises for a score update after due date.
+    23:40:41.221 | 327 taskScheduler-2  | INFO  | s.ProgrammingExerciseScheduleService : Scheduled 0 exam programming exercises.
+    23:40:46.154 | 328 taskScheduler-3  | INFO  | .m.s.ModelingExerciseScheduleService : Scheduled 0 modeling exercises.
+    23:40:46.154 | 328 taskScheduler-3  | INFO  | .m.s.ModelingExerciseScheduleService : Scheduled 0 exam modeling exercises.
+    23:40:46.333 | 329 taskScheduler-4  | INFO  | d.t.c.a.a.q.s.QuizScheduleService    : Scheduled 0 quiz exercises.
+    23:40:50.070 | 328 taskScheduler-3  | INFO  | d.t.c.a.a.a.s.AthenaScheduleService  : Scheduled Athena for 0 exercises with future due dates.
+    23:40:50.070 | 329 taskScheduler-4  | INFO  | .a.a.c.s.NotificationScheduleService : Scheduled 0 notifications for released exercises.
+    23:40:50.075 | 329 taskScheduler-4  | INFO  | .a.a.c.s.NotificationScheduleService : Scheduled 0 notifications for assessed exercise submissions.
+    23:40:50.109 | 326 taskScheduler-1  | DEBUG | d.t.c.a.a.core.config.MetricsBean    : recalculateMetrics took 78ms
+    23:40:55.051 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Schedule tasks to process...
+    23:40:55.054 | 328 taskScheduler-3  | INFO  | .s.WeeklyEmailSummaryScheduleService : Scheduled email summaries on start up.
+    23:40:55.066 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 0 results and 0 participant scores.
+    23:40:57.289 |  90 ns.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5701 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=3.6G, swap.space.total=0, swap.space.free=0, heap.memory.used=1.9G, heap.memory.free=779.8M, heap.memory.total=2.7G, heap.memory.max=6.0G, heap.memory.used/total=71.53%, heap.memory.used/max=31.90%, minor.gc.count=63, minor.gc.time=4020ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=28, unknown.gc.time=373ms, load.process=0.00%, load.system=99.86%, load.systemAverage=4.10, thread.count=394, thread.peakCount=394, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=212, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=200, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+    23:41:00.001 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Schedule tasks to process...
+    23:41:00.016 | 328 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 0 results and 0 participant scores.
+
+  Starting logs for AthenaExerciseIntegrationTest > testUpdateTextExercise_useRestrictedAthenaModule_success()
+    23:41:49.978 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:41:49.980 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 0 tutors...
+    23:41:49.985 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 1 editors...
+    23:41:49.995 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:41:50.004 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:41:50.006 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate admin
+    23:41:50.011 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate admin done
+    23:41:50.030 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 0 users from all courses...
+    23:41:50.033 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 0 users from all courses. Done
+    23:41:50.033 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:41:50.066 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:41:50.167 |  51 Pool-1-worker-25 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaExerciseIntegrationTest#testUpdateTextExercise_useRestrictedAthenaModule_success'
+    23:41:50.874 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/text-exercises
+    23:41:51.913 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.t.web.TextExerciseResource : REST request to update TextExercise : TextExercise{id=1, exampleSolution='null'}
+    23:41:51.972 |  51 Pool-1-worker-25 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User athenaexerciseintegrationeditor1 has updated TextExercise Title with id 1
+    23:41:51.980 |  51 Pool-1-worker-25 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for potential Athena exercise 1
+
+  Starting logs for AthenaExerciseIntegrationTest > testUpdateCourse_revokeRestrictedAthenaModuleAccess_success()
+    23:41:52.199 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:41:52.205 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 0 tutors...
+    23:41:52.206 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 1 editors...
+    23:41:52.229 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:41:52.254 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:41:52.262 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:41:52.276 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:41:52.276 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:41:52.340 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:41:52.380 |  51 Pool-1-worker-25 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaExerciseIntegrationTest#testUpdateCourse_revokeRestrictedAthenaModuleAccess_success'
+    23:41:52.623 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/2
+    23:41:52.638 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.core.web.CourseResource    : REST request to update Course : Course{id=2, title='Course title 35274fbe-bd56-44a6-8f66-8c56f3e8d54f', description='null', shortName='short80ae9e6c04ff0044da0a77801abcc1c68e92', studentGroupName='tumuser', teachingAssistantGroupName='tutor', editorGroupName='editor', instructorGroupName='instructor', startDate='2025-02-13T23:39:39.316604985Z', endDate='2025-02-16T23:39:39.316645951Z', enrollmentStartDate='null', enrollmentEndDate='null', unenrollmentEndDate='null', semester='null'', onlineCourse='false', color='null', courseIcon='null', enrollmentEnabled='false', unenrollmentEnabled='false', presentationScore='2', faqEnabled='false'}
+    23:41:52.772 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/programming-exercises/4
+    23:41:52.780 |  51 Pool-1-worker-25 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to get ProgrammingExercise : 4
+    23:41:52.903 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/programming-exercises/6
+    23:41:52.908 |  51 Pool-1-worker-25 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to get ProgrammingExercise : 6
+    23:41:52.971 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/text-exercises/3
+    23:41:52.978 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.t.web.TextExerciseResource : REST request to get TextExercise : 3
+    23:41:53.017 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/text-exercises/5
+    23:41:53.020 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.t.web.TextExerciseResource : REST request to get TextExercise : 5
+
+  Starting logs for AthenaExerciseIntegrationTest > testCreateTextExercise_useRestrictedAthenaModule_success()
+    23:41:53.103 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:41:53.108 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 0 tutors...
+    23:41:53.109 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 1 editors...
+    23:41:53.126 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:41:53.140 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:41:53.146 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:41:53.152 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:41:53.152 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:41:53.177 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:41:53.191 |  51 Pool-1-worker-25 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaExerciseIntegrationTest#testCreateTextExercise_useRestrictedAthenaModule_success'
+    23:41:53.226 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/text-exercises
+    23:41:53.233 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.t.web.TextExerciseResource : REST request to save TextExercise : TextExercise{id=null, exampleSolution='null'}
+    23:41:53.380 |  51 Pool-1-worker-25 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for potential Athena exercise 9
+
+  Starting logs for AthenaExerciseIntegrationTest > testCreateTextExercise_useRestrictedAthenaModule_badRequest()
+    23:41:53.511 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:41:53.525 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 0 tutors...
+    23:41:53.526 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 1 editors...
+    23:41:53.544 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:41:53.558 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:41:53.564 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:41:53.570 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:41:53.570 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:41:53.594 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:41:53.602 |  51 Pool-1-worker-25 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaExerciseIntegrationTest#testCreateTextExercise_useRestrictedAthenaModule_badRequest'
+    23:41:53.606 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/text-exercises
+    23:41:53.613 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.t.web.TextExerciseResource : REST request to save TextExercise : TextExercise{id=null, exampleSolution='null'}
+    23:41:53.622 |  51 Pool-1-worker-25 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The exercise has no access to the selected Athena module
+    23:41:53.625 |  51 Pool-1-worker-25 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The exercise has no access to the selected Athena module
+
+  Starting logs for AthenaExerciseIntegrationTest > testCreateExamTextExercise_useAthena_badRequest()
+    23:41:53.696 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:41:53.703 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 0 tutors...
+    23:41:53.705 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 1 editors...
+    23:41:53.720 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:41:53.732 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:41:53.739 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:41:53.741 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:41:53.741 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:41:53.763 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:41:53.776 |  51 Pool-1-worker-25 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaExerciseIntegrationTest#testCreateExamTextExercise_useAthena_badRequest'
+    23:41:53.824 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/text-exercises
+    23:41:53.834 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.t.web.TextExerciseResource : REST request to save TextExercise : TextExercise{id=null, exampleSolution='This is my example solution'}
+    23:41:53.846 |  51 Pool-1-worker-25 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The exam exercise has no access to Athena
+    23:41:53.846 |  51 Pool-1-worker-25 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The exam exercise has no access to Athena
+
+  Starting logs for AthenaExerciseIntegrationTest > testUpdateTextExercise_useRestrictedAthenaModule_badRequest()
+    23:41:53.874 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:41:53.877 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 0 tutors...
+    23:41:53.879 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 1 editors...
+    23:41:53.887 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:41:53.892 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:41:53.895 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:41:53.898 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:41:53.898 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:41:53.909 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:41:53.916 |  51 Pool-1-worker-25 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaExerciseIntegrationTest#testUpdateTextExercise_useRestrictedAthenaModule_badRequest'
+    23:41:53.920 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/text-exercises
+    23:41:53.928 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.t.web.TextExerciseResource : REST request to update TextExercise : TextExercise{id=14, exampleSolution='null'}
+    23:41:53.955 |  51 Pool-1-worker-25 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The exercise has no access to the selected Athena module
+    23:41:53.955 |  51 Pool-1-worker-25 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The exercise has no access to the selected Athena module
+
+  Starting logs for AthenaExerciseIntegrationTest > testUpdateTextExercise_afterDueDate_badRequest()
+    23:41:53.997 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:41:54.002 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 0 tutors...
+    23:41:54.004 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 1 editors...
+    23:41:54.010 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:41:54.015 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:41:54.018 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:41:54.020 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:41:54.020 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:41:54.029 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:41:54.042 |  51 Pool-1-worker-25 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaExerciseIntegrationTest#testUpdateTextExercise_afterDueDate_badRequest'
+    23:41:54.079 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/text-exercises
+    23:41:54.085 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.t.web.TextExerciseResource : REST request to update TextExercise : TextExercise{id=16, exampleSolution='null'}
+    23:41:54.106 |  51 Pool-1-worker-25 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Athena module can't be changed after due date has passed
+    23:41:54.106 |  51 Pool-1-worker-25 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Athena module can't be changed after due date has passed
+
+  Starting logs for AthenaExerciseIntegrationTest > testUpdateCourse_revokeRestrictedAthenaModuleAccess_badRequest()
+    23:41:54.180 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:41:54.181 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 0 tutors...
+    23:41:54.191 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 1 editors...
+    23:41:54.203 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:41:54.214 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:41:54.217 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:41:54.219 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:41:54.219 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:41:54.228 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:41:54.238 |  51 Pool-1-worker-25 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaExerciseIntegrationTest#testUpdateCourse_revokeRestrictedAthenaModuleAccess_badRequest'
+    23:41:54.272 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/9
+    23:41:54.276 |  51 Pool-1-worker-25 | DEBUG | d.t.c.a.a.core.web.CourseResource    : REST request to update Course : Course{id=9, title='Course title 32d07253-6488-4281-b7e1-b70b750f573a', description='null', shortName='shortac85fa0c042b10481b0b42d0e9f0558c30e8', studentGroupName='tumuser', teachingAssistantGroupName='tutor', editorGroupName='editor', instructorGroupName='instructor', startDate='2025-02-13T23:39:39.316604985Z', endDate='2025-02-16T23:39:39.316645951Z', enrollmentStartDate='null', enrollmentEndDate='null', unenrollmentEndDate='null', semester='null'', onlineCourse='false', color='null', courseIcon='null', enrollmentEnabled='false', unenrollmentEnabled='false', presentationScore='2', faqEnabled='false'}
+    23:41:54.290 |  51 Pool-1-worker-25 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, You are not allowed to change the access to restricted Athena modules of a course
+    23:41:54.290 |  51 Pool-1-worker-25 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: You are not allowed to change the access to restricted Athena modules of a course
+
+Finished logs for AthenaExerciseIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

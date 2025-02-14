@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.notification.NotificationPlaceholderSignatureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:09" hostname="fv-az1721-502" time="2.084">
+  <properties/>
+  <testcase name="testSignatureHasNotChanged()" classname="de.tum.cit.aet.artemis.communication.notification.NotificationPlaceholderSignatureTest" time="2.084"/>
+  <system-out><![CDATA[
+Starting logs for NotificationPlaceholderSignatureTest
+
+  Starting logs for NotificationPlaceholderSignatureTest > testSignatureHasNotChanged()
+    23:44:09.625 | 143 Pool-1-worker-58 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='NotificationPlaceholderSignatureTest#testSignatureHasNotChanged'
+
+Finished logs for NotificationPlaceholderSignatureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

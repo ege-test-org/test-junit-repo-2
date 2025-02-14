@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.notifications.service.GeneralInstantNotificationServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:28" hostname="fv-az1721-502" time="0.653">
+  <properties/>
+  <testcase name="testSendPushOnlyToOneUser()" classname="de.tum.cit.aet.artemis.communication.notifications.service.GeneralInstantNotificationServiceTest" time="0.606"/>
+  <testcase name="testSendAllNotificationsToMultipleUsers()" classname="de.tum.cit.aet.artemis.communication.notifications.service.GeneralInstantNotificationServiceTest" time="0.01"/>
+  <testcase name="testSendAllNotifications()" classname="de.tum.cit.aet.artemis.communication.notifications.service.GeneralInstantNotificationServiceTest" time="0.007"/>
+  <testcase name="testSendOnlyPushNotifications()" classname="de.tum.cit.aet.artemis.communication.notifications.service.GeneralInstantNotificationServiceTest" time="0.008"/>
+  <testcase name="testSendOnlyEmailNotifications()" classname="de.tum.cit.aet.artemis.communication.notifications.service.GeneralInstantNotificationServiceTest" time="0.008"/>
+  <testcase name="testSendEmailOnlyToOneUser()" classname="de.tum.cit.aet.artemis.communication.notifications.service.GeneralInstantNotificationServiceTest" time="0.008"/>
+  <system-out><![CDATA[
+Starting logs for GeneralInstantNotificationServiceTest
+
+  Starting logs for GeneralInstantNotificationServiceTest > testSendPushOnlyToOneUser()
+
+  Starting logs for GeneralInstantNotificationServiceTest > testSendAllNotificationsToMultipleUsers()
+
+  Starting logs for GeneralInstantNotificationServiceTest > testSendAllNotifications()
+
+  Starting logs for GeneralInstantNotificationServiceTest > testSendOnlyPushNotifications()
+
+  Starting logs for GeneralInstantNotificationServiceTest > testSendOnlyEmailNotifications()
+
+  Starting logs for GeneralInstantNotificationServiceTest > testSendEmailOnlyToOneUser()
+
+Finished logs for GeneralInstantNotificationServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

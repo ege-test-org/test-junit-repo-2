@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.assessment.service.ComplaintResponseServiceTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:48" hostname="fv-az1721-502" time="0.634">
+  <properties/>
+  <testcase name="testIsUserAuthorizedToRespondToComplaintForStudent()" classname="de.tum.cit.aet.artemis.assessment.service.ComplaintResponseServiceTest" time="0.053"/>
+  <testcase name="testIsUserAuthorizedToRespondToComplaintCheckInput()" classname="de.tum.cit.aet.artemis.assessment.service.ComplaintResponseServiceTest" time="0.049"/>
+  <testcase name="testIsUserAuthorizedToRespondToComplaintForNoComplaintType()" classname="de.tum.cit.aet.artemis.assessment.service.ComplaintResponseServiceTest" time="0.064"/>
+  <testcase name="testIsUserAuthorizedToRespondToComplaintForFeedbackRequest()" classname="de.tum.cit.aet.artemis.assessment.service.ComplaintResponseServiceTest" time="0.065"/>
+  <testcase name="testIsUserAuthorizedToRespondToComplaintForComplaints()" classname="de.tum.cit.aet.artemis.assessment.service.ComplaintResponseServiceTest" time="0.079"/>
+  <testcase name="testIsUserAuthorizedToRespondToComplaintForTeamOwner()" classname="de.tum.cit.aet.artemis.assessment.service.ComplaintResponseServiceTest" time="0.055"/>
+  <testcase name="testIsUserAuthorizedToRespondToComplaintForFeedbackRequestWithAutomaticAssessment()" classname="de.tum.cit.aet.artemis.assessment.service.ComplaintResponseServiceTest" time="0.059"/>
+  <testcase name="testIsUserAuthorizedToRespondToComplaintForInstructor()" classname="de.tum.cit.aet.artemis.assessment.service.ComplaintResponseServiceTest" time="0.06"/>
+  <testcase name="testIsUserAuthorizedToRespondToComplaintForNotTeamOwner()" classname="de.tum.cit.aet.artemis.assessment.service.ComplaintResponseServiceTest" time="0.074"/>
+  <testcase name="testIsUserAuthorizedToRespondToComplaintForComplaintsWithAutomaticAssessment()" classname="de.tum.cit.aet.artemis.assessment.service.ComplaintResponseServiceTest" time="0.056"/>
+  <system-out><![CDATA[
+Starting logs for ComplaintResponseServiceTest
+
+  Starting logs for ComplaintResponseServiceTest > testIsUserAuthorizedToRespondToComplaintForStudent()
+    23:42:48.856 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:48.858 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:42:48.861 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:48.862 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:48.864 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:48.865 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:42:48.866 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:42:48.866 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:48.868 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:48.878 |  46 Pool-1-worker-20 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ComplaintResponseServiceTest#testIsUserAuthorizedToRespondToComplaintForStudent'
+    23:42:48.886 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 326 and participant 61 (result to be deleted: null)
+    23:42:48.886 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 326 and participant 61 at 2025-02-14T23:42:48.986979020Z[Etc/UTC].
+    23:42:48.890 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 326 and participant 61 (result to be deleted: null)
+    23:42:48.891 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 326 and participant 61 at 2025-02-14T23:42:48.991000970Z[Etc/UTC].
+
+  Starting logs for ComplaintResponseServiceTest > testIsUserAuthorizedToRespondToComplaintCheckInput()
+    23:42:48.911 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:48.915 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:42:48.919 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:48.920 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:48.923 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:48.924 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:48.925 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:48.925 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:48.935 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:48.945 |  46 Pool-1-worker-20 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ComplaintResponseServiceTest#testIsUserAuthorizedToRespondToComplaintCheckInput'
+
+  Starting logs for ComplaintResponseServiceTest > testIsUserAuthorizedToRespondToComplaintForNoComplaintType()
+    23:42:48.962 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:48.969 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:42:48.973 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:48.974 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:48.977 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:48.978 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:48.979 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:48.979 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:48.983 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:48.993 |  46 Pool-1-worker-20 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ComplaintResponseServiceTest#testIsUserAuthorizedToRespondToComplaintForNoComplaintType'
+    23:42:49.002 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 330 and participant 61 (result to be deleted: null)
+    23:42:49.002 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 330 and participant 61 at 2025-02-14T23:42:49.102087751Z[Etc/UTC].
+    23:42:49.005 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 330 and participant 61 (result to be deleted: null)
+    23:42:49.005 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 330 and participant 61 at 2025-02-14T23:42:49.105671114Z[Etc/UTC].
+    23:42:49.008 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 330 and participant 61 (result to be deleted: null)
+    23:42:49.008 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 330 and participant 61 at 2025-02-14T23:42:49.108394062Z[Etc/UTC].
+
+  Starting logs for ComplaintResponseServiceTest > testIsUserAuthorizedToRespondToComplaintForFeedbackRequest()
+    23:42:49.029 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:49.033 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:42:49.037 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:49.038 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:49.040 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:49.042 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:49.042 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:49.042 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:49.046 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:49.056 |  46 Pool-1-worker-20 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ComplaintResponseServiceTest#testIsUserAuthorizedToRespondToComplaintForFeedbackRequest'
+    23:42:49.065 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 332 and participant 61 (result to be deleted: null)
+    23:42:49.065 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 332 and participant 61 at 2025-02-14T23:42:49.165184698Z[Etc/UTC].
+    23:42:49.068 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 332 and participant 61 (result to be deleted: null)
+    23:42:49.068 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 332 and participant 61 at 2025-02-14T23:42:49.168494541Z[Etc/UTC].
+    23:42:49.071 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 332 and participant 61 (result to be deleted: null)
+    23:42:49.071 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 332 and participant 61 at 2025-02-14T23:42:49.171172595Z[Etc/UTC].
+
+  Starting logs for ComplaintResponseServiceTest > testIsUserAuthorizedToRespondToComplaintForComplaints()
+    23:42:49.107 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:49.111 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:42:49.115 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:49.116 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:49.119 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:49.120 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:49.121 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:49.121 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:49.127 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:49.137 |  46 Pool-1-worker-20 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ComplaintResponseServiceTest#testIsUserAuthorizedToRespondToComplaintForComplaints'
+    23:42:49.146 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 334 and participant 61 (result to be deleted: null)
+    23:42:49.146 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 334 and participant 61 at 2025-02-14T23:42:49.246354349Z[Etc/UTC].
+    23:42:49.149 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 334 and participant 61 (result to be deleted: null)
+    23:42:49.149 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 334 and participant 61 at 2025-02-14T23:42:49.249893899Z[Etc/UTC].
+    23:42:49.152 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 334 and participant 61 (result to be deleted: null)
+    23:42:49.152 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 334 and participant 61 at 2025-02-14T23:42:49.252734938Z[Etc/UTC].
+
+  Starting logs for ComplaintResponseServiceTest > testIsUserAuthorizedToRespondToComplaintForTeamOwner()
+    23:42:49.178 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:49.182 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:42:49.185 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:49.187 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:49.189 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:49.190 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:49.191 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:49.191 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:49.194 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:49.202 |  46 Pool-1-worker-20 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ComplaintResponseServiceTest#testIsUserAuthorizedToRespondToComplaintForTeamOwner'
+    23:42:49.210 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 337 and participant 18 (result to be deleted: null)
+    23:42:49.210 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 337 and participant 18 at 2025-02-14T23:42:49.310891224Z[Etc/UTC].
+    23:42:49.214 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 337 and participant 18 (result to be deleted: null)
+    23:42:49.214 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 337 and participant 18 at 2025-02-14T23:42:49.314512166Z[Etc/UTC].
+
+  Starting logs for ComplaintResponseServiceTest > testIsUserAuthorizedToRespondToComplaintForFeedbackRequestWithAutomaticAssessment()
+    23:42:49.235 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:49.239 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:42:49.243 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:49.245 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:49.247 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:49.248 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:49.249 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:49.249 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:49.253 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:49.263 |  46 Pool-1-worker-20 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ComplaintResponseServiceTest#testIsUserAuthorizedToRespondToComplaintForFeedbackRequestWithAutomaticAssessment'
+    23:42:49.270 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 338 and participant 61 (result to be deleted: null)
+    23:42:49.270 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 338 and participant 61 at 2025-02-14T23:42:49.470549085Z[Etc/UTC].
+    23:42:49.274 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 338 and participant 61 (result to be deleted: null)
+    23:42:49.274 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 338 and participant 61 at 2025-02-14T23:42:49.474442285Z[Etc/UTC].
+
+  Starting logs for ComplaintResponseServiceTest > testIsUserAuthorizedToRespondToComplaintForInstructor()
+    23:42:49.294 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:49.299 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:42:49.303 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:49.304 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:49.307 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:49.308 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:49.309 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:49.309 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:49.312 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:49.322 |  46 Pool-1-worker-20 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ComplaintResponseServiceTest#testIsUserAuthorizedToRespondToComplaintForInstructor'
+    23:42:49.331 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 340 and participant 61 (result to be deleted: null)
+    23:42:49.331 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 340 and participant 61 at 2025-02-14T23:42:49.431644980Z[Etc/UTC].
+    23:42:49.335 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 340 and participant 61 (result to be deleted: null)
+    23:42:49.335 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 340 and participant 61 at 2025-02-14T23:42:49.435379765Z[Etc/UTC].
+    23:42:49.340 | 566 localvc.event-13 | DEBUG | s.l.LocalCIWebsocketMessagingService : Sending message on topic /topic/admin/queued-jobs: [BuildJobQueueItem[id=4651739576569330, name=SHORTB06DD3F905F4604F6E085260D83ED657A6DFTSTEXC-LOCALCIINTSTUDENT1, buildAgent=BuildAgentDTO[name=null, memberAddress=null, displayName=null], participationId=465, courseId=148, exerciseId=299, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=shortb06dd3f905f4604f6e085260d83ed657a6dftstexc-localciintstudent1, repositoryType=user, triggeredByPushTo=user, assignmentRepositoryUri=, testRepositoryUri=, solutionRepositoryUri=, auxiliaryRepositoryUris=null, auxiliaryRepositoryCheckoutDirectories=null], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:42:49.330093960Z[Etc/UTC], buildStartDate=null, buildCompletionDate=null, estimatedCompletionDate=null, estimatedDuration=19], buildConfig=BuildConfig[buildScript=, dockerImage=, commitHashToBuild=41581fff25954d36cf07586926ee0c77d1003131, assignmentCommitHash=, testCommitHash=, branch=, programmingLanguage=null, projectType=null, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=null, timeoutSeconds=0, assignmentCheckoutPath=, testCheckoutPath=, solutionCheckoutPath=, dockerRunConfig=null], submissionResult=null]]
+    23:42:49.340 | 566 localvc.event-13 | DEBUG | s.l.LocalCIWebsocketMessagingService : Sending message on topic /topic/courses/148/queued-jobs: [BuildJobQueueItem[id=4651739576569330, name=SHORTB06DD3F905F4604F6E085260D83ED657A6DFTSTEXC-LOCALCIINTSTUDENT1, buildAgent=BuildAgentDTO[name=null, memberAddress=null, displayName=null], participationId=465, courseId=148, exerciseId=299, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=shortb06dd3f905f4604f6e085260d83ed657a6dftstexc-localciintstudent1, repositoryType=user, triggeredByPushTo=user, assignmentRepositoryUri=, testRepositoryUri=, solutionRepositoryUri=, auxiliaryRepositoryUris=null, auxiliaryRepositoryCheckoutDirectories=null], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:42:49.330093960Z[Etc/UTC], buildStartDate=null, buildCompletionDate=null, estimatedCompletionDate=null, estimatedDuration=19], buildConfig=BuildConfig[buildScript=, dockerImage=, commitHashToBuild=41581fff25954d36cf07586926ee0c77d1003131, assignmentCommitHash=, testCommitHash=, branch=, programmingLanguage=null, projectType=null, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=null, timeoutSeconds=0, assignmentCheckoutPath=, testCheckoutPath=, solutionCheckoutPath=, dockerRunConfig=null], submissionResult=null]]
+    23:42:49.341 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : CIBuildJobQueueItem added to queue: BuildJobQueueItem[id=4651739576569330, name=SHORTB06DD3F905F4604F6E085260D83ED657A6DFTSTEXC-LOCALCIINTSTUDENT1, buildAgent=BuildAgentDTO[name=null, memberAddress=null, displayName=null], participationId=465, courseId=148, exerciseId=299, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=shortb06dd3f905f4604f6e085260d83ed657a6dftstexc-localciintstudent1, repositoryType=user, triggeredByPushTo=user, assignmentRepositoryUri=http://localhost:49152/git/SHORTB06DD3F905F4604F6E085260D83ED657A6DFTSTEXC/shortb06dd3f905f4604f6e085260d83ed657a6dftstexc-localciintstudent1.git, testRepositoryUri=http://localhost:49152/git/SHORTB06DD3F905F4604F6E085260D83ED657A6DFTSTEXC/shortb06dd3f905f4604f6e085260d83ed657a6dftstexc-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@318629fc, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@4083e9a9], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:42:49.330093960Z[Etc/UTC], buildStartDate=null, buildCompletionDate=null, estimatedCompletionDate=null, estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+chmod +x ./gradlew
+./gradlew clean test
+, dockerImage=dummy-docker-image:latest, commitHashToBuild=41581fff25954d36cf07586926ee0c77d1003131, assignmentCommitHash=41581fff25954d36cf07586926ee0c77d1003131, testCommitHash=41581fff25954d36cf07586926ee0c77d1003131, branch=main, programmingLanguage=JAVA, projectType=PLAIN_GRADLE, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/test-results/test/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]
+    23:42:49.344 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : Current queued items: 1
+    23:42:49.344 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:42:49.347 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:42:49.348 | 565 localvc.event-12 | DEBUG | a.p.s.l.LocalCIQueueWebsocketService : CIBuildJobQueueItem added to processing jobs: BuildJobQueueItem[id=4651739576569330, name=SHORTB06DD3F905F4604F6E085260D83ED657A6DFTSTEXC-LOCALCIINTSTUDENT1, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=465, courseId=148, exerciseId=299, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=shortb06dd3f905f4604f6e085260d83ed657a6dftstexc-localciintstudent1, repositoryType=user, triggeredByPushTo=user, assignmentRepositoryUri=http://localhost:49152/git/SHORTB06DD3F905F4604F6E085260D83ED657A6DFTSTEXC/shortb06dd3f905f4604f6e085260d83ed657a6dftstexc-localciintstudent1.git, testRepositoryUri=http://localhost:49152/git/SHORTB06DD3F905F4604F6E085260D83ED657A6DFTSTEXC/shortb06dd3f905f4604f6e085260d83ed657a6dftstexc-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@24dbb22b, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@20e43268], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:42:49.330093960Z[Etc/UTC], buildStartDate=2025-02-14T23:42:49.347797345Z[Etc/UTC], buildCompletionDate=null, estimatedCompletionDate=2025-02-14T23:43:08.347788449Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+chmod +x ./gradlew
+./gradlew clean test
+, dockerImage=dummy-docker-image:latest, commitHashToBuild=41581fff25954d36cf07586926ee0c77d1003131, assignmentCommitHash=41581fff25954d36cf07586926ee0c77d1003131, testCommitHash=41581fff25954d36cf07586926ee0c77d1003131, branch=main, programmingLanguage=JAVA, projectType=PLAIN_GRADLE, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/test-results/test/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]
+    23:42:49.349 | 565 localvc.event-12 | DEBUG | s.l.LocalCIWebsocketMessagingService : Sending message on topic /topic/admin/running-jobs: [BuildJobQueueItem[id=4651739576569330, name=SHORTB06DD3F905F4604F6E085260D83ED657A6DFTSTEXC-LOCALCIINTSTUDENT1, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=465, courseId=148, exerciseId=299, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=shortb06dd3f905f4604f6e085260d83ed657a6dftstexc-localciintstudent1, repositoryType=user, triggeredByPushTo=user, assignmentRepositoryUri=, testRepositoryUri=, solutionRepositoryUri=, auxiliaryRepositoryUris=null, auxiliaryRepositoryCheckoutDirectories=null], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:42:49.330093960Z[Etc/UTC], buildStartDate=2025-02-14T23:42:49.347797345Z[Etc/UTC], buildCompletionDate=null, estimatedCompletionDate=2025-02-14T23:43:08.347788449Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=, dockerImage=, commitHashToBuild=41581fff25954d36cf07586926ee0c77d1003131, assignmentCommitHash=, testCommitHash=, branch=, programmingLanguage=null, projectType=null, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=null, timeoutSeconds=0, assignmentCheckoutPath=, testCheckoutPath=, solutionCheckoutPath=, dockerRunConfig=null], submissionResult=null]]
+
+  Starting logs for ComplaintResponseServiceTest > testIsUserAuthorizedToRespondToComplaintForNotTeamOwner()
+    23:42:49.356 | 565 localvc.event-12 | DEBUG | s.l.LocalCIWebsocketMessagingService : Sending message on topic /topic/courses/148/running-jobs: [BuildJobQueueItem[id=4651739576569330, name=SHORTB06DD3F905F4604F6E085260D83ED657A6DFTSTEXC-LOCALCIINTSTUDENT1, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=465, courseId=148, exerciseId=299, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=shortb06dd3f905f4604f6e085260d83ed657a6dftstexc-localciintstudent1, repositoryType=user, triggeredByPushTo=user, assignmentRepositoryUri=, testRepositoryUri=, solutionRepositoryUri=, auxiliaryRepositoryUris=null, auxiliaryRepositoryCheckoutDirectories=null], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:42:49.330093960Z[Etc/UTC], buildStartDate=2025-02-14T23:42:49.347797345Z[Etc/UTC], buildCompletionDate=null, estimatedCompletionDate=2025-02-14T23:43:08.347788449Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=, dockerImage=, commitHashToBuild=41581fff25954d36cf07586926ee0c77d1003131, assignmentCommitHash=, testCommitHash=, branch=, programmingLanguage=null, projectType=null, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=null, timeoutSeconds=0, assignmentCheckoutPath=, testCheckoutPath=, solutionCheckoutPath=, dockerRunConfig=null], submissionResult=null]]
+    23:42:49.358 | 566 localvc.event-13 | INFO  | a.a.b.s.SharedQueueProcessingService : Processing build job: BuildJobQueueItem[id=4651739576569330, name=SHORTB06DD3F905F4604F6E085260D83ED657A6DFTSTEXC-LOCALCIINTSTUDENT1, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=465, courseId=148, exerciseId=299, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=shortb06dd3f905f4604f6e085260d83ed657a6dftstexc-localciintstudent1, repositoryType=user, triggeredByPushTo=user, assignmentRepositoryUri=http://localhost:49152/git/SHORTB06DD3F905F4604F6E085260D83ED657A6DFTSTEXC/shortb06dd3f905f4604f6e085260d83ed657a6dftstexc-localciintstudent1.git, testRepositoryUri=http://localhost:49152/git/SHORTB06DD3F905F4604F6E085260D83ED657A6DFTSTEXC/shortb06dd3f905f4604f6e085260d83ed657a6dftstexc-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@74c3dfbd, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@5f287d4a], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:42:49.330093960Z[Etc/UTC], buildStartDate=2025-02-14T23:42:49.347797345Z[Etc/UTC], buildCompletionDate=null, estimatedCompletionDate=2025-02-14T23:43:08.347788449Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+chmod +x ./gradlew
+./gradlew clean test
+, dockerImage=dummy-docker-image:latest, commitHashToBuild=41581fff25954d36cf07586926ee0c77d1003131, assignmentCommitHash=41581fff25954d36cf07586926ee0c77d1003131, testCommitHash=41581fff25954d36cf07586926ee0c77d1003131, branch=main, programmingLanguage=JAVA, projectType=PLAIN_GRADLE, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/test-results/test/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]
+    23:42:49.362 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:49.371 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:42:49.377 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:49.379 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:49.382 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:49.383 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:49.384 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:49.384 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:49.389 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:49.399 |  46 Pool-1-worker-20 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ComplaintResponseServiceTest#testIsUserAuthorizedToRespondToComplaintForNotTeamOwner'
+    23:42:49.410 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 343 and participant 21 (result to be deleted: null)
+    23:42:49.410 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 343 and participant 21 at 2025-02-14T23:42:49.610081566Z[Etc/UTC].
+    23:42:49.413 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 343 and participant 21 (result to be deleted: null)
+    23:42:49.413 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 343 and participant 21 at 2025-02-14T23:42:49.613811993Z[Etc/UTC].
+
+  Starting logs for ComplaintResponseServiceTest > testIsUserAuthorizedToRespondToComplaintForComplaintsWithAutomaticAssessment()
+    23:42:49.431 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:42:49.435 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 2 tutors...
+    23:42:49.439 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 0 editors...
+    23:42:49.440 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:49.443 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:49.444 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:49.445 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:49.445 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:49.449 |  46 Pool-1-worker-20 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:49.460 |  46 Pool-1-worker-20 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ComplaintResponseServiceTest#testIsUserAuthorizedToRespondToComplaintForComplaintsWithAutomaticAssessment'
+    23:42:49.468 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 344 and participant 61 (result to be deleted: null)
+    23:42:49.468 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 344 and participant 61 at 2025-02-14T23:42:49.568280356Z[Etc/UTC].
+    23:42:49.471 |  46 Pool-1-worker-20 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 344 and participant 61 (result to be deleted: null)
+    23:42:49.471 |  46 Pool-1-worker-20 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 344 and participant 61 at 2025-02-14T23:42:49.571881672Z[Etc/UTC].
+
+Finished logs for ComplaintResponseServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

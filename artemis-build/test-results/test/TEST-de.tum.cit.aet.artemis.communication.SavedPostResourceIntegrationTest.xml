@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.SavedPostResourceIntegrationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:05" hostname="fv-az1721-502" time="0.675">
+  <properties/>
+  <testcase name="shouldReturnBadRequestWhenWrongStatusIsSupplied()" classname="de.tum.cit.aet.artemis.communication.SavedPostResourceIntegrationTest" time="0.031"/>
+  <testcase name="shouldReturnBadRequestWhenUpdatingAndWrongStatusIsSupplied()" classname="de.tum.cit.aet.artemis.communication.SavedPostResourceIntegrationTest" time="0.043"/>
+  <testcase name="shouldReturnNoContentWhenDeletingSavedPost()" classname="de.tum.cit.aet.artemis.communication.SavedPostResourceIntegrationTest" time="0.056"/>
+  <testcase name="shouldReturnBadRequestWhenWrongTypeIsSupplied()" classname="de.tum.cit.aet.artemis.communication.SavedPostResourceIntegrationTest" time="0.039"/>
+  <testcase name="shouldReturnPostsWhenGetSavedPostIsCalled()" classname="de.tum.cit.aet.artemis.communication.SavedPostResourceIntegrationTest" time="0.063"/>
+  <testcase name="shouldReturnOkWhenUpdatingProperStatus()" classname="de.tum.cit.aet.artemis.communication.SavedPostResourceIntegrationTest" time="0.031"/>
+  <testcase name="shouldReturnMaxPostReachedWhenSavingAndLimitIsReached()" classname="de.tum.cit.aet.artemis.communication.SavedPostResourceIntegrationTest" time="0.359"/>
+  <testcase name="shouldReturnCreatedWhenPostIsBookmarkedAndIsNotBookmarkedYet()" classname="de.tum.cit.aet.artemis.communication.SavedPostResourceIntegrationTest" time="0.042"/>
+  <system-out><![CDATA[
+Starting logs for SavedPostResourceIntegrationTest
+
+  Starting logs for SavedPostResourceIntegrationTest > shouldReturnBadRequestWhenWrongStatusIsSupplied()
+    23:44:05.258 | 140 Pool-1-worker-55 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SavedPostResourceIntegrationTest#shouldReturnBadRequestWhenWrongStatusIsSupplied'
+    23:44:05.260 | 140 Pool-1-worker-55 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/saved-posts/1145/999
+    23:44:05.261 | 140 Pool-1-worker-55 | DEBUG | d.t.c.a.a.c.web.SavedPostResource    : GET getSavedPosts invoked for course 1145 and status 999
+    23:44:05.262 | 140 Pool-1-worker-55 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The provided post status could not be found.
+    23:44:05.262 | 140 Pool-1-worker-55 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The provided post status could not be found.
+
+  Starting logs for SavedPostResourceIntegrationTest > shouldReturnBadRequestWhenUpdatingAndWrongStatusIsSupplied()
+    23:44:05.293 | 140 Pool-1-worker-55 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SavedPostResourceIntegrationTest#shouldReturnBadRequestWhenUpdatingAndWrongStatusIsSupplied'
+    23:44:05.294 | 140 Pool-1-worker-55 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/saved-posts/3292/0
+    23:44:05.295 | 140 Pool-1-worker-55 | DEBUG | d.t.c.a.a.c.web.SavedPostResource    : DELETE putSavedPost invoked for post 3292
+    23:44:05.299 | 140 Pool-1-worker-55 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The provided post status could not be found.
+    23:44:05.299 | 140 Pool-1-worker-55 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The provided post status could not be found.
+
+  Starting logs for SavedPostResourceIntegrationTest > shouldReturnNoContentWhenDeletingSavedPost()
+    23:44:05.354 | 140 Pool-1-worker-55 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SavedPostResourceIntegrationTest#shouldReturnNoContentWhenDeletingSavedPost'
+    23:44:05.355 | 140 Pool-1-worker-55 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/saved-posts/3293/0
+    23:44:05.355 | 140 Pool-1-worker-55 | DEBUG | d.t.c.a.a.c.web.SavedPostResource    : DELETE deletePost invoked for post 3293
+    23:44:05.364 | 140 Pool-1-worker-55 | INFO  | d.t.c.a.a.c.web.SavedPostResource    : deletePost took 8.70ms
+
+  Starting logs for SavedPostResourceIntegrationTest > shouldReturnBadRequestWhenWrongTypeIsSupplied()
+    23:44:05.402 | 140 Pool-1-worker-55 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SavedPostResourceIntegrationTest#shouldReturnBadRequestWhenWrongTypeIsSupplied'
+    23:44:05.404 | 140 Pool-1-worker-55 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/saved-posts/3294/999
+    23:44:05.404 | 140 Pool-1-worker-55 | DEBUG | d.t.c.a.a.c.web.SavedPostResource    : POST savePost invoked for post 3294
+    23:44:05.407 | 140 Pool-1-worker-55 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The provided post type could not be found.
+    23:44:05.407 | 140 Pool-1-worker-55 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The provided post type could not be found.
+
+  Starting logs for SavedPostResourceIntegrationTest > shouldReturnPostsWhenGetSavedPostIsCalled()
+    23:44:05.433 | 140 Pool-1-worker-55 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SavedPostResourceIntegrationTest#shouldReturnPostsWhenGetSavedPostIsCalled'
+    23:44:05.434 | 140 Pool-1-worker-55 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/saved-posts/1149/0
+    23:44:05.435 | 140 Pool-1-worker-55 | DEBUG | d.t.c.a.a.c.web.SavedPostResource    : GET getSavedPosts invoked for course 1149 and status 0
+    23:44:05.465 | 140 Pool-1-worker-55 | INFO  | d.t.c.a.a.c.web.SavedPostResource    : getSavedPosts took 30.46ms
+
+  Starting logs for SavedPostResourceIntegrationTest > shouldReturnOkWhenUpdatingProperStatus()
+    23:44:05.497 | 140 Pool-1-worker-55 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SavedPostResourceIntegrationTest#shouldReturnOkWhenUpdatingProperStatus'
+    23:44:05.498 | 140 Pool-1-worker-55 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/saved-posts/3296/0
+    23:44:05.499 | 140 Pool-1-worker-55 | DEBUG | d.t.c.a.a.c.web.SavedPostResource    : DELETE putSavedPost invoked for post 3296
+    23:44:05.504 | 140 Pool-1-worker-55 | INFO  | d.t.c.a.a.c.web.SavedPostResource    : putSavedPost took 5.74ms
+
+  Starting logs for SavedPostResourceIntegrationTest > shouldReturnMaxPostReachedWhenSavingAndLimitIsReached()
+    23:44:05.533 | 140 Pool-1-worker-55 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SavedPostResourceIntegrationTest#shouldReturnMaxPostReachedWhenSavingAndLimitIsReached'
+    23:44:05.849 | 140 Pool-1-worker-55 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/saved-posts/3297/0
+    23:44:05.850 | 140 Pool-1-worker-55 | DEBUG | d.t.c.a.a.c.web.SavedPostResource    : POST savePost invoked for post 3297
+    23:44:05.852 | 140 Pool-1-worker-55 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The maximum amount of saved posts was reached.
+    23:44:05.852 | 140 Pool-1-worker-55 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The maximum amount of saved posts was reached.
+
+  Starting logs for SavedPostResourceIntegrationTest > shouldReturnCreatedWhenPostIsBookmarkedAndIsNotBookmarkedYet()
+    23:44:05.893 | 140 Pool-1-worker-55 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SavedPostResourceIntegrationTest#shouldReturnCreatedWhenPostIsBookmarkedAndIsNotBookmarkedYet'
+    23:44:05.895 | 140 Pool-1-worker-55 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/saved-posts/3299/0
+    23:44:05.895 | 140 Pool-1-worker-55 | DEBUG | d.t.c.a.a.c.web.SavedPostResource    : POST savePost invoked for post 3299
+    23:44:05.903 | 140 Pool-1-worker-55 | INFO  | d.t.c.a.a.c.web.SavedPostResource    : savePost took 7.46ms
+
+Finished logs for SavedPostResourceIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

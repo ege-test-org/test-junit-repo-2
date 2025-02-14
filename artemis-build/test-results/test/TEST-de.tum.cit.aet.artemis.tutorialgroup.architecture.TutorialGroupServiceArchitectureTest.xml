@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupServiceArchitectureTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:34" hostname="fv-az1721-502" time="0.081">
+  <properties/>
+  <testcase name="testCorrectAsyncCalls()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupServiceArchitectureTest" time="0.028"/>
+  <testcase name="shouldBeNamedService()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupServiceArchitectureTest" time="0.003"/>
+  <testcase name="testCorrectServiceAnnotation()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupServiceArchitectureTest" time="0.031"/>
+  <testcase name="shouldBeInServicePackage()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupServiceArchitectureTest" time="0.007"/>
+  <testcase name="testNoWrongServiceImports()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupServiceArchitectureTest" time="0.007"/>
+  <system-out><![CDATA[
+Starting logs for TutorialGroupServiceArchitectureTest
+
+  Starting logs for TutorialGroupServiceArchitectureTest > testCorrectAsyncCalls()
+
+  Starting logs for TutorialGroupServiceArchitectureTest > shouldBeNamedService()
+
+  Starting logs for TutorialGroupServiceArchitectureTest > testCorrectServiceAnnotation()
+
+  Starting logs for TutorialGroupServiceArchitectureTest > shouldBeInServicePackage()
+
+  Starting logs for TutorialGroupServiceArchitectureTest > testNoWrongServiceImports()
+
+Finished logs for TutorialGroupServiceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

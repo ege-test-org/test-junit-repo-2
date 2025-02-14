@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.apollon.ApollonConversionIntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:06" hostname="fv-az1721-502" time="0.031">
+  <properties/>
+  <testcase name="testConvertingModel()" classname="de.tum.cit.aet.artemis.modeling.apollon.ApollonConversionIntegrationTest" time="0.031"/>
+  <system-out><![CDATA[
+Starting logs for ApollonConversionIntegrationTest
+
+  Starting logs for ApollonConversionIntegrationTest > testConvertingModel()
+    23:47:06.296 | 429 ool-1-worker-193 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ApollonConversionIntegrationTest#testConvertingModel'
+    23:47:06.297 | 429 ool-1-worker-193 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/apollon/convert-to-pdf
+    23:47:06.298 | 429 ool-1-worker-193 | DEBUG | .c.a.a.m.w.ApollonConversionResource : REST call to convert apollon model to pdf
+    23:47:06.298 | 429 ool-1-worker-193 | INFO  | c.a.a.m.s.a.ApollonConversionService : Calling Remote Service to convert for model.
+    23:47:06.303 | 429 ool-1-worker-193 | DEBUG | .c.a.a.m.w.ApollonConversionResource : REST call for apollon model conversion to pdf finished
+
+Finished logs for ApollonConversionIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.shared.architecture.FeedbackArchitectureTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:31" hostname="fv-az1721-502" time="0.821">
+  <properties/>
+  <testcase name="testSetLongFeedbackTextNotUsed()" classname="de.tum.cit.aet.artemis.shared.architecture.FeedbackArchitectureTest" time="0.415"/>
+  <testcase name="testGetLongFeedbackTextNotUsed()" classname="de.tum.cit.aet.artemis.shared.architecture.FeedbackArchitectureTest" time="0.406"/>
+  <system-out><![CDATA[
+Starting logs for FeedbackArchitectureTest
+
+  Starting logs for FeedbackArchitectureTest > testSetLongFeedbackTextNotUsed()
+
+  Starting logs for FeedbackArchitectureTest > testGetLongFeedbackTextNotUsed()
+
+Finished logs for FeedbackArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:57" hostname="fv-az1721-502" time="0.326">
+  <properties/>
+  <testcase name="testNoEntityGraphsOnQueries()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" time="0.013"/>
+  <testcase name="testNoUnusedRepositoryMethods()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" time="0.088"/>
+  <testcase name="testTransactional()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" time="0.024"/>
+  <testcase name="shouldBeInRepositoryPackage()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="testRepositoryParamAnnotation()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" time="0.027"/>
+  <testcase name="orElseThrowShouldNotBeCalled()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" time="0.004"/>
+  <testcase name="repositoriesImplementArtemisJpaRepository()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" time="0.004"/>
+  <testcase name="persistenceShouldNotAccessServices()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" time="0.015"/>
+  <testcase name="usedInProductionCode()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" time="0.047"/>
+  <testcase name="shouldBeAnnotatedRepository()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" time="0.007"/>
+  <testcase name="enforceUsageOfTestRepository()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="testJPQLStyle()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" time="0.049"/>
+  <testcase name="shouldBeNamedRepository()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" time="0.003"/>
+  <testcase name="enforceStructureOfTestRepositories()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" time="0.008"/>
+  <testcase name="testOnlySpringTransactionalAnnotation()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" time="0.02"/>
+  <testcase name="enforcePrimaryBeanAnnotationOnTestRepositories()" classname="de.tum.cit.aet.artemis.fileupload.architecture.FileUploadRepositoryArchitectureTest" time="0.002"/>
+  <system-out><![CDATA[
+Starting logs for FileUploadRepositoryArchitectureTest
+
+  Starting logs for FileUploadRepositoryArchitectureTest > testNoEntityGraphsOnQueries()
+
+  Starting logs for FileUploadRepositoryArchitectureTest > testNoUnusedRepositoryMethods()
+
+  Starting logs for FileUploadRepositoryArchitectureTest > testTransactional()
+
+  Starting logs for FileUploadRepositoryArchitectureTest > shouldBeInRepositoryPackage()
+
+  Starting logs for FileUploadRepositoryArchitectureTest > testRepositoryParamAnnotation()
+
+  Starting logs for FileUploadRepositoryArchitectureTest > orElseThrowShouldNotBeCalled()
+
+  Starting logs for FileUploadRepositoryArchitectureTest > repositoriesImplementArtemisJpaRepository()
+
+  Starting logs for FileUploadRepositoryArchitectureTest > persistenceShouldNotAccessServices()
+
+  Starting logs for FileUploadRepositoryArchitectureTest > usedInProductionCode()
+
+  Starting logs for FileUploadRepositoryArchitectureTest > shouldBeAnnotatedRepository()
+
+  Starting logs for FileUploadRepositoryArchitectureTest > enforceUsageOfTestRepository()
+
+  Starting logs for FileUploadRepositoryArchitectureTest > testJPQLStyle()
+
+  Starting logs for FileUploadRepositoryArchitectureTest > shouldBeNamedRepository()
+
+  Starting logs for FileUploadRepositoryArchitectureTest > enforceStructureOfTestRepositories()
+
+  Starting logs for FileUploadRepositoryArchitectureTest > testOnlySpringTransactionalAnnotation()
+
+  Starting logs for FileUploadRepositoryArchitectureTest > enforcePrimaryBeanAnnotationOnTestRepositories()
+
+Finished logs for FileUploadRepositoryArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:16" hostname="fv-az1721-502" time="0.695">
+  <properties/>
+  <testcase name="testNoEntityGraphsOnQueries()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" time="0.14"/>
+  <testcase name="testNoUnusedRepositoryMethods()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" time="0.225"/>
+  <testcase name="testTransactional()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" time="0.061"/>
+  <testcase name="shouldBeInRepositoryPackage()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" time="0.005"/>
+  <testcase name="testRepositoryParamAnnotation()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" time="0.043"/>
+  <testcase name="orElseThrowShouldNotBeCalled()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" time="0.018"/>
+  <testcase name="repositoriesImplementArtemisJpaRepository()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" time="0.008"/>
+  <testcase name="persistenceShouldNotAccessServices()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" time="0.011"/>
+  <testcase name="usedInProductionCode()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" time="0.047"/>
+  <testcase name="shouldBeAnnotatedRepository()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" time="0.01"/>
+  <testcase name="enforceUsageOfTestRepository()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" time="0.007"/>
+  <testcase name="testJPQLStyle()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" time="0.036"/>
+  <testcase name="shouldBeNamedRepository()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" time="0.008"/>
+  <testcase name="enforceStructureOfTestRepositories()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" time="0.032"/>
+  <testcase name="testOnlySpringTransactionalAnnotation()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" time="0.035"/>
+  <testcase name="enforcePrimaryBeanAnnotationOnTestRepositories()" classname="de.tum.cit.aet.artemis.quiz.architecture.QuizRepositoryArchitectureTest" time="0.004"/>
+  <system-out><![CDATA[
+Starting logs for QuizRepositoryArchitectureTest
+
+  Starting logs for QuizRepositoryArchitectureTest > testNoEntityGraphsOnQueries()
+
+  Starting logs for QuizRepositoryArchitectureTest > testNoUnusedRepositoryMethods()
+
+  Starting logs for QuizRepositoryArchitectureTest > testTransactional()
+
+  Starting logs for QuizRepositoryArchitectureTest > shouldBeInRepositoryPackage()
+
+  Starting logs for QuizRepositoryArchitectureTest > testRepositoryParamAnnotation()
+
+  Starting logs for QuizRepositoryArchitectureTest > orElseThrowShouldNotBeCalled()
+
+  Starting logs for QuizRepositoryArchitectureTest > repositoriesImplementArtemisJpaRepository()
+
+  Starting logs for QuizRepositoryArchitectureTest > persistenceShouldNotAccessServices()
+
+  Starting logs for QuizRepositoryArchitectureTest > usedInProductionCode()
+
+  Starting logs for QuizRepositoryArchitectureTest > shouldBeAnnotatedRepository()
+
+  Starting logs for QuizRepositoryArchitectureTest > enforceUsageOfTestRepository()
+
+  Starting logs for QuizRepositoryArchitectureTest > testJPQLStyle()
+
+  Starting logs for QuizRepositoryArchitectureTest > shouldBeNamedRepository()
+
+  Starting logs for QuizRepositoryArchitectureTest > enforceStructureOfTestRepositories()
+
+  Starting logs for QuizRepositoryArchitectureTest > testOnlySpringTransactionalAnnotation()
+
+  Starting logs for QuizRepositoryArchitectureTest > enforcePrimaryBeanAnnotationOnTestRepositories()
+
+Finished logs for QuizRepositoryArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

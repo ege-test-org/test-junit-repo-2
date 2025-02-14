@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:59" hostname="fv-az1721-502" time="1.14">
+  <properties/>
+  <testcase name="startDeepLinkingLtiConfigurationFound()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.904"/>
+  <testcase name="[1] invalidPath=https://some-artemis-domain.org/courses/234" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.004"/>
+  <testcase name="[2] invalidPath=https://some-artemis-domain.org/courses/234/exercises" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.003"/>
+  <testcase name="[3] invalidPath=https://some-artemis-domain.org/exericses/123" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.005"/>
+  <testcase name="[4] invalidPath=https://some-artemis-domain.org/something/courses/234/exercises/123" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.004"/>
+  <testcase name="createUsernameFromLaunchRequest_fromFullname()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.004"/>
+  <testcase name="performLaunch_notOnlineCourse()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.011"/>
+  <testcase name="performLaunch_invalidToken()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.01"/>
+  <testcase name="performLaunch_malformedUrl()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.005"/>
+  <testcase name="onNewResult()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.111"/>
+  <testcase name="performLaunch_exerciseFound()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.012"/>
+  <testcase name="createUsernameFromLaunchRequest_fromEmailNoFamilyName()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.003"/>
+  <testcase name="createUsernameFromLaunchRequest_fromEmail()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.001"/>
+  <testcase name="onNewResultTokenFails()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.006"/>
+  <testcase name="buildLtiResponseCallLtiService()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.003"/>
+  <testcase name="onNewResultNoResultForUser()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.006"/>
+  <testcase name="onNewResultNoScoreUrl()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.004"/>
+  <testcase name="createUsernameFromLaunchRequest_fromUsername()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.002"/>
+  <testcase name="onNewResultNoLaunchesForUser()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.005"/>
+  <testcase name="performLaunch_exerciseNotFound()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.003"/>
+  <testcase name="performLaunch_courseNotFound()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.005"/>
+  <testcase name="onNewResultNoOnlineCourseConfiguration()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.002"/>
+  <testcase name="startDeepLinkingPlatformNotFound()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.003"/>
+  <testcase name="performLaunch_exerciseNotFoundInvalidPath()" classname="de.tum.cit.aet.artemis.lti.Lti13ServiceTest" time="0.003"/>
+  <system-out><![CDATA[
+Starting logs for Lti13ServiceTest
+
+  Starting logs for Lti13ServiceTest > startDeepLinkingLtiConfigurationFound()
+
+  Starting logs for Lti13ServiceTest > [1] invalidPath=https://some-artemis-domain.org/courses/234
+    23:40:00.234 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.Lti13Service   : Could not extract exerciseId and courseId from target link: https://some-artemis-domain.org/courses/234
+    23:40:00.234 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.lti.service.Lti13Service   : No exercise to launch at https://some-artemis-domain.org/courses/234
+
+  Starting logs for Lti13ServiceTest > [2] invalidPath=https://some-artemis-domain.org/courses/234/exercises
+    23:40:00.238 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.Lti13Service   : Could not extract exerciseId and courseId from target link: https://some-artemis-domain.org/courses/234/exercises
+    23:40:00.238 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.lti.service.Lti13Service   : No exercise to launch at https://some-artemis-domain.org/courses/234/exercises
+
+  Starting logs for Lti13ServiceTest > [3] invalidPath=https://some-artemis-domain.org/exericses/123
+    23:40:00.243 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.Lti13Service   : Could not extract exerciseId and courseId from target link: https://some-artemis-domain.org/exericses/123
+    23:40:00.244 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.lti.service.Lti13Service   : No exercise to launch at https://some-artemis-domain.org/exericses/123
+
+  Starting logs for Lti13ServiceTest > [4] invalidPath=https://some-artemis-domain.org/something/courses/234/exercises/123
+    23:40:00.249 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.Lti13Service   : Could not extract exerciseId and courseId from target link: https://some-artemis-domain.org/something/courses/234/exercises/123
+    23:40:00.249 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.lti.service.Lti13Service   : No exercise to launch at https://some-artemis-domain.org/something/courses/234/exercises/123
+
+  Starting logs for Lti13ServiceTest > createUsernameFromLaunchRequest_fromFullname()
+
+  Starting logs for Lti13ServiceTest > performLaunch_notOnlineCourse()
+    23:40:00.262 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.lti.service.Lti13Service   : Exercise is not related to course for target link url: https://some-artemis-domain.org/courses/12/exercises/134
+
+  Starting logs for Lti13ServiceTest > performLaunch_invalidToken()
+
+  Starting logs for Lti13ServiceTest > performLaunch_malformedUrl()
+    23:40:00.280 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.Lti13Service   : Could not extract exerciseId and courseId from target link: path
+    23:40:00.280 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.lti.service.Lti13Service   : No exercise to launch at path
+
+  Starting logs for Lti13ServiceTest > onNewResult()
+    23:40:00.389 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.Lti13Service   : Submitted score for someone to client null
+
+  Starting logs for Lti13ServiceTest > performLaunch_exerciseFound()
+
+  Starting logs for Lti13ServiceTest > createUsernameFromLaunchRequest_fromEmailNoFamilyName()
+
+  Starting logs for Lti13ServiceTest > createUsernameFromLaunchRequest_fromEmail()
+
+  Starting logs for Lti13ServiceTest > onNewResultTokenFails()
+    23:40:00.418 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.lti.service.Lti13Service   : Could not transmit score to external LMS for course null:
+
+  Starting logs for Lti13ServiceTest > buildLtiResponseCallLtiService()
+
+  Starting logs for Lti13ServiceTest > onNewResultNoResultForUser()
+    23:40:00.428 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.lti.service.Lti13Service   : Could not transmit score to external LMS for course null:
+
+  Starting logs for Lti13ServiceTest > onNewResultNoScoreUrl()
+    23:40:00.433 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.lti.service.Lti13Service   : Could not transmit score to external LMS for course null:
+
+  Starting logs for Lti13ServiceTest > createUsernameFromLaunchRequest_fromUsername()
+
+  Starting logs for Lti13ServiceTest > onNewResultNoLaunchesForUser()
+    23:40:00.444 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.lti.service.Lti13Service   : Could not transmit score to external LMS for course null:
+
+  Starting logs for Lti13ServiceTest > performLaunch_exerciseNotFound()
+    23:40:00.448 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.Lti13Service   : Could not find exercise or course for target link url: https://some-artemis-domain.org/courses/1/exercises/100000
+    23:40:00.448 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.lti.service.Lti13Service   : No exercise to launch at https://some-artemis-domain.org/courses/1/exercises/100000
+
+  Starting logs for Lti13ServiceTest > performLaunch_courseNotFound()
+
+  Starting logs for Lti13ServiceTest > onNewResultNoOnlineCourseConfiguration()
+    23:40:00.458 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.lti.service.Lti13Service   : Could not transmit score to external LMS for course null:
+
+  Starting logs for Lti13ServiceTest > startDeepLinkingPlatformNotFound()
+
+  Starting logs for Lti13ServiceTest > performLaunch_exerciseNotFoundInvalidPath()
+    23:40:00.464 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.lti.service.Lti13Service   : Could not extract exerciseId and courseId from target link: https://some-artemis-domain.org/with/invalid/path/to/exercise/11
+    23:40:00.464 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.lti.service.Lti13Service   : No exercise to launch at https://some-artemis-domain.org/with/invalid/path/to/exercise/11
+
+Finished logs for Lti13ServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

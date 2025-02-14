@@ -1,0 +1,1319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.aelous.AeolusBuildScriptGenerationServiceTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:59" hostname="fv-az1721-502" time="0.164">
+  <properties/>
+  <testcase name="testNoAuthRestCall()" classname="de.tum.cit.aet.artemis.programming.aelous.AeolusBuildScriptGenerationServiceTest" time="0.048"/>
+  <testcase name="testBuildScriptGeneration()" classname="de.tum.cit.aet.artemis.programming.aelous.AeolusBuildScriptGenerationServiceTest" time="0.03"/>
+  <testcase name="testBuildScriptGenerationUsingBuildPlanGenerationService()" classname="de.tum.cit.aet.artemis.programming.aelous.AeolusBuildScriptGenerationServiceTest" time="0.04"/>
+  <testcase name="testFailedBuildPlanPublish()" classname="de.tum.cit.aet.artemis.programming.aelous.AeolusBuildScriptGenerationServiceTest" time="0.032"/>
+  <system-out><![CDATA[    23:44:59.119 | 081 local-ci-build-0 | ERROR | .t.c.a.a.b.s.BuildAgentDockerService : Error while checking disk space for Docker image cleanup: null
+java.util.NoSuchElementException: null
+	at java.base/java.util.ArrayList.getFirst(ArrayList.java:439)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildAgentDockerService.checkUsableDiskSpaceThenCleanUp(BuildAgentDockerService.java:397)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildAgentDockerService.pullDockerImage(BuildAgentDockerService.java:237)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobExecutionService.runBuildJob(BuildJobExecutionService.java:152)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:723)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobExecutionService$$SpringCGLIB$$0.runBuildJob(<generated>)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.lambda$executeBuildJob$1(BuildJobManagementService.java:129)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+    23:44:59.119 | 081 local-ci-build-0 | INFO  | .t.c.a.a.b.s.BuildAgentDockerService : ~~~~~~~~~~~~~~~~~~~~ Pulling docker image ~~invalid~~ with a lock after error Status 400: {"message":"invalid reference format"}
+ ~~~~~~~~~~~~~~~~~~~~
+    23:44:59.129 | 444 ream--1342815561 | ERROR | c.g.d.a.async.ResultCallbackTemplate : Error during callback
+com.github.dockerjava.api.exception.BadRequestException: Status 400: {"message":"invalid reference format"}
+
+	at com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:237)
+	at com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+    23:44:59.130 | 566 localvc.event-13 | ERROR | .c.a.a.b.s.BuildJobManagementService : Error while executing build job 18521739576699059: de.tum.cit.aet.artemis.core.exception.LocalCIException: Could not pull Docker image ~~invalid~~
+java.util.concurrent.ExecutionException: de.tum.cit.aet.artemis.core.exception.LocalCIException: Could not pull Docker image ~~invalid~~
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.lambda$executeBuildJob$2(BuildJobManagementService.java:165)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.createCompletableFuture(BuildJobManagementService.java:236)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.executeBuildJob(BuildJobManagementService.java:163)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.processBuild(SharedQueueProcessingService.java:413)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.checkAvailabilityAndProcessNextBuild(SharedQueueProcessingService.java:269)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.lambda$processBuild$5(SharedQueueProcessingService.java:480)
+	at java.base/java.util.concurrent.CompletableFuture.uniExceptionally(CompletableFuture.java:990)
+	at java.base/java.util.concurrent.CompletableFuture.uniExceptionallyStage(CompletableFuture.java:1008)
+	at java.base/java.util.concurrent.CompletableFuture.exceptionally(CompletableFuture.java:2396)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.processBuild(SharedQueueProcessingService.java:444)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.checkAvailabilityAndProcessNextBuild(SharedQueueProcessingService.java:269)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService$QueuedBuildJobItemListener.itemAdded(SharedQueueProcessingService.java:594)
+	at com.hazelcast.collection.impl.queue.QueueService.lambda$dispatchEvent$1(QueueService.java:277)
+	at com.hazelcast.internal.namespace.impl.NoOpUserCodeNamespaceService.runWithNamespace(NoOpUserCodeNamespaceService.java:82)
+	at com.hazelcast.internal.namespace.NamespaceUtil.runWithNamespace(NamespaceUtil.java:106)
+	at com.hazelcast.collection.impl.queue.QueueService.dispatchEvent(QueueService.java:275)
+	at com.hazelcast.collection.impl.queue.QueueService.dispatchEvent(QueueService.java:98)
+	at com.hazelcast.spi.impl.eventservice.impl.LocalEventDispatcher.run(LocalEventDispatcher.java:64)
+	at com.hazelcast.internal.util.executor.StripedExecutor$Worker.process(StripedExecutor.java:244)
+	at com.hazelcast.internal.util.executor.StripedExecutor$Worker.run(StripedExecutor.java:227)
+Caused by: de.tum.cit.aet.artemis.core.exception.LocalCIException: Could not pull Docker image ~~invalid~~
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobExecutionService.runBuildJob(BuildJobExecutionService.java:157)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:723)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobExecutionService$$SpringCGLIB$$0.runBuildJob(<generated>)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.lambda$executeBuildJob$1(BuildJobManagementService.java:129)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: de.tum.cit.aet.artemis.core.exception.LocalCIException: Error while pulling docker image ~~invalid~~
+	at de.tum.cit.aet.artemis.buildagent.service.BuildAgentDockerService.pullDockerImage(BuildAgentDockerService.java:258)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobExecutionService.runBuildJob(BuildJobExecutionService.java:152)
+	... 10 common frames omitted
+Caused by: com.github.dockerjava.api.exception.BadRequestException: Status 400: {"message":"invalid reference format"}
+
+	at com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:237)
+	at com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269)
+	... 1 common frames omitted
+    23:44:59.130 | 566 localvc.event-13 | INFO  | .c.a.a.b.s.BuildJobManagementService : Getting ID of running container local-ci-18521739576699059
+    23:44:59.131 | 566 localvc.event-13 | INFO  | .c.a.a.b.s.BuildJobManagementService : Stopping unresponsive container with ID null
+    23:44:59.131 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : Build job completed with exception: BuildJobQueueItem[id=18521739576699059, name=SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1852, courseId=917, exerciseId=2534, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@5a749ad6, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@65e043e4], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:59.059867149Z[Etc/UTC], buildStartDate=2025-02-14T23:44:59.079912252Z[Etc/UTC], buildCompletionDate=null, estimatedCompletionDate=2025-02-14T23:45:18.079907323Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+cp -R Sources assignment
+# copy test files
+cp -R Tests assignment
+cp Package.swift assignment
+
+# In order to get the correct console output we need to execute the command within the assignment directory
+# swift build
+cd assignment
+swift build || error=true
+
+if [ ! $error ]
+then
+    # swift test
+    swift test || true
+fi
+
+# The used docker container is calling 'swift build' which creates files as root (e.g. tests.xml),
+# so we need to allow everyone to access these files
+cd ..
+chmod -R 777 .
+# Copy SwiftLint rules
+cp .swiftlint.yml assignment || true
+# create target directory for SCA Parser
+mkdir target
+cd assignment
+# Execute static code analysis
+swiftlint > ../target/swiftlint-result.xml
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=SWIFT, projectType=PLAIN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/swiftlint-result.xml, /var/tmp/testing-dir/assignment/tests.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]
+java.util.concurrent.CompletionException: java.util.concurrent.ExecutionException: de.tum.cit.aet.artemis.core.exception.LocalCIException: Could not pull Docker image ~~invalid~~
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.lambda$executeBuildJob$2(BuildJobManagementService.java:188)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.createCompletableFuture(BuildJobManagementService.java:236)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.executeBuildJob(BuildJobManagementService.java:163)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.processBuild(SharedQueueProcessingService.java:413)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.checkAvailabilityAndProcessNextBuild(SharedQueueProcessingService.java:269)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.lambda$processBuild$5(SharedQueueProcessingService.java:480)
+	at java.base/java.util.concurrent.CompletableFuture.uniExceptionally(CompletableFuture.java:990)
+	at java.base/java.util.concurrent.CompletableFuture.uniExceptionallyStage(CompletableFuture.java:1008)
+	at java.base/java.util.concurrent.CompletableFuture.exceptionally(CompletableFuture.java:2396)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.processBuild(SharedQueueProcessingService.java:444)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.checkAvailabilityAndProcessNextBuild(SharedQueueProcessingService.java:269)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService$QueuedBuildJobItemListener.itemAdded(SharedQueueProcessingService.java:594)
+	at com.hazelcast.collection.impl.queue.QueueService.lambda$dispatchEvent$1(QueueService.java:277)
+	at com.hazelcast.internal.namespace.impl.NoOpUserCodeNamespaceService.runWithNamespace(NoOpUserCodeNamespaceService.java:82)
+	at com.hazelcast.internal.namespace.NamespaceUtil.runWithNamespace(NamespaceUtil.java:106)
+	at com.hazelcast.collection.impl.queue.QueueService.dispatchEvent(QueueService.java:275)
+	at com.hazelcast.collection.impl.queue.QueueService.dispatchEvent(QueueService.java:98)
+	at com.hazelcast.spi.impl.eventservice.impl.LocalEventDispatcher.run(LocalEventDispatcher.java:64)
+	at com.hazelcast.internal.util.executor.StripedExecutor$Worker.process(StripedExecutor.java:244)
+	at com.hazelcast.internal.util.executor.StripedExecutor$Worker.run(StripedExecutor.java:227)
+Caused by: java.util.concurrent.ExecutionException: de.tum.cit.aet.artemis.core.exception.LocalCIException: Could not pull Docker image ~~invalid~~
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.lambda$executeBuildJob$2(BuildJobManagementService.java:165)
+	... 19 common frames omitted
+Caused by: de.tum.cit.aet.artemis.core.exception.LocalCIException: Could not pull Docker image ~~invalid~~
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobExecutionService.runBuildJob(BuildJobExecutionService.java:157)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:723)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobExecutionService$$SpringCGLIB$$0.runBuildJob(<generated>)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.lambda$executeBuildJob$1(BuildJobManagementService.java:129)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: de.tum.cit.aet.artemis.core.exception.LocalCIException: Error while pulling docker image ~~invalid~~
+	at de.tum.cit.aet.artemis.buildagent.service.BuildAgentDockerService.pullDockerImage(BuildAgentDockerService.java:258)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobExecutionService.runBuildJob(BuildJobExecutionService.java:152)
+	... 10 common frames omitted
+Caused by: com.github.dockerjava.api.exception.BadRequestException: Status 400: {"message":"invalid reference format"}
+
+	at com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:237)
+	at com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269)
+	... 1 common frames omitted
+    23:44:59.131 | 566 localvc.event-13 | ERROR | a.a.b.s.SharedQueueProcessingService : Error while processing build job: BuildJobQueueItem[id=18521739576699059, name=SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1852, courseId=917, exerciseId=2534, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@5a749ad6, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@65e043e4], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:59.059867149Z[Etc/UTC], buildStartDate=2025-02-14T23:44:59.079912252Z[Etc/UTC], buildCompletionDate=null, estimatedCompletionDate=2025-02-14T23:45:18.079907323Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+cp -R Sources assignment
+# copy test files
+cp -R Tests assignment
+cp Package.swift assignment
+
+# In order to get the correct console output we need to execute the command within the assignment directory
+# swift build
+cd assignment
+swift build || error=true
+
+if [ ! $error ]
+then
+    # swift test
+    swift test || true
+fi
+
+# The used docker container is calling 'swift build' which creates files as root (e.g. tests.xml),
+# so we need to allow everyone to access these files
+cd ..
+chmod -R 777 .
+# Copy SwiftLint rules
+cp .swiftlint.yml assignment || true
+# create target directory for SCA Parser
+mkdir target
+cd assignment
+# Execute static code analysis
+swiftlint > ../target/swiftlint-result.xml
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=SWIFT, projectType=PLAIN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/swiftlint-result.xml, /var/tmp/testing-dir/assignment/tests.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]
+java.util.concurrent.CompletionException: java.util.concurrent.ExecutionException: de.tum.cit.aet.artemis.core.exception.LocalCIException: Could not pull Docker image ~~invalid~~
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.lambda$executeBuildJob$2(BuildJobManagementService.java:188)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.createCompletableFuture(BuildJobManagementService.java:236)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.executeBuildJob(BuildJobManagementService.java:163)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.processBuild(SharedQueueProcessingService.java:413)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.checkAvailabilityAndProcessNextBuild(SharedQueueProcessingService.java:269)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.lambda$processBuild$5(SharedQueueProcessingService.java:480)
+	at java.base/java.util.concurrent.CompletableFuture.uniExceptionally(CompletableFuture.java:990)
+	at java.base/java.util.concurrent.CompletableFuture.uniExceptionallyStage(CompletableFuture.java:1008)
+	at java.base/java.util.concurrent.CompletableFuture.exceptionally(CompletableFuture.java:2396)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.processBuild(SharedQueueProcessingService.java:444)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.checkAvailabilityAndProcessNextBuild(SharedQueueProcessingService.java:269)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService$QueuedBuildJobItemListener.itemAdded(SharedQueueProcessingService.java:594)
+	at com.hazelcast.collection.impl.queue.QueueService.lambda$dispatchEvent$1(QueueService.java:277)
+	at com.hazelcast.internal.namespace.impl.NoOpUserCodeNamespaceService.runWithNamespace(NoOpUserCodeNamespaceService.java:82)
+	at com.hazelcast.internal.namespace.NamespaceUtil.runWithNamespace(NamespaceUtil.java:106)
+	at com.hazelcast.collection.impl.queue.QueueService.dispatchEvent(QueueService.java:275)
+	at com.hazelcast.collection.impl.queue.QueueService.dispatchEvent(QueueService.java:98)
+	at com.hazelcast.spi.impl.eventservice.impl.LocalEventDispatcher.run(LocalEventDispatcher.java:64)
+	at com.hazelcast.internal.util.executor.StripedExecutor$Worker.process(StripedExecutor.java:244)
+	at com.hazelcast.internal.util.executor.StripedExecutor$Worker.run(StripedExecutor.java:227)
+Caused by: java.util.concurrent.ExecutionException: de.tum.cit.aet.artemis.core.exception.LocalCIException: Could not pull Docker image ~~invalid~~
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.lambda$executeBuildJob$2(BuildJobManagementService.java:165)
+	... 19 common frames omitted
+Caused by: de.tum.cit.aet.artemis.core.exception.LocalCIException: Could not pull Docker image ~~invalid~~
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobExecutionService.runBuildJob(BuildJobExecutionService.java:157)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:723)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobExecutionService$$SpringCGLIB$$0.runBuildJob(<generated>)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.lambda$executeBuildJob$1(BuildJobManagementService.java:129)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: de.tum.cit.aet.artemis.core.exception.LocalCIException: Error while pulling docker image ~~invalid~~
+	at de.tum.cit.aet.artemis.buildagent.service.BuildAgentDockerService.pullDockerImage(BuildAgentDockerService.java:258)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobExecutionService.runBuildJob(BuildJobExecutionService.java:152)
+	... 10 common frames omitted
+Caused by: com.github.dockerjava.api.exception.BadRequestException: Status 400: {"message":"invalid reference format"}
+
+	at com.github.dockerjava.core.DefaultInvocationBuilder.execute(DefaultInvocationBuilder.java:237)
+	at com.github.dockerjava.core.DefaultInvocationBuilder.lambda$executeAndStream$1(DefaultInvocationBuilder.java:269)
+	... 1 common frames omitted
+    23:44:59.150 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:44:59.152 | 566 localvc.event-13 | DEBUG | s.l.LocalCIWebsocketMessagingService : Sending message on topic /topic/admin/queued-jobs: []
+    23:44:59.152 | 566 localvc.event-13 | DEBUG | s.l.LocalCIWebsocketMessagingService : Sending message on topic /topic/courses/917/queued-jobs: []
+    23:44:59.153 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : CIBuildJobQueueItem removed from queue: BuildJobQueueItem[id=18511739576699054, name=SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=null, memberAddress=null, displayName=null], participationId=1851, courseId=917, exerciseId=2534, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@1faa29e6, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@60fe13e2], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:59.054840465Z[Etc/UTC], buildStartDate=null, buildCompletionDate=null, estimatedCompletionDate=null, estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+cp -R Sources assignment
+# copy test files
+cp -R Tests assignment
+cp Package.swift assignment
+
+# In order to get the correct console output we need to execute the command within the assignment directory
+# swift build
+cd assignment
+swift build || error=true
+
+if [ ! $error ]
+then
+    # swift test
+    swift test || true
+fi
+
+# The used docker container is calling 'swift build' which creates files as root (e.g. tests.xml),
+# so we need to allow everyone to access these files
+cd ..
+chmod -R 777 .
+# Copy SwiftLint rules
+cp .swiftlint.yml assignment || true
+# create target directory for SCA Parser
+mkdir target
+cd assignment
+# Execute static code analysis
+swiftlint > ../target/swiftlint-result.xml
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=SWIFT, projectType=PLAIN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/swiftlint-result.xml, /var/tmp/testing-dir/assignment/tests.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]
+    23:44:59.153 | 566 localvc.event-13 | DEBUG | s.l.LocalCIWebsocketMessagingService : Sending message on topic /topic/admin/queued-jobs: []
+    23:44:59.153 | 566 localvc.event-13 | DEBUG | s.l.LocalCIWebsocketMessagingService : Sending message on topic /topic/courses/917/queued-jobs: []
+    23:44:59.153 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : CIBuildJobQueueItem added to queue: BuildJobQueueItem[id=18521739576699059, name=SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-BASE, buildAgent=BuildAgentDTO[name=null, memberAddress=null, displayName=null], participationId=1852, courseId=917, exerciseId=2534, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@6829adbd, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@7858d259], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:59.059867149Z[Etc/UTC], buildStartDate=null, buildCompletionDate=null, estimatedCompletionDate=null, estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+cp -R Sources assignment
+# copy test files
+cp -R Tests assignment
+cp Package.swift assignment
+
+# In order to get the correct console output we need to execute the command within the assignment directory
+# swift build
+cd assignment
+swift build || error=true
+
+if [ ! $error ]
+then
+    # swift test
+    swift test || true
+fi
+
+# The used docker container is calling 'swift build' which creates files as root (e.g. tests.xml),
+# so we need to allow everyone to access these files
+cd ..
+chmod -R 777 .
+# Copy SwiftLint rules
+cp .swiftlint.yml assignment || true
+# create target directory for SCA Parser
+mkdir target
+cd assignment
+# Execute static code analysis
+swiftlint > ../target/swiftlint-result.xml
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=SWIFT, projectType=PLAIN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/swiftlint-result.xml, /var/tmp/testing-dir/assignment/tests.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]
+    23:44:59.153 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : Current queued items: 0
+    23:44:59.153 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:44:59.153 | 566 localvc.event-13 | DEBUG | a.p.s.l.LocalCIQueueWebsocketService : Build agent updated: BuildAgentInformation[buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], maxNumberOfConcurrentBuildJobs=1, numberOfCurrentBuildJobs=1, runningBuildJobs=[BuildJobQueueItem[id=18511739576699054, name=SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1851, courseId=917, exerciseId=2534, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@560e3268, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@73ef3951], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:59.054840465Z[Etc/UTC], buildStartDate=2025-02-14T23:44:59.062333168Z[Etc/UTC], buildCompletionDate=null, estimatedCompletionDate=2025-02-14T23:45:18.062328129Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+cp -R Sources assignment
+# copy test files
+cp -R Tests assignment
+cp Package.swift assignment
+
+# In order to get the correct console output we need to execute the command within the assignment directory
+# swift build
+cd assignment
+swift build || error=true
+
+if [ ! $error ]
+then
+    # swift test
+    swift test || true
+fi
+
+# The used docker container is calling 'swift build' which creates files as root (e.g. tests.xml),
+# so we need to allow everyone to access these files
+cd ..
+chmod -R 777 .
+# Copy SwiftLint rules
+cp .swiftlint.yml assignment || true
+# create target directory for SCA Parser
+mkdir target
+cd assignment
+# Execute static code analysis
+swiftlint > ../target/swiftlint-result.xml
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=SWIFT, projectType=PLAIN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/swiftlint-result.xml, /var/tmp/testing-dir/assignment/tests.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]], status=ACTIVE, recentBuildJobs=[BuildJobQueueItem[id=17501739576694407, name=SHORTE1E2C8FB0925A040D30912709B8BA4309AE8TSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1750, courseId=874, exerciseId=2449, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=shorte1e2c8fb0925a040d30912709b8ba4309ae8tstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORTE1E2C8FB0925A040D30912709B8BA4309AE8TSTEXC/shorte1e2c8fb0925a040d30912709b8ba4309ae8tstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORTE1E2C8FB0925A040D30912709B8BA4309AE8TSTEXC/SHORTE1E2C8FB0925A040D30912709B8BA4309AE8TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@4d1bf76f, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@9e4e80c], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:54.407559917Z[Etc/UTC], buildStartDate=2025-02-14T23:44:54.587426886Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:54.600146307Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:13.587421336Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=17511739576694411, name=SHORTE1E2C8FB0925A040D30912709B8BA4309AE8TSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1751, courseId=874, exerciseId=2449, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=shorte1e2c8fb0925a040d30912709b8ba4309ae8tstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORTE1E2C8FB0925A040D30912709B8BA4309AE8TSTEXC/shorte1e2c8fb0925a040d30912709b8ba4309ae8tstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORTE1E2C8FB0925A040D30912709B8BA4309AE8TSTEXC/SHORTE1E2C8FB0925A040D30912709B8BA4309AE8TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@2e5e062a, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@24f19701], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:54.411372528Z[Etc/UTC], buildStartDate=2025-02-14T23:44:54.612545140Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:54.622668850Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:13.612539730Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=17521739576694519, name=SHORTFDB0CC0C02BA4046D90BD74095B77B392C2CTSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1752, courseId=875, exerciseId=2450, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=shortfdb0cc0c02ba4046d90bd74095b77b392c2ctstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORTFDB0CC0C02BA4046D90BD74095B77B392C2CTSTEXC/shortfdb0cc0c02ba4046d90bd74095b77b392c2ctstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORTFDB0CC0C02BA4046D90BD74095B77B392C2CTSTEXC/SHORTFDB0CC0C02BA4046D90BD74095B77B392C2CTSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@3643ac7f, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@18c99633], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:54.519944287Z[Etc/UTC], buildStartDate=2025-02-14T23:44:54.633715Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:54.643824003Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:13.633710151Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=17531739576694522, name=SHORTFDB0CC0C02BA4046D90BD74095B77B392C2CTSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1753, courseId=875, exerciseId=2450, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=shortfdb0cc0c02ba4046d90bd74095b77b392c2ctstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORTFDB0CC0C02BA4046D90BD74095B77B392C2CTSTEXC/shortfdb0cc0c02ba4046d90bd74095b77b392c2ctstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORTFDB0CC0C02BA4046D90BD74095B77B392C2CTSTEXC/SHORTFDB0CC0C02BA4046D90BD74095B77B392C2CTSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@4678bc56, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@6e196207], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:54.522500123Z[Etc/UTC], buildStartDate=2025-02-14T23:44:54.652544627Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:54.667867112Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:13.652540008Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=17551739576694666, name=SHORT4B6B7AAF03B28040600B8D20E984055B617ATSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1755, courseId=876, exerciseId=2451, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short4b6b7aaf03b28040600b8d20e984055b617atstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT4B6B7AAF03B28040600B8D20E984055B617ATSTEXC/short4b6b7aaf03b28040600b8d20e984055b617atstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT4B6B7AAF03B28040600B8D20E984055B617ATSTEXC/SHORT4B6B7AAF03B28040600B8D20E984055B617ATSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@45921bef, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@113e7560], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:54.666476750Z[Etc/UTC], buildStartDate=2025-02-14T23:44:54.680145230Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:54.823544984Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:13.680139659Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=17561739576694670, name=SHORT4B6B7AAF03B28040600B8D20E984055B617ATSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1756, courseId=876, exerciseId=2451, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short4b6b7aaf03b28040600b8d20e984055b617atstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT4B6B7AAF03B28040600B8D20E984055B617ATSTEXC/short4b6b7aaf03b28040600b8d20e984055b617atstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT4B6B7AAF03B28040600B8D20E984055B617ATSTEXC/SHORT4B6B7AAF03B28040600B8D20E984055B617ATSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@1227e11d, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@378ba004], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:54.670345785Z[Etc/UTC], buildStartDate=2025-02-14T23:44:54.839162169Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:55.002957236Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:13.839155737Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=17581739576694813, name=SHORT3EDCA5D300D94041B20BB570F0D80AF7BCD8TSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1758, courseId=877, exerciseId=2452, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short3edca5d300d94041b20bb570f0d80af7bcd8tstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT3EDCA5D300D94041B20BB570F0D80AF7BCD8TSTEXC/short3edca5d300d94041b20bb570f0d80af7bcd8tstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT3EDCA5D300D94041B20BB570F0D80AF7BCD8TSTEXC/SHORT3EDCA5D300D94041B20BB570F0D80AF7BCD8TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@62938879, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@e4643e], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:54.813084406Z[Etc/UTC], buildStartDate=2025-02-14T23:44:55.012695357Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:55.174435893Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:14.012689757Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=17591739576694814, name=SHORT3EDCA5D300D94041B20BB570F0D80AF7BCD8TSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1759, courseId=877, exerciseId=2452, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short3edca5d300d94041b20bb570f0d80af7bcd8tstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT3EDCA5D300D94041B20BB570F0D80AF7BCD8TSTEXC/short3edca5d300d94041b20bb570f0d80af7bcd8tstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT3EDCA5D300D94041B20BB570F0D80AF7BCD8TSTEXC/SHORT3EDCA5D300D94041B20BB570F0D80AF7BCD8TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@2d665236, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@47875c1e], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:54.814974027Z[Etc/UTC], buildStartDate=2025-02-14T23:44:55.192169835Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:55.357257843Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:14.192163012Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18251739576697453, name=SHORT624CEFB408A3E04B20082C40833531B7C908TSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1825, courseId=905, exerciseId=2514, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short624cefb408a3e04b20082c40833531b7c908tstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT624CEFB408A3E04B20082C40833531B7C908TSTEXC/short624cefb408a3e04b20082c40833531b7c908tstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT624CEFB408A3E04B20082C40833531B7C908TSTEXC/SHORT624CEFB408A3E04B20082C40833531B7C908TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@39a9c4d7, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@1acf8248], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:57.453416369Z[Etc/UTC], buildStartDate=2025-02-14T23:44:57.456851695Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:57.466941299Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:16.456847096Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+mvn spotbugs:spotbugs checkstyle:checkstyle pmd:pmd pmd:cpd
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/spotbugsXml.xml, /var/tmp/testing-dir/target/checkstyle-result.xml, /var/tmp/testing-dir/target/pmd.xml, /var/tmp/testing-dir/target/cpd.xml, /var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18261739576697458, name=SHORT624CEFB408A3E04B20082C40833531B7C908TSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1826, courseId=905, exerciseId=2514, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short624cefb408a3e04b20082c40833531b7c908tstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT624CEFB408A3E04B20082C40833531B7C908TSTEXC/short624cefb408a3e04b20082c40833531b7c908tstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT624CEFB408A3E04B20082C40833531B7C908TSTEXC/SHORT624CEFB408A3E04B20082C40833531B7C908TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@52794c5, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@783d5fd3], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:57.458003794Z[Etc/UTC], buildStartDate=2025-02-14T23:44:57.475841548Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:57.637542021Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:16.475837390Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+mvn spotbugs:spotbugs checkstyle:checkstyle pmd:pmd pmd:cpd
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/spotbugsXml.xml, /var/tmp/testing-dir/target/checkstyle-result.xml, /var/tmp/testing-dir/target/pmd.xml, /var/tmp/testing-dir/target/cpd.xml, /var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18291739576697667, name=SHORT9AFCC4D407BB604701080FD00ADA1E3E6DD0TSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1829, courseId=907, exerciseId=2517, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short9afcc4d407bb604701080fd00ada1e3e6dd0tstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT9AFCC4D407BB604701080FD00ADA1E3E6DD0TSTEXC/short9afcc4d407bb604701080fd00ada1e3e6dd0tstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT9AFCC4D407BB604701080FD00ADA1E3E6DD0TSTEXC/SHORT9AFCC4D407BB604701080FD00ADA1E3E6DD0TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@f45a37f, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@69fead1d], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:57.667295159Z[Etc/UTC], buildStartDate=2025-02-14T23:44:57.806282952Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:57.813235407Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:16.806277702Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Build and run all tests
+# ------------------------------
+
+# Updating assignment and test-reports ownership...
+sudo chown artemis_user:artemis_user assignment/ -R
+mkdir test-reports
+chown artemis_user:artemis_user test-reports/ -R
+
+# assignment
+cd tests
+REQ_FILE=requirements.txt
+if [ -f "$REQ_FILE" ]; then
+    pip3 install --user -r requirements.txt || true
+else
+    echo "$REQ_FILE does not exist"
+fi
+cd ..
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Setup makefile
+# ------------------------------
+
+shadowFilePath="../tests/testUtils/c/shadow_exec.c"
+
+foundIncludeDirs=`grep -m 1 'INCLUDEDIRS\s*=' assignment/Makefile`
+
+foundSource=`grep -m 1 'SOURCE\s*=' assignment/Makefile`
+foundSource="$foundSource $shadowFilePath"
+
+rm -f assignment/GNUmakefile
+rm -f assignment/makefile
+
+cp -f tests/Makefile assignment/Makefile || exit 2
+sed -i "s~\bINCLUDEDIRS\s*=.*~${foundIncludeDirs}~; s~\bSOURCE\s*=.*~${foundSource}~" assignment/Makefile
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Build and run all tests if the compilation succeeds
+# ------------------------------
+sudo chown artemis_user:artemis_user .
+gcc -c -Wall assignment/*.c || error=true
+if [ ! $error ]
+then
+    cd tests || exit 0
+    python3 Tests.py || true
+else
+    exit 1
+fi
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=C, projectType=GCC, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/gcc.xml, /var/tmp/testing-dir/test-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18301739576697673, name=SHORT9AFCC4D407BB604701080FD00ADA1E3E6DD0TSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1830, courseId=907, exerciseId=2517, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short9afcc4d407bb604701080fd00ada1e3e6dd0tstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT9AFCC4D407BB604701080FD00ADA1E3E6DD0TSTEXC/short9afcc4d407bb604701080fd00ada1e3e6dd0tstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT9AFCC4D407BB604701080FD00ADA1E3E6DD0TSTEXC/SHORT9AFCC4D407BB604701080FD00ADA1E3E6DD0TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@50468d5b, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@42179347], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:57.673725170Z[Etc/UTC], buildStartDate=2025-02-14T23:44:57.823195132Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:57.831455126Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:16.823189862Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Build and run all tests
+# ------------------------------
+
+# Updating assignment and test-reports ownership...
+sudo chown artemis_user:artemis_user assignment/ -R
+mkdir test-reports
+chown artemis_user:artemis_user test-reports/ -R
+
+# assignment
+cd tests
+REQ_FILE=requirements.txt
+if [ -f "$REQ_FILE" ]; then
+    pip3 install --user -r requirements.txt || true
+else
+    echo "$REQ_FILE does not exist"
+fi
+cd ..
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Setup makefile
+# ------------------------------
+
+shadowFilePath="../tests/testUtils/c/shadow_exec.c"
+
+foundIncludeDirs=`grep -m 1 'INCLUDEDIRS\s*=' assignment/Makefile`
+
+foundSource=`grep -m 1 'SOURCE\s*=' assignment/Makefile`
+foundSource="$foundSource $shadowFilePath"
+
+rm -f assignment/GNUmakefile
+rm -f assignment/makefile
+
+cp -f tests/Makefile assignment/Makefile || exit 2
+sed -i "s~\bINCLUDEDIRS\s*=.*~${foundIncludeDirs}~; s~\bSOURCE\s*=.*~${foundSource}~" assignment/Makefile
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Build and run all tests if the compilation succeeds
+# ------------------------------
+sudo chown artemis_user:artemis_user .
+gcc -c -Wall assignment/*.c || error=true
+if [ ! $error ]
+then
+    cd tests || exit 0
+    python3 Tests.py || true
+else
+    exit 1
+fi
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=C, projectType=GCC, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/gcc.xml, /var/tmp/testing-dir/test-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18331739576698013, name=SHORTC815ACC208F7A04C8F093860368FBEA4F60ETSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1833, courseId=909, exerciseId=2520, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=shortc815acc208f7a04c8f093860368fbea4f60etstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORTC815ACC208F7A04C8F093860368FBEA4F60ETSTEXC/shortc815acc208f7a04c8f093860368fbea4f60etstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORTC815ACC208F7A04C8F093860368FBEA4F60ETSTEXC/SHORTC815ACC208F7A04C8F093860368FBEA4F60ETSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@60eb9e21, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@7c615164], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:58.013019598Z[Etc/UTC], buildStartDate=2025-02-14T23:44:58.124976083Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:58.137805660Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:17.124970022Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+cp -R Sources assignment
+# copy test files
+cp -R Tests assignment
+cp Package.swift assignment
+
+# In order to get the correct console output we need to execute the command within the assignment directory
+# swift build
+cd assignment
+swift build || error=true
+
+if [ ! $error ]
+then
+    # swift test
+    swift test || true
+fi
+
+# The used docker container is calling 'swift build' which creates files as root (e.g. tests.xml),
+# so we need to allow everyone to access these files
+cd ..
+chmod -R 777 .
+# Copy SwiftLint rules
+cp .swiftlint.yml assignment || true
+# create target directory for SCA Parser
+mkdir target
+cd assignment
+# Execute static code analysis
+swiftlint > ../target/swiftlint-result.xml
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=SWIFT, projectType=PLAIN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/swiftlint-result.xml, /var/tmp/testing-dir/assignment/tests.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18341739576698019, name=SHORTC815ACC208F7A04C8F093860368FBEA4F60ETSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1834, courseId=909, exerciseId=2520, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=shortc815acc208f7a04c8f093860368fbea4f60etstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORTC815ACC208F7A04C8F093860368FBEA4F60ETSTEXC/shortc815acc208f7a04c8f093860368fbea4f60etstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORTC815ACC208F7A04C8F093860368FBEA4F60ETSTEXC/SHORTC815ACC208F7A04C8F093860368FBEA4F60ETSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@18a937e6, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@66da121f], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:58.019703073Z[Etc/UTC], buildStartDate=2025-02-14T23:44:58.145790661Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:58.152993654Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:17.145785972Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+cp -R Sources assignment
+# copy test files
+cp -R Tests assignment
+cp Package.swift assignment
+
+# In order to get the correct console output we need to execute the command within the assignment directory
+# swift build
+cd assignment
+swift build || error=true
+
+if [ ! $error ]
+then
+    # swift test
+    swift test || true
+fi
+
+# The used docker container is calling 'swift build' which creates files as root (e.g. tests.xml),
+# so we need to allow everyone to access these files
+cd ..
+chmod -R 777 .
+# Copy SwiftLint rules
+cp .swiftlint.yml assignment || true
+# create target directory for SCA Parser
+mkdir target
+cd assignment
+# Execute static code analysis
+swiftlint > ../target/swiftlint-result.xml
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=SWIFT, projectType=PLAIN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/swiftlint-result.xml, /var/tmp/testing-dir/assignment/tests.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18351739576698137, name=SHORT6D50AFF00183F04A510B1370CD6D5695974CTSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1835, courseId=910, exerciseId=2521, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short6d50aff00183f04a510b1370cd6d5695974ctstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT6D50AFF00183F04A510B1370CD6D5695974CTSTEXC/short6d50aff00183f04a510b1370cd6d5695974ctstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT6D50AFF00183F04A510B1370CD6D5695974CTSTEXC/SHORT6D50AFF00183F04A510B1370CD6D5695974CTSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@5a7c8273, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@2c601229], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:58.137415208Z[Etc/UTC], buildStartDate=2025-02-14T23:44:58.159546124Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:58.166385559Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:17.159541746Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+mvn spotbugs:spotbugs checkstyle:checkstyle pmd:pmd pmd:cpd
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/spotbugsXml.xml, /var/tmp/testing-dir/target/checkstyle-result.xml, /var/tmp/testing-dir/target/pmd.xml, /var/tmp/testing-dir/target/cpd.xml, /var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18361739576698139, name=SHORT6D50AFF00183F04A510B1370CD6D5695974CTSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1836, courseId=910, exerciseId=2521, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short6d50aff00183f04a510b1370cd6d5695974ctstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT6D50AFF00183F04A510B1370CD6D5695974CTSTEXC/short6d50aff00183f04a510b1370cd6d5695974ctstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT6D50AFF00183F04A510B1370CD6D5695974CTSTEXC/SHORT6D50AFF00183F04A510B1370CD6D5695974CTSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@7d271644, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@4b5ba915], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:58.139157327Z[Etc/UTC], buildStartDate=2025-02-14T23:44:58.174516112Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:58.342468863Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:17.174511053Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+mvn spotbugs:spotbugs checkstyle:checkstyle pmd:pmd pmd:cpd
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/spotbugsXml.xml, /var/tmp/testing-dir/target/checkstyle-result.xml, /var/tmp/testing-dir/target/pmd.xml, /var/tmp/testing-dir/target/cpd.xml, /var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18431739576698561, name=SHORT05448AF9094CE043540AAD00B85777C95877TSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1843, courseId=913, exerciseId=2528, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short05448af9094ce043540aad00b85777c95877tstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT05448AF9094CE043540AAD00B85777C95877TSTEXC/short05448af9094ce043540aad00b85777c95877tstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT05448AF9094CE043540AAD00B85777C95877TSTEXC/SHORT05448AF9094CE043540AAD00B85777C95877TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@758ac517, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@59d760d5], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:58.561326083Z[Etc/UTC], buildStartDate=2025-02-14T23:44:58.605237499Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:58.611431650Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:17.605217672Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+mvn spotbugs:spotbugs checkstyle:checkstyle pmd:pmd pmd:cpd
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/spotbugsXml.xml, /var/tmp/testing-dir/target/checkstyle-result.xml, /var/tmp/testing-dir/target/pmd.xml, /var/tmp/testing-dir/target/cpd.xml, /var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18441739576698565, name=SHORT05448AF9094CE043540AAD00B85777C95877TSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1844, courseId=913, exerciseId=2528, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short05448af9094ce043540aad00b85777c95877tstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT05448AF9094CE043540AAD00B85777C95877TSTEXC/short05448af9094ce043540aad00b85777c95877tstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT05448AF9094CE043540AAD00B85777C95877TSTEXC/SHORT05448AF9094CE043540AAD00B85777C95877TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@1c87d89d, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@a82c919], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:58.565703687Z[Etc/UTC], buildStartDate=2025-02-14T23:44:58.620316009Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:58.625756806Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:17.620310509Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+mvn spotbugs:spotbugs checkstyle:checkstyle pmd:pmd pmd:cpd
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/spotbugsXml.xml, /var/tmp/testing-dir/target/checkstyle-result.xml, /var/tmp/testing-dir/target/pmd.xml, /var/tmp/testing-dir/target/cpd.xml, /var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18471739576698832, name=SHORT60AAE8F80625204F1708DEA07DAA056AEEC6TSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1847, courseId=915, exerciseId=2531, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short60aae8f80625204f1708dea07daa056aeec6tstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT60AAE8F80625204F1708DEA07DAA056AEEC6TSTEXC/short60aae8f80625204f1708dea07daa056aeec6tstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT60AAE8F80625204F1708DEA07DAA056AEEC6TSTEXC/SHORT60AAE8F80625204F1708DEA07DAA056AEEC6TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@29031723, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@4bb00b1e], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:58.832391715Z[Etc/UTC], buildStartDate=2025-02-14T23:44:58.842187594Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:58.856306412Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:17.842182324Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Build and run all tests
+# ------------------------------
+
+# Updating assignment and test-reports ownership...
+sudo chown artemis_user:artemis_user assignment/ -R
+mkdir test-reports
+chown artemis_user:artemis_user test-reports/ -R
+
+# assignment
+cd tests
+REQ_FILE=requirements.txt
+if [ -f "$REQ_FILE" ]; then
+    pip3 install --user -r requirements.txt || true
+else
+    echo "$REQ_FILE does not exist"
+fi
+cd ..
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Setup makefile
+# ------------------------------
+
+shadowFilePath="../tests/testUtils/c/shadow_exec.c"
+
+foundIncludeDirs=`grep -m 1 'INCLUDEDIRS\s*=' assignment/Makefile`
+
+foundSource=`grep -m 1 'SOURCE\s*=' assignment/Makefile`
+foundSource="$foundSource $shadowFilePath"
+
+rm -f assignment/GNUmakefile
+rm -f assignment/makefile
+
+cp -f tests/Makefile assignment/Makefile || exit 2
+sed -i "s~\bINCLUDEDIRS\s*=.*~${foundIncludeDirs}~; s~\bSOURCE\s*=.*~${foundSource}~" assignment/Makefile
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Build and run all tests if the compilation succeeds
+# ------------------------------
+sudo chown artemis_user:artemis_user .
+gcc -c -Wall assignment/*.c || error=true
+if [ ! $error ]
+then
+    cd tests || exit 0
+    python3 Tests.py || true
+else
+    exit 1
+fi
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=C, projectType=GCC, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/gcc.xml, /var/tmp/testing-dir/test-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18481739576698839, name=SHORT60AAE8F80625204F1708DEA07DAA056AEEC6TSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1848, courseId=915, exerciseId=2531, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short60aae8f80625204f1708dea07daa056aeec6tstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT60AAE8F80625204F1708DEA07DAA056AEEC6TSTEXC/short60aae8f80625204f1708dea07daa056aeec6tstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT60AAE8F80625204F1708DEA07DAA056AEEC6TSTEXC/SHORT60AAE8F80625204F1708DEA07DAA056AEEC6TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@69d171c5, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@7507b7e7], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:58.839504821Z[Etc/UTC], buildStartDate=2025-02-14T23:44:58.864819138Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:58.928951109Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:17.864814759Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Build and run all tests
+# ------------------------------
+
+# Updating assignment and test-reports ownership...
+sudo chown artemis_user:artemis_user assignment/ -R
+mkdir test-reports
+chown artemis_user:artemis_user test-reports/ -R
+
+# assignment
+cd tests
+REQ_FILE=requirements.txt
+if [ -f "$REQ_FILE" ]; then
+    pip3 install --user -r requirements.txt || true
+else
+    echo "$REQ_FILE does not exist"
+fi
+cd ..
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Setup makefile
+# ------------------------------
+
+shadowFilePath="../tests/testUtils/c/shadow_exec.c"
+
+foundIncludeDirs=`grep -m 1 'INCLUDEDIRS\s*=' assignment/Makefile`
+
+foundSource=`grep -m 1 'SOURCE\s*=' assignment/Makefile`
+foundSource="$foundSource $shadowFilePath"
+
+rm -f assignment/GNUmakefile
+rm -f assignment/makefile
+
+cp -f tests/Makefile assignment/Makefile || exit 2
+sed -i "s~\bINCLUDEDIRS\s*=.*~${foundIncludeDirs}~; s~\bSOURCE\s*=.*~${foundSource}~" assignment/Makefile
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Build and run all tests if the compilation succeeds
+# ------------------------------
+sudo chown artemis_user:artemis_user .
+gcc -c -Wall assignment/*.c || error=true
+if [ ! $error ]
+then
+    cd tests || exit 0
+    python3 Tests.py || true
+else
+    exit 1
+fi
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=C, projectType=GCC, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/gcc.xml, /var/tmp/testing-dir/test-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]], publicSshKey=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCOPdMsxRE2jFJ/UEa5/LsBxtwzJcrh3/rYBCQvcMeVpiRfhzQPWu7mrt/G2Ew+i+vRloGH9aqKg6dd1liRncao53Zmd/ePxoatXePNhmzTfkCkcSkTUz7B+QMjkoDDV5jwuFPD6mF3JkhuzSi64n9Zy905t4w2IhVcjM2mL3eYNjiCXt6Qpq3Pkt7dM/Ksw1nxnvuiIALuJLB3FTkXkHqq3PJav+9HSq2r6ZaWgekneaGxlQlb+U+Vy3XOuArKAzK8c8i+0bR+AHiTG6ncYXt7ax3U+TdlDTF7OLP3umwaYjs1NBXOHwG42pevvpKn2fqavZZozk+M05jXLx3bq0O7itxfErWc7etky8qYPyyIMF/txQIVLd78+Ze4d7Y60t5MGbXM5cGE6fFif5fEJwgswXD+BrG0cafz1CTatjSKFdvp8Vp4VszXhHDan1PrP6JEFJ5Cc5GDmLRZPCFa3vL9f5qXgf4bkqKN8MYeEujwJE5nMRWoiJVNakix2bcrrneQMBlnYeYZVWXXXUusAQBzl4NgddC1umZpihZkL1b1MffZAUW3EGEXi7KHnllQhkTLLsQ8ntMgbylqaJKStqaXlLvdeRJcEnUuiFCrHEVVbXRFZR7XVDZ02CE5o3MuaRPty8Kh+jRTF3COlAckHwYEJCNNJvXFgb2CNXL4mjzYDw== test@localhost]
+    23:44:59.156 | 566 localvc.event-13 | DEBUG | s.l.LocalCIWebsocketMessagingService : Sending message on topic /topic/admin/build-agents: [BuildAgentInformation[buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], maxNumberOfConcurrentBuildJobs=1, numberOfCurrentBuildJobs=0, runningBuildJobs=[], status=IDLE, recentBuildJobs=null, publicSshKey=null]]
+    23:44:59.157 | 588 artemis-task-1   | DEBUG | d.t.c.a.a.c.c.w.GzipMessageConverter : Compressed message payload from 255 to 232 (saved 9.0% payload size)
+    23:44:59.157 | 566 localvc.event-13 | DEBUG | s.l.LocalCIWebsocketMessagingService : Sending message on topic /topic/admin/build-agent/artemis-build-agent-test: BuildAgentInformation[buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], maxNumberOfConcurrentBuildJobs=1, numberOfCurrentBuildJobs=0, runningBuildJobs=[], status=IDLE, recentBuildJobs=[BuildJobQueueItem[id=17521739576694519, name=SHORTFDB0CC0C02BA4046D90BD74095B77B392C2CTSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1752, courseId=875, exerciseId=2450, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=shortfdb0cc0c02ba4046d90bd74095b77b392c2ctstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORTFDB0CC0C02BA4046D90BD74095B77B392C2CTSTEXC/shortfdb0cc0c02ba4046d90bd74095b77b392c2ctstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORTFDB0CC0C02BA4046D90BD74095B77B392C2CTSTEXC/SHORTFDB0CC0C02BA4046D90BD74095B77B392C2CTSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@6d120076, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@25e23abc], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:54.519944287Z[Etc/UTC], buildStartDate=2025-02-14T23:44:54.633715Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:54.643824003Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:13.633710151Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=17531739576694522, name=SHORTFDB0CC0C02BA4046D90BD74095B77B392C2CTSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1753, courseId=875, exerciseId=2450, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=shortfdb0cc0c02ba4046d90bd74095b77b392c2ctstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORTFDB0CC0C02BA4046D90BD74095B77B392C2CTSTEXC/shortfdb0cc0c02ba4046d90bd74095b77b392c2ctstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORTFDB0CC0C02BA4046D90BD74095B77B392C2CTSTEXC/SHORTFDB0CC0C02BA4046D90BD74095B77B392C2CTSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@129853f, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@76c97dea], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:54.522500123Z[Etc/UTC], buildStartDate=2025-02-14T23:44:54.652544627Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:54.667867112Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:13.652540008Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=17551739576694666, name=SHORT4B6B7AAF03B28040600B8D20E984055B617ATSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1755, courseId=876, exerciseId=2451, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short4b6b7aaf03b28040600b8d20e984055b617atstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT4B6B7AAF03B28040600B8D20E984055B617ATSTEXC/short4b6b7aaf03b28040600b8d20e984055b617atstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT4B6B7AAF03B28040600B8D20E984055B617ATSTEXC/SHORT4B6B7AAF03B28040600B8D20E984055B617ATSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@b25c2f5, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@3f262ef7], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:54.666476750Z[Etc/UTC], buildStartDate=2025-02-14T23:44:54.680145230Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:54.823544984Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:13.680139659Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=17561739576694670, name=SHORT4B6B7AAF03B28040600B8D20E984055B617ATSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1756, courseId=876, exerciseId=2451, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short4b6b7aaf03b28040600b8d20e984055b617atstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT4B6B7AAF03B28040600B8D20E984055B617ATSTEXC/short4b6b7aaf03b28040600b8d20e984055b617atstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT4B6B7AAF03B28040600B8D20E984055B617ATSTEXC/SHORT4B6B7AAF03B28040600B8D20E984055B617ATSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@726b5451, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@4ff051db], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:54.670345785Z[Etc/UTC], buildStartDate=2025-02-14T23:44:54.839162169Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:55.002957236Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:13.839155737Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=17581739576694813, name=SHORT3EDCA5D300D94041B20BB570F0D80AF7BCD8TSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1758, courseId=877, exerciseId=2452, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short3edca5d300d94041b20bb570f0d80af7bcd8tstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT3EDCA5D300D94041B20BB570F0D80AF7BCD8TSTEXC/short3edca5d300d94041b20bb570f0d80af7bcd8tstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT3EDCA5D300D94041B20BB570F0D80AF7BCD8TSTEXC/SHORT3EDCA5D300D94041B20BB570F0D80AF7BCD8TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@6ae710ba, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@64b8ca87], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:54.813084406Z[Etc/UTC], buildStartDate=2025-02-14T23:44:55.012695357Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:55.174435893Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:14.012689757Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=17591739576694814, name=SHORT3EDCA5D300D94041B20BB570F0D80AF7BCD8TSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1759, courseId=877, exerciseId=2452, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short3edca5d300d94041b20bb570f0d80af7bcd8tstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT3EDCA5D300D94041B20BB570F0D80AF7BCD8TSTEXC/short3edca5d300d94041b20bb570f0d80af7bcd8tstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT3EDCA5D300D94041B20BB570F0D80AF7BCD8TSTEXC/SHORT3EDCA5D300D94041B20BB570F0D80AF7BCD8TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@4c59c39d, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@16a2d44], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:54.814974027Z[Etc/UTC], buildStartDate=2025-02-14T23:44:55.192169835Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:55.357257843Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:14.192163012Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18251739576697453, name=SHORT624CEFB408A3E04B20082C40833531B7C908TSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1825, courseId=905, exerciseId=2514, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short624cefb408a3e04b20082c40833531b7c908tstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT624CEFB408A3E04B20082C40833531B7C908TSTEXC/short624cefb408a3e04b20082c40833531b7c908tstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT624CEFB408A3E04B20082C40833531B7C908TSTEXC/SHORT624CEFB408A3E04B20082C40833531B7C908TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@53da9f13, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@71148b1d], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:57.453416369Z[Etc/UTC], buildStartDate=2025-02-14T23:44:57.456851695Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:57.466941299Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:16.456847096Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+mvn spotbugs:spotbugs checkstyle:checkstyle pmd:pmd pmd:cpd
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/spotbugsXml.xml, /var/tmp/testing-dir/target/checkstyle-result.xml, /var/tmp/testing-dir/target/pmd.xml, /var/tmp/testing-dir/target/cpd.xml, /var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18261739576697458, name=SHORT624CEFB408A3E04B20082C40833531B7C908TSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1826, courseId=905, exerciseId=2514, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short624cefb408a3e04b20082c40833531b7c908tstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT624CEFB408A3E04B20082C40833531B7C908TSTEXC/short624cefb408a3e04b20082c40833531b7c908tstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT624CEFB408A3E04B20082C40833531B7C908TSTEXC/SHORT624CEFB408A3E04B20082C40833531B7C908TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@7353eb89, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@2383e8aa], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:57.458003794Z[Etc/UTC], buildStartDate=2025-02-14T23:44:57.475841548Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:57.637542021Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:16.475837390Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+mvn spotbugs:spotbugs checkstyle:checkstyle pmd:pmd pmd:cpd
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/spotbugsXml.xml, /var/tmp/testing-dir/target/checkstyle-result.xml, /var/tmp/testing-dir/target/pmd.xml, /var/tmp/testing-dir/target/cpd.xml, /var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18291739576697667, name=SHORT9AFCC4D407BB604701080FD00ADA1E3E6DD0TSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1829, courseId=907, exerciseId=2517, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short9afcc4d407bb604701080fd00ada1e3e6dd0tstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT9AFCC4D407BB604701080FD00ADA1E3E6DD0TSTEXC/short9afcc4d407bb604701080fd00ada1e3e6dd0tstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT9AFCC4D407BB604701080FD00ADA1E3E6DD0TSTEXC/SHORT9AFCC4D407BB604701080FD00ADA1E3E6DD0TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@2426d9ce, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@71bff234], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:57.667295159Z[Etc/UTC], buildStartDate=2025-02-14T23:44:57.806282952Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:57.813235407Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:16.806277702Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Build and run all tests
+# ------------------------------
+
+# Updating assignment and test-reports ownership...
+sudo chown artemis_user:artemis_user assignment/ -R
+mkdir test-reports
+chown artemis_user:artemis_user test-reports/ -R
+
+# assignment
+cd tests
+REQ_FILE=requirements.txt
+if [ -f "$REQ_FILE" ]; then
+    pip3 install --user -r requirements.txt || true
+else
+    echo "$REQ_FILE does not exist"
+fi
+cd ..
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Setup makefile
+# ------------------------------
+
+shadowFilePath="../tests/testUtils/c/shadow_exec.c"
+
+foundIncludeDirs=`grep -m 1 'INCLUDEDIRS\s*=' assignment/Makefile`
+
+foundSource=`grep -m 1 'SOURCE\s*=' assignment/Makefile`
+foundSource="$foundSource $shadowFilePath"
+
+rm -f assignment/GNUmakefile
+rm -f assignment/makefile
+
+cp -f tests/Makefile assignment/Makefile || exit 2
+sed -i "s~\bINCLUDEDIRS\s*=.*~${foundIncludeDirs}~; s~\bSOURCE\s*=.*~${foundSource}~" assignment/Makefile
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Build and run all tests if the compilation succeeds
+# ------------------------------
+sudo chown artemis_user:artemis_user .
+gcc -c -Wall assignment/*.c || error=true
+if [ ! $error ]
+then
+    cd tests || exit 0
+    python3 Tests.py || true
+else
+    exit 1
+fi
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=C, projectType=GCC, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/gcc.xml, /var/tmp/testing-dir/test-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18301739576697673, name=SHORT9AFCC4D407BB604701080FD00ADA1E3E6DD0TSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1830, courseId=907, exerciseId=2517, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short9afcc4d407bb604701080fd00ada1e3e6dd0tstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT9AFCC4D407BB604701080FD00ADA1E3E6DD0TSTEXC/short9afcc4d407bb604701080fd00ada1e3e6dd0tstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT9AFCC4D407BB604701080FD00ADA1E3E6DD0TSTEXC/SHORT9AFCC4D407BB604701080FD00ADA1E3E6DD0TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@1d5c4029, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@21263d90], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:57.673725170Z[Etc/UTC], buildStartDate=2025-02-14T23:44:57.823195132Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:57.831455126Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:16.823189862Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Build and run all tests
+# ------------------------------
+
+# Updating assignment and test-reports ownership...
+sudo chown artemis_user:artemis_user assignment/ -R
+mkdir test-reports
+chown artemis_user:artemis_user test-reports/ -R
+
+# assignment
+cd tests
+REQ_FILE=requirements.txt
+if [ -f "$REQ_FILE" ]; then
+    pip3 install --user -r requirements.txt || true
+else
+    echo "$REQ_FILE does not exist"
+fi
+cd ..
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Setup makefile
+# ------------------------------
+
+shadowFilePath="../tests/testUtils/c/shadow_exec.c"
+
+foundIncludeDirs=`grep -m 1 'INCLUDEDIRS\s*=' assignment/Makefile`
+
+foundSource=`grep -m 1 'SOURCE\s*=' assignment/Makefile`
+foundSource="$foundSource $shadowFilePath"
+
+rm -f assignment/GNUmakefile
+rm -f assignment/makefile
+
+cp -f tests/Makefile assignment/Makefile || exit 2
+sed -i "s~\bINCLUDEDIRS\s*=.*~${foundIncludeDirs}~; s~\bSOURCE\s*=.*~${foundSource}~" assignment/Makefile
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Build and run all tests if the compilation succeeds
+# ------------------------------
+sudo chown artemis_user:artemis_user .
+gcc -c -Wall assignment/*.c || error=true
+if [ ! $error ]
+then
+    cd tests || exit 0
+    python3 Tests.py || true
+else
+    exit 1
+fi
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=C, projectType=GCC, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/gcc.xml, /var/tmp/testing-dir/test-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18331739576698013, name=SHORTC815ACC208F7A04C8F093860368FBEA4F60ETSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1833, courseId=909, exerciseId=2520, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=shortc815acc208f7a04c8f093860368fbea4f60etstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORTC815ACC208F7A04C8F093860368FBEA4F60ETSTEXC/shortc815acc208f7a04c8f093860368fbea4f60etstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORTC815ACC208F7A04C8F093860368FBEA4F60ETSTEXC/SHORTC815ACC208F7A04C8F093860368FBEA4F60ETSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@33dc68d3, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@3dfc02ce], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:58.013019598Z[Etc/UTC], buildStartDate=2025-02-14T23:44:58.124976083Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:58.137805660Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:17.124970022Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+cp -R Sources assignment
+# copy test files
+cp -R Tests assignment
+cp Package.swift assignment
+
+# In order to get the correct console output we need to execute the command within the assignment directory
+# swift build
+cd assignment
+swift build || error=true
+
+if [ ! $error ]
+then
+    # swift test
+    swift test || true
+fi
+
+# The used docker container is calling 'swift build' which creates files as root (e.g. tests.xml),
+# so we need to allow everyone to access these files
+cd ..
+chmod -R 777 .
+# Copy SwiftLint rules
+cp .swiftlint.yml assignment || true
+# create target directory for SCA Parser
+mkdir target
+cd assignment
+# Execute static code analysis
+swiftlint > ../target/swiftlint-result.xml
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=SWIFT, projectType=PLAIN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/swiftlint-result.xml, /var/tmp/testing-dir/assignment/tests.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18341739576698019, name=SHORTC815ACC208F7A04C8F093860368FBEA4F60ETSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1834, courseId=909, exerciseId=2520, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=shortc815acc208f7a04c8f093860368fbea4f60etstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORTC815ACC208F7A04C8F093860368FBEA4F60ETSTEXC/shortc815acc208f7a04c8f093860368fbea4f60etstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORTC815ACC208F7A04C8F093860368FBEA4F60ETSTEXC/SHORTC815ACC208F7A04C8F093860368FBEA4F60ETSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@425e4050, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@52043f36], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:58.019703073Z[Etc/UTC], buildStartDate=2025-02-14T23:44:58.145790661Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:58.152993654Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:17.145785972Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+cp -R Sources assignment
+# copy test files
+cp -R Tests assignment
+cp Package.swift assignment
+
+# In order to get the correct console output we need to execute the command within the assignment directory
+# swift build
+cd assignment
+swift build || error=true
+
+if [ ! $error ]
+then
+    # swift test
+    swift test || true
+fi
+
+# The used docker container is calling 'swift build' which creates files as root (e.g. tests.xml),
+# so we need to allow everyone to access these files
+cd ..
+chmod -R 777 .
+# Copy SwiftLint rules
+cp .swiftlint.yml assignment || true
+# create target directory for SCA Parser
+mkdir target
+cd assignment
+# Execute static code analysis
+swiftlint > ../target/swiftlint-result.xml
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=SWIFT, projectType=PLAIN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/swiftlint-result.xml, /var/tmp/testing-dir/assignment/tests.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18351739576698137, name=SHORT6D50AFF00183F04A510B1370CD6D5695974CTSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1835, courseId=910, exerciseId=2521, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short6d50aff00183f04a510b1370cd6d5695974ctstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT6D50AFF00183F04A510B1370CD6D5695974CTSTEXC/short6d50aff00183f04a510b1370cd6d5695974ctstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT6D50AFF00183F04A510B1370CD6D5695974CTSTEXC/SHORT6D50AFF00183F04A510B1370CD6D5695974CTSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@2ce4f55, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@5f79c7b0], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:58.137415208Z[Etc/UTC], buildStartDate=2025-02-14T23:44:58.159546124Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:58.166385559Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:17.159541746Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+mvn spotbugs:spotbugs checkstyle:checkstyle pmd:pmd pmd:cpd
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/spotbugsXml.xml, /var/tmp/testing-dir/target/checkstyle-result.xml, /var/tmp/testing-dir/target/pmd.xml, /var/tmp/testing-dir/target/cpd.xml, /var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18361739576698139, name=SHORT6D50AFF00183F04A510B1370CD6D5695974CTSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1836, courseId=910, exerciseId=2521, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short6d50aff00183f04a510b1370cd6d5695974ctstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT6D50AFF00183F04A510B1370CD6D5695974CTSTEXC/short6d50aff00183f04a510b1370cd6d5695974ctstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT6D50AFF00183F04A510B1370CD6D5695974CTSTEXC/SHORT6D50AFF00183F04A510B1370CD6D5695974CTSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@6f9540cf, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@1c9b3f84], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:58.139157327Z[Etc/UTC], buildStartDate=2025-02-14T23:44:58.174516112Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:58.342468863Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:17.174511053Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+mvn spotbugs:spotbugs checkstyle:checkstyle pmd:pmd pmd:cpd
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/spotbugsXml.xml, /var/tmp/testing-dir/target/checkstyle-result.xml, /var/tmp/testing-dir/target/pmd.xml, /var/tmp/testing-dir/target/cpd.xml, /var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18431739576698561, name=SHORT05448AF9094CE043540AAD00B85777C95877TSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1843, courseId=913, exerciseId=2528, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short05448af9094ce043540aad00b85777c95877tstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT05448AF9094CE043540AAD00B85777C95877TSTEXC/short05448af9094ce043540aad00b85777c95877tstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT05448AF9094CE043540AAD00B85777C95877TSTEXC/SHORT05448AF9094CE043540AAD00B85777C95877TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@6cdf7fa5, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@7d8a71c9], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:58.561326083Z[Etc/UTC], buildStartDate=2025-02-14T23:44:58.605237499Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:58.611431650Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:17.605217672Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+mvn spotbugs:spotbugs checkstyle:checkstyle pmd:pmd pmd:cpd
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/spotbugsXml.xml, /var/tmp/testing-dir/target/checkstyle-result.xml, /var/tmp/testing-dir/target/pmd.xml, /var/tmp/testing-dir/target/cpd.xml, /var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18441739576698565, name=SHORT05448AF9094CE043540AAD00B85777C95877TSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1844, courseId=913, exerciseId=2528, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short05448af9094ce043540aad00b85777c95877tstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT05448AF9094CE043540AAD00B85777C95877TSTEXC/short05448af9094ce043540aad00b85777c95877tstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT05448AF9094CE043540AAD00B85777C95877TSTEXC/SHORT05448AF9094CE043540AAD00B85777C95877TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@38dcd58f, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@7dfeba0f], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:58.565703687Z[Etc/UTC], buildStartDate=2025-02-14T23:44:58.620316009Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:58.625756806Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:17.620310509Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+mvn clean test
+mvn spotbugs:spotbugs checkstyle:checkstyle pmd:pmd pmd:cpd
+, dockerImage=dummy-docker-image, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_MAVEN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/spotbugsXml.xml, /var/tmp/testing-dir/target/checkstyle-result.xml, /var/tmp/testing-dir/target/pmd.xml, /var/tmp/testing-dir/target/cpd.xml, /var/tmp/testing-dir/**/target/surefire-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18471739576698832, name=SHORT60AAE8F80625204F1708DEA07DAA056AEEC6TSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1847, courseId=915, exerciseId=2531, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short60aae8f80625204f1708dea07daa056aeec6tstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT60AAE8F80625204F1708DEA07DAA056AEEC6TSTEXC/short60aae8f80625204f1708dea07daa056aeec6tstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT60AAE8F80625204F1708DEA07DAA056AEEC6TSTEXC/SHORT60AAE8F80625204F1708DEA07DAA056AEEC6TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@6a4bd042, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@4461e0fb], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:58.832391715Z[Etc/UTC], buildStartDate=2025-02-14T23:44:58.842187594Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:58.856306412Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:17.842182324Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Build and run all tests
+# ------------------------------
+
+# Updating assignment and test-reports ownership...
+sudo chown artemis_user:artemis_user assignment/ -R
+mkdir test-reports
+chown artemis_user:artemis_user test-reports/ -R
+
+# assignment
+cd tests
+REQ_FILE=requirements.txt
+if [ -f "$REQ_FILE" ]; then
+    pip3 install --user -r requirements.txt || true
+else
+    echo "$REQ_FILE does not exist"
+fi
+cd ..
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Setup makefile
+# ------------------------------
+
+shadowFilePath="../tests/testUtils/c/shadow_exec.c"
+
+foundIncludeDirs=`grep -m 1 'INCLUDEDIRS\s*=' assignment/Makefile`
+
+foundSource=`grep -m 1 'SOURCE\s*=' assignment/Makefile`
+foundSource="$foundSource $shadowFilePath"
+
+rm -f assignment/GNUmakefile
+rm -f assignment/makefile
+
+cp -f tests/Makefile assignment/Makefile || exit 2
+sed -i "s~\bINCLUDEDIRS\s*=.*~${foundIncludeDirs}~; s~\bSOURCE\s*=.*~${foundSource}~" assignment/Makefile
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Build and run all tests if the compilation succeeds
+# ------------------------------
+sudo chown artemis_user:artemis_user .
+gcc -c -Wall assignment/*.c || error=true
+if [ ! $error ]
+then
+    cd tests || exit 0
+    python3 Tests.py || true
+else
+    exit 1
+fi
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=C, projectType=GCC, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/gcc.xml, /var/tmp/testing-dir/test-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18481739576698839, name=SHORT60AAE8F80625204F1708DEA07DAA056AEEC6TSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1848, courseId=915, exerciseId=2531, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short60aae8f80625204f1708dea07daa056aeec6tstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT60AAE8F80625204F1708DEA07DAA056AEEC6TSTEXC/short60aae8f80625204f1708dea07daa056aeec6tstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT60AAE8F80625204F1708DEA07DAA056AEEC6TSTEXC/SHORT60AAE8F80625204F1708DEA07DAA056AEEC6TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@1a4f3555, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@1269dad1], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:58.839504821Z[Etc/UTC], buildStartDate=2025-02-14T23:44:58.864819138Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:58.928951109Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:17.864814759Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Build and run all tests
+# ------------------------------
+
+# Updating assignment and test-reports ownership...
+sudo chown artemis_user:artemis_user assignment/ -R
+mkdir test-reports
+chown artemis_user:artemis_user test-reports/ -R
+
+# assignment
+cd tests
+REQ_FILE=requirements.txt
+if [ -f "$REQ_FILE" ]; then
+    pip3 install --user -r requirements.txt || true
+else
+    echo "$REQ_FILE does not exist"
+fi
+cd ..
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Setup makefile
+# ------------------------------
+
+shadowFilePath="../tests/testUtils/c/shadow_exec.c"
+
+foundIncludeDirs=`grep -m 1 'INCLUDEDIRS\s*=' assignment/Makefile`
+
+foundSource=`grep -m 1 'SOURCE\s*=' assignment/Makefile`
+foundSource="$foundSource $shadowFilePath"
+
+rm -f assignment/GNUmakefile
+rm -f assignment/makefile
+
+cp -f tests/Makefile assignment/Makefile || exit 2
+sed -i "s~\bINCLUDEDIRS\s*=.*~${foundIncludeDirs}~; s~\bSOURCE\s*=.*~${foundSource}~" assignment/Makefile
+#!/usr/bin/env bash
+
+# ------------------------------
+# Task Description:
+# Build and run all tests if the compilation succeeds
+# ------------------------------
+sudo chown artemis_user:artemis_user .
+gcc -c -Wall assignment/*.c || error=true
+if [ ! $error ]
+then
+    cd tests || exit 0
+    python3 Tests.py || true
+else
+    exit 1
+fi
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=C, projectType=GCC, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/gcc.xml, /var/tmp/testing-dir/test-reports/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18511739576699054, name=SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1851, courseId=917, exerciseId=2534, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@2694d11e, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@6db98b0f], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:59.054840465Z[Etc/UTC], buildStartDate=2025-02-14T23:44:59.062333168Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:59.073407982Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:18.062328129Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+cp -R Sources assignment
+# copy test files
+cp -R Tests assignment
+cp Package.swift assignment
+
+# In order to get the correct console output we need to execute the command within the assignment directory
+# swift build
+cd assignment
+swift build || error=true
+
+if [ ! $error ]
+then
+    # swift test
+    swift test || true
+fi
+
+# The used docker container is calling 'swift build' which creates files as root (e.g. tests.xml),
+# so we need to allow everyone to access these files
+cd ..
+chmod -R 777 .
+# Copy SwiftLint rules
+cp .swiftlint.yml assignment || true
+# create target directory for SCA Parser
+mkdir target
+cd assignment
+# Execute static code analysis
+swiftlint > ../target/swiftlint-result.xml
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=SWIFT, projectType=PLAIN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/swiftlint-result.xml, /var/tmp/testing-dir/assignment/tests.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null], BuildJobQueueItem[id=18521739576699059, name=SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-BASE, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1852, courseId=917, exerciseId=2534, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-exercise, repositoryType=exercise, triggeredByPushTo=exercise, assignmentRepositoryUri=http://localhost:49152/git/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-exercise.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@e3ffe70, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@52dc1234], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:59.059867149Z[Etc/UTC], buildStartDate=2025-02-14T23:44:59.079912252Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:59.131849421Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:18.079907323Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+cp -R Sources assignment
+# copy test files
+cp -R Tests assignment
+cp Package.swift assignment
+
+# In order to get the correct console output we need to execute the command within the assignment directory
+# swift build
+cd assignment
+swift build || error=true
+
+if [ ! $error ]
+then
+    # swift test
+    swift test || true
+fi
+
+# The used docker container is calling 'swift build' which creates files as root (e.g. tests.xml),
+# so we need to allow everyone to access these files
+cd ..
+chmod -R 777 .
+# Copy SwiftLint rules
+cp .swiftlint.yml assignment || true
+# create target directory for SCA Parser
+mkdir target
+cd assignment
+# Execute static code analysis
+swiftlint > ../target/swiftlint-result.xml
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=SWIFT, projectType=PLAIN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/swiftlint-result.xml, /var/tmp/testing-dir/assignment/tests.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]], publicSshKey=ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCOPdMsxRE2jFJ/UEa5/LsBxtwzJcrh3/rYBCQvcMeVpiRfhzQPWu7mrt/G2Ew+i+vRloGH9aqKg6dd1liRncao53Zmd/ePxoatXePNhmzTfkCkcSkTUz7B+QMjkoDDV5jwuFPD6mF3JkhuzSi64n9Zy905t4w2IhVcjM2mL3eYNjiCXt6Qpq3Pkt7dM/Ksw1nxnvuiIALuJLB3FTkXkHqq3PJav+9HSq2r6ZaWgekneaGxlQlb+U+Vy3XOuArKAzK8c8i+0bR+AHiTG6ncYXt7ax3U+TdlDTF7OLP3umwaYjs1NBXOHwG42pevvpKn2fqavZZozk+M05jXLx3bq0O7itxfErWc7etky8qYPyyIMF/txQIVLd78+Ze4d7Y60t5MGbXM5cGE6fFif5fEJwgswXD+BrG0cafz1CTatjSKFdvp8Vp4VszXhHDan1PrP6JEFJ5Cc5GDmLRZPCFa3vL9f5qXgf4bkqKN8MYeEujwJE5nMRWoiJVNakix2bcrrneQMBlnYeYZVWXXXUusAQBzl4NgddC1umZpihZkL1b1MffZAUW3EGEXi7KHnllQhkTLLsQ8ntMgbylqaJKStqaXlLvdeRJcEnUuiFCrHEVVbXRFZR7XVDZ02CE5o3MuaRPty8Kh+jRTF3COlAckHwYEJCNNJvXFgb2CNXL4mjzYDw== test@localhost]
+    23:44:59.163 | 588 artemis-task-1   | DEBUG | d.t.c.a.a.c.c.w.GzipMessageConverter : Compressed message payload from 47882 to 6096 (saved 87.3% payload size)
+    23:44:59.169 | 566 localvc.event-13 | DEBUG | a.p.s.l.SharedQueueManagementService : Build agent updated: null
+    23:44:59.170 | 566 localvc.event-13 | DEBUG | p.s.l.LocalCIResultProcessingService : Result of build job with id 18511739576699054 added to queue
+    23:44:59.170 | 566 localvc.event-13 | INFO  | p.s.l.LocalCIResultProcessingService : Processing build job result with id 18511739576699054
+    23:44:59.174 | 566 localvc.event-13 | DEBUG | p.s.l.LocalCIResultProcessingService : Build jobs waiting in queue: 1
+    23:44:59.174 | 566 localvc.event-13 | DEBUG | p.s.l.LocalCIResultProcessingService : Queued build jobs: [18521739576699059]
+    23:44:59.186 | 566 localvc.event-13 | DEBUG | .s.ProgrammingExerciseGradingService : Received new build result (NEW) for participation 1851
+    23:44:59.195 | 566 localvc.event-13 | WARN  | .s.ProgrammingExerciseGradingService : Could not find pending ProgrammingSubmission for Commit Hash 9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d (Participation 1851, Build Plan SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-SOLUTION). Will create a new one subsequently...
+    23:44:59.196 | 566 localvc.event-13 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from file:///tmp/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-solution.git to repos/server-integration-test/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-solution
+    23:44:59.214 | 566 localvc.event-13 | ERROR | d.t.c.a.a.p.service.GitService       : Could not delete directory after failed clone: /home/runner/work/Artemis/Artemis/repos/server-integration-test/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-solution
+    23:44:59.214 | 566 localvc.event-13 | ERROR | p.s.l.LocalCIResultProcessingService : Error while processing build job: BuildJobQueueItem[id=18511739576699054, name=SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-SOLUTION, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=1851, courseId=917, exerciseId=2534, retryCount=0, priority=2, status=FAILED, repositoryInfo=RepositoryInfo[repositoryName=short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-solution, repositoryType=solution, triggeredByPushTo=solution, assignmentRepositoryUri=http://localhost:49152/git/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-solution.git, testRepositoryUri=http://nadnasidni.tum/scm/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@5d8dbf0b, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@44bf815c], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:44:59.054840465Z[Etc/UTC], buildStartDate=2025-02-14T23:44:59.062333168Z[Etc/UTC], buildCompletionDate=2025-02-14T23:44:59.073407982Z[Etc/UTC], estimatedCompletionDate=2025-02-14T23:45:18.062328129Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+cp -R Sources assignment
+# copy test files
+cp -R Tests assignment
+cp Package.swift assignment
+
+# In order to get the correct console output we need to execute the command within the assignment directory
+# swift build
+cd assignment
+swift build || error=true
+
+if [ ! $error ]
+then
+    # swift test
+    swift test || true
+fi
+
+# The used docker container is calling 'swift build' which creates files as root (e.g. tests.xml),
+# so we need to allow everyone to access these files
+cd ..
+chmod -R 777 .
+# Copy SwiftLint rules
+cp .swiftlint.yml assignment || true
+# create target directory for SCA Parser
+mkdir target
+cd assignment
+# Execute static code analysis
+swiftlint > ../target/swiftlint-result.xml
+, dockerImage=~~invalid~~, commitHashToBuild=null, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=SWIFT, projectType=PLAIN, scaEnabled=true, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/target/swiftlint-result.xml, /var/tmp/testing-dir/assignment/tests.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]
+java.util.concurrent.CompletionException: java.util.concurrent.ExecutionException: de.tum.cit.aet.artemis.core.exception.LocalCIException: Could not pull Docker image ~~invalid~~
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.lambda$executeBuildJob$2(BuildJobManagementService.java:188)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.createCompletableFuture(BuildJobManagementService.java:236)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.executeBuildJob(BuildJobManagementService.java:163)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.processBuild(SharedQueueProcessingService.java:413)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService.checkAvailabilityAndProcessNextBuild(SharedQueueProcessingService.java:269)
+	at de.tum.cit.aet.artemis.buildagent.service.SharedQueueProcessingService$QueuedBuildJobItemListener.itemAdded(SharedQueueProcessingService.java:594)
+	at com.hazelcast.collection.impl.queue.QueueService.lambda$dispatchEvent$1(QueueService.java:277)
+	at com.hazelcast.internal.namespace.impl.NoOpUserCodeNamespaceService.runWithNamespace(NoOpUserCodeNamespaceService.java:82)
+	at com.hazelcast.internal.namespace.NamespaceUtil.runWithNamespace(NamespaceUtil.java:106)
+	at com.hazelcast.collection.impl.queue.QueueService.dispatchEvent(QueueService.java:275)
+	at com.hazelcast.collection.impl.queue.QueueService.dispatchEvent(QueueService.java:98)
+	at com.hazelcast.spi.impl.eventservice.impl.LocalEventDispatcher.run(LocalEventDispatcher.java:64)
+	at com.hazelcast.internal.util.executor.StripedExecutor$Worker.process(StripedExecutor.java:244)
+	at com.hazelcast.internal.util.executor.StripedExecutor$Worker.run(StripedExecutor.java:227)
+Caused by: java.util.concurrent.ExecutionException: de.tum.cit.aet.artemis.core.exception.LocalCIException: Could not pull Docker image ~~invalid~~
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122)
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:205)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.lambda$executeBuildJob$2(BuildJobManagementService.java:165)
+	... 13 common frames omitted
+Caused by: de.tum.cit.aet.artemis.core.exception.LocalCIException: Could not pull Docker image ~~invalid~~
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobExecutionService.runBuildJob(BuildJobExecutionService.java:157)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:723)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobExecutionService$$SpringCGLIB$$0.runBuildJob(<generated>)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobManagementService.lambda$executeBuildJob$1(BuildJobManagementService.java:129)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: de.tum.cit.aet.artemis.core.exception.LocalCIException: Docker image ~~invalid~~ is not compatible with the current architecture. Needed 'linux/amd64', but got 'null'
+	at de.tum.cit.aet.artemis.buildagent.service.BuildAgentDockerService.checkImageArchitecture(BuildAgentDockerService.java:291)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildAgentDockerService.pullDockerImage(BuildAgentDockerService.java:223)
+	at de.tum.cit.aet.artemis.buildagent.service.BuildJobExecutionService.runBuildJob(BuildJobExecutionService.java:152)
+	... 10 common frames omitted
+    23:44:59.215 | 566 localvc.event-13 | DEBUG | d.t.c.a.a.p.s.BuildLogEntryService   : Saved build logs for build job 18511739576699054 to file /tmp/build-logs/short7cb428fd0eed504f910a0ff0392ae9eee663/TSTEXC/18511739576699054.log
+    23:44:59.215 | 566 localvc.event-13 | ERROR | c.h.s.i.e.impl.EventServiceImpl      : [127.0.0.1]:5703 [dev] [5.5.0] hz.Artemis_localcilocalvc.event-13 caught an exception while processing:com.hazelcast.spi.impl.eventservice.impl.LocalEventDispatcher@804fdd6
+de.tum.cit.aet.artemis.core.exception.GitException: org.eclipse.jgit.api.errors.InvalidRemoteException: Invalid remote: origin
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:409)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:368)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:348)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:331)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:272)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:271)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:214)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:213)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:199)
+	at de.tum.cit.aet.artemis.programming.service.localvc.LocalVCService.getPushDate(LocalVCService.java:334)
+	at de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseGradingService.createAndSaveFallbackSubmission(ProgrammingExerciseGradingService.java:286)
+	at de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseGradingService.createAndSaveFallbackSubmission(ProgrammingExerciseGradingService.java:272)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseGradingService.processNewProgrammingExerciseResult(ProgrammingExerciseGradingService.java:177)
+	at de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseGradingService.processNewProgrammingExerciseResult(ProgrammingExerciseGradingService.java:156)
+	at de.tum.cit.aet.artemis.programming.service.localci.LocalCIResultProcessingService.processResult(LocalCIResultProcessingService.java:164)
+	at de.tum.cit.aet.artemis.programming.service.localci.LocalCIResultProcessingService$ResultQueueListener.itemAdded(LocalCIResultProcessingService.java:324)
+	at com.hazelcast.collection.impl.queue.QueueService.lambda$dispatchEvent$1(QueueService.java:277)
+	at com.hazelcast.internal.namespace.impl.NoOpUserCodeNamespaceService.runWithNamespace(NoOpUserCodeNamespaceService.java:82)
+	at com.hazelcast.internal.namespace.NamespaceUtil.runWithNamespace(NamespaceUtil.java:106)
+	at com.hazelcast.collection.impl.queue.QueueService.dispatchEvent(QueueService.java:275)
+	at com.hazelcast.collection.impl.queue.QueueService.dispatchEvent(QueueService.java:98)
+	at com.hazelcast.spi.impl.eventservice.impl.LocalEventDispatcher.run(LocalEventDispatcher.java:64)
+	at com.hazelcast.internal.util.executor.StripedExecutor$Worker.process(StripedExecutor.java:244)
+	at com.hazelcast.internal.util.executor.StripedExecutor$Worker.run(StripedExecutor.java:227)
+Caused by: org.eclipse.jgit.api.errors.InvalidRemoteException: Invalid remote: origin
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:246)
+	at org.eclipse.jgit.api.CloneCommand.fetch(CloneCommand.java:319)
+	at org.eclipse.jgit.api.CloneCommand.call(CloneCommand.java:189)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:400)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:368)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:348)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:348)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:331)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:331)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:272)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:271)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:214)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:213)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:199)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.GitService.getOrCheckoutRepository(GitService.java:199)
+	at de.tum.cit.aet.artemis.programming.service.localvc.LocalVCService.getPushDate(LocalVCService.java:334)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.localvc.LocalVCService.getPushDate(LocalVCService.java:334)
+	at de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseGradingService.createAndSaveFallbackSubmission(ProgrammingExerciseGradingService.java:286)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	at de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseGradingService.createAndSaveFallbackSubmission(ProgrammingExerciseGradingService.java:272)
+	at de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseGradingService.lambda$processNewProgrammingExerciseResult$0(ProgrammingExerciseGradingService.java:177)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at de.tum.cit.aet.artemis.programming.service.ProgrammingExerciseGradingService.processNewProgrammingExerciseResult(ProgrammingExerciseGradingService.java:177)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	... 11 common frames omitted
+Caused by: org.eclipse.jgit.errors.NoRemoteRepositoryException: file:///tmp/SHORT7CB428FD0EED504F910A0FF0392AE9EEE663TSTEXC/short7cb428fd0eed504f910a0ff0392ae9eee663tstexc-solution.git: not found.
+	at org.eclipse.jgit.transport.TransportLocal$1.open(TransportLocal.java:100)
+	at org.eclipse.jgit.transport.TransportBundleFile$1.open(TransportBundleFile.java:74)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:525)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:400)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:279)
+	at org.eclipse.jgit.transport.Transport.open(Transport.java:247)
+	at org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:217)
+	... 158 common frames omitted
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

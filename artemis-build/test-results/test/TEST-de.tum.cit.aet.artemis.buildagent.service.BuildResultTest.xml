@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.buildagent.service.BuildResultTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:39" hostname="fv-az1721-502" time="0.017">
+  <properties/>
+  <testcase name="testUnsupportedMethods()" classname="de.tum.cit.aet.artemis.buildagent.service.BuildResultTest" time="0.017"/>
+  <system-out><![CDATA[
+Starting logs for BuildResultTest
+
+  Starting logs for BuildResultTest > testUnsupportedMethods()
+    23:42:39.722 | 131 Pool-1-worker-46 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='BuildResultTest#testUnsupportedMethods'
+
+Finished logs for BuildResultTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

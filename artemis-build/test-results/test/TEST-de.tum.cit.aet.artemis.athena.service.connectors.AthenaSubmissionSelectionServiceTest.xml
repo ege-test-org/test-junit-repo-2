@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:07" hostname="fv-az1721-502" time="0.775">
+  <properties/>
+  <testcase name="testTextSubmissionSelectionWithFeedbackSuggestionsDisabled()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest" time="0.067"/>
+  <testcase name="testSubmissionSelectionFromOneText()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest" time="0.084"/>
+  <testcase name="testSubmissionSelectionFromTwoText()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest" time="0.066"/>
+  <testcase name="testTextSubmissionSelectionFromEmpty()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest" time="0.037"/>
+  <testcase name="testTextNoSubmissionSelectionFromOne()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest" time="0.041"/>
+  <testcase name="testSubmissionSelectionFromOneProgramming()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest" time="0.075"/>
+  <testcase name="testProgrammingSubmissionSelectionFromEmpty()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest" time="0.064"/>
+  <testcase name="testProgrammingSubmissionSelectionWithException()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest" time="0.049"/>
+  <testcase name="testSubmissionSelectionFromTwoProgramming()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest" time="0.054"/>
+  <testcase name="testProgrammingNoSubmissionSelectionFromOne()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest" time="0.062"/>
+  <testcase name="testTextSubmissionSelectionWithException()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest" time="0.092"/>
+  <testcase name="testProgrammingSubmissionSelectionWithFeedbackSuggestionsDisabled()" classname="de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest" time="0.037"/>
+  <system-out><![CDATA[
+Starting logs for AthenaSubmissionSelectionServiceTest
+
+  Starting logs for AthenaSubmissionSelectionServiceTest > testTextSubmissionSelectionWithFeedbackSuggestionsDisabled()
+    23:42:07.410 | 116 Pool-1-worker-31 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaSubmissionSelectionServiceTest#testTextSubmissionSelectionWithFeedbackSuggestionsDisabled'
+
+  Starting logs for AthenaSubmissionSelectionServiceTest > testSubmissionSelectionFromOneText()
+    23:42:07.475 | 116 Pool-1-worker-31 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaSubmissionSelectionServiceTest#testSubmissionSelectionFromOneText'
+    23:42:07.481 | 116 Pool-1-worker-31 | DEBUG | a.s.AthenaSubmissionSelectionService : Start Athena Submission Selection Service for Exercise 'Title' (#131).
+    23:42:07.481 | 116 Pool-1-worker-31 | INFO  | a.s.AthenaSubmissionSelectionService : Calling Athena to calculate next proposed submissions for 1 submissions.
+    23:42:07.483 | 116 Pool-1-worker-31 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Calling Athena.
+    23:42:07.502 | 116 Pool-1-worker-31 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Finished remote call in 17.99ms
+    23:42:07.502 | 116 Pool-1-worker-31 | INFO  | a.s.AthenaSubmissionSelectionService : Athena to calculate next proposes submissions responded: 1
+
+  Starting logs for AthenaSubmissionSelectionServiceTest > testSubmissionSelectionFromTwoText()
+    23:42:07.562 | 116 Pool-1-worker-31 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaSubmissionSelectionServiceTest#testSubmissionSelectionFromTwoText'
+    23:42:07.563 | 116 Pool-1-worker-31 | DEBUG | a.s.AthenaSubmissionSelectionService : Start Athena Submission Selection Service for Exercise 'Title' (#133).
+    23:42:07.563 | 116 Pool-1-worker-31 | INFO  | a.s.AthenaSubmissionSelectionService : Calling Athena to calculate next proposed submissions for 2 submissions.
+    23:42:07.564 | 116 Pool-1-worker-31 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Calling Athena.
+    23:42:07.572 | 116 Pool-1-worker-31 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Finished remote call in 7.35ms
+    23:42:07.572 | 116 Pool-1-worker-31 | INFO  | a.s.AthenaSubmissionSelectionService : Athena to calculate next proposes submissions responded: 1
+
+  Starting logs for AthenaSubmissionSelectionServiceTest > testTextSubmissionSelectionFromEmpty()
+    23:42:07.615 | 116 Pool-1-worker-31 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaSubmissionSelectionServiceTest#testTextSubmissionSelectionFromEmpty'
+
+  Starting logs for AthenaSubmissionSelectionServiceTest > testTextNoSubmissionSelectionFromOne()
+    23:42:07.654 | 116 Pool-1-worker-31 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaSubmissionSelectionServiceTest#testTextNoSubmissionSelectionFromOne'
+    23:42:07.656 | 116 Pool-1-worker-31 | DEBUG | a.s.AthenaSubmissionSelectionService : Start Athena Submission Selection Service for Exercise 'Title' (#137).
+    23:42:07.656 | 116 Pool-1-worker-31 | INFO  | a.s.AthenaSubmissionSelectionService : Calling Athena to calculate next proposed submissions for 1 submissions.
+    23:42:07.657 | 116 Pool-1-worker-31 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Calling Athena.
+    23:42:07.660 | 116 Pool-1-worker-31 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Finished remote call in 2.22ms
+    23:42:07.660 | 116 Pool-1-worker-31 | INFO  | a.s.AthenaSubmissionSelectionService : Athena to calculate next proposes submissions responded: -1
+
+  Starting logs for AthenaSubmissionSelectionServiceTest > testSubmissionSelectionFromOneProgramming()
+    23:42:07.716 | 116 Pool-1-worker-31 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaSubmissionSelectionServiceTest#testSubmissionSelectionFromOneProgramming'
+    23:42:07.719 | 116 Pool-1-worker-31 | DEBUG | a.s.AthenaSubmissionSelectionService : Start Athena Submission Selection Service for Exercise 'Title' (#140).
+    23:42:07.719 | 116 Pool-1-worker-31 | INFO  | a.s.AthenaSubmissionSelectionService : Calling Athena to calculate next proposed submissions for 1 submissions.
+    23:42:07.721 | 116 Pool-1-worker-31 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Calling Athena.
+    23:42:07.727 | 116 Pool-1-worker-31 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Finished remote call in 6.43ms
+    23:42:07.727 | 116 Pool-1-worker-31 | INFO  | a.s.AthenaSubmissionSelectionService : Athena to calculate next proposes submissions responded: 3
+
+  Starting logs for AthenaSubmissionSelectionServiceTest > testProgrammingSubmissionSelectionFromEmpty()
+    23:42:07.802 | 116 Pool-1-worker-31 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaSubmissionSelectionServiceTest#testProgrammingSubmissionSelectionFromEmpty'
+
+  Starting logs for AthenaSubmissionSelectionServiceTest > testProgrammingSubmissionSelectionWithException()
+    23:42:07.854 | 116 Pool-1-worker-31 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='AthenaSubmissionSelectionServiceTest#testProgrammingSubmissionSelectionWithException'
+    23:42:07.854 | 116 Pool-1-worker-31 | DEBUG | a.s.AthenaSubmissionSelectionService : Start Athena Submission Selection Service for Exercise 'Title' (#144).
+    23:42:07.854 | 116 Pool-1-worker-31 | INFO  | a.s.AthenaSubmissionSelectionService : Calling Athena to calculate next proposed submissions for 1 submissions.
+    23:42:07.855 | 116 Pool-1-worker-31 | DEBUG | d.t.c.a.a.a.service.AthenaConnector  : Calling Athena.
+    23:42:07.859 | 116 Pool-1-worker-31 | ERROR | d.t.c.a.a.a.service.AthenaConnector  : Athena did not respond successfully in time
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:5100/modules/programming/module_programming_test/select_submission": Mocked SocketTimeoutException
+	at org.springframework.web.client.RestTemplate.createResourceAccessException(RestTemplate.java:926)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:906)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:801)
+	at org.springframework.web.client.RestTemplate.postForEntity(RestTemplate.java:549)
+	at de.tum.cit.aet.artemis.athena.service.AthenaConnector.invoke(AthenaConnector.java:63)
+	at de.tum.cit.aet.artemis.athena.service.AthenaConnector.invokeWithRetry(AthenaConnector.java:96)
+	at de.tum.cit.aet.artemis.athena.service.AthenaSubmissionSelectionService.getProposedSubmissionId(AthenaSubmissionSelectionService.java:86)
+	at de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest.lambda$testProgrammingSubmissionSelectionWithException$3(AthenaSubmissionSelectionServiceTest.java:182)
+	at org.assertj.core.api.ThrowableAssert.catchThrowable(ThrowableAssert.java:63)
+	at org.assertj.core.api.NotThrownAssert.isThrownBy(NotThrownAssert.java:43)
+	at de.tum.cit.aet.artemis.athena.service.connectors.AthenaSubmissionSelectionServiceTest.testProgrammingSubmissionSelectionWithException(AthenaSubmissionSelectionServiceTest.java:182)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:767)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

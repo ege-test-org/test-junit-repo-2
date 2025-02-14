@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.plagiarism.PlagiarismDetectionServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:06" hostname="fv-az1721-502" time="0.019">
+  <properties/>
+  <testcase name="shouldExecuteChecksForTextExercise()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismDetectionServiceTest" time="0.003"/>
+  <testcase name="shouldThrowExceptionOnUnsupportedProgrammingLanguageForChecksWithJplagReport()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismDetectionServiceTest" time="0.002"/>
+  <testcase name="shouldThrowExceptionOnUnsupportedProgrammingLanguage()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismDetectionServiceTest" time="0.001"/>
+  <testcase name="shouldExecuteChecksForProgrammingExercise()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismDetectionServiceTest" time="0.001"/>
+  <testcase name="shouldExecuteChecksForModelingExercise()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismDetectionServiceTest" time="0.003"/>
+  <testcase name="shouldExecuteChecksWithJplagReportForProgrammingExercise()" classname="de.tum.cit.aet.artemis.plagiarism.PlagiarismDetectionServiceTest" time="0.006"/>
+  <system-out><![CDATA[
+Starting logs for PlagiarismDetectionServiceTest
+
+  Starting logs for PlagiarismDetectionServiceTest > shouldExecuteChecksForTextExercise()
+    23:40:06.339 |  27 nPool-1-worker-1 | INFO  | c.a.a.p.s.PlagiarismDetectionService : Finished textPlagiarismDetectionService.checkPlagiarism for exercise null with 0 comparisons,
+
+  Starting logs for PlagiarismDetectionServiceTest > shouldThrowExceptionOnUnsupportedProgrammingLanguageForChecksWithJplagReport()
+
+  Starting logs for PlagiarismDetectionServiceTest > shouldThrowExceptionOnUnsupportedProgrammingLanguage()
+
+  Starting logs for PlagiarismDetectionServiceTest > shouldExecuteChecksForProgrammingExercise()
+    23:40:06.348 |  27 nPool-1-worker-1 | INFO  | c.a.a.p.s.PlagiarismDetectionService : Finished programmingExerciseExportService.checkPlagiarism call for 0 comparisons
+
+  Starting logs for PlagiarismDetectionServiceTest > shouldExecuteChecksForModelingExercise()
+    23:40:06.351 |  27 nPool-1-worker-1 | INFO  | c.a.a.p.s.PlagiarismDetectionService : Finished modelingPlagiarismDetectionService.checkPlagiarism call for 0 comparisons
+
+  Starting logs for PlagiarismDetectionServiceTest > shouldExecuteChecksWithJplagReportForProgrammingExercise()
+
+Finished logs for PlagiarismDetectionServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

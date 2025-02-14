@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.PostingServiceUnitTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:19" hostname="fv-az1721-502" time="3.818">
+  <properties/>
+  <testcase name="testParseUserMentionsEmptyContent()" classname="de.tum.cit.aet.artemis.communication.PostingServiceUnitTest" time="3.562"/>
+  <testcase name="shouldSetCorrectFlagsWhenPostsAreNotSaved()" classname="de.tum.cit.aet.artemis.communication.PostingServiceUnitTest" time="0.025"/>
+  <testcase name="shouldSetCorrectFlagsWhenPostsAreSaved()" classname="de.tum.cit.aet.artemis.communication.PostingServiceUnitTest" time="0.019"/>
+  <testcase name="testParseUserMentionsMissingOpeningTag()" classname="de.tum.cit.aet.artemis.communication.PostingServiceUnitTest" time="0.014"/>
+  <testcase name="testParseUserMentionsWithExtraSpaces()" classname="de.tum.cit.aet.artemis.communication.PostingServiceUnitTest" time="0.006"/>
+  <testcase name="testParseUserMentionsWithMissingLogin()" classname="de.tum.cit.aet.artemis.communication.PostingServiceUnitTest" time="0.029"/>
+  <testcase name="testParseUserMentionsWithUserNotInCourse()" classname="de.tum.cit.aet.artemis.communication.PostingServiceUnitTest" time="0.025"/>
+  <testcase name="testParseUserMentionsWithNonExistentUser()" classname="de.tum.cit.aet.artemis.communication.PostingServiceUnitTest" time="0.011"/>
+  <testcase name="testParseUserMentionsMissingClosingTag()" classname="de.tum.cit.aet.artemis.communication.PostingServiceUnitTest" time="0.008"/>
+  <testcase name="testParseUserMentionsContentNull()" classname="de.tum.cit.aet.artemis.communication.PostingServiceUnitTest" time="0.013"/>
+  <testcase name="testParseUserMentionsWithInvalidName()" classname="de.tum.cit.aet.artemis.communication.PostingServiceUnitTest" time="0.009"/>
+  <testcase name="testParseUserMentionsNoUserMentioned()" classname="de.tum.cit.aet.artemis.communication.PostingServiceUnitTest" time="0.007"/>
+  <testcase name="testParseUserMentionsWithValidUsers()" classname="de.tum.cit.aet.artemis.communication.PostingServiceUnitTest" time="0.054"/>
+  <system-out><![CDATA[
+Starting logs for PostingServiceUnitTest
+
+  Starting logs for PostingServiceUnitTest > testParseUserMentionsEmptyContent()
+
+  Starting logs for PostingServiceUnitTest > shouldSetCorrectFlagsWhenPostsAreNotSaved()
+
+  Starting logs for PostingServiceUnitTest > shouldSetCorrectFlagsWhenPostsAreSaved()
+
+  Starting logs for PostingServiceUnitTest > testParseUserMentionsMissingOpeningTag()
+
+  Starting logs for PostingServiceUnitTest > testParseUserMentionsWithExtraSpaces()
+
+  Starting logs for PostingServiceUnitTest > testParseUserMentionsWithMissingLogin()
+
+  Starting logs for PostingServiceUnitTest > testParseUserMentionsWithUserNotInCourse()
+
+  Starting logs for PostingServiceUnitTest > testParseUserMentionsWithNonExistentUser()
+
+  Starting logs for PostingServiceUnitTest > testParseUserMentionsMissingClosingTag()
+
+  Starting logs for PostingServiceUnitTest > testParseUserMentionsContentNull()
+
+  Starting logs for PostingServiceUnitTest > testParseUserMentionsWithInvalidName()
+
+  Starting logs for PostingServiceUnitTest > testParseUserMentionsNoUserMentioned()
+
+  Starting logs for PostingServiceUnitTest > testParseUserMentionsWithValidUsers()
+
+Finished logs for PostingServiceUnitTest
+]]></system-out>
+  <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build as described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+]]></system-err>
+</testsuite>

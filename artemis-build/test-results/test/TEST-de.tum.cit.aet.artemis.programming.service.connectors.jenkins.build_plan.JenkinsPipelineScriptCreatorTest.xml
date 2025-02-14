@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.service.connectors.jenkins.build_plan.JenkinsPipelineScriptCreatorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:49:23" hostname="fv-az1721-502" time="0.066">
+  <properties/>
+  <testcase name="testBuildPlanCreation()" classname="de.tum.cit.aet.artemis.programming.service.connectors.jenkins.build_plan.JenkinsPipelineScriptCreatorTest" time="0.018"/>
+  <testcase name="testBuildPlanRecreation()" classname="de.tum.cit.aet.artemis.programming.service.connectors.jenkins.build_plan.JenkinsPipelineScriptCreatorTest" time="0.026"/>
+  <testcase name="testReplacements()" classname="de.tum.cit.aet.artemis.programming.service.connectors.jenkins.build_plan.JenkinsPipelineScriptCreatorTest" time="0.02"/>
+  <system-out><![CDATA[
+Starting logs for JenkinsPipelineScriptCreatorTest
+
+  Starting logs for JenkinsPipelineScriptCreatorTest > testBuildPlanCreation()
+    23:49:23.424 | 496 ool-1-worker-260 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsPipelineScriptCreatorTest#testBuildPlanCreation'
+
+  Starting logs for JenkinsPipelineScriptCreatorTest > testBuildPlanRecreation()
+    23:49:23.441 | 496 ool-1-worker-260 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsPipelineScriptCreatorTest#testBuildPlanRecreation'
+
+  Starting logs for JenkinsPipelineScriptCreatorTest > testReplacements()
+    23:49:23.469 | 496 ool-1-worker-260 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsPipelineScriptCreatorTest#testReplacements'
+
+Finished logs for JenkinsPipelineScriptCreatorTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

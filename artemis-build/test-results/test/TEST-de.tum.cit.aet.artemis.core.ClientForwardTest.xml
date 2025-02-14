@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.ClientForwardTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:17" hostname="fv-az1721-502" time="0.272">
+  <properties/>
+  <testcase name="getWebsocketEndpointWithInvalidCookie()" classname="de.tum.cit.aet.artemis.core.ClientForwardTest" time="0.036"/>
+  <testcase name="testClientEndpoint()" classname="de.tum.cit.aet.artemis.core.ClientForwardTest" time="0.033"/>
+  <testcase name="getWebsocketEndpointWithCookie()" classname="de.tum.cit.aet.artemis.core.ClientForwardTest" time="0.072"/>
+  <testcase name="getUnmappedNestedDottedEndpoint()" classname="de.tum.cit.aet.artemis.core.ClientForwardTest" time="0.034"/>
+  <testcase name="getWebsocketEndpointFailedHandshakeNoCookie()" classname="de.tum.cit.aet.artemis.core.ClientForwardTest" time="0.028"/>
+  <testcase name="testNestedClientEndpoint()" classname="de.tum.cit.aet.artemis.core.ClientForwardTest" time="0.015"/>
+  <testcase name="getWebsocketFallbackEndpoint()" classname="de.tum.cit.aet.artemis.core.ClientForwardTest" time="0.022"/>
+  <testcase name="getWebsocketInfoEndpoint()" classname="de.tum.cit.aet.artemis.core.ClientForwardTest" time="0.014"/>
+  <system-out><![CDATA[
+Starting logs for ClientForwardTest
+
+  Starting logs for ClientForwardTest > getWebsocketEndpointWithInvalidCookie()
+    23:44:17.692 | 180 Pool-1-worker-73 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ClientForwardTest#getWebsocketEndpointWithInvalidCookie'
+    23:44:17.694 | 180 Pool-1-worker-73 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: invalidCookie from source cookie
+    23:44:17.694 | 180 Pool-1-worker-73 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: invalidCookie from source cookie
+    23:44:17.695 | 180 Pool-1-worker-73 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /websocket/308/sessionId/websocket
+    23:44:17.700 | 180 Pool-1-worker-73 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: invalidCookie from source cookie
+
+  Starting logs for ClientForwardTest > testClientEndpoint()
+    23:44:17.714 | 180 Pool-1-worker-73 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ClientForwardTest#testClientEndpoint'
+
+  Starting logs for ClientForwardTest > getWebsocketEndpointWithCookie()
+    23:44:17.757 | 180 Pool-1-worker-73 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ClientForwardTest#getWebsocketEndpointWithCookie'
+    23:44:17.768 | 180 Pool-1-worker-73 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /websocket/308/sessionId/websocket
+    23:44:17.802 | 180 Pool-1-worker-73 | ERROR | c.a.a.c.c.w.WebsocketConfiguration$2 : "Handshake failed due to invalid Upgrade header: null"
+
+  Starting logs for ClientForwardTest > getUnmappedNestedDottedEndpoint()
+    23:44:17.830 | 180 Pool-1-worker-73 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ClientForwardTest#getUnmappedNestedDottedEndpoint'
+    23:44:17.833 | 180 Pool-1-worker-73 | WARN  | o.z.p.spring.common.AdviceTraits     : Unauthorized: Full authentication is required to access this resource
+
+  Starting logs for ClientForwardTest > getWebsocketEndpointFailedHandshakeNoCookie()
+    23:44:17.874 | 180 Pool-1-worker-73 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ClientForwardTest#getWebsocketEndpointFailedHandshakeNoCookie'
+    23:44:17.875 | 180 Pool-1-worker-73 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /websocket/308/sessionId/websocket
+
+  Starting logs for ClientForwardTest > testNestedClientEndpoint()
+    23:44:17.898 | 180 Pool-1-worker-73 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ClientForwardTest#testNestedClientEndpoint'
+
+  Starting logs for ClientForwardTest > getWebsocketFallbackEndpoint()
+    23:44:17.918 | 180 Pool-1-worker-73 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ClientForwardTest#getWebsocketFallbackEndpoint'
+    23:44:17.920 | 180 Pool-1-worker-73 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /websocket/308/sessionId/xhr_streaming
+    23:44:17.920 | 180 Pool-1-worker-73 | WARN  | s.s.t.TransportHandlingSockJsService : "No TransportHandler for http://localhost/websocket/308/sessionId/xhr_streaming"
+
+  Starting logs for ClientForwardTest > getWebsocketInfoEndpoint()
+    23:44:17.936 | 180 Pool-1-worker-73 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ClientForwardTest#getWebsocketInfoEndpoint'
+    23:44:17.937 | 180 Pool-1-worker-73 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /websocket/info
+
+Finished logs for ClientForwardTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

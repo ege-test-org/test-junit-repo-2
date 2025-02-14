@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.StatisticsRepositoryTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:30" hostname="fv-az1721-502" time="0.21">
+  <properties/>
+  <testcase name="testSortDataIntoWeeks_differentYear()" classname="de.tum.cit.aet.artemis.core.StatisticsRepositoryTest" time="0.013"/>
+  <testcase name="testDSortDataIntoMonths_differentYear()" classname="de.tum.cit.aet.artemis.core.StatisticsRepositoryTest" time="0.016"/>
+  <testcase name="[1] graphType=RELEASED_EXERCISES" classname="de.tum.cit.aet.artemis.core.StatisticsRepositoryTest" time="0.016"/>
+  <testcase name="[2] graphType=EXERCISES_DUE" classname="de.tum.cit.aet.artemis.core.StatisticsRepositoryTest" time="0.015"/>
+  <testcase name="[3] graphType=CONDUCTED_EXAMS" classname="de.tum.cit.aet.artemis.core.StatisticsRepositoryTest" time="0.011"/>
+  <testcase name="[4] graphType=EXAM_PARTICIPATIONS" classname="de.tum.cit.aet.artemis.core.StatisticsRepositoryTest" time="0.011"/>
+  <testcase name="[5] graphType=EXAM_REGISTRATIONS" classname="de.tum.cit.aet.artemis.core.StatisticsRepositoryTest" time="0.016"/>
+  <testcase name="[6] graphType=POSTS" classname="de.tum.cit.aet.artemis.core.StatisticsRepositoryTest" time="0.011"/>
+  <testcase name="[7] graphType=RESOLVED_POSTS" classname="de.tum.cit.aet.artemis.core.StatisticsRepositoryTest" time="0.012"/>
+  <testcase name="[1] spanType=WEEK" classname="de.tum.cit.aet.artemis.core.StatisticsRepositoryTest" time="0.035"/>
+  <testcase name="[2] spanType=QUARTER" classname="de.tum.cit.aet.artemis.core.StatisticsRepositoryTest" time="0.037"/>
+  <system-out><![CDATA[
+Starting logs for StatisticsRepositoryTest
+
+  Starting logs for StatisticsRepositoryTest > testSortDataIntoWeeks_differentYear()
+    23:44:30.286 | 191 Pool-1-worker-84 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsRepositoryTest#testSortDataIntoWeeks_differentYear'
+
+  Starting logs for StatisticsRepositoryTest > testDSortDataIntoMonths_differentYear()
+    23:44:30.302 | 191 Pool-1-worker-84 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsRepositoryTest#testDSortDataIntoMonths_differentYear'
+
+  Starting logs for StatisticsRepositoryTest > [1] graphType=RELEASED_EXERCISES
+    23:44:30.316 | 191 Pool-1-worker-84 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsRepositoryTest#testGetNumberOfEntriesPerTimeSlot_forInvalidView'
+
+  Starting logs for StatisticsRepositoryTest > [2] graphType=EXERCISES_DUE
+    23:44:30.335 | 191 Pool-1-worker-84 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsRepositoryTest#testGetNumberOfEntriesPerTimeSlot_forInvalidView'
+
+  Starting logs for StatisticsRepositoryTest > [3] graphType=CONDUCTED_EXAMS
+    23:44:30.352 | 191 Pool-1-worker-84 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsRepositoryTest#testGetNumberOfEntriesPerTimeSlot_forInvalidView'
+
+  Starting logs for StatisticsRepositoryTest > [4] graphType=EXAM_PARTICIPATIONS
+    23:44:30.365 | 191 Pool-1-worker-84 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsRepositoryTest#testGetNumberOfEntriesPerTimeSlot_forInvalidView'
+
+  Starting logs for StatisticsRepositoryTest > [5] graphType=EXAM_REGISTRATIONS
+    23:44:30.381 | 191 Pool-1-worker-84 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsRepositoryTest#testGetNumberOfEntriesPerTimeSlot_forInvalidView'
+
+  Starting logs for StatisticsRepositoryTest > [6] graphType=POSTS
+    23:44:30.394 | 191 Pool-1-worker-84 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsRepositoryTest#testGetNumberOfEntriesPerTimeSlot_forInvalidView'
+
+  Starting logs for StatisticsRepositoryTest > [7] graphType=RESOLVED_POSTS
+    23:44:30.407 | 191 Pool-1-worker-84 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsRepositoryTest#testGetNumberOfEntriesPerTimeSlot_forInvalidView'
+
+  Starting logs for StatisticsRepositoryTest > [1] spanType=WEEK
+    23:44:30.421 | 191 Pool-1-worker-84 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsRepositoryTest#testFilterDuplicatedUsers_GraphType_LoggedInUsers'
+    23:44:30.421 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:44:30.424 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:44:30.425 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:44:30.426 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:44:30.428 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:44:30.430 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:44:30.431 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:44:30.431 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:44:30.432 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+
+  Starting logs for StatisticsRepositoryTest > [2] spanType=QUARTER
+    23:44:30.457 | 191 Pool-1-worker-84 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StatisticsRepositoryTest#testFilterDuplicatedUsers_GraphType_LoggedInUsers'
+    23:44:30.458 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:44:30.462 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:44:30.463 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:44:30.465 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:44:30.466 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:44:30.468 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:44:30.468 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:44:30.468 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:44:30.479 | 191 Pool-1-worker-84 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+
+Finished logs for StatisticsRepositoryTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

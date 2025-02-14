@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLControlFlowTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:03" hostname="fv-az1721-502" time="0.11">
+  <properties/>
+  <testcase name="similarity_null()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLControlFlowTest" time="0.01"/>
+  <testcase name="similarity_notSymmetric()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLControlFlowTest" time="0.004"/>
+  <testcase name="similarity_differentElementType()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLControlFlowTest" time="0.09"/>
+  <testcase name="similarity_sameControlFlow()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLControlFlowTest" time="0.003"/>
+  <testcase name="similarity_differentControlFlow()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.activity.UMLControlFlowTest" time="0.002"/>
+  <system-out><![CDATA[
+Starting logs for UMLControlFlowTest
+
+  Starting logs for UMLControlFlowTest > similarity_null()
+
+  Starting logs for UMLControlFlowTest > similarity_notSymmetric()
+
+  Starting logs for UMLControlFlowTest > similarity_differentElementType()
+
+  Starting logs for UMLControlFlowTest > similarity_sameControlFlow()
+
+  Starting logs for UMLControlFlowTest > similarity_differentControlFlow()
+
+Finished logs for UMLControlFlowTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

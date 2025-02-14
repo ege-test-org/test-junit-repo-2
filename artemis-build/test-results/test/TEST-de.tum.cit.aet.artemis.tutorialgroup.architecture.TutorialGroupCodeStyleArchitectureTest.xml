@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupCodeStyleArchitectureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:33" hostname="fv-az1721-502" time="0.008">
+  <properties/>
+  <testcase name="testDTOImplementations()" classname="de.tum.cit.aet.artemis.tutorialgroup.architecture.TutorialGroupCodeStyleArchitectureTest" time="0.008"/>
+  <system-out><![CDATA[
+Starting logs for TutorialGroupCodeStyleArchitectureTest
+
+  Starting logs for TutorialGroupCodeStyleArchitectureTest > testDTOImplementations()
+    23:46:33.375 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTO classes: 0
+    23:46:33.375 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTO classes: []
+    23:46:33.377 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTOs that do not end with "DTO": 0
+    23:46:33.377 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTOs that do not end with "DTO": []
+
+Finished logs for TutorialGroupCodeStyleArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

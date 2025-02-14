@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.config.ProgrammingLanguageConfigurationTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:35" hostname="fv-az1721-502" time="0.033">
+  <properties/>
+  <testcase name="testOverriddenImageConfigurationGradle()" classname="de.tum.cit.aet.artemis.core.config.ProgrammingLanguageConfigurationTest" time="0.003"/>
+  <testcase name="testOverriddenImageConfigurationMaven()" classname="de.tum.cit.aet.artemis.core.config.ProgrammingLanguageConfigurationTest" time="0.003"/>
+  <testcase name="testOverriddenImageConfigurationSwift()" classname="de.tum.cit.aet.artemis.core.config.ProgrammingLanguageConfigurationTest" time="0.002"/>
+  <testcase name="testUnknownProjectTypeConfigured()" classname="de.tum.cit.aet.artemis.core.config.ProgrammingLanguageConfigurationTest" time="0.001"/>
+  <testcase name="testLanguageMissing()" classname="de.tum.cit.aet.artemis.core.config.ProgrammingLanguageConfigurationTest" time="0.004"/>
+  <testcase name="testDefaultImageMissing()" classname="de.tum.cit.aet.artemis.core.config.ProgrammingLanguageConfigurationTest" time="0.001"/>
+  <testcase name="testMultipleOverridesSameLanguage()" classname="de.tum.cit.aet.artemis.core.config.ProgrammingLanguageConfigurationTest" time="0.008"/>
+  <testcase name="testDefaultImageConfigurationOnly()" classname="de.tum.cit.aet.artemis.core.config.ProgrammingLanguageConfigurationTest" time="0.001"/>
+  <testcase name="testDockerRunFlags()" classname="de.tum.cit.aet.artemis.core.config.ProgrammingLanguageConfigurationTest" time="0.003"/>
+  <testcase name="testUnknownProgrammingLanguageConfigured()" classname="de.tum.cit.aet.artemis.core.config.ProgrammingLanguageConfigurationTest" time="0.001"/>
+  <system-out><![CDATA[
+Starting logs for ProgrammingLanguageConfigurationTest
+
+  Starting logs for ProgrammingLanguageConfigurationTest > testOverriddenImageConfigurationGradle()
+    23:39:35.883 |  27 nPool-1-worker-1 | DEBUG | c.c.ProgrammingLanguageConfiguration : Loaded Docker image configuration: {EMPTY={PLAIN=EMPTY}, JAVA={PLAIN=JAVA, GRADLE_GRADLE=overridden_image}, PYTHON={PLAIN=PYTHON}, C={PLAIN=C}, HASKELL={PLAIN=HASKELL}, KOTLIN={PLAIN=KOTLIN}, VHDL={PLAIN=VHDL}, ASSEMBLER={PLAIN=ASSEMBLER}, SWIFT={PLAIN=SWIFT}, OCAML={PLAIN=OCAML}, JAVASCRIPT={PLAIN=JAVASCRIPT}, C_SHARP={PLAIN=C_SHARP}, C_PLUS_PLUS={PLAIN=C_PLUS_PLUS}, R={PLAIN=R}, TYPESCRIPT={PLAIN=TYPESCRIPT}, RUST={PLAIN=RUST}, GO={PLAIN=GO}, MATLAB={PLAIN=MATLAB}, BASH={PLAIN=BASH}, RUBY={PLAIN=RUBY}}
+
+  Starting logs for ProgrammingLanguageConfigurationTest > testOverriddenImageConfigurationMaven()
+    23:39:35.888 |  27 nPool-1-worker-1 | DEBUG | c.c.ProgrammingLanguageConfiguration : Loaded Docker image configuration: {EMPTY={PLAIN=EMPTY}, JAVA={MAVEN_MAVEN=overridden_image, PLAIN=JAVA}, PYTHON={PLAIN=PYTHON}, C={PLAIN=C}, HASKELL={PLAIN=HASKELL}, KOTLIN={PLAIN=KOTLIN}, VHDL={PLAIN=VHDL}, ASSEMBLER={PLAIN=ASSEMBLER}, SWIFT={PLAIN=SWIFT}, OCAML={PLAIN=OCAML}, JAVASCRIPT={PLAIN=JAVASCRIPT}, C_SHARP={PLAIN=C_SHARP}, C_PLUS_PLUS={PLAIN=C_PLUS_PLUS}, R={PLAIN=R}, TYPESCRIPT={PLAIN=TYPESCRIPT}, RUST={PLAIN=RUST}, GO={PLAIN=GO}, MATLAB={PLAIN=MATLAB}, BASH={PLAIN=BASH}, RUBY={PLAIN=RUBY}}
+
+  Starting logs for ProgrammingLanguageConfigurationTest > testOverriddenImageConfigurationSwift()
+    23:39:35.890 |  27 nPool-1-worker-1 | DEBUG | c.c.ProgrammingLanguageConfiguration : Loaded Docker image configuration: {EMPTY={PLAIN=EMPTY}, JAVA={PLAIN=JAVA}, PYTHON={PLAIN=PYTHON}, C={PLAIN=C}, HASKELL={PLAIN=HASKELL}, KOTLIN={PLAIN=KOTLIN}, VHDL={PLAIN=VHDL}, ASSEMBLER={PLAIN=ASSEMBLER}, SWIFT={PLAIN=SWIFT, XCODE=overridden_image}, OCAML={PLAIN=OCAML}, JAVASCRIPT={PLAIN=JAVASCRIPT}, C_SHARP={PLAIN=C_SHARP}, C_PLUS_PLUS={PLAIN=C_PLUS_PLUS}, R={PLAIN=R}, TYPESCRIPT={PLAIN=TYPESCRIPT}, RUST={PLAIN=RUST}, GO={PLAIN=GO}, MATLAB={PLAIN=MATLAB}, BASH={PLAIN=BASH}, RUBY={PLAIN=RUBY}}
+
+  Starting logs for ProgrammingLanguageConfigurationTest > testUnknownProjectTypeConfigured()
+
+  Starting logs for ProgrammingLanguageConfigurationTest > testLanguageMissing()
+
+  Starting logs for ProgrammingLanguageConfigurationTest > testDefaultImageMissing()
+
+  Starting logs for ProgrammingLanguageConfigurationTest > testMultipleOverridesSameLanguage()
+    23:39:35.899 |  27 nPool-1-worker-1 | DEBUG | c.c.ProgrammingLanguageConfiguration : Loaded Docker image configuration: {EMPTY={PLAIN=EMPTY}, JAVA={PLAIN=JAVA}, PYTHON={PLAIN=PYTHON}, C={PLAIN=default_image, FACT=fact_image, GCC=gcc_image}, HASKELL={PLAIN=HASKELL}, KOTLIN={PLAIN=KOTLIN}, VHDL={PLAIN=VHDL}, ASSEMBLER={PLAIN=ASSEMBLER}, SWIFT={PLAIN=SWIFT}, OCAML={PLAIN=OCAML}, JAVASCRIPT={PLAIN=JAVASCRIPT}, C_SHARP={PLAIN=C_SHARP}, C_PLUS_PLUS={PLAIN=C_PLUS_PLUS}, R={PLAIN=R}, TYPESCRIPT={PLAIN=TYPESCRIPT}, RUST={PLAIN=RUST}, GO={PLAIN=GO}, MATLAB={PLAIN=MATLAB}, BASH={PLAIN=BASH}, RUBY={PLAIN=RUBY}}
+
+  Starting logs for ProgrammingLanguageConfigurationTest > testDefaultImageConfigurationOnly()
+    23:39:35.907 |  27 nPool-1-worker-1 | DEBUG | c.c.ProgrammingLanguageConfiguration : Loaded Docker image configuration: {EMPTY={PLAIN=EMPTY}, JAVA={PLAIN=JAVA}, PYTHON={PLAIN=PYTHON}, C={PLAIN=C}, HASKELL={PLAIN=HASKELL}, KOTLIN={PLAIN=KOTLIN}, VHDL={PLAIN=VHDL}, ASSEMBLER={PLAIN=ASSEMBLER}, SWIFT={PLAIN=SWIFT}, OCAML={PLAIN=OCAML}, JAVASCRIPT={PLAIN=JAVASCRIPT}, C_SHARP={PLAIN=C_SHARP}, C_PLUS_PLUS={PLAIN=C_PLUS_PLUS}, R={PLAIN=R}, TYPESCRIPT={PLAIN=TYPESCRIPT}, RUST={PLAIN=RUST}, GO={PLAIN=GO}, MATLAB={PLAIN=MATLAB}, BASH={PLAIN=BASH}, RUBY={PLAIN=RUBY}}
+
+  Starting logs for ProgrammingLanguageConfigurationTest > testDockerRunFlags()
+    23:39:35.908 |  27 nPool-1-worker-1 | DEBUG | c.c.ProgrammingLanguageConfiguration : Set Docker flags to [DockerFlag[flag=-v, value=$(pwd):/working_dir], DockerFlag[flag=--cpus, value=2], DockerFlag[flag=--env, value=VAR='value with spaces'], DockerFlag[flag=--env, value=SECOND_VAR=42]]
+
+  Starting logs for ProgrammingLanguageConfigurationTest > testUnknownProgrammingLanguageConfigured()
+
+Finished logs for ProgrammingLanguageConfigurationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

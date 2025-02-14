@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.service.util.TimeUtilTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:56" hostname="fv-az1721-502" time="0.007">
+  <properties/>
+  <testcase name="testToRelativeTimeInBetween()" classname="de.tum.cit.aet.artemis.core.service.util.TimeUtilTest" time="0.001"/>
+  <testcase name="testToRelativeTimeAtStartTime()" classname="de.tum.cit.aet.artemis.core.service.util.TimeUtilTest" time="0.001"/>
+  <testcase name="testToRelativeTimeAtEndTime()" classname="de.tum.cit.aet.artemis.core.service.util.TimeUtilTest" time="0.004"/>
+  <system-out><![CDATA[
+Starting logs for TimeUtilTest
+
+  Starting logs for TimeUtilTest > testToRelativeTimeInBetween()
+
+  Starting logs for TimeUtilTest > testToRelativeTimeAtStartTime()
+
+  Starting logs for TimeUtilTest > testToRelativeTimeAtEndTime()
+
+Finished logs for TimeUtilTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

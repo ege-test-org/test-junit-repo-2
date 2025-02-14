@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.atlas.UnionFindTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:16" hostname="fv-az1721-502" time="0.006">
+  <properties/>
+  <testcase name="testComplexSequence()" classname="de.tum.cit.aet.artemis.atlas.UnionFindTest" time="0.002"/>
+  <testcase name="testUnion()" classname="de.tum.cit.aet.artemis.atlas.UnionFindTest" time="0.001"/>
+  <testcase name="testFind()" classname="de.tum.cit.aet.artemis.atlas.UnionFindTest" time="0.0"/>
+  <testcase name="testSize()" classname="de.tum.cit.aet.artemis.atlas.UnionFindTest" time="0.001"/>
+  <testcase name="testAddElement()" classname="de.tum.cit.aet.artemis.atlas.UnionFindTest" time="0.0"/>
+  <testcase name="testInitialization()" classname="de.tum.cit.aet.artemis.atlas.UnionFindTest" time="0.001"/>
+  <testcase name="testInSameSet()" classname="de.tum.cit.aet.artemis.atlas.UnionFindTest" time="0.0"/>
+  <testcase name="testNumberOfSets()" classname="de.tum.cit.aet.artemis.atlas.UnionFindTest" time="0.0"/>
+  <system-out><![CDATA[
+Starting logs for UnionFindTest
+
+  Starting logs for UnionFindTest > testComplexSequence()
+
+  Starting logs for UnionFindTest > testUnion()
+
+  Starting logs for UnionFindTest > testFind()
+
+  Starting logs for UnionFindTest > testSize()
+
+  Starting logs for UnionFindTest > testAddElement()
+
+  Starting logs for UnionFindTest > testInitialization()
+
+  Starting logs for UnionFindTest > testInSameSet()
+
+  Starting logs for UnionFindTest > testNumberOfSets()
+
+Finished logs for UnionFindTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

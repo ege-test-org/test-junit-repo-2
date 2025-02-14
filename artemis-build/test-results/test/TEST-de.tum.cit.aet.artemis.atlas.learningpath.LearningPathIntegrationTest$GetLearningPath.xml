@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.atlas.learningpath.LearningPathIntegrationTest$GetLearningPath" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:21" hostname="fv-az1721-502" time="0.368">
+  <properties/>
+  <testcase name="shouldReturnNotFoundIfNotExists()" classname="de.tum.cit.aet.artemis.atlas.learningpath.LearningPathIntegrationTest$GetLearningPath" time="0.181"/>
+  <testcase name="shouldReturnExisting()" classname="de.tum.cit.aet.artemis.atlas.learningpath.LearningPathIntegrationTest$GetLearningPath" time="0.185"/>
+  <system-out><![CDATA[
+Starting logs for GetLearningPath
+
+  Starting logs for GetLearningPath > shouldReturnNotFoundIfNotExists()
+    23:43:21.125 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:43:21.134 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:43:21.137 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:21.139 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:21.142 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:21.143 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses...
+    23:43:21.145 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses. Done
+    23:43:21.145 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database...
+    23:43:21.164 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database. Done
+    23:43:21.205 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 950 and participant 107 (result to be deleted: null)
+    23:43:21.205 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 950 and participant 107 at 2025-02-14T23:43:21.305509390Z[Etc/UTC].
+    23:43:21.206 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 950 and participant 107 (result to be deleted: null)
+    23:43:21.206 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 950 and participant 107 at 2025-02-14T23:43:21.306067741Z[Etc/UTC].
+    23:43:21.206 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 951 and participant 107 (result to be deleted: null)
+    23:43:21.206 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 951 and participant 107 at 2025-02-14T23:43:21.306611636Z[Etc/UTC].
+    23:43:21.207 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 953 and participant 107 (result to be deleted: null)
+    23:43:21.207 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 953 and participant 107 at 2025-02-14T23:43:21.307154488Z[Etc/UTC].
+    23:43:21.207 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 953 and participant 107 (result to be deleted: null)
+    23:43:21.207 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 953 and participant 107 at 2025-02-14T23:43:21.307667995Z[Etc/UTC].
+    23:43:21.213 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 950 and participant 107 (result to be deleted: null)
+    23:43:21.213 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 950 and participant 107 at 2025-02-14T23:43:21.313927538Z[Etc/UTC].
+    23:43:21.220 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 950 and participant 107 (result to be deleted: null)
+    23:43:21.220 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 950 and participant 107 at 2025-02-14T23:43:21.320290103Z[Etc/UTC].
+    23:43:21.226 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 951 and participant 107 (result to be deleted: null)
+    23:43:21.226 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 951 and participant 107 at 2025-02-14T23:43:21.326888338Z[Etc/UTC].
+    23:43:21.233 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 953 and participant 107 (result to be deleted: null)
+    23:43:21.233 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 953 and participant 107 at 2025-02-14T23:43:21.333820965Z[Etc/UTC].
+    23:43:21.240 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 953 and participant 107 (result to be deleted: null)
+    23:43:21.240 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 953 and participant 107 at 2025-02-14T23:43:21.340626777Z[Etc/UTC].
+    23:43:21.265 | 123 Pool-1-worker-38 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GetLearningPath#shouldReturnNotFoundIfNotExists'
+    23:43:21.286 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/828/learning-path/me
+    23:43:21.288 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.a.web.LearningPathResource : REST request to get learning path of current user for course with id: 828
+    23:43:21.293 | 123 Pool-1-worker-38 | WARN  | o.z.p.spring.common.AdviceTraits     : Not Found: LearningPath
+
+  Starting logs for GetLearningPath > shouldReturnExisting()
+    23:43:21.308 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:43:21.316 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:43:21.319 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:21.322 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:21.325 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:21.326 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses...
+    23:43:21.328 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses. Done
+    23:43:21.328 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database...
+    23:43:21.344 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database. Done
+    23:43:21.389 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 956 and participant 107 (result to be deleted: null)
+    23:43:21.389 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 956 and participant 107 at 2025-02-14T23:43:21.489354555Z[Etc/UTC].
+    23:43:21.389 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 956 and participant 107 (result to be deleted: null)
+    23:43:21.389 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 956 and participant 107 at 2025-02-14T23:43:21.489916583Z[Etc/UTC].
+    23:43:21.390 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 957 and participant 107 (result to be deleted: null)
+    23:43:21.390 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 957 and participant 107 at 2025-02-14T23:43:21.490484913Z[Etc/UTC].
+    23:43:21.390 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 959 and participant 107 (result to be deleted: null)
+    23:43:21.391 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 959 and participant 107 at 2025-02-14T23:43:21.491007938Z[Etc/UTC].
+    23:43:21.391 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 959 and participant 107 (result to be deleted: null)
+    23:43:21.391 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 959 and participant 107 at 2025-02-14T23:43:21.491563946Z[Etc/UTC].
+    23:43:21.398 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 956 and participant 107 (result to be deleted: null)
+    23:43:21.398 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 956 and participant 107 at 2025-02-14T23:43:21.498669907Z[Etc/UTC].
+    23:43:21.405 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 956 and participant 107 (result to be deleted: null)
+    23:43:21.405 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 956 and participant 107 at 2025-02-14T23:43:21.505462754Z[Etc/UTC].
+    23:43:21.412 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 957 and participant 107 (result to be deleted: null)
+    23:43:21.412 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 957 and participant 107 at 2025-02-14T23:43:21.512752127Z[Etc/UTC].
+    23:43:21.420 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 959 and participant 107 (result to be deleted: null)
+    23:43:21.420 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 959 and participant 107 at 2025-02-14T23:43:21.520309079Z[Etc/UTC].
+    23:43:21.427 | 123 Pool-1-worker-38 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 959 and participant 107 (result to be deleted: null)
+    23:43:21.427 | 123 Pool-1-worker-38 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 959 and participant 107 at 2025-02-14T23:43:21.527056252Z[Etc/UTC].
+    23:43:21.451 | 123 Pool-1-worker-38 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GetLearningPath#shouldReturnExisting'
+    23:43:21.455 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=138) for user (id=107) in course (id=830)
+    23:43:21.459 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=138) for user (id=107)
+    23:43:21.460 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=139) for user (id=108) in course (id=830)
+    23:43:21.463 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=139) for user (id=108)
+    23:43:21.463 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=140) for user (id=109) in course (id=830)
+    23:43:21.467 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=140) for user (id=109)
+    23:43:21.467 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=141) for user (id=110) in course (id=830)
+    23:43:21.470 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=141) for user (id=110)
+    23:43:21.471 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Created LearningPath (id=142) for user (id=111) in course (id=830)
+    23:43:21.474 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Updated LearningPath (id=142) for user (id=111)
+    23:43:21.474 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.a.s.l.LearningPathService  : Successfully created learning paths for all 5 students in course (id=830)
+    23:43:21.478 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/830/learning-path/me
+    23:43:21.480 | 123 Pool-1-worker-38 | DEBUG | d.t.c.a.a.a.web.LearningPathResource : REST request to get learning path of current user for course with id: 830
+
+Finished logs for GetLearningPath
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

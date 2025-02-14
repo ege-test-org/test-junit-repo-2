@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.buildagent.service.BuildAgentSshAuthenticationIntegrationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:39" hostname="fv-az1721-502" time="0.052">
+  <properties/>
+  <testcase name="testSSHInHazelcast()" classname="de.tum.cit.aet.artemis.buildagent.service.BuildAgentSshAuthenticationIntegrationTest" time="0.028"/>
+  <testcase name="testWriteSSHKey()" classname="de.tum.cit.aet.artemis.buildagent.service.BuildAgentSshAuthenticationIntegrationTest" time="0.023"/>
+  <system-out><![CDATA[
+Starting logs for BuildAgentSshAuthenticationIntegrationTest
+
+  Starting logs for BuildAgentSshAuthenticationIntegrationTest > testSSHInHazelcast()
+    23:42:39.646 | 130 Pool-1-worker-45 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='BuildAgentSshAuthenticationIntegrationTest#testSSHInHazelcast'
+
+  Starting logs for BuildAgentSshAuthenticationIntegrationTest > testWriteSSHKey()
+    23:42:39.669 | 130 Pool-1-worker-45 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='BuildAgentSshAuthenticationIntegrationTest#testWriteSSHKey'
+
+Finished logs for BuildAgentSshAuthenticationIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

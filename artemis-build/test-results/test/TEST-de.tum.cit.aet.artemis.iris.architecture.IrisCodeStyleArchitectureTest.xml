@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.iris.architecture.IrisCodeStyleArchitectureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:58" hostname="fv-az1721-502" time="0.012">
+  <properties/>
+  <testcase name="testDTOImplementations()" classname="de.tum.cit.aet.artemis.iris.architecture.IrisCodeStyleArchitectureTest" time="0.012"/>
+  <system-out><![CDATA[
+Starting logs for IrisCodeStyleArchitectureTest
+
+  Starting logs for IrisCodeStyleArchitectureTest > testDTOImplementations()
+    23:39:58.279 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTO classes: 2
+    23:39:58.279 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTO classes: [Class <de.tum.cit.aet.artemis.iris.dto.IngestionStateResponseDTO> is not annotated with @JsonInclude in (IngestionStateResponseDTO.java:0), Class <de.tum.cit.aet.artemis.iris.service.pyris.dto.data.PyrisLLMCostDTO> is not annotated with @JsonInclude in (PyrisLLMCostDTO.java:0)]
+    23:39:58.284 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current number of DTOs that do not end with "DTO": 5
+    23:39:58.284 |  27 nPool-1-worker-1 | INFO  | .a.s.a.m.AbstractModuleCodeStyleTest : Current DTOs that do not end with "DTO": [Class <de.tum.cit.aet.artemis.iris.dto.IngestionState> does not have simple name ending with 'DTO' in (IngestionState.java:0), Class <de.tum.cit.aet.artemis.iris.dto.IrisChatWebsocketDTO$IrisWebsocketMessageType> does not have simple name ending with 'DTO' in (IrisChatWebsocketDTO.java:0), Class <de.tum.cit.aet.artemis.iris.service.pyris.dto.PyrisHealthStatusDTO$ModelStatus> does not have simple name ending with 'DTO' in (PyrisHealthStatusDTO.java:0), Class <de.tum.cit.aet.artemis.iris.service.pyris.dto.rewriting.RewritingVariant> does not have simple name ending with 'DTO' in (RewritingVariant.java:0), Class <de.tum.cit.aet.artemis.iris.service.pyris.dto.status.PyrisStageState> does not have simple name ending with 'DTO' in (PyrisStageState.java:0)]
+
+Finished logs for IrisCodeStyleArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

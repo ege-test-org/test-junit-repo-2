@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.AndroidAppSiteAssociationResourceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:17" hostname="fv-az1721-502" time="0.013">
+  <properties/>
+  <testcase name="testGetAndroidAssetLinks()" classname="de.tum.cit.aet.artemis.core.AndroidAppSiteAssociationResourceTest" time="0.013"/>
+  <system-out><![CDATA[
+Starting logs for AndroidAppSiteAssociationResourceTest
+
+  Starting logs for AndroidAppSiteAssociationResourceTest > testGetAndroidAssetLinks()
+    23:44:17.623 | 177 Pool-1-worker-70 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='AndroidAppSiteAssociationResourceTest#testGetAndroidAssetLinks'
+
+Finished logs for AndroidAppSiteAssociationResourceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

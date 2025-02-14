@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.buildagent.service.TestResultXmlParserTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:19" hostname="fv-az1721-502" time="0.188">
+  <properties/>
+  <testcase name="testSingleTopLevelTestsuiteNameIgnored()" classname="de.tum.cit.aet.artemis.buildagent.service.TestResultXmlParserTest" time="0.091"/>
+  <testcase name="testWithTestSuitesWrapper()" classname="de.tum.cit.aet.artemis.buildagent.service.TestResultXmlParserTest" time="0.004"/>
+  <testcase name="testNestedTestsuite()" classname="de.tum.cit.aet.artemis.buildagent.service.TestResultXmlParserTest" time="0.01"/>
+  <testcase name="testOutputInvalidXMLCharacters()" classname="de.tum.cit.aet.artemis.buildagent.service.TestResultXmlParserTest" time="0.006"/>
+  <testcase name="testMultipleTestsuite()" classname="de.tum.cit.aet.artemis.buildagent.service.TestResultXmlParserTest" time="0.001"/>
+  <testcase name="testXmlProlog()" classname="de.tum.cit.aet.artemis.buildagent.service.TestResultXmlParserTest" time="0.004"/>
+  <testcase name="testParseResultXmlCData()" classname="de.tum.cit.aet.artemis.buildagent.service.TestResultXmlParserTest" time="0.018"/>
+  <testcase name="testSkippedTest()" classname="de.tum.cit.aet.artemis.buildagent.service.TestResultXmlParserTest" time="0.001"/>
+  <testcase name="testEmptyTestMessage()" classname="de.tum.cit.aet.artemis.buildagent.service.TestResultXmlParserTest" time="0.008"/>
+  <testcase name="testSuccessfulTests()" classname="de.tum.cit.aet.artemis.buildagent.service.TestResultXmlParserTest" time="0.001"/>
+  <testcase name="testParseResultXmlInnerText()" classname="de.tum.cit.aet.artemis.buildagent.service.TestResultXmlParserTest" time="0.001"/>
+  <testcase name="testRootTestsuiteNameIgnored()" classname="de.tum.cit.aet.artemis.buildagent.service.TestResultXmlParserTest" time="0.001"/>
+  <testcase name="testNestedTestsuiteMissingNames()" classname="de.tum.cit.aet.artemis.buildagent.service.TestResultXmlParserTest" time="0.005"/>
+  <testcase name="testParseResultXmlMessageAttribute()" classname="de.tum.cit.aet.artemis.buildagent.service.TestResultXmlParserTest" time="0.001"/>
+  <testcase name="testMixedNestedTestsuiteTestcase()" classname="de.tum.cit.aet.artemis.buildagent.service.TestResultXmlParserTest" time="0.001"/>
+  <system-out><![CDATA[
+Starting logs for TestResultXmlParserTest
+
+  Starting logs for TestResultXmlParserTest > testSingleTopLevelTestsuiteNameIgnored()
+
+  Starting logs for TestResultXmlParserTest > testWithTestSuitesWrapper()
+
+  Starting logs for TestResultXmlParserTest > testNestedTestsuite()
+
+  Starting logs for TestResultXmlParserTest > testOutputInvalidXMLCharacters()
+
+  Starting logs for TestResultXmlParserTest > testMultipleTestsuite()
+
+  Starting logs for TestResultXmlParserTest > testXmlProlog()
+
+  Starting logs for TestResultXmlParserTest > testParseResultXmlCData()
+
+  Starting logs for TestResultXmlParserTest > testSkippedTest()
+
+  Starting logs for TestResultXmlParserTest > testEmptyTestMessage()
+
+  Starting logs for TestResultXmlParserTest > testSuccessfulTests()
+
+  Starting logs for TestResultXmlParserTest > testParseResultXmlInnerText()
+
+  Starting logs for TestResultXmlParserTest > testRootTestsuiteNameIgnored()
+
+  Starting logs for TestResultXmlParserTest > testNestedTestsuiteMissingNames()
+
+  Starting logs for TestResultXmlParserTest > testParseResultXmlMessageAttribute()
+
+  Starting logs for TestResultXmlParserTest > testMixedNestedTestsuiteTestcase()
+
+Finished logs for TestResultXmlParserTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

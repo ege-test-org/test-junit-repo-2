@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.service.BuildLogEntryServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:57" hostname="fv-az1721-502" time="0.04">
+  <properties/>
+  <testcase name="filterOutEmptyLogs()" classname="de.tum.cit.aet.artemis.programming.service.BuildLogEntryServiceTest" time="0.011"/>
+  <testcase name="[1] scenario=~~~~~~~~~~~~~~~~~~~~ Pull image progress: Downloading ~~~~~~~~~~~~~~~~~~~~&#10;~~~~~~~~~~~~~~~~~~~~ Pull image progress: Downloading ~~~~~~~~~~~~~~~~~~~~&#10;~~~~~~~~~~~~~~~~~~~~ Pull image progress: Downloading ~~~~~~~~~~~~~~~~~~~~&#10;~~~~~~~~~~~~~~~~~~~~ Pull image progress: Downloading ~~~~~~~~~~~~~~~~~~~~&#10;~~~~~~~~~~~~~~~~~~~~ Pull image progress: Downloading ~~~~~~~~~~~~~~~~~~~~&#10;~~~~~~~~~~~~~~~~~~~~ Pull image progress: Downloading ~~~~~~~~~~~~~~~~~~~~&#10;~~~~~~~~~~~~~~~~~~~~ Pull image progress: Downloading ~~~~~~~…" classname="de.tum.cit.aet.artemis.programming.service.BuildLogEntryServiceTest" time="0.013"/>
+  <testcase name="[2] scenario=Build mtc Test Maven - ARTEMISADMIN - Default Job #7 (MTCTSTMVN-ARTEMISADMIN-JOB1-7) started building on agent Agent1, jenkins version: 8.2.5&#10;the first of its kind&#10;Build working directory is /var/atlassian/application-data/jenkins/local-working-dir/MTCTSTMVN-ARTEMISADMIN-JOB1&#10;Unable to find image 'ls1tum/artemis-maven-template:java17-20' locally&#10;java17-20: Pulling from ls1tum/artemis-maven-template&#10;eaead16dc43b: Already exists&#10;b5503608cd3e: Already exists&#10;eae98b5113a2: Already exists&#10;e55eee3584d7: Already …" classname="de.tum.cit.aet.artemis.programming.service.BuildLogEntryServiceTest" time="0.013"/>
+  <system-out><![CDATA[
+Starting logs for BuildLogEntryServiceTest
+
+  Starting logs for BuildLogEntryServiceTest > filterOutEmptyLogs()
+    23:47:57.444 | 485 ool-1-worker-249 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='BuildLogEntryServiceTest#filterOutEmptyLogs'
+
+  Starting logs for BuildLogEntryServiceTest > [1] scenario=~~~~~~~~~~~~~~~~~~~~ Pull image progress: Downloading ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~ Pull image progress: Downloading ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~ Pull image progress: Downloading ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~ Pull image progress: Downloading ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~ Pull image progress: Downloading ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~ Pull image progress: Downloading ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~ Pull image progress: Downloading ~~~~~~~…
+    23:47:57.456 | 485 ool-1-worker-249 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='BuildLogEntryServiceTest#testScenario'
+
+  Starting logs for BuildLogEntryServiceTest > [2] scenario=Build mtc Test Maven - ARTEMISADMIN - Default Job #7 (MTCTSTMVN-ARTEMISADMIN-JOB1-7) started building on agent Agent1, jenkins version: 8.2.5
+the first of its kind
+Build working directory is /var/atlassian/application-data/jenkins/local-working-dir/MTCTSTMVN-ARTEMISADMIN-JOB1
+Unable to find image 'ls1tum/artemis-maven-template:java17-20' locally
+java17-20: Pulling from ls1tum/artemis-maven-template
+eaead16dc43b: Already exists
+b5503608cd3e: Already exists
+eae98b5113a2: Already exists
+e55eee3584d7: Already …
+    23:47:57.469 | 485 ool-1-worker-249 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='BuildLogEntryServiceTest#testScenario'
+
+Finished logs for BuildLogEntryServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

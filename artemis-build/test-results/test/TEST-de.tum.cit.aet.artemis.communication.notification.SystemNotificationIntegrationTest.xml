@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.notification.SystemNotificationIntegrationTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:15" hostname="fv-az1721-502" time="0.362">
+  <properties/>
+  <testcase name="testCreateSystemNotification_asInstructor_Forbidden()" classname="de.tum.cit.aet.artemis.communication.notification.SystemNotificationIntegrationTest" time="0.046"/>
+  <testcase name="testGetActiveSystemNotificationWithAnonymousUser()" classname="de.tum.cit.aet.artemis.communication.notification.SystemNotificationIntegrationTest" time="0.045"/>
+  <testcase name="testUpdateSystemNotification()" classname="de.tum.cit.aet.artemis.communication.notification.SystemNotificationIntegrationTest" time="0.027"/>
+  <testcase name="testUpdateSystemNotification_asInstructor_Forbidden()" classname="de.tum.cit.aet.artemis.communication.notification.SystemNotificationIntegrationTest" time="0.015"/>
+  <testcase name="testCreateSystemNotification_BadRequest()" classname="de.tum.cit.aet.artemis.communication.notification.SystemNotificationIntegrationTest" time="0.016"/>
+  <testcase name="testDeleteSystemNotification_asInstructor_Forbidden()" classname="de.tum.cit.aet.artemis.communication.notification.SystemNotificationIntegrationTest" time="0.017"/>
+  <testcase name="testGetActiveSystemNotificationWithoutUser()" classname="de.tum.cit.aet.artemis.communication.notification.SystemNotificationIntegrationTest" time="0.016"/>
+  <testcase name="testCreateSystemNotification()" classname="de.tum.cit.aet.artemis.communication.notification.SystemNotificationIntegrationTest" time="0.022"/>
+  <testcase name="testUpdateSystemNotification_BadRequest()" classname="de.tum.cit.aet.artemis.communication.notification.SystemNotificationIntegrationTest" time="0.02"/>
+  <testcase name="testDeleteSystemNotification()" classname="de.tum.cit.aet.artemis.communication.notification.SystemNotificationIntegrationTest" time="0.022"/>
+  <testcase name="testGetAllSystemNotifications()" classname="de.tum.cit.aet.artemis.communication.notification.SystemNotificationIntegrationTest" time="0.023"/>
+  <testcase name="testCreateSystemNotification_asUser_Forbidden()" classname="de.tum.cit.aet.artemis.communication.notification.SystemNotificationIntegrationTest" time="0.023"/>
+  <testcase name="testGetActiveSystemNotification()" classname="de.tum.cit.aet.artemis.communication.notification.SystemNotificationIntegrationTest" time="0.016"/>
+  <testcase name="testGetSystemNotification()" classname="de.tum.cit.aet.artemis.communication.notification.SystemNotificationIntegrationTest" time="0.024"/>
+  <system-out><![CDATA[
+Starting logs for SystemNotificationIntegrationTest
+
+  Starting logs for SystemNotificationIntegrationTest > testCreateSystemNotification_asInstructor_Forbidden()
+    23:44:15.785 | 172 Pool-1-worker-65 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SystemNotificationIntegrationTest#testCreateSystemNotification_asInstructor_Forbidden'
+    23:44:15.791 | 172 Pool-1-worker-65 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for SystemNotificationIntegrationTest > testGetActiveSystemNotificationWithAnonymousUser()
+    23:44:15.830 | 172 Pool-1-worker-65 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SystemNotificationIntegrationTest#testGetActiveSystemNotificationWithAnonymousUser'
+    23:44:15.831 | 172 Pool-1-worker-65 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/public/system-notifications/active
+    23:44:15.831 | 172 Pool-1-worker-65 | DEBUG | w.o.PublicSystemNotificationResource : REST request to get relevant system notifications
+
+  Starting logs for SystemNotificationIntegrationTest > testUpdateSystemNotification()
+    23:44:15.870 | 172 Pool-1-worker-65 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SystemNotificationIntegrationTest#testUpdateSystemNotification'
+    23:44:15.871 | 172 Pool-1-worker-65 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/admin/system-notifications
+    23:44:15.872 | 172 Pool-1-worker-65 | DEBUG | .w.a.AdminSystemNotificationResource : REST request to update SystemNotification : SystemNotification{id=274, expireDate='2025-02-17T23:44:15.870607388Z', type='null'}
+
+  Starting logs for SystemNotificationIntegrationTest > testUpdateSystemNotification_asInstructor_Forbidden()
+    23:44:15.897 | 172 Pool-1-worker-65 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SystemNotificationIntegrationTest#testUpdateSystemNotification_asInstructor_Forbidden'
+    23:44:15.899 | 172 Pool-1-worker-65 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for SystemNotificationIntegrationTest > testCreateSystemNotification_BadRequest()
+    23:44:15.916 | 172 Pool-1-worker-65 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SystemNotificationIntegrationTest#testCreateSystemNotification_BadRequest'
+    23:44:15.917 | 172 Pool-1-worker-65 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/admin/system-notifications
+    23:44:15.918 | 172 Pool-1-worker-65 | DEBUG | .w.a.AdminSystemNotificationResource : REST request to save SystemNotification : SystemNotification{id=1, expireDate='2025-02-17T23:44:15.916595597Z', type='null'}
+    23:44:15.918 | 172 Pool-1-worker-65 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, A new system notification cannot already have an ID
+    23:44:15.918 | 172 Pool-1-worker-65 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: A new system notification cannot already have an ID
+
+  Starting logs for SystemNotificationIntegrationTest > testDeleteSystemNotification_asInstructor_Forbidden()
+    23:44:15.934 | 172 Pool-1-worker-65 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SystemNotificationIntegrationTest#testDeleteSystemNotification_asInstructor_Forbidden'
+    23:44:15.937 | 172 Pool-1-worker-65 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for SystemNotificationIntegrationTest > testGetActiveSystemNotificationWithoutUser()
+    23:44:15.955 | 172 Pool-1-worker-65 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SystemNotificationIntegrationTest#testGetActiveSystemNotificationWithoutUser'
+    23:44:15.956 | 172 Pool-1-worker-65 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/public/system-notifications/active
+    23:44:15.956 | 172 Pool-1-worker-65 | DEBUG | w.o.PublicSystemNotificationResource : REST request to get relevant system notifications
+
+  Starting logs for SystemNotificationIntegrationTest > testCreateSystemNotification()
+    23:44:15.975 | 172 Pool-1-worker-65 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SystemNotificationIntegrationTest#testCreateSystemNotification'
+    23:44:15.977 | 172 Pool-1-worker-65 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/admin/system-notifications
+    23:44:15.977 | 172 Pool-1-worker-65 | DEBUG | .w.a.AdminSystemNotificationResource : REST request to save SystemNotification : SystemNotification{id=null, expireDate='2025-02-17T23:44:15.974918608Z', type='null'}
+
+  Starting logs for SystemNotificationIntegrationTest > testUpdateSystemNotification_BadRequest()
+    23:44:16.001 | 172 Pool-1-worker-65 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SystemNotificationIntegrationTest#testUpdateSystemNotification_BadRequest'
+    23:44:16.002 | 172 Pool-1-worker-65 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/admin/system-notifications
+    23:44:16.002 | 172 Pool-1-worker-65 | DEBUG | .w.a.AdminSystemNotificationResource : REST request to update SystemNotification : SystemNotification{id=null, expireDate='2025-02-17T23:44:16.001161725Z', type='null'}
+    23:44:16.003 | 172 Pool-1-worker-65 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, ID must not be null
+    23:44:16.003 | 172 Pool-1-worker-65 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: ID must not be null
+
+  Starting logs for SystemNotificationIntegrationTest > testDeleteSystemNotification()
+    23:44:16.020 | 172 Pool-1-worker-65 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SystemNotificationIntegrationTest#testDeleteSystemNotification'
+    23:44:16.021 | 172 Pool-1-worker-65 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/admin/system-notifications
+    23:44:16.022 | 172 Pool-1-worker-65 | DEBUG | .w.a.AdminSystemNotificationResource : REST request to save SystemNotification : SystemNotification{id=null, expireDate='2025-02-17T23:44:16.017436945Z', type='null'}
+    23:44:16.024 | 172 Pool-1-worker-65 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/admin/system-notifications/299
+    23:44:16.025 | 172 Pool-1-worker-65 | DEBUG | .w.a.AdminSystemNotificationResource : REST request to delete SystemNotification : 299
+
+  Starting logs for SystemNotificationIntegrationTest > testGetAllSystemNotifications()
+    23:44:16.041 | 172 Pool-1-worker-65 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SystemNotificationIntegrationTest#testGetAllSystemNotifications'
+    23:44:16.042 | 172 Pool-1-worker-65 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/system-notifications
+    23:44:16.043 | 172 Pool-1-worker-65 | DEBUG | c.a.a.c.w.SystemNotificationResource : REST request to get all Courses the user has access to
+
+  Starting logs for SystemNotificationIntegrationTest > testCreateSystemNotification_asUser_Forbidden()
+    23:44:16.067 | 172 Pool-1-worker-65 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SystemNotificationIntegrationTest#testCreateSystemNotification_asUser_Forbidden'
+    23:44:16.068 | 172 Pool-1-worker-65 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for SystemNotificationIntegrationTest > testGetActiveSystemNotification()
+    23:44:16.091 | 172 Pool-1-worker-65 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SystemNotificationIntegrationTest#testGetActiveSystemNotification'
+    23:44:16.092 | 172 Pool-1-worker-65 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/public/system-notifications/active
+    23:44:16.092 | 172 Pool-1-worker-65 | DEBUG | w.o.PublicSystemNotificationResource : REST request to get relevant system notifications
+
+  Starting logs for SystemNotificationIntegrationTest > testGetSystemNotification()
+    23:44:16.110 | 172 Pool-1-worker-65 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='SystemNotificationIntegrationTest#testGetSystemNotification'
+    23:44:16.111 | 172 Pool-1-worker-65 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/admin/system-notifications
+    23:44:16.111 | 172 Pool-1-worker-65 | DEBUG | .w.a.AdminSystemNotificationResource : REST request to save SystemNotification : SystemNotification{id=null, expireDate='2025-02-17T23:44:16.109909850Z', type='null'}
+    23:44:16.113 | 172 Pool-1-worker-65 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/system-notifications/312
+    23:44:16.114 | 172 Pool-1-worker-65 | DEBUG | c.a.a.c.w.SystemNotificationResource : REST request to get SystemNotification : 312
+    23:44:16.116 | 172 Pool-1-worker-65 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/system-notifications/3121
+    23:44:16.116 | 172 Pool-1-worker-65 | DEBUG | c.a.a.c.w.SystemNotificationResource : REST request to get SystemNotification : 3121
+    23:44:16.117 | 172 Pool-1-worker-65 | WARN  | o.z.p.spring.common.AdviceTraits     : Not Found: 404 NOT_FOUND
+
+Finished logs for SystemNotificationIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

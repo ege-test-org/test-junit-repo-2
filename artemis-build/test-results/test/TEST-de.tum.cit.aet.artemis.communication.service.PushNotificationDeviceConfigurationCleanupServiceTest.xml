@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.service.PushNotificationDeviceConfigurationCleanupServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:17" hostname="fv-az1721-502" time="0.021">
+  <properties/>
+  <testcase name="cleanupTest()" classname="de.tum.cit.aet.artemis.communication.service.PushNotificationDeviceConfigurationCleanupServiceTest" time="0.021"/>
+  <system-out><![CDATA[
+Starting logs for PushNotificationDeviceConfigurationCleanupServiceTest
+
+  Starting logs for PushNotificationDeviceConfigurationCleanupServiceTest > cleanupTest()
+    23:44:17.595 | 176 Pool-1-worker-69 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='PushNotificationDeviceConfigurationCleanupServiceTest#cleanupTest'
+
+Finished logs for PushNotificationDeviceConfigurationCleanupServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

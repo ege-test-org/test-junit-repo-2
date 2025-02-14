@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.notifications.service.ConversationNotificationServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:16" hostname="fv-az1721-502" time="0.051">
+  <properties/>
+  <testcase name="createNotificationForNewMessageInConversation()" classname="de.tum.cit.aet.artemis.communication.notifications.service.ConversationNotificationServiceTest" time="0.051"/>
+  <system-out><![CDATA[
+Starting logs for ConversationNotificationServiceTest
+
+  Starting logs for ConversationNotificationServiceTest > createNotificationForNewMessageInConversation()
+    23:44:16.275 | 173 Pool-1-worker-66 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:44:16.278 | 173 Pool-1-worker-66 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 1 tutors...
+    23:44:16.279 | 173 Pool-1-worker-66 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:44:16.281 | 173 Pool-1-worker-66 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:44:16.283 | 173 Pool-1-worker-66 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:44:16.284 | 173 Pool-1-worker-66 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:44:16.285 | 173 Pool-1-worker-66 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:44:16.285 | 173 Pool-1-worker-66 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:44:16.287 | 173 Pool-1-worker-66 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:44:16.290 | 173 Pool-1-worker-66 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ConversationNotificationServiceTest#createNotificationForNewMessageInConversation'
+
+Finished logs for ConversationNotificationServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.StudentLearningAnalyticsIntegrationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:30" hostname="fv-az1721-502" time="0.516">
+  <properties/>
+  <testcase name="testEnableStudentCourseAnalyticsDashboardAsAdmin_success()" classname="de.tum.cit.aet.artemis.core.StudentLearningAnalyticsIntegrationTest" time="0.293"/>
+  <testcase name="testEnableStudentCourseAnalyticsDashboardAsInstructor_badRequest()" classname="de.tum.cit.aet.artemis.core.StudentLearningAnalyticsIntegrationTest" time="0.221"/>
+  <system-out><![CDATA[
+Starting logs for StudentLearningAnalyticsIntegrationTest
+
+  Starting logs for StudentLearningAnalyticsIntegrationTest > testEnableStudentCourseAnalyticsDashboardAsAdmin_success()
+    23:44:30.508 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:44:30.512 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:44:30.513 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:44:30.515 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:44:30.517 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:44:30.519 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:44:30.519 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:44:30.519 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database...
+    23:44:30.523 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database. Done
+    23:44:30.579 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1592 and participant 280 (result to be deleted: null)
+    23:44:30.580 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1592 and participant 280 at 2025-02-14T23:44:30.680024571Z[Etc/UTC].
+    23:44:30.580 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1592 and participant 280 (result to be deleted: null)
+    23:44:30.580 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1592 and participant 280 at 2025-02-14T23:44:30.680683830Z[Etc/UTC].
+    23:44:30.581 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1593 and participant 280 (result to be deleted: null)
+    23:44:30.581 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1593 and participant 280 at 2025-02-14T23:44:30.681302985Z[Etc/UTC].
+    23:44:30.582 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1595 and participant 280 (result to be deleted: null)
+    23:44:30.582 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1595 and participant 280 at 2025-02-14T23:44:30.682227779Z[Etc/UTC].
+    23:44:30.583 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1595 and participant 280 (result to be deleted: null)
+    23:44:30.585 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1595 and participant 280 at 2025-02-14T23:44:30.685189552Z[Etc/UTC].
+    23:44:30.612 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1592 and participant 280 (result to be deleted: null)
+    23:44:30.612 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1592 and participant 280 at 2025-02-14T23:44:30.712888396Z[Etc/UTC].
+    23:44:30.640 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1592 and participant 280 (result to be deleted: null)
+    23:44:30.640 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1592 and participant 280 at 2025-02-14T23:44:30.740979622Z[Etc/UTC].
+    23:44:30.658 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1593 and participant 280 (result to be deleted: null)
+    23:44:30.658 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1593 and participant 280 at 2025-02-14T23:44:30.758899690Z[Etc/UTC].
+    23:44:30.677 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1595 and participant 280 (result to be deleted: null)
+    23:44:30.677 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1595 and participant 280 at 2025-02-14T23:44:30.777312737Z[Etc/UTC].
+    23:44:30.696 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1595 and participant 280 (result to be deleted: null)
+    23:44:30.696 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1595 and participant 280 at 2025-02-14T23:44:30.796270930Z[Etc/UTC].
+    23:44:30.697 | 192 Pool-1-worker-85 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StudentLearningAnalyticsIntegrationTest#testEnableStudentCourseAnalyticsDashboardAsAdmin_success'
+    23:44:30.721 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/1272
+    23:44:30.734 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.core.web.CourseResource    : REST request to update Course : Course{id=1272, title='Course title dbf28a7c-3172-49a6-a760-4788db0d09fd', description='null', shortName='short02cbdab00de2804726090740a7f3b7d52737', studentGroupName='studentlearninganalyticstumuser', teachingAssistantGroupName='studentlearninganalyticstutor', editorGroupName='studentlearninganalyticseditor', instructorGroupName='studentlearninganalyticsinstructor', startDate='2025-02-09T23:44:30.523700897Z', endDate='2025-02-19T23:44:30.523702440Z', enrollmentStartDate='null', enrollmentEndDate='null', unenrollmentEndDate='null', semester='null'', onlineCourse='false', color='null', courseIcon='null', enrollmentEnabled='false', unenrollmentEnabled='false', presentationScore='2', faqEnabled='false'}
+    23:44:30.741 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1592 and participant 280 to update participant scores.
+    23:44:30.752 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1592 and participant 280 took 11 ms.
+    23:44:30.758 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1593 and participant 280 to update participant scores.
+    23:44:30.772 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1593 and participant 280 took 14 ms.
+
+  Starting logs for StudentLearningAnalyticsIntegrationTest > testEnableStudentCourseAnalyticsDashboardAsInstructor_badRequest()
+    23:44:30.812 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:44:30.828 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:44:30.834 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:44:30.842 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:44:30.850 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:44:30.852 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses...
+    23:44:30.856 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses. Done
+    23:44:30.856 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database...
+    23:44:30.894 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 8 users to database. Done
+    23:44:30.928 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1597 and participant 280 (result to be deleted: null)
+    23:44:30.928 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1597 and participant 280 at 2025-02-14T23:44:31.028810607Z[Etc/UTC].
+    23:44:30.929 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1597 and participant 280 (result to be deleted: null)
+    23:44:30.929 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1597 and participant 280 at 2025-02-14T23:44:31.029370501Z[Etc/UTC].
+    23:44:30.929 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1598 and participant 280 (result to be deleted: null)
+    23:44:30.930 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1598 and participant 280 at 2025-02-14T23:44:31.029932679Z[Etc/UTC].
+    23:44:30.930 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1600 and participant 280 (result to be deleted: null)
+    23:44:30.930 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1600 and participant 280 at 2025-02-14T23:44:31.030497974Z[Etc/UTC].
+    23:44:30.930 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1600 and participant 280 (result to be deleted: null)
+    23:44:30.930 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1600 and participant 280 at 2025-02-14T23:44:31.030944606Z[Etc/UTC].
+    23:44:30.938 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1597 and participant 280 (result to be deleted: null)
+    23:44:30.938 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1597 and participant 280 at 2025-02-14T23:44:31.038465411Z[Etc/UTC].
+    23:44:30.945 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1597 and participant 280 (result to be deleted: null)
+    23:44:30.946 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1597 and participant 280 at 2025-02-14T23:44:31.046038354Z[Etc/UTC].
+    23:44:30.957 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1598 and participant 280 (result to be deleted: null)
+    23:44:30.957 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1598 and participant 280 at 2025-02-14T23:44:31.057604462Z[Etc/UTC].
+    23:44:30.977 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1600 and participant 280 (result to be deleted: null)
+    23:44:30.978 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1600 and participant 280 at 2025-02-14T23:44:31.078047936Z[Etc/UTC].
+    23:44:30.991 | 192 Pool-1-worker-85 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1600 and participant 280 (result to be deleted: null)
+    23:44:30.992 | 192 Pool-1-worker-85 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1600 and participant 280 at 2025-02-14T23:44:31.092062971Z[Etc/UTC].
+    23:44:30.992 | 192 Pool-1-worker-85 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='StudentLearningAnalyticsIntegrationTest#testEnableStudentCourseAnalyticsDashboardAsInstructor_badRequest'
+    23:44:31.002 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/1274
+    23:44:31.003 | 192 Pool-1-worker-85 | DEBUG | d.t.c.a.a.core.web.CourseResource    : REST request to update Course : Course{id=1274, title='Course title cf1db878-0b17-487b-9db6-2e5a6c1d1be1', description='null', shortName='short09096d3605e95049ac08f8602aae664f0279', studentGroupName='studentlearninganalyticstumuser', teachingAssistantGroupName='studentlearninganalyticstutor', editorGroupName='studentlearninganalyticseditor', instructorGroupName='studentlearninganalyticsinstructor', startDate='2025-02-09T23:44:30.894889670Z', endDate='2025-02-19T23:44:30.894891704Z', enrollmentStartDate='null', enrollmentEndDate='null', unenrollmentEndDate='null', semester='null'', onlineCourse='false', color='null', courseIcon='null', enrollmentEnabled='false', unenrollmentEnabled='false', presentationScore='2', faqEnabled='false'}
+    23:44:31.008 | 192 Pool-1-worker-85 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, You are not allowed to change the dashboard settings of a course
+    23:44:31.008 | 192 Pool-1-worker-85 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: You are not allowed to change the dashboard settings of a course
+
+Finished logs for StudentLearningAnalyticsIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

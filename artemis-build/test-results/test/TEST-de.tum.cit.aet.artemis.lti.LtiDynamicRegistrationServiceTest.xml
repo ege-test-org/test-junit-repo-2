@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lti.LtiDynamicRegistrationServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:00" hostname="fv-az1721-502" time="0.023">
+  <properties/>
+  <testcase name="badRequestWhenPlatformConfigurationEmpty()" classname="de.tum.cit.aet.artemis.lti.LtiDynamicRegistrationServiceTest" time="0.008"/>
+  <testcase name="badRequestWhenGetPostClientRegistrationFails()" classname="de.tum.cit.aet.artemis.lti.LtiDynamicRegistrationServiceTest" time="0.003"/>
+  <testcase name="performDynamicRegistrationSuccessWithoutToken()" classname="de.tum.cit.aet.artemis.lti.LtiDynamicRegistrationServiceTest" time="0.001"/>
+  <testcase name="performDynamicRegistrationSuccess()" classname="de.tum.cit.aet.artemis.lti.LtiDynamicRegistrationServiceTest" time="0.002"/>
+  <testcase name="badRequestWhenRegistrationEndpointEmpty()" classname="de.tum.cit.aet.artemis.lti.LtiDynamicRegistrationServiceTest" time="0.002"/>
+  <testcase name="badRequestWhenGetPlatformConfigurationFails()" classname="de.tum.cit.aet.artemis.lti.LtiDynamicRegistrationServiceTest" time="0.002"/>
+  <system-out><![CDATA[
+Starting logs for LtiDynamicRegistrationServiceTest
+
+  Starting logs for LtiDynamicRegistrationServiceTest > badRequestWhenPlatformConfigurationEmpty()
+    23:40:00.484 |  27 nPool-1-worker-1 | INFO  | .a.l.s.LtiDynamicRegistrationService : Got LTI13 configuration from url
+
+  Starting logs for LtiDynamicRegistrationServiceTest > badRequestWhenGetPostClientRegistrationFails()
+    23:40:00.487 |  27 nPool-1-worker-1 | INFO  | .a.l.s.LtiDynamicRegistrationService : Got LTI13 configuration from url
+    23:40:00.488 |  27 nPool-1-worker-1 | ERROR | .a.l.s.LtiDynamicRegistrationService : Could not register new client in external LMS at register
+
+  Starting logs for LtiDynamicRegistrationServiceTest > performDynamicRegistrationSuccessWithoutToken()
+    23:40:00.490 |  27 nPool-1-worker-1 | INFO  | .a.l.s.LtiDynamicRegistrationService : Got LTI13 configuration from url
+    23:40:00.490 |  27 nPool-1-worker-1 | INFO  | .a.l.s.LtiDynamicRegistrationService : Registered http://artemis.com as LTI1.3 tool at register
+
+  Starting logs for LtiDynamicRegistrationServiceTest > performDynamicRegistrationSuccess()
+    23:40:00.494 |  27 nPool-1-worker-1 | INFO  | .a.l.s.LtiDynamicRegistrationService : Got LTI13 configuration from url
+    23:40:00.494 |  27 nPool-1-worker-1 | INFO  | .a.l.s.LtiDynamicRegistrationService : Registered http://artemis.com as LTI1.3 tool at register
+
+  Starting logs for LtiDynamicRegistrationServiceTest > badRequestWhenRegistrationEndpointEmpty()
+    23:40:00.497 |  27 nPool-1-worker-1 | INFO  | .a.l.s.LtiDynamicRegistrationService : Got LTI13 configuration from url
+
+  Starting logs for LtiDynamicRegistrationServiceTest > badRequestWhenGetPlatformConfigurationFails()
+    23:40:00.499 |  27 nPool-1-worker-1 | ERROR | .a.l.s.LtiDynamicRegistrationService : Could not get configuration from url
+
+Finished logs for LtiDynamicRegistrationServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

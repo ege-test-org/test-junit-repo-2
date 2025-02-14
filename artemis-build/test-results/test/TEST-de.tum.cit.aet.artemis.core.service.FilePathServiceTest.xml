@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.service.FilePathServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:39" hostname="fv-az1721-502" time="0.062">
+  <properties/>
+  <testcase name="testPublicPathForActualTempFilePath()" classname="de.tum.cit.aet.artemis.core.service.FilePathServiceTest" time="0.013"/>
+  <testcase name="testActualPathForPublicFileUploadExercisePath_shouldReturnNull()" classname="de.tum.cit.aet.artemis.core.service.FilePathServiceTest" time="0.008"/>
+  <testcase name="testPublicPathForActualPath_shouldReturnNull()" classname="de.tum.cit.aet.artemis.core.service.FilePathServiceTest" time="0.009"/>
+  <testcase name="testPublicPathForActualPath_shouldThrowException()" classname="de.tum.cit.aet.artemis.core.service.FilePathServiceTest" time="0.009"/>
+  <testcase name="testActualPathForPublicFileUploadExercisePathOrThrow_shouldThrowException()" classname="de.tum.cit.aet.artemis.core.service.FilePathServiceTest" time="0.009"/>
+  <testcase name="testActualPathForPublicPath()" classname="de.tum.cit.aet.artemis.core.service.FilePathServiceTest" time="0.009"/>
+  <system-out><![CDATA[
+Starting logs for FilePathServiceTest
+
+  Starting logs for FilePathServiceTest > testPublicPathForActualTempFilePath()
+    23:45:39.119 | 350 ool-1-worker-114 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FilePathServiceTest#testPublicPathForActualTempFilePath'
+
+  Starting logs for FilePathServiceTest > testActualPathForPublicFileUploadExercisePath_shouldReturnNull()
+    23:45:39.131 | 350 ool-1-worker-114 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FilePathServiceTest#testActualPathForPublicFileUploadExercisePath_shouldReturnNull'
+
+  Starting logs for FilePathServiceTest > testPublicPathForActualPath_shouldReturnNull()
+    23:45:39.141 | 350 ool-1-worker-114 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FilePathServiceTest#testPublicPathForActualPath_shouldReturnNull'
+
+  Starting logs for FilePathServiceTest > testPublicPathForActualPath_shouldThrowException()
+    23:45:39.150 | 350 ool-1-worker-114 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FilePathServiceTest#testPublicPathForActualPath_shouldThrowException'
+
+  Starting logs for FilePathServiceTest > testActualPathForPublicFileUploadExercisePathOrThrow_shouldThrowException()
+    23:45:39.161 | 350 ool-1-worker-114 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FilePathServiceTest#testActualPathForPublicFileUploadExercisePathOrThrow_shouldThrowException'
+
+  Starting logs for FilePathServiceTest > testActualPathForPublicPath()
+    23:45:39.171 | 350 ool-1-worker-114 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FilePathServiceTest#testActualPathForPublicPath'
+
+Finished logs for FilePathServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

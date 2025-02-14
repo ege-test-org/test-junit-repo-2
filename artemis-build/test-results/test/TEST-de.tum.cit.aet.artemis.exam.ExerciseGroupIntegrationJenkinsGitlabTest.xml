@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:07" hostname="fv-az1721-502" time="1.366">
+  <properties/>
+  <testcase name="testCreateExerciseGroup_asEditor()" classname="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" time="0.075"/>
+  <testcase name="testUpdateOrderOfExerciseGroups()" classname="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" time="0.099"/>
+  <testcase name="importExerciseGroup_successfulWithExercisesIntoSameExam()" classname="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" time="0.077"/>
+  <testcase name="testDeleteExerciseGroup_asEditor()" classname="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" time="0.037"/>
+  <testcase name="testGetExerciseGroup_asEditor()" classname="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" time="0.065"/>
+  <testcase name="importExerciseGroup_successfulIntoDifferentExam()" classname="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" time="0.145"/>
+  <testcase name="testDeleteExerciseGroup_asInstructor()" classname="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" time="0.057"/>
+  <testcase name="testGetExerciseGroupsForExam_asEditor()" classname="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" time="0.062"/>
+  <testcase name="testUpdateExerciseGroup_asEditor()" classname="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" time="0.125"/>
+  <testcase name="importExerciseGroup_successfulWithImportToOtherCourse()" classname="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" time="0.073"/>
+  <testcase name="testImportExerciseGroup_programmingExerciseSameShortNameOrTitle(String, String, String, String) [1] shortName1=A, shortName2=A, title1=B, title2=C" classname="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" time="0.151"/>
+  <testcase name="testImportExerciseGroup_programmingExerciseSameShortNameOrTitle(String, String, String, String) [2] shortName1=A, shortName2=B, title1=C, title2=C" classname="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" time="0.059"/>
+  <testcase name="testImportExerciseGroup_programmingExerciseSameShortNameOrTitle(String, String, String, String) [3] shortName1=A, shortName2=A, title1=B, title2=B" classname="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" time="0.066"/>
+  <testcase name="testAll_asTutor()" classname="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" time="0.067"/>
+  <testcase name="testAll_asStudent()" classname="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" time="0.07"/>
+  <testcase name="importExerciseGroup_preCheckFailed()" classname="de.tum.cit.aet.artemis.exam.ExerciseGroupIntegrationJenkinsGitlabTest" time="0.059"/>
+  <system-out><![CDATA[
+Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest
+
+  Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest > testCreateExerciseGroup_asEditor()
+    23:43:07.889 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:07.890 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:07.895 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:07.900 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:07.904 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:07.907 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:43:07.909 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:43:07.909 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:07.911 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:07.914 | 367 ool-1-worker-131 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ExerciseGroupIntegrationJenkinsGitlabTest#testCreateExerciseGroup_asEditor'
+    23:43:07.916 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/248/exams/547/exercise-groups
+    23:43:07.919 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to create an exercise group : ExerciseGroup{title='Exercise group title', isMandatory=true}
+    23:43:07.919 | 367 ool-1-worker-131 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, A new exerciseGroup cannot already have an ID
+    23:43:07.919 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: A new exerciseGroup cannot already have an ID
+    23:43:07.921 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/248/exams/547/exercise-groups
+    23:43:07.921 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to create an exercise group : ExerciseGroup{title='Exercise group title', isMandatory=true}
+    23:43:07.922 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Conflict: The exercise group has to belong no an exam.
+    23:43:07.924 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/248/exams/548/exercise-groups
+    23:43:07.924 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to create an exercise group : ExerciseGroup{title='ExerciseGroup 123', isMandatory=true}
+    23:43:07.932 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/248/exams/548/exercise-groups/422
+    23:43:07.933 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to get exercise group : 422
+
+  Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest > testUpdateOrderOfExerciseGroups()
+    23:43:07.951 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:07.957 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:07.961 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:07.963 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:07.971 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:07.976 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:07.976 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:07.976 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:07.985 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:07.989 | 367 ool-1-worker-131 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ExerciseGroupIntegrationJenkinsGitlabTest#testUpdateOrderOfExerciseGroups'
+    23:43:07.997 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/249/exams/551/exercise-groups-order
+    23:43:07.998 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.exam.web.ExamResource      : REST request to update the order of exercise groups of exam : 551
+    23:43:08.010 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/249/exams/551/exercise-groups-order
+    23:43:08.013 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.exam.web.ExamResource      : REST request to update the order of exercise groups of exam : 551
+    23:43:08.017 | 367 ool-1-worker-131 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The number of exercise groups changed
+    23:43:08.017 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The number of exercise groups changed
+    23:43:08.020 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/249/exams/551/exercise-groups-order
+    23:43:08.021 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.exam.web.ExamResource      : REST request to update the order of exercise groups of exam : 551
+    23:43:08.024 | 367 ool-1-worker-131 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The number of exercise groups changed
+    23:43:08.024 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The number of exercise groups changed
+    23:43:08.027 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/249/exams/551/exercise-groups-order
+    23:43:08.029 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.exam.web.ExamResource      : REST request to update the order of exercise groups of exam : 551
+    23:43:08.035 | 367 ool-1-worker-131 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The exercise group is not related to the exam
+    23:43:08.035 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The exercise group is not related to the exam
+
+  Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest > importExerciseGroup_successfulWithExercisesIntoSameExam()
+    23:43:08.052 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:08.055 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:08.057 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:08.060 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:08.063 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:08.064 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:08.065 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:08.065 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:08.067 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:08.070 | 367 ool-1-worker-131 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ExerciseGroupIntegrationJenkinsGitlabTest#importExerciseGroup_successfulWithExercisesIntoSameExam'
+    23:43:08.078 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/250/exams/554/import-exercise-group
+    23:43:08.083 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to import 5 exercise group(s) to exam 554
+    23:43:08.098 | 367 ool-1-worker-131 | DEBUG | .a.m.s.ModelingExerciseImportService : Creating a new Exercise based on exercise 732
+    23:43:08.098 | 367 ool-1-worker-131 | DEBUG | .a.m.s.ModelingExerciseImportService : Copying the exercise basis from ModelingExercise{id=732, maxPoints='5.0', diagramType='ClassDiagram', exampleSolutionModel='This is my example solution model', exampleSolutionExplanation='This is my example solution model'}
+    23:43:08.099 | 367 ool-1-worker-131 | DEBUG | .a.m.s.ModelingExerciseImportService : Copying the ExampleSubmissions to new Exercise: ModelingExercise{id=736, maxPoints='5.0', diagramType='ClassDiagram', exampleSolutionModel='This is my example solution model', exampleSolutionExplanation='This is my example solution model'}
+    23:43:08.101 | 367 ool-1-worker-131 | DEBUG | .c.a.a.t.s.TextExerciseImportService : Creating a new Exercise based on exercise TextExercise{id=733, exampleSolution='This is my example solution'}
+    23:43:08.101 | 367 ool-1-worker-131 | DEBUG | .c.a.a.t.s.TextExerciseImportService : Copying the exercise basis from TextExercise{id=733, exampleSolution='This is my example solution'}
+    23:43:08.102 | 367 ool-1-worker-131 | DEBUG | .c.a.a.t.s.TextExerciseImportService : Copying the ExampleSubmissions to new Exercise: TextExercise{id=737, exampleSolution='This is my example solution'}
+    23:43:08.104 | 367 ool-1-worker-131 | DEBUG | .f.s.FileUploadExerciseImportService : Creating a new Exercise based on exercise FileUploadExercise{id=734}
+    23:43:08.104 | 367 ool-1-worker-131 | DEBUG | .f.s.FileUploadExerciseImportService : Copying the exercise basis from FileUploadExercise{id=734}
+    23:43:08.106 | 367 ool-1-worker-131 | DEBUG | .c.a.a.q.s.QuizExerciseImportService : Creating a new Exercise based on exercise QuizExercise{id=735, title='a229c493-83fc-490d-8ce2-beb3151c6df7', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='null', duration='10', dueDate='null'}
+    23:43:08.106 | 367 ool-1-worker-131 | DEBUG | .c.a.a.q.s.QuizExerciseImportService : Copying the exercise basis from QuizExercise{id=735, title='a229c493-83fc-490d-8ce2-beb3151c6df7', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='null', duration='10', dueDate='null'}
+    23:43:08.106 | 367 ool-1-worker-131 | DEBUG | .c.a.a.q.s.QuizExerciseImportService : Copying the QuizQuestions to new QuizExercise: QuizExercise{id=null, title='a229c493-83fc-490d-8ce2-beb3151c6df7', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='null', duration='10', dueDate='null'}
+    23:43:08.106 | 367 ool-1-worker-131 | DEBUG | .c.a.a.q.s.QuizExerciseImportService : Copying the QuizBatches to new QuizExercise: QuizExercise{id=null, title='a229c493-83fc-490d-8ce2-beb3151c6df7', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='null', duration='10', dueDate='null'}
+    23:43:08.106 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='a229c493-83fc-490d-8ce2-beb3151c6df7', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='null', duration='10', dueDate='null'}
+
+  Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest > testDeleteExerciseGroup_asEditor()
+    23:43:08.131 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:08.134 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:08.136 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:08.139 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:08.142 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:08.143 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:08.144 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:08.144 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:08.147 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:08.151 | 367 ool-1-worker-131 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ExerciseGroupIntegrationJenkinsGitlabTest#testDeleteExerciseGroup_asEditor'
+    23:43:08.152 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/251/exams/555/exercise-groups/439
+    23:43:08.154 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest > testGetExerciseGroup_asEditor()
+    23:43:08.169 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:08.171 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:08.174 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:08.178 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:08.181 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:08.184 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:08.184 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:08.184 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:08.188 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:08.191 | 367 ool-1-worker-131 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ExerciseGroupIntegrationJenkinsGitlabTest#testGetExerciseGroup_asEditor'
+    23:43:08.196 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/252/exams/557/exercise-groups/441
+    23:43:08.196 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to get exercise group : 441
+
+  Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest > importExerciseGroup_successfulIntoDifferentExam()
+    23:43:08.242 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:08.246 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:08.249 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:08.251 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:08.254 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:08.256 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:08.256 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:08.256 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:08.260 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:08.264 | 367 ool-1-worker-131 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ExerciseGroupIntegrationJenkinsGitlabTest#importExerciseGroup_successfulIntoDifferentExam'
+    23:43:08.290 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/253/exams/561/import-exercise-group
+    23:43:08.294 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to import 5 exercise group(s) to exam 561
+    23:43:08.312 | 367 ool-1-worker-131 | DEBUG | .a.m.s.ModelingExerciseImportService : Creating a new Exercise based on exercise 747
+    23:43:08.312 | 367 ool-1-worker-131 | DEBUG | .a.m.s.ModelingExerciseImportService : Copying the exercise basis from ModelingExercise{id=747, maxPoints='5.0', diagramType='ClassDiagram', exampleSolutionModel='This is my example solution model', exampleSolutionExplanation='This is my example solution model'}
+    23:43:08.313 | 367 ool-1-worker-131 | DEBUG | .a.m.s.ModelingExerciseImportService : Copying the ExampleSubmissions to new Exercise: ModelingExercise{id=751, maxPoints='5.0', diagramType='ClassDiagram', exampleSolutionModel='This is my example solution model', exampleSolutionExplanation='This is my example solution model'}
+    23:43:08.320 | 367 ool-1-worker-131 | DEBUG | .c.a.a.t.s.TextExerciseImportService : Creating a new Exercise based on exercise TextExercise{id=748, exampleSolution='This is my example solution'}
+    23:43:08.320 | 367 ool-1-worker-131 | DEBUG | .c.a.a.t.s.TextExerciseImportService : Copying the exercise basis from TextExercise{id=748, exampleSolution='This is my example solution'}
+    23:43:08.321 | 367 ool-1-worker-131 | DEBUG | .c.a.a.t.s.TextExerciseImportService : Copying the ExampleSubmissions to new Exercise: TextExercise{id=752, exampleSolution='This is my example solution'}
+    23:43:08.324 | 367 ool-1-worker-131 | DEBUG | .f.s.FileUploadExerciseImportService : Creating a new Exercise based on exercise FileUploadExercise{id=749}
+    23:43:08.324 | 367 ool-1-worker-131 | DEBUG | .f.s.FileUploadExerciseImportService : Copying the exercise basis from FileUploadExercise{id=749}
+    23:43:08.329 | 367 ool-1-worker-131 | DEBUG | .c.a.a.q.s.QuizExerciseImportService : Creating a new Exercise based on exercise QuizExercise{id=750, title='07ccf94f-240b-4a39-9b1e-07bdbb4a265f', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='null', duration='10', dueDate='null'}
+    23:43:08.329 | 367 ool-1-worker-131 | DEBUG | .c.a.a.q.s.QuizExerciseImportService : Copying the exercise basis from QuizExercise{id=750, title='07ccf94f-240b-4a39-9b1e-07bdbb4a265f', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='null', duration='10', dueDate='null'}
+    23:43:08.331 | 367 ool-1-worker-131 | DEBUG | .c.a.a.q.s.QuizExerciseImportService : Copying the QuizQuestions to new QuizExercise: QuizExercise{id=null, title='07ccf94f-240b-4a39-9b1e-07bdbb4a265f', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='null', duration='10', dueDate='null'}
+    23:43:08.331 | 367 ool-1-worker-131 | DEBUG | .c.a.a.q.s.QuizExerciseImportService : Copying the QuizBatches to new QuizExercise: QuizExercise{id=null, title='07ccf94f-240b-4a39-9b1e-07bdbb4a265f', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='null', duration='10', dueDate='null'}
+    23:43:08.331 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='07ccf94f-240b-4a39-9b1e-07bdbb4a265f', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='null', duration='10', dueDate='null'}
+    23:43:08.373 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : CIBuildJobQueueItem added to queue: BuildJobQueueItem[id=4851739576588371, name=SHORT495D587A0856D04A9E08BC60D2E08365FB9ETSTEXC-LOCALCIINTSTUDENT1, buildAgent=BuildAgentDTO[name=null, memberAddress=null, displayName=null], participationId=485, courseId=155, exerciseId=306, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=short495d587a0856d04a9e08bc60d2e08365fb9etstexc-localciintstudent1, repositoryType=user, triggeredByPushTo=user, assignmentRepositoryUri=http://localhost:49152/git/SHORT495D587A0856D04A9E08BC60D2E08365FB9ETSTEXC/short495d587a0856d04a9e08bc60d2e08365fb9etstexc-localciintstudent1.git, testRepositoryUri=http://localhost:49152/git/SHORT495D587A0856D04A9E08BC60D2E08365FB9ETSTEXC/short495d587a0856d04a9e08bc60d2e08365fb9etstexc-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@6bda37e3, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@4a71d00c], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:43:08.371015915Z[Etc/UTC], buildStartDate=null, buildCompletionDate=null, estimatedCompletionDate=null, estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+chmod +x ./gradlew
+./gradlew clean test
+, dockerImage=dummy-docker-image:latest, commitHashToBuild=ebb8aa4dc3625fe07e975266e18313ad871ce864, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_GRADLE, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/test-results/test/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]
+    23:43:08.374 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : Current queued items: 1
+    23:43:08.374 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:43:08.374 | 566 localvc.event-13 | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:43:08.375 | 564 localvc.event-11 | DEBUG | a.p.s.l.LocalCIQueueWebsocketService : CIBuildJobQueueItem added to processing jobs: BuildJobQueueItem[id=4851739576588371, name=SHORT495D587A0856D04A9E08BC60D2E08365FB9ETSTEXC-LOCALCIINTSTUDENT1, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=485, courseId=155, exerciseId=306, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=short495d587a0856d04a9e08bc60d2e08365fb9etstexc-localciintstudent1, repositoryType=user, triggeredByPushTo=user, assignmentRepositoryUri=http://localhost:49152/git/SHORT495D587A0856D04A9E08BC60D2E08365FB9ETSTEXC/short495d587a0856d04a9e08bc60d2e08365fb9etstexc-localciintstudent1.git, testRepositoryUri=http://localhost:49152/git/SHORT495D587A0856D04A9E08BC60D2E08365FB9ETSTEXC/short495d587a0856d04a9e08bc60d2e08365fb9etstexc-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@18ddf620, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@27c49de1], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:43:08.371015915Z[Etc/UTC], buildStartDate=2025-02-14T23:43:08.374658929Z[Etc/UTC], buildCompletionDate=null, estimatedCompletionDate=2025-02-14T23:43:27.374650503Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+chmod +x ./gradlew
+./gradlew clean test
+, dockerImage=dummy-docker-image:latest, commitHashToBuild=ebb8aa4dc3625fe07e975266e18313ad871ce864, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_GRADLE, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/test-results/test/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]
+    23:43:08.375 | 058 pool-4-thread-1  | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Protecting branch main for Gitlab repository SHORTA309E14E00F32040E40A17A07EB7860F2D04TE9C/shorta309e14e00f32040e40a17a07eb7860f2d04te9c-examparticipationteststudent1
+    23:43:08.375 | 564 localvc.event-11 | DEBUG | s.l.LocalCIWebsocketMessagingService : Sending message on topic /topic/admin/running-jobs: [BuildJobQueueItem[id=4851739576588371, name=SHORT495D587A0856D04A9E08BC60D2E08365FB9ETSTEXC-LOCALCIINTSTUDENT1, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=485, courseId=155, exerciseId=306, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=short495d587a0856d04a9e08bc60d2e08365fb9etstexc-localciintstudent1, repositoryType=user, triggeredByPushTo=user, assignmentRepositoryUri=, testRepositoryUri=, solutionRepositoryUri=, auxiliaryRepositoryUris=null, auxiliaryRepositoryCheckoutDirectories=null], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:43:08.371015915Z[Etc/UTC], buildStartDate=2025-02-14T23:43:08.374658929Z[Etc/UTC], buildCompletionDate=null, estimatedCompletionDate=2025-02-14T23:43:27.374650503Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=, dockerImage=, commitHashToBuild=ebb8aa4dc3625fe07e975266e18313ad871ce864, assignmentCommitHash=, testCommitHash=, branch=, programmingLanguage=null, projectType=null, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=null, timeoutSeconds=0, assignmentCheckoutPath=, testCheckoutPath=, solutionCheckoutPath=, dockerRunConfig=null], submissionResult=null]]
+    23:43:08.375 | 564 localvc.event-11 | DEBUG | s.l.LocalCIWebsocketMessagingService : Sending message on topic /topic/courses/155/running-jobs: [BuildJobQueueItem[id=4851739576588371, name=SHORT495D587A0856D04A9E08BC60D2E08365FB9ETSTEXC-LOCALCIINTSTUDENT1, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=485, courseId=155, exerciseId=306, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=short495d587a0856d04a9e08bc60d2e08365fb9etstexc-localciintstudent1, repositoryType=user, triggeredByPushTo=user, assignmentRepositoryUri=, testRepositoryUri=, solutionRepositoryUri=, auxiliaryRepositoryUris=null, auxiliaryRepositoryCheckoutDirectories=null], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:43:08.371015915Z[Etc/UTC], buildStartDate=2025-02-14T23:43:08.374658929Z[Etc/UTC], buildCompletionDate=null, estimatedCompletionDate=2025-02-14T23:43:27.374650503Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=, dockerImage=, commitHashToBuild=ebb8aa4dc3625fe07e975266e18313ad871ce864, assignmentCommitHash=, testCommitHash=, branch=, programmingLanguage=null, projectType=null, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=null, timeoutSeconds=0, assignmentCheckoutPath=, testCheckoutPath=, solutionCheckoutPath=, dockerRunConfig=null], submissionResult=null]]
+    23:43:08.382 | 058 pool-4-thread-1  | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Protecting branch main for Gitlab repository SHORTA309E14E00F32040E40A17A07EB7860F2D04TE9C/shorta309e14e00f32040e40a17a07eb7860f2d04te9c-examparticipationtesttutor1
+    23:43:08.383 | 060 pool-4-thread-3  | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Protecting branch main for Gitlab repository SHORTA309E14E00F32040E40A17A07EB7860F2D04TE9C/shorta309e14e00f32040e40a17a07eb7860f2d04te9c-examparticipationteststudent3
+
+  Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest > testDeleteExerciseGroup_asInstructor()
+    23:43:08.386 | 061 pool-4-thread-4  | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Protecting branch main for Gitlab repository SHORTA309E14E00F32040E40A17A07EB7860F2D04TE9C/shorta309e14e00f32040e40a17a07eb7860f2d04te9c-examparticipationteststudent2
+    23:43:08.391 | 566 localvc.event-13 | INFO  | a.a.b.s.SharedQueueProcessingService : Processing build job: BuildJobQueueItem[id=4851739576588371, name=SHORT495D587A0856D04A9E08BC60D2E08365FB9ETSTEXC-LOCALCIINTSTUDENT1, buildAgent=BuildAgentDTO[name=artemis-build-agent-test, memberAddress=[127.0.0.1]:5703, displayName=artemis-build-agent-test], participationId=485, courseId=155, exerciseId=306, retryCount=0, priority=2, status=null, repositoryInfo=RepositoryInfo[repositoryName=short495d587a0856d04a9e08bc60d2e08365fb9etstexc-localciintstudent1, repositoryType=user, triggeredByPushTo=user, assignmentRepositoryUri=http://localhost:49152/git/SHORT495D587A0856D04A9E08BC60D2E08365FB9ETSTEXC/short495d587a0856d04a9e08bc60d2e08365fb9etstexc-localciintstudent1.git, testRepositoryUri=http://localhost:49152/git/SHORT495D587A0856D04A9E08BC60D2E08365FB9ETSTEXC/short495d587a0856d04a9e08bc60d2e08365fb9etstexc-tests.git, solutionRepositoryUri=null, auxiliaryRepositoryUris=[Ljava.lang.String;@78c18be5, auxiliaryRepositoryCheckoutDirectories=[Ljava.lang.String;@74eb2d15], jobTimingInfo=JobTimingInfo[submissionDate=2025-02-14T23:43:08.371015915Z[Etc/UTC], buildStartDate=2025-02-14T23:43:08.374658929Z[Etc/UTC], buildCompletionDate=null, estimatedCompletionDate=2025-02-14T23:43:27.374650503Z[Etc/UTC], estimatedDuration=19], buildConfig=BuildConfig[buildScript=#!/bin/bash
+cd /var/tmp/testing-dir
+chmod +x ./gradlew
+./gradlew clean test
+, dockerImage=dummy-docker-image:latest, commitHashToBuild=ebb8aa4dc3625fe07e975266e18313ad871ce864, assignmentCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, testCommitHash=9b3a9bd71a0d80e5bbc42204c319ed3d1d4f0d6d, branch=main, programmingLanguage=JAVA, projectType=PLAIN_GRADLE, scaEnabled=false, sequentialTestRunsEnabled=false, resultPaths=[/var/tmp/testing-dir/**/test-results/test/*.xml], timeoutSeconds=0, assignmentCheckoutPath=null, testCheckoutPath=null, solutionCheckoutPath=null, dockerRunConfig=null], submissionResult=null]
+    23:43:08.391 | 061 pool-4-thread-4  | INFO  | d.t.c.a.a.p.s.gitlab.GitLabService   : Protecting branch main for Gitlab repository SHORTA309E14E00F32040E40A17A07EB7860F2D04TE9C/shorta309e14e00f32040e40a17a07eb7860f2d04te9c-examparticipationtesttutor2
+    23:43:08.393 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:08.396 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:08.398 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:08.401 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:08.403 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:08.405 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:08.406 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:08.406 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:08.409 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:08.413 | 367 ool-1-worker-131 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ExerciseGroupIntegrationJenkinsGitlabTest#testDeleteExerciseGroup_asInstructor'
+    23:43:08.414 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/254/exams/563/exercise-groups/459
+    23:43:08.414 | 367 ool-1-worker-131 | INFO  | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to delete exercise group : 459
+    23:43:08.419 | 367 ool-1-worker-131 | INFO  | d.t.c.a.a.e.w.ExerciseGroupResource  : User gtsettingtestinstructor1 has requested to delete the exercise group Exercise group title
+    23:43:08.420 | 367 ool-1-worker-131 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Request to delete TextExercise with id 755
+    23:43:08.421 | 367 ool-1-worker-131 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Deleting the channel took 343µs
+    23:43:08.421 | 367 ool-1-worker-131 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Cancel scheduled operations of exercise 755
+    23:43:08.421 | 367 ool-1-worker-131 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for potential Athena exercise 755
+    23:43:08.422 | 367 ool-1-worker-131 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 0 participations of exercise with id : 755
+    23:43:08.430 | 367 ool-1-worker-131 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '755' from title cache 'exerciseTitle'
+    23:43:08.432 | 367 ool-1-worker-131 | WARN  | .c.a.a.c.s.TitleCacheEvictionService : Unable to clear title of exercises from exercise group 459: Exercises not initialized
+
+  Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest > testGetExerciseGroupsForExam_asEditor()
+    23:43:08.447 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:08.450 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:08.452 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:08.455 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:08.462 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:08.464 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:08.465 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:08.465 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:08.473 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:08.478 | 367 ool-1-worker-131 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ExerciseGroupIntegrationJenkinsGitlabTest#testGetExerciseGroupsForExam_asEditor'
+    23:43:08.480 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/255/exams/565/exercise-groups
+    23:43:08.485 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to get all exercise groups for exam : 565
+
+  Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest > testUpdateExerciseGroup_asEditor()
+    23:43:08.521 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:08.523 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:08.526 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:08.529 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:08.531 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:08.612 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:08.613 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:08.613 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:08.616 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:08.620 | 367 ool-1-worker-131 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ExerciseGroupIntegrationJenkinsGitlabTest#testUpdateExerciseGroup_asEditor'
+    23:43:08.621 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/256/exams/567/exercise-groups
+    23:43:08.622 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to update an exercise group : ExerciseGroup{title='Exercise group title', isMandatory=true}
+    23:43:08.622 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to create an exercise group : ExerciseGroup{title='Exercise group title', isMandatory=true}
+    23:43:08.623 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Conflict: The exercise group has to belong no an exam.
+    23:43:08.625 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/256/exams/567/exercise-groups
+    23:43:08.626 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to update an exercise group : ExerciseGroup{title='Exercise group title', isMandatory=true}
+
+  Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest > importExerciseGroup_successfulWithImportToOtherCourse()
+    23:43:08.642 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:08.645 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:08.648 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:08.650 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:08.653 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:08.654 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:08.655 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:08.655 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:08.658 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:08.661 | 367 ool-1-worker-131 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ExerciseGroupIntegrationJenkinsGitlabTest#importExerciseGroup_successfulWithImportToOtherCourse'
+    23:43:08.677 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/258/exams/571/import-exercise-group
+    23:43:08.680 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to import 5 exercise group(s) to exam 571
+    23:43:08.689 | 367 ool-1-worker-131 | DEBUG | .a.m.s.ModelingExerciseImportService : Creating a new Exercise based on exercise 763
+    23:43:08.689 | 367 ool-1-worker-131 | DEBUG | .a.m.s.ModelingExerciseImportService : Copying the exercise basis from ModelingExercise{id=763, maxPoints='5.0', diagramType='ClassDiagram', exampleSolutionModel='This is my example solution model', exampleSolutionExplanation='This is my example solution model'}
+    23:43:08.690 | 367 ool-1-worker-131 | DEBUG | .a.m.s.ModelingExerciseImportService : Copying the ExampleSubmissions to new Exercise: ModelingExercise{id=767, maxPoints='5.0', diagramType='ClassDiagram', exampleSolutionModel='This is my example solution model', exampleSolutionExplanation='This is my example solution model'}
+    23:43:08.692 | 367 ool-1-worker-131 | DEBUG | .c.a.a.t.s.TextExerciseImportService : Creating a new Exercise based on exercise TextExercise{id=764, exampleSolution='This is my example solution'}
+    23:43:08.692 | 367 ool-1-worker-131 | DEBUG | .c.a.a.t.s.TextExerciseImportService : Copying the exercise basis from TextExercise{id=764, exampleSolution='This is my example solution'}
+    23:43:08.693 | 367 ool-1-worker-131 | DEBUG | .c.a.a.t.s.TextExerciseImportService : Copying the ExampleSubmissions to new Exercise: TextExercise{id=768, exampleSolution='This is my example solution'}
+    23:43:08.694 | 367 ool-1-worker-131 | DEBUG | .f.s.FileUploadExerciseImportService : Creating a new Exercise based on exercise FileUploadExercise{id=765}
+    23:43:08.694 | 367 ool-1-worker-131 | DEBUG | .f.s.FileUploadExerciseImportService : Copying the exercise basis from FileUploadExercise{id=765}
+    23:43:08.696 | 367 ool-1-worker-131 | DEBUG | .c.a.a.q.s.QuizExerciseImportService : Creating a new Exercise based on exercise QuizExercise{id=766, title='e989ee93-3ffd-4326-9490-96dfd02acc54', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='null', duration='10', dueDate='null'}
+    23:43:08.696 | 367 ool-1-worker-131 | DEBUG | .c.a.a.q.s.QuizExerciseImportService : Copying the exercise basis from QuizExercise{id=766, title='e989ee93-3ffd-4326-9490-96dfd02acc54', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='null', duration='10', dueDate='null'}
+    23:43:08.696 | 367 ool-1-worker-131 | DEBUG | .c.a.a.q.s.QuizExerciseImportService : Copying the QuizQuestions to new QuizExercise: QuizExercise{id=null, title='e989ee93-3ffd-4326-9490-96dfd02acc54', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='null', duration='10', dueDate='null'}
+    23:43:08.696 | 367 ool-1-worker-131 | DEBUG | .c.a.a.q.s.QuizExerciseImportService : Copying the QuizBatches to new QuizExercise: QuizExercise{id=null, title='e989ee93-3ffd-4326-9490-96dfd02acc54', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='null', duration='10', dueDate='null'}
+    23:43:08.697 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='e989ee93-3ffd-4326-9490-96dfd02acc54', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='null', duration='10', dueDate='null'}
+
+  Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest > testImportExerciseGroup_programmingExerciseSameShortNameOrTitle(String, String, String, String) [1] shortName1=A, shortName2=A, title1=B, title2=C
+    23:43:08.773 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:08.779 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:08.784 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:08.792 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:08.795 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:08.797 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:08.801 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:08.801 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:08.810 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:08.820 | 367 ool-1-worker-131 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ExerciseGroupIntegrationJenkinsGitlabTest#testImportExerciseGroup_programmingExerciseSameShortNameOrTitle'
+    23:43:08.840 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/259/exams/573/import-exercise-group
+    23:43:08.849 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to import 1 exercise group(s) to exam 573
+    23:43:08.863 | 367 ool-1-worker-131 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Exam contains programming exercise(s) with invalid short name.
+    23:43:08.863 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Exam contains programming exercise(s) with invalid short name.
+
+  Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest > testImportExerciseGroup_programmingExerciseSameShortNameOrTitle(String, String, String, String) [2] shortName1=A, shortName2=B, title1=C, title2=C
+    23:43:08.919 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:08.925 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:08.928 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:08.931 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:08.934 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:08.936 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:08.937 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:08.937 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:08.941 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:08.944 | 367 ool-1-worker-131 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ExerciseGroupIntegrationJenkinsGitlabTest#testImportExerciseGroup_programmingExerciseSameShortNameOrTitle'
+    23:43:08.948 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/260/exams/576/import-exercise-group
+    23:43:08.950 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to import 1 exercise group(s) to exam 576
+    23:43:08.953 | 367 ool-1-worker-131 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Exam contains programming exercise(s) with invalid short name.
+    23:43:08.953 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Exam contains programming exercise(s) with invalid short name.
+
+  Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest > testImportExerciseGroup_programmingExerciseSameShortNameOrTitle(String, String, String, String) [3] shortName1=A, shortName2=A, title1=B, title2=B
+    23:43:08.984 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:08.987 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:08.993 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:08.999 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:09.005 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:09.007 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:09.008 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:09.008 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:09.012 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:09.016 | 367 ool-1-worker-131 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ExerciseGroupIntegrationJenkinsGitlabTest#testImportExerciseGroup_programmingExerciseSameShortNameOrTitle'
+    23:43:09.020 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/261/exams/579/import-exercise-group
+    23:43:09.022 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to import 1 exercise group(s) to exam 579
+    23:43:09.025 | 367 ool-1-worker-131 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Exam contains programming exercise(s) with invalid short name.
+    23:43:09.025 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Exam contains programming exercise(s) with invalid short name.
+
+  Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest > testAll_asTutor()
+    23:43:09.040 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:09.044 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:09.047 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:09.050 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:09.053 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:09.054 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:09.055 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:09.055 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:09.059 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:09.063 | 367 ool-1-worker-131 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ExerciseGroupIntegrationJenkinsGitlabTest#testAll_asTutor'
+    23:43:09.065 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/262/exams/582/exercise-groups
+    23:43:09.070 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:43:09.072 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/262/exams/582/exercise-groups
+    23:43:09.079 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:43:09.081 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/262/exams/582/exercise-groups/490
+    23:43:09.083 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:43:09.085 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/262/exams/582/exercise-groups
+    23:43:09.086 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:43:09.090 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/262/exams/582/exercise-groups/490
+    23:43:09.091 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:43:09.093 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/262/exams/582/import-exercise-group
+    23:43:09.094 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest > testAll_asStudent()
+    23:43:09.109 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:09.112 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:09.115 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:09.118 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:09.121 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:09.123 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:09.124 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:09.124 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:09.128 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:09.131 | 367 ool-1-worker-131 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ExerciseGroupIntegrationJenkinsGitlabTest#testAll_asStudent'
+    23:43:09.133 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/263/exams/584/exercise-groups
+    23:43:09.134 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:43:09.136 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/courses/263/exams/584/exercise-groups
+    23:43:09.143 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:43:09.145 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/263/exams/584/exercise-groups/492
+    23:43:09.147 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:43:09.149 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/263/exams/584/exercise-groups
+    23:43:09.150 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:43:09.153 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/courses/263/exams/584/exercise-groups/492
+    23:43:09.154 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:43:09.159 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/263/exams/584/import-exercise-group
+    23:43:09.160 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for ExerciseGroupIntegrationJenkinsGitlabTest > importExerciseGroup_preCheckFailed()
+    23:43:09.184 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:43:09.187 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:43:09.190 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:43:09.193 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:43:09.196 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:09.197 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:43:09.198 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:43:09.198 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:43:09.202 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:43:09.206 | 367 ool-1-worker-131 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='ExerciseGroupIntegrationJenkinsGitlabTest#importExerciseGroup_preCheckFailed'
+    23:43:09.217 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/264/exams/588/import-exercise-group
+    23:43:09.218 | 367 ool-1-worker-131 | DEBUG | d.t.c.a.a.e.w.ExerciseGroupResource  : REST request to import 1 exercise group(s) to exam 588
+    23:43:09.221 | 367 ool-1-worker-131 | DEBUG | c.a.a.p.s.ProgrammingExerciseService : Project Key: SHORT21CFA79A0C345042110BF1C0D91586AF8F0AT44E
+    23:43:09.221 | 367 ool-1-worker-131 | DEBUG | c.a.a.p.s.ProgrammingExerciseService : Project Name: short21cfa79a0c345042110bf1c0d91586af8f0a b4ee83c6-0680-450d-9296-e1c2d8373d30
+    23:43:09.222 | 367 ool-1-worker-131 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, Exam contains programming exercise(s) with invalid short name.
+    23:43:09.222 | 367 ool-1-worker-131 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Exam contains programming exercise(s) with invalid short name.
+
+Finished logs for ExerciseGroupIntegrationJenkinsGitlabTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

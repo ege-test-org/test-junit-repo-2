@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.athena.architecture.AthenaResourceArchitectureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:16" hostname="fv-az1721-502" time="0.249">
+  <properties/>
+  <testcase name="testNoOverrideOfEnforceAdmin()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaResourceArchitectureTest" time="0.025"/>
+  <testcase name="testUseKebabCaseForRestEndpoints()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaResourceArchitectureTest" time="0.112"/>
+  <testcase name="allPublicMethodsShouldReturnResponseEntity()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaResourceArchitectureTest" time="0.039"/>
+  <testcase name="testClassWithEnforceAdminInCorrectlyNamed()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaResourceArchitectureTest" time="0.005"/>
+  <testcase name="shouldBeNamedResource()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaResourceArchitectureTest" time="0.005"/>
+  <testcase name="shouldBeInResourcePackage()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaResourceArchitectureTest" time="0.003"/>
+  <testcase name="shouldCorrectlyUseRequestMappingAnnotations()" classname="de.tum.cit.aet.artemis.athena.architecture.AthenaResourceArchitectureTest" time="0.055"/>
+  <system-out><![CDATA[
+Starting logs for AthenaResourceArchitectureTest
+
+  Starting logs for AthenaResourceArchitectureTest > testNoOverrideOfEnforceAdmin()
+
+  Starting logs for AthenaResourceArchitectureTest > testUseKebabCaseForRestEndpoints()
+
+  Starting logs for AthenaResourceArchitectureTest > allPublicMethodsShouldReturnResponseEntity()
+
+  Starting logs for AthenaResourceArchitectureTest > testClassWithEnforceAdminInCorrectlyNamed()
+
+  Starting logs for AthenaResourceArchitectureTest > shouldBeNamedResource()
+
+  Starting logs for AthenaResourceArchitectureTest > shouldBeInResourcePackage()
+
+  Starting logs for AthenaResourceArchitectureTest > shouldCorrectlyUseRequestMappingAnnotations()
+
+Finished logs for AthenaResourceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

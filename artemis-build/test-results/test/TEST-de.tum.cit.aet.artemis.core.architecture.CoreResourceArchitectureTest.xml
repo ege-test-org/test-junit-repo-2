@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.architecture.CoreResourceArchitectureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:34" hostname="fv-az1721-502" time="0.291">
+  <properties/>
+  <testcase name="testNoOverrideOfEnforceAdmin()" classname="de.tum.cit.aet.artemis.core.architecture.CoreResourceArchitectureTest" time="0.045"/>
+  <testcase name="testUseKebabCaseForRestEndpoints()" classname="de.tum.cit.aet.artemis.core.architecture.CoreResourceArchitectureTest" time="0.11"/>
+  <testcase name="allPublicMethodsShouldReturnResponseEntity()" classname="de.tum.cit.aet.artemis.core.architecture.CoreResourceArchitectureTest" time="0.036"/>
+  <testcase name="testClassWithEnforceAdminInCorrectlyNamed()" classname="de.tum.cit.aet.artemis.core.architecture.CoreResourceArchitectureTest" time="0.007"/>
+  <testcase name="shouldBeNamedResource()" classname="de.tum.cit.aet.artemis.core.architecture.CoreResourceArchitectureTest" time="0.005"/>
+  <testcase name="shouldBeInResourcePackage()" classname="de.tum.cit.aet.artemis.core.architecture.CoreResourceArchitectureTest" time="0.003"/>
+  <testcase name="shouldCorrectlyUseRequestMappingAnnotations()" classname="de.tum.cit.aet.artemis.core.architecture.CoreResourceArchitectureTest" time="0.079"/>
+  <system-out><![CDATA[
+Starting logs for CoreResourceArchitectureTest
+
+  Starting logs for CoreResourceArchitectureTest > testNoOverrideOfEnforceAdmin()
+
+  Starting logs for CoreResourceArchitectureTest > testUseKebabCaseForRestEndpoints()
+
+  Starting logs for CoreResourceArchitectureTest > allPublicMethodsShouldReturnResponseEntity()
+
+  Starting logs for CoreResourceArchitectureTest > testClassWithEnforceAdminInCorrectlyNamed()
+
+  Starting logs for CoreResourceArchitectureTest > shouldBeNamedResource()
+
+  Starting logs for CoreResourceArchitectureTest > shouldBeInResourcePackage()
+
+  Starting logs for CoreResourceArchitectureTest > shouldCorrectlyUseRequestMappingAnnotations()
+
+Finished logs for CoreResourceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

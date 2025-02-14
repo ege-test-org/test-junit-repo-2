@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.service.SavedPostServiceTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:33" hostname="fv-az1721-502" time="0.07">
+  <properties/>
+  <testcase name="shouldRemoveSavedPostWhenPostIsBookmarked()" classname="de.tum.cit.aet.artemis.communication.service.SavedPostServiceTest" time="0.006"/>
+  <testcase name="shouldReturnLimitNotExceededWhenUserIsBelowThreshold()" classname="de.tum.cit.aet.artemis.communication.service.SavedPostServiceTest" time="0.007"/>
+  <testcase name="shouldUpdateStatusAndCompletedAtOfSavedPostWhenPostIsInProgress()" classname="de.tum.cit.aet.artemis.communication.service.SavedPostServiceTest" time="0.011"/>
+  <testcase name="shouldUpdateStatusAndResetCompletedAtOfSavedPostWhenPostIsSetToInProgress()" classname="de.tum.cit.aet.artemis.communication.service.SavedPostServiceTest" time="0.006"/>
+  <testcase name="shouldSavePostSuccessfullyWhenPostIsNotSavedYet()" classname="de.tum.cit.aet.artemis.communication.service.SavedPostServiceTest" time="0.008"/>
+  <testcase name="shouldNotSavePostWhenPostIsSavedAlready()" classname="de.tum.cit.aet.artemis.communication.service.SavedPostServiceTest" time="0.002"/>
+  <testcase name="shouldReturnListFromRepositoryWhenQueriedByCurrentUser()" classname="de.tum.cit.aet.artemis.communication.service.SavedPostServiceTest" time="0.007"/>
+  <testcase name="shouldReturnLimitExceededWhenUserHasToManySavedPosts()" classname="de.tum.cit.aet.artemis.communication.service.SavedPostServiceTest" time="0.009"/>
+  <testcase name="shouldNotRemoveSavedPostWhenPostIsNotBookmarked()" classname="de.tum.cit.aet.artemis.communication.service.SavedPostServiceTest" time="0.002"/>
+  <system-out><![CDATA[
+Starting logs for SavedPostServiceTest
+
+  Starting logs for SavedPostServiceTest > shouldRemoveSavedPostWhenPostIsBookmarked()
+
+  Starting logs for SavedPostServiceTest > shouldReturnLimitNotExceededWhenUserIsBelowThreshold()
+
+  Starting logs for SavedPostServiceTest > shouldUpdateStatusAndCompletedAtOfSavedPostWhenPostIsInProgress()
+
+  Starting logs for SavedPostServiceTest > shouldUpdateStatusAndResetCompletedAtOfSavedPostWhenPostIsSetToInProgress()
+
+  Starting logs for SavedPostServiceTest > shouldSavePostSuccessfullyWhenPostIsNotSavedYet()
+
+  Starting logs for SavedPostServiceTest > shouldNotSavePostWhenPostIsSavedAlready()
+
+  Starting logs for SavedPostServiceTest > shouldReturnListFromRepositoryWhenQueriedByCurrentUser()
+
+  Starting logs for SavedPostServiceTest > shouldReturnLimitExceededWhenUserHasToManySavedPosts()
+
+  Starting logs for SavedPostServiceTest > shouldNotRemoveSavedPostWhenPostIsNotBookmarked()
+
+Finished logs for SavedPostServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.icl.LocalVCServiceTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:45:14" hostname="fv-az1721-502" time="0.144">
+  <properties/>
+  <testcase name="testUnsupportedMethods()" classname="de.tum.cit.aet.artemis.programming.icl.LocalVCServiceTest" time="0.036"/>
+  <testcase name="testLockingAndUnlockingShouldReturnNotFound()" classname="de.tum.cit.aet.artemis.programming.icl.LocalVCServiceTest" time="0.077"/>
+  <testcase name="testHealth()" classname="de.tum.cit.aet.artemis.programming.icl.LocalVCServiceTest" time="0.024"/>
+  <system-out><![CDATA[
+Starting logs for LocalVCServiceTest
+
+  Starting logs for LocalVCServiceTest > testUnsupportedMethods()
+    23:45:14.849 | 478 ool-1-worker-242 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='LocalVCServiceTest#testUnsupportedMethods'
+
+  Starting logs for LocalVCServiceTest > testLockingAndUnlockingShouldReturnNotFound()
+    23:45:14.880 | 478 ool-1-worker-242 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='LocalVCServiceTest#testLockingAndUnlockingShouldReturnNotFound'
+    23:45:14.880 | 478 ool-1-worker-242 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 0 students...
+    23:45:14.882 | 478 ool-1-worker-242 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 students generated. Generate 0 tutors...
+    23:45:14.883 | 478 ool-1-worker-242 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:45:14.884 | 478 ool-1-worker-242 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:45:14.886 | 478 ool-1-worker-242 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:45:14.888 | 478 ool-1-worker-242 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses...
+    23:45:14.889 | 478 ool-1-worker-242 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 8 users from all courses. Done
+    23:45:14.889 | 478 ool-1-worker-242 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database...
+    23:45:14.890 | 478 ool-1-worker-242 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 1 users to database. Done
+    23:45:14.907 | 478 ool-1-worker-242 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/programming-exercises/2581/lock-all-repositories
+    23:45:14.909 | 478 ool-1-worker-242 | WARN  | o.z.p.spring.common.AdviceTraits     : Not Found: No static resource api/programming-exercises/2581/lock-all-repositories.
+    23:45:14.914 | 478 ool-1-worker-242 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/programming-exercises/2581/unlock-all-repositories
+    23:45:14.916 | 478 ool-1-worker-242 | WARN  | o.z.p.spring.common.AdviceTraits     : Not Found: No static resource api/programming-exercises/2581/unlock-all-repositories.
+    23:45:14.923 | 478 ool-1-worker-242 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/964/exams/154/lock-all-repositories
+    23:45:14.927 | 478 ool-1-worker-242 | WARN  | o.z.p.spring.common.AdviceTraits     : Not Found: No static resource api/courses/964/exams/154/lock-all-repositories.
+    23:45:14.930 | 478 ool-1-worker-242 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/964/exams/154/unlock-all-repositories
+    23:45:14.938 | 478 ool-1-worker-242 | WARN  | o.z.p.spring.common.AdviceTraits     : Not Found: No static resource api/courses/964/exams/154/unlock-all-repositories.
+
+  Starting logs for LocalVCServiceTest > testHealth()
+    23:45:14.959 | 478 ool-1-worker-242 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='LocalVCServiceTest#testHealth'
+
+Finished logs for LocalVCServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

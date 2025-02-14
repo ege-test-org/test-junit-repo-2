@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.compass.umlmodel.UMLDiagramTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:02" hostname="fv-az1721-502" time="0.317">
+  <properties/>
+  <testcase name="similarity_differentDiagrams()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.UMLDiagramTest" time="0.215"/>
+  <testcase name="similarity_null()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.UMLDiagramTest" time="0.004"/>
+  <testcase name="similarity_sameDiagram()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.UMLDiagramTest" time="0.008"/>
+  <testcase name="similarity_differentDiagramType()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.UMLDiagramTest" time="0.086"/>
+  <system-out><![CDATA[
+Starting logs for UMLDiagramTest
+
+  Starting logs for UMLDiagramTest > similarity_differentDiagrams()
+
+  Starting logs for UMLDiagramTest > similarity_null()
+
+  Starting logs for UMLDiagramTest > similarity_sameDiagram()
+
+  Starting logs for UMLDiagramTest > similarity_differentDiagramType()
+
+Finished logs for UMLDiagramTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

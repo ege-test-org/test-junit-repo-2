@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.authentication.UserSaml2IntegrationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:41:45" hostname="fv-az1721-502" time="8.592">
+  <properties/>
+  <testcase name="testValidSaml2RegistrationEmptyRegistrationNumber()" classname="de.tum.cit.aet.artemis.core.authentication.UserSaml2IntegrationTest" time="7.483"/>
+  <testcase name="testValidSaml2RegistrationNonMatchingRegistrationNumberExtraction()" classname="de.tum.cit.aet.artemis.core.authentication.UserSaml2IntegrationTest" time="0.209"/>
+  <testcase name="testPasswordLoginAfterShibbolethRegistration()" classname="de.tum.cit.aet.artemis.core.authentication.UserSaml2IntegrationTest" time="0.289"/>
+  <testcase name="testInvalidAuthenticationSaml2Login()" classname="de.tum.cit.aet.artemis.core.authentication.UserSaml2IntegrationTest" time="0.066"/>
+  <testcase name="testValidSaml2RegistrationExtractingRegistrationNumber()" classname="de.tum.cit.aet.artemis.core.authentication.UserSaml2IntegrationTest" time="0.149"/>
+  <testcase name="testValidSaml2Registration()" classname="de.tum.cit.aet.artemis.core.authentication.UserSaml2IntegrationTest" time="0.164"/>
+  <testcase name="testValidSaml2Login()" classname="de.tum.cit.aet.artemis.core.authentication.UserSaml2IntegrationTest" time="0.068"/>
+  <testcase name="testAuthenticationRedirect()" classname="de.tum.cit.aet.artemis.core.authentication.UserSaml2IntegrationTest" time="0.126"/>
+  <system-out><![CDATA[
+Starting logs for UserSaml2IntegrationTest
+    23:40:21.561 | 199 Pool-1-worker-92 | INFO  | t.c.a.a.c.a.UserSaml2IntegrationTest : Starting UserSaml2IntegrationTest using Java 21.0.6 with PID 2037 (started by runner in /home/runner/work/Artemis/Artemis)
+    23:40:21.562 | 199 Pool-1-worker-92 | DEBUG | t.c.a.a.c.a.UserSaml2IntegrationTest : Running with Spring Boot v3.4.2, Spring v6.2.2
+    23:40:21.562 | 199 Pool-1-worker-92 | INFO  | t.c.a.a.c.a.UserSaml2IntegrationTest : The following 8 profiles are active: "test", "artemis", "core", "gitlabci", "gitlab", "saml2", "scheduling", "lti"
+    23:40:23.120 | 199 Pool-1-worker-92 | INFO  | ddedDatabaseContextCustomizerFactory : Replacing 'dataSource' DataSource bean with embedded version
+    23:40:23.350 | 199 Pool-1-worker-92 | WARN  | ionDelegate$BeanPostProcessorChecker : Bean 'io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration' of type [io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [flywayPropertiesPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+    23:40:23.648 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.c.AsyncConfiguration     : Creating Async Task Executor
+    23:40:23.681 | 199 Pool-1-worker-92 | INFO  | d.t.c.a.a.c.c.LiquibaseConfiguration : Liquibase is enabled
+    23:40:23.867 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.c.CacheConfiguration     : Configuring Hazelcast
+    23:40:23.868 | 199 Pool-1-worker-92 | INFO  | d.t.c.a.a.c.c.CacheConfiguration     : No discovery service is set up, Hazelcast cannot create a multi-node cluster.
+    23:40:23.868 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.c.CacheConfiguration     : Binding Hazelcast to interface 127.0.0.1
+    23:40:23.869 | 199 Pool-1-worker-92 | INFO  | c.hazelcast.instance.AddressPicker   : [LOCAL] [dev] [5.5.0] Using public address: [127.0.0.1]:5702
+    23:40:23.869 | 199 Pool-1-worker-92 | INFO  | com.hazelcast.system.logo            : [127.0.0.1]:5702 [dev] [5.5.0] 
+    o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
+    |    |    / \       /         |     /         / \    |         |
+    o----o       o     o   o----o |    o             o   o----o    |
+    |    |  *     \   /           |     \       *     \       |    |
+    o    o *       o o---o   o--o o----o o---o *       o o----o    o
+
+    23:40:23.869 | 199 Pool-1-worker-92 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5702 [dev] [5.5.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+    23:40:23.869 | 199 Pool-1-worker-92 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5702 [dev] [5.5.0] Hazelcast Platform 5.5.0 (20240725) starting at [127.0.0.1]:5702
+    23:40:23.869 | 199 Pool-1-worker-92 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5702 [dev] [5.5.0] Cluster name: dev
+    23:40:23.869 | 199 Pool-1-worker-92 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5702 [dev] [5.5.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+    23:40:23.870 | 199 Pool-1-worker-92 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5702 [dev] [5.5.0] The Jet engine is disabled.
+To enable the Jet engine on the members, do one of the following:
+  - Change member config using Java API: config.getJetConfig().setEnabled(true)
+  - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
+  - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
+  - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
+    23:40:23.884 | 199 Pool-1-worker-92 | INFO  | com.hazelcast.system.security        : [127.0.0.1]:5702 [dev] [5.5.0] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see ]]>&#x1f512;<![CDATA[ security recommendations and the status of current config.
+    23:40:23.888 | 199 Pool-1-worker-92 | INFO  | com.hazelcast.instance.impl.Node     : [127.0.0.1]:5702 [dev] [5.5.0] Using TCP/IP discovery
+    23:40:23.901 | 199 Pool-1-worker-92 | INFO  | c.h.internal.diagnostics.Diagnostics : [127.0.0.1]:5702 [dev] [5.5.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+    23:40:23.901 | 199 Pool-1-worker-92 | INFO  | com.hazelcast.core.LifecycleService  : [127.0.0.1]:5702 [dev] [5.5.0] [127.0.0.1]:5702 is STARTING
+    23:40:23.905 | 199 Pool-1-worker-92 | INFO  | c.h.internal.cluster.ClusterService  : [127.0.0.1]:5702 [dev] [5.5.0] 
+
+Members {size:1, ver:1} [
+	Member [127.0.0.1]:5702 - 72292c2f-3274-4caa-b7c9-495eb3768762 this
+]
+
+    23:40:23.905 | 199 Pool-1-worker-92 | WARN  | com.hazelcast.instance.impl.Node     : [127.0.0.1]:5702 [dev] [5.5.0] Config seed port is 5701 and cluster size is 1. Some of the ports seem occupied!
+    23:40:23.907 | 199 Pool-1-worker-92 | INFO  | com.hazelcast.core.LifecycleService  : [127.0.0.1]:5702 [dev] [5.5.0] [127.0.0.1]:5702 is STARTED
+    23:40:23.909 | 522 ci.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5702 [dev] [5.5.0] The HealthMonitor has detected a high load on the system. For more detailed information,
+enable Diagnostics by adding the property -Dhazelcast.diagnostics.enabled=true
+    23:40:23.910 | 522 ci.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5702 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=3.7G, swap.space.total=0, swap.space.free=0, heap.memory.used=1.5G, heap.memory.free=1.2G, heap.memory.total=2.7G, heap.memory.max=6.0G, heap.memory.used/total=56.67%, heap.memory.used/max=25.27%, minor.gc.count=50, minor.gc.time=3338ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=22, unknown.gc.time=272ms, load.process=0.00%, load.system=80.65%, load.systemAverage=4.35, thread.count=353, thread.peakCount=353, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=0, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=0, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+    23:40:26.990 | 199 Pool-1-worker-92 | WARN  | org.hibernate.orm.deprecation        : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+    23:40:27.421 | 199 Pool-1-worker-92 | WARN  | o.h.boot.model.internal.EntityBinder : HHH000457: Joined inheritance hierarchy [de.tum.cit.aet.artemis.iris.domain.message.IrisMessageContent] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+    23:40:27.954 | 199 Pool-1-worker-92 | INFO  | h.h.HazelcastLocalCacheRegionFactory : Starting up HazelcastLocalCacheRegionFactory
+    23:40:27.954 | 199 Pool-1-worker-92 | INFO  | c.h.h.i.IHazelcastInstanceFactory    : Using existing HazelcastInstance [Artemis_gitlabci].
+    23:40:36.686 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : file.encoding=UTF-8
+    23:40:36.687 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : sun.jnu.encoding=UTF-8
+    23:40:36.687 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Default Charset=UTF-8
+    23:40:36.687 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Default Charset in Use=UTF8
+    23:40:36.689 | 199 Pool-1-worker-92 | INFO  | d.t.c.a.a.p.service.GitService       : GitService will use username + token as authentication method to interact with remote git repositories
+    23:40:36.878 | 199 Pool-1-worker-92 | DEBUG | c.c.ProgrammingLanguageConfiguration : Set Docker flags to [DockerFlag[flag=--cpus, value=2], DockerFlag[flag=--memory, value=2g], DockerFlag[flag=--memory-swap, value=2g], DockerFlag[flag=--pids-limit, value=1000]]
+    23:40:36.889 | 199 Pool-1-worker-92 | DEBUG | c.c.ProgrammingLanguageConfiguration : Loaded Docker image configuration: {EMPTY={PLAIN=~~invalid~~}, JAVA={PLAIN=~~invalid~~}, PYTHON={PLAIN=~~invalid~~}, C={PLAIN=~~invalid~~}, HASKELL={PLAIN=~~invalid~~}, KOTLIN={PLAIN=~~invalid~~}, VHDL={PLAIN=~~invalid~~}, ASSEMBLER={PLAIN=~~invalid~~}, SWIFT={PLAIN=~~invalid~~}, OCAML={PLAIN=~~invalid~~}, JAVASCRIPT={PLAIN=~~invalid~~}, C_SHARP={PLAIN=~~invalid~~}, C_PLUS_PLUS={PLAIN=~~invalid~~}, R={PLAIN=~~invalid~~}, TYPESCRIPT={PLAIN=~~invalid~~}, RUST={PLAIN=~~invalid~~}, GO={PLAIN=~~invalid~~}, MATLAB={PLAIN=~~invalid~~}, BASH={PLAIN=~~invalid~~}, RUBY={PLAIN=~~invalid~~}}
+    23:40:37.363 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.c.CacheConfiguration     : Starting HazelcastCacheManager
+    23:40:37.485 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.jwt.TokenProvider      : Using a Base64-encoded JWT secret key
+    23:40:38.433 | 199 Pool-1-worker-92 | DEBUG | .a.a.c.c.TaskSchedulingConfiguration : Creating Task Scheduler 
+    23:40:38.560 | 199 Pool-1-worker-92 | DEBUG | t.c.a.a.c.c.w.WebsocketConfiguration : Did NOT enable StompBrokerRelay for WebSocket messages
+    23:40:40.581 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.core.config.WebConfigurer  : Registering CORS filter
+    23:40:48.236 | 199 Pool-1-worker-92 | WARN  | itializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+    23:40:49.681 | 199 Pool-1-worker-92 | DEBUG | .c.a.a.c.c.EurekaClientConfiguration : Using RestClient for the Eureka client.
+    23:40:49.734 | 199 Pool-1-worker-92 | INFO  | o.o.c.config.InitializationService   : Initializing OpenSAML using the Java Services API
+    23:40:51.546 | 199 Pool-1-worker-92 | INFO  | c.h.i.p.i.PartitionStateManagerImpl  : [127.0.0.1]:5702 [dev] [5.5.0] Initializing cluster partition table arrangement...
+    23:40:52.020 | 199 Pool-1-worker-92 | WARN  | ation$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+    23:40:52.087 | 199 Pool-1-worker-92 | INFO  | t.c.a.a.c.a.UserSaml2IntegrationTest : Started UserSaml2IntegrationTest in 30.753 seconds (process running for 135.383)
+    23:40:52.102 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.core.config.MetricsBean    : calculateCachedActiveUserLogins took 12ms
+    23:40:52.102 | 199 Pool-1-worker-92 | DEBUG | .c.a.a.c.s.TitleCacheEvictionService : Registered Hibernate listeners
+    23:40:52.117 | 199 Pool-1-worker-92 | INFO  | d.t.c.a.a.c.service.user.UserService : Create internal admin user artemis_admin
+    23:40:52.129 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Save user User{login='artemis_admin', firstName='Administrator', lastName='Administrator', email='admin@localhost', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:40:52.266 | 199 Pool-1-worker-92 | ERROR | d.t.c.a.a.c.service.user.UserService : An error occurred after application startup when creating or updating the admin user or in the LDAP search
+de.tum.cit.aet.artemis.programming.service.gitlab.GitLabException: Unable to get ID for user artemis_admin
+	at de.tum.cit.aet.artemis.programming.service.gitlab.GitLabUserManagementService.getUserIdCreateIfNotExists(GitLabUserManagementService.java:332)
+	at de.tum.cit.aet.artemis.programming.service.gitlab.GitLabUserManagementService.createVcsUser(GitLabUserManagementService.java:61)
+	at de.tum.cit.aet.artemis.core.service.user.UserCreationService.lambda$createUser$0(UserCreationService.java:199)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at de.tum.cit.aet.artemis.core.service.user.UserCreationService.createUser(UserCreationService.java:199)
+	at de.tum.cit.aet.artemis.core.service.user.UserService.applicationReady(UserService.java:181)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.doInvoke(ApplicationListenerMethodAdapter.java:382)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.processEvent(ApplicationListenerMethodAdapter.java:254)
+	at org.springframework.context.event.ApplicationListenerMethodAdapter.onApplicationEvent(ApplicationListenerMethodAdapter.java:173)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:185)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:178)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:156)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:454)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:387)
+	at org.springframework.boot.context.event.EventPublishingRunListener.ready(EventPublishingRunListener.java:109)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$ready$6(SpringApplicationRunListeners.java:80)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:118)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:112)
+	at org.springframework.boot.SpringApplicationRunListeners.ready(SpringApplicationRunListeners.java:80)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1461)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:553)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:225)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:152)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:130)
+	at io.zonky.test.db.EmbeddedDatabaseTestExecutionListener.forEachDatabase(EmbeddedDatabaseTestExecutionListener.java:94)
+	at io.zonky.test.db.EmbeddedDatabaseTestExecutionListener.resetDatabases(EmbeddedDatabaseTestExecutionListener.java:58)
+	at io.zonky.test.db.EmbeddedDatabaseTestExecutionListener.beforeTestClass(EmbeddedDatabaseTestExecutionListener.java:34)
+	at org.springframework.test.context.TestContextManager.beforeTestClass(TestContextManager.java:220)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.beforeAll(SpringExtension.java:130)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeBeforeAllCallbacks$13(ClassBasedTestDescriptor.java:396)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeBeforeAllCallbacks(ClassBasedTestDescriptor.java:396)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:212)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.before(ClassBasedTestDescriptor.java:85)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:153)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:146)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:144)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:143)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:100)
+	at org.junit.platform.engine.support.hierarchical.ForkJoinPoolHierarchicalTestExecutorService$ExclusiveTask.exec(ForkJoinPoolHierarchicalTestExecutorService.java:274)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+Caused by: org.gitlab4j.api.GitLabApiException: java.net.UnknownHostException: version-control.fake.fake
+	at org.gitlab4j.api.AbstractApi.handle(AbstractApi.java:806)
+	at org.gitlab4j.api.AbstractApi.get(AbstractApi.java:264)
+	at org.gitlab4j.api.UserApi.getUser(UserApi.java:352)
+	at de.tum.cit.aet.artemis.programming.service.gitlab.GitLabUserManagementService.getUserIdCreateIfNotExists(GitLabUserManagementService.java:325)
+	at de.tum.cit.aet.artemis.programming.service.gitlab.GitLabUserManagementService.createVcsUser(GitLabUserManagementService.java:61)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor$Dispatcher$ByteBuddy$oog9jsgw.invokeWithArguments(Unknown Source)
+	at org.mockito.internal.util.reflection.InstrumentationMemberAccessor.invoke(InstrumentationMemberAccessor.java:251)
+	at org.mockito.internal.util.reflection.ModuleMemberAccessor.invoke(ModuleMemberAccessor.java:55)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.tryInvoke(MockMethodAdvice.java:314)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice$RealMethodCall.invoke(MockMethodAdvice.java:234)
+	at org.mockito.internal.invocation.InterceptedInvocation.callRealMethod(InterceptedInvocation.java:142)
+	at org.mockito.internal.stubbing.answers.CallsRealMethods.answer(CallsRealMethods.java:45)
+	at org.mockito.Answers.answer(Answers.java:90)
+	at org.mockito.internal.handler.MockHandlerImpl.handle(MockHandlerImpl.java:111)
+	at org.mockito.internal.handler.NullResultGuardian.handle(NullResultGuardian.java:29)
+	at org.mockito.internal.handler.InvocationNotifierHandler.handle(InvocationNotifierHandler.java:34)
+	at org.mockito.internal.creation.bytebuddy.MockMethodInterceptor.doIntercept(MockMethodInterceptor.java:82)
+	at org.mockito.internal.creation.bytebuddy.MockMethodAdvice.handle(MockMethodAdvice.java:134)
+	... 56 common frames omitted
+Caused by: jakarta.ws.rs.ProcessingException: java.net.UnknownHostException: version-control.fake.fake
+	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:288)
+	at org.glassfish.jersey.client.ClientRuntime.invoke(ClientRuntime.java:300)
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$invoke$0(JerseyInvocation.java:674)
+	at org.glassfish.jersey.client.JerseyInvocation.call(JerseyInvocation.java:709)
+	at org.glassfish.jersey.client.JerseyInvocation.lambda$runInScope$3(JerseyInvocation.java:703)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:292)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:274)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:205)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:391)
+	at org.glassfish.jersey.client.JerseyInvocation.runInScope(JerseyInvocation.java:703)
+	at org.glassfish.jersey.client.JerseyInvocation.invoke(JerseyInvocation.java:673)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.method(JerseyInvocation.java:413)
+	at org.glassfish.jersey.client.JerseyInvocation$Builder.get(JerseyInvocation.java:313)
+	at org.gitlab4j.api.GitLabApiClient.get(GitLabApiClient.java:432)
+	at org.gitlab4j.api.GitLabApiClient.get(GitLabApiClient.java:420)
+	at org.gitlab4j.api.AbstractApi.get(AbstractApi.java:262)
+	... 73 common frames omitted
+Caused by: java.net.UnknownHostException: version-control.fake.fake
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:567)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at java.base/sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:304)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636)
+	at java.base/sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+	at java.base/sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:377)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:193)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1252)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1138)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:179)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1690)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1614)
+	at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:531)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:307)
+	at org.glassfish.jersey.client.internal.HttpUrlConnector._apply(HttpUrlConnector.java:453)
+	at org.glassfish.jersey.client.internal.HttpUrlConnector.apply(HttpUrlConnector.java:286)
+	... 88 common frames omitted
+    23:40:52.268 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.p.service.PlantUmlService  : Storing UML theme to temporary directory
+    23:40:52.268 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.p.service.PlantUmlService  : UML theme stored successfully to /tmp/artemis-puml-theme/puml-theme-artemisdark.puml
+    23:40:52.268 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.p.service.PlantUmlService  : Storing UML theme to temporary directory
+    23:40:52.268 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.p.service.PlantUmlService  : UML theme stored successfully to /tmp/artemis-puml-theme/puml-theme-artemislight.puml
+    23:41:00.003 | 543 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Schedule tasks to process...
+    23:41:12.284 | 544 taskScheduler-3  | INFO  | s.ProgrammingExerciseScheduleService : Scheduled 0 programming exercises.
+    23:41:12.284 | 544 taskScheduler-3  | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled 0 programming exercises for a score update after due date.
+    23:41:12.284 | 544 taskScheduler-3  | INFO  | s.ProgrammingExerciseScheduleService : Scheduled 0 exam programming exercises.
+    23:41:17.275 | 545 taskScheduler-4  | INFO  | d.t.c.a.a.q.s.QuizScheduleService    : Scheduled 0 quiz exercises.
+    23:41:17.277 | 542 taskScheduler-1  | INFO  | .m.s.ModelingExerciseScheduleService : Scheduled 0 modeling exercises.
+    23:41:17.277 | 542 taskScheduler-1  | INFO  | .m.s.ModelingExerciseScheduleService : Scheduled 0 exam modeling exercises.
+    23:41:22.094 | 545 taskScheduler-4  | INFO  | .a.a.c.s.NotificationScheduleService : Scheduled 0 notifications for released exercises.
+    23:41:22.097 | 545 taskScheduler-4  | INFO  | .a.a.c.s.NotificationScheduleService : Scheduled 0 notifications for assessed exercise submissions.
+    23:41:22.113 | 544 taskScheduler-3  | DEBUG | d.t.c.a.a.core.config.MetricsBean    : recalculateMetrics took 27ms
+    23:41:27.091 | 543 taskScheduler-2  | INFO  | .s.WeeklyEmailSummaryScheduleService : Scheduled email summaries on start up.
+    23:41:27.092 | 542 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Schedule tasks to process...
+    23:41:27.112 | 542 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 0 results and 0 participant scores.
+
+  Starting logs for UserSaml2IntegrationTest > testValidSaml2RegistrationEmptyRegistrationNumber()
+    23:41:51.802 | 199 Pool-1-worker-92 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='UserSaml2IntegrationTest#testValidSaml2RegistrationEmptyRegistrationNumber'
+    23:41:51.836 | 199 Pool-1-worker-92 | WARN  | o.s.w.s.h.HandlerMappingIntrospector : Cache miss for REQUEST dispatch to '/api/public/saml2' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+    23:41:51.847 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/saml2
+    23:41:51.903 | 199 Pool-1-worker-92 | DEBUG | .t.c.a.a.c.w.o.PublicUserJwtResource : SAML2 authentication: Saml2Authentication [Principal=org.springframework.security.saml2.provider.service.authentication.DefaultSaml2AuthenticatedPrincipal@81a75fa1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[]]
+    23:41:51.903 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : SAML2 User 'student_saml_test' logged in, attributes {uid=[student_saml_test], registration_number=[], last_name=[LastName], first_name=[FirstName], email=[student_saml_test@invalid]}
+    23:41:51.903 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : SAML2 password-enabled: Optional[true]
+    23:41:51.917 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Save user User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:41:51.926 | 199 Pool-1-worker-92 | DEBUG | .p.s.g.GitLabCIUserManagementService : Please refer to the repository for user management.
+    23:41:51.952 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Created Information for User: User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:41:51.964 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : Sending SAML2 creation mail
+    23:41:51.970 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.service.user.UserService : Save user User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:41:52.045 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending SAML2 set password email to 'student_saml_test@invalid'
+    23:41:53.233 | 501 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}' with subject 'Artemis account created'
+    23:41:53.328 | 501 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'Artemis account created' to User 'User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}'
+
+  Starting logs for UserSaml2IntegrationTest > testValidSaml2RegistrationNonMatchingRegistrationNumberExtraction()
+    23:41:53.404 | 199 Pool-1-worker-92 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='UserSaml2IntegrationTest#testValidSaml2RegistrationNonMatchingRegistrationNumberExtraction'
+    23:41:53.413 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/saml2
+    23:41:53.413 | 199 Pool-1-worker-92 | DEBUG | .t.c.a.a.c.w.o.PublicUserJwtResource : SAML2 authentication: Saml2Authentication [Principal=org.springframework.security.saml2.provider.service.authentication.DefaultSaml2AuthenticatedPrincipal@81a75fa1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[]]
+    23:41:53.414 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : SAML2 User 'student_saml_test' logged in, attributes {uid=[student_saml_test], registration_number=[nonMatchingRegNum], last_name=[LastName], first_name=[FirstName], email=[student_saml_test@invalid]}
+    23:41:53.414 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : SAML2 password-enabled: Optional[true]
+    23:41:53.419 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Save user User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:41:53.423 | 199 Pool-1-worker-92 | DEBUG | .p.s.g.GitLabCIUserManagementService : Please refer to the repository for user management.
+    23:41:53.440 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Created Information for User: User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:41:53.443 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : Sending SAML2 creation mail
+    23:41:53.446 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.service.user.UserService : Save user User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:41:53.460 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending SAML2 set password email to 'student_saml_test@invalid'
+    23:41:53.464 | 501 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}' with subject 'Artemis account created'
+    23:41:53.465 | 501 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'Artemis account created' to User 'User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}'
+
+  Starting logs for UserSaml2IntegrationTest > testPasswordLoginAfterShibbolethRegistration()
+    23:41:53.622 | 199 Pool-1-worker-92 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='UserSaml2IntegrationTest#testPasswordLoginAfterShibbolethRegistration'
+    23:41:53.635 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/saml2
+    23:41:53.645 | 199 Pool-1-worker-92 | DEBUG | .t.c.a.a.c.w.o.PublicUserJwtResource : SAML2 authentication: Saml2Authentication [Principal=org.springframework.security.saml2.provider.service.authentication.DefaultSaml2AuthenticatedPrincipal@81a75fa1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[]]
+    23:41:53.645 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : SAML2 User 'student_saml_test' logged in, attributes {uid=[student_saml_test], registration_number=[12345678], last_name=[LastName], first_name=[FirstName], email=[student_saml_test@invalid]}
+    23:41:53.645 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : SAML2 password-enabled: Optional[true]
+    23:41:53.662 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Save user User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:41:53.669 | 199 Pool-1-worker-92 | DEBUG | .p.s.g.GitLabCIUserManagementService : Please refer to the repository for user management.
+    23:41:53.699 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Created Information for User: User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:41:53.700 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : Sending SAML2 creation mail
+    23:41:53.707 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.service.user.UserService : Save user User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:41:53.721 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending SAML2 set password email to 'student_saml_test@invalid'
+    23:41:53.726 | 501 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}' with subject 'Artemis account created'
+    23:41:53.727 | 501 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'Artemis account created' to User 'User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}'
+    23:41:53.751 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/authenticate
+    23:41:53.824 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/saml2
+    23:41:53.824 | 199 Pool-1-worker-92 | DEBUG | .t.c.a.a.c.w.o.PublicUserJwtResource : SAML2 authentication: Saml2Authentication [Principal=org.springframework.security.saml2.provider.service.authentication.DefaultSaml2AuthenticatedPrincipal@81a75fa1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[]]
+    23:41:53.824 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : SAML2 User 'student_saml_test' logged in, attributes {uid=[student_saml_test], registration_number=[12345678], last_name=[LastName], first_name=[FirstName], email=[student_saml_test@invalid]}
+    23:41:53.824 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : SAML2 password-enabled: Optional[true]
+
+  Starting logs for UserSaml2IntegrationTest > testInvalidAuthenticationSaml2Login()
+    23:41:53.924 | 199 Pool-1-worker-92 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='UserSaml2IntegrationTest#testInvalidAuthenticationSaml2Login'
+    23:41:53.932 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/saml2
+
+  Starting logs for UserSaml2IntegrationTest > testValidSaml2RegistrationExtractingRegistrationNumber()
+    23:41:53.972 | 199 Pool-1-worker-92 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='UserSaml2IntegrationTest#testValidSaml2RegistrationExtractingRegistrationNumber'
+    23:41:53.983 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/saml2
+    23:41:53.983 | 199 Pool-1-worker-92 | DEBUG | .t.c.a.a.c.w.o.PublicUserJwtResource : SAML2 authentication: Saml2Authentication [Principal=org.springframework.security.saml2.provider.service.authentication.DefaultSaml2AuthenticatedPrincipal@81a75fa1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[]]
+    23:41:53.983 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : SAML2 User 'student_saml_test' logged in, attributes {uid=[student_saml_test], registration_number=[somePrefix1234someSuffix], last_name=[LastName], first_name=[FirstName], email=[student_saml_test@invalid]}
+    23:41:53.983 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : SAML2 password-enabled: Optional[true]
+    23:41:53.994 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Save user User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:41:54.000 | 199 Pool-1-worker-92 | DEBUG | .p.s.g.GitLabCIUserManagementService : Please refer to the repository for user management.
+    23:41:54.018 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Created Information for User: User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:41:54.023 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : Sending SAML2 creation mail
+    23:41:54.023 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.service.user.UserService : Save user User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:41:54.037 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending SAML2 set password email to 'student_saml_test@invalid'
+    23:41:54.047 | 501 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}' with subject 'Artemis account created'
+    23:41:54.047 | 501 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'Artemis account created' to User 'User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}'
+
+  Starting logs for UserSaml2IntegrationTest > testValidSaml2Registration()
+    23:41:54.152 | 199 Pool-1-worker-92 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='UserSaml2IntegrationTest#testValidSaml2Registration'
+    23:41:54.174 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/saml2
+    23:41:54.177 | 199 Pool-1-worker-92 | DEBUG | .t.c.a.a.c.w.o.PublicUserJwtResource : SAML2 authentication: Saml2Authentication [Principal=org.springframework.security.saml2.provider.service.authentication.DefaultSaml2AuthenticatedPrincipal@81a75fa1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[]]
+    23:41:54.177 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : SAML2 User 'student_saml_test' logged in, attributes {uid=[student_saml_test], registration_number=[12345678], last_name=[LastName], first_name=[FirstName], email=[student_saml_test@invalid]}
+    23:41:54.177 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : SAML2 password-enabled: Optional[true]
+    23:41:54.190 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Save user User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:41:54.197 | 199 Pool-1-worker-92 | DEBUG | .p.s.g.GitLabCIUserManagementService : Please refer to the repository for user management.
+    23:41:54.224 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Created Information for User: User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:41:54.225 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : Sending SAML2 creation mail
+    23:41:54.233 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.service.user.UserService : Save user User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    23:41:54.251 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending SAML2 set password email to 'student_saml_test@invalid'
+    23:41:54.253 | 501 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}' with subject 'Artemis account created'
+    23:41:54.254 | 501 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'Artemis account created' to User 'User{login='student_saml_test', firstName='FirstName', lastName='LastName', email='student_saml_test@invalid', imageUrl='null', activated='true', langKey='en', activationKey='null'}'
+
+  Starting logs for UserSaml2IntegrationTest > testValidSaml2Login()
+    23:41:54.299 | 199 Pool-1-worker-92 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='UserSaml2IntegrationTest#testValidSaml2Login'
+    23:41:54.309 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/saml2
+    23:41:54.309 | 199 Pool-1-worker-92 | DEBUG | .t.c.a.a.c.w.o.PublicUserJwtResource : SAML2 authentication: Saml2Authentication [Principal=org.springframework.security.saml2.provider.service.authentication.DefaultSaml2AuthenticatedPrincipal@81a75fa1, Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[]]
+    23:41:54.309 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : SAML2 User 'student_saml_test' logged in, attributes {uid=[student_saml_test], registration_number=[12345678], last_name=[LastName], first_name=[FirstName], email=[student_saml_test@invalid]}
+    23:41:54.310 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.c.SAML2Service         : SAML2 password-enabled: Optional[true]
+
+  Starting logs for UserSaml2IntegrationTest > testAuthenticationRedirect()
+    23:41:54.380 | 199 Pool-1-worker-92 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:a74bc5d1-02ef-4ef8-8db7-9c0ac1aa8d92;USER=sa', scope='UserSaml2IntegrationTest#testAuthenticationRedirect'
+    23:41:54.406 | 199 Pool-1-worker-92 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/saml2
+
+Finished logs for UserSaml2IntegrationTest
+]]></system-out>
+  <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (/home/runner/.gradle/caches/modules-2/files-2.1/net.bytebuddy/byte-buddy-agent/1.17.1/669a13b59d5ffd8198a79e4dc99018a9278e457/byte-buddy-agent-1.17.1.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+</testsuite>

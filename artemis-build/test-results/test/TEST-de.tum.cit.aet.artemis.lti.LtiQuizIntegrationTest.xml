@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lti.LtiQuizIntegrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:49:35" hostname="fv-az1721-502" time="0.772">
+  <properties/>
+  <testcase name="testLtiServicesAreCalledUponQuizSubmission(boolean) [1] isSubmitted=true" classname="de.tum.cit.aet.artemis.lti.LtiQuizIntegrationTest" time="0.248"/>
+  <testcase name="testLtiServicesAreCalledUponQuizSubmission(boolean) [2] isSubmitted=false" classname="de.tum.cit.aet.artemis.lti.LtiQuizIntegrationTest" time="0.19"/>
+  <testcase name="testLtiReevaluateStatistics()" classname="de.tum.cit.aet.artemis.lti.LtiQuizIntegrationTest" time="0.332"/>
+  <system-out><![CDATA[    23:48:37.665 | 621 artemis-task-1   | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for assessed exercise submitted 4046 notification 
+    23:48:37.666 | 621 artemis-task-1   | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "a15933c1-cf2c-4784-8591-e8c4745fb34d" (#4046) to trigger on ASSESSMENT_DUE.
+    23:48:37.666 | 621 artemis-task-1   | DEBUG | .a.a.c.s.NotificationScheduleService : Scheduled notify about assessed exercise submission after assessment due date for exercise 'a15933c1-cf2c-4784-8591-e8c4745fb34d' (#4046) at 2025-02-16T23:48:37.637078Z.
+    23:48:44.356 | 641 nt.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5704 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=339.9M, swap.space.total=0, swap.space.free=0, heap.memory.used=2.1G, heap.memory.free=1.4G, heap.memory.total=3.5G, heap.memory.max=6.0G, heap.memory.used/total=60.49%, heap.memory.used/max=35.72%, minor.gc.count=222, minor.gc.time=10768ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=98, unknown.gc.time=2298ms, load.process=0.00%, load.system=73.77%, load.systemAverage=6.29, thread.count=508, thread.peakCount=517, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=6234, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=215, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+    23:49:00.000 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Schedule tasks to process...
+
+Finished logs for ParticipationIntegrationTest
+
+Starting logs for LtiQuizIntegrationTest
+
+  Starting logs for LtiQuizIntegrationTest > testLtiServicesAreCalledUponQuizSubmission(boolean) [1] isSubmitted=true
+    23:49:35.786 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LtiQuizIntegrationTest#testLtiServicesAreCalledUponQuizSubmission'
+    23:49:35.793 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:48:35.786320986Z[Etc/UTC]', duration='240', dueDate='2025-02-14T23:52:40.786320986Z[Etc/UTC]'}
+    23:49:35.807 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 4047
+    23:49:35.809 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#4047) to trigger on DUE.
+    23:49:35.809 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:49:35.811 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:49:35.813 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:35.814 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:35.816 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:35.818 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:35.819 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:35.819 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:49:35.820 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:49:35.821 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/4047/start-participation
+    23:49:35.822 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 4047
+    23:49:35.847 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/4047/submissions/live
+    23:49:35.851 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to save or submit QuizSubmission for live mode : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:35.852 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode:: Received quiz exercise for user ltiquizsubmissionteststudent1 in quiz 4047 in 1266 µs.
+    23:49:35.883 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizSubmissionService  : submit quiz in live mode: Saved quiz submission for user ltiquizsubmissionteststudent1 in quiz 4047 after 32.23ms 
+    23:49:35.894 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic - this operation breaks ==
+    23:49:35.894 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic - this operation breaks ==
+    23:49:35.897 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic - this operation breaks ==
+    23:49:35.897 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic - this operation breaks ==
+    23:49:35.897 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic - this operation breaks ==
+    23:49:35.897 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic - this operation breaks ==
+    23:49:35.902 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizSubmissionService  : Calculating results for quiz 4047
+    23:49:35.908 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4047 and participant 769 (result to be deleted: null)
+    23:49:35.908 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4047 and participant 769 at 2025-02-14T23:49:36.008085391Z[Etc/UTC].
+    23:49:36.008 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 4047 and participant 769 to update participant scores.
+    23:49:36.012 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 127.
+    23:49:36.013 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 4047 and participant 769 took 5 ms.
+
+  Starting logs for LtiQuizIntegrationTest > testLtiServicesAreCalledUponQuizSubmission(boolean) [2] isSubmitted=false
+    23:49:36.032 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LtiQuizIntegrationTest#testLtiServicesAreCalledUponQuizSubmission'
+    23:49:36.037 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-14T23:48:36.032696649Z[Etc/UTC]', duration='240', dueDate='2025-02-14T23:52:41.032696649Z[Etc/UTC]'}
+    23:49:36.044 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 4048
+    23:49:36.046 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#4048) to trigger on DUE.
+    23:49:36.046 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:49:36.048 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 0 tutors...
+    23:49:36.049 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:49:36.050 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:36.053 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:36.054 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses...
+    23:49:36.054 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 2 users from all courses. Done
+    23:49:36.054 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database...
+    23:49:36.057 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 2 users to database. Done
+    23:49:36.058 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises/4048/start-participation
+    23:49:36.059 |  27 nPool-1-worker-1 | DEBUG | .c.a.a.q.w.QuizParticipationResource : REST request to start quiz exercise participation : 4048
+    23:49:36.080 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/exercises/4048/submissions/live
+    23:49:36.082 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.w.QuizSubmissionResource : REST request to save or submit QuizSubmission for live mode : QuizSubmission{id=null, scoreInPoints='null'}
+    23:49:36.084 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizSubmissionService  : save quiz in live mode:: Received quiz exercise for user ltiquizsubmissionteststudent1 in quiz 4048 in 1607 µs.
+    23:49:36.089 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizSubmissionService  : save quiz in live mode: Saved quiz submission for user ltiquizsubmissionteststudent1 in quiz 4048 after 7.10ms 
+    23:49:36.095 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic - this operation breaks ==
+    23:49:36.095 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.MultipleChoiceQuestionStatistic - this operation breaks ==
+    23:49:36.097 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic - this operation breaks ==
+    23:49:36.097 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.DragAndDropQuestionStatistic - this operation breaks ==
+    23:49:36.097 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic - this operation breaks ==
+    23:49:36.097 |  27 nPool-1-worker-1 | WARN  | o.h.e.i.StatefulPersistenceContext   : HHH000179: Narrowing proxy to class de.tum.cit.aet.artemis.quiz.domain.ShortAnswerQuestionStatistic - this operation breaks ==
+    23:49:36.101 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.s.QuizSubmissionService  : Calculating results for quiz 4048
+    23:49:36.104 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4048 and participant 769 (result to be deleted: null)
+    23:49:36.104 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4048 and participant 769 at 2025-02-14T23:49:36.204728527Z[Etc/UTC].
+    23:49:36.204 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 4048 and participant 769 to update participant scores.
+    23:49:36.208 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 128.
+    23:49:36.210 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 4048 and participant 769 took 6 ms.
+
+  Starting logs for LtiQuizIntegrationTest > testLtiReevaluateStatistics()
+    23:49:36.223 |  27 nPool-1-worker-1 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LtiQuizIntegrationTest#testLtiReevaluateStatistics'
+    23:49:36.228 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/quiz-exercises
+    23:49:36.229 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.web.QuizExerciseResource : REST request to create QuizExercise : QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-15T04:49:36.223274033Z', duration='3600', dueDate='null'}
+    23:49:36.231 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.q.s.QuizExerciseService    : Save quiz exercise to database: QuizExercise{id=null, title='new quiz', randomizeQuestionOrder='true', allowedNumberOfAttempts='1', isOpenForPractice='false', releaseDate='2025-02-15T04:49:36.223274033Z', duration='3600', dueDate='2025-02-15T05:49:41.223274033Z'}
+    23:49:36.239 |  27 nPool-1-worker-1 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule quiz start for quiz exercise 4049
+    23:49:36.240 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "new quiz" (#4049) to trigger on START.
+    23:49:36.240 |  27 nPool-1-worker-1 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "new quiz" (#4049) to trigger on DUE.
+    23:49:36.271 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 769 (result to be deleted: null)
+    23:49:36.272 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 769 at 2025-02-14T23:49:36.372045834Z[Etc/UTC].
+    23:49:36.286 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 769 (result to be deleted: null)
+    23:49:36.286 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 769 at 2025-02-14T23:49:36.386917096Z[Etc/UTC].
+    23:49:36.296 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 771 (result to be deleted: null)
+    23:49:36.297 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 771 at 2025-02-14T23:49:36.397030095Z[Etc/UTC].
+    23:49:36.311 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 771 (result to be deleted: null)
+    23:49:36.311 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 771 at 2025-02-14T23:49:36.411290158Z[Etc/UTC].
+    23:49:36.320 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 772 (result to be deleted: null)
+    23:49:36.320 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 772 at 2025-02-14T23:49:36.420937198Z[Etc/UTC].
+    23:49:36.335 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 772 (result to be deleted: null)
+    23:49:36.335 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 772 at 2025-02-14T23:49:36.435147397Z[Etc/UTC].
+    23:49:36.344 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 773 (result to be deleted: null)
+    23:49:36.344 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 773 at 2025-02-14T23:49:36.444800789Z[Etc/UTC].
+    23:49:36.358 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 773 (result to be deleted: null)
+    23:49:36.358 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 773 at 2025-02-14T23:49:36.458989989Z[Etc/UTC].
+    23:49:36.368 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 774 (result to be deleted: null)
+    23:49:36.369 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 774 at 2025-02-14T23:49:36.469002922Z[Etc/UTC].
+    23:49:36.383 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 774 (result to be deleted: null)
+    23:49:36.383 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 774 at 2025-02-14T23:49:36.483630069Z[Etc/UTC].
+    23:49:36.387 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 4049 and participant 769 to update participant scores.
+    23:49:36.391 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 129.
+    23:49:36.393 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 4049 and participant 769 took 6 ms.
+    23:49:36.396 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 775 (result to be deleted: null)
+    23:49:36.396 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 775 at 2025-02-14T23:49:36.496511120Z[Etc/UTC].
+    23:49:36.410 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 775 (result to be deleted: null)
+    23:49:36.410 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 775 at 2025-02-14T23:49:36.510877210Z[Etc/UTC].
+    23:49:36.411 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 4049 and participant 771 to update participant scores.
+    23:49:36.414 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 130.
+    23:49:36.416 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 4049 and participant 771 took 5 ms.
+    23:49:36.421 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 776 (result to be deleted: null)
+    23:49:36.421 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 776 at 2025-02-14T23:49:36.521175505Z[Etc/UTC].
+    23:49:36.435 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 4049 and participant 772 to update participant scores.
+    23:49:36.435 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 776 (result to be deleted: null)
+    23:49:36.435 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 776 at 2025-02-14T23:49:36.535871099Z[Etc/UTC].
+    23:49:36.439 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 131.
+    23:49:36.441 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 4049 and participant 772 took 6 ms.
+    23:49:36.445 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 777 (result to be deleted: null)
+    23:49:36.445 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 777 at 2025-02-14T23:49:36.545943542Z[Etc/UTC].
+    23:49:36.459 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 4049 and participant 773 to update participant scores.
+    23:49:36.461 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 777 (result to be deleted: null)
+    23:49:36.461 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 777 at 2025-02-14T23:49:36.561210092Z[Etc/UTC].
+    23:49:36.464 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 132.
+    23:49:36.466 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 4049 and participant 773 took 7 ms.
+    23:49:36.472 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 778 (result to be deleted: null)
+    23:49:36.472 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 778 at 2025-02-14T23:49:36.572778986Z[Etc/UTC].
+    23:49:36.483 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 4049 and participant 774 to update participant scores.
+    23:49:36.486 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 133.
+    23:49:36.487 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 778 (result to be deleted: null)
+    23:49:36.487 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 778 at 2025-02-14T23:49:36.587264939Z[Etc/UTC].
+    23:49:36.488 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 4049 and participant 774 took 5 ms.
+    23:49:36.497 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 779 (result to be deleted: null)
+    23:49:36.497 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 779 at 2025-02-14T23:49:36.597083680Z[Etc/UTC].
+    23:49:36.510 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 4049 and participant 775 to update participant scores.
+    23:49:36.511 |  27 nPool-1-worker-1 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4049 and participant 779 (result to be deleted: null)
+    23:49:36.511 |  27 nPool-1-worker-1 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4049 and participant 779 at 2025-02-14T23:49:36.611525111Z[Etc/UTC].
+    23:49:36.513 |  27 nPool-1-worker-1 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/quiz-exercises/4049/recalculate-statistics
+    23:49:36.514 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 134.
+    23:49:36.514 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.q.web.QuizExerciseResource : REST request to recalculate quiz statistics : 4049
+    23:49:36.516 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 4049 and participant 775 took 6 ms.
+    23:49:36.535 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 4049 and participant 776 to update participant scores.
+    23:49:36.540 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 135.
+    23:49:36.543 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 4049 and participant 776 took 8 ms.
+
+Finished logs for LtiQuizIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

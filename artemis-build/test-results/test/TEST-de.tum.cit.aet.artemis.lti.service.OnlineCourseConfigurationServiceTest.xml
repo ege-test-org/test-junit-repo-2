@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lti.service.OnlineCourseConfigurationServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:01" hostname="fv-az1721-502" time="0.026">
+  <properties/>
+  <testcase name="addOnlineCourseConfigurationToLtiConfigurationsSuccess()" classname="de.tum.cit.aet.artemis.lti.service.OnlineCourseConfigurationServiceTest" time="0.008"/>
+  <testcase name="getClientRegistrationNullOnlineCourseConfiguration()" classname="de.tum.cit.aet.artemis.lti.service.OnlineCourseConfigurationServiceTest" time="0.002"/>
+  <testcase name="noLtiConfigurationValidateOnlineCourseConfiguration()" classname="de.tum.cit.aet.artemis.lti.service.OnlineCourseConfigurationServiceTest" time="0.002"/>
+  <testcase name="getClientRegistrationSuccess()" classname="de.tum.cit.aet.artemis.lti.service.OnlineCourseConfigurationServiceTest" time="0.001"/>
+  <testcase name="addOnlineCourseConfigurationToLtiConfigurationsThrowsEntityNotFound()" classname="de.tum.cit.aet.artemis.lti.service.OnlineCourseConfigurationServiceTest" time="0.002"/>
+  <testcase name="invalidRegistrationIdValidateOnlineCourseConfiguration()" classname="de.tum.cit.aet.artemis.lti.service.OnlineCourseConfigurationServiceTest" time="0.001"/>
+  <system-out><![CDATA[
+Starting logs for OnlineCourseConfigurationServiceTest
+
+  Starting logs for OnlineCourseConfigurationServiceTest > addOnlineCourseConfigurationToLtiConfigurationsSuccess()
+
+  Starting logs for OnlineCourseConfigurationServiceTest > getClientRegistrationNullOnlineCourseConfiguration()
+
+  Starting logs for OnlineCourseConfigurationServiceTest > noLtiConfigurationValidateOnlineCourseConfiguration()
+
+  Starting logs for OnlineCourseConfigurationServiceTest > getClientRegistrationSuccess()
+
+  Starting logs for OnlineCourseConfigurationServiceTest > addOnlineCourseConfigurationToLtiConfigurationsThrowsEntityNotFound()
+
+  Starting logs for OnlineCourseConfigurationServiceTest > invalidRegistrationIdValidateOnlineCourseConfiguration()
+
+Finished logs for OnlineCourseConfigurationServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLRelationshipTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:04" hostname="fv-az1721-502" time="0.063">
+  <properties/>
+  <testcase name="similarity_null()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLRelationshipTest" time="0.004"/>
+  <testcase name="similarity_sameRelationship()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLRelationshipTest" time="0.004"/>
+  <testcase name="similarity_noSameSymmetricUnidirectionalRelationship()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLRelationshipTest" time="0.005"/>
+  <testcase name="similarity_differentSourceRole()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLRelationshipTest" time="0.005"/>
+  <testcase name="similarity_differentSourceMultiplicity()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLRelationshipTest" time="0.003"/>
+  <testcase name="similarity_missingAndDifferentValues()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLRelationshipTest" time="0.005"/>
+  <testcase name="similarity_differentElementType()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLRelationshipTest" time="0.002"/>
+  <testcase name="similarity_differentSourceAndTargetElements()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLRelationshipTest" time="0.005"/>
+  <testcase name="similarity_sameSymmetricBidirectionalRelationship()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLRelationshipTest" time="0.005"/>
+  <testcase name="similarity_nullReferenceValues()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLRelationshipTest" time="0.006"/>
+  <testcase name="similarity_emptyReferenceValues()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLRelationshipTest" time="0.004"/>
+  <testcase name="similarity_differentTargetRole()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLRelationshipTest" time="0.004"/>
+  <testcase name="similarity_differentTargetMultiplicity()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLRelationshipTest" time="0.005"/>
+  <testcase name="similarity_differentRelationshipType()" classname="de.tum.cit.aet.artemis.modeling.compass.umlmodel.classdiagram.UMLRelationshipTest" time="0.005"/>
+  <system-out><![CDATA[
+Starting logs for UMLRelationshipTest
+
+  Starting logs for UMLRelationshipTest > similarity_null()
+
+  Starting logs for UMLRelationshipTest > similarity_sameRelationship()
+
+  Starting logs for UMLRelationshipTest > similarity_noSameSymmetricUnidirectionalRelationship()
+
+  Starting logs for UMLRelationshipTest > similarity_differentSourceRole()
+
+  Starting logs for UMLRelationshipTest > similarity_differentSourceMultiplicity()
+
+  Starting logs for UMLRelationshipTest > similarity_missingAndDifferentValues()
+
+  Starting logs for UMLRelationshipTest > similarity_differentElementType()
+
+  Starting logs for UMLRelationshipTest > similarity_differentSourceAndTargetElements()
+
+  Starting logs for UMLRelationshipTest > similarity_sameSymmetricBidirectionalRelationship()
+
+  Starting logs for UMLRelationshipTest > similarity_nullReferenceValues()
+
+  Starting logs for UMLRelationshipTest > similarity_emptyReferenceValues()
+
+  Starting logs for UMLRelationshipTest > similarity_differentTargetRole()
+
+  Starting logs for UMLRelationshipTest > similarity_differentTargetMultiplicity()
+
+  Starting logs for UMLRelationshipTest > similarity_differentRelationshipType()
+
+Finished logs for UMLRelationshipTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.assessment.service.FeedbackServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:51" hostname="fv-az1721-502" time="0.026">
+  <properties/>
+  <testcase name="copyFeedbackWithLongFeedback()" classname="de.tum.cit.aet.artemis.assessment.service.FeedbackServiceTest" time="0.015"/>
+  <testcase name="copyWithLongFeedback()" classname="de.tum.cit.aet.artemis.assessment.service.FeedbackServiceTest" time="0.01"/>
+  <system-out><![CDATA[
+Starting logs for FeedbackServiceTest
+
+  Starting logs for FeedbackServiceTest > copyFeedbackWithLongFeedback()
+    23:42:51.544 |  48 Pool-1-worker-22 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FeedbackServiceTest#copyFeedbackWithLongFeedback'
+
+  Starting logs for FeedbackServiceTest > copyWithLongFeedback()
+    23:42:51.557 |  48 Pool-1-worker-22 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='FeedbackServiceTest#copyWithLongFeedback'
+
+Finished logs for FeedbackServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,2371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" tests="26" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:47:41" hostname="fv-az1721-502" time="4.59">
+  <properties/>
+  <testcase name="shouldCalculateScoreWithStaticCodeAnalysisPenaltiesWithoutCaps()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.177"/>
+  <testcase name="shouldCalculateScoreWithStaticCodeAnalysisPenalties()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.142"/>
+  <testcase name="shouldRecalculateScoreBasedOnTestCasesWeightAutomatic()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.097"/>
+  <testcase name="shouldAddFeedbackForDuplicateTestCases()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.114"/>
+  <testcase name="shouldRecalculateScoreWithTestCaseBonusAndExerciseBonus()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.114"/>
+  <testcase name="shouldKeepTestsWithAfterDueDateFlagIfDueDateHasPassed()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.106"/>
+  <testcase name="shouldRecalculateScoreWithTestCaseBonusButNoExerciseBonus()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.129"/>
+  <testcase name="shouldRemoveInvisibleStaticCodeAnalysisFeedbackOnGrading()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.094"/>
+  <testcase name="shouldUpdateOnlyResultsForParticipationsWithoutIndividualDueDate()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.185"/>
+  <testcase name="testWeightSumZero()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.187"/>
+  <testcase name="shouldGetCorrectLatestAutomaticResults()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.144"/>
+  <testcase name="shouldRecalculateScoreBasedOnTestCasesWeightManual()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.094"/>
+  <testcase name="shouldReEvaluateScoreOfTheCorrectResults()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.313"/>
+  <testcase name="shouldCalculateScoreWithStaticCodeAnalysisPenalties_cappedByExerciseMaxPenalty()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.174"/>
+  <testcase name="shouldUpdateTheLatestResultOfASingleParticipation()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.197"/>
+  <testcase name="shouldNotIncludeTestsMarkedAsNeverVisibleInScoreCalculation(boolean) [1] isAfterDueDate=false" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.318"/>
+  <testcase name="shouldNotIncludeTestsMarkedAsNeverVisibleInScoreCalculation(boolean) [2] isAfterDueDate=true" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.231"/>
+  <testcase name="shouldCalculateCorrectStatistics()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.225"/>
+  <testcase name="shouldNotUpdateResultIfNoTestCasesExist()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.096"/>
+  <testcase name="shouldGetCorrectLatestAutomaticResultsWithMultipleResults()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.213"/>
+  <testcase name="shouldRemoveTestsWithAfterDueDateFlagIfDueDateHasNotPassed()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.098"/>
+  <testcase name="shouldNotIncludeTestsInResultWithAfterDueDateFlagIfDueDateHasNotPassedForNonStudentParticipation()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.107"/>
+  <testcase name="shouldSetScoreCorrectlyIfWeightSumIsReallyBigOrReallySmall()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.102"/>
+  <testcase name="shouldCalculateScoreWithStaticCodeAnalysisPenaltiesWithBonus()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.143"/>
+  <testcase name="[1] templateParticipation=false" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.307"/>
+  <testcase name="[2] templateParticipation=true" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseGradingServiceTest$ExamProgrammingExerciseGradingServiceTest" time="0.417"/>
+  <system-out><![CDATA[[INFO] 
+[INFO] ---------< de.test:c397a138-5740-420f-845b-6d0326a003a0-Tests >---------
+[INFO] Building c397a138-5740-420f-845b-6d0326a003a0 Tests 1.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.2.0/maven-clean-plugin-3.2.0.pom
+Progress (1): 1.4/5.3 kB
+Progress (1): 2.8/5.3 kB
+Progress (1): 4.1/5.3 kB
+Progress (1): 5.3 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.2.0/maven-clean-plugin-3.2.0.pom (5.3 kB at 19 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/35/maven-plugins-35.pom
+Progress (1): 1.4/9.9 kB
+Progress (1): 2.8/9.9 kB
+Progress (1): 4.1/9.9 kB
+Progress (1): 5.5/9.9 kB
+Progress (1): 6.9/9.9 kB
+Progress (1): 8.3/9.9 kB
+Progress (1): 9.7/9.9 kB
+Progress (1): 9.9 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/35/maven-plugins-35.pom (9.9 kB at 413 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/35/maven-parent-35.pom
+Progress (1): 1.4/45 kB
+Progress (1): 2.8/45 kB
+Progress (1): 4.1/45 kB
+Progress (1): 5.5/45 kB
+Progress (1): 6.9/45 kB
+Progress (1): 8.3/45 kB
+Progress (1): 9.7/45 kB
+Progress (1): 11/45 kB 
+Progress (1): 12/45 kB
+Progress (1): 14/45 kB
+Progress (1): 15/45 kB
+Progress (1): 16/45 kB
+Progress (1): 17/45 kB
+Progress (1): 19/45 kB
+Progress (1): 20/45 kB
+Progress (1): 21/45 kB
+Progress (1): 23/45 kB
+Progress (1): 24/45 kB
+Progress (1): 26/45 kB
+Progress (1): 27/45 kB
+Progress (1): 28/45 kB
+Progress (1): 30/45 kB
+Progress (1): 31/45 kB
+Progress (1): 32/45 kB
+Progress (1): 34/45 kB
+Progress (1): 35/45 kB
+Progress (1): 37/45 kB
+Progress (1): 38/45 kB
+Progress (1): 39/45 kB
+Progress (1): 41/45 kB
+Progress (1): 42/45 kB
+Progress (1): 43/45 kB
+Progress (1): 45/45 kB
+Progress (1): 45 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/35/maven-parent-35.pom (45 kB at 1.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/25/apache-25.pom
+Progress (1): 16/21 kB
+Progress (1): 21 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/25/apache-25.pom (21 kB at 1.5 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.2.0/maven-clean-plugin-3.2.0.jar
+Progress (1): 16/36 kB
+Progress (1): 33/36 kB
+Progress (1): 36 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-clean-plugin/3.2.0/maven-clean-plugin-3.2.0.jar (36 kB at 1.6 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/3.3.1/maven-resources-plugin-3.3.1.pom
+Progress (1): 8.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/3.3.1/maven-resources-plugin-3.3.1.pom (8.2 kB at 480 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/39/maven-plugins-39.pom
+Progress (1): 8.1 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/39/maven-plugins-39.pom (8.1 kB at 622 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/39/maven-parent-39.pom
+Progress (1): 16/48 kB
+Progress (1): 33/48 kB
+Progress (1): 48 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/39/maven-parent-39.pom (48 kB at 2.7 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/29/apache-29.pom
+Progress (1): 16/21 kB
+Progress (1): 21 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/29/apache-29.pom (21 kB at 1.7 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/3.3.1/maven-resources-plugin-3.3.1.jar
+Progress (1): 16/31 kB
+Progress (1): 31 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-resources-plugin/3.3.1/maven-resources-plugin-3.3.1.jar (31 kB at 2.4 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.13.0/maven-compiler-plugin-3.13.0.pom
+Progress (1): 10 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.13.0/maven-compiler-plugin-3.13.0.pom (10 kB at 870 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/41/maven-plugins-41.pom
+Progress (1): 7.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-plugins/41/maven-plugins-41.pom (7.4 kB at 735 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/41/maven-parent-41.pom
+Progress (1): 16/50 kB
+Progress (1): 32/50 kB
+Progress (1): 49/50 kB
+Progress (1): 50 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/41/maven-parent-41.pom (50 kB at 3.8 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/31/apache-31.pom
+Progress (1): 16/24 kB
+Progress (1): 24 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/31/apache-31.pom (24 kB at 2.4 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.13.0/maven-compiler-plugin-3.13.0.jar
+Progress (1): 16/83 kB
+Progress (1): 32/83 kB
+Progress (1): 49/83 kB
+Progress (1): 65/83 kB
+Progress (1): 81/83 kB
+Progress (1): 83 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-compiler-plugin/3.13.0/maven-compiler-plugin-3.13.0.jar (83 kB at 4.9 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/3.4.1/maven-enforcer-plugin-3.4.1.pom
+Progress (1): 7.7 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/3.4.1/maven-enforcer-plugin-3.4.1.pom (7.7 kB at 704 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer/3.4.1/enforcer-3.4.1.pom
+Progress (1): 9.1 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer/3.4.1/enforcer-3.4.1.pom (9.1 kB at 697 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/40/maven-parent-40.pom
+Progress (1): 16/49 kB
+Progress (1): 32/49 kB
+Progress (1): 49/49 kB
+Progress (1): 49 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/40/maven-parent-40.pom (49 kB at 4.4 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/30/apache-30.pom
+Progress (1): 16/23 kB
+Progress (1): 23 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/30/apache-30.pom (23 kB at 2.3 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.0/junit-bom-5.10.0.pom
+Progress (1): 5.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.0/junit-bom-5.10.0.pom (5.6 kB at 471 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/3.4.1/maven-enforcer-plugin-3.4.1.jar
+Progress (1): 16/39 kB
+Progress (1): 32/39 kB
+Progress (1): 39 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-enforcer-plugin/3.4.1/maven-enforcer-plugin-3.4.1.jar (39 kB at 2.8 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.2.5/maven-surefire-plugin-3.2.5.pom
+Progress (1): 5.3 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.2.5/maven-surefire-plugin-3.2.5.pom (5.3 kB at 532 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/3.2.5/surefire-3.2.5.pom
+Progress (1): 16/22 kB
+Progress (1): 22 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/surefire/surefire/3.2.5/surefire-3.2.5.pom (22 kB at 2.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.3/junit-bom-5.9.3.pom
+Progress (1): 5.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.3/junit-bom-5.9.3.pom (5.6 kB at 512 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.2.5/maven-surefire-plugin-3.2.5.jar
+Progress (1): 16/45 kB
+Progress (1): 33/45 kB
+Progress (1): 45 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/plugins/maven-surefire-plugin/3.2.5/maven-surefire-plugin-3.2.5.jar (45 kB at 4.1 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/de/tum/in/ase/artemis-java-test-sandbox/1.13.0/artemis-java-test-sandbox-1.13.0.pom
+Progress (1): 14 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/de/tum/in/ase/artemis-java-test-sandbox/1.13.0/artemis-java-test-sandbox-1.13.0.pom (14 kB at 1.3 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.4.9/logback-classic-1.4.9.pom
+Progress (1): 13 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.4.9/logback-classic-1.4.9.pom (13 kB at 1.1 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-parent/1.4.9/logback-parent-1.4.9.pom
+Progress (1): 16/20 kB
+Progress (1): 20 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-parent/1.4.9/logback-parent-1.4.9.pom (20 kB at 1.5 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.4.9/logback-core-1.4.9.pom
+Progress (1): 5.0 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.4.9/logback-core-1.4.9.pom (5.0 kB at 505 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.pom
+Progress (1): 2.7 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.pom (2.7 kB at 159 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/2.0.7/slf4j-parent-2.0.7.pom
+Progress (1): 16/17 kB
+Progress (1): 17 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/2.0.7/slf4j-parent-2.0.7.pom (17 kB at 1.7 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.pom
+Progress (1): 3.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.pom (3.2 kB at 318 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.pom
+Progress (1): 2.0 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.pom (2.0 kB at 254 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.pom
+Progress (1): 2.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.pom (2.8 kB at 315 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.pom
+Progress (1): 1.5 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.pom (1.5 kB at 191 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.10.0/junit-platform-launcher-1.10.0.pom
+Progress (1): 3.0 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.10.0/junit-platform-launcher-1.10.0.pom (3.0 kB at 379 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.pom
+Progress (1): 3.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.pom (3.2 kB at 291 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.pom
+Progress (1): 3.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.pom (3.2 kB at 356 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.pom
+Progress (1): 3.0 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.pom (3.0 kB at 376 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest/2.2/hamcrest-2.2.pom
+Progress (1): 1.1 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest/2.2/hamcrest-2.2.pom (1.1 kB at 125 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.pom
+Progress (1): 16/19 kB
+Progress (1): 19 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.pom (19 kB at 2.4 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-parent/3.24.2/assertj-parent-3.24.2.pom
+Progress (1): 13 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-parent/3.24.2/assertj-parent-3.24.2.pom (13 kB at 1.5 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-build/3.24.2/assertj-build-3.24.2.pom
+Progress (1): 8.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-build/3.24.2/assertj-build-3.24.2.pom (8.8 kB at 798 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.1/junit-bom-5.9.1.pom
+Progress (1): 5.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.9.1/junit-bom-5.9.1.pom (5.6 kB at 563 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-bom/4.11.0/mockito-bom-4.11.0.pom
+Progress (1): 3.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/mockito/mockito-bom/4.11.0/mockito-bom-4.11.0.pom (3.2 kB at 350 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.pom
+Progress (1): 16 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.pom (16 kB at 1.8 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.12.21/byte-buddy-parent-1.12.21.pom
+Progress (1): 16/58 kB
+Progress (1): 32/58 kB
+Progress (1): 49/58 kB
+Progress (1): 58 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.12.21/byte-buddy-parent-1.12.21.pom (58 kB at 2.9 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/json/json/20230618/json-20230618.pom
+Progress (1): 6.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/json/json/20230618/json-20230618.pom (6.6 kB at 657 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom
+Progress (1): 6.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/oss/oss-parent/9/oss-parent-9.pom (6.6 kB at 469 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/info/debatty/java-string-similarity/2.0.0/java-string-similarity-2.0.0.pom
+Progress (1): 7.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/info/debatty/java-string-similarity/2.0.0/java-string-similarity-2.0.0.pom (7.6 kB at 687 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.pom
+Progress (1): 491 B
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.pom (491 B at 45 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.25.4/javaparser-core-3.25.4.pom
+Progress (1): 5.0 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.25.4/javaparser-core-3.25.4.pom (5.0 kB at 357 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-parent/3.25.4/javaparser-parent-3.25.4.pom
+Progress (1): 16/24 kB
+Progress (1): 24 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-parent/3.25.4/javaparser-parent-3.25.4.pom (24 kB at 2.0 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/de/tum/in/ase/artemis-java-test-sandbox/1.13.0/artemis-java-test-sandbox-1.13.0.jar
+Progress (1): 16/297 kB
+Progress (1): 33/297 kB
+Progress (1): 49/297 kB
+Progress (1): 66/297 kB
+Progress (1): 82/297 kB
+Progress (1): 98/297 kB
+Progress (1): 115/297 kB
+Progress (1): 131/297 kB
+Progress (1): 147/297 kB
+Progress (1): 164/297 kB
+Progress (1): 180/297 kB
+Progress (1): 197/297 kB
+Progress (1): 213/297 kB
+Progress (1): 229/297 kB
+Progress (1): 246/297 kB
+Progress (1): 262/297 kB
+Progress (1): 279/297 kB
+Progress (1): 295/297 kB
+Progress (1): 297 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/de/tum/in/ase/artemis-java-test-sandbox/1.13.0/artemis-java-test-sandbox-1.13.0.jar (297 kB at 14 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.4.9/logback-classic-1.4.9.jar
+Downloading from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.4.9/logback-core-1.4.9.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar
+Progress (1): 16/281 kB
+Progress (1): 32/281 kB
+Progress (1): 49/281 kB
+Progress (1): 65/281 kB
+Progress (1): 81/281 kB
+Progress (1): 98/281 kB
+Progress (1): 114/281 kB
+Progress (1): 131/281 kB
+Progress (1): 147/281 kB
+Progress (1): 163/281 kB
+Progress (1): 180/281 kB
+Progress (1): 196/281 kB
+Progress (1): 212/281 kB
+Progress (1): 229/281 kB
+Progress (1): 245/281 kB
+Progress (1): 262/281 kB
+Progress (1): 278/281 kB
+Progress (1): 281 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-classic/1.4.9/logback-classic-1.4.9.jar (281 kB at 9.1 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar
+Progress (1): 1.4/14 kB
+Progress (1): 2.8/14 kB
+Progress (1): 4.1/14 kB
+Progress (1): 5.5/14 kB
+Progress (1): 6.9/14 kB
+Progress (1): 8.3/14 kB
+Progress (1): 9.7/14 kB
+Progress (1): 11/14 kB 
+Progress (1): 12/14 kB
+Progress (1): 14/14 kB
+Progress (1): 14 kB   
+Progress (2): 14 kB | 1.4/211 kB
+Progress (2): 14 kB | 2.8/211 kB
+Progress (2): 14 kB | 4.1/211 kB
+Progress (2): 14 kB | 5.5/211 kB
+Progress (2): 14 kB | 6.9/211 kB
+Progress (2): 14 kB | 8.3/211 kB
+Progress (2): 14 kB | 9.7/211 kB
+Progress (2): 14 kB | 11/211 kB 
+Progress (3): 14 kB | 11/211 kB | 1.4/64 kB
+Progress (3): 14 kB | 11/211 kB | 2.8/64 kB
+Progress (3): 14 kB | 11/211 kB | 4.1/64 kB
+Progress (3): 14 kB | 11/211 kB | 5.5/64 kB
+Progress (3): 14 kB | 11/211 kB | 6.9/64 kB
+Progress (4): 14 kB | 11/211 kB | 6.9/64 kB | 16/106 kB
+Progress (4): 14 kB | 11/211 kB | 8.3/64 kB | 16/106 kB
+Progress (4): 14 kB | 11/211 kB | 9.7/64 kB | 16/106 kB
+Progress (4): 14 kB | 11/211 kB | 11/64 kB | 16/106 kB 
+Progress (4): 14 kB | 11/211 kB | 11/64 kB | 33/106 kB
+Progress (4): 14 kB | 11/211 kB | 12/64 kB | 33/106 kB
+Progress (4): 14 kB | 11/211 kB | 14/64 kB | 33/106 kB
+Progress (4): 14 kB | 11/211 kB | 14/64 kB | 49/106 kB
+Progress (4): 14 kB | 11/211 kB | 15/64 kB | 49/106 kB
+Progress (4): 14 kB | 11/211 kB | 16/64 kB | 49/106 kB
+Progress (4): 14 kB | 11/211 kB | 17/64 kB | 49/106 kB
+Progress (4): 14 kB | 11/211 kB | 19/64 kB | 49/106 kB
+Progress (4): 14 kB | 11/211 kB | 19/64 kB | 66/106 kB
+Progress (4): 14 kB | 11/211 kB | 20/64 kB | 66/106 kB
+Progress (4): 14 kB | 11/211 kB | 21/64 kB | 66/106 kB
+Progress (4): 14 kB | 11/211 kB | 23/64 kB | 66/106 kB
+Progress (4): 14 kB | 11/211 kB | 23/64 kB | 82/106 kB
+Progress (4): 14 kB | 11/211 kB | 24/64 kB | 82/106 kB
+Progress (4): 14 kB | 11/211 kB | 26/64 kB | 82/106 kB
+Progress (4): 14 kB | 11/211 kB | 27/64 kB | 82/106 kB
+Progress (4): 14 kB | 11/211 kB | 27/64 kB | 98/106 kB
+Progress (4): 14 kB | 12/211 kB | 27/64 kB | 98/106 kB
+Progress (4): 14 kB | 14/211 kB | 27/64 kB | 98/106 kB
+Progress (4): 14 kB | 14/211 kB | 27/64 kB | 106 kB   
+Progress (4): 14 kB | 15/211 kB | 27/64 kB | 106 kB
+Progress (4): 14 kB | 17/211 kB | 27/64 kB | 106 kB
+Progress (4): 14 kB | 18/211 kB | 27/64 kB | 106 kB
+Progress (4): 14 kB | 19/211 kB | 27/64 kB | 106 kB
+Progress (4): 14 kB | 21/211 kB | 27/64 kB | 106 kB
+Progress (4): 14 kB | 22/211 kB | 27/64 kB | 106 kB
+Progress (4): 14 kB | 23/211 kB | 27/64 kB | 106 kB
+Progress (4): 14 kB | 25/211 kB | 27/64 kB | 106 kB
+                                                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar (106 kB at 1.4 MB/s)
+Progress (3): 14 kB | 26/211 kB | 27/64 kB
+                                          
+Downloading from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar
+Progress (3): 14 kB | 28/211 kB | 27/64 kB
+                                          
+Downloaded from central: https://repo.maven.apache.org/maven2/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar (14 kB at 188 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.10.0/junit-platform-launcher-1.10.0.jar
+Progress (3): 28/211 kB | 27/64 kB | 16/601 kB
+Progress (3): 28/211 kB | 27/64 kB | 33/601 kB
+Progress (3): 28/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 29/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 30/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 32/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 33/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 34/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 36/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 37/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 39/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 40/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 41/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 43/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 44/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 46/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 47/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 48/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 50/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 51/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 52/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 54/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 55/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 57/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 58/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 59/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 61/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 62/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 63/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 65/211 kB | 27/64 kB | 49/601 kB
+Progress (3): 65/211 kB | 28/64 kB | 49/601 kB
+Progress (3): 65/211 kB | 30/64 kB | 49/601 kB
+Progress (3): 65/211 kB | 31/64 kB | 49/601 kB
+Progress (3): 65/211 kB | 32/64 kB | 49/601 kB
+Progress (3): 65/211 kB | 34/64 kB | 49/601 kB
+Progress (3): 65/211 kB | 35/64 kB | 49/601 kB
+Progress (3): 65/211 kB | 37/64 kB | 49/601 kB
+Progress (3): 65/211 kB | 38/64 kB | 49/601 kB
+Progress (3): 65/211 kB | 38/64 kB | 66/601 kB
+Progress (3): 81/211 kB | 38/64 kB | 66/601 kB
+Progress (3): 81/211 kB | 38/64 kB | 82/601 kB
+Progress (3): 81/211 kB | 39/64 kB | 82/601 kB
+Progress (3): 81/211 kB | 41/64 kB | 82/601 kB
+Progress (3): 81/211 kB | 42/64 kB | 82/601 kB
+Progress (3): 97/211 kB | 42/64 kB | 82/601 kB
+Progress (3): 97/211 kB | 43/64 kB | 82/601 kB
+Progress (3): 97/211 kB | 45/64 kB | 82/601 kB
+Progress (3): 97/211 kB | 46/64 kB | 82/601 kB
+Progress (3): 97/211 kB | 48/64 kB | 82/601 kB
+Progress (3): 114/211 kB | 48/64 kB | 82/601 kB
+Progress (3): 114/211 kB | 49/64 kB | 82/601 kB
+Progress (3): 114/211 kB | 50/64 kB | 82/601 kB
+Progress (3): 114/211 kB | 52/64 kB | 82/601 kB
+Progress (3): 114/211 kB | 53/64 kB | 82/601 kB
+Progress (3): 114/211 kB | 54/64 kB | 82/601 kB
+Progress (3): 114/211 kB | 56/64 kB | 82/601 kB
+Progress (3): 114/211 kB | 56/64 kB | 98/601 kB
+Progress (3): 114/211 kB | 57/64 kB | 98/601 kB
+Progress (3): 114/211 kB | 59/64 kB | 98/601 kB
+Progress (3): 114/211 kB | 60/64 kB | 98/601 kB
+Progress (3): 114/211 kB | 61/64 kB | 98/601 kB
+Progress (3): 114/211 kB | 63/64 kB | 98/601 kB
+Progress (3): 114/211 kB | 63/64 kB | 115/601 kB
+Progress (3): 114/211 kB | 64 kB | 115/601 kB   
+Progress (3): 114/211 kB | 64 kB | 131/601 kB
+                                             
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/2.0.7/slf4j-api-2.0.7.jar (64 kB at 624 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar
+Progress (2): 130/211 kB | 131/601 kB
+Progress (2): 147/211 kB | 131/601 kB
+Progress (2): 147/211 kB | 147/601 kB
+Progress (2): 163/211 kB | 147/601 kB
+Progress (3): 163/211 kB | 147/601 kB | 1.4/6.8 kB
+Progress (3): 163/211 kB | 147/601 kB | 2.8/6.8 kB
+Progress (3): 163/211 kB | 164/601 kB | 2.8/6.8 kB
+Progress (3): 163/211 kB | 164/601 kB | 4.1/6.8 kB
+Progress (3): 163/211 kB | 164/601 kB | 5.5/6.8 kB
+Progress (3): 163/211 kB | 164/601 kB | 6.8 kB    
+Progress (3): 179/211 kB | 164/601 kB | 6.8 kB
+Progress (3): 179/211 kB | 180/601 kB | 6.8 kB
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar (6.8 kB at 65 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar
+Progress (2): 196/211 kB | 180/601 kB
+Progress (2): 211 kB | 180/601 kB    
+Progress (3): 211 kB | 180/601 kB | 16/184 kB
+                                             
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar (211 kB at 2.0 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar
+Progress (2): 180/601 kB | 32/184 kB
+Progress (2): 197/601 kB | 32/184 kB
+Progress (2): 197/601 kB | 49/184 kB
+Progress (2): 213/601 kB | 49/184 kB
+Progress (2): 213/601 kB | 65/184 kB
+Progress (2): 229/601 kB | 65/184 kB
+Progress (2): 229/601 kB | 81/184 kB
+Progress (2): 246/601 kB | 81/184 kB
+Progress (2): 246/601 kB | 98/184 kB
+Progress (2): 262/601 kB | 98/184 kB
+Progress (2): 262/601 kB | 114/184 kB
+Progress (2): 279/601 kB | 114/184 kB
+Progress (2): 279/601 kB | 131/184 kB
+Progress (2): 295/601 kB | 131/184 kB
+Progress (2): 295/601 kB | 147/184 kB
+Progress (2): 311/601 kB | 147/184 kB
+Progress (2): 311/601 kB | 163/184 kB
+Progress (2): 328/601 kB | 163/184 kB
+Progress (2): 344/601 kB | 163/184 kB
+Progress (2): 344/601 kB | 180/184 kB
+Progress (2): 344/601 kB | 184 kB    
+Progress (2): 360/601 kB | 184 kB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-launcher/1.10.0/junit-platform-launcher-1.10.0.jar (184 kB at 1.7 MB/s)
+Progress (1): 377/601 kB
+Progress (1): 393/601 kB
+                        
+Downloading from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar
+Progress (2): 393/601 kB | 16/205 kB
+Progress (2): 410/601 kB | 16/205 kB
+Progress (2): 410/601 kB | 32/205 kB
+Progress (2): 410/601 kB | 48/205 kB
+Progress (3): 410/601 kB | 48/205 kB | 16/586 kB
+Progress (3): 410/601 kB | 65/205 kB | 16/586 kB
+Progress (3): 410/601 kB | 65/205 kB | 33/586 kB
+Progress (3): 410/601 kB | 81/205 kB | 33/586 kB
+Progress (3): 426/601 kB | 81/205 kB | 33/586 kB
+Progress (3): 426/601 kB | 81/205 kB | 49/586 kB
+Progress (3): 442/601 kB | 81/205 kB | 49/586 kB
+Progress (3): 442/601 kB | 81/205 kB | 64/586 kB
+Progress (3): 459/601 kB | 81/205 kB | 64/586 kB
+Progress (3): 459/601 kB | 81/205 kB | 80/586 kB
+Progress (3): 475/601 kB | 81/205 kB | 80/586 kB
+Progress (3): 475/601 kB | 81/205 kB | 96/586 kB
+Progress (3): 492/601 kB | 81/205 kB | 96/586 kB
+Progress (3): 492/601 kB | 81/205 kB | 113/586 kB
+Progress (3): 492/601 kB | 96/205 kB | 113/586 kB
+Progress (3): 492/601 kB | 96/205 kB | 129/586 kB
+Progress (3): 492/601 kB | 113/205 kB | 129/586 kB
+Progress (3): 492/601 kB | 129/205 kB | 129/586 kB
+Progress (3): 492/601 kB | 129/205 kB | 146/586 kB
+Progress (3): 492/601 kB | 145/205 kB | 146/586 kB
+Progress (3): 492/601 kB | 145/205 kB | 162/586 kB
+Progress (3): 492/601 kB | 162/205 kB | 162/586 kB
+Progress (3): 492/601 kB | 162/205 kB | 178/586 kB
+Progress (3): 492/601 kB | 178/205 kB | 178/586 kB
+Progress (3): 492/601 kB | 178/205 kB | 195/586 kB
+Progress (3): 492/601 kB | 195/205 kB | 195/586 kB
+Progress (3): 492/601 kB | 205 kB | 195/586 kB    
+Progress (3): 492/601 kB | 205 kB | 211/586 kB
+Progress (3): 492/601 kB | 205 kB | 228/586 kB
+Progress (3): 492/601 kB | 205 kB | 244/586 kB
+Progress (3): 492/601 kB | 205 kB | 260/586 kB
+Progress (4): 492/601 kB | 205 kB | 260/586 kB | 16/123 kB
+Progress (4): 508/601 kB | 205 kB | 260/586 kB | 16/123 kB
+Progress (4): 508/601 kB | 205 kB | 260/586 kB | 32/123 kB
+Progress (4): 524/601 kB | 205 kB | 260/586 kB | 32/123 kB
+Progress (4): 541/601 kB | 205 kB | 260/586 kB | 32/123 kB
+Progress (4): 541/601 kB | 205 kB | 260/586 kB | 49/123 kB
+Progress (4): 557/601 kB | 205 kB | 260/586 kB | 49/123 kB
+Progress (4): 557/601 kB | 205 kB | 260/586 kB | 65/123 kB
+Progress (4): 557/601 kB | 205 kB | 277/586 kB | 65/123 kB
+Progress (4): 557/601 kB | 205 kB | 277/586 kB | 81/123 kB
+Progress (4): 557/601 kB | 205 kB | 293/586 kB | 81/123 kB
+Progress (4): 557/601 kB | 205 kB | 309/586 kB | 81/123 kB
+Progress (4): 557/601 kB | 205 kB | 309/586 kB | 98/123 kB
+Progress (4): 557/601 kB | 205 kB | 309/586 kB | 114/123 kB
+Progress (4): 557/601 kB | 205 kB | 326/586 kB | 114/123 kB
+Progress (4): 557/601 kB | 205 kB | 326/586 kB | 123 kB    
+Progress (4): 557/601 kB | 205 kB | 342/586 kB | 123 kB
+Progress (4): 557/601 kB | 205 kB | 359/586 kB | 123 kB
+                                                       
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/platform/junit-platform-engine/1.10.0/junit-platform-engine-1.10.0.jar (205 kB at 1.7 MB/s)
+Progress (4): 557/601 kB | 359/586 kB | 123 kB | 1.4/244 kB
+Progress (4): 557/601 kB | 359/586 kB | 123 kB | 2.8/244 kB
+Progress (4): 557/601 kB | 375/586 kB | 123 kB | 2.8/244 kB
+                                                           
+Downloaded from central: https://repo.maven.apache.org/maven2/org/hamcrest/hamcrest/2.2/hamcrest-2.2.jar (123 kB at 987 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar
+Progress (3): 557/601 kB | 375/586 kB | 4.1/244 kB
+Progress (3): 557/601 kB | 375/586 kB | 5.5/244 kB
+Progress (3): 557/601 kB | 391/586 kB | 5.5/244 kB
+Progress (3): 557/601 kB | 391/586 kB | 6.9/244 kB
+Progress (3): 557/601 kB | 391/586 kB | 8.3/244 kB
+Progress (3): 557/601 kB | 391/586 kB | 9.7/244 kB
+Progress (3): 557/601 kB | 408/586 kB | 9.7/244 kB
+Progress (3): 557/601 kB | 408/586 kB | 11/244 kB 
+                                                 
+Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.jar
+Progress (3): 557/601 kB | 408/586 kB | 12/244 kB
+Progress (3): 557/601 kB | 408/586 kB | 14/244 kB
+Progress (3): 573/601 kB | 408/586 kB | 14/244 kB
+Progress (3): 573/601 kB | 408/586 kB | 15/244 kB
+Progress (3): 573/601 kB | 408/586 kB | 16/244 kB
+Progress (3): 585/601 kB | 408/586 kB | 16/244 kB
+Progress (3): 585/601 kB | 424/586 kB | 16/244 kB
+Progress (3): 585/601 kB | 424/586 kB | 32/244 kB
+Progress (3): 601 kB | 424/586 kB | 32/244 kB    
+Progress (3): 601 kB | 441/586 kB | 32/244 kB
+Progress (3): 601 kB | 441/586 kB | 49/244 kB
+Progress (3): 601 kB | 457/586 kB | 49/244 kB
+Progress (3): 601 kB | 457/586 kB | 65/244 kB
+                                             
+Downloaded from central: https://repo.maven.apache.org/maven2/ch/qos/logback/logback-core/1.4.9/logback-core-1.4.9.jar (601 kB at 4.6 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/json/json/20230618/json-20230618.jar
+Progress (2): 473/586 kB | 65/244 kB
+Progress (2): 473/586 kB | 81/244 kB
+Progress (2): 490/586 kB | 81/244 kB
+Progress (2): 490/586 kB | 98/244 kB
+Progress (2): 506/586 kB | 98/244 kB
+Progress (2): 506/586 kB | 114/244 kB
+Progress (2): 522/586 kB | 114/244 kB
+Progress (2): 539/586 kB | 114/244 kB
+Progress (2): 555/586 kB | 114/244 kB
+Progress (2): 572/586 kB | 114/244 kB
+Progress (2): 586 kB | 114/244 kB    
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar (586 kB at 4.6 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/info/debatty/java-string-similarity/2.0.0/java-string-similarity-2.0.0.jar
+Progress (1): 131/244 kB
+Progress (1): 147/244 kB
+Progress (1): 163/244 kB
+Progress (1): 180/244 kB
+Progress (2): 180/244 kB | 16/73 kB
+Progress (2): 180/244 kB | 32/73 kB
+Progress (3): 180/244 kB | 32/73 kB | 0/1.3 MB
+Progress (3): 194/244 kB | 32/73 kB | 0/1.3 MB
+Progress (3): 194/244 kB | 49/73 kB | 0/1.3 MB
+Progress (3): 194/244 kB | 65/73 kB | 0/1.3 MB
+Progress (3): 194/244 kB | 65/73 kB | 0/1.3 MB
+Progress (3): 194/244 kB | 73 kB | 0/1.3 MB   
+Progress (3): 194/244 kB | 73 kB | 0/1.3 MB
+Progress (3): 194/244 kB | 73 kB | 0.1/1.3 MB
+                                             
+Downloaded from central: https://repo.maven.apache.org/maven2/org/json/json/20230618/json-20230618.jar (73 kB at 548 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar
+Progress (2): 194/244 kB | 0.1/1.3 MB
+Progress (3): 194/244 kB | 0.1/1.3 MB | 16/36 kB
+Progress (3): 194/244 kB | 0.1/1.3 MB | 16/36 kB
+Progress (3): 194/244 kB | 0.1/1.3 MB | 32/36 kB
+Progress (3): 194/244 kB | 0.1/1.3 MB | 32/36 kB
+Progress (3): 194/244 kB | 0.1/1.3 MB | 36 kB   
+Progress (3): 194/244 kB | 0.1/1.3 MB | 36 kB
+                                             
+Downloaded from central: https://repo.maven.apache.org/maven2/info/debatty/java-string-similarity/2.0.0/java-string-similarity-2.0.0.jar (36 kB at 270 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.25.4/javaparser-core-3.25.4.jar
+Progress (2): 194/244 kB | 0.1/1.3 MB
+Progress (2): 210/244 kB | 0.1/1.3 MB
+Progress (2): 210/244 kB | 0.2/1.3 MB
+Progress (2): 227/244 kB | 0.2/1.3 MB
+Progress (2): 227/244 kB | 0.2/1.3 MB
+Progress (2): 227/244 kB | 0.2/1.3 MB
+Progress (2): 243/244 kB | 0.2/1.3 MB
+Progress (2): 244 kB | 0.2/1.3 MB    
+Progress (2): 244 kB | 0.2/1.3 MB
+Progress (2): 244 kB | 0.2/1.3 MB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar (244 kB at 1.8 MB/s)
+Progress (1): 0.2/1.3 MB
+Progress (1): 0.3/1.3 MB
+Progress (1): 0.3/1.3 MB
+Progress (1): 0.3/1.3 MB
+Progress (1): 0.3/1.3 MB
+Progress (1): 0.3/1.3 MB
+Progress (1): 0.3/1.3 MB
+Progress (1): 0.4/1.3 MB
+Progress (1): 0.4/1.3 MB
+Progress (1): 0.4/1.3 MB
+Progress (1): 0.4/1.3 MB
+Progress (1): 0.4/1.3 MB
+Progress (2): 0.4/1.3 MB | 0/3.9 MB
+Progress (2): 0.4/1.3 MB | 0/3.9 MB
+Progress (2): 0.4/1.3 MB | 0/3.9 MB
+Progress (2): 0.5/1.3 MB | 0/3.9 MB
+Progress (2): 0.5/1.3 MB | 0/3.9 MB
+Progress (2): 0.5/1.3 MB | 0/3.9 MB
+Progress (2): 0.5/1.3 MB | 0.1/3.9 MB
+Progress (3): 0.5/1.3 MB | 0.1/3.9 MB | 2.3 kB
+Progress (3): 0.5/1.3 MB | 0.1/3.9 MB | 2.3 kB
+Progress (3): 0.5/1.3 MB | 0.1/3.9 MB | 2.3 kB
+Progress (3): 0.5/1.3 MB | 0.1/3.9 MB | 2.3 kB
+Progress (3): 0.5/1.3 MB | 0.1/3.9 MB | 2.3 kB
+Progress (3): 0.5/1.3 MB | 0.1/3.9 MB | 2.3 kB
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar (2.3 kB at 17 kB/s)
+Progress (2): 0.5/1.3 MB | 0.1/3.9 MB
+Progress (2): 0.5/1.3 MB | 0.1/3.9 MB
+Progress (2): 0.5/1.3 MB | 0.1/3.9 MB
+Progress (2): 0.6/1.3 MB | 0.1/3.9 MB
+Progress (2): 0.6/1.3 MB | 0.1/3.9 MB
+Progress (2): 0.6/1.3 MB | 0.1/3.9 MB
+Progress (2): 0.6/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.6/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.6/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.6/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.6/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.6/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.7/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.7/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.7/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.7/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.7/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.7/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.7/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.7/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.8/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.8/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.8/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.8/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.8/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.8/1.3 MB | 0.2/3.9 MB
+Progress (2): 0.8/1.3 MB | 0.3/3.9 MB
+Progress (2): 0.8/1.3 MB | 0.3/3.9 MB
+Progress (2): 0.8/1.3 MB | 0.3/3.9 MB
+Progress (2): 0.8/1.3 MB | 0.3/3.9 MB
+Progress (2): 0.8/1.3 MB | 0.3/3.9 MB
+Progress (2): 0.8/1.3 MB | 0.3/3.9 MB
+Progress (2): 0.8/1.3 MB | 0.3/3.9 MB
+Progress (2): 0.9/1.3 MB | 0.3/3.9 MB
+Progress (2): 0.9/1.3 MB | 0.3/3.9 MB
+Progress (2): 0.9/1.3 MB | 0.3/3.9 MB
+Progress (2): 0.9/1.3 MB | 0.3/3.9 MB
+Progress (2): 0.9/1.3 MB | 0.3/3.9 MB
+Progress (2): 0.9/1.3 MB | 0.3/3.9 MB
+Progress (2): 0.9/1.3 MB | 0.3/3.9 MB
+Progress (3): 0.9/1.3 MB | 0.3/3.9 MB | 0/1.4 MB
+Progress (3): 0.9/1.3 MB | 0.3/3.9 MB | 0/1.4 MB
+Progress (3): 0.9/1.3 MB | 0.3/3.9 MB | 0/1.4 MB
+Progress (3): 0.9/1.3 MB | 0.3/3.9 MB | 0.1/1.4 MB
+Progress (3): 0.9/1.3 MB | 0.3/3.9 MB | 0.1/1.4 MB
+Progress (3): 0.9/1.3 MB | 0.3/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.0/1.3 MB | 0.3/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.0/1.3 MB | 0.3/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.0/1.3 MB | 0.3/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.0/1.3 MB | 0.3/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.0/1.3 MB | 0.3/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.0/1.3 MB | 0.4/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.0/1.3 MB | 0.4/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.0/1.3 MB | 0.4/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.0/1.3 MB | 0.4/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.0/1.3 MB | 0.4/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.0/1.3 MB | 0.4/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.0/1.3 MB | 0.4/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.0/1.3 MB | 0.4/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.4/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.4/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.4/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.5/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.5/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.5/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.5/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.5/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.5/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.5/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.5/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.5/3.9 MB | 0.1/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.5/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.6/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.6/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.6/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.6/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.6/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.6/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.6/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.6/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.6/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.6/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.6/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.7/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.7/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.7/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.7/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.1/1.3 MB | 0.7/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.2/1.3 MB | 0.7/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.2/1.3 MB | 0.7/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.2/1.3 MB | 0.7/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.2/1.3 MB | 0.7/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.2/1.3 MB | 0.7/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.2/1.3 MB | 0.7/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.3/1.3 MB | 0.7/3.9 MB | 0.2/1.4 MB
+Progress (3): 1.3/1.3 MB | 0.7/3.9 MB | 0.3/1.4 MB
+Progress (3): 1.3/1.3 MB | 0.7/3.9 MB | 0.3/1.4 MB
+Progress (3): 1.3/1.3 MB | 0.7/3.9 MB | 0.3/1.4 MB
+Progress (3): 1.3/1.3 MB | 0.7/3.9 MB | 0.3/1.4 MB
+Progress (3): 1.3/1.3 MB | 0.7/3.9 MB | 0.3/1.4 MB
+Progress (3): 1.3/1.3 MB | 0.7/3.9 MB | 0.3/1.4 MB
+Progress (3): 1.3/1.3 MB | 0.7/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3/1.3 MB | 0.7/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3/1.3 MB | 0.7/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3/1.3 MB | 0.7/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3/1.3 MB | 0.7/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3/1.3 MB | 0.7/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3/1.3 MB | 0.7/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.7/3.9 MB | 0.4/1.4 MB    
+Progress (3): 1.3 MB | 0.7/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.7/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.7/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.7/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.7/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.7/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.7/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.8/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.8/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.8/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.8/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.8/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.8/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.9/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.9/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.9/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.9/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.9/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.9/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 0.9/3.9 MB | 0.4/1.4 MB
+Progress (3): 1.3 MB | 1.0/3.9 MB | 0.4/1.4 MB
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/org/assertj/assertj-core/3.24.2/assertj-core-3.24.2.jar (1.3 MB at 8.0 MB/s)
+Progress (2): 1.0/3.9 MB | 0.4/1.4 MB
+Progress (2): 1.0/3.9 MB | 0.5/1.4 MB
+Progress (2): 1.0/3.9 MB | 0.5/1.4 MB
+Progress (2): 1.0/3.9 MB | 0.5/1.4 MB
+Progress (2): 1.0/3.9 MB | 0.5/1.4 MB
+Progress (2): 1.0/3.9 MB | 0.5/1.4 MB
+Progress (2): 1.0/3.9 MB | 0.5/1.4 MB
+Progress (2): 1.0/3.9 MB | 0.5/1.4 MB
+Progress (2): 1.0/3.9 MB | 0.6/1.4 MB
+Progress (2): 1.0/3.9 MB | 0.6/1.4 MB
+Progress (2): 1.0/3.9 MB | 0.6/1.4 MB
+Progress (2): 1.0/3.9 MB | 0.6/1.4 MB
+Progress (2): 1.0/3.9 MB | 0.6/1.4 MB
+Progress (2): 1.0/3.9 MB | 0.6/1.4 MB
+Progress (2): 1.0/3.9 MB | 0.6/1.4 MB
+Progress (2): 1.0/3.9 MB | 0.6/1.4 MB
+Progress (2): 1.0/3.9 MB | 0.6/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.6/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.6/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.6/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.6/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.6/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.7/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.7/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.7/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.7/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.7/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.7/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.7/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.7/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.7/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.8/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.8/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.8/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.8/1.4 MB
+Progress (2): 1.1/3.9 MB | 0.8/1.4 MB
+Progress (2): 1.2/3.9 MB | 0.8/1.4 MB
+Progress (2): 1.2/3.9 MB | 0.8/1.4 MB
+Progress (2): 1.2/3.9 MB | 0.9/1.4 MB
+Progress (2): 1.2/3.9 MB | 0.9/1.4 MB
+Progress (2): 1.2/3.9 MB | 0.9/1.4 MB
+Progress (2): 1.2/3.9 MB | 0.9/1.4 MB
+Progress (2): 1.2/3.9 MB | 0.9/1.4 MB
+Progress (2): 1.2/3.9 MB | 0.9/1.4 MB
+Progress (2): 1.2/3.9 MB | 0.9/1.4 MB
+Progress (2): 1.2/3.9 MB | 0.9/1.4 MB
+Progress (2): 1.2/3.9 MB | 0.9/1.4 MB
+Progress (2): 1.2/3.9 MB | 0.9/1.4 MB
+Progress (2): 1.2/3.9 MB | 0.9/1.4 MB
+Progress (2): 1.3/3.9 MB | 0.9/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.0/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.0/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.0/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.0/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.0/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.0/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.0/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.0/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.0/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.0/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.1/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.1/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.1/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.1/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.1/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.1/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.2/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.2/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.2/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.2/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.2/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.2/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.2/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.3/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.3/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.3/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.3/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.3/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.3/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.4/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.4/1.4 MB
+Progress (2): 1.3/3.9 MB | 1.4 MB    
+Progress (2): 1.3/3.9 MB | 1.4 MB
+Progress (2): 1.4/3.9 MB | 1.4 MB
+Progress (2): 1.4/3.9 MB | 1.4 MB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/com/github/javaparser/javaparser-core/3.25.4/javaparser-core-3.25.4.jar (1.4 MB at 7.7 MB/s)
+Progress (1): 1.4/3.9 MB
+Progress (1): 1.4/3.9 MB
+Progress (1): 1.4/3.9 MB
+Progress (1): 1.4/3.9 MB
+Progress (1): 1.5/3.9 MB
+Progress (1): 1.5/3.9 MB
+Progress (1): 1.5/3.9 MB
+Progress (1): 1.5/3.9 MB
+Progress (1): 1.5/3.9 MB
+Progress (1): 1.5/3.9 MB
+Progress (1): 1.6/3.9 MB
+Progress (1): 1.6/3.9 MB
+Progress (1): 1.6/3.9 MB
+Progress (1): 1.6/3.9 MB
+Progress (1): 1.6/3.9 MB
+Progress (1): 1.6/3.9 MB
+Progress (1): 1.6/3.9 MB
+Progress (1): 1.7/3.9 MB
+Progress (1): 1.7/3.9 MB
+Progress (1): 1.7/3.9 MB
+Progress (1): 1.7/3.9 MB
+Progress (1): 1.7/3.9 MB
+Progress (1): 1.7/3.9 MB
+Progress (1): 1.8/3.9 MB
+Progress (1): 1.8/3.9 MB
+Progress (1): 1.8/3.9 MB
+Progress (1): 1.8/3.9 MB
+Progress (1): 1.8/3.9 MB
+Progress (1): 1.8/3.9 MB
+Progress (1): 1.9/3.9 MB
+Progress (1): 1.9/3.9 MB
+Progress (1): 1.9/3.9 MB
+Progress (1): 1.9/3.9 MB
+Progress (1): 1.9/3.9 MB
+Progress (1): 1.9/3.9 MB
+Progress (1): 2.0/3.9 MB
+Progress (1): 2.0/3.9 MB
+Progress (1): 2.0/3.9 MB
+Progress (1): 2.0/3.9 MB
+Progress (1): 2.0/3.9 MB
+Progress (1): 2.0/3.9 MB
+Progress (1): 2.0/3.9 MB
+Progress (1): 2.1/3.9 MB
+Progress (1): 2.1/3.9 MB
+Progress (1): 2.1/3.9 MB
+Progress (1): 2.1/3.9 MB
+Progress (1): 2.1/3.9 MB
+Progress (1): 2.1/3.9 MB
+Progress (1): 2.2/3.9 MB
+Progress (1): 2.2/3.9 MB
+Progress (1): 2.2/3.9 MB
+Progress (1): 2.2/3.9 MB
+Progress (1): 2.2/3.9 MB
+Progress (1): 2.2/3.9 MB
+Progress (1): 2.3/3.9 MB
+Progress (1): 2.3/3.9 MB
+Progress (1): 2.3/3.9 MB
+Progress (1): 2.3/3.9 MB
+Progress (1): 2.3/3.9 MB
+Progress (1): 2.3/3.9 MB
+Progress (1): 2.4/3.9 MB
+Progress (1): 2.4/3.9 MB
+Progress (1): 2.4/3.9 MB
+Progress (1): 2.4/3.9 MB
+Progress (1): 2.4/3.9 MB
+Progress (1): 2.4/3.9 MB
+Progress (1): 2.4/3.9 MB
+Progress (1): 2.5/3.9 MB
+Progress (1): 2.5/3.9 MB
+Progress (1): 2.5/3.9 MB
+Progress (1): 2.5/3.9 MB
+Progress (1): 2.5/3.9 MB
+Progress (1): 2.5/3.9 MB
+Progress (1): 2.6/3.9 MB
+Progress (1): 2.6/3.9 MB
+Progress (1): 2.6/3.9 MB
+Progress (1): 2.6/3.9 MB
+Progress (1): 2.6/3.9 MB
+Progress (1): 2.6/3.9 MB
+Progress (1): 2.6/3.9 MB
+Progress (1): 2.7/3.9 MB
+Progress (1): 2.7/3.9 MB
+Progress (1): 2.7/3.9 MB
+Progress (1): 2.7/3.9 MB
+Progress (1): 2.7/3.9 MB
+Progress (1): 2.7/3.9 MB
+Progress (1): 2.8/3.9 MB
+Progress (1): 2.8/3.9 MB
+Progress (1): 2.8/3.9 MB
+Progress (1): 2.8/3.9 MB
+Progress (1): 2.8/3.9 MB
+Progress (1): 2.8/3.9 MB
+Progress (1): 2.9/3.9 MB
+Progress (1): 2.9/3.9 MB
+Progress (1): 2.9/3.9 MB
+Progress (1): 2.9/3.9 MB
+Progress (1): 2.9/3.9 MB
+Progress (1): 2.9/3.9 MB
+Progress (1): 3.0/3.9 MB
+Progress (1): 3.0/3.9 MB
+Progress (1): 3.0/3.9 MB
+Progress (1): 3.0/3.9 MB
+Progress (1): 3.0/3.9 MB
+Progress (1): 3.0/3.9 MB
+Progress (1): 3.1/3.9 MB
+Progress (1): 3.1/3.9 MB
+Progress (1): 3.1/3.9 MB
+Progress (1): 3.1/3.9 MB
+Progress (1): 3.1/3.9 MB
+Progress (1): 3.1/3.9 MB
+Progress (1): 3.2/3.9 MB
+Progress (1): 3.2/3.9 MB
+Progress (1): 3.2/3.9 MB
+Progress (1): 3.2/3.9 MB
+Progress (1): 3.2/3.9 MB
+Progress (1): 3.2/3.9 MB
+Progress (1): 3.2/3.9 MB
+Progress (1): 3.3/3.9 MB
+Progress (1): 3.3/3.9 MB
+Progress (1): 3.3/3.9 MB
+Progress (1): 3.3/3.9 MB
+Progress (1): 3.3/3.9 MB
+Progress (1): 3.3/3.9 MB
+Progress (1): 3.4/3.9 MB
+Progress (1): 3.4/3.9 MB
+Progress (1): 3.4/3.9 MB
+Progress (1): 3.4/3.9 MB
+Progress (1): 3.4/3.9 MB
+Progress (1): 3.4/3.9 MB
+Progress (1): 3.5/3.9 MB
+Progress (1): 3.5/3.9 MB
+Progress (1): 3.5/3.9 MB
+Progress (1): 3.5/3.9 MB
+Progress (1): 3.5/3.9 MB
+Progress (1): 3.5/3.9 MB
+Progress (1): 3.6/3.9 MB
+Progress (1): 3.6/3.9 MB
+Progress (1): 3.6/3.9 MB
+Progress (1): 3.6/3.9 MB
+Progress (1): 3.6/3.9 MB
+Progress (1): 3.6/3.9 MB
+Progress (1): 3.7/3.9 MB
+Progress (1): 3.7/3.9 MB
+Progress (1): 3.7/3.9 MB
+Progress (1): 3.7/3.9 MB
+Progress (1): 3.7/3.9 MB
+Progress (1): 3.7/3.9 MB
+Progress (1): 3.8/3.9 MB
+Progress (1): 3.8/3.9 MB
+Progress (1): 3.8/3.9 MB
+Progress (1): 3.8/3.9 MB
+Progress (1): 3.8/3.9 MB
+Progress (1): 3.8/3.9 MB
+Progress (1): 3.8/3.9 MB
+Progress (1): 3.9/3.9 MB
+Progress (1): 3.9/3.9 MB
+Progress (1): 3.9/3.9 MB
+Progress (1): 3.9 MB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.12.21/byte-buddy-1.12.21.jar (3.9 MB at 17 MB/s)
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ c397a138-5740-420f-845b-6d0326a003a0-Tests ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4.pom
+Progress (1): 5.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4.pom (5.8 kB at 729 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/34/maven-shared-components-34.pom
+Progress (1): 5.1 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/34/maven-shared-components-34.pom (5.1 kB at 463 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/34/maven-parent-34.pom
+Progress (1): 16/43 kB
+Progress (1): 33/43 kB
+Progress (1): 43 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/34/maven-parent-34.pom (43 kB at 2.4 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/23/apache-23.pom
+Progress (1): 16/18 kB
+Progress (1): 18 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/23/apache-23.pom (18 kB at 1.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.pom
+Progress (1): 14 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.pom (14 kB at 950 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/42/commons-parent-42.pom
+Progress (1): 16/68 kB
+Progress (1): 32/68 kB
+Progress (1): 49/68 kB
+Progress (1): 65/68 kB
+Progress (1): 68 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/42/commons-parent-42.pom (68 kB at 4.9 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/18/apache-18.pom
+Progress (1): 16 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/18/apache-18.pom (16 kB at 1.6 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4.jar
+Progress (1): 16/153 kB
+Progress (1): 33/153 kB
+Progress (1): 49/153 kB
+Progress (1): 64/153 kB
+Progress (1): 80/153 kB
+Progress (1): 97/153 kB
+Progress (1): 113/153 kB
+Progress (1): 129/153 kB
+Progress (1): 146/153 kB
+Progress (1): 153 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.3.4/maven-shared-utils-3.3.4.jar (153 kB at 13 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.jar
+Progress (1): 16/215 kB
+Progress (1): 33/215 kB
+Progress (1): 49/215 kB
+Progress (1): 62/215 kB
+Progress (1): 79/215 kB
+Progress (1): 95/215 kB
+Progress (1): 111/215 kB
+Progress (1): 128/215 kB
+Progress (1): 144/215 kB
+Progress (1): 160/215 kB
+Progress (1): 177/215 kB
+Progress (1): 193/215 kB
+Progress (1): 210/215 kB
+Progress (1): 215 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.6/commons-io-2.6.jar (215 kB at 14 MB/s)
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ c397a138-5740-420f-845b-6d0326a003a0-Tests ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.pom
+Progress (1): 2.7 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.pom (2.7 kB at 295 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/5.1/plexus-5.1.pom
+Progress (1): 16/23 kB
+Progress (1): 23 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/5.1/plexus-5.1.pom (23 kB at 1.7 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.5.1/plexus-utils-3.5.1.pom
+Progress (1): 8.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.5.1/plexus-utils-3.5.1.pom (8.8 kB at 516 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/10/plexus-10.pom
+Progress (1): 16/25 kB
+Progress (1): 25 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/10/plexus-10.pom (25 kB at 2.3 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/3.3.1/maven-filtering-3.3.1.pom
+Progress (1): 6.0 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/3.3.1/maven-filtering-3.3.1.pom (6.0 kB at 464 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/39/maven-shared-components-39.pom
+Progress (1): 3.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/39/maven-shared-components-39.pom (3.2 kB at 322 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom
+Progress (1): 612 B
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom (612 B at 76 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.pom
+Progress (1): 2.7 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.pom (2.7 kB at 343 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.36/slf4j-parent-1.7.36.pom
+Progress (1): 14 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-parent/1.7.36/slf4j-parent-1.7.36.pom (14 kB at 1.8 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.pom
+Progress (1): 3.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.pom (3.2 kB at 400 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/15/spice-parent-15.pom
+Progress (1): 8.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/spice/spice-parent/15/spice-parent-15.pom (8.4 kB at 1.0 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom
+Progress (1): 8.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/forge/forge-parent/5/forge-parent-5.pom (8.4 kB at 697 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.5.0/plexus-utils-3.5.0.pom
+Progress (1): 8.0 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.5.0/plexus-utils-3.5.0.pom (8.0 kB at 1.0 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0.pom
+Progress (1): 16/20 kB
+Progress (1): 20 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0.pom (20 kB at 2.5 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/52/commons-parent-52.pom
+Progress (1): 16/79 kB
+Progress (1): 32/79 kB
+Progress (1): 49/79 kB
+Progress (1): 65/79 kB
+Progress (1): 79 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/52/commons-parent-52.pom (79 kB at 7.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.7.2/junit-bom-5.7.2.pom
+Progress (1): 5.1 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.7.2/junit-bom-5.7.2.pom (5.1 kB at 463 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.pom
+Progress (1): 16/31 kB
+Progress (1): 31 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.pom (31 kB at 3.4 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.7.1/junit-bom-5.7.1.pom
+Progress (1): 5.1 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.7.1/junit-bom-5.7.1.pom (5.1 kB at 510 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.jar
+Progress (1): 16/85 kB
+Progress (1): 32/85 kB
+Progress (1): 49/85 kB
+Progress (1): 65/85 kB
+Progress (1): 81/85 kB
+Progress (1): 85 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.26/plexus-interpolation-1.26.jar (85 kB at 7.8 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.5.1/plexus-utils-3.5.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/3.3.1/maven-filtering-3.3.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar
+Progress (1): 16/269 kB
+Progress (2): 16/269 kB | 2.5 kB
+Progress (2): 33/269 kB | 2.5 kB
+Progress (2): 49/269 kB | 2.5 kB
+Progress (2): 64/269 kB | 2.5 kB
+Progress (2): 80/269 kB | 2.5 kB
+Progress (2): 97/269 kB | 2.5 kB
+Progress (2): 113/269 kB | 2.5 kB
+Progress (2): 130/269 kB | 2.5 kB
+Progress (3): 130/269 kB | 2.5 kB | 16/41 kB
+Progress (3): 146/269 kB | 2.5 kB | 16/41 kB
+Progress (3): 146/269 kB | 2.5 kB | 33/41 kB
+Progress (4): 146/269 kB | 2.5 kB | 33/41 kB | 16/55 kB
+Progress (4): 146/269 kB | 2.5 kB | 41 kB | 16/55 kB   
+Progress (4): 162/269 kB | 2.5 kB | 41 kB | 16/55 kB
+Progress (4): 162/269 kB | 2.5 kB | 41 kB | 32/55 kB
+Progress (4): 162/269 kB | 2.5 kB | 41 kB | 49/55 kB
+Progress (4): 162/269 kB | 2.5 kB | 41 kB | 55 kB   
+                                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar (41 kB at 3.4 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-filtering/3.3.1/maven-filtering-3.3.1.jar (55 kB at 3.9 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar
+Downloaded from central: https://repo.maven.apache.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar (2.5 kB at 192 kB/s)
+Progress (2): 162/269 kB | 8.5 kB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/sonatype/plexus/plexus-build-api/0.0.7/plexus-build-api-0.0.7.jar (8.5 kB at 707 kB/s)
+Progress (1): 179/269 kB
+Progress (1): 195/269 kB
+Progress (1): 212/269 kB
+Progress (1): 228/269 kB
+Progress (1): 244/269 kB
+Progress (1): 261/269 kB
+Progress (1): 269 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/3.5.1/plexus-utils-3.5.1.jar (269 kB at 15 MB/s)
+Progress (1): 16/587 kB
+Progress (1): 33/587 kB
+Progress (1): 49/587 kB
+Progress (1): 62/587 kB
+Progress (1): 78/587 kB
+Progress (1): 95/587 kB
+Progress (1): 111/587 kB
+Progress (1): 128/587 kB
+Progress (1): 144/587 kB
+Progress (1): 160/587 kB
+Progress (1): 177/587 kB
+Progress (1): 193/587 kB
+Progress (1): 209/587 kB
+Progress (1): 226/587 kB
+Progress (2): 226/587 kB | 16/327 kB
+Progress (2): 226/587 kB | 32/327 kB
+Progress (2): 242/587 kB | 32/327 kB
+Progress (2): 242/587 kB | 49/327 kB
+Progress (2): 259/587 kB | 49/327 kB
+Progress (2): 259/587 kB | 65/327 kB
+Progress (2): 275/587 kB | 65/327 kB
+Progress (2): 275/587 kB | 80/327 kB
+Progress (2): 275/587 kB | 96/327 kB
+Progress (2): 275/587 kB | 112/327 kB
+Progress (2): 275/587 kB | 129/327 kB
+Progress (2): 275/587 kB | 145/327 kB
+Progress (2): 275/587 kB | 162/327 kB
+Progress (2): 275/587 kB | 178/327 kB
+Progress (2): 275/587 kB | 194/327 kB
+Progress (2): 275/587 kB | 211/327 kB
+Progress (2): 275/587 kB | 227/327 kB
+Progress (2): 275/587 kB | 243/327 kB
+Progress (2): 275/587 kB | 260/327 kB
+Progress (2): 275/587 kB | 276/327 kB
+Progress (2): 275/587 kB | 293/327 kB
+Progress (2): 275/587 kB | 309/327 kB
+Progress (2): 291/587 kB | 309/327 kB
+Progress (2): 291/587 kB | 325/327 kB
+Progress (2): 291/587 kB | 327 kB    
+Progress (2): 308/587 kB | 327 kB
+Progress (2): 324/587 kB | 327 kB
+Progress (2): 341/587 kB | 327 kB
+Progress (2): 357/587 kB | 327 kB
+Progress (2): 373/587 kB | 327 kB
+Progress (2): 390/587 kB | 327 kB
+Progress (2): 406/587 kB | 327 kB
+Progress (2): 422/587 kB | 327 kB
+Progress (2): 439/587 kB | 327 kB
+Progress (2): 455/587 kB | 327 kB
+Progress (2): 472/587 kB | 327 kB
+Progress (2): 488/587 kB | 327 kB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar (327 kB at 11 MB/s)
+Progress (1): 504/587 kB
+Progress (1): 521/587 kB
+Progress (1): 537/587 kB
+Progress (1): 554/587 kB
+Progress (1): 570/587 kB
+Progress (1): 586/587 kB
+Progress (1): 587 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar (587 kB at 16 MB/s)
+[INFO] skip non existing resourceDirectory /tmp/testLocalRepo10608706804174944927/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ c397a138-5740-420f-845b-6d0326a003a0-Tests ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.4.2/maven-shared-utils-3.4.2.pom
+Progress (1): 5.9 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.4.2/maven-shared-utils-3.4.2.pom (5.9 kB at 737 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom
+Progress (1): 4.7 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.pom (4.7 kB at 593 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom
+Progress (1): 6.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/19/maven-shared-components-19.pom (6.4 kB at 908 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/23/maven-parent-23.pom
+Progress (1): 16/33 kB
+Progress (1): 33 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-parent/23/maven-parent-23.pom (33 kB at 4.1 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/13/apache-13.pom
+Progress (1): 14 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/13/apache-13.pom (14 kB at 1.4 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.2.0/plexus-java-1.2.0.pom
+Progress (1): 4.3 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.2.0/plexus-java-1.2.0.pom (4.3 kB at 214 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-languages/1.2.0/plexus-languages-1.2.0.pom
+Progress (1): 3.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-languages/1.2.0/plexus-languages-1.2.0.pom (3.2 kB at 399 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/15/plexus-15.pom
+Progress (1): 16/28 kB
+Progress (1): 28 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/15/plexus-15.pom (28 kB at 3.1 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.6/asm-9.6.pom
+Progress (1): 2.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.6/asm-9.6.pom (2.4 kB at 296 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.5.1/ow2-1.5.1.pom
+Progress (1): 11 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/ow2/1.5.1/ow2-1.5.1.pom (11 kB at 1.6 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.0.3/qdox-2.0.3.pom
+Progress (1): 16/17 kB
+Progress (1): 17 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.0.3/qdox-2.0.3.pom (17 kB at 1.9 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.15.0/plexus-compiler-api-2.15.0.pom
+Progress (1): 1.4 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.15.0/plexus-compiler-api-2.15.0.pom (1.4 kB at 151 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.15.0/plexus-compiler-2.15.0.pom
+Progress (1): 7.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler/2.15.0/plexus-compiler-2.15.0.pom (7.6 kB at 950 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/17/plexus-17.pom
+Progress (1): 16/28 kB
+Progress (1): 28 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/17/plexus-17.pom (28 kB at 2.8 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.2/junit-bom-5.10.2.pom
+Progress (1): 5.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/junit/junit-bom/5.10.2/junit-bom-5.10.2.pom (5.6 kB at 706 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.pom
+Progress (1): 8.7 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.pom (8.7 kB at 1.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/13/plexus-13.pom
+Progress (1): 16/27 kB
+Progress (1): 27 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus/13/plexus-13.pom (27 kB at 3.4 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.15.0/plexus-compiler-manager-2.15.0.pom
+Progress (1): 1.3 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.15.0/plexus-compiler-manager-2.15.0.pom (1.3 kB at 193 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.0/plexus-xml-3.0.0.pom
+Progress (1): 3.7 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.0/plexus-xml-3.0.0.pom (3.7 kB at 415 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.15.0/plexus-compiler-javac-2.15.0.pom
+Progress (1): 1.3 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.15.0/plexus-compiler-javac-2.15.0.pom (1.3 kB at 161 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.15.0/plexus-compilers-2.15.0.pom
+Progress (1): 1.6 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compilers/2.15.0/plexus-compilers-2.15.0.pom (1.6 kB at 174 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.4.2/maven-shared-utils-3.4.2.jar
+Progress (1): 16/151 kB
+Progress (1): 33/151 kB
+Progress (1): 49/151 kB
+Progress (1): 62/151 kB
+Progress (1): 79/151 kB
+Progress (1): 95/151 kB
+Progress (1): 111/151 kB
+Progress (1): 128/151 kB
+Progress (1): 144/151 kB
+Progress (1): 151 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-utils/3.4.2/maven-shared-utils-3.4.2.jar (151 kB at 13 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.2.0/plexus-java-1.2.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.6/asm-9.6.jar
+Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.0.3/qdox-2.0.3.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.15.0/plexus-compiler-api-2.15.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar
+Progress (1): 16/124 kB
+Progress (1): 33/124 kB
+Progress (1): 49/124 kB
+Progress (1): 66/124 kB
+Progress (1): 82/124 kB
+Progress (1): 98/124 kB
+Progress (1): 115/124 kB
+Progress (1): 124 kB    
+Progress (2): 124 kB | 14 kB
+Progress (3): 124 kB | 14 kB | 16/58 kB
+Progress (4): 124 kB | 14 kB | 16/58 kB | 16/334 kB
+Progress (4): 124 kB | 14 kB | 33/58 kB | 16/334 kB
+                                                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-incremental/1.1/maven-shared-incremental-1.1.jar (14 kB at 1.1 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.15.0/plexus-compiler-manager-2.15.0.jar
+Progress (3): 124 kB | 49/58 kB | 16/334 kB
+Progress (3): 124 kB | 49/58 kB | 33/334 kB
+Progress (3): 124 kB | 58 kB | 33/334 kB   
+Progress (3): 124 kB | 58 kB | 49/334 kB
+Progress (3): 124 kB | 58 kB | 64/334 kB
+                                        
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-java/1.2.0/plexus-java-1.2.0.jar (58 kB at 4.8 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.0/plexus-xml-3.0.0.jar
+Progress (2): 124 kB | 80/334 kB
+Progress (2): 124 kB | 97/334 kB
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/ow2/asm/asm/9.6/asm-9.6.jar (124 kB at 9.5 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.15.0/plexus-compiler-javac-2.15.0.jar
+Progress (1): 113/334 kB
+Progress (1): 129/334 kB
+Progress (1): 146/334 kB
+Progress (1): 162/334 kB
+Progress (2): 162/334 kB | 16/29 kB
+Progress (2): 162/334 kB | 29 kB   
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-api/2.15.0/plexus-compiler-api-2.15.0.jar (29 kB at 2.2 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.jar
+Progress (2): 162/334 kB | 5.2 kB
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-manager/2.15.0/plexus-compiler-manager-2.15.0.jar (5.2 kB at 291 kB/s)
+Progress (2): 162/334 kB | 16/93 kB
+Progress (2): 162/334 kB | 32/93 kB
+Progress (2): 162/334 kB | 49/93 kB
+Progress (2): 162/334 kB | 65/93 kB
+Progress (2): 162/334 kB | 81/93 kB
+Progress (2): 162/334 kB | 93 kB   
+Progress (2): 178/334 kB | 93 kB
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-xml/3.0.0/plexus-xml-3.0.0.jar (93 kB at 4.7 MB/s)
+Progress (1): 195/334 kB
+Progress (1): 211/334 kB
+Progress (1): 228/334 kB
+Progress (1): 244/334 kB
+Progress (1): 260/334 kB
+Progress (1): 277/334 kB
+Progress (2): 277/334 kB | 16/26 kB
+Progress (2): 293/334 kB | 16/26 kB
+Progress (2): 293/334 kB | 26 kB   
+Progress (2): 310/334 kB | 26 kB
+Progress (2): 326/334 kB | 26 kB
+                                
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-compiler-javac/2.15.0/plexus-compiler-javac-2.15.0.jar (26 kB at 1.2 MB/s)
+Progress (1): 334 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/qdox/qdox/2.0.3/qdox-2.0.3.jar (334 kB at 13 MB/s)
+Progress (1): 16/192 kB
+Progress (1): 33/192 kB
+Progress (1): 49/192 kB
+Progress (1): 65/192 kB
+Progress (1): 81/192 kB
+Progress (1): 97/192 kB
+Progress (1): 114/192 kB
+Progress (1): 130/192 kB
+Progress (1): 147/192 kB
+Progress (1): 163/192 kB
+Progress (1): 179/192 kB
+Progress (1): 192 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-utils/4.0.0/plexus-utils-4.0.0.jar (192 kB at 6.6 MB/s)
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 6 source files with javac [debug target 17] to target/classes
+[INFO] 
+[INFO] --- enforcer:3.4.1:enforce (enforce-no-student-code-in-trusted-packages) @ c397a138-5740-420f-845b-6d0326a003a0-Tests ---
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-api/3.4.1/enforcer-api-3.4.1.pom
+Progress (1): 3.8 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-api/3.4.1/enforcer-api-3.4.1.pom (3.8 kB at 289 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-rules/3.4.1/enforcer-rules-3.4.1.pom
+Progress (1): 4.3 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-rules/3.4.1/enforcer-rules-3.4.1.pom (4.3 kB at 356 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.0.v20140518/aether-util-1.0.0.v20140518.pom
+Progress (1): 2.2 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.0.v20140518/aether-util-1.0.0.v20140518.pom (2.2 kB at 244 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.0.v20140518/aether-1.0.0.v20140518.pom
+Progress (1): 16/30 kB
+Progress (1): 30 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether/1.0.0.v20140518/aether-1.0.0.v20140518.pom (30 kB at 3.8 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.0.v20140518/aether-api-1.0.0.v20140518.pom
+Progress (1): 1.9 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-api/1.0.0.v20140518/aether-api-1.0.0.v20140518.pom (1.9 kB at 190 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.pom
+Progress (1): 16/31 kB
+Progress (1): 31 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.pom (31 kB at 2.6 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/58/commons-parent-58.pom
+Progress (1): 16/83 kB
+Progress (1): 33/83 kB
+Progress (1): 49/83 kB
+Progress (1): 66/83 kB
+Progress (1): 82/83 kB
+Progress (1): 83 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/58/commons-parent-58.pom (83 kB at 7.5 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.pom
+Progress (1): 16 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.pom (16 kB at 2.0 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.13.0/commons-io-2.13.0.pom
+Progress (1): 16/20 kB
+Progress (1): 20 kB   
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.13.0/commons-io-2.13.0.pom (20 kB at 1.3 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.pom
+Progress (1): 5.0 kB
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.pom (5.0 kB at 624 kB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-api/3.4.1/enforcer-api-3.4.1.jar
+Progress (1): 14 kB
+                   
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-api/3.4.1/enforcer-api-3.4.1.jar (14 kB at 1.6 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-rules/3.4.1/enforcer-rules-3.4.1.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.0.v20140518/aether-util-1.0.0.v20140518.jar
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar
+Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar
+Progress (1): 16/145 kB
+Progress (1): 32/145 kB
+Progress (1): 49/145 kB
+Progress (1): 65/145 kB
+Progress (1): 81/145 kB
+Progress (1): 98/145 kB
+Progress (1): 114/145 kB
+Progress (1): 131/145 kB
+Progress (2): 131/145 kB | 16/146 kB
+Progress (2): 131/145 kB | 32/146 kB
+Progress (2): 131/145 kB | 49/146 kB
+Progress (2): 131/145 kB | 65/146 kB
+Progress (2): 131/145 kB | 80/146 kB
+Progress (2): 131/145 kB | 96/146 kB
+Progress (3): 131/145 kB | 96/146 kB | 16/484 kB
+Progress (3): 131/145 kB | 96/146 kB | 33/484 kB
+Progress (3): 131/145 kB | 96/146 kB | 49/484 kB
+Progress (4): 131/145 kB | 96/146 kB | 49/484 kB | 16/632 kB
+Progress (4): 131/145 kB | 96/146 kB | 49/484 kB | 32/632 kB
+Progress (4): 131/145 kB | 96/146 kB | 63/484 kB | 32/632 kB
+Progress (4): 131/145 kB | 96/146 kB | 63/484 kB | 49/632 kB
+Progress (4): 131/145 kB | 96/146 kB | 79/484 kB | 49/632 kB
+Progress (4): 131/145 kB | 96/146 kB | 79/484 kB | 65/632 kB
+Progress (4): 131/145 kB | 96/146 kB | 96/484 kB | 65/632 kB
+Progress (4): 131/145 kB | 96/146 kB | 96/484 kB | 79/632 kB
+Progress (4): 131/145 kB | 96/146 kB | 112/484 kB | 79/632 kB
+Progress (4): 131/145 kB | 96/146 kB | 112/484 kB | 96/632 kB
+Progress (4): 131/145 kB | 96/146 kB | 112/484 kB | 112/632 kB
+Progress (4): 131/145 kB | 96/146 kB | 129/484 kB | 112/632 kB
+Progress (4): 131/145 kB | 96/146 kB | 129/484 kB | 128/632 kB
+Progress (4): 131/145 kB | 96/146 kB | 145/484 kB | 128/632 kB
+Progress (4): 131/145 kB | 96/146 kB | 145/484 kB | 145/632 kB
+Progress (4): 131/145 kB | 96/146 kB | 161/484 kB | 145/632 kB
+Progress (5): 131/145 kB | 96/146 kB | 161/484 kB | 145/632 kB | 16/361 kB
+Progress (5): 131/145 kB | 96/146 kB | 161/484 kB | 145/632 kB | 32/361 kB
+Progress (5): 131/145 kB | 96/146 kB | 161/484 kB | 145/632 kB | 49/361 kB
+Progress (5): 131/145 kB | 96/146 kB | 161/484 kB | 145/632 kB | 65/361 kB
+Progress (5): 131/145 kB | 96/146 kB | 161/484 kB | 145/632 kB | 79/361 kB
+Progress (5): 131/145 kB | 96/146 kB | 161/484 kB | 145/632 kB | 95/361 kB
+Progress (5): 131/145 kB | 96/146 kB | 161/484 kB | 145/632 kB | 112/361 kB
+Progress (5): 131/145 kB | 96/146 kB | 161/484 kB | 145/632 kB | 128/361 kB
+Progress (5): 131/145 kB | 96/146 kB | 161/484 kB | 145/632 kB | 144/361 kB
+Progress (5): 131/145 kB | 96/146 kB | 161/484 kB | 145/632 kB | 161/361 kB
+Progress (5): 131/145 kB | 96/146 kB | 178/484 kB | 145/632 kB | 161/361 kB
+Progress (5): 131/145 kB | 96/146 kB | 194/484 kB | 145/632 kB | 161/361 kB
+Progress (5): 145 kB | 96/146 kB | 194/484 kB | 145/632 kB | 161/361 kB    
+Progress (5): 145 kB | 96/146 kB | 210/484 kB | 145/632 kB | 161/361 kB
+Progress (5): 145 kB | 96/146 kB | 227/484 kB | 145/632 kB | 161/361 kB
+                                                                       
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/maven/enforcer/enforcer-rules/3.4.1/enforcer-rules-3.4.1.jar (145 kB at 6.0 MB/s)
+Downloading from central: https://repo.maven.apache.org/maven2/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar
+Progress (4): 113/146 kB | 227/484 kB | 145/632 kB | 161/361 kB
+Progress (4): 129/146 kB | 227/484 kB | 145/632 kB | 161/361 kB
+Progress (4): 129/146 kB | 243/484 kB | 145/632 kB | 161/361 kB
+Progress (4): 145/146 kB | 243/484 kB | 145/632 kB | 161/361 kB
+Progress (4): 146 kB | 243/484 kB | 145/632 kB | 161/361 kB    
+Progress (4): 146 kB | 260/484 kB | 145/632 kB | 161/361 kB
+                                                           
+Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/aether/aether-util/1.0.0.v20140518/aether-util-1.0.0.v20140518.jar (146 kB at 6.3 MB/s)
+Progress (3): 276/484 kB | 145/632 kB | 161/361 kB
+Progress (3): 292/484 kB | 145/632 kB | 161/361 kB
+Progress (3): 309/484 kB | 145/632 kB | 161/361 kB
+Progress (3): 325/484 kB | 145/632 kB | 161/361 kB
+Progress (3): 342/484 kB | 145/632 kB | 161/361 kB
+Progress (3): 342/484 kB | 161/632 kB | 161/361 kB
+Progress (3): 342/484 kB | 178/632 kB | 161/361 kB
+Progress (3): 342/484 kB | 194/632 kB | 161/361 kB
+Progress (3): 342/484 kB | 210/632 kB | 161/361 kB
+Progress (3): 342/484 kB | 227/632 kB | 161/361 kB
+Progress (3): 342/484 kB | 243/632 kB | 161/361 kB
+Progress (3): 342/484 kB | 260/632 kB | 161/361 kB
+Progress (3): 342/484 kB | 276/632 kB | 161/361 kB
+Progress (3): 342/484 kB | 276/632 kB | 177/361 kB
+Progress (3): 358/484 kB | 276/632 kB | 177/361 kB
+Progress (3): 358/484 kB | 276/632 kB | 194/361 kB
+Progress (3): 374/484 kB | 276/632 kB | 194/361 kB
+Progress (3): 374/484 kB | 276/632 kB | 210/361 kB
+Progress (3): 391/484 kB | 276/632 kB | 210/361 kB
+Progress (3): 391/484 kB | 276/632 kB | 226/361 kB
+Progress (3): 407/484 kB | 276/632 kB | 226/361 kB
+Progress (3): 407/484 kB | 276/632 kB | 243/361 kB
+Progress (3): 423/484 kB | 276/632 kB | 243/361 kB
+Progress (3): 423/484 kB | 276/632 kB | 259/361 kB
+Progress (3): 440/484 kB | 276/632 kB | 259/361 kB
+Progress (3): 440/484 kB | 276/632 kB | 275/361 kB
+Progress (3): 456/484 kB | 276/632 kB | 275/361 kB
+Progress (3): 456/484 kB | 276/632 kB | 292/361 kB
+Progress (3): 473/484 kB | 276/632 kB | 292/361 kB
+Progress (3): 484 kB | 276/632 kB | 292/361 kB    
+Progress (3): 484 kB | 276/632 kB | 308/361 kB
+Progress (3): 484 kB | 276/632 kB | 325/361 kB
+Progress (3): 484 kB | 276/632 kB | 341/361 kB
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.13.0/commons-io-2.13.0.jar (484 kB at 18 MB/s)
+Progress (2): 276/632 kB | 357/361 kB
+Progress (2): 276/632 kB | 361 kB    
+Progress (2): 292/632 kB | 361 kB
+Progress (2): 309/632 kB | 361 kB
+Progress (2): 325/632 kB | 361 kB
+Progress (2): 341/632 kB | 361 kB
+Progress (3): 341/632 kB | 361 kB | 16/389 kB
+Progress (3): 341/632 kB | 361 kB | 32/389 kB
+Progress (3): 341/632 kB | 361 kB | 49/389 kB
+Progress (3): 341/632 kB | 361 kB | 65/389 kB
+Progress (3): 341/632 kB | 361 kB | 79/389 kB
+Progress (3): 341/632 kB | 361 kB | 95/389 kB
+Progress (3): 341/632 kB | 361 kB | 112/389 kB
+Progress (3): 341/632 kB | 361 kB | 128/389 kB
+Progress (3): 341/632 kB | 361 kB | 144/389 kB
+Progress (3): 358/632 kB | 361 kB | 144/389 kB
+Progress (3): 374/632 kB | 361 kB | 144/389 kB
+Progress (3): 391/632 kB | 361 kB | 144/389 kB
+Progress (3): 407/632 kB | 361 kB | 144/389 kB
+Progress (3): 423/632 kB | 361 kB | 144/389 kB
+Progress (3): 440/632 kB | 361 kB | 144/389 kB
+Progress (3): 456/632 kB | 361 kB | 144/389 kB
+Progress (3): 473/632 kB | 361 kB | 144/389 kB
+Progress (3): 489/632 kB | 361 kB | 144/389 kB
+Progress (3): 505/632 kB | 361 kB | 144/389 kB
+Progress (3): 522/632 kB | 361 kB | 144/389 kB
+Progress (3): 538/632 kB | 361 kB | 144/389 kB
+Progress (3): 554/632 kB | 361 kB | 144/389 kB
+Progress (3): 571/632 kB | 361 kB | 144/389 kB
+Progress (3): 587/632 kB | 361 kB | 144/389 kB
+                                              
+Downloaded from central: https://repo.maven.apache.org/maven2/commons-codec/commons-codec/1.16.0/commons-codec-1.16.0.jar (361 kB at 9.7 MB/s)
+Progress (2): 587/632 kB | 161/389 kB
+Progress (2): 587/632 kB | 177/389 kB
+Progress (2): 587/632 kB | 193/389 kB
+Progress (2): 587/632 kB | 210/389 kB
+Progress (2): 587/632 kB | 226/389 kB
+Progress (2): 587/632 kB | 243/389 kB
+Progress (2): 604/632 kB | 243/389 kB
+Progress (2): 604/632 kB | 259/389 kB
+Progress (2): 604/632 kB | 275/389 kB
+Progress (2): 604/632 kB | 292/389 kB
+Progress (2): 604/632 kB | 308/389 kB
+Progress (2): 604/632 kB | 325/389 kB
+Progress (2): 604/632 kB | 341/389 kB
+Progress (2): 604/632 kB | 357/389 kB
+Progress (2): 604/632 kB | 374/389 kB
+Progress (2): 604/632 kB | 389 kB    
+                                 
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar (389 kB at 8.1 MB/s)
+Progress (1): 620/632 kB
+Progress (1): 632 kB    
+                    
+Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar (632 kB at 12 MB/s)
+[INFO] Rule 0: org.apache.maven.enforcer.rules.files.RequireFilesDontExist passed
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ c397a138-5740-420f-845b-6d0326a003a0-Tests ---
+[INFO] Copying 6 resources from test to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ c397a138-5740-420f-845b-6d0326a003a0-Tests ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 5 source files with javac [debug target 17] to target/test-classes
+
+Starting logs for ExamProgrammingExerciseGradingServiceTest
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldCalculateScoreWithStaticCodeAnalysisPenaltiesWithoutCaps()
+    23:47:41.185 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:41.204 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:41.207 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:41.208 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:41.211 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:41.213 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:41.214 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:41.214 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:41.220 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:41.276 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:41.279 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldCalculateScoreWithStaticCodeAnalysisPenaltiesWithoutCaps'
+    23:47:41.283 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:41.291 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3404 and participant 696 (result to be deleted: null)
+    23:47:41.291 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3404 and participant 696 at 2025-02-14T23:47:41.391413667Z[Etc/UTC].
+    23:47:41.296 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:41.303 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3404 and participant 697 (result to be deleted: null)
+    23:47:41.303 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3404 and participant 697 at 2025-02-14T23:47:41.403266382Z[Etc/UTC].
+    23:47:41.310 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:41.318 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3404 and participant 698 (result to be deleted: null)
+    23:47:41.318 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3404 and participant 698 at 2025-02-14T23:47:41.418908834Z[Etc/UTC].
+    23:47:41.325 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:41.333 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3404 and participant 699 (result to be deleted: null)
+    23:47:41.333 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3404 and participant 699 at 2025-02-14T23:47:41.433220264Z[Etc/UTC].
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldCalculateScoreWithStaticCodeAnalysisPenalties()
+    23:47:41.354 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:41.362 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:41.364 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:41.365 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:41.368 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:41.370 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:41.371 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:41.371 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:41.377 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:41.421 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:41.423 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldCalculateScoreWithStaticCodeAnalysisPenalties'
+    23:47:41.427 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:41.435 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3407 and participant 696 (result to be deleted: null)
+    23:47:41.435 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3407 and participant 696 at 2025-02-14T23:47:41.535298061Z[Etc/UTC].
+    23:47:41.439 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:41.446 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3407 and participant 697 (result to be deleted: null)
+    23:47:41.446 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3407 and participant 697 at 2025-02-14T23:47:41.546649992Z[Etc/UTC].
+    23:47:41.450 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:41.458 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3407 and participant 698 (result to be deleted: null)
+    23:47:41.458 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3407 and participant 698 at 2025-02-14T23:47:41.558313384Z[Etc/UTC].
+    23:47:41.462 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:41.467 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3407 and participant 699 (result to be deleted: null)
+    23:47:41.467 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3407 and participant 699 at 2025-02-14T23:47:41.567925450Z[Etc/UTC].
+    23:47:41.471 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:41.478 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3407 and participant 700 (result to be deleted: null)
+    23:47:41.478 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3407 and participant 700 at 2025-02-14T23:47:41.578405444Z[Etc/UTC].
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldRecalculateScoreBasedOnTestCasesWeightAutomatic()
+    23:47:41.498 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:41.511 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:41.514 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:41.515 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:41.518 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:41.520 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:41.521 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:41.521 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:41.526 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:41.578 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:41.581 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldRecalculateScoreBasedOnTestCasesWeightAutomatic'
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldAddFeedbackForDuplicateTestCases()
+    23:47:41.594 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:41.602 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:41.605 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:41.606 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:41.609 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:41.611 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:41.612 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:41.612 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:41.618 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:41.670 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:41.672 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldAddFeedbackForDuplicateTestCases'
+    23:47:41.685 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'DUPLICATE_TEST_CASE' notification email to 'progexgradingserviceinstructor1@test.de'
+    23:47:41.689 | 621 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='progexgradingserviceinstructor1', firstName='progexgradingserviceinstructor1First', lastName='progexgradingserviceinstructor1Last', email='progexgradingserviceinstructor1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}' with subject 'Duplicate test case was found.'
+    23:47:41.690 | 621 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'Duplicate test case was found.' to User 'User{login='progexgradingserviceinstructor1', firstName='progexgradingserviceinstructor1First', lastName='progexgradingserviceinstructor1Last', email='progexgradingserviceinstructor1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}'
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldRecalculateScoreWithTestCaseBonusAndExerciseBonus()
+    23:47:41.713 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:41.721 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:41.723 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:41.725 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:41.727 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:41.729 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:41.730 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:41.730 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:41.733 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:41.788 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:41.791 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldRecalculateScoreWithTestCaseBonusAndExerciseBonus'
+    23:47:41.799 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3415 and participant 696 (result to be deleted: null)
+    23:47:41.799 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3415 and participant 696 at 2025-02-14T23:47:41.899944692Z[Etc/UTC].
+    23:47:41.804 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3415 and participant 696 (result to be deleted: null)
+    23:47:41.804 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3415 and participant 696 at 2025-02-14T23:47:41.904495349Z[Etc/UTC].
+    23:47:41.809 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3415 and participant 696 (result to be deleted: null)
+    23:47:41.809 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3415 and participant 696 at 2025-02-14T23:47:41.909075070Z[Etc/UTC].
+    23:47:41.813 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3415 and participant 696 (result to be deleted: null)
+    23:47:41.813 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3415 and participant 696 at 2025-02-14T23:47:41.913249304Z[Etc/UTC].
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldKeepTestsWithAfterDueDateFlagIfDueDateHasPassed()
+    23:47:41.828 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:41.837 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:41.840 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:41.841 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:41.845 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:41.847 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:41.849 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:41.849 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:41.855 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:41.913 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:41.916 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldKeepTestsWithAfterDueDateFlagIfDueDateHasPassed'
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldRecalculateScoreWithTestCaseBonusButNoExerciseBonus()
+    23:47:41.936 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:41.949 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:41.951 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:41.953 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:41.956 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:41.958 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:41.959 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:41.959 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:41.964 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:42.015 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.017 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldRecalculateScoreWithTestCaseBonusButNoExerciseBonus'
+    23:47:42.023 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3421 and participant 696 (result to be deleted: null)
+    23:47:42.023 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3421 and participant 696 at 2025-02-14T23:47:42.123907912Z[Etc/UTC].
+    23:47:42.028 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3421 and participant 696 (result to be deleted: null)
+    23:47:42.028 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3421 and participant 696 at 2025-02-14T23:47:42.128714867Z[Etc/UTC].
+    23:47:42.033 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3421 and participant 696 (result to be deleted: null)
+    23:47:42.033 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3421 and participant 696 at 2025-02-14T23:47:42.133822362Z[Etc/UTC].
+    23:47:42.038 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3421 and participant 696 (result to be deleted: null)
+    23:47:42.038 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3421 and participant 696 at 2025-02-14T23:47:42.138128382Z[Etc/UTC].
+    23:47:42.043 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3421 and participant 696 (result to be deleted: null)
+    23:47:42.043 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3421 and participant 696 at 2025-02-14T23:47:42.143340102Z[Etc/UTC].
+    23:47:42.047 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3421 and participant 696 (result to be deleted: null)
+    23:47:42.047 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3421 and participant 696 at 2025-02-14T23:47:42.147574929Z[Etc/UTC].
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldRemoveInvisibleStaticCodeAnalysisFeedbackOnGrading()
+    23:47:42.064 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:42.072 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:42.075 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:42.076 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:42.079 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:42.082 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:42.083 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:42.083 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:42.087 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:42.137 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.140 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldRemoveInvisibleStaticCodeAnalysisFeedbackOnGrading'
+    23:47:42.143 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.147 | 451 ool-1-worker-215 | DEBUG | mmingExerciseFeedbackCreationService : Error occurred parsing feedback Feedback{text='SCAFeedbackIdentifier:', detailText='', hasLongFeedbackText=false, reference='CHECKSTYLE', credits=null, positive=null, type=AUTOMATIC, visibility=null} to static code analysis issue: No content to map due to end-of-input
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1]
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldUpdateOnlyResultsForParticipationsWithoutIndividualDueDate()
+    23:47:42.162 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:42.170 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:42.172 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:42.174 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:42.176 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:42.179 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:42.180 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:42.180 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:42.185 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:42.226 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.228 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldUpdateOnlyResultsForParticipationsWithoutIndividualDueDate'
+    23:47:42.247 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3427 and participant 696 (result to be deleted: null)
+    23:47:42.248 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3427 and participant 696 at 2025-02-14T23:47:42.347983621Z[Etc/UTC].
+    23:47:42.251 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.256 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3427 and participant 697 (result to be deleted: null)
+    23:47:42.256 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3427 and participant 697 at 2025-02-14T23:47:42.356834929Z[Etc/UTC].
+    23:47:42.260 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3427 and participant 697 (result to be deleted: null)
+    23:47:42.260 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3427 and participant 697 at 2025-02-14T23:47:42.360883239Z[Etc/UTC].
+    23:47:42.264 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.269 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.281 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3427 and participant 699 (result to be deleted: null)
+    23:47:42.281 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3427 and participant 699 at 2025-02-14T23:47:42.381177155Z[Etc/UTC].
+    23:47:42.284 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.288 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3427 and participant 700 (result to be deleted: null)
+    23:47:42.288 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3427 and participant 700 at 2025-02-14T23:47:42.388144018Z[Etc/UTC].
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > testWeightSumZero()
+    23:47:42.349 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:42.356 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:42.358 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:42.360 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:42.363 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:42.365 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:42.367 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:42.367 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:42.372 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:42.425 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.427 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#testWeightSumZero'
+    23:47:42.449 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3430 and participant 696 (result to be deleted: null)
+    23:47:42.449 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3430 and participant 696 at 2025-02-14T23:47:42.549798245Z[Etc/UTC].
+    23:47:42.452 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.456 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3430 and participant 697 (result to be deleted: null)
+    23:47:42.456 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3430 and participant 697 at 2025-02-14T23:47:42.556491658Z[Etc/UTC].
+    23:47:42.459 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3430 and participant 697 (result to be deleted: null)
+    23:47:42.459 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3430 and participant 697 at 2025-02-14T23:47:42.559315233Z[Etc/UTC].
+    23:47:42.461 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.466 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.470 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3430 and participant 699 (result to be deleted: null)
+    23:47:42.470 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3430 and participant 699 at 2025-02-14T23:47:42.570808838Z[Etc/UTC].
+    23:47:42.473 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.478 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3430 and participant 700 (result to be deleted: null)
+    23:47:42.478 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3430 and participant 700 at 2025-02-14T23:47:42.578711276Z[Etc/UTC].
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldGetCorrectLatestAutomaticResults()
+    23:47:42.535 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:42.541 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:42.544 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:42.545 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:42.547 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:42.548 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:42.549 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:42.549 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:42.552 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:42.605 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.608 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldGetCorrectLatestAutomaticResults'
+    23:47:42.611 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.618 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3434 and participant 696 (result to be deleted: null)
+    23:47:42.618 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3434 and participant 696 at 2025-02-14T23:47:42.718408033Z[Etc/UTC].
+    23:47:42.621 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.626 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3434 and participant 697 (result to be deleted: null)
+    23:47:42.626 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3434 and participant 697 at 2025-02-14T23:47:42.726647537Z[Etc/UTC].
+    23:47:42.629 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.635 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3434 and participant 698 (result to be deleted: null)
+    23:47:42.635 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3434 and participant 698 at 2025-02-14T23:47:42.735491340Z[Etc/UTC].
+    23:47:42.639 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.646 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3434 and participant 699 (result to be deleted: null)
+    23:47:42.646 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3434 and participant 699 at 2025-02-14T23:47:42.746073615Z[Etc/UTC].
+    23:47:42.650 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.657 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3434 and participant 700 (result to be deleted: null)
+    23:47:42.657 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3434 and participant 700 at 2025-02-14T23:47:42.757062800Z[Etc/UTC].
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldRecalculateScoreBasedOnTestCasesWeightManual()
+    23:47:42.681 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:42.688 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:42.690 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:42.691 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:42.694 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:42.697 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:42.698 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:42.698 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:42.703 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:42.755 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.758 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldRecalculateScoreBasedOnTestCasesWeightManual'
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldReEvaluateScoreOfTheCorrectResults()
+    23:47:42.777 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:42.785 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:42.788 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:42.789 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:42.792 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:42.794 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:42.797 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:42.797 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:42.802 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:42.870 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.873 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldReEvaluateScoreOfTheCorrectResults'
+    23:47:42.925 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3439 and participant 696 (result to be deleted: null)
+    23:47:42.925 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3439 and participant 696 at 2025-02-14T23:47:43.025933450Z[Etc/UTC].
+    23:47:42.936 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.947 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3439 and participant 697 (result to be deleted: null)
+    23:47:42.948 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3439 and participant 697 at 2025-02-14T23:47:43.048031172Z[Etc/UTC].
+    23:47:42.952 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3439 and participant 697 (result to be deleted: null)
+    23:47:42.952 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3439 and participant 697 at 2025-02-14T23:47:43.052786801Z[Etc/UTC].
+    23:47:42.960 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.970 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.981 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3439 and participant 699 (result to be deleted: null)
+    23:47:42.981 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3439 and participant 699 at 2025-02-14T23:47:43.081337617Z[Etc/UTC].
+    23:47:42.985 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:42.990 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3439 and participant 700 (result to be deleted: null)
+    23:47:42.990 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3439 and participant 700 at 2025-02-14T23:47:43.090654172Z[Etc/UTC].
+    23:47:42.992 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises/3439/grading/re-evaluate
+    23:47:42.993 | 451 ool-1-worker-215 | DEBUG | w.ProgrammingExerciseGradingResource : REST request to re-evaluate the graded results of exercise 3439
+    23:47:43.026 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 3439 and participant 696 to update participant scores.
+    23:47:43.043 | 664 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 3439 and participant 696 took 17 ms.
+    23:47:43.052 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 3439 and participant 697 to update participant scores.
+    23:47:43.061 | 451 ool-1-worker-215 | INFO  | .s.ProgrammingExerciseGradingService : User progexgradingserviceinstructor1 triggered a re-evaluation of 7 results for exercise d205b17a-b659-476d-9238-6aa673d7ad18 with id 3439
+    23:47:43.065 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3439 and participant 696 (result to be deleted: null)
+    23:47:43.065 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3439 and participant 696 at 2025-02-14T23:47:43.165671397Z[Etc/UTC].
+    23:47:43.065 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3439 and participant 697 (result to be deleted: null)
+    23:47:43.065 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3439 and participant 697 at 2025-02-14T23:47:43.165813122Z[Etc/UTC].
+    23:47:43.068 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 3439 and participant 697 took 16 ms.
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldCalculateScoreWithStaticCodeAnalysisPenalties_cappedByExerciseMaxPenalty()
+    23:47:43.120 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:43.136 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:43.141 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:43.143 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:43.145 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:43.146 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:43.147 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:43.147 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:43.152 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:43.165 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 3439 and participant 697 to update participant scores.
+    23:47:43.174 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 3439 and participant 697 took 9 ms.
+    23:47:43.208 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.210 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldCalculateScoreWithStaticCodeAnalysisPenalties_cappedByExerciseMaxPenalty'
+    23:47:43.216 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.225 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3443 and participant 696 (result to be deleted: null)
+    23:47:43.225 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3443 and participant 696 at 2025-02-14T23:47:43.325927744Z[Etc/UTC].
+    23:47:43.230 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.236 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3443 and participant 697 (result to be deleted: null)
+    23:47:43.236 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3443 and participant 697 at 2025-02-14T23:47:43.336505701Z[Etc/UTC].
+    23:47:43.239 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.245 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3443 and participant 698 (result to be deleted: null)
+    23:47:43.245 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3443 and participant 698 at 2025-02-14T23:47:43.345604680Z[Etc/UTC].
+    23:47:43.248 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.254 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3443 and participant 699 (result to be deleted: null)
+    23:47:43.254 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3443 and participant 699 at 2025-02-14T23:47:43.354056232Z[Etc/UTC].
+    23:47:43.258 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.266 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3443 and participant 700 (result to be deleted: null)
+    23:47:43.266 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3443 and participant 700 at 2025-02-14T23:47:43.366247107Z[Etc/UTC].
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldUpdateTheLatestResultOfASingleParticipation()
+    23:47:43.286 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:43.294 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:43.297 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:43.298 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:43.301 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:43.303 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:43.304 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:43.304 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:43.309 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:43.366 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.369 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldUpdateTheLatestResultOfASingleParticipation'
+    23:47:43.394 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3445 and participant 696 (result to be deleted: null)
+    23:47:43.394 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3445 and participant 696 at 2025-02-14T23:47:43.494615457Z[Etc/UTC].
+    23:47:43.398 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.404 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3445 and participant 697 (result to be deleted: null)
+    23:47:43.404 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3445 and participant 697 at 2025-02-14T23:47:43.504789041Z[Etc/UTC].
+    23:47:43.409 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3445 and participant 697 (result to be deleted: null)
+    23:47:43.409 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3445 and participant 697 at 2025-02-14T23:47:43.509425918Z[Etc/UTC].
+    23:47:43.413 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.418 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.424 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3445 and participant 699 (result to be deleted: null)
+    23:47:43.424 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3445 and participant 699 at 2025-02-14T23:47:43.524896169Z[Etc/UTC].
+    23:47:43.428 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.433 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3445 and participant 700 (result to be deleted: null)
+    23:47:43.433 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3445 and participant 700 at 2025-02-14T23:47:43.533715908Z[Etc/UTC].
+    23:47:43.440 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3445 and participant 696 (result to be deleted: null)
+    23:47:43.440 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3445 and participant 696 at 2025-02-14T23:47:43.540702087Z[Etc/UTC].
+    23:47:43.453 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3445 and participant 697 (result to be deleted: null)
+    23:47:43.453 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3445 and participant 697 at 2025-02-14T23:47:43.553392597Z[Etc/UTC].
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldNotIncludeTestsMarkedAsNeverVisibleInScoreCalculation(boolean) [1] isAfterDueDate=false
+    23:47:43.486 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:43.494 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:43.496 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:43.497 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:43.499 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:43.501 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:43.502 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:43.502 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:43.506 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:43.548 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.550 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldNotIncludeTestsMarkedAsNeverVisibleInScoreCalculation'
+    23:47:43.628 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3448 and participant 696 (result to be deleted: null)
+    23:47:43.628 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3448 and participant 696 at 2025-02-14T23:47:43.728710253Z[Etc/UTC].
+    23:47:43.633 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.640 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3448 and participant 697 (result to be deleted: null)
+    23:47:43.640 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3448 and participant 697 at 2025-02-14T23:47:43.740490573Z[Etc/UTC].
+    23:47:43.645 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3448 and participant 697 (result to be deleted: null)
+    23:47:43.645 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3448 and participant 697 at 2025-02-14T23:47:43.745407934Z[Etc/UTC].
+    23:47:43.649 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.653 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.659 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3448 and participant 699 (result to be deleted: null)
+    23:47:43.659 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3448 and participant 699 at 2025-02-14T23:47:43.759955564Z[Etc/UTC].
+    23:47:43.664 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.671 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3448 and participant 700 (result to be deleted: null)
+    23:47:43.671 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3448 and participant 700 at 2025-02-14T23:47:43.771654775Z[Etc/UTC].
+    23:47:43.679 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises/3448/grading/re-evaluate
+    23:47:43.685 | 451 ool-1-worker-215 | DEBUG | w.ProgrammingExerciseGradingResource : REST request to re-evaluate the graded results of exercise 3448
+    23:47:43.730 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 3448 and participant 696 to update participant scores.
+    23:47:43.738 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 3448 and participant 696 took 8 ms.
+    23:47:43.745 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 3448 and participant 697 to update participant scores.
+    23:47:43.757 | 663 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 3448 and participant 697 took 12 ms.
+    23:47:43.760 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 3448 and participant 699 to update participant scores.
+    23:47:43.769 | 451 ool-1-worker-215 | INFO  | .s.ProgrammingExerciseGradingService : User progexgradingserviceinstructor1 triggered a re-evaluation of 7 results for exercise fb4cb4d8-c725-429c-a6d2-f8fdb81aaf67 with id 3448
+    23:47:43.771 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 3448 and participant 700 to update participant scores.
+    23:47:43.772 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 3448 and participant 699 took 12 ms.
+    23:47:43.776 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3448 and participant 696 (result to be deleted: null)
+    23:47:43.776 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3448 and participant 696 at 2025-02-14T23:47:43.876462833Z[Etc/UTC].
+    23:47:43.776 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3448 and participant 697 (result to be deleted: null)
+    23:47:43.776 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3448 and participant 697 at 2025-02-14T23:47:43.876641877Z[Etc/UTC].
+    23:47:43.786 | 666 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 3448 and participant 700 took 15 ms.
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldNotIncludeTestsMarkedAsNeverVisibleInScoreCalculation(boolean) [2] isAfterDueDate=true
+    23:47:43.809 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:43.817 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:43.819 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:43.820 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:43.822 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:43.825 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:43.827 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:43.827 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:43.833 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:43.888 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.891 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldNotIncludeTestsMarkedAsNeverVisibleInScoreCalculation'
+    23:47:43.919 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3451 and participant 696 (result to be deleted: null)
+    23:47:43.919 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3451 and participant 696 at 2025-02-14T23:47:44.019950721Z[Etc/UTC].
+    23:47:43.923 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.929 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3451 and participant 697 (result to be deleted: null)
+    23:47:43.929 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3451 and participant 697 at 2025-02-14T23:47:44.029715174Z[Etc/UTC].
+    23:47:43.933 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3451 and participant 697 (result to be deleted: null)
+    23:47:43.933 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3451 and participant 697 at 2025-02-14T23:47:44.033091Z[Etc/UTC].
+    23:47:43.936 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.942 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.948 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3451 and participant 699 (result to be deleted: null)
+    23:47:43.948 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3451 and participant 699 at 2025-02-14T23:47:44.048614330Z[Etc/UTC].
+    23:47:43.951 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:43.957 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3451 and participant 700 (result to be deleted: null)
+    23:47:43.957 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3451 and participant 700 at 2025-02-14T23:47:44.057299657Z[Etc/UTC].
+    23:47:43.959 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises/3451/grading/re-evaluate
+    23:47:43.959 | 451 ool-1-worker-215 | DEBUG | w.ProgrammingExerciseGradingResource : REST request to re-evaluate the graded results of exercise 3451
+    23:47:44.014 | 451 ool-1-worker-215 | INFO  | .s.ProgrammingExerciseGradingService : User progexgradingserviceinstructor1 triggered a re-evaluation of 7 results for exercise 3681a86c-7e72-41ca-bfca-441e6f1d0332 with id 3451
+    23:47:44.018 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3451 and participant 696 (result to be deleted: null)
+    23:47:44.018 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3451 and participant 696 at 2025-02-14T23:47:44.118572599Z[Etc/UTC].
+    23:47:44.018 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3451 and participant 697 (result to be deleted: null)
+    23:47:44.018 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3451 and participant 697 at 2025-02-14T23:47:44.118708252Z[Etc/UTC].
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldCalculateCorrectStatistics()
+    23:47:44.041 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:44.049 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:44.051 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:44.053 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:44.055 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:44.058 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:44.059 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:44.059 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:44.063 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:44.151 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.154 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldCalculateCorrectStatistics'
+    23:47:44.162 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.174 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3455 and participant 696 (result to be deleted: null)
+    23:47:44.174 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3455 and participant 696 at 2025-02-14T23:47:44.274400089Z[Etc/UTC].
+    23:47:44.178 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.192 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3455 and participant 697 (result to be deleted: null)
+    23:47:44.192 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3455 and participant 697 at 2025-02-14T23:47:44.292858513Z[Etc/UTC].
+    23:47:44.198 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.206 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3455 and participant 698 (result to be deleted: null)
+    23:47:44.206 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3455 and participant 698 at 2025-02-14T23:47:44.306175900Z[Etc/UTC].
+    23:47:44.210 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.218 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3455 and participant 699 (result to be deleted: null)
+    23:47:44.218 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3455 and participant 699 at 2025-02-14T23:47:44.318067807Z[Etc/UTC].
+    23:47:44.222 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.230 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3455 and participant 700 (result to be deleted: null)
+    23:47:44.230 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3455 and participant 700 at 2025-02-14T23:47:44.330800002Z[Etc/UTC].
+    23:47:44.234 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/programming-exercises/3455/grading/statistics
+    23:47:44.234 | 451 ool-1-worker-215 | DEBUG | w.ProgrammingExerciseGradingResource : REST request to get test case statistics for programming exercise 3455
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldNotUpdateResultIfNoTestCasesExist()
+    23:47:44.267 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:44.275 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:44.278 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:44.279 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:44.282 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:44.284 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:44.285 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:44.285 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:44.290 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:44.345 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.347 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldNotUpdateResultIfNoTestCasesExist'
+    23:47:44.351 | 641 nt.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5704 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=395.7M, swap.space.total=0, swap.space.free=0, heap.memory.used=2.2G, heap.memory.free=1.3G, heap.memory.total=3.5G, heap.memory.max=6.0G, heap.memory.used/total=63.37%, heap.memory.used/max=36.92%, minor.gc.count=213, minor.gc.time=10284ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=90, unknown.gc.time=1981ms, load.process=0.00%, load.system=90.63%, load.systemAverage=6.65, thread.count=508, thread.peakCount=517, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=5922, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=215, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldGetCorrectLatestAutomaticResultsWithMultipleResults()
+    23:47:44.364 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:44.373 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:44.375 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:44.377 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:44.379 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:44.382 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:44.383 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:44.383 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:44.388 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:44.479 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.482 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldGetCorrectLatestAutomaticResultsWithMultipleResults'
+    23:47:44.485 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.493 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3461 and participant 696 (result to be deleted: null)
+    23:47:44.493 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3461 and participant 696 at 2025-02-14T23:47:44.593419882Z[Etc/UTC].
+    23:47:44.499 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3461 and participant 696 (result to be deleted: null)
+    23:47:44.499 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3461 and participant 696 at 2025-02-14T23:47:44.599315828Z[Etc/UTC].
+    23:47:44.503 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.511 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3461 and participant 697 (result to be deleted: null)
+    23:47:44.511 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3461 and participant 697 at 2025-02-14T23:47:44.611081190Z[Etc/UTC].
+    23:47:44.515 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.523 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3461 and participant 698 (result to be deleted: null)
+    23:47:44.523 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3461 and participant 698 at 2025-02-14T23:47:44.623249433Z[Etc/UTC].
+    23:47:44.527 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.535 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3461 and participant 699 (result to be deleted: null)
+    23:47:44.535 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3461 and participant 699 at 2025-02-14T23:47:44.635398470Z[Etc/UTC].
+    23:47:44.539 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.547 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3461 and participant 700 (result to be deleted: null)
+    23:47:44.547 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3461 and participant 700 at 2025-02-14T23:47:44.647589806Z[Etc/UTC].
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldRemoveTestsWithAfterDueDateFlagIfDueDateHasNotPassed()
+    23:47:44.579 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:44.587 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:44.589 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:44.591 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:44.593 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:44.596 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:44.597 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:44.597 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:44.602 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:44.657 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.659 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldRemoveTestsWithAfterDueDateFlagIfDueDateHasNotPassed'
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldNotIncludeTestsInResultWithAfterDueDateFlagIfDueDateHasNotPassedForNonStudentParticipation()
+    23:47:44.678 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:44.686 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:44.689 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:44.690 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:44.693 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:44.696 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:44.697 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:44.697 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:44.702 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:44.767 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.769 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldNotIncludeTestsInResultWithAfterDueDateFlagIfDueDateHasNotPassedForNonStudentParticipation'
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldSetScoreCorrectlyIfWeightSumIsReallyBigOrReallySmall()
+    23:47:44.787 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:44.796 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:44.799 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:44.800 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:44.803 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:44.806 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:44.807 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:44.807 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:44.813 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:44.871 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.873 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldSetScoreCorrectlyIfWeightSumIsReallyBigOrReallySmall'
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > shouldCalculateScoreWithStaticCodeAnalysisPenaltiesWithBonus()
+    23:47:44.891 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:44.899 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:44.902 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:44.904 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:44.906 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:44.909 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:44.910 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:44.910 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:44.916 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:44.976 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.979 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldCalculateScoreWithStaticCodeAnalysisPenaltiesWithBonus'
+    23:47:44.985 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:44.997 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3473 and participant 696 (result to be deleted: null)
+    23:47:44.997 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3473 and participant 696 at 2025-02-14T23:47:45.097601117Z[Etc/UTC].
+    23:47:45.006 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:45.016 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3473 and participant 697 (result to be deleted: null)
+    23:47:45.016 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3473 and participant 697 at 2025-02-14T23:47:45.116739709Z[Etc/UTC].
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > [1] templateParticipation=false
+    23:47:45.037 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:45.046 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:45.049 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:45.051 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:45.053 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:45.055 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:45.057 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:45.057 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:45.062 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:45.121 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:45.124 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldUpdateScoresWithSCAAndLongFeedbackText'
+    23:47:45.147 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:45.150 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3477 and participant 696 (result to be deleted: null)
+    23:47:45.150 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3477 and participant 696 at 2025-02-14T23:47:45.250538537Z[Etc/UTC].
+    23:47:45.168 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3477 and participant 696 (result to be deleted: null)
+    23:47:45.168 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3477 and participant 696 at 2025-02-14T23:47:45.268350175Z[Etc/UTC].
+    23:47:45.177 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3477 and participant 696 (result to be deleted: null)
+    23:47:45.177 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3477 and participant 696 at 2025-02-14T23:47:45.277862863Z[Etc/UTC].
+    23:47:45.192 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3477 and participant 696 (result to be deleted: null)
+    23:47:45.192 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3477 and participant 696 at 2025-02-14T23:47:45.292623471Z[Etc/UTC].
+    23:47:45.200 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3477 and participant 696 (result to be deleted: null)
+    23:47:45.200 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3477 and participant 696 at 2025-02-14T23:47:45.300081229Z[Etc/UTC].
+    23:47:45.209 | 451 ool-1-worker-215 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3477 and participant 696 (result to be deleted: null)
+    23:47:45.209 | 451 ool-1-worker-215 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3477 and participant 696 at 2025-02-14T23:47:45.309441556Z[Etc/UTC].
+    23:47:45.309 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 3477 and participant 696 to update participant scores.
+    23:47:45.317 | 665 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 3477 and participant 696 took 8 ms.
+
+  Starting logs for ExamProgrammingExerciseGradingServiceTest > [2] templateParticipation=true
+    23:47:45.356 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 5 students...
+    23:47:45.370 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 students generated. Generate 1 tutors...
+    23:47:45.374 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:47:45.376 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:47:45.378 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:47:45.381 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:47:45.382 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:47:45.382 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:47:45.390 | 451 ool-1-worker-215 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:47:45.454 | 451 ool-1-worker-215 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:47:45.456 | 451 ool-1-worker-215 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='ProgrammingExerciseGradingServiceTest#shouldUpdateScoresWithSCAAndLongFeedbackText'
+
+Finished logs for ExamProgrammingExerciseGradingServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

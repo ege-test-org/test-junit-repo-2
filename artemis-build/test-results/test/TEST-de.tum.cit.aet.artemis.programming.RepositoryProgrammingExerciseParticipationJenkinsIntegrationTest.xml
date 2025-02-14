@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.RepositoryProgrammingExerciseParticipationJenkinsIntegrationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:49:15" hostname="fv-az1721-502" time="0.086">
+  <properties/>
+  <testcase name="testGetLatestBuildLogsFails()" classname="de.tum.cit.aet.artemis.programming.RepositoryProgrammingExerciseParticipationJenkinsIntegrationTest" time="0.086"/>
+  <system-out><![CDATA[
+Starting logs for RepositoryProgrammingExerciseParticipationJenkinsIntegrationTest
+
+  Starting logs for RepositoryProgrammingExerciseParticipationJenkinsIntegrationTest > testGetLatestBuildLogsFails()
+    23:49:15.317 | 466 ool-1-worker-230 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:49:15.318 | 466 ool-1-worker-230 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:49:15.320 | 466 ool-1-worker-230 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    23:49:15.321 | 466 ool-1-worker-230 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:49:15.323 | 466 ool-1-worker-230 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:49:15.324 | 466 ool-1-worker-230 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:49:15.325 | 466 ool-1-worker-230 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:49:15.325 | 466 ool-1-worker-230 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:49:15.326 | 466 ool-1-worker-230 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:49:15.326 | 466 ool-1-worker-230 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='RepositoryProgrammingExerciseParticipationJenkinsIntegrationTest#testGetLatestBuildLogsFails'
+    23:49:15.378 | 466 ool-1-worker-230 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:49:15.385 | 466 ool-1-worker-230 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/repository/5583/buildlogs
+    23:49:15.386 | 466 ool-1-worker-230 | DEBUG | rammingExerciseParticipationResource : REST request to get build log : 5583
+
+Finished logs for RepositoryProgrammingExerciseParticipationJenkinsIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

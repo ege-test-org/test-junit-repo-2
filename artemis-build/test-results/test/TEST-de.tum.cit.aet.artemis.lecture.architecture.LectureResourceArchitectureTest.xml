@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lecture.architecture.LectureResourceArchitectureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:59" hostname="fv-az1721-502" time="0.245">
+  <properties/>
+  <testcase name="testNoOverrideOfEnforceAdmin()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureResourceArchitectureTest" time="0.025"/>
+  <testcase name="testUseKebabCaseForRestEndpoints()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureResourceArchitectureTest" time="0.146"/>
+  <testcase name="allPublicMethodsShouldReturnResponseEntity()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureResourceArchitectureTest" time="0.023"/>
+  <testcase name="testClassWithEnforceAdminInCorrectlyNamed()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureResourceArchitectureTest" time="0.003"/>
+  <testcase name="shouldBeNamedResource()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureResourceArchitectureTest" time="0.001"/>
+  <testcase name="shouldBeInResourcePackage()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureResourceArchitectureTest" time="0.001"/>
+  <testcase name="shouldCorrectlyUseRequestMappingAnnotations()" classname="de.tum.cit.aet.artemis.lecture.architecture.LectureResourceArchitectureTest" time="0.044"/>
+  <system-out><![CDATA[
+Starting logs for LectureResourceArchitectureTest
+
+  Starting logs for LectureResourceArchitectureTest > testNoOverrideOfEnforceAdmin()
+
+  Starting logs for LectureResourceArchitectureTest > testUseKebabCaseForRestEndpoints()
+
+  Starting logs for LectureResourceArchitectureTest > allPublicMethodsShouldReturnResponseEntity()
+
+  Starting logs for LectureResourceArchitectureTest > testClassWithEnforceAdminInCorrectlyNamed()
+
+  Starting logs for LectureResourceArchitectureTest > shouldBeNamedResource()
+
+  Starting logs for LectureResourceArchitectureTest > shouldBeInResourcePackage()
+
+  Starting logs for LectureResourceArchitectureTest > shouldCorrectlyUseRequestMappingAnnotations()
+
+Finished logs for LectureResourceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

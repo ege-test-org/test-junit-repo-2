@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.notifications.service.push_notifications.AppleFirebasePushNotificationServiceTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:31" hostname="fv-az1721-502" time="1.961">
+  <properties/>
+  <testcase name="getDeviceType_shouldReturnFirebase()" classname="de.tum.cit.aet.artemis.communication.notifications.service.push_notifications.AppleFirebasePushNotificationServiceTest" time="0.808"/>
+  <testcase name="getDeviceType_shouldReturnAPNS()" classname="de.tum.cit.aet.artemis.communication.notifications.service.push_notifications.AppleFirebasePushNotificationServiceTest" time="0.005"/>
+  <testcase name="getRepository_shouldReturnRepository()" classname="de.tum.cit.aet.artemis.communication.notifications.service.push_notifications.AppleFirebasePushNotificationServiceTest" time="0.004"/>
+  <testcase name="scheduleSendBatch_shouldRetryOnRestClientException()" classname="de.tum.cit.aet.artemis.communication.notifications.service.push_notifications.AppleFirebasePushNotificationServiceTest" time="1.111"/>
+  <testcase name="sendNotificationRequestsToEndpoint_shouldSendNotifications()" classname="de.tum.cit.aet.artemis.communication.notifications.service.push_notifications.AppleFirebasePushNotificationServiceTest" time="0.026"/>
+  <system-out><![CDATA[
+Starting logs for AppleFirebasePushNotificationServiceTest
+
+  Starting logs for AppleFirebasePushNotificationServiceTest > getDeviceType_shouldReturnFirebase()
+
+  Starting logs for AppleFirebasePushNotificationServiceTest > getDeviceType_shouldReturnAPNS()
+
+  Starting logs for AppleFirebasePushNotificationServiceTest > getRepository_shouldReturnRepository()
+
+  Starting logs for AppleFirebasePushNotificationServiceTest > scheduleSendBatch_shouldRetryOnRestClientException()
+
+  Starting logs for AppleFirebasePushNotificationServiceTest > sendNotificationRequestsToEndpoint_shouldSendNotifications()
+
+Finished logs for AppleFirebasePushNotificationServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.architecture.ProgrammingServiceArchitectureTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:07" hostname="fv-az1721-502" time="0.487">
+  <properties/>
+  <testcase name="testCorrectAsyncCalls()" classname="de.tum.cit.aet.artemis.programming.architecture.ProgrammingServiceArchitectureTest" time="0.015"/>
+  <testcase name="shouldBeNamedService()" classname="de.tum.cit.aet.artemis.programming.architecture.ProgrammingServiceArchitectureTest" time="0.002"/>
+  <testcase name="testCorrectServiceAnnotation()" classname="de.tum.cit.aet.artemis.programming.architecture.ProgrammingServiceArchitectureTest" time="0.02"/>
+  <testcase name="shouldBeInServicePackage()" classname="de.tum.cit.aet.artemis.programming.architecture.ProgrammingServiceArchitectureTest" time="0.004"/>
+  <testcase name="testNoWrongServiceImports()" classname="de.tum.cit.aet.artemis.programming.architecture.ProgrammingServiceArchitectureTest" time="0.443"/>
+  <system-out><![CDATA[
+Starting logs for ProgrammingServiceArchitectureTest
+
+  Starting logs for ProgrammingServiceArchitectureTest > testCorrectAsyncCalls()
+
+  Starting logs for ProgrammingServiceArchitectureTest > shouldBeNamedService()
+
+  Starting logs for ProgrammingServiceArchitectureTest > testCorrectServiceAnnotation()
+
+  Starting logs for ProgrammingServiceArchitectureTest > shouldBeInServicePackage()
+
+  Starting logs for ProgrammingServiceArchitectureTest > testNoWrongServiceImports()
+
+Finished logs for ProgrammingServiceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

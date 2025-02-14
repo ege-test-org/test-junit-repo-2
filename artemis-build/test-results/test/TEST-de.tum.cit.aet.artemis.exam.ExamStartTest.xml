@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.exam.ExamStartTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:39" hostname="fv-az1721-502" time="0.539">
+  <properties/>
+  <testcase name="testStartExercisesWithTextExercise()" classname="de.tum.cit.aet.artemis.exam.ExamStartTest" time="0.076"/>
+  <testcase name="testStartExerciseWithProgrammingExercise_participationUnlocked(ZonedDateTime) [1]" classname="de.tum.cit.aet.artemis.exam.ExamStartTest" time="0.11"/>
+  <testcase name="testStartExerciseWithProgrammingExercise_participationUnlocked(ZonedDateTime) [2]" classname="de.tum.cit.aet.artemis.exam.ExamStartTest" time="0.113"/>
+  <testcase name="testStartExerciseWithProgrammingExercise()" classname="de.tum.cit.aet.artemis.exam.ExamStartTest" time="0.135"/>
+  <testcase name="testStartExercisesWithModelingExercise()" classname="de.tum.cit.aet.artemis.exam.ExamStartTest" time="0.091"/>
+  <system-out><![CDATA[
+Starting logs for ExamStartTest
+
+  Starting logs for ExamStartTest > testStartExercisesWithTextExercise()
+    23:43:39.076 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:43:39.079 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:43:39.080 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:39.082 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:43:39.083 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:39.085 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:43:39.086 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:43:39.086 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:39.087 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:39.091 | 365 ool-1-worker-129 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ExamStartTest#testStartExercisesWithTextExercise'
+    23:43:39.099 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/261/exams/92/student-exams/start-exercises
+    23:43:39.104 | 365 ool-1-worker-129 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : REST request to start exercises for student exams of exam 92
+    23:43:39.121 | 712 ol-4962-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 18 and exercise 401 and student examstartteststudent1
+    23:43:39.123 | 713 ol-4962-thread-2 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 19 and exercise 401 and student examstartteststudent2
+    23:43:39.124 | 365 ool-1-worker-129 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Generated 2 participations in 23.84ms for student exams of exam 92
+    23:43:39.126 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/261/exams/92/student-exams/start-exercises/status
+
+  Starting logs for ExamStartTest > testStartExerciseWithProgrammingExercise_participationUnlocked(ZonedDateTime) [1]
+    23:43:39.153 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:43:39.156 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:43:39.158 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:39.159 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:43:39.162 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:39.163 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:39.164 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:39.164 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:39.170 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:39.174 | 365 ool-1-worker-129 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ExamStartTest#testStartExerciseWithProgrammingExercise_participationUnlocked'
+    23:43:39.193 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/262/exams/93/student-exams/start-exercises
+    23:43:39.200 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.exam.service.ExamService   : Finished combination of template commits for programming exercise ProgrammingExercise{id=402, templateRepositoryUri='http://localhost:49152/git/SHORT0415D6100F0C3040ED0B9B501EEBCEEBEAA2T65C/short0415d6100f0c3040ed0b9b501eebceebeaa2t65c-exercise.git', solutionRepositoryUri='null', templateBuildPlanId='SHORT0415D6100F0C3040ED0B9B501EEBCEEBEAA2T65C-BASE', solutionBuildPlanId='null', allowOnlineEditor='null', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:43:39.200 | 365 ool-1-worker-129 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : REST request to start exercises for student exams of exam 93
+    23:43:39.208 | 714 ol-4963-thread-1 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:39.209 | 715 ol-4963-thread-2 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:39.223 | 714 ol-4963-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 20 and exercise 402 and student examstartteststudent1
+    23:43:39.229 | 715 ol-4963-thread-2 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 21 and exercise 402 and student examstartteststudent2
+    23:43:39.230 | 365 ool-1-worker-129 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Generated 2 participations in 35.95ms for student exams of exam 93
+    23:43:39.230 | 365 ool-1-worker-129 | INFO  | .c.s.m.InstanceMessageReceiveService : Received reschedule of exam during conduction 93
+    23:43:39.237 | 365 ool-1-worker-129 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 0 Tasks for Exercise "442cccd0-00f4-43ad-a786-0c9638e606b3" (#402) to trigger on DUE.
+    23:43:39.239 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/262/exams/93/student-exams/start-exercises/status
+
+  Starting logs for ExamStartTest > testStartExerciseWithProgrammingExercise_participationUnlocked(ZonedDateTime) [2]
+    23:43:39.265 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:43:39.270 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:43:39.271 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:39.272 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:43:39.275 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:39.276 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:39.277 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:39.277 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:39.281 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:39.284 | 365 ool-1-worker-129 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ExamStartTest#testStartExerciseWithProgrammingExercise_participationUnlocked'
+    23:43:39.301 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/263/exams/94/student-exams/start-exercises
+    23:43:39.308 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.exam.service.ExamService   : Finished combination of template commits for programming exercise ProgrammingExercise{id=403, templateRepositoryUri='http://localhost:49152/git/SHORTA658C681000F404FE4083290FC2AA545FD65T2AC/shorta658c681000f404fe4083290fc2aa545fd65t2ac-exercise.git', solutionRepositoryUri='null', templateBuildPlanId='SHORTA658C681000F404FE4083290FC2AA545FD65T2AC-BASE', solutionBuildPlanId='null', allowOnlineEditor='null', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:43:39.308 | 365 ool-1-worker-129 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : REST request to start exercises for student exams of exam 94
+    23:43:39.320 | 716 ol-4970-thread-1 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:39.323 | 717 ol-4970-thread-2 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:39.336 | 716 ol-4970-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 22 and exercise 403 and student examstartteststudent1
+    23:43:39.345 | 717 ol-4970-thread-2 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 23 and exercise 403 and student examstartteststudent2
+    23:43:39.346 | 365 ool-1-worker-129 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Generated 2 participations in 44.57ms for student exams of exam 94
+    23:43:39.346 | 365 ool-1-worker-129 | INFO  | .c.s.m.InstanceMessageReceiveService : Received reschedule of exam during conduction 94
+    23:43:39.352 | 365 ool-1-worker-129 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 0 Tasks for Exercise "79b98603-05bf-46f6-9807-c1ca199aeac2" (#403) to trigger on DUE.
+    23:43:39.355 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/263/exams/94/student-exams/start-exercises/status
+
+  Starting logs for ExamStartTest > testStartExerciseWithProgrammingExercise()
+    23:43:39.384 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:43:39.388 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:43:39.389 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:39.390 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:43:39.393 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:39.394 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:39.395 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:39.395 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:39.398 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:39.401 | 365 ool-1-worker-129 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ExamStartTest#testStartExerciseWithProgrammingExercise'
+    23:43:39.418 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/264/exams/95/student-exams/start-exercises
+    23:43:39.425 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.exam.service.ExamService   : Finished combination of template commits for programming exercise ProgrammingExercise{id=404, templateRepositoryUri='http://localhost:49152/git/SHORTB952594104EA104EA50A91F02B2E66A64AA6T361/shortb952594104ea104ea50a91f02b2e66a64aa6t361-exercise.git', solutionRepositoryUri='null', templateBuildPlanId='SHORTB952594104EA104EA50A91F02B2E66A64AA6T361-BASE', solutionBuildPlanId='null', allowOnlineEditor='null', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:43:39.426 | 365 ool-1-worker-129 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : REST request to start exercises for student exams of exam 95
+    23:43:39.435 | 719 ol-4983-thread-2 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:39.438 | 718 ol-4983-thread-1 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:39.463 | 718 ol-4983-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 24 and exercise 404 and student examstartteststudent1
+    23:43:39.468 | 719 ol-4983-thread-2 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 25 and exercise 404 and student examstartteststudent2
+    23:43:39.470 | 365 ool-1-worker-129 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Generated 2 participations in 50.93ms for student exams of exam 95
+    23:43:39.471 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/264/exams/95/student-exams/start-exercises/status
+
+  Starting logs for ExamStartTest > testStartExercisesWithModelingExercise()
+    23:43:39.524 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 2 students...
+    23:43:39.528 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 students generated. Generate 0 tutors...
+    23:43:39.530 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:39.531 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:43:39.534 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:43:39.535 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:39.536 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:39.536 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:39.540 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:39.543 | 365 ool-1-worker-129 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ExamStartTest#testStartExercisesWithModelingExercise'
+    23:43:39.555 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/courses/265/exams/96/student-exams/start-exercises
+    23:43:39.566 | 365 ool-1-worker-129 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : REST request to start exercises for student exams of exam 96
+    23:43:39.586 | 722 ol-4992-thread-1 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 26 and exercise 405 and student examstartteststudent1
+    23:43:39.588 | 723 ol-4992-thread-2 | INFO  | d.t.c.a.a.e.s.StudentExamService     : SUCCESS: Start exercise for student exam 27 and exercise 405 and student examstartteststudent2
+    23:43:39.588 | 365 ool-1-worker-129 | INFO  | d.t.c.a.a.e.web.StudentExamResource  : Generated 2 participations in 32.48ms for student exams of exam 96
+    23:43:39.590 | 365 ool-1-worker-129 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/265/exams/96/student-exams/start-exercises/status
+
+Finished logs for ExamStartTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

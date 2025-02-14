@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:01" hostname="fv-az1721-502" time="0.296">
+  <properties/>
+  <testcase name="testNoEntityGraphsOnQueries()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" time="0.016"/>
+  <testcase name="testNoUnusedRepositoryMethods()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" time="0.059"/>
+  <testcase name="testTransactional()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" time="0.023"/>
+  <testcase name="shouldBeInRepositoryPackage()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" time="0.003"/>
+  <testcase name="testRepositoryParamAnnotation()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" time="0.026"/>
+  <testcase name="orElseThrowShouldNotBeCalled()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" time="0.004"/>
+  <testcase name="repositoriesImplementArtemisJpaRepository()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" time="0.003"/>
+  <testcase name="persistenceShouldNotAccessServices()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" time="0.004"/>
+  <testcase name="usedInProductionCode()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" time="0.02"/>
+  <testcase name="shouldBeAnnotatedRepository()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" time="0.002"/>
+  <testcase name="enforceUsageOfTestRepository()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" time="0.001"/>
+  <testcase name="testJPQLStyle()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" time="0.02"/>
+  <testcase name="shouldBeNamedRepository()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" time="0.006"/>
+  <testcase name="enforceStructureOfTestRepositories()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" time="0.012"/>
+  <testcase name="testOnlySpringTransactionalAnnotation()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" time="0.082"/>
+  <testcase name="enforcePrimaryBeanAnnotationOnTestRepositories()" classname="de.tum.cit.aet.artemis.lti.architecture.LtiRepositoryArchitectureTest" time="0.002"/>
+  <system-out><![CDATA[
+Starting logs for LtiRepositoryArchitectureTest
+
+  Starting logs for LtiRepositoryArchitectureTest > testNoEntityGraphsOnQueries()
+
+  Starting logs for LtiRepositoryArchitectureTest > testNoUnusedRepositoryMethods()
+
+  Starting logs for LtiRepositoryArchitectureTest > testTransactional()
+
+  Starting logs for LtiRepositoryArchitectureTest > shouldBeInRepositoryPackage()
+
+  Starting logs for LtiRepositoryArchitectureTest > testRepositoryParamAnnotation()
+
+  Starting logs for LtiRepositoryArchitectureTest > orElseThrowShouldNotBeCalled()
+
+  Starting logs for LtiRepositoryArchitectureTest > repositoriesImplementArtemisJpaRepository()
+
+  Starting logs for LtiRepositoryArchitectureTest > persistenceShouldNotAccessServices()
+
+  Starting logs for LtiRepositoryArchitectureTest > usedInProductionCode()
+
+  Starting logs for LtiRepositoryArchitectureTest > shouldBeAnnotatedRepository()
+
+  Starting logs for LtiRepositoryArchitectureTest > enforceUsageOfTestRepository()
+
+  Starting logs for LtiRepositoryArchitectureTest > testJPQLStyle()
+
+  Starting logs for LtiRepositoryArchitectureTest > shouldBeNamedRepository()
+
+  Starting logs for LtiRepositoryArchitectureTest > enforceStructureOfTestRepositories()
+
+  Starting logs for LtiRepositoryArchitectureTest > testOnlySpringTransactionalAnnotation()
+
+  Starting logs for LtiRepositoryArchitectureTest > enforcePrimaryBeanAnnotationOnTestRepositories()
+
+Finished logs for LtiRepositoryArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.LogResourceIntegrationTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:21" hostname="fv-az1721-502" time="0.109">
+  <properties/>
+  <testcase name="testGetList()" classname="de.tum.cit.aet.artemis.core.LogResourceIntegrationTest" time="0.08"/>
+  <testcase name="testChangeLevel()" classname="de.tum.cit.aet.artemis.core.LogResourceIntegrationTest" time="0.027"/>
+  <system-out><![CDATA[
+Starting logs for LogResourceIntegrationTest
+
+  Starting logs for LogResourceIntegrationTest > testGetList()
+    23:44:21.198 | 187 Pool-1-worker-80 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LogResourceIntegrationTest#testGetList'
+    23:44:21.199 | 187 Pool-1-worker-80 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/logs
+
+  Starting logs for LogResourceIntegrationTest > testChangeLevel()
+    23:44:21.278 | 187 Pool-1-worker-80 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='LogResourceIntegrationTest#testChangeLevel'
+    23:44:21.279 | 187 Pool-1-worker-80 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/admin/logs
+
+Finished logs for LogResourceIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

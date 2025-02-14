@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.security.jwt.JWTFilterTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:46" hostname="fv-az1721-502" time="0.472">
+  <properties/>
+  <testcase name="testJWTFilterBearer()" classname="de.tum.cit.aet.artemis.core.security.jwt.JWTFilterTest" time="0.454"/>
+  <testcase name="testJWTFilterCookie()" classname="de.tum.cit.aet.artemis.core.security.jwt.JWTFilterTest" time="0.006"/>
+  <testcase name="testJWTFilterInvalidToken()" classname="de.tum.cit.aet.artemis.core.security.jwt.JWTFilterTest" time="0.002"/>
+  <testcase name="testJWTFilterWrongCookieName()" classname="de.tum.cit.aet.artemis.core.security.jwt.JWTFilterTest" time="0.002"/>
+  <testcase name="testJWTFilterCookieAndBearer()" classname="de.tum.cit.aet.artemis.core.security.jwt.JWTFilterTest" time="0.002"/>
+  <testcase name="testJWTFilterMissingToken()" classname="de.tum.cit.aet.artemis.core.security.jwt.JWTFilterTest" time="0.001"/>
+  <system-out><![CDATA[
+Starting logs for JWTFilterTest
+
+  Starting logs for JWTFilterTest > testJWTFilterBearer()
+
+  Starting logs for JWTFilterTest > testJWTFilterCookie()
+
+  Starting logs for JWTFilterTest > testJWTFilterInvalidToken()
+    23:39:46.897 |  27 nPool-1-worker-1 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: wrong_jwt from source cookie
+
+  Starting logs for JWTFilterTest > testJWTFilterWrongCookieName()
+
+  Starting logs for JWTFilterTest > testJWTFilterCookieAndBearer()
+
+  Starting logs for JWTFilterTest > testJWTFilterMissingToken()
+
+Finished logs for JWTFilterTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

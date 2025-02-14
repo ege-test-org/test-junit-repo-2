@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.notification.NotificationScheduleServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:39" hostname="fv-az1721-502" time="0.756">
+  <properties/>
+  <testcase name="shouldCreateNotificationAndEmailAtAssessmentDueDate()" classname="de.tum.cit.aet.artemis.communication.notification.NotificationScheduleServiceTest" time="0.379"/>
+  <testcase name="shouldCreateNotificationAndEmailAtReleaseDate()" classname="de.tum.cit.aet.artemis.communication.notification.NotificationScheduleServiceTest" time="0.372"/>
+  <system-out><![CDATA[
+Starting logs for NotificationScheduleServiceTest
+
+  Starting logs for NotificationScheduleServiceTest > shouldCreateNotificationAndEmailAtAssessmentDueDate()
+    23:42:39.822 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:39.824 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:42:39.826 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:42:39.828 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:42:39.829 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:39.831 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:42:39.832 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:42:39.832 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:42:39.834 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:42:39.838 | 145 Pool-1-worker-60 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='NotificationScheduleServiceTest#shouldCreateNotificationAndEmailAtAssessmentDueDate'
+    23:42:39.853 | 145 Pool-1-worker-60 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 289 and participant 16 (result to be deleted: null)
+    23:42:39.853 | 145 Pool-1-worker-60 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 289 and participant 16 at 2025-02-14T23:42:39.953270101Z[Etc/UTC].
+    23:42:39.857 | 145 Pool-1-worker-60 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 289 and participant 16 (result to be deleted: null)
+    23:42:39.857 | 145 Pool-1-worker-60 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 289 and participant 16 at 2025-02-14T23:42:39.957384084Z[Etc/UTC].
+    23:42:39.863 | 145 Pool-1-worker-60 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for assessed exercise submitted 289 notification 
+    23:42:39.864 | 145 Pool-1-worker-60 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "f51e6ffb-75ef-4216-ba48-8f5e4b28a76e" (#289) to trigger on ASSESSMENT_DUE.
+    23:42:39.864 | 145 Pool-1-worker-60 | DEBUG | .a.a.c.s.NotificationScheduleService : Scheduled notify about assessed exercise submission after assessment due date for exercise 'f51e6ffb-75ef-4216-ba48-8f5e4b28a76e' (#289) at 2025-02-14T23:42:40.058340Z.
+    23:42:39.957 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 289 and participant 16 to update participant scores.
+    23:42:39.962 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 64.
+    23:42:39.967 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 289 and participant 16 took 10 ms.
+    23:42:40.073 | 601 taskScheduler-2  | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'EXERCISE_SUBMISSION_ASSESSED' notification email to 'notificationschedservstudent1@test.de'
+    23:42:40.171 | 588 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='notificationschedservstudent1', firstName='notificationschedservstudent1First', lastName='notificationschedservstudent1Last', email='notificationschedservstudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}' with subject 'Exercise Submission Assessed'
+    23:42:40.179 | 588 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'Exercise Submission Assessed' to User 'User{login='notificationschedservstudent1', firstName='notificationschedservstudent1First', lastName='notificationschedservstudent1Last', email='notificationschedservstudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}'
+
+  Starting logs for NotificationScheduleServiceTest > shouldCreateNotificationAndEmailAtReleaseDate()
+    23:42:40.216 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:40.220 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    23:42:40.225 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 1 editors...
+    23:42:40.228 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 editors generated. Generate 1 instructors...
+    23:42:40.230 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:40.232 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    23:42:40.232 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    23:42:40.232 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    23:42:40.241 | 145 Pool-1-worker-60 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    23:42:40.245 | 145 Pool-1-worker-60 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='NotificationScheduleServiceTest#shouldCreateNotificationAndEmailAtReleaseDate'
+    23:42:40.252 | 145 Pool-1-worker-60 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for exercise 290 released notification 
+    23:42:40.254 | 145 Pool-1-worker-60 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "d2827d13-6580-4ed8-8e95-d22b0ab12a45" (#290) to trigger on RELEASE.
+    23:42:40.254 | 145 Pool-1-worker-60 | DEBUG | .a.a.c.s.NotificationScheduleService : Scheduled notify about started exercise after due date for exercise 'd2827d13-6580-4ed8-8e95-d22b0ab12a45' (#290) for 2025-02-14T23:42:40.445907Z.
+    23:42:40.459 | 588 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailService          : Sending 'EXERCISE_RELEASED' notification email to 'notificationschedservstudent1@test.de'
+    23:42:40.496 | 588 artemis-task-1   | WARN  | o.t.s.p.StandardIncludeTagProcessor  : [THYMELEAF][artemis-task-1][mail/notification/exerciseReleasedEmail] Deprecated attribute {th:include,data-th-include} found in template mail/notification/exerciseReleasedEmail, line 18, col 25. Please use {th:insert,data-th-insert} instead, this deprecated attribute will be removed in future versions of Thymeleaf.
+    23:42:40.544 | 588 artemis-task-1   | DEBUG | d.t.c.a.a.c.s.n.MailSendingService   : Send email[multipart 'false' and html 'true'] to 'User{login='notificationschedservstudent1', firstName='notificationschedservstudent1First', lastName='notificationschedservstudent1Last', email='notificationschedservstudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}' with subject 'Exercise released'
+    23:42:40.544 | 588 artemis-task-1   | INFO  | d.t.c.a.a.c.s.n.MailSendingService   : Sent email with subject 'Exercise released' to User 'User{login='notificationschedservstudent1', firstName='notificationschedservstudent1First', lastName='notificationschedservstudent1Last', email='notificationschedservstudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}'
+
+Finished logs for NotificationScheduleServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.GitlabServiceTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:38" hostname="fv-az1721-502" time="0.484">
+  <properties/>
+  <testcase name="testCheckIfGroupNotFoundThenProjectNotExists()" classname="de.tum.cit.aet.artemis.programming.GitlabServiceTest" time="0.032"/>
+  <testcase name="testGetDefaultBranch(String) [1] defaultBranch=master" classname="de.tum.cit.aet.artemis.programming.GitlabServiceTest" time="0.023"/>
+  <testcase name="testGetDefaultBranch(String) [2] defaultBranch=main" classname="de.tum.cit.aet.artemis.programming.GitlabServiceTest" time="0.028"/>
+  <testcase name="testGetDefaultBranch(String) [3] defaultBranch=someOtherName" classname="de.tum.cit.aet.artemis.programming.GitlabServiceTest" time="0.027"/>
+  <testcase name="testHealthException()" classname="de.tum.cit.aet.artemis.programming.GitlabServiceTest" time="0.03"/>
+  <testcase name="testCheckIfGroupContainsNoRepositoriesThenProjectNotExists()" classname="de.tum.cit.aet.artemis.programming.GitlabServiceTest" time="0.024"/>
+  <testcase name="testGetLastCommitDetailsWithoutCommits()" classname="de.tum.cit.aet.artemis.programming.GitlabServiceTest" time="0.047"/>
+  <testcase name="testHealthOk()" classname="de.tum.cit.aet.artemis.programming.GitlabServiceTest" time="0.041"/>
+  <testcase name="testCheckIfProjectExistsFails()" classname="de.tum.cit.aet.artemis.programming.GitlabServiceTest" time="0.023"/>
+  <testcase name="testGetLastCommitDetails()" classname="de.tum.cit.aet.artemis.programming.GitlabServiceTest" time="0.038"/>
+  <testcase name="testGetLastCommitDetailsWrongCommitOrder()" classname="de.tum.cit.aet.artemis.programming.GitlabServiceTest" time="0.034"/>
+  <testcase name="testCheckIfGroupContainsRepositoriesThenProjectExists()" classname="de.tum.cit.aet.artemis.programming.GitlabServiceTest" time="0.024"/>
+  <testcase name="testHealthNotOk()" classname="de.tum.cit.aet.artemis.programming.GitlabServiceTest" time="0.015"/>
+  <testcase name="testGetOrRetrieveDefaultBranch()" classname="de.tum.cit.aet.artemis.programming.GitlabServiceTest" time="0.045"/>
+  <system-out><![CDATA[
+Starting logs for GitlabServiceTest
+
+  Starting logs for GitlabServiceTest > testCheckIfGroupNotFoundThenProjectNotExists()
+    23:44:38.173 | 443 ool-1-worker-207 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='GitlabServiceTest#testCheckIfGroupNotFoundThenProjectNotExists'
+
+  Starting logs for GitlabServiceTest > testGetDefaultBranch(String) [1] defaultBranch=master
+    23:44:38.211 | 443 ool-1-worker-207 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='GitlabServiceTest#testGetDefaultBranch'
+
+  Starting logs for GitlabServiceTest > testGetDefaultBranch(String) [2] defaultBranch=main
+    23:44:38.240 | 443 ool-1-worker-207 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='GitlabServiceTest#testGetDefaultBranch'
+
+  Starting logs for GitlabServiceTest > testGetDefaultBranch(String) [3] defaultBranch=someOtherName
+    23:44:38.273 | 443 ool-1-worker-207 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='GitlabServiceTest#testGetDefaultBranch'
+
+  Starting logs for GitlabServiceTest > testHealthException()
+    23:44:38.302 | 443 ool-1-worker-207 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='GitlabServiceTest#testHealthException'
+
+  Starting logs for GitlabServiceTest > testCheckIfGroupContainsNoRepositoriesThenProjectNotExists()
+    23:44:38.336 | 443 ool-1-worker-207 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='GitlabServiceTest#testCheckIfGroupContainsNoRepositoriesThenProjectNotExists'
+
+  Starting logs for GitlabServiceTest > testGetLastCommitDetailsWithoutCommits()
+    23:44:38.365 | 443 ool-1-worker-207 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='GitlabServiceTest#testGetLastCommitDetailsWithoutCommits'
+
+  Starting logs for GitlabServiceTest > testHealthOk()
+    23:44:38.416 | 443 ool-1-worker-207 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='GitlabServiceTest#testHealthOk'
+
+  Starting logs for GitlabServiceTest > testCheckIfProjectExistsFails()
+    23:44:38.458 | 443 ool-1-worker-207 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='GitlabServiceTest#testCheckIfProjectExistsFails'
+
+  Starting logs for GitlabServiceTest > testGetLastCommitDetails()
+    23:44:38.489 | 443 ool-1-worker-207 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='GitlabServiceTest#testGetLastCommitDetails'
+
+  Starting logs for GitlabServiceTest > testGetLastCommitDetailsWrongCommitOrder()
+    23:44:38.531 | 443 ool-1-worker-207 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='GitlabServiceTest#testGetLastCommitDetailsWrongCommitOrder'
+
+  Starting logs for GitlabServiceTest > testCheckIfGroupContainsRepositoriesThenProjectExists()
+    23:44:38.567 | 443 ool-1-worker-207 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='GitlabServiceTest#testCheckIfGroupContainsRepositoriesThenProjectExists'
+
+  Starting logs for GitlabServiceTest > testHealthNotOk()
+    23:44:38.593 | 443 ool-1-worker-207 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='GitlabServiceTest#testHealthNotOk'
+
+  Starting logs for GitlabServiceTest > testGetOrRetrieveDefaultBranch()
+    23:44:38.607 | 443 ool-1-worker-207 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='GitlabServiceTest#testGetOrRetrieveDefaultBranch'
+
+Finished logs for GitlabServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:40:02" hostname="fv-az1721-502" time="0.11">
+  <properties/>
+  <testcase name="buildModelFromJSON_activityDiagram_v3()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.021"/>
+  <testcase name="buildModelFromJSON_useCaseDiagram_v3_empty()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.007"/>
+  <testcase name="buildModelFromJSON_useCaseDiagram_empty()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.001"/>
+  <testcase name="buildModelFromJSON_classDiagram_v3()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.011"/>
+  <testcase name="buildModelFromJSON_communicationDiagram_empty()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.004"/>
+  <testcase name="buildModelFromJSON_deploymentDiagram_empty()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.011"/>
+  <testcase name="buildModelFromJSON_componentDiagram_empty()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.0"/>
+  <testcase name="buildModelFromJSON_classDiagram_v3_packageRelationship()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.001"/>
+  <testcase name="buildModelFromJSON_deploymentDiagram_v3_empty()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.005"/>
+  <testcase name="buildModelFromJSON_classDiagram()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.006"/>
+  <testcase name="buildModelFromJSON_classDiagram_empty()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.0"/>
+  <testcase name="buildModelFromJSON_objectDiagram_v3_empty()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.002"/>
+  <testcase name="buildModelFromJSON_communicationDiagram_v3_empty()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.001"/>
+  <testcase name="buildModelFromJSON_activityDiagram_empty()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.004"/>
+  <testcase name="buildModelFromJSON_activityDiagram_v3_empty()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.0"/>
+  <testcase name="buildModelFromJSON_objectDiagram_empty()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.001"/>
+  <testcase name="buildModelFromJSON_activityDiagram()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.008"/>
+  <testcase name="buildModelFromJSON_componentDiagram_v3_empty()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.003"/>
+  <testcase name="buildModelFromJSON_classDiagram_v3_empty()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.001"/>
+  <testcase name="buildModelFromJSON_classDiagram_packageRelationship()" classname="de.tum.cit.aet.artemis.modeling.compass.controller.UMLModelParserTest" time="0.004"/>
+  <system-out><![CDATA[
+Starting logs for UMLModelParserTest
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_activityDiagram_v3()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_useCaseDiagram_v3_empty()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_useCaseDiagram_empty()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_classDiagram_v3()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_communicationDiagram_empty()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_deploymentDiagram_empty()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_componentDiagram_empty()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_classDiagram_v3_packageRelationship()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_deploymentDiagram_v3_empty()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_classDiagram()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_classDiagram_empty()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_objectDiagram_v3_empty()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_communicationDiagram_v3_empty()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_activityDiagram_empty()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_activityDiagram_v3_empty()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_objectDiagram_empty()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_activityDiagram()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_componentDiagram_v3_empty()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_classDiagram_v3_empty()
+
+  Starting logs for UMLModelParserTest > buildModelFromJSON_classDiagram_packageRelationship()
+
+Finished logs for UMLModelParserTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

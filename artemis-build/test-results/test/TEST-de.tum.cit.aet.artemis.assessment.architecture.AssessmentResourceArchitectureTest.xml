@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.assessment.architecture.AssessmentResourceArchitectureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:15" hostname="fv-az1721-502" time="0.345">
+  <properties/>
+  <testcase name="testNoOverrideOfEnforceAdmin()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentResourceArchitectureTest" time="0.026"/>
+  <testcase name="testUseKebabCaseForRestEndpoints()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentResourceArchitectureTest" time="0.137"/>
+  <testcase name="allPublicMethodsShouldReturnResponseEntity()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentResourceArchitectureTest" time="0.038"/>
+  <testcase name="testClassWithEnforceAdminInCorrectlyNamed()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentResourceArchitectureTest" time="0.007"/>
+  <testcase name="shouldBeNamedResource()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentResourceArchitectureTest" time="0.002"/>
+  <testcase name="shouldBeInResourcePackage()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentResourceArchitectureTest" time="0.001"/>
+  <testcase name="shouldCorrectlyUseRequestMappingAnnotations()" classname="de.tum.cit.aet.artemis.assessment.architecture.AssessmentResourceArchitectureTest" time="0.127"/>
+  <system-out><![CDATA[
+Starting logs for AssessmentResourceArchitectureTest
+
+  Starting logs for AssessmentResourceArchitectureTest > testNoOverrideOfEnforceAdmin()
+
+  Starting logs for AssessmentResourceArchitectureTest > testUseKebabCaseForRestEndpoints()
+
+  Starting logs for AssessmentResourceArchitectureTest > allPublicMethodsShouldReturnResponseEntity()
+
+  Starting logs for AssessmentResourceArchitectureTest > testClassWithEnforceAdminInCorrectlyNamed()
+
+  Starting logs for AssessmentResourceArchitectureTest > shouldBeNamedResource()
+
+  Starting logs for AssessmentResourceArchitectureTest > shouldBeInResourcePackage()
+
+  Starting logs for AssessmentResourceArchitectureTest > shouldCorrectlyUseRequestMappingAnnotations()
+
+Finished logs for AssessmentResourceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" tests="29" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:44:43" hostname="fv-az1721-502" time="6.933">
+  <properties/>
+  <testcase name="testValidateAuxiliaryRepositoryWithNullCheckoutDirectory()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.169"/>
+  <testcase name="testValidateAuxiliaryRepositoryWithoutCheckoutDirectory()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.279"/>
+  <testcase name="testExportAuxiliaryRepositoryForbidden()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.15"/>
+  <testcase name="testGetAuxiliaryRepositoriesEmptyOk()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.217"/>
+  <testcase name="testValidateAuxiliaryRepositoryWithBlankCheckoutDirectory()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.2"/>
+  <testcase name="testValidateValidAuxiliaryRepository()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.229"/>
+  <testcase name="testValidateAuxiliaryRepositoryWithTooLongName()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.139"/>
+  <testcase name="test_redirectGetTemplateRepositoryFilesWithContent()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.291"/>
+  <testcase name="testValidateAuxiliaryRepositoryWithTooLongDescription()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.135"/>
+  <testcase name="testExportAuxiliaryRepositoryRepositoryNotFound()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.169"/>
+  <testcase name="testValidateAuxiliaryRepositoryWithoutDescription()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.313"/>
+  <testcase name="testExportAuxiliaryRepositoryBadRequest()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.262"/>
+  <testcase name="testGetParticipationFilesWithContentAtCommitEditorForbidden()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.346"/>
+  <testcase name="testReEvaluateAndUpdateProgrammingExercise_notFound()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.226"/>
+  <testcase name="testGetAuxiliaryRepositoriesForbidden()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.215"/>
+  <testcase name="testExportAuxiliaryRepositoryExerciseNotFound()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.224"/>
+  <testcase name="testValidateAuxiliaryRepositoryWithInvalidCheckoutDirectory()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.238"/>
+  <testcase name="testValidateAuxiliaryRepositoryWithDuplicatedName()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.245"/>
+  <testcase name="testValidateAuxiliaryRepositoryWithDuplicatedCheckoutDirectory()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.172"/>
+  <testcase name="testGetParticipationFilesWithContentAtCommitShouldRedirect()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.299"/>
+  <testcase name="testValidateAuxiliaryRepositoryWithRestrictedName()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.239"/>
+  <testcase name="test_redirectGetTemplateRepositoryFilesWithContentAndOmitBinaries()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.32"/>
+  <testcase name="testValidateAuxiliaryRepositoryWithoutName()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.222"/>
+  <testcase name="testReEvaluateAndUpdateProgrammingExercise_instructorNotInCourse_forbidden()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.277"/>
+  <testcase name="testReEvaluateAndUpdateProgrammingExercise_isNotSameGivenExerciseIdInRequestBody_conflict()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.34"/>
+  <testcase name="testGetAuxiliaryRepositoriesOk()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.202"/>
+  <testcase name="testValidateAuxiliaryRepositoryIdSetOnRequest()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.27"/>
+  <testcase name="testGetAuxiliaryRepositoriesMissingExercise()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.24"/>
+  <testcase name="testValidateAuxiliaryRepositoryWithTooLongCheckoutDirectory()" classname="de.tum.cit.aet.artemis.programming.ProgrammingExerciseLocalVCIntegrationTest" time="0.213"/>
+  <system-out><![CDATA[
+Starting logs for ProgrammingExerciseLocalVCIntegrationTest
+
+  Starting logs for ProgrammingExerciseLocalVCIntegrationTest > testValidateAuxiliaryRepositoryWithNullCheckoutDirectory()
+    23:44:43.094 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:44:43.098 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:44:43.100 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 2 editors...
+    23:44:43.102 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 editors generated. Generate 2 instructors...
+    23:44:43.104 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:44:43.106 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 18 users from all courses...
+    23:44:43.109 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 18 users from all courses. Done
+    23:44:43.109 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database...
+    23:44:43.112 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database. Done
+    23:44:43.159 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.163 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.169 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.172 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.220 | 453 ool-1-worker-217 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ProgrammingExerciseLocalVCIntegrationTest#testValidateAuxiliaryRepositoryWithNullCheckoutDirectory'
+    23:44:43.223 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises
+    23:44:43.224 | 453 ool-1-worker-217 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise : ProgrammingExercise{id=2349, templateRepositoryUri='http://localhost:49152/git/SHORTF06F49A60F3B604CC608AB30E5C1C897186DTSTEXC/shortf06f49a60f3b604cc608ab30e5c1c897186dtstexc-exercise.git', solutionRepositoryUri='http://localhost:49152/git/SHORTF06F49A60F3B604CC608AB30E5C1C897186DTSTEXC/shortf06f49a60f3b604cc608ab30e5c1c897186dtstexc-solution.git', templateBuildPlanId='SHORTF06F49A60F3B604CC608AB30E5C1C897186DTSTEXC-BASE', solutionBuildPlanId='SHORTF06F49A60F3B604CC608AB30E5C1C897186DTSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:44:43.230 | 453 ool-1-worker-217 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The name 'defaultname' is not allowed for auxiliary repositories!
+    23:44:43.230 | 453 ool-1-worker-217 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The name 'defaultname' is not allowed for auxiliary repositories!
+
+  Starting logs for ProgrammingExerciseLocalVCIntegrationTest > testValidateAuxiliaryRepositoryWithoutCheckoutDirectory()
+    23:44:43.256 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:44:43.265 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:44:43.269 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 2 editors...
+    23:44:43.273 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 editors generated. Generate 2 instructors...
+    23:44:43.277 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:44:43.279 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses...
+    23:44:43.280 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses. Done
+    23:44:43.280 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database...
+    23:44:43.298 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database. Done
+    23:44:43.400 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.404 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.407 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.411 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.438 | 453 ool-1-worker-217 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ProgrammingExerciseLocalVCIntegrationTest#testValidateAuxiliaryRepositoryWithoutCheckoutDirectory'
+    23:44:43.440 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises
+    23:44:43.441 | 453 ool-1-worker-217 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise : ProgrammingExercise{id=2351, templateRepositoryUri='http://localhost:49152/git/SHORT266E3FC00372F04790096AE005AD142757E8TSTEXC/short266e3fc00372f04790096ae005ad142757e8tstexc-exercise.git', solutionRepositoryUri='http://localhost:49152/git/SHORT266E3FC00372F04790096AE005AD142757E8TSTEXC/short266e3fc00372f04790096ae005ad142757e8tstexc-solution.git', templateBuildPlanId='SHORT266E3FC00372F04790096AE005AD142757E8TSTEXC-BASE', solutionBuildPlanId='SHORT266E3FC00372F04790096AE005AD142757E8TSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:44:43.452 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.p.s.localvc.LocalVCService : Created local git repository short266e3fc00372f04790096ae005ad142757e8tstexc-defaultname in folder /tmp/SHORT266E3FC00372F04790096AE005AD142757E8TSTEXC/short266e3fc00372f04790096ae005ad142757e8tstexc-defaultname.git
+    23:44:43.453 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from file:///tmp/SHORT266E3FC00372F04790096AE005AD142757E8TSTEXC/short266e3fc00372f04790096ae005ad142757e8tstexc-defaultname.git/ to repos/server-integration-test/SHORT266E3FC00372F04790096AE005AD142757E8TSTEXC/short266e3fc00372f04790096ae005ad142757e8tstexc-defaultname
+    23:44:43.464 | 453 ool-1-worker-217 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@132891e3
+    23:44:43.488 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.p.service.GitService       : commitAndPush -> Push repos/server-integration-test/SHORT266E3FC00372F04790096AE005AD142757E8TSTEXC/short266e3fc00372f04790096ae005ad142757e8tstexc-defaultname
+    23:44:43.489 | 453 ool-1-worker-217 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@4da4fb50
+    23:44:43.510 | 453 ool-1-worker-217 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 2351
+    23:44:43.512 | 453 ool-1-worker-217 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#2351) to trigger on RELEASE.
+    23:44:43.512 | 453 ool-1-worker-217 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#2351) for 2025-02-15T23:44:43.299473Z.
+    23:44:43.512 | 453 ool-1-worker-217 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#2351) to trigger on DUE.
+    23:44:43.512 | 453 ool-1-worker-217 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#2351) for 2025-02-16T23:44:43.299475Z.
+    23:44:43.512 | 453 ool-1-worker-217 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#2351) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:44:43.512 | 453 ool-1-worker-217 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'Programming' (#2351) for 2025-02-19T23:44:43.299477Z.
+    23:44:43.514 | 453 ool-1-worker-217 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for potential Athena exercise 2351
+    23:44:43.515 | 453 ool-1-worker-217 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User programmingexerciselocalvcinstructor1 has updated ProgrammingExercise Programming with id 2351
+
+  Starting logs for ProgrammingExerciseLocalVCIntegrationTest > testExportAuxiliaryRepositoryForbidden()
+    23:44:43.536 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:44:43.542 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:44:43.545 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 2 editors...
+    23:44:43.550 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 editors generated. Generate 2 instructors...
+    23:44:43.553 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:44:43.555 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses...
+    23:44:43.556 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses. Done
+    23:44:43.556 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database...
+    23:44:43.563 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database. Done
+    23:44:43.601 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.605 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.609 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.613 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.645 | 453 ool-1-worker-217 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ProgrammingExerciseLocalVCIntegrationTest#testExportAuxiliaryRepositoryForbidden'
+    23:44:43.649 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/programming-exercises/2353/export-instructor-auxiliary-repository/2
+    23:44:43.652 | 453 ool-1-worker-217 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+  Starting logs for ProgrammingExerciseLocalVCIntegrationTest > testGetAuxiliaryRepositoriesEmptyOk()
+    23:44:43.697 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:44:43.709 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:44:43.716 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 2 editors...
+    23:44:43.726 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 editors generated. Generate 2 instructors...
+    23:44:43.732 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:44:43.736 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses...
+    23:44:43.737 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses. Done
+    23:44:43.737 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database...
+    23:44:43.749 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database. Done
+    23:44:43.801 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.811 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.817 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.821 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.860 | 453 ool-1-worker-217 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ProgrammingExerciseLocalVCIntegrationTest#testGetAuxiliaryRepositoriesEmptyOk'
+    23:44:43.863 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/programming-exercises/2355/auxiliary-repository
+
+  Starting logs for ProgrammingExerciseLocalVCIntegrationTest > testValidateAuxiliaryRepositoryWithBlankCheckoutDirectory()
+    23:44:43.919 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:44:43.924 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:44:43.927 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 2 editors...
+    23:44:43.931 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 editors generated. Generate 2 instructors...
+    23:44:43.935 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:44:43.937 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses...
+    23:44:43.938 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses. Done
+    23:44:43.938 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database...
+    23:44:43.944 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database. Done
+    23:44:43.979 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.983 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.986 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:43.990 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.010 | 453 ool-1-worker-217 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ProgrammingExerciseLocalVCIntegrationTest#testValidateAuxiliaryRepositoryWithBlankCheckoutDirectory'
+    23:44:44.011 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises
+    23:44:44.012 | 453 ool-1-worker-217 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise : ProgrammingExercise{id=2357, templateRepositoryUri='http://localhost:49152/git/SHORT75982F120737E04B39093BF0DCD703F33E05TSTEXC/short75982f120737e04b39093bf0dcd703f33e05tstexc-exercise.git', solutionRepositoryUri='http://localhost:49152/git/SHORT75982F120737E04B39093BF0DCD703F33E05TSTEXC/short75982f120737e04b39093bf0dcd703f33e05tstexc-solution.git', templateBuildPlanId='SHORT75982F120737E04B39093BF0DCD703F33E05TSTEXC-BASE', solutionBuildPlanId='SHORT75982F120737E04B39093BF0DCD703F33E05TSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:44:44.022 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.p.s.localvc.LocalVCService : Created local git repository short75982f120737e04b39093bf0dcd703f33e05tstexc-defaultname in folder /tmp/SHORT75982F120737E04B39093BF0DCD703F33E05TSTEXC/short75982f120737e04b39093bf0dcd703f33e05tstexc-defaultname.git
+    23:44:44.022 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from file:///tmp/SHORT75982F120737E04B39093BF0DCD703F33E05TSTEXC/short75982f120737e04b39093bf0dcd703f33e05tstexc-defaultname.git/ to repos/server-integration-test/SHORT75982F120737E04B39093BF0DCD703F33E05TSTEXC/short75982f120737e04b39093bf0dcd703f33e05tstexc-defaultname
+    23:44:44.028 | 453 ool-1-worker-217 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@4b9d5d23
+    23:44:44.043 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.p.service.GitService       : commitAndPush -> Push repos/server-integration-test/SHORT75982F120737E04B39093BF0DCD703F33E05TSTEXC/short75982f120737e04b39093bf0dcd703f33e05tstexc-defaultname
+    23:44:44.045 | 453 ool-1-worker-217 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@3a40ea94
+    23:44:44.072 | 453 ool-1-worker-217 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 2357
+    23:44:44.074 | 453 ool-1-worker-217 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#2357) to trigger on RELEASE.
+    23:44:44.074 | 453 ool-1-worker-217 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#2357) for 2025-02-15T23:44:43.945454Z.
+    23:44:44.074 | 453 ool-1-worker-217 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#2357) to trigger on DUE.
+    23:44:44.074 | 453 ool-1-worker-217 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#2357) for 2025-02-16T23:44:43.945456Z.
+    23:44:44.074 | 453 ool-1-worker-217 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#2357) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:44:44.074 | 453 ool-1-worker-217 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'Programming' (#2357) for 2025-02-19T23:44:43.945458Z.
+    23:44:44.079 | 453 ool-1-worker-217 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for potential Athena exercise 2357
+    23:44:44.080 | 453 ool-1-worker-217 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User programmingexerciselocalvcinstructor1 has updated ProgrammingExercise Programming with id 2357
+
+  Starting logs for ProgrammingExerciseLocalVCIntegrationTest > testValidateValidAuxiliaryRepository()
+    23:44:44.122 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:44:44.130 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:44:44.140 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 2 editors...
+    23:44:44.147 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 editors generated. Generate 2 instructors...
+    23:44:44.157 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:44:44.158 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses...
+    23:44:44.161 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses. Done
+    23:44:44.161 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database...
+    23:44:44.173 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database. Done
+    23:44:44.211 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.215 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.219 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.223 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.256 | 453 ool-1-worker-217 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ProgrammingExerciseLocalVCIntegrationTest#testValidateValidAuxiliaryRepository'
+    23:44:44.259 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises
+    23:44:44.262 | 453 ool-1-worker-217 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise : ProgrammingExercise{id=2359, templateRepositoryUri='http://localhost:49152/git/SHORTC92102670124D04EBE099000E9E6FE4C98BCTSTEXC/shortc92102670124d04ebe099000e9e6fe4c98bctstexc-exercise.git', solutionRepositoryUri='http://localhost:49152/git/SHORTC92102670124D04EBE099000E9E6FE4C98BCTSTEXC/shortc92102670124d04ebe099000e9e6fe4c98bctstexc-solution.git', templateBuildPlanId='SHORTC92102670124D04EBE099000E9E6FE4C98BCTSTEXC-BASE', solutionBuildPlanId='SHORTC92102670124D04EBE099000E9E6FE4C98BCTSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:44:44.274 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.p.s.localvc.LocalVCService : Created local git repository shortc92102670124d04ebe099000e9e6fe4c98bctstexc-defaultname in folder /tmp/SHORTC92102670124D04EBE099000E9E6FE4C98BCTSTEXC/shortc92102670124d04ebe099000e9e6fe4c98bctstexc-defaultname.git
+    23:44:44.275 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from file:///tmp/SHORTC92102670124D04EBE099000E9E6FE4C98BCTSTEXC/shortc92102670124d04ebe099000e9e6fe4c98bctstexc-defaultname.git/ to repos/server-integration-test/SHORTC92102670124D04EBE099000E9E6FE4C98BCTSTEXC/shortc92102670124d04ebe099000e9e6fe4c98bctstexc-defaultname
+    23:44:44.280 | 453 ool-1-worker-217 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@46a7da8d
+    23:44:44.297 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.p.service.GitService       : commitAndPush -> Push repos/server-integration-test/SHORTC92102670124D04EBE099000E9E6FE4C98BCTSTEXC/shortc92102670124d04ebe099000e9e6fe4c98bctstexc-defaultname
+    23:44:44.298 | 453 ool-1-worker-217 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@13490737
+    23:44:44.316 | 453 ool-1-worker-217 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 2359
+    23:44:44.319 | 453 ool-1-worker-217 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#2359) to trigger on RELEASE.
+    23:44:44.319 | 453 ool-1-worker-217 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#2359) for 2025-02-15T23:44:44.173951Z.
+    23:44:44.319 | 453 ool-1-worker-217 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#2359) to trigger on DUE.
+    23:44:44.319 | 453 ool-1-worker-217 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#2359) for 2025-02-16T23:44:44.173952Z.
+    23:44:44.319 | 453 ool-1-worker-217 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#2359) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:44:44.319 | 453 ool-1-worker-217 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'Programming' (#2359) for 2025-02-19T23:44:44.173954Z.
+    23:44:44.320 | 453 ool-1-worker-217 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for potential Athena exercise 2359
+    23:44:44.321 | 453 ool-1-worker-217 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User programmingexerciselocalvcinstructor1 has updated ProgrammingExercise Programming with id 2359
+
+  Starting logs for ProgrammingExerciseLocalVCIntegrationTest > testValidateAuxiliaryRepositoryWithTooLongName()
+    23:44:44.345 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:44:44.350 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:44:44.354 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 2 editors...
+    23:44:44.358 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 editors generated. Generate 2 instructors...
+    23:44:44.362 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:44:44.363 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses...
+    23:44:44.364 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses. Done
+    23:44:44.364 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database...
+    23:44:44.370 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database. Done
+    23:44:44.406 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.410 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.414 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.417 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.447 | 453 ool-1-worker-217 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ProgrammingExerciseLocalVCIntegrationTest#testValidateAuxiliaryRepositoryWithTooLongName'
+    23:44:44.448 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises
+    23:44:44.452 | 453 ool-1-worker-217 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise : ProgrammingExercise{id=2361, templateRepositoryUri='http://localhost:49152/git/SHORTFD2229C605E0E049E90802A021265B51523DTSTEXC/shortfd2229c605e0e049e90802a021265b51523dtstexc-exercise.git', solutionRepositoryUri='http://localhost:49152/git/SHORTFD2229C605E0E049E90802A021265B51523DTSTEXC/shortfd2229c605e0e049e90802a021265b51523dtstexc-solution.git', templateBuildPlanId='SHORTFD2229C605E0E049E90802A021265B51523DTSTEXC-BASE', solutionBuildPlanId='SHORTFD2229C605E0E049E90802A021265B51523DTSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:44:44.460 | 453 ool-1-worker-217 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The name of an auxiliary repository must not be longer than 100 characters!
+    23:44:44.460 | 453 ool-1-worker-217 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The name of an auxiliary repository must not be longer than 100 characters!
+
+  Starting logs for ProgrammingExerciseLocalVCIntegrationTest > test_redirectGetTemplateRepositoryFilesWithContent()
+    23:44:44.495 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:44:44.503 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:44:44.510 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 2 editors...
+    23:44:44.516 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 editors generated. Generate 2 instructors...
+    23:44:44.523 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:44:44.526 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses...
+    23:44:44.527 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses. Done
+    23:44:44.527 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database...
+    23:44:44.542 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database. Done
+    23:44:44.580 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.584 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.588 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.591 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.619 | 453 ool-1-worker-217 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ProgrammingExerciseLocalVCIntegrationTest#test_redirectGetTemplateRepositoryFilesWithContent'
+    23:44:44.661 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/programming-exercises/2363/template-files-content
+    23:44:44.666 | 453 ool-1-worker-217 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to get latest Template Repository Files for ProgrammingExercise with id : 2363
+
+  Starting logs for ProgrammingExerciseLocalVCIntegrationTest > testValidateAuxiliaryRepositoryWithTooLongDescription()
+    23:44:44.780 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:44:44.785 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:44:44.789 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 2 editors...
+    23:44:44.793 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 editors generated. Generate 2 instructors...
+    23:44:44.797 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:44:44.798 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses...
+    23:44:44.799 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses. Done
+    23:44:44.799 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database...
+    23:44:44.806 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database. Done
+    23:44:44.842 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.845 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.849 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.853 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.860 | 600 taskScheduler-1  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:44:44.881 | 453 ool-1-worker-217 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ProgrammingExerciseLocalVCIntegrationTest#testValidateAuxiliaryRepositoryWithTooLongDescription'
+    23:44:44.883 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises
+    23:44:44.884 | 453 ool-1-worker-217 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise : ProgrammingExercise{id=2365, templateRepositoryUri='http://localhost:49152/git/SHORTC7AEC170054A2042140ACD302A854377B5C4TSTEXC/shortc7aec170054a2042140acd302a854377b5c4tstexc-exercise.git', solutionRepositoryUri='http://localhost:49152/git/SHORTC7AEC170054A2042140ACD302A854377B5C4TSTEXC/shortc7aec170054a2042140acd302a854377b5c4tstexc-solution.git', templateBuildPlanId='SHORTC7AEC170054A2042140ACD302A854377B5C4TSTEXC-BASE', solutionBuildPlanId='SHORTC7AEC170054A2042140ACD302A854377B5C4TSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:44:44.888 | 453 ool-1-worker-217 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, The provided description is too long!
+    23:44:44.889 | 453 ool-1-worker-217 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: The provided description is too long!
+
+  Starting logs for ProgrammingExerciseLocalVCIntegrationTest > testExportAuxiliaryRepositoryRepositoryNotFound()
+    23:44:44.917 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:44:44.923 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:44:44.929 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 2 editors...
+    23:44:44.933 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 editors generated. Generate 2 instructors...
+    23:44:44.937 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:44:44.939 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses...
+    23:44:44.940 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses. Done
+    23:44:44.940 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database...
+    23:44:44.949 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database. Done
+    23:44:44.988 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.992 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.995 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:44.999 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:45.023 | 453 ool-1-worker-217 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ProgrammingExerciseLocalVCIntegrationTest#testExportAuxiliaryRepositoryRepositoryNotFound'
+    23:44:45.025 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/programming-exercises/2367/export-instructor-auxiliary-repository/-1
+    23:44:45.029 | 453 ool-1-worker-217 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, There was an error on the server and the URL of the auxiliary couldn't be retrieved.
+
+  Starting logs for ProgrammingExerciseLocalVCIntegrationTest > testValidateAuxiliaryRepositoryWithoutDescription()
+    23:44:45.104 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:44:45.117 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:44:45.127 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 2 editors...
+    23:44:45.133 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 editors generated. Generate 2 instructors...
+    23:44:45.138 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:44:45.139 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses...
+    23:44:45.141 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses. Done
+    23:44:45.141 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database...
+    23:44:45.147 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database. Done
+    23:44:45.184 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:45.188 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:45.192 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:45.196 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:45.234 | 453 ool-1-worker-217 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ProgrammingExerciseLocalVCIntegrationTest#testValidateAuxiliaryRepositoryWithoutDescription'
+    23:44:45.235 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/programming-exercises
+    23:44:45.239 | 453 ool-1-worker-217 | DEBUG | .a.a.p.w.ProgrammingExerciseResource : REST request to update ProgrammingExercise : ProgrammingExercise{id=2369, templateRepositoryUri='http://localhost:49152/git/SHORT10D25A400CDFB04AFC0BE5C0BD393E546307TSTEXC/short10d25a400cdfb04afc0be5c0bd393e546307tstexc-exercise.git', solutionRepositoryUri='http://localhost:49152/git/SHORT10D25A400CDFB04AFC0BE5C0BD393E546307TSTEXC/short10d25a400cdfb04afc0be5c0bd393e546307tstexc-solution.git', templateBuildPlanId='SHORT10D25A400CDFB04AFC0BE5C0BD393E546307TSTEXC-BASE', solutionBuildPlanId='SHORT10D25A400CDFB04AFC0BE5C0BD393E546307TSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}
+    23:44:45.267 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.p.s.localvc.LocalVCService : Created local git repository short10d25a400cdfb04afc0be5c0bd393e546307tstexc-defaultname in folder /tmp/SHORT10D25A400CDFB04AFC0BE5C0BD393E546307TSTEXC/short10d25a400cdfb04afc0be5c0bd393e546307tstexc-defaultname.git
+    23:44:45.268 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from file:///tmp/SHORT10D25A400CDFB04AFC0BE5C0BD393E546307TSTEXC/short10d25a400cdfb04afc0be5c0bd393e546307tstexc-defaultname.git/ to repos/server-integration-test/SHORT10D25A400CDFB04AFC0BE5C0BD393E546307TSTEXC/short10d25a400cdfb04afc0be5c0bd393e546307tstexc-defaultname
+    23:44:45.282 | 453 ool-1-worker-217 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@462b2a9e
+    23:44:45.311 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.p.service.GitService       : commitAndPush -> Push repos/server-integration-test/SHORT10D25A400CDFB04AFC0BE5C0BD393E546307TSTEXC/short10d25a400cdfb04afc0be5c0bd393e546307tstexc-defaultname
+    23:44:45.315 | 453 ool-1-worker-217 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@73ee6065
+    23:44:45.353 | 453 ool-1-worker-217 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for programming exercise 2369
+    23:44:45.355 | 453 ool-1-worker-217 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled 1 Tasks for Exercise "Programming" (#2369) to trigger on RELEASE.
+    23:44:45.355 | 453 ool-1-worker-217 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled combining template commits before release date for Programming Exercise "Programming" (#2369) for 2025-02-15T23:44:45.147866Z.
+    23:44:45.355 | 453 ool-1-worker-217 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#2369) to trigger on DUE.
+    23:44:45.355 | 453 ool-1-worker-217 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled lock student repositories after due date for Programming Exercise 'Programming' (#2369) for 2025-02-16T23:44:45.147868Z.
+    23:44:45.355 | 453 ool-1-worker-217 | DEBUG | t.c.a.a.e.s.ExerciseLifecycleService : Scheduled Task for Exercise "Programming" (#2369) to trigger on BUILD_AND_TEST_AFTER_DUE_DATE.
+    23:44:45.355 | 453 ool-1-worker-217 | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled build and test for student submissions after due date for Programming Exercise 'Programming' (#2369) for 2025-02-19T23:44:45.147869Z.
+    23:44:45.359 | 453 ool-1-worker-217 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule update for potential Athena exercise 2369
+    23:44:45.361 | 453 ool-1-worker-217 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User programmingexerciselocalvcinstructor1 has updated ProgrammingExercise Programming with id 2369
+
+  Starting logs for ProgrammingExerciseLocalVCIntegrationTest > testExportAuxiliaryRepositoryBadRequest()
+    23:44:45.406 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:44:45.413 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:44:45.417 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 2 editors...
+    23:44:45.420 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 editors generated. Generate 2 instructors...
+    23:44:45.424 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:44:45.429 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses...
+    23:44:45.430 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses. Done
+    23:44:45.430 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database...
+    23:44:45.436 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 9 users to database. Done
+    23:44:45.508 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:45.514 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:45.527 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:45.540 | 453 ool-1-worker-217 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:44:45.610 | 453 ool-1-worker-217 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ProgrammingExerciseLocalVCIntegrationTest#testExportAuxiliaryRepositoryBadRequest'
+    23:44:45.618 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/programming-exercises/2371/export-instructor-auxiliary-repository/6
+    23:44:45.631 | 453 ool-1-worker-217 | INFO  | p.s.ProgrammingExerciseExportService : Request to export instructor repository of programming exercise ProgrammingExercise{id=2371, templateRepositoryUri='http://localhost:49152/git/SHORT351B189C0CF5E04BD109F200854ECD0BFEA3TSTEXC/short351b189c0cf5e04bd109f200854ecd0bfea3tstexc-exercise.git', solutionRepositoryUri='http://localhost:49152/git/SHORT351B189C0CF5E04BD109F200854ECD0BFEA3TSTEXC/short351b189c0cf5e04bd109f200854ecd0bfea3tstexc-solution.git', templateBuildPlanId='SHORT351B189C0CF5E04BD109F200854ECD0BFEA3TSTEXC-BASE', solutionBuildPlanId='SHORT351B189C0CF5E04BD109F200854ECD0BFEA3TSTEXC-SOLUTION', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'} with title 'Programming'
+    23:44:45.631 | 453 ool-1-worker-217 | ERROR | p.s.ProgrammingExerciseExportService : Failed to export instructor repository defaultname because the repository uri is not defined.
+    23:44:45.631 | 453 ool-1-worker-217 | ERROR | tech.jhipster.web.util.HeaderUtil    : Entity processing failed, There was an error on the server and the zip file could not be created.
+
+  Starting logs for ProgrammingExerciseLocalVCIntegrationTest > testGetParticipationFilesWithContentAtCommitEditorForbidden()
+    23:44:45.675 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:44:45.685 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 2 tutors...
+    23:44:45.691 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 tutors generated. Generate 2 editors...
+    23:44:45.701 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 editors generated. Generate 2 instructors...
+    23:44:45.711 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 2 instructors generated
+    23:44:45.713 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses...
+    23:44:45.714 | 453 ool-1-worker-217 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 9 users from all courses. Done
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

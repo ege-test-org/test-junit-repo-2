@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.iris.IrisChatMessageIntegrationTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:43:39" hostname="fv-az1721-502" time="6.445">
+  <properties/>
+  <testcase name="sendTwoMessages()" classname="de.tum.cit.aet.artemis.iris.IrisChatMessageIntegrationTest" time="1.006"/>
+  <testcase name="sendMessageWithoutContent()" classname="de.tum.cit.aet.artemis.iris.IrisChatMessageIntegrationTest" time="0.396"/>
+  <testcase name="sendSuggestions()" classname="de.tum.cit.aet.artemis.iris.IrisChatMessageIntegrationTest" time="0.643"/>
+  <testcase name="sendOneMessageTeamExercise()" classname="de.tum.cit.aet.artemis.iris.IrisChatMessageIntegrationTest" time="0.499"/>
+  <testcase name="rateMessageHelpfulNull()" classname="de.tum.cit.aet.artemis.iris.IrisChatMessageIntegrationTest" time="0.491"/>
+  <testcase name="rateMessageHelpfulTrue()" classname="de.tum.cit.aet.artemis.iris.IrisChatMessageIntegrationTest" time="0.437"/>
+  <testcase name="rateMessageWrongSender()" classname="de.tum.cit.aet.artemis.iris.IrisChatMessageIntegrationTest" time="0.38"/>
+  <testcase name="rateMessageHelpfulFalse()" classname="de.tum.cit.aet.artemis.iris.IrisChatMessageIntegrationTest" time="0.235"/>
+  <testcase name="sendOneMessageNormalExercise()" classname="de.tum.cit.aet.artemis.iris.IrisChatMessageIntegrationTest" time="0.383"/>
+  <testcase name="sendMessageRateLimitReached()" classname="de.tum.cit.aet.artemis.iris.IrisChatMessageIntegrationTest" time="0.384"/>
+  <testcase name="rateMessageWrongSession()" classname="de.tum.cit.aet.artemis.iris.IrisChatMessageIntegrationTest" time="0.427"/>
+  <testcase name="sendOneMessageToWrongSession()" classname="de.tum.cit.aet.artemis.iris.IrisChatMessageIntegrationTest" time="0.294"/>
+  <testcase name="getMessages()" classname="de.tum.cit.aet.artemis.iris.IrisChatMessageIntegrationTest" time="0.385"/>
+  <testcase name="resendMessage()" classname="de.tum.cit.aet.artemis.iris.IrisChatMessageIntegrationTest" time="0.447"/>
+  <system-out><![CDATA[
+Starting logs for IrisChatMessageIntegrationTest
+
+  Starting logs for IrisChatMessageIntegrationTest > sendTwoMessages()
+    23:43:39.729 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:43:39.732 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 0 tutors...
+    23:43:39.734 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:39.735 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:39.737 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:39.738 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:39.738 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:39.738 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:39.741 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:39.800 | 397 ool-1-worker-161 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:40.065 | 397 ool-1-worker-161 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisChatMessageIntegrationTest#sendTwoMessages'
+    23:43:40.095 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/sessions/1/messages
+    23:43:40.183 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/1: IrisChatWebsocketDTO[type=MESSAGE, message=IrisMessage{id=1, session=IrisExerciseChatSession{user=irismessageintegrationstudent1,exercise=ProgrammingExercise{id=406, templateRepositoryUri='null', solutionRepositoryUri='null', templateBuildPlanId='null', solutionBuildPlanId='null', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}}, sentAt=2025-02-14T23:43:40.136079Z, helpful=null, sender=USER, content=[IrisMessageContent{message=1, textContent='The crazy cat jumped over the lazy dog.'}, IrisMessageContent{message=1, textContent='The silly cat jumped over the lazy dog.'}, IrisMessageContent{message=1, textContent='The happy house jumped over the lazy dog.'}], messageDifferentiator=null}, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=null, suggestions=null, tokens=null]
+    23:43:40.262 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/1: IrisChatWebsocketDTO[type=STATUS, message=null, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=IN_PROGRESS, message=null], PyrisStageDTO[name=Executing pipeline, weight=30, state=NOT_STARTED, message=null]], suggestions=null, tokens=null]
+    23:43:40.274 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORTE4A93C120D2AE04C780941C03E96B18DCE75TSTEXC/shorte4a93c120d2ae04c780941c03e96b18dce75tstexc-irismessageintegrationstudent1.git
+    23:43:40.274 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@7f1f8bd9
+    23:43:40.286 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORTE4A93C120D2AE04C780941C03E96B18DCE75TSTEXC/shorte4a93c120d2ae04c780941c03e96b18dce75tstexc-exercise.git
+    23:43:40.286 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@4c485cc9
+    23:43:40.298 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORTE4A93C120D2AE04C780941C03E96B18DCE75TSTEXC/shorte4a93c120d2ae04c780941c03e96b18dce75tstexc-solution.git
+    23:43:40.299 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@2ddf04f6
+    23:43:40.303 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from file:///tmp/SHORTE4A93C120D2AE04C780941C03E96B18DCE75TSTEXC/shorte4a93c120d2ae04c780941c03e96b18dce75tstexc-tests.git/ to repos/server-integration-test/SHORTE4A93C120D2AE04C780941C03E96B18DCE75TSTEXC/shorte4a93c120d2ae04c780941c03e96b18dce75tstexc-tests
+    23:43:40.316 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@4a4bf03c
+    23:43:40.450 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/1: IrisChatWebsocketDTO[type=STATUS, message=null, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=DONE, message=null], PyrisStageDTO[name=Executing pipeline, weight=30, state=IN_PROGRESS, message=null]], suggestions=null, tokens=null]
+    23:43:40.495 | 397 ool-1-worker-161 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: artemislocal_ase_in_tum_de-unknown-1739576620239-pqRDeukrYE from source bearer
+    23:43:40.498 | 397 ool-1-worker-161 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: artemislocal_ase_in_tum_de-unknown-1739576620239-pqRDeukrYE from source bearer
+    23:43:40.498 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/pyris/pipelines/tutor-chat/runs/artemislocal_ase_in_tum_de-unknown-1739576620239-pqRDeukrYE/status
+    23:43:40.524 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/1: IrisChatWebsocketDTO[type=MESSAGE, message=IrisMessage{id=2, session=IrisExerciseChatSession{user=irismessageintegrationstudent1,exercise=ProgrammingExercise{id=406, templateRepositoryUri='null', solutionRepositoryUri='null', templateBuildPlanId='null', solutionBuildPlanId='null', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}}, sentAt=2025-02-14T23:43:40.505420Z, helpful=null, sender=LLM, content=[IrisMessageContent{message=2, textContent='Hello World 1'}], messageDifferentiator=null}, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=DONE, message=null]], suggestions=null, tokens=null]
+    23:43:40.531 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/sessions/1/messages
+    23:43:40.566 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/1: IrisChatWebsocketDTO[type=MESSAGE, message=IrisMessage{id=3, session=IrisExerciseChatSession{user=irismessageintegrationstudent1,exercise=ProgrammingExercise{id=406, templateRepositoryUri='null', solutionRepositoryUri='null', templateBuildPlanId='null', solutionBuildPlanId='null', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}}, sentAt=2025-02-14T23:43:40.550218Z, helpful=null, sender=USER, content=[IrisMessageContent{message=3, textContent='The angry shoe jumped over the lazy dog.'}, IrisMessageContent{message=3, textContent='The crazy house jumped over the lazy dog.'}, IrisMessageContent{message=3, textContent='The angry cat jumped over the lazy dog.'}], messageDifferentiator=null}, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=null, suggestions=null, tokens=null]
+    23:43:40.594 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/1: IrisChatWebsocketDTO[type=STATUS, message=null, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=IN_PROGRESS, message=null], PyrisStageDTO[name=Executing pipeline, weight=30, state=NOT_STARTED, message=null]], suggestions=null, tokens=null]
+    23:43:40.594 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORTE4A93C120D2AE04C780941C03E96B18DCE75TSTEXC/shorte4a93c120d2ae04c780941c03e96b18dce75tstexc-irismessageintegrationstudent1.git
+    23:43:40.594 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@23c8e998
+    23:43:40.611 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORTE4A93C120D2AE04C780941C03E96B18DCE75TSTEXC/shorte4a93c120d2ae04c780941c03e96b18dce75tstexc-exercise.git
+    23:43:40.611 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@2344de9
+    23:43:40.617 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORTE4A93C120D2AE04C780941C03E96B18DCE75TSTEXC/shorte4a93c120d2ae04c780941c03e96b18dce75tstexc-solution.git
+    23:43:40.617 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@15f261d3
+    23:43:40.624 | 397 ool-1-worker-161 | INFO  | d.t.c.a.a.p.service.GitService       : Pull repos/server-integration-test/SHORTE4A93C120D2AE04C780941C03E96B18DCE75TSTEXC/shorte4a93c120d2ae04c780941c03e96b18dce75tstexc-tests
+    23:43:40.647 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@20650ab7
+    23:43:40.683 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/1: IrisChatWebsocketDTO[type=STATUS, message=null, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=DONE, message=null], PyrisStageDTO[name=Executing pipeline, weight=30, state=IN_PROGRESS, message=null]], suggestions=null, tokens=null]
+    23:43:40.689 | 397 ool-1-worker-161 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: artemislocal_ase_in_tum_de-unknown-1739576620590-FRTmD2rpb4 from source bearer
+    23:43:40.689 | 397 ool-1-worker-161 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: artemislocal_ase_in_tum_de-unknown-1739576620590-FRTmD2rpb4 from source bearer
+    23:43:40.689 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/pyris/pipelines/tutor-chat/runs/artemislocal_ase_in_tum_de-unknown-1739576620590-FRTmD2rpb4/status
+    23:43:40.706 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/1: IrisChatWebsocketDTO[type=MESSAGE, message=IrisMessage{id=4, session=IrisExerciseChatSession{user=irismessageintegrationstudent1,exercise=ProgrammingExercise{id=406, templateRepositoryUri='null', solutionRepositoryUri='null', templateBuildPlanId='null', solutionBuildPlanId='null', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}}, sentAt=2025-02-14T23:43:40.694382Z, helpful=null, sender=LLM, content=[IrisMessageContent{message=4, textContent='Hello World 2'}], messageDifferentiator=null}, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=DONE, message=null]], suggestions=null, tokens=null]
+
+  Starting logs for IrisChatMessageIntegrationTest > sendMessageWithoutContent()
+    23:43:40.744 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:43:40.749 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 0 tutors...
+    23:43:40.751 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:40.752 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:40.754 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:40.755 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:40.756 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:40.756 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:40.763 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:40.837 | 397 ool-1-worker-161 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:41.083 | 397 ool-1-worker-161 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisChatMessageIntegrationTest#sendMessageWithoutContent'
+    23:43:41.088 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/sessions/2/messages
+    23:43:41.098 | 397 ool-1-worker-161 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: Message must have at least one content element
+
+  Starting logs for IrisChatMessageIntegrationTest > sendSuggestions()
+    23:43:41.141 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:43:41.153 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 0 tutors...
+    23:43:41.157 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:41.158 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:41.159 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:41.166 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:41.167 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:41.167 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:41.176 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:41.248 | 397 ool-1-worker-161 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:41.556 | 397 ool-1-worker-161 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisChatMessageIntegrationTest#sendSuggestions'
+    23:43:41.571 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/sessions/3/messages
+    23:43:41.593 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/3: IrisChatWebsocketDTO[type=MESSAGE, message=IrisMessage{id=5, session=IrisExerciseChatSession{user=irismessageintegrationstudent1,exercise=ProgrammingExercise{id=410, templateRepositoryUri='null', solutionRepositoryUri='null', templateBuildPlanId='null', solutionBuildPlanId='null', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}}, sentAt=2025-02-14T23:43:41.587839Z, helpful=null, sender=USER, content=[IrisMessageContent{message=5, textContent='The crazy computer jumped over the lazy dog.'}, IrisMessageContent{message=5, textContent='The smart house jumped over the lazy dog.'}, IrisMessageContent{message=5, textContent='The funny dog jumped over the lazy dog.'}], messageDifferentiator=1454}, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=null, suggestions=null, tokens=null]
+    23:43:41.608 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/3: IrisChatWebsocketDTO[type=STATUS, message=null, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=IN_PROGRESS, message=null], PyrisStageDTO[name=Executing pipeline, weight=30, state=NOT_STARTED, message=null]], suggestions=null, tokens=null]
+    23:43:41.615 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORT8CEF86D50F99D049DD0AFF90D3E642C85D83TSTEXC/short8cef86d50f99d049dd0aff90d3e642c85d83tstexc-irismessageintegrationstudent1.git
+    23:43:41.615 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@1b8e948b
+    23:43:41.631 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORT8CEF86D50F99D049DD0AFF90D3E642C85D83TSTEXC/short8cef86d50f99d049dd0aff90d3e642c85d83tstexc-exercise.git
+    23:43:41.631 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@4ce958dd
+    23:43:41.650 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORT8CEF86D50F99D049DD0AFF90D3E642C85D83TSTEXC/short8cef86d50f99d049dd0aff90d3e642c85d83tstexc-solution.git
+    23:43:41.651 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@8ad0234
+    23:43:41.659 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from file:///tmp/SHORT8CEF86D50F99D049DD0AFF90D3E642C85D83TSTEXC/short8cef86d50f99d049dd0aff90d3e642c85d83tstexc-tests.git/ to repos/server-integration-test/SHORT8CEF86D50F99D049DD0AFF90D3E642C85D83TSTEXC/short8cef86d50f99d049dd0aff90d3e642c85d83tstexc-tests
+    23:43:41.669 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@353f72d4
+    23:43:41.726 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/3: IrisChatWebsocketDTO[type=STATUS, message=null, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=DONE, message=null], PyrisStageDTO[name=Executing pipeline, weight=30, state=IN_PROGRESS, message=null]], suggestions=null, tokens=null]
+    23:43:41.732 | 397 ool-1-worker-161 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: artemislocal_ase_in_tum_de-unknown-1739576621600-mWisyObR37 from source bearer
+    23:43:41.732 | 397 ool-1-worker-161 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: artemislocal_ase_in_tum_de-unknown-1739576621600-mWisyObR37 from source bearer
+    23:43:41.733 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/pyris/pipelines/tutor-chat/runs/artemislocal_ase_in_tum_de-unknown-1739576621600-mWisyObR37/status
+    23:43:41.745 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/3: IrisChatWebsocketDTO[type=STATUS, message=null, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=DONE, message=null]], suggestions=[suggestion1, suggestion2, suggestion3], tokens=null]
+
+  Starting logs for IrisChatMessageIntegrationTest > sendOneMessageTeamExercise()
+    23:43:41.787 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:43:41.792 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 0 tutors...
+    23:43:41.793 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:41.795 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:41.796 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:41.797 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:41.798 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:41.798 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:41.801 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:41.855 | 397 ool-1-worker-161 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:42.126 | 397 ool-1-worker-161 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisChatMessageIntegrationTest#sendOneMessageTeamExercise'
+    23:43:42.136 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/sessions/4/messages
+    23:43:42.157 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent2 on topic /topic/iris/4: IrisChatWebsocketDTO[type=MESSAGE, message=IrisMessage{id=6, session=IrisExerciseChatSession{user=irismessageintegrationstudent2,exercise=ProgrammingExercise{id=413, templateRepositoryUri='null', solutionRepositoryUri='null', templateBuildPlanId='null', solutionBuildPlanId='null', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}}, sentAt=2025-02-14T23:43:42.152341Z, helpful=null, sender=USER, content=[IrisMessageContent{message=6, textContent='The angry phone jumped over the lazy dog.'}, IrisMessageContent{message=6, textContent='The funny dog jumped over the lazy dog.'}, IrisMessageContent{message=6, textContent='The angry house jumped over the lazy dog.'}], messageDifferentiator=1453}, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=null, suggestions=null, tokens=null]
+    23:43:42.167 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent2 on topic /topic/iris/4: IrisChatWebsocketDTO[type=STATUS, message=null, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=IN_PROGRESS, message=null], PyrisStageDTO[name=Executing pipeline, weight=30, state=NOT_STARTED, message=null]], suggestions=null, tokens=null]
+    23:43:42.170 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORTA67AB651085A404728091C703834390C6E9DTSTEXC/shorta67ab651085a404728091c703834390c6e9dtstexc-irismessageintegrationteam1.git
+    23:43:42.170 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@58c9bf68
+    23:43:42.175 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORTA67AB651085A404728091C703834390C6E9DTSTEXC/shorta67ab651085a404728091c703834390c6e9dtstexc-exercise.git
+    23:43:42.176 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@6fc54431
+    23:43:42.183 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORTA67AB651085A404728091C703834390C6E9DTSTEXC/shorta67ab651085a404728091c703834390c6e9dtstexc-solution.git
+    23:43:42.184 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@2b0e0a0c
+    23:43:42.189 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from file:///tmp/SHORTA67AB651085A404728091C703834390C6E9DTSTEXC/shorta67ab651085a404728091c703834390c6e9dtstexc-tests.git/ to repos/server-integration-test/SHORTA67AB651085A404728091C703834390C6E9DTSTEXC/shorta67ab651085a404728091c703834390c6e9dtstexc-tests
+    23:43:42.203 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@7dc2591a
+    23:43:42.252 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent2 on topic /topic/iris/4: IrisChatWebsocketDTO[type=STATUS, message=null, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=DONE, message=null], PyrisStageDTO[name=Executing pipeline, weight=30, state=IN_PROGRESS, message=null]], suggestions=null, tokens=null]
+    23:43:42.255 | 397 ool-1-worker-161 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: artemislocal_ase_in_tum_de-unknown-1739576622165-9UOeNqCitC from source bearer
+    23:43:42.255 | 397 ool-1-worker-161 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: artemislocal_ase_in_tum_de-unknown-1739576622165-9UOeNqCitC from source bearer
+    23:43:42.255 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/pyris/pipelines/tutor-chat/runs/artemislocal_ase_in_tum_de-unknown-1739576622165-9UOeNqCitC/status
+    23:43:42.264 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent2 on topic /topic/iris/4: IrisChatWebsocketDTO[type=MESSAGE, message=IrisMessage{id=7, session=IrisExerciseChatSession{user=irismessageintegrationstudent2,exercise=ProgrammingExercise{id=413, templateRepositoryUri='null', solutionRepositoryUri='null', templateBuildPlanId='null', solutionBuildPlanId='null', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}}, sentAt=2025-02-14T23:43:42.258556Z, helpful=null, sender=LLM, content=[IrisMessageContent{message=7, textContent='Hello World'}], messageDifferentiator=null}, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=DONE, message=null]], suggestions=null, tokens=null]
+
+  Starting logs for IrisChatMessageIntegrationTest > rateMessageHelpfulNull()
+    23:43:42.283 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:43:42.289 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 0 tutors...
+    23:43:42.290 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:42.291 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:42.293 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:42.294 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:42.295 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:42.295 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:42.298 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:42.453 | 397 ool-1-worker-161 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:42.727 | 397 ool-1-worker-161 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisChatMessageIntegrationTest#rateMessageHelpfulNull'
+    23:43:42.738 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/iris/sessions/5/messages/8/helpful
+
+  Starting logs for IrisChatMessageIntegrationTest > rateMessageHelpfulTrue()
+    23:43:42.784 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:43:42.794 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 0 tutors...
+    23:43:42.796 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:42.797 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:42.804 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:42.806 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:42.806 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:42.806 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:42.812 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:42.855 | 397 ool-1-worker-161 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:43.159 | 397 ool-1-worker-161 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisChatMessageIntegrationTest#rateMessageHelpfulTrue'
+    23:43:43.171 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/iris/sessions/6/messages/9/helpful
+
+  Starting logs for IrisChatMessageIntegrationTest > rateMessageWrongSender()
+    23:43:43.225 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:43:43.230 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 0 tutors...
+    23:43:43.232 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:43.233 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:43.234 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:43.235 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:43.236 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:43.236 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:43.239 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:43.280 | 397 ool-1-worker-161 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:43.554 | 397 ool-1-worker-161 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisChatMessageIntegrationTest#rateMessageWrongSender'
+    23:43:43.566 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/iris/sessions/7/messages/10/helpful
+    23:43:43.576 | 397 ool-1-worker-161 | WARN  | o.z.p.spring.common.AdviceTraits     : Bad Request: You can only rate messages sent by Iris
+
+  Starting logs for IrisChatMessageIntegrationTest > rateMessageHelpfulFalse()
+    23:43:43.604 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:43:43.610 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 0 tutors...
+    23:43:43.611 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:43.612 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:43.614 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:43.615 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:43.615 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:43.615 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:43.619 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:43.654 | 397 ool-1-worker-161 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:43.817 | 397 ool-1-worker-161 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisChatMessageIntegrationTest#rateMessageHelpfulFalse'
+    23:43:43.822 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/iris/sessions/8/messages/11/helpful
+
+  Starting logs for IrisChatMessageIntegrationTest > sendOneMessageNormalExercise()
+    23:43:43.838 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:43:43.842 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 0 tutors...
+    23:43:43.843 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:43.844 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:43.845 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:43.846 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:43.847 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:43.847 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:43.848 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:43.881 | 397 ool-1-worker-161 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:44.076 | 397 ool-1-worker-161 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisChatMessageIntegrationTest#sendOneMessageNormalExercise'
+    23:43:44.081 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/sessions/9/messages
+    23:43:44.095 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/9: IrisChatWebsocketDTO[type=MESSAGE, message=IrisMessage{id=12, session=IrisExerciseChatSession{user=irismessageintegrationstudent1,exercise=ProgrammingExercise{id=422, templateRepositoryUri='null', solutionRepositoryUri='null', templateBuildPlanId='null', solutionBuildPlanId='null', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}}, sentAt=2025-02-14T23:43:44.091891Z, helpful=null, sender=USER, content=[IrisMessageContent{message=12, textContent='The happy shoe jumped over the lazy dog.'}, IrisMessageContent{message=12, textContent='The funny cat jumped over the lazy dog.'}, IrisMessageContent{message=12, textContent='The crazy shoe jumped over the lazy dog.'}], messageDifferentiator=1453}, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=null, suggestions=null, tokens=null]
+    23:43:44.110 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/9: IrisChatWebsocketDTO[type=STATUS, message=null, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=IN_PROGRESS, message=null], PyrisStageDTO[name=Executing pipeline, weight=30, state=NOT_STARTED, message=null]], suggestions=null, tokens=null]
+    23:43:44.112 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORT6844AFBF0004504A1D09C20025689FF57ADCTSTEXC/short6844afbf0004504a1d09c20025689ff57adctstexc-irismessageintegrationstudent1.git
+    23:43:44.112 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@69a883d9
+    23:43:44.123 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORT6844AFBF0004504A1D09C20025689FF57ADCTSTEXC/short6844afbf0004504a1d09c20025689ff57adctstexc-exercise.git
+    23:43:44.125 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@74a6fcc9
+    23:43:44.133 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORT6844AFBF0004504A1D09C20025689FF57ADCTSTEXC/short6844afbf0004504a1d09c20025689ff57adctstexc-solution.git
+    23:43:44.134 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@6d62cad7
+    23:43:44.138 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from file:///tmp/SHORT6844AFBF0004504A1D09C20025689FF57ADCTSTEXC/short6844afbf0004504a1d09c20025689ff57adctstexc-tests.git/ to repos/server-integration-test/SHORT6844AFBF0004504A1D09C20025689FF57ADCTSTEXC/short6844afbf0004504a1d09c20025689ff57adctstexc-tests
+    23:43:44.145 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@14439687
+    23:43:44.185 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/9: IrisChatWebsocketDTO[type=STATUS, message=null, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=DONE, message=null], PyrisStageDTO[name=Executing pipeline, weight=30, state=IN_PROGRESS, message=null]], suggestions=null, tokens=null]
+    23:43:44.189 | 397 ool-1-worker-161 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: artemislocal_ase_in_tum_de-unknown-1739576624104-QeUIBnX84l from source bearer
+    23:43:44.189 | 397 ool-1-worker-161 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: artemislocal_ase_in_tum_de-unknown-1739576624104-QeUIBnX84l from source bearer
+    23:43:44.190 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/pyris/pipelines/tutor-chat/runs/artemislocal_ase_in_tum_de-unknown-1739576624104-QeUIBnX84l/status
+    23:43:44.206 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/9: IrisChatWebsocketDTO[type=MESSAGE, message=IrisMessage{id=13, session=IrisExerciseChatSession{user=irismessageintegrationstudent1,exercise=ProgrammingExercise{id=422, templateRepositoryUri='null', solutionRepositoryUri='null', templateBuildPlanId='null', solutionBuildPlanId='null', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}}, sentAt=2025-02-14T23:43:44.197204Z, helpful=null, sender=LLM, content=[IrisMessageContent{message=13, textContent='Hello World'}], messageDifferentiator=null}, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=DONE, message=null]], suggestions=null, tokens=null]
+
+  Starting logs for IrisChatMessageIntegrationTest > sendMessageRateLimitReached()
+    23:43:44.225 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:43:44.230 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 0 tutors...
+    23:43:44.232 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:44.233 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:44.234 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:44.236 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:44.236 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:44.236 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:44.239 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:44.296 | 397 ool-1-worker-161 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:44.469 | 397 ool-1-worker-161 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisChatMessageIntegrationTest#sendMessageRateLimitReached'
+    23:43:44.475 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/sessions/10/messages
+    23:43:44.489 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent3 on topic /topic/iris/10: IrisChatWebsocketDTO[type=MESSAGE, message=IrisMessage{id=14, session=IrisExerciseChatSession{user=irismessageintegrationstudent3,exercise=ProgrammingExercise{id=424, templateRepositoryUri='null', solutionRepositoryUri='null', templateBuildPlanId='null', solutionBuildPlanId='null', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}}, sentAt=2025-02-14T23:43:44.484707Z, helpful=null, sender=USER, content=[IrisMessageContent{message=14, textContent='The funny phone jumped over the lazy dog.'}, IrisMessageContent{message=14, textContent='The smart car jumped over the lazy dog.'}, IrisMessageContent{message=14, textContent='The crazy dog jumped over the lazy dog.'}], messageDifferentiator=null}, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=1, rateLimitTimeframeHours=10], stages=null, suggestions=null, tokens=null]
+    23:43:44.498 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent3 on topic /topic/iris/10: IrisChatWebsocketDTO[type=STATUS, message=null, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=1, rateLimitTimeframeHours=10], stages=[PyrisStageDTO[name=Preparing, weight=10, state=IN_PROGRESS, message=null], PyrisStageDTO[name=Executing pipeline, weight=30, state=NOT_STARTED, message=null]], suggestions=null, tokens=null]
+    23:43:44.500 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORTB964431505F8A0451F09C440E73A346A6DB5TSTEXC/shortb964431505f8a0451f09c440e73a346a6db5tstexc-exercise.git
+    23:43:44.501 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@4da385ec
+    23:43:44.506 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORTB964431505F8A0451F09C440E73A346A6DB5TSTEXC/shortb964431505f8a0451f09c440e73a346a6db5tstexc-solution.git
+    23:43:44.507 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@2b13d419
+    23:43:44.510 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from file:///tmp/SHORTB964431505F8A0451F09C440E73A346A6DB5TSTEXC/shortb964431505f8a0451f09c440e73a346a6db5tstexc-tests.git/ to repos/server-integration-test/SHORTB964431505F8A0451F09C440E73A346A6DB5TSTEXC/shortb964431505f8a0451f09c440e73a346a6db5tstexc-tests
+    23:43:44.520 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@2819fa4a
+    23:43:44.545 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent3 on topic /topic/iris/10: IrisChatWebsocketDTO[type=STATUS, message=null, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=1, rateLimitTimeframeHours=10], stages=[PyrisStageDTO[name=Preparing, weight=10, state=DONE, message=null], PyrisStageDTO[name=Executing pipeline, weight=30, state=IN_PROGRESS, message=null]], suggestions=null, tokens=null]
+    23:43:44.548 | 397 ool-1-worker-161 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: artemislocal_ase_in_tum_de-unknown-1739576624495-OQ4wCDtmkz from source bearer
+    23:43:44.548 | 397 ool-1-worker-161 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: artemislocal_ase_in_tum_de-unknown-1739576624495-OQ4wCDtmkz from source bearer
+    23:43:44.548 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/pyris/pipelines/tutor-chat/runs/artemislocal_ase_in_tum_de-unknown-1739576624495-OQ4wCDtmkz/status
+    23:43:44.554 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent3 on topic /topic/iris/10: IrisChatWebsocketDTO[type=MESSAGE, message=IrisMessage{id=15, session=IrisExerciseChatSession{user=irismessageintegrationstudent3,exercise=ProgrammingExercise{id=424, templateRepositoryUri='null', solutionRepositoryUri='null', templateBuildPlanId='null', solutionBuildPlanId='null', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}}, sentAt=2025-02-14T23:43:44.550471Z, helpful=null, sender=LLM, content=[IrisMessageContent{message=15, textContent='Hello World'}], messageDifferentiator=null}, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=1, rateLimit=1, rateLimitTimeframeHours=10], stages=[PyrisStageDTO[name=Preparing, weight=10, state=DONE, message=null]], suggestions=null, tokens=null]
+    23:43:44.558 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/sessions/10/messages
+    23:43:44.566 | 397 ool-1-worker-161 | WARN  | o.z.p.spring.common.AdviceTraits     : Too Many Requests: You have exceeded the rate limit of Iris
+    23:43:44.573 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/sessions/10/messages/15/resend
+    23:43:44.581 | 397 ool-1-worker-161 | WARN  | o.z.p.spring.common.AdviceTraits     : Too Many Requests: You have exceeded the rate limit of Iris
+
+  Starting logs for IrisChatMessageIntegrationTest > rateMessageWrongSession()
+    23:43:44.624 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:43:44.632 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 0 tutors...
+    23:43:44.636 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:44.638 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:44.639 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:44.643 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:44.646 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:44.646 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:44.649 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:44.703 | 397 ool-1-worker-161 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:44.860 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    23:43:45.006 | 397 ool-1-worker-161 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisChatMessageIntegrationTest#rateMessageWrongSession'
+    23:43:45.014 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request PUT /api/iris/sessions/12/messages/17/helpful
+    23:43:45.020 | 397 ool-1-worker-161 | WARN  | o.z.p.spring.common.AdviceTraits     : Conflict: The message does not belong to the session
+
+  Starting logs for IrisChatMessageIntegrationTest > sendOneMessageToWrongSession()
+    23:43:45.043 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:43:45.048 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 0 tutors...
+    23:43:45.049 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:45.051 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:45.052 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:45.054 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:45.055 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:45.055 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:45.058 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:45.093 | 397 ool-1-worker-161 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:45.307 | 397 ool-1-worker-161 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisChatMessageIntegrationTest#sendOneMessageToWrongSession'
+    23:43:45.311 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/sessions/14/messages
+    23:43:45.320 | 397 ool-1-worker-161 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: You are not allowed to access the Iris Session with id 14
+
+  Starting logs for IrisChatMessageIntegrationTest > getMessages()
+    23:43:45.339 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:43:45.344 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 0 tutors...
+    23:43:45.345 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:45.347 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:45.348 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:45.349 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:45.350 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:45.350 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:45.353 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:45.391 | 397 ool-1-worker-161 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:45.678 | 397 ool-1-worker-161 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisChatMessageIntegrationTest#getMessages'
+    23:43:45.698 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/iris/sessions/15/messages
+
+  Starting logs for IrisChatMessageIntegrationTest > resendMessage()
+    23:43:45.726 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 3 students...
+    23:43:45.731 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 3 students generated. Generate 0 tutors...
+    23:43:45.733 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:43:45.734 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 0 instructors...
+    23:43:45.735 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 instructors generated
+    23:43:45.737 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    23:43:45.737 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    23:43:45.737 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    23:43:45.741 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    23:43:45.813 | 397 ool-1-worker-161 | DEBUG | PersonalAccessTokenManagementService : Generate secure vcs access token
+    23:43:45.998 | 397 ool-1-worker-161 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='IrisChatMessageIntegrationTest#resendMessage'
+    23:43:46.005 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/iris/sessions/16/messages/22/resend
+    23:43:46.028 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/16: IrisChatWebsocketDTO[type=STATUS, message=null, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=IN_PROGRESS, message=null], PyrisStageDTO[name=Executing pipeline, weight=30, state=NOT_STARTED, message=null]], suggestions=null, tokens=null]
+    23:43:46.030 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORTBCEB7491040FD045710A94A05D5817BAB69DTSTEXC/shortbceb7491040fd045710a94a05d5817bab69dtstexc-irismessageintegrationstudent1.git
+    23:43:46.031 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@2e6d5742
+    23:43:46.040 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORTBCEB7491040FD045710A94A05D5817BAB69DTSTEXC/shortbceb7491040fd045710a94a05d5817bab69dtstexc-exercise.git
+    23:43:46.040 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@7a32b452
+    23:43:46.045 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : getLastCommitHash http://localhost:49152/git/SHORTBCEB7491040FD045710A94A05D5817BAB69DTSTEXC/shortbceb7491040fd045710a94a05d5817bab69dtstexc-solution.git
+    23:43:46.046 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@f68c7ea
+    23:43:46.051 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.p.service.GitService       : Cloning from file:///tmp/SHORTBCEB7491040FD045710A94A05D5817BAB69DTSTEXC/shortbceb7491040fd045710a94a05d5817bab69dtstexc-tests.git/ to repos/server-integration-test/SHORTBCEB7491040FD045710A94A05D5817BAB69DTSTEXC/shortbceb7491040fd045710a94a05d5817bab69dtstexc-tests
+    23:43:46.058 | 397 ool-1-worker-161 | ERROR | d.t.c.a.a.p.s.AbstractGitService     : Cannot use ssh properly because of mismatch of Jgit transport object: org.eclipse.jgit.transport.TransportLocal@7a20ebe3
+    23:43:46.115 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/16: IrisChatWebsocketDTO[type=STATUS, message=null, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=DONE, message=null], PyrisStageDTO[name=Executing pipeline, weight=30, state=IN_PROGRESS, message=null]], suggestions=null, tokens=null]
+    23:43:46.122 | 397 ool-1-worker-161 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: artemislocal_ase_in_tum_de-unknown-1739576626026-zsjxQFgaHg from source bearer
+    23:43:46.122 | 397 ool-1-worker-161 | INFO  | d.t.c.a.a.c.s.jwt.TokenProvider      : Invalid JWT token: artemislocal_ase_in_tum_de-unknown-1739576626026-zsjxQFgaHg from source bearer
+    23:43:46.123 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request POST /api/public/pyris/pipelines/tutor-chat/runs/artemislocal_ase_in_tum_de-unknown-1739576626026-zsjxQFgaHg/status
+    23:43:46.139 | 397 ool-1-worker-161 | DEBUG | d.t.c.a.a.i.s.w.IrisWebsocketService : Sent message to Iris user irismessageintegrationstudent1 on topic /topic/iris/16: IrisChatWebsocketDTO[type=MESSAGE, message=IrisMessage{id=23, session=IrisExerciseChatSession{user=irismessageintegrationstudent1,exercise=ProgrammingExercise{id=432, templateRepositoryUri='null', solutionRepositoryUri='null', templateBuildPlanId='null', solutionBuildPlanId='null', allowOnlineEditor='true', allowOnlineIde='false', programmingLanguage='JAVA', packageName='de.test'', testCasesChanged='false'}}, sentAt=2025-02-14T23:43:46.128350Z, helpful=null, sender=LLM, content=[IrisMessageContent{message=23, textContent='Hello World'}], messageDifferentiator=null}, rateLimitInfo=IrisRateLimitInformation[currentMessageCount=0, rateLimit=-1, rateLimitTimeframeHours=0], stages=[PyrisStageDTO[name=Preparing, weight=10, state=DONE, message=null]], suggestions=null, tokens=null]
+
+Finished logs for IrisChatMessageIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.CleanupIntegrationTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:14" hostname="fv-az1721-502" time="2.491">
+  <properties/>
+  <testcase name="testGetLastExecutions()" classname="de.tum.cit.aet.artemis.core.CleanupIntegrationTest" time="0.29"/>
+  <testcase name="testDeleteOldRatedResults()" classname="de.tum.cit.aet.artemis.core.CleanupIntegrationTest" time="0.395"/>
+  <testcase name="testDeletePlagiarismComparisons()" classname="de.tum.cit.aet.artemis.core.CleanupIntegrationTest" time="0.797"/>
+  <testcase name="testDeleteOldSubmissionVersions()" classname="de.tum.cit.aet.artemis.core.CleanupIntegrationTest" time="0.186"/>
+  <testcase name="testDeleteOrphans()" classname="de.tum.cit.aet.artemis.core.CleanupIntegrationTest" time="0.258"/>
+  <testcase name="testDeleteNonRatedResults()" classname="de.tum.cit.aet.artemis.core.CleanupIntegrationTest" time="0.324"/>
+  <testcase name="testUnauthorizedAccess()" classname="de.tum.cit.aet.artemis.core.CleanupIntegrationTest" time="0.218"/>
+  <system-out><![CDATA[
+Starting logs for CleanupIntegrationTest
+
+  Starting logs for CleanupIntegrationTest > testGetLastExecutions()
+    23:42:14.583 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:42:14.589 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 0 tutors...
+    23:42:14.596 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:42:14.597 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:14.602 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:14.624 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 190 users from all courses...
+    23:42:14.687 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 190 users from all courses. Done
+    23:42:14.687 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:14.692 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:14.695 | 179 Pool-1-worker-72 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='CleanupIntegrationTest#testGetLastExecutions'
+    23:42:14.698 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/cleanup/last-executions
+
+  Starting logs for CleanupIntegrationTest > testDeleteOldRatedResults()
+    23:42:14.887 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:42:14.906 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 0 tutors...
+    23:42:14.908 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:42:14.914 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:14.923 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:14.928 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:14.930 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:14.930 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:14.957 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:14.959 | 179 Pool-1-worker-72 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='CleanupIntegrationTest#testDeleteOldRatedResults'
+    23:42:14.990 | 179 Pool-1-worker-72 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 168 and participant 203 (result to be deleted: null)
+    23:42:14.991 | 179 Pool-1-worker-72 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 168 and participant 203 at 2025-02-14T23:42:15.091018468Z[Etc/UTC].
+    23:42:15.009 | 179 Pool-1-worker-72 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 168 and participant 203 (result to be deleted: null)
+    23:42:15.009 | 179 Pool-1-worker-72 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 168 and participant 203 at 2025-02-14T23:42:15.109516063Z[Etc/UTC].
+    23:42:15.036 | 179 Pool-1-worker-72 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 170 and participant 203 (result to be deleted: null)
+    23:42:15.036 | 179 Pool-1-worker-72 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 170 and participant 203 at 2025-02-14T23:42:15.136363018Z[Etc/UTC].
+    23:42:15.044 | 179 Pool-1-worker-72 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 170 and participant 203 (result to be deleted: null)
+    23:42:15.044 | 179 Pool-1-worker-72 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 170 and participant 203 at 2025-02-14T23:42:15.144607873Z[Etc/UTC].
+    23:42:15.048 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/cleanup/old-rated-results/count
+    23:42:15.058 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.w.a.AdminCleanupResource : REST request to count old rated results between 2024-02-14T23:42:14.445087683Z[Etc/UTC] and 2024-08-14T23:42:14.445135963Z[Etc/UTC]
+    23:42:15.080 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/admin/cleanup/old-rated-results
+    23:42:15.084 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.w.a.AdminCleanupResource : REST request to delete old rated results between 2024-02-14T23:42:14.445087683Z[Etc/UTC] and 2024-08-14T23:42:14.445135963Z[Etc/UTC]
+    23:42:15.087 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 1 long feedback texts for rated results between 2024-02-14T23:42:14.445087683Z[Etc/UTC] and 2024-08-14T23:42:14.445135963Z[Etc/UTC]
+    23:42:15.089 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 1 text blocks for rated results between 2024-02-14T23:42:14.445087683Z[Etc/UTC] and 2024-08-14T23:42:14.445135963Z[Etc/UTC]
+    23:42:15.092 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 1 feedback entries for rated results between 2024-02-14T23:42:14.445087683Z[Etc/UTC] and 2024-08-14T23:42:14.445135963Z[Etc/UTC]
+    23:42:15.109 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 168 and participant 203 to update participant scores.
+    23:42:15.134 | 327 taskScheduler-2  | ERROR | .a.s.ParticipantScoreScheduleService : Exception while processing participant score for exercise 168 and participant 203 for participant scores:
+org.springframework.dao.IncorrectResultSizeDataAccessException: Query did not return a unique result: 2 results were returned
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:301)
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:244)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:560)
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61)
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:343)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:160)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:136)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy3/jdk.proxy3.$Proxy366.findByExercise_IdAndUser_Id(Unknown Source)
+	at de.tum.cit.aet.artemis.assessment.service.ParticipantScoreScheduleService.executeTask(ParticipantScoreScheduleService.java:286)
+	at de.tum.cit.aet.artemis.assessment.service.ParticipantScoreScheduleService.lambda$scheduleTask$5(ParticipantScoreScheduleService.java:237)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.hibernate.NonUniqueResultException: Query did not return a unique result: 2 results were returned
+	at org.hibernate.query.spi.AbstractSelectionQuery.uniqueElement(AbstractSelectionQuery.java:586)
+	at org.hibernate.query.spi.AbstractSelectionQuery.getSingleResult(AbstractSelectionQuery.java:570)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$DeferredQueryInvocationHandler.invoke(SharedEntityManagerCreator.java:419)
+	at jdk.proxy3/jdk.proxy3.$Proxy601.getSingleResult(Unknown Source)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$SingleEntityExecution.doExecute(JpaQueryExecution.java:224)
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:93)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:152)
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:140)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170)
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:170)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:149)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:69)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:380)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138)
+	... 14 common frames omitted
+    23:42:15.134 | 327 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 168 and participant 203 took 25 ms.
+
+  Starting logs for CleanupIntegrationTest > testDeletePlagiarismComparisons()
+    23:42:15.247 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:42:15.265 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 0 tutors...
+    23:42:15.266 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:42:15.270 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:15.277 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:15.279 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:15.281 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:15.281 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:15.287 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:15.290 | 179 Pool-1-worker-72 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='CleanupIntegrationTest#testDeletePlagiarismComparisons'
+    23:42:15.442 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/cleanup/plagiarism-comparisons/count
+    23:42:15.444 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.w.a.AdminCleanupResource : REST request to count plagiarism comparisons between 2024-02-14T23:42:14.445087683Z[Etc/UTC] and 2024-08-14T23:42:14.445135963Z[Etc/UTC]
+    23:42:15.859 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/admin/cleanup/plagiarism-comparisons
+    23:42:15.867 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.w.a.AdminCleanupResource : REST request to delete plagiarism comparisons between 2024-02-14T23:42:14.445087683Z[Etc/UTC] and 2024-08-14T23:42:14.445135963Z[Etc/UTC]
+    23:42:15.868 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleting 1 plagiarism comparisons with status 'None' between 2024-02-14T23:42:14.445087683Z[Etc/UTC] and 2024-08-14T23:42:14.445135963Z[Etc/UTC]
+    23:42:15.870 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 0 plagiarism elements that are part of the plagiarism submissions
+    23:42:15.874 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Updated 1 plagiarism comparisons to set plagiarism submissions to null
+    23:42:15.876 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 2 plagiarism submissions that reference plagiarism comparisons
+    23:42:15.900 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 1 plagiarism comparison matches that reference plagiarism comparisons
+    23:42:15.910 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 1 plagiarism comparisons with status 'None'
+
+  Starting logs for CleanupIntegrationTest > testDeleteOldSubmissionVersions()
+    23:42:16.030 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:42:16.038 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 0 tutors...
+    23:42:16.040 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:42:16.041 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:16.044 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:16.049 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:16.052 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:16.052 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:16.066 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:16.069 | 179 Pool-1-worker-72 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='CleanupIntegrationTest#testDeleteOldSubmissionVersions'
+    23:42:16.081 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/cleanup/old-submission-versions/count
+    23:42:16.087 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.w.a.AdminCleanupResource : REST request to count old submission versions between 2025-01-14T23:42:16.075799853Z[Etc/UTC] and 2025-03-14T23:42:16.075817586Z[Etc/UTC]
+    23:42:16.104 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/admin/cleanup/old-submission-versions
+    23:42:16.105 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.w.a.AdminCleanupResource : REST request to delete old submission versions between 2025-01-14T23:42:16.075799853Z[Etc/UTC] and 2025-03-14T23:42:16.075817586Z[Etc/UTC]
+    23:42:16.106 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 3 submission versions entries between 2025-01-14T23:42:16.075799853Z[Etc/UTC] and 2025-03-14T23:42:16.075817586Z[Etc/UTC]
+
+  Starting logs for CleanupIntegrationTest > testDeleteOrphans()
+    23:42:16.178 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:42:16.186 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 0 tutors...
+    23:42:16.188 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:42:16.189 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:16.192 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:16.194 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:16.196 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:16.196 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:16.206 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:16.211 | 179 Pool-1-worker-72 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='CleanupIntegrationTest#testDeleteOrphans'
+    23:42:16.260 | 179 Pool-1-worker-72 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 182 and participant 203 (result to be deleted: null)
+    23:42:16.261 | 179 Pool-1-worker-72 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 182 and participant 203 at 2025-02-14T23:42:16.361206554Z[Etc/UTC].
+    23:42:16.291 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/cleanup/orphans/count
+    23:42:16.292 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.w.a.AdminCleanupResource : REST request to count orphaned data in Artemis database
+    23:42:16.321 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/admin/cleanup/orphans
+    23:42:16.325 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.w.a.AdminCleanupResource : REST request to delete orphaned data in Artemis database
+    23:42:16.326 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 0 orphaned long feedback texts
+    23:42:16.331 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 0 text blocks for empty feedback
+    23:42:16.332 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 0 orphaned feedback entries
+    23:42:16.334 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 1 orphaned student scores
+    23:42:16.336 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 1 orphaned team scores
+    23:42:16.337 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 1 long feedback texts for orphan results
+    23:42:16.340 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 1 text blocks for orphan results
+    23:42:16.342 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 1 feedback entries for orphan results
+    23:42:16.343 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 1 orphan ratings
+    23:42:16.346 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 1 results without participation and submission
+    23:42:16.361 | 326 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 182 and participant 203 to update participant scores.
+    23:42:16.376 | 326 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 182 and participant 203 took 15 ms.
+
+  Starting logs for CleanupIntegrationTest > testDeleteNonRatedResults()
+    23:42:16.490 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:42:16.508 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 0 tutors...
+    23:42:16.512 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:42:16.515 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:16.520 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:16.526 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:16.527 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:16.527 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:16.540 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:16.546 | 179 Pool-1-worker-72 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='CleanupIntegrationTest#testDeleteNonRatedResults'
+    23:42:16.582 | 179 Pool-1-worker-72 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 184 and participant 203 (result to be deleted: null)
+    23:42:16.582 | 179 Pool-1-worker-72 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 184 and participant 203 at 2025-02-14T23:42:16.682260113Z[Etc/UTC].
+    23:42:16.600 | 179 Pool-1-worker-72 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 184 and participant 203 (result to be deleted: null)
+    23:42:16.600 | 179 Pool-1-worker-72 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 184 and participant 203 at 2025-02-14T23:42:16.700522310Z[Etc/UTC].
+    23:42:16.639 | 179 Pool-1-worker-72 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 186 and participant 203 (result to be deleted: null)
+    23:42:16.639 | 179 Pool-1-worker-72 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 186 and participant 203 at 2025-02-14T23:42:16.739346898Z[Etc/UTC].
+    23:42:16.650 | 179 Pool-1-worker-72 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 186 and participant 203 (result to be deleted: null)
+    23:42:16.650 | 179 Pool-1-worker-72 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 186 and participant 203 at 2025-02-14T23:42:16.750282521Z[Etc/UTC].
+    23:42:16.653 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/admin/cleanup/non-rated-results/count
+    23:42:16.654 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.w.a.AdminCleanupResource : REST request to count non-rated results between 2024-02-14T23:42:14.445087683Z[Etc/UTC] and 2024-08-14T23:42:14.445135963Z[Etc/UTC]
+    23:42:16.668 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/admin/cleanup/non-rated-results
+    23:42:16.669 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.w.a.AdminCleanupResource : REST request to delete non-rated results between 2024-02-14T23:42:14.445087683Z[Etc/UTC] and 2024-08-14T23:42:14.445135963Z[Etc/UTC]
+    23:42:16.672 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 1 long feedback texts for non-rated results between 2024-02-14T23:42:14.445087683Z[Etc/UTC] and 2024-08-14T23:42:14.445135963Z[Etc/UTC]
+    23:42:16.673 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 1 text blocks for non-rated results between 2024-02-14T23:42:14.445087683Z[Etc/UTC] and 2024-08-14T23:42:14.445135963Z[Etc/UTC]
+    23:42:16.675 | 179 Pool-1-worker-72 | INFO  | d.t.c.a.a.c.s.c.DataCleanupService   : Deleted 1 feedback entries for non-rated results between 2024-02-14T23:42:14.445087683Z[Etc/UTC] and 2024-08-14T23:42:14.445135963Z[Etc/UTC]
+
+  Starting logs for CleanupIntegrationTest > testUnauthorizedAccess()
+    23:42:16.829 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 4 students...
+    23:42:16.846 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 4 students generated. Generate 0 tutors...
+    23:42:16.847 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 tutors generated. Generate 0 editors...
+    23:42:16.850 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:16.855 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:16.857 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses...
+    23:42:16.859 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 5 users from all courses. Done
+    23:42:16.859 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database...
+    23:42:16.867 | 179 Pool-1-worker-72 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 5 users to database. Done
+    23:42:16.869 | 179 Pool-1-worker-72 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='CleanupIntegrationTest#testUnauthorizedAccess'
+    23:42:16.875 | 179 Pool-1-worker-72 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:16.878 | 179 Pool-1-worker-72 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:16.880 | 179 Pool-1-worker-72 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:16.882 | 179 Pool-1-worker-72 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:16.884 | 179 Pool-1-worker-72 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:16.888 | 179 Pool-1-worker-72 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:16.898 | 179 Pool-1-worker-72 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:16.902 | 179 Pool-1-worker-72 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:16.909 | 179 Pool-1-worker-72 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:16.915 | 179 Pool-1-worker-72 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    23:42:16.918 | 179 Pool-1-worker-72 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+
+Finished logs for CleanupIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.core.management.SecurityMetersServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:36" hostname="fv-az1721-502" time="0.05">
+  <properties/>
+  <testcase name="testCountMethodsShouldBeBoundToCorrectCounters()" classname="de.tum.cit.aet.artemis.core.management.SecurityMetersServiceTest" time="0.046"/>
+  <testcase name="testInvalidTokensCountersByCauseAreCreated()" classname="de.tum.cit.aet.artemis.core.management.SecurityMetersServiceTest" time="0.003"/>
+  <system-out><![CDATA[
+Starting logs for SecurityMetersServiceTest
+
+  Starting logs for SecurityMetersServiceTest > testCountMethodsShouldBeBoundToCorrectCounters()
+
+  Starting logs for SecurityMetersServiceTest > testInvalidTokensCountersByCauseAreCreated()
+
+Finished logs for SecurityMetersServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.communication.architecture.CommunicationResourceArchitectureTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:39:24" hostname="fv-az1721-502" time="1.376">
+  <properties/>
+  <testcase name="testNoOverrideOfEnforceAdmin()" classname="de.tum.cit.aet.artemis.communication.architecture.CommunicationResourceArchitectureTest" time="0.128"/>
+  <testcase name="testUseKebabCaseForRestEndpoints()" classname="de.tum.cit.aet.artemis.communication.architecture.CommunicationResourceArchitectureTest" time="0.4"/>
+  <testcase name="allPublicMethodsShouldReturnResponseEntity()" classname="de.tum.cit.aet.artemis.communication.architecture.CommunicationResourceArchitectureTest" time="0.18"/>
+  <testcase name="testClassWithEnforceAdminInCorrectlyNamed()" classname="de.tum.cit.aet.artemis.communication.architecture.CommunicationResourceArchitectureTest" time="0.041"/>
+  <testcase name="shouldBeNamedResource()" classname="de.tum.cit.aet.artemis.communication.architecture.CommunicationResourceArchitectureTest" time="0.026"/>
+  <testcase name="shouldBeInResourcePackage()" classname="de.tum.cit.aet.artemis.communication.architecture.CommunicationResourceArchitectureTest" time="0.073"/>
+  <testcase name="shouldCorrectlyUseRequestMappingAnnotations()" classname="de.tum.cit.aet.artemis.communication.architecture.CommunicationResourceArchitectureTest" time="0.513"/>
+  <system-out><![CDATA[
+Starting logs for CommunicationResourceArchitectureTest
+
+  Starting logs for CommunicationResourceArchitectureTest > testNoOverrideOfEnforceAdmin()
+
+  Starting logs for CommunicationResourceArchitectureTest > testUseKebabCaseForRestEndpoints()
+
+  Starting logs for CommunicationResourceArchitectureTest > allPublicMethodsShouldReturnResponseEntity()
+
+  Starting logs for CommunicationResourceArchitectureTest > testClassWithEnforceAdminInCorrectlyNamed()
+
+  Starting logs for CommunicationResourceArchitectureTest > shouldBeNamedResource()
+
+  Starting logs for CommunicationResourceArchitectureTest > shouldBeInResourcePackage()
+
+  Starting logs for CommunicationResourceArchitectureTest > shouldCorrectlyUseRequestMappingAnnotations()
+
+Finished logs for CommunicationResourceArchitectureTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

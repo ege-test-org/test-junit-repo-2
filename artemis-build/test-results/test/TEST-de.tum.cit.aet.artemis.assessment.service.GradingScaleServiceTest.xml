@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" tests="26" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:51" hostname="fv-az1721-502" time="0.68">
+  <properties/>
+  <testcase name="testMatchPercentageToGradeStepValidMappingExists()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.034"/>
+  <testcase name="testGradeStepMatchingForRoundingErrors1()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.014"/>
+  <testcase name="testGradeStepMatchingForRoundingErrors2()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.026"/>
+  <testcase name="testGradeStepMatchingForRoundingErrors3()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.024"/>
+  <testcase name="testGradeStepMatchingForRoundingErrors4()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.014"/>
+  <testcase name="testGradeStepMatchingForRoundingErrors5()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.016"/>
+  <testcase name="testGradeStepMatchingForRoundingErrors6()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.012"/>
+  <testcase name="testGradeStepMatchingForRoundingErrors7()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.013"/>
+  <testcase name="testGradeStepMatchingForRoundingErrors8()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.013"/>
+  <testcase name="testGradeStepMatchingForRoundingErrors9()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.014"/>
+  <testcase name="testGetGradingScaleForCourseIfMultipleScalesAreSaved()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.017"/>
+  <testcase name="testMatchPercentageToGradeStepNoValidMapping()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.016"/>
+  <testcase name="testGradeStepMatchingForRoundingErrors10()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.014"/>
+  <testcase name="testGradeStepMatchingForRoundingErrors11()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.02"/>
+  <testcase name="testGradeStepMatchingForRoundingErrors12()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.019"/>
+  <testcase name="testMatchPercentageToGradeStepWithBonusPoints(double) [1] bonusPercentage=125.0" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.013"/>
+  <testcase name="testMatchPercentageToGradeStepWithBonusPoints(double) [2] bonusPercentage=160.0" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.012"/>
+  <testcase name="testSaveGradingScaleInvalidGradeStepSet()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.009"/>
+  <testcase name="testGetGradingScaleForExamIfMultipleScalesAreSaved()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.011"/>
+  <testcase name="testSaveGradingScaleValidGradeStepSet()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.018"/>
+  <testcase name="testMatchPercentageToGradeStepInvalidPercentage(double) [1] invalidPercentage=-60.0" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.011"/>
+  <testcase name="testMatchPercentageToGradeStepInvalidPercentage(double) [2] invalidPercentage=-1.3" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.008"/>
+  <testcase name="testMatchPercentageToGradeStepInvalidPercentage(double) [3] invalidPercentage=-2.0E-4" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.009"/>
+  <testcase name="testSaveGradingScaleInvalidGradeStepsInvalidPercentageValues()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.021"/>
+  <testcase name="testSaveGradingScaleInvalidGradeStepsNoGradeName()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.015"/>
+  <testcase name="testGradeMappingWithRealExamResults()" classname="de.tum.cit.aet.artemis.assessment.service.GradingScaleServiceTest" time="0.241"/>
+  <system-out><![CDATA[
+Starting logs for GradingScaleServiceTest
+
+  Starting logs for GradingScaleServiceTest > testMatchPercentageToGradeStepValidMappingExists()
+    23:42:51.597 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testMatchPercentageToGradeStepValidMappingExists'
+
+  Starting logs for GradingScaleServiceTest > testGradeStepMatchingForRoundingErrors1()
+    23:42:51.619 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testGradeStepMatchingForRoundingErrors1'
+
+  Starting logs for GradingScaleServiceTest > testGradeStepMatchingForRoundingErrors2()
+    23:42:51.640 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testGradeStepMatchingForRoundingErrors2'
+
+  Starting logs for GradingScaleServiceTest > testGradeStepMatchingForRoundingErrors3()
+    23:42:51.675 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testGradeStepMatchingForRoundingErrors3'
+
+  Starting logs for GradingScaleServiceTest > testGradeStepMatchingForRoundingErrors4()
+    23:42:51.693 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testGradeStepMatchingForRoundingErrors4'
+
+  Starting logs for GradingScaleServiceTest > testGradeStepMatchingForRoundingErrors5()
+    23:42:51.709 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testGradeStepMatchingForRoundingErrors5'
+
+  Starting logs for GradingScaleServiceTest > testGradeStepMatchingForRoundingErrors6()
+    23:42:51.724 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testGradeStepMatchingForRoundingErrors6'
+
+  Starting logs for GradingScaleServiceTest > testGradeStepMatchingForRoundingErrors7()
+    23:42:51.738 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testGradeStepMatchingForRoundingErrors7'
+
+  Starting logs for GradingScaleServiceTest > testGradeStepMatchingForRoundingErrors8()
+    23:42:51.752 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testGradeStepMatchingForRoundingErrors8'
+
+  Starting logs for GradingScaleServiceTest > testGradeStepMatchingForRoundingErrors9()
+    23:42:51.767 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testGradeStepMatchingForRoundingErrors9'
+
+  Starting logs for GradingScaleServiceTest > testGetGradingScaleForCourseIfMultipleScalesAreSaved()
+    23:42:51.782 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testGetGradingScaleForCourseIfMultipleScalesAreSaved'
+
+  Starting logs for GradingScaleServiceTest > testMatchPercentageToGradeStepNoValidMapping()
+    23:42:51.800 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testMatchPercentageToGradeStepNoValidMapping'
+
+  Starting logs for GradingScaleServiceTest > testGradeStepMatchingForRoundingErrors10()
+    23:42:51.818 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testGradeStepMatchingForRoundingErrors10'
+
+  Starting logs for GradingScaleServiceTest > testGradeStepMatchingForRoundingErrors11()
+    23:42:51.833 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testGradeStepMatchingForRoundingErrors11'
+
+  Starting logs for GradingScaleServiceTest > testGradeStepMatchingForRoundingErrors12()
+    23:42:51.863 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testGradeStepMatchingForRoundingErrors12'
+
+  Starting logs for GradingScaleServiceTest > testMatchPercentageToGradeStepWithBonusPoints(double) [1] bonusPercentage=125.0
+    23:42:51.879 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testMatchPercentageToGradeStepWithBonusPoints'
+
+  Starting logs for GradingScaleServiceTest > testMatchPercentageToGradeStepWithBonusPoints(double) [2] bonusPercentage=160.0
+    23:42:51.892 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testMatchPercentageToGradeStepWithBonusPoints'
+
+  Starting logs for GradingScaleServiceTest > testSaveGradingScaleInvalidGradeStepSet()
+    23:42:51.906 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testSaveGradingScaleInvalidGradeStepSet'
+
+  Starting logs for GradingScaleServiceTest > testGetGradingScaleForExamIfMultipleScalesAreSaved()
+    23:42:51.915 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testGetGradingScaleForExamIfMultipleScalesAreSaved'
+
+  Starting logs for GradingScaleServiceTest > testSaveGradingScaleValidGradeStepSet()
+    23:42:51.928 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testSaveGradingScaleValidGradeStepSet'
+
+  Starting logs for GradingScaleServiceTest > testMatchPercentageToGradeStepInvalidPercentage(double) [1] invalidPercentage=-60.0
+    23:42:51.948 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testMatchPercentageToGradeStepInvalidPercentage'
+
+  Starting logs for GradingScaleServiceTest > testMatchPercentageToGradeStepInvalidPercentage(double) [2] invalidPercentage=-1.3
+    23:42:51.960 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testMatchPercentageToGradeStepInvalidPercentage'
+
+  Starting logs for GradingScaleServiceTest > testMatchPercentageToGradeStepInvalidPercentage(double) [3] invalidPercentage=-2.0E-4
+    23:42:51.969 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testMatchPercentageToGradeStepInvalidPercentage'
+
+  Starting logs for GradingScaleServiceTest > testSaveGradingScaleInvalidGradeStepsInvalidPercentageValues()
+    23:42:51.982 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testSaveGradingScaleInvalidGradeStepsInvalidPercentageValues'
+
+  Starting logs for GradingScaleServiceTest > testSaveGradingScaleInvalidGradeStepsNoGradeName()
+    23:42:52.006 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testSaveGradingScaleInvalidGradeStepsNoGradeName'
+
+  Starting logs for GradingScaleServiceTest > testGradeMappingWithRealExamResults()
+    23:42:52.021 |  49 Pool-1-worker-23 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='GradingScaleServiceTest#testGradeMappingWithRealExamResults'
+
+Finished logs for GradingScaleServiceTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

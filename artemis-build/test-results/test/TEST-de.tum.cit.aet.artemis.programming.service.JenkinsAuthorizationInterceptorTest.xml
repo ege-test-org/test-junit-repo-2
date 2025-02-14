@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.programming.service.JenkinsAuthorizationInterceptorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:49:20" hostname="fv-az1721-502" time="0.413">
+  <properties/>
+  <testcase name="testAuthorizationInterceptorCrumbException()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsAuthorizationInterceptorTest" time="0.393"/>
+  <testcase name="testAuthorizationInterceptorCrumbNotSet()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsAuthorizationInterceptorTest" time="0.008"/>
+  <testcase name="testAuthorizationInterceptorSetCrumbCorrectly()" classname="de.tum.cit.aet.artemis.programming.service.JenkinsAuthorizationInterceptorTest" time="0.008"/>
+  <system-out><![CDATA[
+Starting logs for JenkinsAuthorizationInterceptorTest
+
+  Starting logs for JenkinsAuthorizationInterceptorTest > testAuthorizationInterceptorCrumbException()
+    23:49:20.329 | 487 ool-1-worker-251 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsAuthorizationInterceptorTest#testAuthorizationInterceptorCrumbException'
+    23:49:20.710 | 487 ool-1-worker-251 | ERROR | .s.j.JenkinsAuthorizationInterceptor : Cannot get Jenkins crumb from crumb issuer: 404 Not Found on GET request for "https://continuous-integration.fake.fake/crumbIssuer/api/json": [no body]
+
+  Starting logs for JenkinsAuthorizationInterceptorTest > testAuthorizationInterceptorCrumbNotSet()
+    23:49:20.722 | 487 ool-1-worker-251 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsAuthorizationInterceptorTest#testAuthorizationInterceptorCrumbNotSet'
+
+  Starting logs for JenkinsAuthorizationInterceptorTest > testAuthorizationInterceptorSetCrumbCorrectly()
+    23:49:20.731 | 487 ool-1-worker-251 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:736625c0-cf5e-400d-aeaa-8a7eabd6262b;USER=sa', scope='JenkinsAuthorizationInterceptorTest#testAuthorizationInterceptorSetCrumbCorrectly'
+
+Finished logs for JenkinsAuthorizationInterceptorTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

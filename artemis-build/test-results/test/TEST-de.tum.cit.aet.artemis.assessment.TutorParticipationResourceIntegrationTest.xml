@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.assessment.TutorParticipationResourceIntegrationTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:42:48" hostname="fv-az1721-502" time="0.619">
+  <properties/>
+  <testcase name="testRemoveTutorParticipationForGuidedTour()" classname="de.tum.cit.aet.artemis.assessment.TutorParticipationResourceIntegrationTest" time="0.29"/>
+  <testcase name="testRemoveTutorParticipationForGuidedTour_forbidden()" classname="de.tum.cit.aet.artemis.assessment.TutorParticipationResourceIntegrationTest" time="0.154"/>
+  <testcase name="testRemoveTutorParticipationForGuidedTour_noMatchingExercise()" classname="de.tum.cit.aet.artemis.assessment.TutorParticipationResourceIntegrationTest" time="0.17"/>
+  <system-out><![CDATA[
+Starting logs for TutorParticipationResourceIntegrationTest
+
+  Starting logs for TutorParticipationResourceIntegrationTest > testRemoveTutorParticipationForGuidedTour()
+    23:42:48.175 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:48.181 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 5 tutors...
+    23:42:48.187 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 tutors generated. Generate 0 editors...
+    23:42:48.189 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:48.194 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:48.195 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses...
+    23:42:48.195 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 1 users from all courses. Done
+    23:42:48.195 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:42:48.204 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:42:48.336 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 311 and participant 54 (result to be deleted: null)
+    23:42:48.336 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 311 and participant 54 at 2025-02-14T23:42:48.536938722Z[Etc/UTC].
+    23:42:48.337 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 311 and participant 54 (result to be deleted: null)
+    23:42:48.337 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 311 and participant 54 at 2025-02-14T23:42:48.537499558Z[Etc/UTC].
+    23:42:48.337 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 312 and participant 54 (result to be deleted: null)
+    23:42:48.337 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 312 and participant 54 at 2025-02-14T23:42:48.537988710Z[Etc/UTC].
+    23:42:48.338 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 314 and participant 54 (result to be deleted: null)
+    23:42:48.338 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 314 and participant 54 at 2025-02-14T23:42:48.538487390Z[Etc/UTC].
+    23:42:48.338 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 314 and participant 54 (result to be deleted: null)
+    23:42:48.338 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 314 and participant 54 at 2025-02-14T23:42:48.538969459Z[Etc/UTC].
+    23:42:48.349 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 311 and participant 54 (result to be deleted: null)
+    23:42:48.349 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 311 and participant 54 at 2025-02-14T23:42:48.549931462Z[Etc/UTC].
+    23:42:48.361 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 311 and participant 54 (result to be deleted: null)
+    23:42:48.361 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 311 and participant 54 at 2025-02-14T23:42:48.561301395Z[Etc/UTC].
+    23:42:48.380 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 312 and participant 54 (result to be deleted: null)
+    23:42:48.381 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 312 and participant 54 at 2025-02-14T23:42:48.581020358Z[Etc/UTC].
+    23:42:48.392 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 314 and participant 54 (result to be deleted: null)
+    23:42:48.392 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 314 and participant 54 at 2025-02-14T23:42:48.592866059Z[Etc/UTC].
+    23:42:48.406 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 314 and participant 54 (result to be deleted: null)
+    23:42:48.406 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 314 and participant 54 at 2025-02-14T23:42:48.606805354Z[Etc/UTC].
+    23:42:48.407 |  45 Pool-1-worker-19 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorParticipationResourceIntegrationTest#testRemoveTutorParticipationForGuidedTour'
+    23:42:48.425 |  45 Pool-1-worker-19 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '311' from title cache 'exerciseTitle'
+    23:42:48.427 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/guided-tour/exercises/311/example-submission
+    23:42:48.427 |  45 Pool-1-worker-19 | DEBUG | c.a.a.a.w.TutorParticipationResource : REST request to remove tutor participation of the example submission for exercise id : 311
+
+  Starting logs for TutorParticipationResourceIntegrationTest > testRemoveTutorParticipationForGuidedTour_forbidden()
+    23:42:48.456 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:48.459 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 5 tutors...
+    23:42:48.466 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 tutors generated. Generate 0 editors...
+    23:42:48.468 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:48.471 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:48.472 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:42:48.473 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:42:48.473 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:42:48.488 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:42:48.541 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 316 and participant 54 (result to be deleted: null)
+    23:42:48.542 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 316 and participant 54 at 2025-02-14T23:42:48.642036421Z[Etc/UTC].
+    23:42:48.542 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 316 and participant 54 (result to be deleted: null)
+    23:42:48.542 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 316 and participant 54 at 2025-02-14T23:42:48.642653622Z[Etc/UTC].
+    23:42:48.543 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 317 and participant 54 (result to be deleted: null)
+    23:42:48.543 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 317 and participant 54 at 2025-02-14T23:42:48.643179252Z[Etc/UTC].
+    23:42:48.543 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 319 and participant 54 (result to be deleted: null)
+    23:42:48.543 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 319 and participant 54 at 2025-02-14T23:42:48.643676649Z[Etc/UTC].
+    23:42:48.544 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 319 and participant 54 (result to be deleted: null)
+    23:42:48.544 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 319 and participant 54 at 2025-02-14T23:42:48.644204253Z[Etc/UTC].
+    23:42:48.548 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 316 and participant 54 (result to be deleted: null)
+    23:42:48.548 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 316 and participant 54 at 2025-02-14T23:42:48.648777742Z[Etc/UTC].
+    23:42:48.553 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 316 and participant 54 (result to be deleted: null)
+    23:42:48.553 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 316 and participant 54 at 2025-02-14T23:42:48.653419779Z[Etc/UTC].
+    23:42:48.558 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 317 and participant 54 (result to be deleted: null)
+    23:42:48.558 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 317 and participant 54 at 2025-02-14T23:42:48.658890060Z[Etc/UTC].
+    23:42:48.565 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 319 and participant 54 (result to be deleted: null)
+    23:42:48.565 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 319 and participant 54 at 2025-02-14T23:42:48.665320282Z[Etc/UTC].
+    23:42:48.570 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 319 and participant 54 (result to be deleted: null)
+    23:42:48.570 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 319 and participant 54 at 2025-02-14T23:42:48.670805692Z[Etc/UTC].
+    23:42:48.571 |  45 Pool-1-worker-19 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorParticipationResourceIntegrationTest#testRemoveTutorParticipationForGuidedTour_forbidden'
+    23:42:48.573 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/guided-tour/exercises/316/example-submission
+    23:42:48.573 |  45 Pool-1-worker-19 | DEBUG | c.a.a.a.w.TutorParticipationResource : REST request to remove tutor participation of the example submission for exercise id : 316
+    23:42:48.576 |  45 Pool-1-worker-19 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Not allowed! This exercise is not part of a tutorial
+    23:42:48.584 |  45 Pool-1-worker-19 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '316' from title cache 'exerciseTitle'
+    23:42:48.585 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/guided-tour/exercises/316/example-submission
+    23:42:48.586 |  45 Pool-1-worker-19 | DEBUG | c.a.a.a.w.TutorParticipationResource : REST request to remove tutor participation of the example submission for exercise id : 316
+
+  Starting logs for TutorParticipationResourceIntegrationTest > testRemoveTutorParticipationForGuidedTour_noMatchingExercise()
+    23:42:48.614 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    23:42:48.619 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 5 tutors...
+    23:42:48.633 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 5 tutors generated. Generate 0 editors...
+    23:42:48.634 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    23:42:48.640 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    23:42:48.641 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses...
+    23:42:48.645 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 7 users from all courses. Done
+    23:42:48.645 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database...
+    23:42:48.659 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 7 users to database. Done
+    23:42:48.715 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 321 and participant 54 (result to be deleted: null)
+    23:42:48.715 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 321 and participant 54 at 2025-02-14T23:42:48.915455383Z[Etc/UTC].
+    23:42:48.715 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 321 and participant 54 (result to be deleted: null)
+    23:42:48.716 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 321 and participant 54 at 2025-02-14T23:42:48.916001652Z[Etc/UTC].
+    23:42:48.716 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 322 and participant 54 (result to be deleted: null)
+    23:42:48.716 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 322 and participant 54 at 2025-02-14T23:42:48.916550365Z[Etc/UTC].
+    23:42:48.717 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 324 and participant 54 (result to be deleted: null)
+    23:42:48.717 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 324 and participant 54 at 2025-02-14T23:42:48.917055768Z[Etc/UTC].
+    23:42:48.717 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 324 and participant 54 (result to be deleted: null)
+    23:42:48.717 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 324 and participant 54 at 2025-02-14T23:42:48.917563014Z[Etc/UTC].
+    23:42:48.723 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 321 and participant 54 (result to be deleted: null)
+    23:42:48.723 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 321 and participant 54 at 2025-02-14T23:42:48.923471592Z[Etc/UTC].
+    23:42:48.730 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 321 and participant 54 (result to be deleted: null)
+    23:42:48.730 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 321 and participant 54 at 2025-02-14T23:42:48.930447391Z[Etc/UTC].
+    23:42:48.736 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 322 and participant 54 (result to be deleted: null)
+    23:42:48.736 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 322 and participant 54 at 2025-02-14T23:42:48.936297651Z[Etc/UTC].
+    23:42:48.741 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 324 and participant 54 (result to be deleted: null)
+    23:42:48.741 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 324 and participant 54 at 2025-02-14T23:42:48.941455459Z[Etc/UTC].
+    23:42:48.746 |  45 Pool-1-worker-19 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 324 and participant 54 (result to be deleted: null)
+    23:42:48.746 |  45 Pool-1-worker-19 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 324 and participant 54 at 2025-02-14T23:42:48.946273224Z[Etc/UTC].
+    23:42:48.746 |  45 Pool-1-worker-19 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:df70fc46-7e57-4cb5-9cd0-c1d90c14afa7;USER=sa', scope='TutorParticipationResourceIntegrationTest#testRemoveTutorParticipationForGuidedTour_noMatchingExercise'
+    23:42:48.753 |  45 Pool-1-worker-19 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '321' from title cache 'exerciseTitle'
+    23:42:48.755 |  45 Pool-1-worker-19 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/guided-tour/exercises/321/example-submission
+    23:42:48.755 |  45 Pool-1-worker-19 | DEBUG | c.a.a.a.w.TutorParticipationResource : REST request to remove tutor participation of the example submission for exercise id : 321
+
+Finished logs for TutorParticipationResourceIntegrationTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

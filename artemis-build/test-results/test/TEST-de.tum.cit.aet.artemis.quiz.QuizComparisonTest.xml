@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="de.tum.cit.aet.artemis.quiz.QuizComparisonTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:46:15" hostname="fv-az1721-502" time="0.017">
+  <properties/>
+  <testcase name="testCompareSubmissionsOfDifferentQuestionTypeSameId()" classname="de.tum.cit.aet.artemis.quiz.QuizComparisonTest" time="0.002"/>
+  <testcase name="testCompareSubmissionsWithEmptySubmission()" classname="de.tum.cit.aet.artemis.quiz.QuizComparisonTest" time="0.0"/>
+  <testcase name="compareQuizSubmittedAnswersWithRemovedAnswers()" classname="de.tum.cit.aet.artemis.quiz.QuizComparisonTest" time="0.002"/>
+  <testcase name="simpleCompareDnDMapping()" classname="de.tum.cit.aet.artemis.quiz.QuizComparisonTest" time="0.0"/>
+  <testcase name="compareCourseQuizSubmittedAnswers()" classname="de.tum.cit.aet.artemis.quiz.QuizComparisonTest" time="0.001"/>
+  <testcase name="testCompareSubmissionsWithNullQuestionAndIds()" classname="de.tum.cit.aet.artemis.quiz.QuizComparisonTest" time="0.004"/>
+  <testcase name="simpleCompareSAMapping()" classname="de.tum.cit.aet.artemis.quiz.QuizComparisonTest" time="0.0"/>
+  <testcase name="compareQuizSubmittedAnswersWithChangedAnswers()" classname="de.tum.cit.aet.artemis.quiz.QuizComparisonTest" time="0.001"/>
+  <testcase name="compareQuizSubmittedAnswersWithAddedAnswers()" classname="de.tum.cit.aet.artemis.quiz.QuizComparisonTest" time="0.001"/>
+  <testcase name="compareExamQuizSubmittedAnswers()" classname="de.tum.cit.aet.artemis.quiz.QuizComparisonTest" time="0.001"/>
+  <testcase name="compareQuizSubmissionWithNull()" classname="de.tum.cit.aet.artemis.quiz.QuizComparisonTest" time="0.0"/>
+  <system-out><![CDATA[
+Starting logs for QuizComparisonTest
+
+  Starting logs for QuizComparisonTest > testCompareSubmissionsOfDifferentQuestionTypeSameId()
+    23:46:15.982 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.e.s.StudentExamService     : Cannot compare MultipleChoiceSubmittedAnswer{id=null} and DragAndDropSubmittedAnswer{id=null} for equality, classes unknown
+    23:46:15.982 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.e.s.StudentExamService     : Cannot compare MultipleChoiceSubmittedAnswer{id=null} and ShortAnswerSubmittedAnswer{id=null} for equality, classes unknown
+    23:46:15.982 |  27 nPool-1-worker-1 | ERROR | d.t.c.a.a.e.s.StudentExamService     : Cannot compare ShortAnswerSubmittedAnswer{id=null} and DragAndDropSubmittedAnswer{id=null} for equality, classes unknown
+
+  Starting logs for QuizComparisonTest > testCompareSubmissionsWithEmptySubmission()
+
+  Starting logs for QuizComparisonTest > compareQuizSubmittedAnswersWithRemovedAnswers()
+
+  Starting logs for QuizComparisonTest > simpleCompareDnDMapping()
+
+  Starting logs for QuizComparisonTest > compareCourseQuizSubmittedAnswers()
+
+  Starting logs for QuizComparisonTest > testCompareSubmissionsWithNullQuestionAndIds()
+
+  Starting logs for QuizComparisonTest > simpleCompareSAMapping()
+
+  Starting logs for QuizComparisonTest > compareQuizSubmittedAnswersWithChangedAnswers()
+
+  Starting logs for QuizComparisonTest > compareQuizSubmittedAnswersWithAddedAnswers()
+
+  Starting logs for QuizComparisonTest > compareExamQuizSubmittedAnswers()
+
+  Starting logs for QuizComparisonTest > compareQuizSubmissionWithNull()
+
+Finished logs for QuizComparisonTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
