@@ -1,93 +1,187 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:41:48" hostname="fv-az1721-502" time="10.717">
+<testsuite name="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" tests="8" skipped="0" failures="1" errors="0" timestamp="2025-02-15T00:04:48" hostname="fv-az1787-403" time="11.813">
   <properties/>
-  <testcase name="getCourseScores_asInstructorOfCourseWithGradedPresentations_shouldReturnCourseScores()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="3.916"/>
-  <testcase name="getExamScores_asInstructorOfCourse_shouldReturnExamScores()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="1.007"/>
-  <testcase name="deleteCourse_asAdmin_shouldDeleteExercise()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="1.778"/>
-  <testcase name="deleteParticipation_asInstructorOfCourse_shouldDeleteParticipation()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="1.206"/>
-  <testcase name="testAll_asTutor()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="0.716"/>
-  <testcase name="testAll_asStudent()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="0.633"/>
-  <testcase name="deleteExercise_asInstructorOfCourse_shouldDeleteExercise()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="0.729"/>
-  <testcase name="getCourseScores_asInstructorOfCourse_shouldReturnCourseScores()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="0.688"/>
-  <system-out><![CDATA[
+  <testcase name="getCourseScores_asInstructorOfCourseWithGradedPresentations_shouldReturnCourseScores()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="4.52">
+    <failure message="org.opentest4j.AssertionFailedError: &#10;expected: 19.0&#10; but was: 15.0" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
+expected: 19.0
+ but was: 15.0
+	at app//de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest.getCourseScores_asInstructorOfCourseWithGradedPresentations_shouldReturnCourseScores(ParticipantScoreIntegrationTest.java:235)
+	at java.base@21.0.6/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base@21.0.6/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
+	at java.base@21.0.6/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
+	at java.base@21.0.6/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
+	at java.base@21.0.6/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
+	at java.base@21.0.6/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
+</failure>
+  </testcase>
+  <testcase name="getExamScores_asInstructorOfCourse_shouldReturnExamScores()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="1.164"/>
+  <testcase name="deleteCourse_asAdmin_shouldDeleteExercise()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="1.71"/>
+  <testcase name="deleteParticipation_asInstructorOfCourse_shouldDeleteParticipation()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="1.314"/>
+  <testcase name="testAll_asTutor()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="0.78"/>
+  <testcase name="testAll_asStudent()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="0.707"/>
+  <testcase name="deleteExercise_asInstructorOfCourse_shouldDeleteExercise()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="0.783"/>
+  <testcase name="getCourseScores_asInstructorOfCourse_shouldReturnCourseScores()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="0.781"/>
+  <system-out><![CDATA[00:01:43,931 |-INFO in ch.qos.logback.classic.LoggerContext[default] - This is logback-classic version 1.5.16
+00:01:43,933 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6311931a - Here is a list of configurators discovered as a service, by rank: 
+00:01:43,933 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6311931a -   org.springframework.boot.logging.logback.RootLogLevelConfigurator
+00:01:43,933 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6311931a - They will be invoked in order until ExecutionStatus.DO_NOT_INVOKE_NEXT_IF_ANY is returned.
+00:01:43,933 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6311931a - Constructed configurator of type class org.springframework.boot.logging.logback.RootLogLevelConfigurator
+00:01:43,939 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6311931a - org.springframework.boot.logging.logback.RootLogLevelConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+00:01:43,939 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6311931a - Trying to configure with ch.qos.logback.classic.joran.SerializedModelConfigurator
+00:01:43,941 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6311931a - Constructed configurator of type class ch.qos.logback.classic.joran.SerializedModelConfigurator
+00:01:43,941 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.scmo]
+00:01:43,942 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.scmo]
+00:01:43,942 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6311931a - ch.qos.logback.classic.joran.SerializedModelConfigurator.configure() call lasted 1 milliseconds. ExecutionStatus=INVOKE_NEXT_IF_ANY
+00:01:43,942 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6311931a - Trying to configure with ch.qos.logback.classic.util.DefaultJoranConfigurator
+00:01:43,942 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6311931a - Constructed configurator of type class ch.qos.logback.classic.util.DefaultJoranConfigurator
+00:01:43,943 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback-test.xml]
+00:01:43,945 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Found resource [logback.xml] at [file:/home/runner/work/Artemis/Artemis/build/resources/test/logback.xml]
+00:01:44,019 |-WARN in ch.qos.logback.core.joran.action.ConversionRuleAction - [converterClass] attribute is deprecated and replaced by [class]. See element [conversionRule] near line 7
+00:01:44,076 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@55a80090 - Adding [jar:file:/home/runner/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/3.4.2/b2514201ba6b838bd638a51619515501c5baefea/spring-boot-3.4.2.jar!/org/springframework/boot/logging/logback/defaults.xml] to configuration watch list.
+00:01:44,076 |-INFO in ConfigurationWatchList(mainURL=file:/home/runner/work/Artemis/Artemis/build/resources/test/logback.xml, fileWatchList={/home/runner/work/Artemis/Artemis/build/resources/test/logback.xml}, urlWatchList=[}) - Cannot watch [jar:file:/home/runner/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/3.4.2/b2514201ba6b838bd638a51619515501c5baefea/spring-boot-3.4.2.jar!/org/springframework/boot/logging/logback/defaults.xml] as its protocol is not one of file, http or https.
+00:01:44,082 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word applicationName with class [org.springframework.boot.logging.logback.ApplicationNameConverter]
+00:01:44,083 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word clr with class [org.springframework.boot.logging.logback.ColorConverter]
+00:01:44,083 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word correlationId with class [org.springframework.boot.logging.logback.CorrelationIdConverter]
+00:01:44,083 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word esb with class [org.springframework.boot.logging.logback.EnclosedInSquareBracketsConverter]
+00:01:44,083 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word wex with class [org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter]
+00:01:44,083 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word wEx with class [org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter]
+00:01:44,086 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@46621c41 - value "%clr(%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX}){faint} %clr(%5p){} %clr(){magenta} %clr(--- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%15.15t] ){faint}%clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx" substituted for "${CONSOLE_LOG_PATTERN:-%clr(%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd'T'HH:mm:ss.SSSXXX}}){faint} %clr(${LOG_LEVEL_PATTERN:-%5p}){} %clr(${PID:-}){magenta} %clr(--- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%15.15t] ${LOG_CORRELATION_PATTERN:-}){faint}%clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"
+00:01:44,086 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@46621c41 - value "UTF-8" substituted for "${CONSOLE_LOG_CHARSET:-${file.encoding:-UTF-8}}"
+00:01:44,086 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@46621c41 - value "TRACE" substituted for "${CONSOLE_LOG_THRESHOLD:-TRACE}"
+00:01:44,086 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@46621c41 - value "" substituted for "${CONSOLE_LOG_STRUCTURED_FORMAT:-}"
+00:01:44,087 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@46621c41 - value "%d{yyyy-MM-dd'T'HH:mm:ss.SSSXXX} %5p  --- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%t] %-40.40logger{39} : %m%n%wEx" substituted for "${FILE_LOG_PATTERN:-%d{${LOG_DATEFORMAT_PATTERN:-yyyy-MM-dd'T'HH:mm:ss.SSSXXX}} ${LOG_LEVEL_PATTERN:-%5p} ${PID:-} --- %esb(){APPLICATION_NAME}%esb{APPLICATION_GROUP}[%t] ${LOG_CORRELATION_PATTERN:-}%-40.40logger{39} : %m%n${LOG_EXCEPTION_CONVERSION_WORD:-%wEx}}"
+00:01:44,087 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@46621c41 - value "UTF-8" substituted for "${FILE_LOG_CHARSET:-${file.encoding:-UTF-8}}"
+00:01:44,087 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@46621c41 - value "TRACE" substituted for "${FILE_LOG_THRESHOLD:-TRACE}"
+00:01:44,087 |-INFO in ch.qos.logback.core.model.processor.ModelInterpretationContext@46621c41 - value "" substituted for "${FILE_LOG_STRUCTURED_FORMAT:-}"
+00:01:44,087 |-INFO in ch.qos.logback.core.model.processor.ConversionRuleModelHandler - registering conversion word threadId with class [de.tum.cit.aet.artemis.core.util.junit_parallel_logging.ThreadIdConverter]
+00:01:44,091 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Registering a new ReconfigureOnChangeTask ReconfigureOnChangeTask(born:1739577704090)
+00:01:44,091 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - No 'scanPeriod' specified. Defaulting to 1 minutes
+00:01:44,094 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Will scan for changes in [ConfigurationWatchList(mainURL=file:/home/runner/work/Artemis/Artemis/build/resources/test/logback.xml, fileWatchList={/home/runner/work/Artemis/Artemis/build/resources/test/logback.xml}, urlWatchList=[})] 
+00:01:44,094 |-INFO in ch.qos.logback.classic.model.processor.ConfigurationModelHandlerFull - Setting ReconfigureOnChangeTask scanning period to 1 minutes
+00:01:44,098 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to ERROR
+00:01:44,098 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.util.LifecycleBase] to ERROR
+00:01:44,098 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.coyote.http11.Http11NioProtocol] to WARN
+00:01:44,098 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.sshd.common.util.SecurityUtils] to WARN
+00:01:44,098 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.tomcat.util.net.NioSelectorPool] to WARN
+00:01:44,098 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.eclipse.jetty.util.component.AbstractLifeCycle] to ERROR
+00:01:44,098 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.validator.internal.util.Version] to WARN
+00:01:44,098 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.boot.actuate.endpoint.jmx] to WARN
+00:01:44,098 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - Processing appender named [ParallelConsoleAppender]
+00:01:44,098 |-INFO in ch.qos.logback.core.model.processor.AppenderModelHandler - About to instantiate appender of type [de.tum.cit.aet.artemis.core.util.junit_parallel_logging.ParallelConsoleAppender]
+00:01:44,106 |-INFO in ch.qos.logback.core.model.processor.ImplicitModelHandler - Assuming default type [ch.qos.logback.classic.encoder.PatternLayoutEncoder] for [encoder] property
+00:01:44,152 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [de.tum.cit.aet.artemis] to INFO
+00:01:44,152 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [tech.jhipster] to WARN
+00:01:44,152 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [javax.activation] to WARN
+00:01:44,152 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [javax.mail] to WARN
+00:01:44,152 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [javax.xml.bind] to WARN
+00:01:44,152 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [ch.qos.logback] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.codahale.metrics] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.ryantenney] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.sun] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.zaxxer] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [com.github.dockerjava] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.apache.catalina.startup.DigesterFactory] to OFF
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.bson] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.validator] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.hibernate.ejb.HibernatePersistence] to OFF
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.web] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.security] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.springframework.cache] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.thymeleaf] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [org.xnio] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [springfox] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [sun.rmi] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [liquibase] to WARN
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [LiquibaseSchemaResolver] to INFO
+00:01:44,153 |-INFO in ch.qos.logback.classic.model.processor.LoggerModelHandler - Setting level of logger [sun.rmi.transport] to WARN
+00:01:44,154 |-INFO in ch.qos.logback.classic.model.processor.RootLoggerModelHandler - Setting level of ROOT logger to WARN
+00:01:44,154 |-INFO in ch.qos.logback.core.model.processor.AppenderRefModelHandler - Attaching appender named [ParallelConsoleAppender] to Logger[ROOT]
+00:01:44,155 |-INFO in ch.qos.logback.core.model.processor.DefaultProcessor@70f7325e - End of configuration.
+00:01:44,156 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@1f11f619 - Registering current configuration as safe fallback point
+00:01:44,156 |-INFO in ch.qos.logback.classic.util.ContextInitializer@6311931a - ch.qos.logback.classic.util.DefaultJoranConfigurator.configure() call lasted 214 milliseconds. ExecutionStatus=DO_NOT_INVOKE_NEXT_IF_ANY
+
+
 Starting logs for ParticipantScoreIntegrationTest
-    23:40:52.355 |  37 Pool-1-worker-11 | INFO  | .a.a.ParticipantScoreIntegrationTest : Starting ParticipantScoreIntegrationTest using Java 21.0.6 with PID 2037 (started by runner in /home/runner/work/Artemis/Artemis)
-    23:40:52.355 |  37 Pool-1-worker-11 | DEBUG | .a.a.ParticipantScoreIntegrationTest : Running with Spring Boot v3.4.2, Spring v6.2.2
-    23:40:52.355 |  37 Pool-1-worker-11 | INFO  | .a.a.ParticipantScoreIntegrationTest : The following 11 profiles are active: "test", "artemis", "buildagent", "core", "scheduling", "localci", "localvc", "ldap-only", "lti", "aeolus", "iris"
-    23:40:53.374 |  37 Pool-1-worker-11 | INFO  | ddedDatabaseContextCustomizerFactory : Replacing 'dataSource' DataSource bean with embedded version
-    23:40:53.547 |  37 Pool-1-worker-11 | WARN  | ionDelegate$BeanPostProcessorChecker : Bean 'io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration' of type [io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [flywayPropertiesPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
-    23:40:53.787 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.jwt.TokenProvider      : Using a Base64-encoded JWT secret key
-    23:40:54.381 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.core.config.WebConfigurer  : Registering CORS filter
-    23:40:54.440 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.c.CacheConfiguration     : Configuring Hazelcast
-    23:40:54.440 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.c.c.CacheConfiguration     : No discovery service is set up, Hazelcast cannot create a multi-node cluster.
-    23:40:54.440 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.c.CacheConfiguration     : Binding Hazelcast to interface 127.0.0.1
-    23:40:54.440 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.c.CacheConfiguration     : Configure Build Job Queue synchronization in Hazelcast for Local CI
-    23:40:54.442 |  37 Pool-1-worker-11 | INFO  | c.hazelcast.instance.AddressPicker   : [LOCAL] [dev] [5.5.0] Using public address: [127.0.0.1]:5703
-    23:40:54.443 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.system.logo            : [127.0.0.1]:5703 [dev] [5.5.0] 
+    00:03:53.984 |  37 Pool-1-worker-11 | INFO  | .a.a.ParticipantScoreIntegrationTest : Starting ParticipantScoreIntegrationTest using Java 21.0.6 with PID 2126 (started by runner in /home/runner/work/Artemis/Artemis)
+    00:03:53.984 |  37 Pool-1-worker-11 | DEBUG | .a.a.ParticipantScoreIntegrationTest : Running with Spring Boot v3.4.2, Spring v6.2.2
+    00:03:53.984 |  37 Pool-1-worker-11 | INFO  | .a.a.ParticipantScoreIntegrationTest : The following 11 profiles are active: "test", "artemis", "buildagent", "core", "scheduling", "localci", "localvc", "ldap-only", "lti", "aeolus", "iris"
+    00:03:54.956 |  37 Pool-1-worker-11 | INFO  | ddedDatabaseContextCustomizerFactory : Replacing 'dataSource' DataSource bean with embedded version
+    00:03:55.126 |  37 Pool-1-worker-11 | WARN  | ionDelegate$BeanPostProcessorChecker : Bean 'io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration' of type [io.zonky.test.db.config.EmbeddedDatabaseAutoConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [flywayPropertiesPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+    00:03:55.345 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.jwt.TokenProvider      : Using a Base64-encoded JWT secret key
+    00:03:55.853 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.core.config.WebConfigurer  : Registering CORS filter
+    00:03:55.938 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.c.CacheConfiguration     : Configuring Hazelcast
+    00:03:55.939 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.c.c.CacheConfiguration     : No discovery service is set up, Hazelcast cannot create a multi-node cluster.
+    00:03:55.939 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.c.CacheConfiguration     : Binding Hazelcast to interface 127.0.0.1
+    00:03:55.939 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.c.CacheConfiguration     : Configure Build Job Queue synchronization in Hazelcast for Local CI
+    00:03:55.940 |  37 Pool-1-worker-11 | INFO  | c.hazelcast.instance.AddressPicker   : [LOCAL] [dev] [5.5.0] Using public address: [127.0.0.1]:5703
+    00:03:55.941 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.system.logo            : [127.0.0.1]:5703 [dev] [5.5.0] 
     o    o     o     o---o   o--o o      o---o     o     o----o o--o--o
     |    |    / \       /         |     /         / \    |         |
     o----o       o     o   o----o |    o             o   o----o    |
     |    |  *     \   /           |     \       *     \       |    |
     o    o *       o o---o   o--o o----o o---o *       o o----o    o
 
-    23:40:54.443 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5703 [dev] [5.5.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
-    23:40:54.443 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5703 [dev] [5.5.0] Hazelcast Platform 5.5.0 (20240725) starting at [127.0.0.1]:5703
-    23:40:54.443 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5703 [dev] [5.5.0] Cluster name: dev
-    23:40:54.443 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5703 [dev] [5.5.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
-    23:40:54.443 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5703 [dev] [5.5.0] The Jet engine is disabled.
+    00:03:55.941 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5703 [dev] [5.5.0] Copyright (c) 2008-2024, Hazelcast, Inc. All Rights Reserved.
+    00:03:55.942 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5703 [dev] [5.5.0] Hazelcast Platform 5.5.0 (20240725) starting at [127.0.0.1]:5703
+    00:03:55.942 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5703 [dev] [5.5.0] Cluster name: dev
+    00:03:55.942 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5703 [dev] [5.5.0] Integrity Checker is disabled. Fail-fast on corrupted executables will not be performed. For more information, see the documentation for Integrity Checker.
+    00:03:55.942 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.system                 : [127.0.0.1]:5703 [dev] [5.5.0] The Jet engine is disabled.
 To enable the Jet engine on the members, do one of the following:
   - Change member config using Java API: config.getJetConfig().setEnabled(true)
   - Change XML/YAML configuration property: Set hazelcast.jet.enabled to true
   - Add system property: -Dhz.jet.enabled=true (for Hazelcast embedded, works only when loading config via Config.load)
   - Add environment variable: HZ_JET_ENABLED=true (recommended when running container image. For Hazelcast embedded, works only when loading config via Config.load)
-    23:40:54.460 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.system.security        : [127.0.0.1]:5703 [dev] [5.5.0] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see ]]>&#x1f512;<![CDATA[ security recommendations and the status of current config.
-    23:40:54.462 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.instance.impl.Node     : [127.0.0.1]:5703 [dev] [5.5.0] Using TCP/IP discovery
-    23:40:54.469 |  37 Pool-1-worker-11 | INFO  | c.h.internal.diagnostics.Diagnostics : [127.0.0.1]:5703 [dev] [5.5.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
-    23:40:54.469 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.core.LifecycleService  : [127.0.0.1]:5703 [dev] [5.5.0] [127.0.0.1]:5703 is STARTING
-    23:40:54.472 |  37 Pool-1-worker-11 | INFO  | c.h.internal.cluster.ClusterService  : [127.0.0.1]:5703 [dev] [5.5.0] 
+    00:03:55.959 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.system.security        : [127.0.0.1]:5703 [dev] [5.5.0] Enable DEBUG/FINE log level for log category com.hazelcast.system.security  or use -Dhazelcast.security.recommendations system property to see ]]>&#x1f512;<![CDATA[ security recommendations and the status of current config.
+    00:03:55.960 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.instance.impl.Node     : [127.0.0.1]:5703 [dev] [5.5.0] Using TCP/IP discovery
+    00:03:55.969 |  37 Pool-1-worker-11 | INFO  | c.h.internal.diagnostics.Diagnostics : [127.0.0.1]:5703 [dev] [5.5.0] Diagnostics disabled. To enable add -Dhazelcast.diagnostics.enabled=true to the JVM arguments.
+    00:03:55.969 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.core.LifecycleService  : [127.0.0.1]:5703 [dev] [5.5.0] [127.0.0.1]:5703 is STARTING
+    00:03:55.971 |  37 Pool-1-worker-11 | INFO  | c.h.internal.cluster.ClusterService  : [127.0.0.1]:5703 [dev] [5.5.0] 
 
 Members {size:1, ver:1} [
-	Member [127.0.0.1]:5703 - 5384d802-c9fa-4d07-ab52-3c052463875e this
+	Member [127.0.0.1]:5703 - b007e247-36fb-4f6e-840e-a259dbdb24d7 this
 ]
 
-    23:40:54.472 |  37 Pool-1-worker-11 | WARN  | com.hazelcast.instance.impl.Node     : [127.0.0.1]:5703 [dev] [5.5.0] Config seed port is 5701 and cluster size is 1. Some of the ports seem occupied!
-    23:40:54.472 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.core.LifecycleService  : [127.0.0.1]:5703 [dev] [5.5.0] [127.0.0.1]:5703 is STARTED
-    23:40:54.644 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.c.AsyncConfiguration     : Creating Async Task Executor
-    23:40:54.678 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.c.c.LiquibaseConfiguration : Liquibase is enabled
-    23:40:54.940 |  37 Pool-1-worker-11 | WARN  | org.hibernate.orm.deprecation        : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-    23:40:55.408 |  37 Pool-1-worker-11 | WARN  | o.h.boot.model.internal.EntityBinder : HHH000457: Joined inheritance hierarchy [de.tum.cit.aet.artemis.iris.domain.message.IrisMessageContent] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
-    23:40:56.033 |  37 Pool-1-worker-11 | INFO  | h.h.HazelcastLocalCacheRegionFactory : Starting up HazelcastLocalCacheRegionFactory
-    23:40:56.033 |  37 Pool-1-worker-11 | INFO  | c.h.h.i.IHazelcastInstanceFactory    : Using existing HazelcastInstance [Artemis_localcilocalvc].
-    23:41:01.201 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.c.CacheConfiguration     : Starting HazelcastCacheManager
-    23:41:02.394 |  37 Pool-1-worker-11 | DEBUG | .a.a.c.c.TaskSchedulingConfiguration : Creating Task Scheduler 
-    23:41:03.030 |  37 Pool-1-worker-11 | DEBUG | t.c.a.a.c.c.w.WebsocketConfiguration : Did NOT enable StompBrokerRelay for WebSocket messages
-    23:41:04.233 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : file.encoding=UTF-8
-    23:41:04.233 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : sun.jnu.encoding=UTF-8
-    23:41:04.233 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Default Charset=UTF-8
-    23:41:04.233 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Default Charset in Use=UTF8
-    23:41:04.234 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.p.service.GitService       : GitService will use ssh keys as authentication method to interact with remote git repositories
-    23:41:04.528 |  37 Pool-1-worker-11 | DEBUG | c.c.ProgrammingLanguageConfiguration : Set Docker flags to [DockerFlag[flag=--cpus, value=2], DockerFlag[flag=--memory, value=2g], DockerFlag[flag=--memory-swap, value=2g], DockerFlag[flag=--pids-limit, value=1000]]
-    23:41:04.538 |  37 Pool-1-worker-11 | DEBUG | c.c.ProgrammingLanguageConfiguration : Loaded Docker image configuration: {EMPTY={PLAIN=~~invalid~~}, JAVA={PLAIN=dummy-docker-image}, PYTHON={PLAIN=~~invalid~~}, C={PLAIN=~~invalid~~}, HASKELL={PLAIN=~~invalid~~}, KOTLIN={PLAIN=~~invalid~~}, VHDL={PLAIN=~~invalid~~}, ASSEMBLER={PLAIN=~~invalid~~}, SWIFT={PLAIN=~~invalid~~}, OCAML={PLAIN=~~invalid~~}, JAVASCRIPT={PLAIN=~~invalid~~}, C_SHARP={PLAIN=~~invalid~~}, C_PLUS_PLUS={PLAIN=~~invalid~~}, R={PLAIN=~~invalid~~}, TYPESCRIPT={PLAIN=~~invalid~~}, RUST={PLAIN=~~invalid~~}, GO={PLAIN=~~invalid~~}, MATLAB={PLAIN=~~invalid~~}, BASH={PLAIN=~~invalid~~}, RUBY={PLAIN=~~invalid~~}}
-    23:41:06.507 |  37 Pool-1-worker-11 | INFO  | c.h.i.p.i.PartitionStateManagerImpl  : [127.0.0.1]:5703 [dev] [5.5.0] Initializing cluster partition table arrangement...
-    23:41:08.402 |  37 Pool-1-worker-11 | INFO  | c.a.a.p.s.l.JGitServletConfiguration : Registering ArtemisGitServlet for handling fetch and push requests to [Artemis URL]/git/[Project Key]/[Repository Slug].git
-    23:41:09.128 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.core.config.WebConfigurer  : Web application configuration, using profiles: test
-    23:41:09.128 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.core.config.WebConfigurer  : Web application fully configured
-    23:41:15.069 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.b.BuildAgentConfiguration  : Using build job container docker host config with CPU(s): 2, memory: 2.0 GB, memory swap: 2.0 GB, pids limit: 1000.
-    23:41:15.397 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : file.encoding=UTF-8
-    23:41:15.397 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : sun.jnu.encoding=UTF-8
-    23:41:15.397 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Default Charset=UTF-8
-    23:41:15.397 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Default Charset in Use=UTF8
-    23:41:15.397 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.b.s.BuildJobGitService     : BuildJobGitService will use ssh keys as authentication method to interact with remote git repositories
-    23:41:18.039 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.p.s.l.ssh.SshConfiguration : Started git ssh server on ssh://artemislocal.ase.in.tum.de:7921
-    23:41:18.902 |  37 Pool-1-worker-11 | DEBUG | .c.a.a.c.c.EurekaClientConfiguration : Using RestClient for the Eureka client.
-    23:41:19.884 |  37 Pool-1-worker-11 | WARN  | ation$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
-    23:41:20.098 |  37 Pool-1-worker-11 | INFO  | .a.a.ParticipantScoreIntegrationTest : Started ParticipantScoreIntegrationTest in 27.828 seconds (process running for 163.394)
-    23:41:20.101 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.b.BuildAgentConfiguration  : Using ExecutorService with thread pool size 1.
-    23:41:20.102 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.b.BuildAgentConfiguration  : Create bean dockerClient
-    23:41:20.211 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.b.BuildAgentConfiguration  : Docker client created with connection URI: unix:///var/run/docker.sock
-    23:41:20.212 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.b.s.BuildAgentSshKeyService : Using SSH for build agent authentication.
-    23:41:22.547 | 588 artemis-task-1   | INFO  | t.c.a.a.b.s.BuildJobExecutionService : Cleaning up temporary directories in checked-out-repos
-    23:41:22.548 | 588 artemis-task-1   | ERROR | t.c.a.a.b.s.BuildJobExecutionService : Could not delete temporary directories
+    00:03:55.971 |  37 Pool-1-worker-11 | WARN  | com.hazelcast.instance.impl.Node     : [127.0.0.1]:5703 [dev] [5.5.0] Config seed port is 5701 and cluster size is 1. Some of the ports seem occupied!
+    00:03:55.972 |  37 Pool-1-worker-11 | INFO  | com.hazelcast.core.LifecycleService  : [127.0.0.1]:5703 [dev] [5.5.0] [127.0.0.1]:5703 is STARTED
+    00:03:56.005 | 581 .cached.thread-3 | INFO  | c.h.i.p.i.PartitionStateManagerImpl  : [127.0.0.1]:5703 [dev] [5.5.0] Initializing cluster partition table arrangement...
+    00:03:56.154 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.c.AsyncConfiguration     : Creating Async Task Executor
+    00:03:56.192 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.c.c.LiquibaseConfiguration : Liquibase is enabled
+    00:03:56.452 |  37 Pool-1-worker-11 | WARN  | org.hibernate.orm.deprecation        : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+    00:03:56.888 |  37 Pool-1-worker-11 | WARN  | o.h.boot.model.internal.EntityBinder : HHH000457: Joined inheritance hierarchy [de.tum.cit.aet.artemis.iris.domain.message.IrisMessageContent] defined explicit @DiscriminatorColumn.  Legacy Hibernate behavior was to ignore the @DiscriminatorColumn.  However, as part of issue HHH-6911 we now apply the explicit @DiscriminatorColumn.  If you would prefer the legacy behavior, enable the `hibernate.discriminator.ignore_explicit_for_joined` setting (hibernate.discriminator.ignore_explicit_for_joined=true)
+    00:03:57.611 |  37 Pool-1-worker-11 | INFO  | h.h.HazelcastLocalCacheRegionFactory : Starting up HazelcastLocalCacheRegionFactory
+    00:03:57.612 |  37 Pool-1-worker-11 | INFO  | c.h.h.i.IHazelcastInstanceFactory    : Using existing HazelcastInstance [Artemis_localcilocalvc].
+    00:04:02.288 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.c.CacheConfiguration     : Starting HazelcastCacheManager
+    00:04:03.442 |  37 Pool-1-worker-11 | DEBUG | .a.a.c.c.TaskSchedulingConfiguration : Creating Task Scheduler 
+    00:04:04.067 |  37 Pool-1-worker-11 | DEBUG | t.c.a.a.c.c.w.WebsocketConfiguration : Did NOT enable StompBrokerRelay for WebSocket messages
+    00:04:05.181 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : file.encoding=UTF-8
+    00:04:05.181 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : sun.jnu.encoding=UTF-8
+    00:04:05.181 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Default Charset=UTF-8
+    00:04:05.181 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Default Charset in Use=UTF8
+    00:04:05.183 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.p.service.GitService       : GitService will use ssh keys as authentication method to interact with remote git repositories
+    00:04:05.519 |  37 Pool-1-worker-11 | DEBUG | c.c.ProgrammingLanguageConfiguration : Set Docker flags to [DockerFlag[flag=--cpus, value=2], DockerFlag[flag=--memory, value=2g], DockerFlag[flag=--memory-swap, value=2g], DockerFlag[flag=--pids-limit, value=1000]]
+    00:04:05.526 |  37 Pool-1-worker-11 | DEBUG | c.c.ProgrammingLanguageConfiguration : Loaded Docker image configuration: {EMPTY={PLAIN=~~invalid~~}, JAVA={PLAIN=dummy-docker-image}, PYTHON={PLAIN=~~invalid~~}, C={PLAIN=~~invalid~~}, HASKELL={PLAIN=~~invalid~~}, KOTLIN={PLAIN=~~invalid~~}, VHDL={PLAIN=~~invalid~~}, ASSEMBLER={PLAIN=~~invalid~~}, SWIFT={PLAIN=~~invalid~~}, OCAML={PLAIN=~~invalid~~}, JAVASCRIPT={PLAIN=~~invalid~~}, C_SHARP={PLAIN=~~invalid~~}, C_PLUS_PLUS={PLAIN=~~invalid~~}, R={PLAIN=~~invalid~~}, TYPESCRIPT={PLAIN=~~invalid~~}, RUST={PLAIN=~~invalid~~}, GO={PLAIN=~~invalid~~}, MATLAB={PLAIN=~~invalid~~}, BASH={PLAIN=~~invalid~~}, RUBY={PLAIN=~~invalid~~}}
+    00:04:08.924 |  37 Pool-1-worker-11 | INFO  | c.a.a.p.s.l.JGitServletConfiguration : Registering ArtemisGitServlet for handling fetch and push requests to [Artemis URL]/git/[Project Key]/[Repository Slug].git
+    00:04:09.666 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.core.config.WebConfigurer  : Web application configuration, using profiles: test
+    00:04:09.667 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.core.config.WebConfigurer  : Web application fully configured
+    00:04:15.821 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.b.BuildAgentConfiguration  : Using build job container docker host config with CPU(s): 2, memory: 2.0 GB, memory swap: 2.0 GB, pids limit: 1000.
+    00:04:16.017 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : file.encoding=UTF-8
+    00:04:16.017 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : sun.jnu.encoding=UTF-8
+    00:04:16.017 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Default Charset=UTF-8
+    00:04:16.017 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.s.AbstractGitService     : Default Charset in Use=UTF8
+    00:04:16.017 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.b.s.BuildJobGitService     : BuildJobGitService will use ssh keys as authentication method to interact with remote git repositories
+    00:04:18.858 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.p.s.l.ssh.SshConfiguration : Started git ssh server on ssh://artemislocal.ase.in.tum.de:7921
+    00:04:19.873 |  37 Pool-1-worker-11 | DEBUG | .c.a.a.c.c.EurekaClientConfiguration : Using RestClient for the Eureka client.
+    00:04:20.764 |  37 Pool-1-worker-11 | WARN  | ation$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+    00:04:20.978 |  37 Pool-1-worker-11 | INFO  | .a.a.ParticipantScoreIntegrationTest : Started ParticipantScoreIntegrationTest in 27.081 seconds (process running for 161.101)
+    00:04:20.980 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.b.BuildAgentConfiguration  : Using ExecutorService with thread pool size 1.
+    00:04:20.981 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.b.BuildAgentConfiguration  : Create bean dockerClient
+    00:04:21.085 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.b.BuildAgentConfiguration  : Docker client created with connection URI: unix:///var/run/docker.sock
+    00:04:21.086 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.b.s.BuildAgentSshKeyService : Using SSH for build agent authentication.
+    00:04:22.551 | 592 artemis-task-1   | INFO  | t.c.a.a.b.s.BuildJobExecutionService : Cleaning up temporary directories in checked-out-repos
+    00:04:22.551 | 592 artemis-task-1   | ERROR | t.c.a.a.b.s.BuildJobExecutionService : Could not delete temporary directories
 java.nio.file.NoSuchFileException: checked-out-repos
 	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92)
 	at java.base/sun.nio.fs.UnixException.asIOException(UnixException.java:115)
@@ -106,416 +200,413 @@ java.nio.file.NoSuchFileException: checked-out-repos
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-    23:41:22.548 | 588 artemis-task-1   | INFO  | t.c.a.a.b.s.BuildJobExecutionService : Clean up of temporary directories in checked-out-repos completed.
-    23:41:22.549 | 614 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
-    23:41:22.557 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.core.config.MetricsBean    : calculateCachedActiveUserLogins took 8ms
-    23:41:22.558 |  37 Pool-1-worker-11 | DEBUG | .c.a.a.c.s.TitleCacheEvictionService : Registered Hibernate listeners
-    23:41:22.565 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.c.service.user.UserService : Create internal admin user artemis_admin
-    23:41:22.574 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Save user User{login='artemis_admin', firstName='Administrator', lastName='Administrator', email='admin@localhost', imageUrl='null', activated='true', langKey='en', activationKey='null'}
-    23:41:22.634 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Created Information for User: User{login='artemis_admin', firstName='Administrator', lastName='Administrator', email='admin@localhost', imageUrl='null', activated='true', langKey='en', activationKey='null'}
-    23:41:22.658 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.service.PlantUmlService  : Storing UML theme to temporary directory
-    23:41:22.658 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.service.PlantUmlService  : UML theme stored successfully to /tmp/artemis-puml-theme/puml-theme-artemisdark.puml
-    23:41:22.658 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.service.PlantUmlService  : Storing UML theme to temporary directory
-    23:41:22.658 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.service.PlantUmlService  : UML theme stored successfully to /tmp/artemis-puml-theme/puml-theme-artemislight.puml
-    23:41:30.212 | 600 taskScheduler-1  | INFO  | .t.c.a.a.b.s.BuildAgentDockerService : Start cleanup dangling build containers
-    23:41:30.313 | 600 taskScheduler-1  | INFO  | .t.c.a.a.b.s.BuildAgentDockerService : Cleanup dangling build containers done
-    23:41:32.549 | 601 taskScheduler-2  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
-    23:41:42.549 | 615 taskScheduler-4  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
-    23:41:42.679 | 600 taskScheduler-1  | INFO  | s.ProgrammingExerciseScheduleService : Scheduled 0 programming exercises.
-    23:41:42.679 | 600 taskScheduler-1  | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled 0 programming exercises for a score update after due date.
-    23:41:42.679 | 600 taskScheduler-1  | INFO  | s.ProgrammingExerciseScheduleService : Scheduled 0 exam programming exercises.
-    23:41:47.738 | 614 taskScheduler-3  | INFO  | d.t.c.a.a.q.s.QuizScheduleService    : Scheduled 0 quiz exercises.
-    23:41:47.742 | 601 taskScheduler-2  | INFO  | .m.s.ModelingExerciseScheduleService : Scheduled 0 modeling exercises.
-    23:41:47.742 | 601 taskScheduler-2  | INFO  | .m.s.ModelingExerciseScheduleService : Scheduled 0 exam modeling exercises.
+    00:04:22.551 | 592 artemis-task-1   | INFO  | t.c.a.a.b.s.BuildJobExecutionService : Clean up of temporary directories in checked-out-repos completed.
+    00:04:22.553 | 617 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    00:04:22.562 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.core.config.MetricsBean    : calculateCachedActiveUserLogins took 8ms
+    00:04:22.563 |  37 Pool-1-worker-11 | DEBUG | .c.a.a.c.s.TitleCacheEvictionService : Registered Hibernate listeners
+    00:04:22.571 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.c.service.user.UserService : Create internal admin user artemis_admin
+    00:04:22.582 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Save user User{login='artemis_admin', firstName='Administrator', lastName='Administrator', email='admin@localhost', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    00:04:22.647 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.u.UserCreationService  : Created Information for User: User{login='artemis_admin', firstName='Administrator', lastName='Administrator', email='admin@localhost', imageUrl='null', activated='true', langKey='en', activationKey='null'}
+    00:04:22.671 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.service.PlantUmlService  : Storing UML theme to temporary directory
+    00:04:22.671 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.service.PlantUmlService  : UML theme stored successfully to /tmp/artemis-puml-theme/puml-theme-artemisdark.puml
+    00:04:22.671 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.service.PlantUmlService  : Storing UML theme to temporary directory
+    00:04:22.672 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.p.service.PlantUmlService  : UML theme stored successfully to /tmp/artemis-puml-theme/puml-theme-artemislight.puml
+    00:04:31.086 | 618 taskScheduler-4  | INFO  | .t.c.a.a.b.s.BuildAgentDockerService : Start cleanup dangling build containers
+    00:04:31.183 | 618 taskScheduler-4  | INFO  | .t.c.a.a.b.s.BuildAgentDockerService : Cleanup dangling build containers done
+    00:04:32.552 | 603 taskScheduler-1  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    00:04:42.553 | 617 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    00:04:42.736 | 618 taskScheduler-4  | INFO  | s.ProgrammingExerciseScheduleService : Scheduled 0 programming exercises.
+    00:04:42.736 | 618 taskScheduler-4  | DEBUG | s.ProgrammingExerciseScheduleService : Scheduled 0 programming exercises for a score update after due date.
+    00:04:42.736 | 618 taskScheduler-4  | INFO  | s.ProgrammingExerciseScheduleService : Scheduled 0 exam programming exercises.
+    00:04:47.794 | 604 taskScheduler-2  | INFO  | d.t.c.a.a.q.s.QuizScheduleService    : Scheduled 0 quiz exercises.
+    00:04:47.794 | 603 taskScheduler-1  | INFO  | .m.s.ModelingExerciseScheduleService : Scheduled 0 modeling exercises.
+    00:04:47.794 | 603 taskScheduler-1  | INFO  | .m.s.ModelingExerciseScheduleService : Scheduled 0 exam modeling exercises.
 
   Starting logs for ParticipantScoreIntegrationTest > getCourseScores_asInstructorOfCourseWithGradedPresentations_shouldReturnCourseScores()
-    23:41:50.170 | 615 taskScheduler-4  | DEBUG | d.t.c.a.a.core.config.MetricsBean    : recalculateMetrics took 68ms
-    23:41:50.193 | 614 taskScheduler-3  | INFO  | a.p.s.l.SharedQueueManagementService : pushDockerImageCleanupInfo took 88ms
-    23:41:50.315 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
-    23:41:50.318 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
-    23:41:50.321 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
-    23:41:50.323 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
-    23:41:50.326 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
-    23:41:50.328 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate admin
-    23:41:50.329 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate admin done
-    23:41:50.335 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 0 users from all courses...
-    23:41:50.335 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 0 users from all courses. Done
-    23:41:50.335 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
-    23:41:50.362 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
-    23:41:50.663 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1 and participant 2 (result to be deleted: null)
-    23:41:50.668 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1 and participant 2 at 2025-02-14T23:41:50.864732257Z[Etc/UTC].
-    23:41:50.864 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1 and participant 2 to update participant scores.
-    23:41:50.883 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2 and participant 1 (result to be deleted: null)
-    23:41:50.883 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2 and participant 1 at 2025-02-14T23:41:51.083232971Z[Etc/UTC].
-    23:41:51.060 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 1.
-    23:41:51.092 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 2 and participant 1 to update participant scores.
-    23:41:51.108 | 600 taskScheduler-1  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
-    23:41:51.257 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3 and participant 2 (result to be deleted: null)
-    23:41:51.257 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3 and participant 2 at 2025-02-14T23:41:51.457519515Z[Etc/UTC].
-    23:41:51.293 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1 and participant 2 at 2025-02-14T23:41:51.493850392Z[Etc/UTC].
-    23:41:51.294 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2 and participant 1 at 2025-02-14T23:41:51.493987247Z[Etc/UTC].
-    23:41:51.294 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3 and participant 2 at 2025-02-14T23:41:51.494039985Z[Etc/UTC].
-    23:41:51.296 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 3 results and 0 participant scores.
-    23:41:51.305 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 2.
-    23:41:51.310 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 2 and participant 1 took 218 ms.
-    23:41:51.481 | 600 taskScheduler-1  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updated progress for user participantscoreintegrationteststudent1 in competency 1 to 0.0 / 1.25.
-    23:41:51.597 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1 and participant 2 to update participant scores.
-    23:41:51.599 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 2 and participant 1 to update participant scores.
-    23:41:51.600 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 3 and participant 2 to update participant scores.
-    23:41:51.608 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1 and participant 2 took 744 ms.
-    23:41:51.610 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 1 is already up-to-date, skipping.
-    23:41:51.631 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 2 is already up-to-date, skipping.
-    23:41:51.648 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 3.
-    23:41:51.650 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 3 and participant 2 took 50 ms.
-    23:41:51.825 |  37 Pool-1-worker-11 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ParticipantScoreIntegrationTest#getCourseScores_asInstructorOfCourseWithGradedPresentations_shouldReturnCourseScores'
-    23:41:51.912 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/1/course-scores
-    23:41:51.931 |  37 Pool-1-worker-11 | DEBUG | t.c.a.a.a.w.ParticipantScoreResource : REST request to get course scores for course : 1
-    23:41:52.095 |  37 Pool-1-worker-11 | INFO  | t.c.a.a.a.w.ParticipantScoreResource : getScoresOfCourse took 164ms
+    00:04:50.479 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    00:04:50.486 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    00:04:50.493 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    00:04:50.497 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    00:04:50.501 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    00:04:50.506 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate admin
+    00:04:50.511 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate admin done
+    00:04:50.516 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 0 users from all courses...
+    00:04:50.517 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 0 users from all courses. Done
+    00:04:50.517 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database...
+    00:04:50.545 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 4 users to database. Done
+    00:04:50.959 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 1 and participant 2 (result to be deleted: null)
+    00:04:50.963 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1 and participant 2 at 2025-02-15T00:04:51.163428393Z[Etc/UTC].
+    00:04:51.050 | 604 taskScheduler-2  | DEBUG | d.t.c.a.a.core.config.MetricsBean    : recalculateMetrics took 71ms
+    00:04:51.196 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1 and participant 2 to update participant scores.
+    00:04:51.198 | 617 taskScheduler-3  | INFO  | a.p.s.l.SharedQueueManagementService : pushDockerImageCleanupInfo took 220ms
+    00:04:51.223 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 2 and participant 1 (result to be deleted: null)
+    00:04:51.224 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2 and participant 1 at 2025-02-15T00:04:51.424080913Z[Etc/UTC].
+    00:04:51.526 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 2 and participant 1 to update participant scores.
+    00:04:51.578 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 1.
+    00:04:51.604 | 603 taskScheduler-1  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
+    00:04:51.884 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 2.
+    00:04:51.885 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 2 and participant 1 took 359 ms.
+    00:04:51.939 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 3 and participant 2 (result to be deleted: null)
+    00:04:51.939 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3 and participant 2 at 2025-02-15T00:04:52.139564057Z[Etc/UTC].
+    00:04:52.081 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 1 and participant 2 at 2025-02-15T00:04:52.281193541Z[Etc/UTC].
+    00:04:52.081 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 2 and participant 1 at 2025-02-15T00:04:52.281317095Z[Etc/UTC].
+    00:04:52.081 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 3 and participant 2 at 2025-02-15T00:04:52.281372610Z[Etc/UTC].
+    00:04:52.083 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 3 results and 0 participant scores.
+    00:04:52.107 | 603 taskScheduler-1  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updated progress for user participantscoreintegrationteststudent1 in competency 1 to 0.0 / 1.25.
+    00:04:52.116 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 1 and participant 2 took 920 ms.
+    00:04:52.282 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 1 and participant 2 to update participant scores.
+    00:04:52.288 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 2 and participant 1 to update participant scores.
+    00:04:52.288 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 3 and participant 2 to update participant scores.
+    00:04:52.306 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 1 is already up-to-date, skipping.
+    00:04:52.329 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 2 is already up-to-date, skipping.
+    00:04:52.347 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 3.
+    00:04:52.352 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 3 and participant 2 took 64 ms.
+    00:04:52.458 |  37 Pool-1-worker-11 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:40393/mem:0b6fcf22-df74-4a31-9e31-d8c79fbb119b;USER=sa', scope='ParticipantScoreIntegrationTest#getCourseScores_asInstructorOfCourseWithGradedPresentations_shouldReturnCourseScores'
+    00:04:52.554 | 617 taskScheduler-3  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
+    00:04:52.564 | 617 taskScheduler-3  | INFO  | .a.a.c.s.NotificationScheduleService : Scheduled 0 notifications for released exercises.
+    00:04:52.573 | 617 taskScheduler-3  | INFO  | .a.a.c.s.NotificationScheduleService : Scheduled 0 notifications for assessed exercise submissions.
+    00:04:52.589 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/1/course-scores
+    00:04:52.601 |  37 Pool-1-worker-11 | DEBUG | t.c.a.a.a.w.ParticipantScoreResource : REST request to get course scores for course : 1
+    00:04:52.730 |  37 Pool-1-worker-11 | INFO  | t.c.a.a.a.w.ParticipantScoreResource : getScoresOfCourse took 129ms
 
   Starting logs for ParticipantScoreIntegrationTest > getExamScores_asInstructorOfCourse_shouldReturnExamScores()
-    23:41:52.232 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
-    23:41:52.241 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
-    23:41:52.247 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
-    23:41:52.248 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
-    23:41:52.257 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
-    23:41:52.264 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
-    23:41:52.283 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
-    23:41:52.283 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
-    23:41:52.358 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
-    23:41:52.534 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4 and participant 2 (result to be deleted: null)
-    23:41:52.534 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4 and participant 2 at 2025-02-14T23:41:52.634231988Z[Etc/UTC].
-    23:41:52.549 | 600 taskScheduler-1  | DEBUG | a.a.b.s.SharedQueueProcessingService : Currently processing jobs on this node: 0, active threads in Pool: 0, maximum pool size of thread executor : 1
-    23:41:52.559 | 600 taskScheduler-1  | INFO  | .a.a.c.s.NotificationScheduleService : Scheduled 0 notifications for released exercises.
-    23:41:52.568 | 600 taskScheduler-1  | INFO  | .a.a.c.s.NotificationScheduleService : Scheduled 0 notifications for assessed exercise submissions.
-    23:41:52.609 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 5 and participant 2 (result to be deleted: null)
-    23:41:52.609 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 5 and participant 2 at 2025-02-14T23:41:52.709862020Z[Etc/UTC].
-    23:41:52.637 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 4 and participant 2 to update participant scores.
-    23:41:52.672 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 4.
-    23:41:52.679 | 601 taskScheduler-2  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
-    23:41:52.703 | 601 taskScheduler-2  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updated progress for user participantscoreintegrationteststudent1 in competency 2 to 0.0 / 1.25.
-    23:41:52.709 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 4 and participant 2 took 72 ms.
-    23:41:52.711 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 5 and participant 2 to update participant scores.
-    23:41:52.732 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 6 and participant 2 (result to be deleted: null)
-    23:41:52.732 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 6 and participant 2 at 2025-02-14T23:41:52.832779485Z[Etc/UTC].
-    23:41:52.754 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4 and participant 2 at 2025-02-14T23:41:52.854230506Z[Etc/UTC].
-    23:41:52.754 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 5 and participant 2 at 2025-02-14T23:41:52.854359296Z[Etc/UTC].
-    23:41:52.754 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 6 and participant 2 at 2025-02-14T23:41:52.854403157Z[Etc/UTC].
-    23:41:52.761 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 3 results and 0 participant scores.
-    23:41:52.776 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 5.
-    23:41:52.777 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 5 and participant 2 took 68 ms.
-    23:41:52.854 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 4 and participant 2 to update participant scores.
-    23:41:52.854 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 5 and participant 2 to update participant scores.
-    23:41:52.861 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 6 and participant 2 to update participant scores.
-    23:41:52.879 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 4 is already up-to-date, skipping.
-    23:41:52.898 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 5 is already up-to-date, skipping.
-    23:41:52.908 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 6.
-    23:41:52.913 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 6 and participant 2 took 52 ms.
-    23:41:53.103 |  37 Pool-1-worker-11 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ParticipantScoreIntegrationTest#getExamScores_asInstructorOfCourse_shouldReturnExamScores'
-    23:41:53.112 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/exams/2/exam-scores
-    23:41:53.116 |  37 Pool-1-worker-11 | DEBUG | t.c.a.a.a.w.ParticipantScoreResource : REST request to get exam scores for exam : 2
-    23:41:53.161 |  37 Pool-1-worker-11 | INFO  | t.c.a.a.a.w.ParticipantScoreResource : getScoresOfExam took 45ms
+    00:04:52.917 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    00:04:52.942 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    00:04:52.959 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    00:04:52.962 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    00:04:52.986 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    00:04:53.011 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses...
+    00:04:53.024 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 4 users from all courses. Done
+    00:04:53.024 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    00:04:53.109 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    00:04:53.260 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 4 and participant 2 (result to be deleted: null)
+    00:04:53.261 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4 and participant 2 at 2025-02-15T00:04:53.460965883Z[Etc/UTC].
+    00:04:53.345 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 5 and participant 2 (result to be deleted: null)
+    00:04:53.345 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 5 and participant 2 at 2025-02-15T00:04:53.545222025Z[Etc/UTC].
+    00:04:53.461 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 4 and participant 2 to update participant scores.
+    00:04:53.516 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 4.
+    00:04:53.523 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 6 and participant 2 (result to be deleted: null)
+    00:04:53.523 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 6 and participant 2 at 2025-02-15T00:04:53.623679722Z[Etc/UTC].
+    00:04:53.525 | 603 taskScheduler-1  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
+    00:04:53.545 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 5 and participant 2 to update participant scores.
+    00:04:53.545 | 603 taskScheduler-1  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updated progress for user participantscoreintegrationteststudent1 in competency 2 to 0.0 / 1.25.
+    00:04:53.548 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 4 and participant 2 at 2025-02-15T00:04:53.648547172Z[Etc/UTC].
+    00:04:53.548 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 5 and participant 2 at 2025-02-15T00:04:53.648678831Z[Etc/UTC].
+    00:04:53.548 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 6 and participant 2 at 2025-02-15T00:04:53.648727964Z[Etc/UTC].
+    00:04:53.549 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 3 results and 0 participant scores.
+    00:04:53.554 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 4 and participant 2 took 93 ms.
+    00:04:53.568 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 5.
+    00:04:53.570 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 5 and participant 2 took 25 ms.
+    00:04:53.648 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 4 and participant 2 to update participant scores.
+    00:04:53.650 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 5 and participant 2 to update participant scores.
+    00:04:53.652 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 6 and participant 2 to update participant scores.
+    00:04:53.668 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 4 is already up-to-date, skipping.
+    00:04:53.689 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 5 is already up-to-date, skipping.
+    00:04:53.716 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 6.
+    00:04:53.720 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 6 and participant 2 took 68 ms.
+    00:04:53.904 |  37 Pool-1-worker-11 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:40393/mem:0b6fcf22-df74-4a31-9e31-d8c79fbb119b;USER=sa', scope='ParticipantScoreIntegrationTest#getExamScores_asInstructorOfCourse_shouldReturnExamScores'
+    00:04:53.918 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/exams/2/exam-scores
+    00:04:53.928 |  37 Pool-1-worker-11 | DEBUG | t.c.a.a.a.w.ParticipantScoreResource : REST request to get exam scores for exam : 2
+    00:04:53.990 |  37 Pool-1-worker-11 | INFO  | t.c.a.a.a.w.ParticipantScoreResource : getScoresOfExam took 63ms
 
   Starting logs for ParticipantScoreIntegrationTest > deleteCourse_asAdmin_shouldDeleteExercise()
-    23:41:53.263 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
-    23:41:53.281 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
-    23:41:53.294 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
-    23:41:53.301 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
-    23:41:53.319 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
-    23:41:53.328 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
-    23:41:53.335 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
-    23:41:53.335 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
-    23:41:53.388 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
-    23:41:53.572 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 7 and participant 2 (result to be deleted: null)
-    23:41:53.572 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 7 and participant 2 at 2025-02-14T23:41:53.672484624Z[Etc/UTC].
-    23:41:53.644 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 8 and participant 3 (result to be deleted: null)
-    23:41:53.644 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 8 and participant 3 at 2025-02-14T23:41:53.744300841Z[Etc/UTC].
-    23:41:53.674 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 7 and participant 2 to update participant scores.
-    23:41:53.711 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 7.
-    23:41:53.716 | 615 taskScheduler-4  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
-    23:41:53.736 | 615 taskScheduler-4  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updated progress for user participantscoreintegrationteststudent1 in competency 3 to 0.0 / 1.25.
-    23:41:53.740 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 7 and participant 2 took 66 ms.
-    23:41:53.744 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 8 and participant 3 to update participant scores.
-    23:41:53.763 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 9 and participant 2 (result to be deleted: null)
-    23:41:53.766 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 9 and participant 2 at 2025-02-14T23:41:53.863326271Z[Etc/UTC].
-    23:41:53.778 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 7 and participant 2 at 2025-02-14T23:41:53.878526736Z[Etc/UTC].
-    23:41:53.778 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 8 and participant 3 at 2025-02-14T23:41:53.878651979Z[Etc/UTC].
-    23:41:53.778 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 9 and participant 2 at 2025-02-14T23:41:53.878699187Z[Etc/UTC].
-    23:41:53.783 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 3 results and 0 participant scores.
-    23:41:53.789 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 8.
-    23:41:53.797 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 8 and participant 3 took 53 ms.
-    23:41:53.878 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 7 and participant 2 to update participant scores.
-    23:41:53.881 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 8 and participant 3 to update participant scores.
-    23:41:53.883 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 9 and participant 2 to update participant scores.
-    23:41:53.904 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 7 is already up-to-date, skipping.
-    23:41:53.909 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 8 is already up-to-date, skipping.
-    23:41:53.921 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 9.
-    23:41:53.923 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 9 and participant 2 took 40 ms.
-    23:41:54.122 |  37 Pool-1-worker-11 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ParticipantScoreIntegrationTest#deleteCourse_asAdmin_shouldDeleteExercise'
-    23:41:54.132 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/admin/courses/3
-    23:41:54.141 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.c.w.a.AdminCourseResource  : REST request to delete Course : 3
-    23:41:54.188 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.c.w.a.AdminCourseResource  : User admin has requested to delete the course Course title 1a55847d-8555-4c1a-9b40-bf0af6b89155
-    23:41:54.188 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.core.service.CourseService : Request to delete Course : Course title 1a55847d-8555-4c1a-9b40-bf0af6b89155
-    23:41:54.201 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Request to delete TextExercise with id 7
-    23:41:54.205 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Deleting the channel took 4.03ms
-    23:41:54.205 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Cancel scheduled operations of exercise 7
-    23:41:54.205 |  37 Pool-1-worker-11 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for potential Athena exercise 7
-    23:41:54.262 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 1 participations of exercise with id : 7
-    23:41:54.275 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete Participation : StudentParticipation{id=7, presentationScore=null, student=User{login='participantscoreintegrationteststudent1', firstName='participantscoreintegrationteststudent1First', lastName='participantscoreintegrationteststudent1Last', email='participantscoreintegrationteststudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}}
-    23:41:54.299 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 7
-    23:41:54.314 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result 7
-    23:41:54.314 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result references 7
-    23:41:54.435 |  37 Pool-1-worker-11 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '7' from title cache 'exerciseTitle'
-    23:41:54.441 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Request to delete TextExercise with id 8
-    23:41:54.449 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Deleting the channel took 7.56ms
-    23:41:54.449 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Cancel scheduled operations of exercise 8
-    23:41:54.449 |  37 Pool-1-worker-11 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for potential Athena exercise 8
-    23:41:54.453 | 588 artemis-task-1   | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress for 1 users.
-    23:41:54.466 | 588 artemis-task-1   | DEBUG | .a.a.a.s.c.CompetencyProgressService : Competency progress has been updated very recently, skipping.
-    23:41:54.471 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 1 participations of exercise with id : 8
-    23:41:54.486 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete Participation : StudentParticipation{id=8, presentationScore=null, team=Team{id=3, name='participantscoreintegrationtestteam1', shortName='participantscoreintegrationtestteam1', image='null'}}
-    23:41:54.492 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 8
-    23:41:54.499 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result 8
-    23:41:54.499 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result references 8
-    23:41:54.533 | 570 vc.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5703 [dev] [5.5.0] The HealthMonitor has detected a high load on the system. For more detailed information,
-enable Diagnostics by adding the property -Dhazelcast.diagnostics.enabled=true
-    23:41:54.534 | 570 vc.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5703 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=3.3G, swap.space.total=0, swap.space.free=0, heap.memory.used=2.0G, heap.memory.free=785.7M, heap.memory.total=2.8G, heap.memory.max=6.0G, heap.memory.used/total=72.67%, heap.memory.used/max=34.02%, minor.gc.count=89, minor.gc.time=5152ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=41, unknown.gc.time=549ms, load.process=0.00%, load.system=99.50%, load.systemAverage=3.56, thread.count=462, thread.peakCount=463, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=506, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=210, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
-    23:41:54.622 |  37 Pool-1-worker-11 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '8' from title cache 'exerciseTitle'
-    23:41:54.671 |  37 Pool-1-worker-11 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '3' from title cache 'lectureTitle'
-    23:41:54.745 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ExamDeletionService    : User admin has requested to delete the exam Real exam 1
-    23:41:54.774 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Request to delete TextExercise with id 9
-    23:41:54.775 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Deleting the channel took 873µs
-    23:41:54.775 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Cancel scheduled operations of exercise 9
-    23:41:54.775 |  37 Pool-1-worker-11 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for potential Athena exercise 9
-    23:41:54.785 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 1 participations of exercise with id : 9
-    23:41:54.794 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete Participation : StudentParticipation{id=9, presentationScore=null, student=User{login='participantscoreintegrationteststudent1', firstName='participantscoreintegrationteststudent1First', lastName='participantscoreintegrationteststudent1Last', email='participantscoreintegrationteststudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}}
-    23:41:54.799 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 9
-    23:41:54.807 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result 9
-    23:41:54.807 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result references 9
-    23:41:54.892 |  37 Pool-1-worker-11 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '9' from title cache 'exerciseTitle'
-    23:41:54.918 |  37 Pool-1-worker-11 | WARN  | .c.a.a.c.s.TitleCacheEvictionService : Unable to clear title of exercises from exercise group 3: Exercises not initialized
-    23:41:54.920 |  37 Pool-1-worker-11 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '3' from title cache 'examTitle'
-    23:41:54.958 |  37 Pool-1-worker-11 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '3' from title cache 'courseTitle'
-    23:41:54.958 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.core.service.CourseService : Successfully deleted course Course title 1a55847d-8555-4c1a-9b40-bf0af6b89155.
+    00:04:54.060 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    00:04:54.077 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    00:04:54.094 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    00:04:54.095 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    00:04:54.108 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    00:04:54.119 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    00:04:54.126 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    00:04:54.126 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    00:04:54.163 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    00:04:54.314 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 7 and participant 2 (result to be deleted: null)
+    00:04:54.314 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 7 and participant 2 at 2025-02-15T00:04:54.414450669Z[Etc/UTC].
+    00:04:54.370 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 8 and participant 3 (result to be deleted: null)
+    00:04:54.371 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 8 and participant 3 at 2025-02-15T00:04:54.470951292Z[Etc/UTC].
+    00:04:54.414 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 7 and participant 2 to update participant scores.
+    00:04:54.457 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 9 and participant 2 (result to be deleted: null)
+    00:04:54.458 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 9 and participant 2 at 2025-02-15T00:04:54.558090644Z[Etc/UTC].
+    00:04:54.459 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 7.
+    00:04:54.463 | 617 taskScheduler-3  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
+    00:04:54.473 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 8 and participant 3 to update participant scores.
+    00:04:54.473 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 7 and participant 2 at 2025-02-15T00:04:54.573673158Z[Etc/UTC].
+    00:04:54.473 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 8 and participant 3 at 2025-02-15T00:04:54.573739313Z[Etc/UTC].
+    00:04:54.473 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 9 and participant 2 at 2025-02-15T00:04:54.573779710Z[Etc/UTC].
+    00:04:54.474 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 3 results and 0 participant scores.
+    00:04:54.494 | 617 taskScheduler-3  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updated progress for user participantscoreintegrationteststudent1 in competency 3 to 0.0 / 1.25.
+    00:04:54.497 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 7 and participant 2 took 83 ms.
+    00:04:54.527 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 8.
+    00:04:54.532 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 8 and participant 3 took 59 ms.
+    00:04:54.573 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 7 and participant 2 to update participant scores.
+    00:04:54.574 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 8 and participant 3 to update participant scores.
+    00:04:54.576 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 9 and participant 2 to update participant scores.
+    00:04:54.585 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 7 is already up-to-date, skipping.
+    00:04:54.598 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 8 is already up-to-date, skipping.
+    00:04:54.606 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 9.
+    00:04:54.610 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 9 and participant 2 took 35 ms.
+    00:04:54.841 |  37 Pool-1-worker-11 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:40393/mem:0b6fcf22-df74-4a31-9e31-d8c79fbb119b;USER=sa', scope='ParticipantScoreIntegrationTest#deleteCourse_asAdmin_shouldDeleteExercise'
+    00:04:54.850 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/admin/courses/3
+    00:04:54.856 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.c.w.a.AdminCourseResource  : REST request to delete Course : 3
+    00:04:54.890 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.c.w.a.AdminCourseResource  : User admin has requested to delete the course Course title ec2b1bf4-75dd-4678-be94-bec87033e0b1
+    00:04:54.890 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.core.service.CourseService : Request to delete Course : Course title ec2b1bf4-75dd-4678-be94-bec87033e0b1
+    00:04:54.900 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Request to delete TextExercise with id 7
+    00:04:54.908 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Deleting the channel took 7.43ms
+    00:04:54.908 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Cancel scheduled operations of exercise 7
+    00:04:54.908 |  37 Pool-1-worker-11 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for potential Athena exercise 7
+    00:04:54.977 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 1 participations of exercise with id : 7
+    00:04:54.988 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete Participation : StudentParticipation{id=7, presentationScore=null, student=User{login='participantscoreintegrationteststudent1', firstName='participantscoreintegrationteststudent1First', lastName='participantscoreintegrationteststudent1Last', email='participantscoreintegrationteststudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}}
+    00:04:55.011 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 7
+    00:04:55.016 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result 7
+    00:04:55.016 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result references 7
+    00:04:55.146 |  37 Pool-1-worker-11 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '7' from title cache 'exerciseTitle'
+    00:04:55.167 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Request to delete TextExercise with id 8
+    00:04:55.168 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Deleting the channel took 945µs
+    00:04:55.168 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Cancel scheduled operations of exercise 8
+    00:04:55.168 |  37 Pool-1-worker-11 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for potential Athena exercise 8
+    00:04:55.175 | 592 artemis-task-1   | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress for 1 users.
+    00:04:55.178 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 1 participations of exercise with id : 8
+    00:04:55.188 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete Participation : StudentParticipation{id=8, presentationScore=null, team=Team{id=3, name='participantscoreintegrationtestteam1', shortName='participantscoreintegrationtestteam1', image='null'}}
+    00:04:55.190 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 8
+    00:04:55.192 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result 8
+    00:04:55.192 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result references 8
+    00:04:55.205 | 592 artemis-task-1   | DEBUG | .a.a.a.s.c.CompetencyProgressService : Competency progress has been updated very recently, skipping.
+    00:04:55.296 |  37 Pool-1-worker-11 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '8' from title cache 'exerciseTitle'
+    00:04:55.345 |  37 Pool-1-worker-11 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '3' from title cache 'lectureTitle'
+    00:04:55.409 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ExamDeletionService    : User admin has requested to delete the exam Real exam 1
+    00:04:55.445 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Request to delete TextExercise with id 9
+    00:04:55.449 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Deleting the channel took 3.65ms
+    00:04:55.449 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Cancel scheduled operations of exercise 9
+    00:04:55.449 |  37 Pool-1-worker-11 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for potential Athena exercise 9
+    00:04:55.463 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 1 participations of exercise with id : 9
+    00:04:55.471 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete Participation : StudentParticipation{id=9, presentationScore=null, student=User{login='participantscoreintegrationteststudent1', firstName='participantscoreintegrationteststudent1First', lastName='participantscoreintegrationteststudent1Last', email='participantscoreintegrationteststudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}}
+    00:04:55.482 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 9
+    00:04:55.487 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result 9
+    00:04:55.487 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result references 9
+    00:04:55.600 |  37 Pool-1-worker-11 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '9' from title cache 'exerciseTitle'
+    00:04:55.631 |  37 Pool-1-worker-11 | WARN  | .c.a.a.c.s.TitleCacheEvictionService : Unable to clear title of exercises from exercise group 3: Exercises not initialized
+    00:04:55.635 |  37 Pool-1-worker-11 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '3' from title cache 'examTitle'
+    00:04:55.702 |  37 Pool-1-worker-11 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '3' from title cache 'courseTitle'
+    00:04:55.703 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.core.service.CourseService : Successfully deleted course Course title ec2b1bf4-75dd-4678-be94-bec87033e0b1.
 
   Starting logs for ParticipantScoreIntegrationTest > deleteParticipation_asInstructorOfCourse_shouldDeleteParticipation()
-    23:41:55.035 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
-    23:41:55.042 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
-    23:41:55.051 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
-    23:41:55.057 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
-    23:41:55.068 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
-    23:41:55.074 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
-    23:41:55.079 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
-    23:41:55.079 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
-    23:41:55.100 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Schedule tasks to process...
-    23:41:55.102 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 0 results and 0 participant scores.
-    23:41:55.121 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
-    23:41:55.215 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 10 and participant 2 (result to be deleted: null)
-    23:41:55.215 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 10 and participant 2 at 2025-02-14T23:41:55.315284782Z[Etc/UTC].
-    23:41:55.268 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 11 and participant 4 (result to be deleted: null)
-    23:41:55.269 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 11 and participant 4 at 2025-02-14T23:41:55.369019563Z[Etc/UTC].
-    23:41:55.319 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 10 and participant 2 to update participant scores.
-    23:41:55.350 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 10.
-    23:41:55.354 | 614 taskScheduler-3  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
-    23:41:55.356 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 12 and participant 2 (result to be deleted: null)
-    23:41:55.356 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 12 and participant 2 at 2025-02-14T23:41:55.456636834Z[Etc/UTC].
-    23:41:55.370 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 10 and participant 2 at 2025-02-14T23:41:55.470299331Z[Etc/UTC].
-    23:41:55.370 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 11 and participant 4 at 2025-02-14T23:41:55.470418343Z[Etc/UTC].
-    23:41:55.370 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 12 and participant 2 at 2025-02-14T23:41:55.470467845Z[Etc/UTC].
-    23:41:55.371 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 3 results and 0 participant scores.
-    23:41:55.381 | 614 taskScheduler-3  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updated progress for user participantscoreintegrationteststudent1 in competency 4 to 0.0 / 1.25.
-    23:41:55.385 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 10 and participant 2 took 66 ms.
-    23:41:55.470 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 10 and participant 2 to update participant scores.
-    23:41:55.470 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 11 and participant 4 to update participant scores.
-    23:41:55.470 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 12 and participant 2 to update participant scores.
-    23:41:55.482 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 10 is already up-to-date, skipping.
-    23:41:55.502 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 11.
-    23:41:55.503 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 12 and participant 2 took 33 ms.
-    23:41:55.524 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 12.
-    23:41:55.525 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 11 and participant 4 took 55 ms.
-    23:41:55.710 |  37 Pool-1-worker-11 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ParticipantScoreIntegrationTest#deleteParticipation_asInstructorOfCourse_shouldDeleteParticipation'
-    23:41:55.753 |  37 Pool-1-worker-11 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '10' from title cache 'exerciseTitle'
-    23:41:55.778 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 10 and participant 2 (result to be deleted: null)
-    23:41:55.778 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 10 and participant 2 at 2025-02-14T23:41:55.878689646Z[Etc/UTC].
-    23:41:55.878 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 10 and participant 2 to update participant scores.
-    23:41:55.907 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 10.
-    23:41:55.908 | 615 taskScheduler-4  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
-    23:41:55.918 | 615 taskScheduler-4  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Competency progress has been updated very recently, skipping.
-    23:41:55.918 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 10 and participant 2 took 40 ms.
-    23:41:56.099 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/participations/10
-    23:41:56.129 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.w.ParticipationResource  : Delete Participation 10 of exercise 1 for participantscoreintegrationteststudent1First participantscoreintegrationteststudent1Last, deleteBuildPlan: false, deleteRepository: false by participantscoreintegrationtestinstructor1
-    23:41:56.131 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete Participation : StudentParticipation{id=10, presentationScore=null, student=User{login='participantscoreintegrationteststudent1', firstName='participantscoreintegrationteststudent1First', lastName='participantscoreintegrationteststudent1Last', email='participantscoreintegrationteststudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}}
-    23:41:56.132 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 10
-    23:41:56.148 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result 10
-    23:41:56.148 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result references 10
-    23:41:56.164 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result 13
-    23:41:56.164 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result references 13
+    00:04:55.777 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    00:04:55.790 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    00:04:55.802 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    00:04:55.803 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    00:04:55.821 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    00:04:55.827 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    00:04:55.833 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    00:04:55.833 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    00:04:55.860 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    00:04:55.976 | 574 vc.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5703 [dev] [5.5.0] The HealthMonitor has detected a high load on the system. For more detailed information,
+enable Diagnostics by adding the property -Dhazelcast.diagnostics.enabled=true
+    00:04:55.977 | 574 vc.HealthMonitor | INFO  | c.h.i.diagnostics.HealthMonitor      : [127.0.0.1]:5703 [dev] [5.5.0] processors=4, physical.memory.total=15.6G, physical.memory.free=3.3G, swap.space.total=0, swap.space.free=0, heap.memory.used=2.6G, heap.memory.free=254.4M, heap.memory.total=2.8G, heap.memory.max=6.0G, heap.memory.used/total=91.12%, heap.memory.used/max=42.53%, minor.gc.count=86, minor.gc.time=5063ms, major.gc.count=0, major.gc.time=0ms, unknown.gc.count=39, unknown.gc.time=576ms, load.process=0.00%, load.system=100.00%, load.systemAverage=3.50, thread.count=460, thread.peakCount=461, cluster.timeDiff=0, event.q.size=0, executor.q.async.size=0, executor.q.client.size=0, executor.q.client.query.size=0, executor.q.client.blocking.size=0, executor.q.query.size=0, executor.q.scheduled.size=0, executor.q.io.size=0, executor.q.system.size=0, executor.q.operations.size=0, executor.q.priorityOperation.size=0, operations.completed.count=514, executor.q.mapLoad.size=0, executor.q.mapLoadAllKeys.size=0, executor.q.cluster.size=0, executor.q.response.size=0, operations.running.count=0, operations.pending.invocations.percentage=0.00%, operations.pending.invocations.count=0, proxy.count=213, clientEndpoint.count=0, connection.active.count=0, client.connection.count=0, connection.count=0
+    00:04:55.977 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 10 and participant 2 (result to be deleted: null)
+    00:04:55.978 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 10 and participant 2 at 2025-02-15T00:04:56.077951822Z[Etc/UTC].
+    00:04:55.979 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Schedule tasks to process...
+    00:04:55.983 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 0 results and 0 participant scores.
+    00:04:56.043 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 11 and participant 4 (result to be deleted: null)
+    00:04:56.043 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 11 and participant 4 at 2025-02-15T00:04:56.143695253Z[Etc/UTC].
+    00:04:56.079 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 10 and participant 2 to update participant scores.
+    00:04:56.116 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 10.
+    00:04:56.122 | 618 taskScheduler-4  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
+    00:04:56.136 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 12 and participant 2 (result to be deleted: null)
+    00:04:56.136 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 12 and participant 2 at 2025-02-15T00:04:56.236903750Z[Etc/UTC].
+    00:04:56.143 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 11 and participant 4 to update participant scores.
+    00:04:56.149 | 618 taskScheduler-4  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updated progress for user participantscoreintegrationteststudent1 in competency 4 to 0.0 / 1.25.
+    00:04:56.156 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 11 and participant 4 at 2025-02-15T00:04:56.256836774Z[Etc/UTC].
+    00:04:56.156 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 12 and participant 2 at 2025-02-15T00:04:56.256961410Z[Etc/UTC].
+    00:04:56.158 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 10 and participant 2 took 79 ms.
+    00:04:56.160 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 2 results and 0 participant scores.
+    00:04:56.179 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 11.
+    00:04:56.180 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 11 and participant 4 took 37 ms.
+    00:04:56.256 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 11 and participant 4 to update participant scores.
+    00:04:56.257 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 12 and participant 2 to update participant scores.
+    00:04:56.274 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 11 is already up-to-date, skipping.
+    00:04:56.289 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 12.
+    00:04:56.291 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 12 and participant 2 took 34 ms.
+    00:04:56.511 |  37 Pool-1-worker-11 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:40393/mem:0b6fcf22-df74-4a31-9e31-d8c79fbb119b;USER=sa', scope='ParticipantScoreIntegrationTest#deleteParticipation_asInstructorOfCourse_shouldDeleteParticipation'
+    00:04:56.540 |  37 Pool-1-worker-11 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '10' from title cache 'exerciseTitle'
+    00:04:56.565 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 10 and participant 2 (result to be deleted: null)
+    00:04:56.575 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 10 and participant 2 at 2025-02-15T00:04:56.675349729Z[Etc/UTC].
+    00:04:56.675 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 10 and participant 2 to update participant scores.
+    00:04:56.711 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 10.
+    00:04:56.718 | 603 taskScheduler-1  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
+    00:04:56.728 | 603 taskScheduler-1  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Competency progress has been updated very recently, skipping.
+    00:04:56.728 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 10 and participant 2 took 53 ms.
+    00:04:56.902 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/participations/10
+    00:04:56.933 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.w.ParticipationResource  : Delete Participation 10 of exercise 1 for participantscoreintegrationteststudent1First participantscoreintegrationteststudent1Last, deleteBuildPlan: false, deleteRepository: false by participantscoreintegrationtestinstructor1
+    00:04:56.939 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete Participation : StudentParticipation{id=10, presentationScore=null, student=User{login='participantscoreintegrationteststudent1', firstName='participantscoreintegrationteststudent1First', lastName='participantscoreintegrationteststudent1Last', email='participantscoreintegrationteststudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}}
+    00:04:56.941 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 10
+    00:04:56.965 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result 10
+    00:04:56.965 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result references 10
+    00:04:56.997 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result 13
+    00:04:56.997 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result references 13
 
   Starting logs for ParticipantScoreIntegrationTest > testAll_asTutor()
-    23:41:56.244 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
-    23:41:56.252 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
-    23:41:56.261 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
-    23:41:56.268 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
-    23:41:56.276 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
-    23:41:56.279 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
-    23:41:56.284 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
-    23:41:56.284 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
-    23:41:56.315 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
-    23:41:56.428 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 13 and participant 2 (result to be deleted: null)
-    23:41:56.428 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 13 and participant 2 at 2025-02-14T23:41:56.528916016Z[Etc/UTC].
-    23:41:56.475 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 14 and participant 5 (result to be deleted: null)
-    23:41:56.475 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 14 and participant 5 at 2025-02-14T23:41:56.575337Z[Etc/UTC].
-    23:41:56.526 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 15 and participant 2 (result to be deleted: null)
-    23:41:56.527 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 15 and participant 2 at 2025-02-14T23:41:56.627013504Z[Etc/UTC].
-    23:41:56.529 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 13 and participant 2 to update participant scores.
-    23:41:56.541 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 13 and participant 2 at 2025-02-14T23:41:56.641360328Z[Etc/UTC].
-    23:41:56.541 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 14 and participant 5 at 2025-02-14T23:41:56.641442261Z[Etc/UTC].
-    23:41:56.541 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 15 and participant 2 at 2025-02-14T23:41:56.641480773Z[Etc/UTC].
-    23:41:56.542 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 3 results and 0 participant scores.
-    23:41:56.547 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 13.
-    23:41:56.548 | 614 taskScheduler-3  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
-    23:41:56.563 | 614 taskScheduler-3  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updated progress for user participantscoreintegrationteststudent1 in competency 5 to 0.0 / 1.25.
-    23:41:56.567 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 13 and participant 2 took 38 ms.
-    23:41:56.641 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 13 and participant 2 to update participant scores.
-    23:41:56.641 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 14 and participant 5 to update participant scores.
-    23:41:56.645 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 15 and participant 2 to update participant scores.
-    23:41:56.654 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 13 is already up-to-date, skipping.
-    23:41:56.664 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 14.
-    23:41:56.665 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 15.
-    23:41:56.665 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 15 and participant 2 took 20 ms.
-    23:41:56.665 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 14 and participant 5 took 24 ms.
-    23:41:56.876 |  37 Pool-1-worker-11 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ParticipantScoreIntegrationTest#testAll_asTutor'
-    23:41:56.880 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/5/course-scores
-    23:41:56.890 |  37 Pool-1-worker-11 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
-    23:41:56.909 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/exams/5/exam-scores
-    23:41:56.915 |  37 Pool-1-worker-11 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    00:04:57.094 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    00:04:57.104 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    00:04:57.115 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    00:04:57.116 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    00:04:57.126 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    00:04:57.130 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    00:04:57.141 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    00:04:57.141 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    00:04:57.174 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    00:04:57.266 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 13 and participant 2 (result to be deleted: null)
+    00:04:57.266 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 13 and participant 2 at 2025-02-15T00:04:57.466226520Z[Etc/UTC].
+    00:04:57.309 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 14 and participant 5 (result to be deleted: null)
+    00:04:57.309 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 14 and participant 5 at 2025-02-15T00:04:57.409719226Z[Etc/UTC].
+    00:04:57.379 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 15 and participant 2 (result to be deleted: null)
+    00:04:57.384 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 15 and participant 2 at 2025-02-15T00:04:57.484734766Z[Etc/UTC].
+    00:04:57.396 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 13 and participant 2 at 2025-02-15T00:04:57.496602550Z[Etc/UTC].
+    00:04:57.396 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 14 and participant 5 at 2025-02-15T00:04:57.496705165Z[Etc/UTC].
+    00:04:57.396 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 15 and participant 2 at 2025-02-15T00:04:57.496759448Z[Etc/UTC].
+    00:04:57.397 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 3 results and 0 participant scores.
+    00:04:57.496 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 13 and participant 2 to update participant scores.
+    00:04:57.498 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 14 and participant 5 to update participant scores.
+    00:04:57.498 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 15 and participant 2 to update participant scores.
+    00:04:57.520 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 13.
+    00:04:57.521 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 15 and participant 2 took 23 ms.
+    00:04:57.534 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 14.
+    00:04:57.535 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 14 and participant 5 took 37 ms.
+    00:04:57.537 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 15.
+    00:04:57.538 | 617 taskScheduler-3  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
+    00:04:57.554 | 618 taskScheduler-4  | INFO  | .s.WeeklyEmailSummaryScheduleService : Scheduled email summaries on start up.
+    00:04:57.557 | 617 taskScheduler-3  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updated progress for user participantscoreintegrationteststudent1 in competency 5 to 0.0 / 1.25.
+    00:04:57.561 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 13 and participant 2 took 65 ms.
+    00:04:57.786 |  37 Pool-1-worker-11 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:40393/mem:0b6fcf22-df74-4a31-9e31-d8c79fbb119b;USER=sa', scope='ParticipantScoreIntegrationTest#testAll_asTutor'
+    00:04:57.793 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/5/course-scores
+    00:04:57.800 |  37 Pool-1-worker-11 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    00:04:57.819 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/exams/5/exam-scores
+    00:04:57.824 |  37 Pool-1-worker-11 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
 
   Starting logs for ParticipantScoreIntegrationTest > testAll_asStudent()
-    23:41:56.962 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
-    23:41:56.977 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
-    23:41:56.990 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
-    23:41:56.991 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
-    23:41:57.005 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
-    23:41:57.010 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
-    23:41:57.014 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
-    23:41:57.014 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
-    23:41:57.040 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
-    23:41:57.120 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 16 and participant 2 (result to be deleted: null)
-    23:41:57.120 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 16 and participant 2 at 2025-02-14T23:41:57.220672548Z[Etc/UTC].
-    23:41:57.160 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 17 and participant 6 (result to be deleted: null)
-    23:41:57.160 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 17 and participant 6 at 2025-02-14T23:41:57.260940849Z[Etc/UTC].
-    23:41:57.218 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 18 and participant 2 (result to be deleted: null)
-    23:41:57.218 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 18 and participant 2 at 2025-02-14T23:41:57.318925213Z[Etc/UTC].
-    23:41:57.220 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 16 and participant 2 to update participant scores.
-    23:41:57.229 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 16 and participant 2 at 2025-02-14T23:41:57.329293039Z[Etc/UTC].
-    23:41:57.229 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 17 and participant 6 at 2025-02-14T23:41:57.329382697Z[Etc/UTC].
-    23:41:57.229 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 18 and participant 2 at 2025-02-14T23:41:57.329434373Z[Etc/UTC].
-    23:41:57.229 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 3 results and 0 participant scores.
-    23:41:57.239 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 16.
-    23:41:57.244 | 615 taskScheduler-4  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
-    23:41:57.264 | 615 taskScheduler-4  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updated progress for user participantscoreintegrationteststudent1 in competency 6 to 0.0 / 1.25.
-    23:41:57.273 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 16 and participant 2 took 53 ms.
-    23:41:57.329 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 16 and participant 2 to update participant scores.
-    23:41:57.332 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 17 and participant 6 to update participant scores.
-    23:41:57.334 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 16 is already up-to-date, skipping.
-    23:41:57.334 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 18 and participant 2 to update participant scores.
-    23:41:57.353 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 17.
-    23:41:57.354 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 17 and participant 6 took 22 ms.
-    23:41:57.354 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 18.
-    23:41:57.355 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 18 and participant 2 took 21 ms.
-    23:41:57.549 | 615 taskScheduler-4  | INFO  | .s.WeeklyEmailSummaryScheduleService : Scheduled email summaries on start up.
-    23:41:57.558 |  37 Pool-1-worker-11 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ParticipantScoreIntegrationTest#testAll_asStudent'
-    23:41:57.561 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/6/course-scores
-    23:41:57.564 |  37 Pool-1-worker-11 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
-    23:41:57.567 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/exams/6/exam-scores
-    23:41:57.569 |  37 Pool-1-worker-11 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    00:04:57.879 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    00:04:57.885 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    00:04:57.898 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    00:04:57.900 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    00:04:57.911 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    00:04:57.917 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    00:04:57.921 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    00:04:57.921 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    00:04:57.951 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    00:04:58.084 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 16 and participant 2 (result to be deleted: null)
+    00:04:58.085 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 16 and participant 2 at 2025-02-15T00:04:58.184994503Z[Etc/UTC].
+    00:04:58.126 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 17 and participant 6 (result to be deleted: null)
+    00:04:58.126 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 17 and participant 6 at 2025-02-15T00:04:58.226656104Z[Etc/UTC].
+    00:04:58.185 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 16 and participant 2 to update participant scores.
+    00:04:58.195 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 18 and participant 2 (result to be deleted: null)
+    00:04:58.199 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 18 and participant 2 at 2025-02-15T00:04:58.299455243Z[Etc/UTC].
+    00:04:58.207 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 16 and participant 2 at 2025-02-15T00:04:58.307307982Z[Etc/UTC].
+    00:04:58.207 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 17 and participant 6 at 2025-02-15T00:04:58.307430704Z[Etc/UTC].
+    00:04:58.207 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 18 and participant 2 at 2025-02-15T00:04:58.307466622Z[Etc/UTC].
+    00:04:58.207 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 3 results and 0 participant scores.
+    00:04:58.213 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 16.
+    00:04:58.219 | 604 taskScheduler-2  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
+    00:04:58.237 | 604 taskScheduler-2  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updated progress for user participantscoreintegrationteststudent1 in competency 6 to 0.0 / 1.25.
+    00:04:58.244 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 16 and participant 2 took 59 ms.
+    00:04:58.307 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 16 and participant 2 to update participant scores.
+    00:04:58.310 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 17 and participant 6 to update participant scores.
+    00:04:58.310 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 18 and participant 2 to update participant scores.
+    00:04:58.324 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 16 is already up-to-date, skipping.
+    00:04:58.331 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 17.
+    00:04:58.333 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 18 and participant 2 took 23 ms.
+    00:04:58.338 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 18.
+    00:04:58.339 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 17 and participant 6 took 29 ms.
+    00:04:58.538 |  37 Pool-1-worker-11 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:40393/mem:0b6fcf22-df74-4a31-9e31-d8c79fbb119b;USER=sa', scope='ParticipantScoreIntegrationTest#testAll_asStudent'
+    00:04:58.543 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/6/course-scores
+    00:04:58.545 |  37 Pool-1-worker-11 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
+    00:04:58.549 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/exams/6/exam-scores
+    00:04:58.551 |  37 Pool-1-worker-11 | WARN  | o.z.p.spring.common.AdviceTraits     : Forbidden: Access Denied
 
   Starting logs for ParticipantScoreIntegrationTest > deleteExercise_asInstructorOfCourse_shouldDeleteExercise()
-    23:41:57.591 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
-    23:41:57.596 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
-    23:41:57.650 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
-    23:41:57.654 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
-    23:41:57.661 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
-    23:41:57.665 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
-    23:41:57.673 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
-    23:41:57.673 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
-    23:41:57.711 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
-    23:41:57.752 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 19 and participant 2 (result to be deleted: null)
-    23:41:57.752 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 19 and participant 2 at 2025-02-14T23:41:57.852879443Z[Etc/UTC].
-    23:41:57.778 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 20 and participant 7 (result to be deleted: null)
-    23:41:57.778 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 20 and participant 7 at 2025-02-14T23:41:57.878615845Z[Etc/UTC].
-    23:41:57.832 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 21 and participant 2 (result to be deleted: null)
-    23:41:57.832 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 21 and participant 2 at 2025-02-14T23:41:57.932815935Z[Etc/UTC].
-    23:41:57.841 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 19 and participant 2 at 2025-02-14T23:41:57.941847105Z[Etc/UTC].
-    23:41:57.841 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 20 and participant 7 at 2025-02-14T23:41:57.941945599Z[Etc/UTC].
-    23:41:57.842 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 21 and participant 2 at 2025-02-14T23:41:57.941986756Z[Etc/UTC].
-    23:41:57.842 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 3 results and 0 participant scores.
-    23:41:57.941 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 19 and participant 2 to update participant scores.
-    23:41:57.947 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 20 and participant 7 to update participant scores.
-    23:41:57.947 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 21 and participant 2 to update participant scores.
-    23:41:57.968 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 19.
-    23:41:57.969 | 601 taskScheduler-2  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
-    23:41:57.979 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 20.
-    23:41:57.980 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 21.
-    23:41:57.981 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 20 and participant 7 took 34 ms.
-    23:41:57.982 | 601 taskScheduler-2  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updated progress for user participantscoreintegrationteststudent1 in competency 7 to 0.0 / 1.25.
-    23:41:57.984 | 615 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 21 and participant 2 took 37 ms.
-    23:41:57.985 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 19 and participant 2 took 44 ms.
-    23:41:58.175 |  37 Pool-1-worker-11 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ParticipantScoreIntegrationTest#deleteExercise_asInstructorOfCourse_shouldDeleteExercise'
-    23:41:58.177 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/text-exercises/19
-    23:41:58.184 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.t.web.TextExerciseResource : REST request to delete TextExercise : 19
-    23:41:58.195 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User participantscoreintegrationtestinstructor1 has requested to delete TextExercise 8f9aefd3-e5e2-4948-94a1-8ad5f60f2fa3 with id 19
-    23:41:58.196 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Request to delete TextExercise with id 19
-    23:41:58.200 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Deleting the channel took 3.66ms
-    23:41:58.200 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Cancel scheduled operations of exercise 19
-    23:41:58.200 |  37 Pool-1-worker-11 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for potential Athena exercise 19
-    23:41:58.224 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 1 participations of exercise with id : 19
-    23:41:58.230 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete Participation : StudentParticipation{id=19, presentationScore=null, student=User{login='participantscoreintegrationteststudent1', firstName='participantscoreintegrationteststudent1First', lastName='participantscoreintegrationteststudent1Last', email='participantscoreintegrationteststudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}}
-    23:41:58.234 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 19
-    23:41:58.235 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result 20
-    23:41:58.235 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result references 20
-    23:41:58.285 |  37 Pool-1-worker-11 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '19' from title cache 'exerciseTitle'
-    23:41:58.299 | 588 artemis-task-1   | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress for 1 users.
-    23:41:58.313 | 588 artemis-task-1   | DEBUG | .a.a.a.s.c.CompetencyProgressService : Competency progress has been updated very recently, skipping.
+    00:04:58.578 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    00:04:58.583 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    00:04:58.587 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    00:04:58.588 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    00:04:58.593 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    00:04:58.597 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    00:04:58.601 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    00:04:58.601 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    00:04:58.624 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    00:04:58.698 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 19 and participant 2 (result to be deleted: null)
+    00:04:58.701 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 19 and participant 2 at 2025-02-15T00:04:58.801640903Z[Etc/UTC].
+    00:04:58.727 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 20 and participant 7 (result to be deleted: null)
+    00:04:58.727 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 20 and participant 7 at 2025-02-15T00:04:58.827236281Z[Etc/UTC].
+    00:04:58.801 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 19 and participant 2 to update participant scores.
+    00:04:58.807 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 21 and participant 2 (result to be deleted: null)
+    00:04:58.807 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 21 and participant 2 at 2025-02-15T00:04:58.907355902Z[Etc/UTC].
+    00:04:58.820 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 19 and participant 2 at 2025-02-15T00:04:58.920738955Z[Etc/UTC].
+    00:04:58.820 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 20 and participant 7 at 2025-02-15T00:04:58.920869662Z[Etc/UTC].
+    00:04:58.820 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 21 and participant 2 at 2025-02-15T00:04:58.920905089Z[Etc/UTC].
+    00:04:58.821 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 3 results and 0 participant scores.
+    00:04:58.827 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 19.
+    00:04:58.832 | 617 taskScheduler-3  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
+    00:04:58.848 | 617 taskScheduler-3  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updated progress for user participantscoreintegrationteststudent1 in competency 7 to 0.0 / 1.25.
+    00:04:58.849 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 19 and participant 2 took 48 ms.
+    00:04:58.949 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 19 and participant 2 to update participant scores.
+    00:04:58.953 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 21 and participant 2 to update participant scores.
+    00:04:58.954 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 20 and participant 7 to update participant scores.
+    00:04:58.963 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 19 is already up-to-date, skipping.
+    00:04:58.974 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 20.
+    00:04:58.975 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 20 and participant 7 took 21 ms.
+    00:04:58.979 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 21.
+    00:04:58.981 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 21 and participant 2 took 28 ms.
+    00:04:59.189 |  37 Pool-1-worker-11 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:40393/mem:0b6fcf22-df74-4a31-9e31-d8c79fbb119b;USER=sa', scope='ParticipantScoreIntegrationTest#deleteExercise_asInstructorOfCourse_shouldDeleteExercise'
+    00:04:59.194 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request DELETE /api/text-exercises/19
+    00:04:59.200 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.t.web.TextExerciseResource : REST request to delete TextExercise : 19
+    00:04:59.223 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.service.ExerciseService  : User participantscoreintegrationtestinstructor1 has requested to delete TextExercise d7ee3912-c8f5-4c45-8dbc-4a9d623426db with id 19
+    00:04:59.225 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Request to delete TextExercise with id 19
+    00:04:59.226 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Deleting the channel took 693µs
+    00:04:59.226 |  37 Pool-1-worker-11 | INFO  | .t.c.a.a.e.s.ExerciseDeletionService : Cancel scheduled operations of exercise 19
+    00:04:59.227 |  37 Pool-1-worker-11 | INFO  | .c.s.m.InstanceMessageReceiveService : Received schedule cancel for potential Athena exercise 19
+    00:04:59.250 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete all 1 participations of exercise with id : 19
+    00:04:59.257 |  37 Pool-1-worker-11 | INFO  | d.t.c.a.a.e.s.ParticipationService   : Request to delete Participation : StudentParticipation{id=19, presentationScore=null, student=User{login='participantscoreintegrationteststudent1', firstName='participantscoreintegrationteststudent1First', lastName='participantscoreintegrationteststudent1Last', email='participantscoreintegrationteststudent1@test.de', imageUrl='null', activated='true', langKey='en', activationKey='null'}}
+    00:04:59.261 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.e.s.ParticipationService   : Request to delete all results and submissions of participation with id : 19
+    00:04:59.264 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result 20
+    00:04:59.264 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.a.service.ResultService    : Delete result references 20
+    00:04:59.324 |  37 Pool-1-worker-11 | INFO  | .c.a.a.c.s.TitleCacheEvictionService : Evicted entry '19' from title cache 'exerciseTitle'
+    00:04:59.334 | 592 artemis-task-1   | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress for 1 users.
+    00:04:59.354 | 592 artemis-task-1   | DEBUG | .a.a.a.s.c.CompetencyProgressService : Competency progress has been updated very recently, skipping.
 
   Starting logs for ParticipantScoreIntegrationTest > getCourseScores_asInstructorOfCourse_shouldReturnCourseScores()
-    23:41:58.325 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
-    23:41:58.330 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
-    23:41:58.334 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
-    23:41:58.336 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
-    23:41:58.340 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
-    23:41:58.342 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
-    23:41:58.344 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
-    23:41:58.344 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
-    23:41:58.356 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
-    23:41:58.401 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 22 and participant 2 (result to be deleted: null)
-    23:41:58.401 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 22 and participant 2 at 2025-02-14T23:41:58.501653253Z[Etc/UTC].
-    23:41:58.420 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 23 and participant 8 (result to be deleted: null)
-    23:41:58.420 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 23 and participant 8 at 2025-02-14T23:41:58.520626373Z[Etc/UTC].
-    23:41:58.501 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 22 and participant 2 to update participant scores.
-    23:41:58.520 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 23 and participant 8 to update participant scores.
-    23:41:58.543 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 24 and participant 2 (result to be deleted: null)
-    23:41:58.543 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 24 and participant 2 at 2025-02-14T23:41:58.643508720Z[Etc/UTC].
-    23:41:58.546 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 22.
-    23:41:58.547 | 614 taskScheduler-3  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
-    23:41:58.552 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 22 and participant 2 at 2025-02-14T23:41:58.652264237Z[Etc/UTC].
-    23:41:58.552 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 23 and participant 8 at 2025-02-14T23:41:58.652372268Z[Etc/UTC].
-    23:41:58.552 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 24 and participant 2 at 2025-02-14T23:41:58.652416080Z[Etc/UTC].
-    23:41:58.552 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 3 results and 0 participant scores.
-    23:41:58.559 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 23.
-    23:41:58.560 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 23 and participant 8 took 40 ms.
-    23:41:58.566 | 614 taskScheduler-3  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updated progress for user participantscoreintegrationteststudent1 in competency 8 to 0.0 / 1.25.
-    23:41:58.571 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 22 and participant 2 took 70 ms.
-    23:41:58.652 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 22 and participant 2 to update participant scores.
-    23:41:58.655 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 23 and participant 8 to update participant scores.
-    23:41:58.664 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 24 and participant 2 to update participant scores.
-    23:41:58.669 | 600 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 23 is already up-to-date, skipping.
-    23:41:58.670 | 601 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Participant score 22 is already up-to-date, skipping.
-    23:41:58.695 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 24.
-    23:41:58.697 | 614 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 24 and participant 2 took 33 ms.
-    23:41:58.879 |  37 Pool-1-worker-11 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:41063/mem:f240edcd-27ce-47a3-b4ab-a6a00c154135;USER=sa', scope='ParticipantScoreIntegrationTest#getCourseScores_asInstructorOfCourse_shouldReturnCourseScores'
-    23:41:58.894 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/8/course-scores
-    23:41:58.896 |  37 Pool-1-worker-11 | DEBUG | t.c.a.a.a.w.ParticipantScoreResource : REST request to get course scores for course : 8
-    23:41:58.953 |  37 Pool-1-worker-11 | INFO  | t.c.a.a.a.w.ParticipantScoreResource : getScoresOfCourse took 57ms
+    00:04:59.367 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Generate 1 students...
+    00:04:59.375 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 students generated. Generate 1 tutors...
+    00:04:59.389 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 tutors generated. Generate 0 editors...
+    00:04:59.391 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 0 editors generated. Generate 1 instructors...
+    00:04:59.410 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : 1 instructors generated
+    00:04:59.417 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses...
+    00:04:59.423 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Removing 3 users from all courses. Done
+    00:04:59.424 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database...
+    00:04:59.458 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.u.util.UserUtilService   : Save 3 users to database. Done
+    00:04:59.541 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 22 and participant 2 (result to be deleted: null)
+    00:04:59.541 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 22 and participant 2 at 2025-02-15T00:04:59.641263304Z[Etc/UTC].
+    00:04:59.568 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 23 and participant 8 (result to be deleted: null)
+    00:04:59.568 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 23 and participant 8 at 2025-02-15T00:04:59.668152383Z[Etc/UTC].
+    00:04:59.624 |  37 Pool-1-worker-11 | DEBUG | .c.s.m.InstanceMessageReceiveService : Received schedule participant score for exercise 24 and participant 2 (result to be deleted: null)
+    00:04:59.624 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 24 and participant 2 at 2025-02-15T00:04:59.724733386Z[Etc/UTC].
+    00:04:59.630 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 22 and participant 2 at 2025-02-15T00:04:59.730224777Z[Etc/UTC].
+    00:04:59.630 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 23 and participant 8 at 2025-02-15T00:04:59.730345555Z[Etc/UTC].
+    00:04:59.630 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Scheduled task for exercise 24 and participant 2 at 2025-02-15T00:04:59.730387815Z[Etc/UTC].
+    00:04:59.631 |  37 Pool-1-worker-11 | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 3 results and 0 participant scores.
+    00:04:59.730 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 22 and participant 2 to update participant scores.
+    00:04:59.736 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 23 and participant 8 to update participant scores.
+    00:04:59.737 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing exercise 24 and participant 2 to update participant scores.
+    00:04:59.754 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 22.
+    00:04:59.758 | 603 taskScheduler-1  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updating competency progress synchronously for 1 users.
+    00:04:59.766 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 23.
+    00:04:59.767 | 604 taskScheduler-2  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 24 and participant 2 took 30 ms.
+    00:04:59.768 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updated participant score 24.
+    00:04:59.770 | 618 taskScheduler-4  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 23 and participant 8 took 34 ms.
+    00:04:59.772 | 603 taskScheduler-1  | DEBUG | .a.a.a.s.c.CompetencyProgressService : Updated progress for user participantscoreintegrationteststudent1 in competency 8 to 0.0 / 1.25.
+    00:04:59.776 | 603 taskScheduler-1  | DEBUG | .a.s.ParticipantScoreScheduleService : Updating the participant score for exercise 22 and participant 2 took 46 ms.
+    00:04:59.992 |  37 Pool-1-worker-11 | INFO  | i.z.t.d.l.EmbeddedDatabaseReporter   : JDBC URL to connect to 'dataSource': url='jdbc:h2:tcp://localhost:40393/mem:0b6fcf22-df74-4a31-9e31-d8c79fbb119b;USER=sa', scope='ParticipantScoreIntegrationTest#getCourseScores_asInstructorOfCourse_shouldReturnCourseScores'
+    00:04:59.996 |  37 Pool-1-worker-11 | DEBUG | d.t.c.a.a.c.s.f.ApiVersionFilter     : Adding Version to Request GET /api/courses/8/course-scores
+    00:05:00.011 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Schedule tasks to process...
+    00:05:00.012 |  37 Pool-1-worker-11 | DEBUG | t.c.a.a.a.w.ParticipantScoreResource : REST request to get course scores for course : 8
+    00:05:00.013 | 617 taskScheduler-3  | DEBUG | .a.s.ParticipantScoreScheduleService : Processing of 0 results and 0 participant scores.
+    00:05:00.093 |  37 Pool-1-worker-11 | INFO  | t.c.a.a.a.w.ParticipantScoreResource : getScoresOfCourse took 81ms
 
 Finished logs for ParticipantScoreIntegrationTest
 ]]></system-out>
