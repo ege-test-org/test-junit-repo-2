@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" tests="8" skipped="0" failures="1" errors="0" timestamp="2025-02-15T00:04:48" hostname="fv-az1787-403" time="11.813">
+<testsuite name="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2025-02-15T00:04:48" hostname="fv-az1787-403" time="11.813">
   <properties/>
-  <testcase name="getCourseScores_asInstructorOfCourseWithGradedPresentations_shouldReturnCourseScores()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="4.52">
-    <failure message="org.opentest4j.AssertionFailedError: &#10;expected: 19.0&#10; but was: 15.0" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: 
-expected: 19.0
- but was: 15.0
-	at app//de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest.getCourseScores_asInstructorOfCourseWithGradedPresentations_shouldReturnCourseScores(ParticipantScoreIntegrationTest.java:235)
-	at java.base@21.0.6/java.lang.reflect.Method.invoke(Method.java:580)
-	at java.base@21.0.6/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387)
-	at java.base@21.0.6/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312)
-	at java.base@21.0.6/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843)
-	at java.base@21.0.6/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808)
-	at java.base@21.0.6/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188)
-</failure>
-  </testcase>
+  <testcase name="getCourseScores_asInstructorOfCourseWithGradedPresentations_shouldReturnCourseScores()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="4.52" />
   <testcase name="getExamScores_asInstructorOfCourse_shouldReturnExamScores()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="1.164"/>
   <testcase name="deleteCourse_asAdmin_shouldDeleteExercise()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="1.71"/>
   <testcase name="deleteParticipation_asInstructorOfCourse_shouldDeleteParticipation()" classname="de.tum.cit.aet.artemis.assessment.ParticipantScoreIntegrationTest" time="1.314"/>
