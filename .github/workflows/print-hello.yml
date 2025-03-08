@@ -1,0 +1,36 @@
+name: Print hello
+
+on:
+  pull_request:
+    paths-ignore:
+    - 'README.md'
+    - 'CODE_OF_CONDUCT.md'
+    - 'CONTRIBUTING.md'
+    - 'LICENSE'
+    - 'SECURITY.md'
+    - 'docs/**'
+    - '.github/**'
+    - '!.github/workflows/test.yml'
+  push:
+    branches:
+    - develop
+    - main
+    - release/*
+    paths-ignore:
+    - 'README.md'
+    - 'CODE_OF_CONDUCT.md'
+    - 'CONTRIBUTING.md'
+    - 'LICENSE'
+    - 'SECURITY.md'
+    - 'docs/**'
+    - '.github/**'
+    - '!.github/workflows/test.yml'
+  release:
+    types:
+    - created
+
+jobs:
+  print-hello:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "Hello, World!"
