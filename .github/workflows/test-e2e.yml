@@ -12,6 +12,20 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     steps:
+    # Save the triggering workflow information as an artifact for later reference
+    - name: Save triggering workflow info
+      run: |
+        echo "TRIGGERING_WORKFLOW_RUN_ID=${{ github.event.workflow_run.id }}" > workflow-context.txt
+        echo "TRIGGERING_WORKFLOW_HEAD_BRANCH=${{ github.event.workflow_run.head_branch }}" >> workflow-context.txt
+        echo "TRIGGERING_WORKFLOW_HEAD_SHA=${{ github.event.workflow_run.head_sha }}" >> workflow-context.txt
+        cat workflow-context.txt
+
+    - name: Upload workflow context
+      uses: actions/upload-artifact@v4
+      with:
+        name: workflow-context
+        path: workflow-context.txt
+    
     - uses: actions/checkout@v4
     - name: Upload Test Results
       uses: actions/upload-artifact@v4
