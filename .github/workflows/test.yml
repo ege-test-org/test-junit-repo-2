@@ -11,6 +11,8 @@ on:
     - 'docs/**'
     - '.github/**'
     - '!.github/workflows/test.yml'
+    - '!.github/workflows/test-artemis.yml'
+    - '!.github/workflows/test-e2e.yml'
   push:
     branches:
     - develop
@@ -25,6 +27,8 @@ on:
     - 'docs/**'
     - '.github/**'
     - '!.github/workflows/test.yml'
+    - '!.github/workflows/test-artemis.yml'
+    - '!.github/workflows/test-e2e.yml'
   release:
     types:
     - created
