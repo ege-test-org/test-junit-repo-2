@@ -1,33 +1,10 @@
 name: E2E Test Artemis
 
 on:
-  pull_request:
-    paths-ignore:
-    - 'README.md'
-    - 'CODE_OF_CONDUCT.md'
-    - 'CONTRIBUTING.md'
-    - 'LICENSE'
-    - 'SECURITY.md'
-    - 'docs/**'
-    - '.github/**'
-    - '!.github/workflows/test.yml'
-  push:
-    branches:
-    - develop
-    - main
-    - release/*
-    paths-ignore:
-    - 'README.md'
-    - 'CODE_OF_CONDUCT.md'
-    - 'CONTRIBUTING.md'
-    - 'LICENSE'
-    - 'SECURITY.md'
-    - 'docs/**'
-    - '.github/**'
-    - '!.github/workflows/test.yml'
-  release:
-    types:
-    - created
+  workflow_run:
+    # Must match the name of build.yml workflow.
+    workflows: ["Test Artemis"]
+    types: [completed]
 
 jobs:
 
