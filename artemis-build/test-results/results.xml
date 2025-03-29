@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <testsuites>
-<testsuite name="e2e/course/CourseManagement.spec.ts" timestamp="2025-03-08T16:39:19.448Z" hostname="fast-tests" tests="7" failures="0" skipped="0" time="176.118" errors="0">
+<testsuite name="e2e/course/CourseManagement.spec.ts" timestamp="2025-03-08T16:39:19.448Z" hostname="fast-tests" tests="7" failures="1" skipped="0" time="176.118" errors="0">
   
   <testcase name="Course management › Manual student selection › Manually adds and removes a student" classname="e2e/course/CourseManagement.spec.ts" time="137.824">
   <failure message="CourseManagement.spec.ts:56:13 Manually adds and removes a student" type="FAILURE">
