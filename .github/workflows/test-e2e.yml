@@ -24,19 +24,38 @@ jobs:
       with:
         name: workflow-context
         path: workflow-context.txt        
+
+    - name: Run on pull_request
+      if: ${{ github.event.workflow_run.event == 'pull_request' }}
+      run: echo 'yessss ${{ github.event.workflow_run.pull_requests }}'
+    - name: Run on push
+      if: ${{ github.event.workflow_run.event != 'pull_request' }}
+      run: echo 'push ${{ github.event.workflow_run.pull_requests }}'
+    - name: Echo github.event.workflow_run.event
+      run: echo '${{ toJSON(github.event.workflow_run.event) }}'
+    - name: Echo github.event.workflow_run
+      run: echo '${{ toJSON(github.event.workflow_run) }}'
+    - name: Echo github.event
+      run: echo '${{ toJSON(github.event) }}'
+    - name: Echo github.event.workflow_run
+      run: echo '${{ toJSON(github.event.workflow_run) }}'
+
     - name: Git Checkout
       uses: actions/checkout@v4
       with:
         ref: ${{ github.event.workflow_run.head_branch }}
-    - name: Upload workflow context
-      uses: actions/upload-artifact@v4
-      with:
-        name: workflow-context
-        path: workflow-context.txt
-    
-    - uses: actions/checkout@v4
-    - name: Upload Test Results
+
+    - name: Upload Test Results (main)
+      if: ${{ github.event.workflow_run.head_branch == 'main' }}
       uses: actions/upload-artifact@v4
       with:
         name: JUnit Test Results
         path: artemis-build/test-results/results.xml
+
+
+    - name: Upload Test Results (branch)
+      if: ${{ github.event.workflow_run.head_branch != 'main' }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: JUnit Test Results
+        path: artemis-build/test-results/result-branch.xml
