@@ -1,7 +1,268 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="de.tum.cit.aet.artemis.assessment.AssessmentComplaintIntegrationTest" tests="46" skipped="0" failures="0" errors="0" timestamp="2025-02-14T23:41:45" hostname="fv-az1721-502" time="20.696">
+<testsuite name="de.tum.cit.aet.artemis.assessment.AssessmentComplaintIntegrationTest" tests="46" skipped="0" failures="1" errors="0" timestamp="2025-02-14T23:41:45" hostname="fv-az1721-502" time="20.696">
   <properties/>
-  <testcase name="getComplaintsByExerciseId_tutor_sensitiveDataHidden()" classname="de.tum.cit.aet.artemis.assessment.AssessmentComplaintIntegrationTest" time="6.42"/>
+  <testcase name="getComplaintsByExerciseId_tutor_sensitiveDataHidden()" classname="de.tum.cit.aet.artemis.assessment.AssessmentComplaintIntegrationTest" time="6.42">
+	  <failure message="CourseManagement.spec.ts:56:13 Manually adds and removes a student" type="FAILURE">
+
+		  
+      <![CDATA[[fast-tests] › e2e/course/CourseManagement.spec.ts:56:13 › Course management › Manual student selection › Manually adds and removes a student @fast 
+
+    Test timeout of 45000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 45000ms exceeded.
+    =========================== logs ===========================
+    waiting for response "api/core/courses/*/students/artemis_test_user_1"
+    ============================================================
+
+       at support/pageobjects/course/CourseManagementPage.ts:81
+
+      79 |      * */
+      80 |     async addStudentToCourse(credentials: UserCredentials) {
+    > 81 |         const responsePromise = this.page.waitForResponse(`api/core/courses/*/students/${credentials.username}`);
+         |                                           ^
+      82 |         await this.page.locator('#detail-value-artemisApp\\.course\\.studentGroupName').locator('a').click();
+      83 |         await this.confirmUserIntoGroup(credentials);
+      84 |         await responsePromise;
+        at CourseManagementPage.addStudentToCourse (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:81:43)
+        at /Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/e2e/course/CourseManagement.spec.ts:60:36
+
+    Error: locator.click: Test timeout of 45000ms exceeded.
+    Call log:
+      - waiting for locator('.dropdown-item').filter({ hasText: '(artemis_test_user_1)' })
+
+
+       at support/pageobjects/course/CourseManagementPage.ts:121
+
+      119 |     private async confirmUserIntoGroup(credentials: UserCredentials) {
+      120 |         await this.page.locator('#typeahead-basic').fill(credentials.username);
+    > 121 |         await this.page.locator('.dropdown-item', { hasText: `(${credentials.username})` }).click();
+          |                                                                                             ^
+      122 |     }
+      123 |
+      124 |     /**
+        at CourseManagementPage.confirmUserIntoGroup (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:121:93)
+        at CourseManagementPage.addStudentToCourse (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:83:9)
+        at /Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/e2e/course/CourseManagement.spec.ts:60:13
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 45000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 45000ms exceeded.
+    =========================== logs ===========================
+    waiting for response "api/core/courses/*/students/artemis_test_user_1"
+    ============================================================
+
+       at support/pageobjects/course/CourseManagementPage.ts:81
+
+      79 |      * */
+      80 |     async addStudentToCourse(credentials: UserCredentials) {
+    > 81 |         const responsePromise = this.page.waitForResponse(`api/core/courses/*/students/${credentials.username}`);
+         |                                           ^
+      82 |         await this.page.locator('#detail-value-artemisApp\\.course\\.studentGroupName').locator('a').click();
+      83 |         await this.confirmUserIntoGroup(credentials);
+      84 |         await responsePromise;
+        at CourseManagementPage.addStudentToCourse (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:81:43)
+        at /Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/e2e/course/CourseManagement.spec.ts:60:36
+
+    Error: locator.click: Test timeout of 45000ms exceeded.
+    Call log:
+      - waiting for locator('.dropdown-item').filter({ hasText: '(artemis_test_user_1)' })
+
+
+       at support/pageobjects/course/CourseManagementPage.ts:121
+
+      119 |     private async confirmUserIntoGroup(credentials: UserCredentials) {
+      120 |         await this.page.locator('#typeahead-basic').fill(credentials.username);
+    > 121 |         await this.page.locator('.dropdown-item', { hasText: `(${credentials.username})` }).click();
+          |                                                                                             ^
+      122 |     }
+      123 |
+      124 |     /**
+        at CourseManagementPage.confirmUserIntoGroup (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:121:93)
+        at CourseManagementPage.addStudentToCourse (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:83:9)
+        at /Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/e2e/course/CourseManagement.spec.ts:60:13
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/e2e-course-CourseManagemen-7a44d--adds-and-removes-a-student-fast-tests-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/e2e-course-CourseManagemen-7a44d--adds-and-removes-a-student-fast-tests-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 45000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 45000ms exceeded.
+    =========================== logs ===========================
+    waiting for response "api/core/courses/*/students/artemis_test_user_1"
+    ============================================================
+
+       at support/pageobjects/course/CourseManagementPage.ts:81
+
+      79 |      * */
+      80 |     async addStudentToCourse(credentials: UserCredentials) {
+    > 81 |         const responsePromise = this.page.waitForResponse(`api/core/courses/*/students/${credentials.username}`);
+         |                                           ^
+      82 |         await this.page.locator('#detail-value-artemisApp\\.course\\.studentGroupName').locator('a').click();
+      83 |         await this.confirmUserIntoGroup(credentials);
+      84 |         await responsePromise;
+        at CourseManagementPage.addStudentToCourse (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:81:43)
+        at /Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/e2e/course/CourseManagement.spec.ts:60:36
+
+    Error: locator.click: Test timeout of 45000ms exceeded.
+    Call log:
+      - waiting for locator('.dropdown-item').filter({ hasText: '(artemis_test_user_1)' })
+
+
+       at support/pageobjects/course/CourseManagementPage.ts:121
+
+      119 |     private async confirmUserIntoGroup(credentials: UserCredentials) {
+      120 |         await this.page.locator('#typeahead-basic').fill(credentials.username);
+    > 121 |         await this.page.locator('.dropdown-item', { hasText: `(${credentials.username})` }).click();
+          |                                                                                             ^
+      122 |     }
+      123 |
+      124 |     /**
+        at CourseManagementPage.confirmUserIntoGroup (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:121:93)
+        at CourseManagementPage.addStudentToCourse (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:83:9)
+        at /Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/e2e/course/CourseManagement.spec.ts:60:13]]>
+      
+    </failure>
+  </testcase>
+  <testcase name="getSubmittedComplaints_asStudent_forbidden()" classname="de.tum.cit.aet.artemis.assessment.AssessmentComplaintIntegrationTest" time="0.605">
+	  <failure message="CourseManagement.spec.ts:56:13 Manually adds and removes a student" type="FAILURE">
+
+		  
+      <![CDATA[[fast-tests] › e2e/course/CourseManagement.spec.ts:56:13 › Course management › Manual student selection › Manually adds and removes a student @fast 
+
+    Test timeout of 45000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 45000ms exceeded.
+    =========================== logs ===========================
+    waiting for response "api/core/courses/*/students/artemis_test_user_1"
+    ============================================================
+
+       at support/pageobjects/course/CourseManagementPage.ts:81
+
+      79 |      * */
+      80 |     async addStudentToCourse(credentials: UserCredentials) {
+    > 81 |         const responsePromise = this.page.waitForResponse(`api/core/courses/*/students/${credentials.username}`);
+         |                                           ^
+      82 |         await this.page.locator('#detail-value-artemisApp\\.course\\.studentGroupName').locator('a').click();
+      83 |         await this.confirmUserIntoGroup(credentials);
+      84 |         await responsePromise;
+        at CourseManagementPage.addStudentToCourse (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:81:43)
+        at /Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/e2e/course/CourseManagement.spec.ts:60:36
+
+    Error: locator.click: Test timeout of 45000ms exceeded.
+    Call log:
+      - waiting for locator('.dropdown-item').filter({ hasText: '(artemis_test_user_1)' })
+
+
+       at support/pageobjects/course/CourseManagementPage.ts:121
+
+      119 |     private async confirmUserIntoGroup(credentials: UserCredentials) {
+      120 |         await this.page.locator('#typeahead-basic').fill(credentials.username);
+    > 121 |         await this.page.locator('.dropdown-item', { hasText: `(${credentials.username})` }).click();
+          |                                                                                             ^
+      122 |     }
+      123 |
+      124 |     /**
+        at CourseManagementPage.confirmUserIntoGroup (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:121:93)
+        at CourseManagementPage.addStudentToCourse (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:83:9)
+        at /Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/e2e/course/CourseManagement.spec.ts:60:13
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 45000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 45000ms exceeded.
+    =========================== logs ===========================
+    waiting for response "api/core/courses/*/students/artemis_test_user_1"
+    ============================================================
+
+       at support/pageobjects/course/CourseManagementPage.ts:81
+
+      79 |      * */
+      80 |     async addStudentToCourse(credentials: UserCredentials) {
+    > 81 |         const responsePromise = this.page.waitForResponse(`api/core/courses/*/students/${credentials.username}`);
+         |                                           ^
+      82 |         await this.page.locator('#detail-value-artemisApp\\.course\\.studentGroupName').locator('a').click();
+      83 |         await this.confirmUserIntoGroup(credentials);
+      84 |         await responsePromise;
+        at CourseManagementPage.addStudentToCourse (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:81:43)
+        at /Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/e2e/course/CourseManagement.spec.ts:60:36
+
+    Error: locator.click: Test timeout of 45000ms exceeded.
+    Call log:
+      - waiting for locator('.dropdown-item').filter({ hasText: '(artemis_test_user_1)' })
+
+
+       at support/pageobjects/course/CourseManagementPage.ts:121
+
+      119 |     private async confirmUserIntoGroup(credentials: UserCredentials) {
+      120 |         await this.page.locator('#typeahead-basic').fill(credentials.username);
+    > 121 |         await this.page.locator('.dropdown-item', { hasText: `(${credentials.username})` }).click();
+          |                                                                                             ^
+      122 |     }
+      123 |
+      124 |     /**
+        at CourseManagementPage.confirmUserIntoGroup (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:121:93)
+        at CourseManagementPage.addStudentToCourse (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:83:9)
+        at /Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/e2e/course/CourseManagement.spec.ts:60:13
+
+    attachment #1: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/e2e-course-CourseManagemen-7a44d--adds-and-removes-a-student-fast-tests-retry1/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/e2e-course-CourseManagemen-7a44d--adds-and-removes-a-student-fast-tests-retry1/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #2 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 45000ms exceeded.
+
+    Error: page.waitForResponse: Test timeout of 45000ms exceeded.
+    =========================== logs ===========================
+    waiting for response "api/core/courses/*/students/artemis_test_user_1"
+    ============================================================
+
+       at support/pageobjects/course/CourseManagementPage.ts:81
+
+      79 |      * */
+      80 |     async addStudentToCourse(credentials: UserCredentials) {
+    > 81 |         const responsePromise = this.page.waitForResponse(`api/core/courses/*/students/${credentials.username}`);
+         |                                           ^
+      82 |         await this.page.locator('#detail-value-artemisApp\\.course\\.studentGroupName').locator('a').click();
+      83 |         await this.confirmUserIntoGroup(credentials);
+      84 |         await responsePromise;
+        at CourseManagementPage.addStudentToCourse (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:81:43)
+        at /Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/e2e/course/CourseManagement.spec.ts:60:36
+
+    Error: locator.click: Test timeout of 45000ms exceeded.
+    Call log:
+      - waiting for locator('.dropdown-item').filter({ hasText: '(artemis_test_user_1)' })
+
+
+       at support/pageobjects/course/CourseManagementPage.ts:121
+
+      119 |     private async confirmUserIntoGroup(credentials: UserCredentials) {
+      120 |         await this.page.locator('#typeahead-basic').fill(credentials.username);
+    > 121 |         await this.page.locator('.dropdown-item', { hasText: `(${credentials.username})` }).click();
+          |                                                                                             ^
+      122 |     }
+      123 |
+      124 |     /**
+        at CourseManagementPage.confirmUserIntoGroup (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:121:93)
+        at CourseManagementPage.addStudentToCourse (/Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/support/pageobjects/course/CourseManagementPage.ts:83:9)
+        at /Users/egekocabas/Desktop/thesis/new/Artemis/src/test/playwright/e2e/course/CourseManagement.spec.ts:60:13]]>
+      
+    </failure>
+  </testcase>
   <testcase name="getSubmittedComplaints_asStudent_forbidden()" classname="de.tum.cit.aet.artemis.assessment.AssessmentComplaintIntegrationTest" time="0.605"/>
   <testcase name="getComplaintsForAssessmentDashboard_testRun()" classname="de.tum.cit.aet.artemis.assessment.AssessmentComplaintIntegrationTest" time="0.507"/>
   <testcase name="getSubmittedComplaintsForFileUploadExercise()" classname="de.tum.cit.aet.artemis.assessment.AssessmentComplaintIntegrationTest" time="0.763"/>
