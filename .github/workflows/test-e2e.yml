@@ -19,7 +19,11 @@ jobs:
         echo "TRIGGERING_WORKFLOW_HEAD_BRANCH=${{ github.event.workflow_run.head_branch }}" >> workflow-context.txt
         echo "TRIGGERING_WORKFLOW_HEAD_SHA=${{ github.event.workflow_run.head_sha }}" >> workflow-context.txt
         cat workflow-context.txt
-    
+    - name: Upload workflow context
+      uses: actions/upload-artifact@v4
+      with:
+        name: workflow-context
+        path: workflow-context.txt        
     - name: Git Checkout
       uses: actions/checkout@v4
       with:
