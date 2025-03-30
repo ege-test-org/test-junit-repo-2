@@ -33,6 +33,11 @@ on:
     types:
     - created
 
+env:
+  CI: true
+  node: 22
+  java: 21
+
 jobs:
 
   artemis-tests:
