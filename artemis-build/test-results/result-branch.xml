@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<testsuites>
+<testsuite name="e2e/course/CourseManagement.spec.ts" timestamp="2025-03-08T16:39:19.448Z" hostname="fast-tests" tests="7" failures="0" skipped="0" time="176.118" errors="0">
+  
+  <testcase name="Course management › Manual student selection › Manually adds and removes a student" classname="e2e/course/CourseManagement.spec.ts" time="137.824">
+  </testcase>
+  
+  <testcase name="Course management › Course creation › Creates a new course" classname="e2e/course/CourseManagement.spec.ts" time="10.216"></testcase>
+  
+  <testcase name="Course management › Course creation › Creates a new course with custom groups" classname="e2e/course/CourseManagement.spec.ts" time="12.703">
+    
+    <system-out>
+      <![CDATA[Retrying delete course request due to failure
+Retrying delete course request due to failure
+Retrying delete course request due to failure
+Retrying delete course request due to failure
+Retrying delete course request due to failure
+Retrying delete course request due to failure
+Retrying delete course request due to failure
+Retrying delete course request due to failure
+Retrying delete course request due to failure
+Retrying delete course request due to failure]]>
+      
+    </system-out>
+    
+  </testcase>
+  
+  <testcase name="Course management › Course edit › Edits a existing course" classname="e2e/course/CourseManagement.spec.ts" time="3.889"></testcase>
+  
+  <testcase name="Course management › Course deletion › Deletes an existing course" classname="e2e/course/CourseManagement.spec.ts" time="3.383"></testcase>
+  
+  <testcase name="Course management › Course icon deletion › Course within icon › Deletes an existing course icon" classname="e2e/course/CourseManagement.spec.ts" time="4.29"></testcase>
+  
+  <testcase name="Course management › Course icon deletion › Course without icon › Deletes not existing course icon" classname="e2e/course/CourseManagement.spec.ts" time="3.813"></testcase>
+  
+</testsuite>
+</testsuites>
